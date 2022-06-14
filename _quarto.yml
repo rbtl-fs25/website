@@ -3,17 +3,29 @@ project:
 
 website:
   title: "cven5837-ss22"
-  navbar:
-    background: primary
-    left:
+  
+  sidebar:
+    background: "#D9E3E4"
+    pinned: true
+    align: center
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
       - href: index.qmd
-        text: Home
-      - about.qmd
-
+        text: Main
+      - href: course-overview.qmd
+        text: Overview
+      - href: course-syllabus.qmd
+        text: Syllabus
+        
 format:
   html:
     theme: cosmo
     css: styles.css
+    code-copy: true
+    code-overflow: wrap
+    toc: true
 
 
 
