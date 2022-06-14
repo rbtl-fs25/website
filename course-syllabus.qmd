@@ -3,3 +3,36 @@ title: "Syllabus"
 editor: source
 ---
 
+Course Information
+
+This course covers an overview of qualitative and quantitative data collection and analysis methods. Students will use remote sensing and in-situ data, and analysis tools to monitor food and water security, and disaster forecasting and preparedness actions. Other activities include a class project examining the relationship between water access and the risk of COVID-19 spread, and the use of LandPKS app for soil quality characterization, vegetation monitoring, and land management. Furthermore, instrumentation and experimental protocols to characterize indoor air quality related to different cooking technologies will be presented and analyzed.
+
+ 
+Learning Goals
+
+    Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
+    Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
+
+Textbooks and Materials
+
+There is no required text. Readings will consist of textbook chapters, peer-reviewed journal articles and reports. All required readings will be provided through Canvas. Check regularly on Canvas for information about lecture content, readings and assignments.
+
+Course Calendar (subject to change)
+
+Assignments
+
+Attendance/Class participation: Attendance is required. Class participation is an essential component of the requirements for successful completion of this course. Points for class participation are not simply guaranteed by attendance; participation consists of being present in class, reading all assignments prior to the beginning of class, and being an active member in class discussions and presentations. (Each class session is 5% of final grade, 25% total)
+
+Assignments: Directions for the weekly assignments will be given in class and posted in Canvas. (Each Assignment is 15% of final grade, 75% total)
+Late Policy
+
+The grade for late assignments will be reduced by 10 percentage points (on a 100 point scale) per day that the assignment is late. We may agree to make exceptions to this policy on a very limited basis, provided that the reason is very compelling and provided that you ask us in advance.
+Extra Credit (TBD points)
+
+Extra credit assignments are not anticipated but may arise as the course progresses. 
+Exams
+
+There will be no exams in this course. 
+Grading Scheme
+
+Grades will be recorded in Canvas throughout the semester. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their semester score rounded to the nearest single decimal place:
