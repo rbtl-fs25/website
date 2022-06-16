@@ -1,11 +1,5 @@
 ---
-title: "cven5837-ss22"
+title: "CVEN 5837: Special Topics - Data Analytics for Development" 
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Summer Online - July 5, 2022 - August 5, 2022; Tuesday 12-2:30pm MT

@@ -3,17 +3,17 @@ title: "Syllabus"
 editor: source
 ---
 
-Course Information
+# Course Information
 
 This course covers an overview of qualitative and quantitative data collection and analysis methods. Students will use remote sensing and in-situ data, and analysis tools to monitor food and water security, and disaster forecasting and preparedness actions. Other activities include a class project examining the relationship between water access and the risk of COVID-19 spread, and the use of LandPKS app for soil quality characterization, vegetation monitoring, and land management. Furthermore, instrumentation and experimental protocols to characterize indoor air quality related to different cooking technologies will be presented and analyzed.
 
  
-Learning Goals
+# Learning Goals
 
-    Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
-    Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
+- Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
+- Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
 
-Textbooks and Materials
+# Textbooks and Materials
 
 There is no required text. Readings will consist of textbook chapters, peer-reviewed journal articles and reports. All required readings will be provided through Canvas. Check regularly on Canvas for information about lecture content, readings and assignments.
 
