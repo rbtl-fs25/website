@@ -13,11 +13,7 @@ website:
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Main
-      - href: course-overview.qmd
-        text: Overview
-      - href: course-syllabus.qmd
-        text: Syllabus
+        text: Course Overview
         
 format:
   html:
