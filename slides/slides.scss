@@ -1,0 +1,20 @@
+/*-- scss:defaults --*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
+$body-bg: #fff;
+$link-color: #42affa;
+$presentation-heading-font: Montserrat; 
+$presentation-heading-color: #0F4C81;
+$code-color: #ED6D37; 
+$code-bg: #F5F5F5;
+$code-block-bg: #F5F5F5;
+$code-block-font-size: 0.9em;
+$presentation-font-size-root: 36px; 
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}

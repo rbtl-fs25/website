@@ -1,0 +1,101 @@
+---
+title: "Welcome to Data Analytics for Development"
+subtitle: "CVEN 5837 - Summer 2022"
+author: "Lars Schöbitz"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 1
+---
+
+```{r}
+#| include: false
+library(countdown)
+library(magrittr)
+```
+
+
+# Welcome! `r emo::ji("wave")`
+
+## Meet the lecturer
+
+::: columns
+
+::: {.column width="50%"}
+
+**Lars Schöbitz (he/him)** 
+
+![](img/lec-01/lars_schoebitz_profile_photo.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+- Environmental Engineer  
+- Open Science Specialist at ETH Zurich
+- Independent Instructor for Data Science with R  
+- Twitter: [@larnsce](https://twitter.com/larnsce)
+:::
+:::
+
+## Who are you?
+
+[TODO]
+
+## Learning Goals (for the course)
+
+- Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
+
+- Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
+
+## Topics
+
+::: {.incremental}
+-   Overview of qualitative and quantitative research methods and tools
+-   The data science life-cycle
+-   Data organization in spreadsheets
+-   Exploratory data analysis using visualization
+-   Concept of tidy data and data tidying
+-   Data transformation and descriptive statistics
+-   Data communication using the Quarto open-source scientific and technical publishing system
+:::
+
+## Learning Objectives (for this week)
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+::: {.incremental}
+1. `r lobj1[1]`
+1. `r lobj1[2]`
+1. `r lobj1[3]`
+1. `r lobj1[4]`
+1. `r lobj1[5]`
+:::
+
+##
+
+![](img/lec-01/starwars-rey-rstats.png)
+
+::: aside
+Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](https://twitter.com/openscapes) (illustrated by [@allison_horst](https://twitter.com/allison_horst))
+:::
+
+## Tools
+
+- R
+- RStudio (Cloud)
+- tidyverse R Packages
+- Quarto publihsing system
+
+
+

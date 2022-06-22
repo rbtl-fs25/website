@@ -40,7 +40,7 @@ We will rely entirely on open source and open access material for this course. W
 | 2    | July 12  | Exploratory data analysis using visualization & Data organization in spreadsheets |
 | 3    | July 19  | Data transformation and descriptive statistics                                    |
 | 4    | July 26  | Concept of tidy data and data tidying                                             |
-| 5    | August 2 | Data communication using the Quarto                                                |
+| 5    | August 2 | Data communication using Quarto                                                |
 
 # Weekly Structure
 

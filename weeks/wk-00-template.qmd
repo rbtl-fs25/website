@@ -1,14 +1,16 @@
 ---
+title: "Add title"
+subtitle: "Add subtitle"
 editor: source
 ---
 
-# Learning Objectives
+## Learning Objectives
 
-# Slides
+## Slides
 
-# Readings
+## Readings
 
-# Homework assignment
+## Homework assignment
 
-# Learning reflection
+## Learning reflection
 

@@ -11,13 +11,13 @@ website:
     style: "docked"
     search: true
     collapse-level: 1
-    contents:
-      - section: "Course Information"
-        - href: index.qmd
-          text: Course Overview
+    contents: 
+      - href: index.qmd
+        text: Course Overview
       - section: "Weekly materials"
-        - href: weeks/week-1.qmd
-          text: "Week 1"
+        contents: 
+          - href: weeks/wk-01.qmd
+            text: "Week 1"
         
 format:
   html:
