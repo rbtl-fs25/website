@@ -7,6 +7,8 @@ format:
     theme: slides.scss
     transition: fade
     slide-number: true
+    logo: img/logo.png
+    footer: "https://cven5837-ss22.github.io/website/"
 editor: source
 execute:
   freeze: auto

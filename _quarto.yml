@@ -1,11 +1,21 @@
 project:
   type: website
 
+
 website:
-  title: "cven5837-ss22"
+  page-navigation: true
+  title: "CVEN 5837 - Summer 2022"
+  description: "Homepage for Special Topics - Data Analytics for Development"
+  site-url: "https://cven5837-ss22.github.io/website/"
+  
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2022, Lars Schöbitz"
+    background: "#D9E3E4"
   
   sidebar:
     background: "#D9E3E4"
+    logo: "img/logo.png"
     pinned: true
     align: center
     style: "docked"
