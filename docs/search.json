@@ -123,7 +123,7 @@
     "href": "slides/lec-01-welcome.html#tools",
     "title": "Welcome to Data Analytics for Development",
     "section": "Tools",
-    "text": "Tools\n\nR\nRStudio (Cloud)\ntidyverse R Packages\nQuarto publihsing system\n\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+    "text": "Tools\n\nR\nRStudio (Cloud)\ntidyverse R Packages\nQuarto publihing system\n\n\n\n\nhttps://cven5837-ss22.github.io/website/"
   },
   {
     "objectID": "schedule.html",
@@ -131,5 +131,215 @@
     "title": "Schedule",
     "section": "",
     "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
+    "href": "slides/lec-01-welcome.html#platforms-and-tools",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Platforms and Tools",
+    "text": "Platforms and Tools\n\nR\nRStudio (Cloud)\ntidyverse R Packages\nQuarto publishing system"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#r-rstudio-ide",
+    "href": "slides/lec-01-welcome.html#r-rstudio-ide",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "R & RStudio IDE",
+    "text": "R & RStudio IDE\n[TODO: Add screenshots]"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#live-coding-exercises",
+    "href": "slides/lec-01-welcome.html#live-coding-exercises",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Live Coding Exercises",
+    "text": "Live Coding Exercises\n\nInstructor writes and narrates code out loud\nIntstructor explains elements and principles that are relevant\nCode is displayed on second screen / split screen\nLearners join by writing and executing the same code\nLearners “code-along” with the instructor"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#pair-programming-exercises",
+    "href": "slides/lec-01-welcome.html#pair-programming-exercises",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Pair Programming Exercises",
+    "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#taking-notes-together",
+    "href": "slides/lec-01-welcome.html#taking-notes-together",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Taking Notes Together",
+    "text": "Taking Notes Together\n\nQuestions in shared online document: https://docs.google.com/document/d/1ecXtqlO4qrq1Up1K_cs7hLhsHDjacbKi5mrE47WdC8Q/edit"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#cven5837-ss22.github.iowebsite",
+    "href": "slides/lec-01-welcome.html#cven5837-ss22.github.iowebsite",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "cven5837-ss22.github.io/website/ 🔖",
+    "text": "cven5837-ss22.github.io/website/ 🔖"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-1",
+    "href": "slides/lec-01-welcome.html#section-1",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#screen-setup",
+    "href": "slides/lec-01-welcome.html#screen-setup",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Screen setup",
+    "text": "Screen setup\n\nWho uses a laptop and a second external screen?\n“Yes” in the Zoom Chat"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#screen-setup-1",
+    "href": "slides/lec-01-welcome.html#screen-setup-1",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Screen setup",
+    "text": "Screen setup\n[TODO: Add setup screenshot]"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#deep-end",
+    "href": "slides/lec-01-welcome.html#deep-end",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Deep End",
+    "text": "Deep End\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-8",
+    "href": "slides/lec-01-welcome.html#section-8",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-\n\nAdd notes"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-9",
+    "href": "slides/lec-01-welcome.html#section-9",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-10",
+    "href": "slides/lec-01-welcome.html#section-10",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-11",
+    "href": "slides/lec-01-welcome.html#section-11",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-12",
+    "href": "slides/lec-01-welcome.html#section-12",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-13",
+    "href": "slides/lec-01-welcome.html#section-13",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-14",
+    "href": "slides/lec-01-welcome.html#section-14",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#packages",
+    "href": "slides/lec-01-welcome.html#packages",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Packages",
+    "text": "Packages\n\n\n\nbase R\n\nsqrt(49)\nsum(1, 2)\n\n\nFunctions come with R\n\n\n\n\nR Packages\n\nlibrary(dplyr)\n\n\nInstalled once in the Console: install.packages(\"dplyr\")\nLoaded per script\n\n\n\n\n\nPackages\n\nMain way that reusable code is shared in R\nCombination of code, data, and documentation\nR has a rich ecosystem of packages for data manipulation & analysis"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#functions-arguments",
+    "href": "slides/lec-01-welcome.html#functions-arguments",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Functions & Arguments",
+    "text": "Functions & Arguments\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#objects",
+    "href": "slides/lec-01-welcome.html#objects",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Objects",
+    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- filter(.data = gapminder, \n       year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#operators",
+    "href": "slides/lec-01-welcome.html#operators",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Operators",
+    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- gapminder %>% \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: <-\nPipe operator: %<%"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#rules",
+    "href": "slides/lec-01-welcome.html#rules",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Rules",
+    "text": "Rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#screen-setup-2",
+    "href": "slides/lec-01-welcome.html#screen-setup-2",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Screen setup",
+    "text": "Screen setup"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-2",
+    "href": "slides/lec-01-welcome.html#section-2",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-3",
+    "href": "slides/lec-01-welcome.html#section-3",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-4",
+    "href": "slides/lec-01-welcome.html#section-4",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-5",
+    "href": "slides/lec-01-welcome.html#section-5",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-6",
+    "href": "slides/lec-01-welcome.html#section-6",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-7",
+    "href": "slides/lec-01-welcome.html#section-7",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#todo-write-up-instructions",
+    "href": "slides/lec-01-welcome.html#todo-write-up-instructions",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "[TODO: Write up instructions]",
+    "text": "[TODO: Write up instructions]"
   }
 ]

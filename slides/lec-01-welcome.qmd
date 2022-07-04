@@ -92,12 +92,295 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](https://twitter.com/openscapes) (illustrated by [@allison_horst](https://twitter.com/allison_horst))
 :::
 
-## Tools
+# Classroom tools {background-color="#0F4C81"}
+
+## Live Coding Exercises 
+
+- Instructor writes and narrates code out loud 
+- Intstructor explains elements and principles that are relevant
+- Code is displayed on second screen / split screen
+- Learners join by writing and executing the same code
+- Learners "code-along" with the instructor
+
+## Pair Programming Exercises 
+
+- Two learners work together in a break out session
+- One person (the driver) shares the screen and does the typing
+- The other person (the navigator) offers comments and suggestions
+- Roles get switched 
+
+## Taking Notes Together
+
+- Questions in shared online document: https://docs.google.com/document/d/1ecXtqlO4qrq1Up1K_cs7hLhsHDjacbKi5mrE47WdC8Q/edit
+
+## Platforms and Tools
 
 - R
 - RStudio (Cloud)
 - tidyverse R Packages
-- Quarto publihsing system
+- Quarto publishing system
+
+## cven5837-ss22.github.io/website/ `r emo::ji("bookmark")`
+
+# RStudio Cloud
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.001.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.002.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.003.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.004.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.005.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.006.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
+
+## Screen setup
+
+- Who uses a laptop and a second external screen? 
+- "Yes" in the Zoom Chat
+
+## Screen setup
+
+[TODO: Add setup screenshot]
+
+# Data Science Lifecycle
+
+## Deep End
+
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/3pWRgRw86JyBa" width="75%" height="75%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/matthew-west-all-in-matthew-west-3pWRgRw86JyBa">via GIPHY</a></p>
+
+## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.001.png" background-size="contain"}
+
+::: {.notes}
+
+Add notes
+
+:::
+
+## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.002.png" background-size="contain"}
+
+::: {.notes}
+
+1. First you must import your data into R. This typically means that you take data stored:
+
+- in a file
+- in a database, 
+- or web application, and load it into R. 
+
+2. If you can get your data into R, you can  do data science on it!
+
+:::
+
+## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.003.png" background-size="contain"}
+
+::: {.notes}
+
+1. Once you’ve imported your data, it is a good idea to tidy it. 
+
+2. This means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in
+
+3. This is the step where we spend by far the biggest amount of our time. 
+
+4. It has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.
+
+5. In my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill.
+
+:::
+
+## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.004.png" background-size="contain"}
+
+::: {.notes}
+
+1. Once your data is tidy, a common first step is to transform it.
+
+2. This includes 
+  - narrowing in on what interests you (like all people without toilets in one district, or all data from last year)
+  - creating new variables from existing (like toilet density, as in number of people per toilet) 
+  - calculating summary statistics (like counts or the mean)
+  
+Together, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!
+
+:::
+
+## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.005.png" background-size="contain"}
+
+::: {.notes}
+
+1. Once you have tidy data with the variables you need, there are two main engines of knowledge generation: 
+
+- visualisation 
+- and modelling. 
+
+2. These have complementary strengths and weaknesses so any real analysis will iterate between them many times.
+
+3. Visualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data.
+
+:::
+
+## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.006.png" background-size="contain"}
+
+::: {.notes}
+
+1. Models are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.
+
+2. In my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage.
+
+:::
+
+## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.007.png" background-size="contain"}
+
+::: {.notes}
+
+1. The last step of data science is communication, an absolutely critical part of any data analysis project. 
+
+2. It doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.
+
+3. And this is a part where R has become really strong.
+
+:::
+
+# Live Coding
+
+## [TODO: Write up instructions]
+
+# R {background-color="#0F4C81"}
+
+## Packages {auto-animate="true"}
+
+::: {.incremental}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+**base R**
+
+```{r}
+#| eval: false
+#| echo: true
+sqrt(49)
+sum(1, 2)
+```
+
+- Functions come with R
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="55%"}
+
+**R Packages**
+
+```{r}
+#| eval: false
+#| echo: true
+library(dplyr)
+
+```
+
+- Installed once in the Console: `install.packages("dplyr")`
+- Loaded per script
+
+:::
+
+::::
+
+:::
+
+::: {.notes}
+
+Packages
+
+- Main way that reusable code is shared in R
+- Combination of code, data, and documentation
+- R has a rich ecosystem of packages for data manipulation & analysis
+
+:::
+
+## Functions & Arguments {auto-animate="true"}
+
+```{r}
+#| code-line-numbers: "3-4"
+#| eval: false
+#| echo: true
+library(dplyr)
+
+filter(.data = gapminder, 
+       year == 2007)
+```
+
+- Function: `filter()`
+- Argument: `.data = ` 
+- Arguments following: `year == 2007` **What do do with the data**
+
+## Objects {auto-animate="true"}
+
+```{r}
+#| eval: false
+#| code-line-numbers: "3-4"
+#| echo: true
+library(dplyr)
+
+gapminder_yr_2007 <- filter(.data = gapminder, 
+       year == 2007)
+```
+
+- Function: `filter()`
+- Argument: `.data = `
+- Arguments following: `year == 2007` **What do do with the data**
+- Object: `gapminder_yr_2007`
+
+## Operators {auto-animate="true"}
+
+```{r}
+#| eval: false
+#| code-line-numbers: "3-4"
+#| echo: true
+library(dplyr)
+
+gapminder_yr_2007 <- gapminder %>% 
+  filter(year == 2007) 
+```
+
+- Function: `filter()`
+- Argument: `.data = `
+- Arguments following: `year == 2007` **What do do with the data**
+- Object: `gapminder_yr_2007`
+- Assignment operator: `<-`
+- Pipe operator: `%<%`
+
+## Rules
+
+Rules of `dplyr` functions:
+
+::: {.incremental}
+
+- First argument is always a data frame
+- Subsequent arguments say what to do with that data frame
+- Always return a data frame  
+- Don't modify in place 
+
+:::
+
+
+
+
+## Screen setup
+
+
+
+
+# Quarto
+
+# Data Organisation in Spreadsheets
+
 
 
 
