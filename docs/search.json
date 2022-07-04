@@ -277,7 +277,7 @@
     "href": "slides/lec-01-welcome.html#operators",
     "title": "Welcome to Data Analytics for Development",
     "section": "Operators",
-    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- gapminder %>% \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: <-\nPipe operator: %<%"
+    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- gapminder |> \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: <-\nPipe operator: |>"
   },
   {
     "objectID": "slides/lec-01-welcome.html#rules",
@@ -341,5 +341,68 @@
     "title": "Welcome to Data Analytics for Development",
     "section": "[TODO: Write up instructions]",
     "text": "[TODO: Write up instructions]"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#rstudio-cloud",
+    "href": "slides/lec-01-welcome.html#rstudio-cloud",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "RStudio Cloud",
+    "text": "RStudio Cloud"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#think-pair-share",
+    "href": "slides/lec-01-welcome.html#think-pair-share",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Think, Pair, Share",
+    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestion\n\n\n\nWhat is your mental model of the Data Science Lifecycle?\n\n\n\n\n\nThink for 2 minutes\nPair with your neighbour for 4 minutes\nShare your answer with the class\n\n\n\n\n02:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#weekly-structure",
+    "href": "slides/lec-01-welcome.html#weekly-structure",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Weekly Structure",
+    "text": "Weekly Structure\n\n\n\nMonday\nHomework assignment is due\n\n\nTuesday\nLecture\n\n\nWednesday\nFeedback (grading) on assignment\n\n\nThursday\nStudent hours on Zoom\n\n\nFriday\nLearning reflections are due"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#grading",
+    "href": "slides/lec-01-welcome.html#grading",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Grading",
+    "text": "Grading"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#homework-assignments",
+    "href": "slides/lec-01-welcome.html#homework-assignments",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Homework assignments",
+    "text": "Homework assignments"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#learning-reflections",
+    "href": "slides/lec-01-welcome.html#learning-reflections",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Learning reflections",
+    "text": "Learning reflections"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#readings",
+    "href": "slides/lec-01-welcome.html#readings",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Readings",
+    "text": "Readings"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#homework-assignment---week-1-1",
+    "href": "slides/lec-01-welcome.html#homework-assignment---week-1-1",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Homework assignment - Week 1",
+    "text": "Homework assignment - Week 1\n\nDue Monday, July 11th"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-15",
+    "href": "slides/lec-01-welcome.html#section-15",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
   }
 ]

@@ -23,7 +23,7 @@ library(magrittr)
 ```
 
 
-# Welcome! `r emo::ji("wave")`
+# Welcome! `r emo::ji("wave")`  {background-color="#0F4C81"}
 
 ## Meet the lecturer
 
@@ -122,7 +122,7 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 
 ## cven5837-ss22.github.io/website/ `r emo::ji("bookmark")`
 
-# RStudio Cloud
+# RStudio Cloud {background-color="#0F4C81"}
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.001.png"}
 
@@ -148,6 +148,32 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 [TODO: Add setup screenshot]
 
 # Data Science Lifecycle
+
+## Think, Pair, Share
+
+:::{.callout-note}
+
+## Question 
+
+1. What is your mental model of the Data Science Lifecycle?
+:::
+
+- **Think** for 2 minutes
+- **Pair** with your neighbour for 4 minutes
+- **Share** your answer with the class
+
+
+```{r, echo = FALSE}
+
+countdown(
+  minutes = 2, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
 
 ## Deep End
 
@@ -345,7 +371,7 @@ gapminder_yr_2007 <- filter(.data = gapminder,
 #| echo: true
 library(dplyr)
 
-gapminder_yr_2007 <- gapminder %>% 
+gapminder_yr_2007 <- gapminder |> 
   filter(year == 2007) 
 ```
 
@@ -354,7 +380,7 @@ gapminder_yr_2007 <- gapminder %>%
 - Arguments following: `year == 2007` **What do do with the data**
 - Object: `gapminder_yr_2007`
 - Assignment operator: `<-`
-- Pipe operator: `%<%`
+- Pipe operator: `|>`
 
 ## Rules
 
@@ -370,17 +396,42 @@ Rules of `dplyr` functions:
 :::
 
 
+# Programming Exercise
+
+[TODO: Write up exercise]
+
+# Course information
+
+## Weekly Structure
+
+|          |                                           |
+|----------|-------------------------------------------|
+| **Monday**   | Homework assignment is due                |
+| **Tuesday**  | Lecture                                   |
+| **Wednesday** | Feedback (grading) on assignment |
+| **Thursday** | Student hours on Zoom                     |
+| **Friday**   | Learning reflections are due              |
 
 
-## Screen setup
+## Grading
+
+## Homework assignments
+
+## Learning reflections
+
+# Homework assignment - Week 1
+
+## Homework assignment - Week 1
+
+- Due Monday, July 11th 
 
 
+# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
+## 
 
-# Quarto
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+Access slides as [PDF on GitHub](https://rbtl-fs22.github.io/website/slides/pt2-d15-data-communication/pt2-d15-data-communication.pdf)
 
-# Data Organisation in Spreadsheets
-
-
-
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 

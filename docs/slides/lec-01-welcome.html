@@ -378,6 +378,8 @@
       margin-right: 0; 
     }
   </style>
+  <link href="../site_libs/countdown-0.3.5/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.3.5/countdown.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -390,7 +392,7 @@
 </section>
 
 <section>
-<section id="welcome" class="title-slide slide level1 center">
+<section id="welcome" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Welcome! 👋</h1>
 
 </section>
@@ -506,7 +508,7 @@
 <h2>cven5837-ss22.github.io/website/ 🔖</h2>
 </section></section>
 <section>
-<section id="rstudio-cloud" class="title-slide slide level1 center">
+<section id="rstudio-cloud" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>RStudio Cloud</h1>
 
 </section>
@@ -546,6 +548,36 @@
 <section id="data-science-lifecycle" class="title-slide slide level1 center">
 <h1>Data Science Lifecycle</h1>
 
+</section>
+<section id="think-pair-share" class="slide level2">
+<h2>Think, Pair, Share</h2>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Question</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li>What is your mental model of the Data Science Lifecycle?</li>
+</ol>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Think</strong> for 2 minutes</li>
+<li><strong>Pair</strong> with your neighbour for 4 minutes</li>
+<li><strong>Share</strong> your answer with the class</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_62c30156" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
 </section>
 <section id="deep-end" class="slide level2">
 <h2>Deep End</h2>
@@ -804,7 +836,7 @@
 <div class="cell">
 <div class="sourceCode" id="cb5" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a></span>
-<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>gapminder_yr_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>gapminder_yr_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
 <span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
@@ -813,7 +845,7 @@
 <li>Arguments following: <code>year == 2007</code> <strong>What do do with the data</strong></li>
 <li>Object: <code>gapminder_yr_2007</code></li>
 <li>Assignment operator: <code>&lt;-</code></li>
-<li>Pipe operator: <code>%&lt;%</code></li>
+<li>Pipe operator: <code>|&gt;</code></li>
 </ul>
 </section>
 <section id="rules" class="slide level2">
@@ -828,23 +860,79 @@
 <li class="fragment">Don’t modify in place</li>
 </ul>
 </div>
-</section>
-<section id="screen-setup-2" class="slide level2">
-<h2>Screen setup</h2>
 </section></section>
-<section id="quarto" class="title-slide slide level1 center">
-<h1>Quarto</h1>
-
+<section id="programming-exercise" class="title-slide slide level1 center">
+<h1>Programming Exercise</h1>
+<p>[TODO: Write up exercise]</p>
 </section>
 
-<section id="data-organisation-in-spreadsheets" class="title-slide slide level1 center">
-<h1>Data Organisation in Spreadsheets</h1>
+<section>
+<section id="course-information" class="title-slide slide level1 center">
+<h1>Course information</h1>
+
+</section>
+<section id="weekly-structure" class="slide level2">
+<h2>Weekly Structure</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td><strong>Monday</strong></td>
+<td>Homework assignment is due</td>
+</tr>
+<tr class="even">
+<td><strong>Tuesday</strong></td>
+<td>Lecture</td>
+</tr>
+<tr class="odd">
+<td><strong>Wednesday</strong></td>
+<td>Feedback (grading) on assignment</td>
+</tr>
+<tr class="even">
+<td><strong>Thursday</strong></td>
+<td>Student hours on Zoom</td>
+</tr>
+<tr class="odd">
+<td><strong>Friday</strong></td>
+<td>Learning reflections are due</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="grading" class="slide level2">
+<h2>Grading</h2>
+</section>
+<section id="homework-assignments" class="slide level2">
+<h2>Homework assignments</h2>
+</section>
+<section id="learning-reflections" class="slide level2">
+<h2>Learning reflections</h2>
+</section></section>
+<section>
+<section id="homework-assignment---week-1" class="title-slide slide level1 center">
+<h1>Homework assignment - Week 1</h1>
+
+</section>
+<section id="homework-assignment---week-1-1" class="slide level2">
+<h2>Homework assignment - Week 1</h2>
+<ul>
+<li>Due Monday, July 11th</li>
+</ul>
+</section></section>
+<section>
+<section id="thanks" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Thanks! 🌻</h1>
+
+</section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+<p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://rbtl-fs22.github.io/website/slides/pt2-d15-data-communication/pt2-d15-data-communication.pdf">PDF on GitHub</a></p>
+<p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 
 <img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>https://cven5837-ss22.github.io/website/</p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
