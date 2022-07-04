@@ -44,15 +44,22 @@ library(magrittr)
 :::
 :::
 
-## Who are you?
-
-[TODO]
-
 ## Learning Goals (for the course)
 
 - Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
-
 - Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
+
+## Who are you?
+
+1. Pick one of the items that you see here
+2. Use 2 minutes to think abut the task below
+
+:::{.callout-note}
+
+## Task
+
+1. What does the item have to do with the reason for you being here?
+:::
 
 ## Topics
 
