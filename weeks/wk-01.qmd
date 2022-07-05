@@ -40,7 +40,7 @@ Complete the homework programming assignment that is in your project folder for 
 
 `r emo::ji("book")` Read [R for Data Science - Section 2 - Introduction](https://r4ds.had.co.nz/explore-intro.html)  
 
-`r emo::ji("book")` Read [R for Data Science - Section 2 - Introduction](https://r4ds.had.co.nz/workflow-basics.html)  
+`r emo::ji("book")` Read [R for Data Science - Section 4 - Workflow basics](https://r4ds.had.co.nz/workflow-basics.html)  
 
 ## Learning reflection
 
