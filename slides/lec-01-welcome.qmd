@@ -49,17 +49,19 @@ library(magrittr)
 - Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
 - Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
 
-## Who are you?
+## Why are you here?
 
-1. Pick one of the items that you see here
-2. Use 2 minutes to think abut the task below
+
+![](img/lec-01/items-slide/items-slide.001.png)
+
 
 :::{.callout-note}
 
-## Task
+## Pick an item
 
-1. What does the item have to do with the reason for you being here?
+What does the item you have picked have to do with the reason for you being here?
 :::
+
 
 ## Topics
 
@@ -88,7 +90,6 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 1. `r lobj1[2]`
 1. `r lobj1[3]`
 1. `r lobj1[4]`
-1. `r lobj1[5]`
 :::
 
 ##
@@ -116,10 +117,6 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 - The other person (the navigator) offers comments and suggestions
 - Roles get switched 
 
-## Taking Notes Together
-
-- Questions in shared online document: https://docs.google.com/document/d/1ecXtqlO4qrq1Up1K_cs7hLhsHDjacbKi5mrE47WdC8Q/edit
-
 ## Platforms and Tools
 
 - R
@@ -127,7 +124,7 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 - tidyverse R Packages
 - Quarto publishing system
 
-## cven5837-ss22.github.io/website/ `r emo::ji("bookmark")`
+## [cven5837-ss22.github.io/website/](https://cven5837-ss22.github.io/website/) `r emo::ji("bookmark")`
 
 # RStudio Cloud {background-color="#0F4C81"}
 
@@ -147,14 +144,40 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 
 ## Screen setup
 
-- Who uses a laptop and a second external screen? 
+- Who uses a second external screen? 
 - "Yes" in the Zoom Chat
 
-## Screen setup
+# Live Coding Exercise {background-color="#0F4C81"}
 
-[TODO: Add setup screenshot]
+## live-01a-setup - RStudio Cloud Setup
 
-# Data Science Lifecycle
+1. Head over to rstudio.cloud
+2. Create a free account if you do not have one yet
+3. Open the link that is posted to the Zoom chat
+4. Accept the invitation to join the cven5837-ss22 workspace
+5. Post "ready" to the Zoom chat when you are done
+
+## Break
+
+![](img/lec-01/coffee-break.jpg)
+
+```{r}
+
+countdown(
+  minutes = 10, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+
+# Data Science Lifecycle {background-color="#0F4C81"}
 
 ## Think, Pair, Share
 
@@ -231,10 +254,10 @@ Add notes
 1. Once your data is tidy, a common first step is to transform it.
 
 2. This includes 
-  - narrowing in on what interests you (like all people without toilets in one district, or all data from last year)
-  - creating new variables from existing (like toilet density, as in number of people per toilet) 
-  - calculating summary statistics (like counts or the mean)
-  
+- narrowing in on what interests you (like all people without toilets in one district, or all data from last year)
+- creating new variables from existing (like toilet density, as in number of people per toilet) 
+- calculating summary statistics (like counts or the mean)
+
 Together, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!
 
 :::
@@ -276,9 +299,34 @@ Together, tidying and transforming are called wrangling, because getting your da
 
 :::
 
-# Live Coding
+# Live Coding Exercise {background-color="#0F4C81"}
 
-## [TODO: Write up instructions]
+## live-01b-data-science-lifecycle - Data Science Lifecycle
+
+1. Head over to rstudio.cloud
+2. Open the workspace for the course (cven5837-ss22)
+3. Open "Projects"
+4. Open the "course-materials" project
+5. Follow along with me
+
+## Break
+
+![](img/lec-01/coffee-break.jpg)
+
+```{r}
+
+countdown(
+  minutes = 5, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
 
 # R {background-color="#0F4C81"}
 
@@ -362,7 +410,7 @@ filter(.data = gapminder,
 library(dplyr)
 
 gapminder_yr_2007 <- filter(.data = gapminder, 
-       year == 2007)
+                            year == 2007)
 ```
 
 - Function: `filter()`
@@ -402,36 +450,52 @@ Rules of `dplyr` functions:
 
 :::
 
-
-# Programming Exercise
-
-[TODO: Write up exercise]
-
-# Course information
+# Course information {background-color="#0F4C81"}
 
 ## Weekly Structure
 
 |          |                                           |
 |----------|-------------------------------------------|
-| **Monday**   | Homework assignment is due                |
+| **Monday**   |  Learning reflections are due              |
 | **Tuesday**  | Lecture                                   |
 | **Wednesday** | Feedback (grading) on assignment |
-| **Thursday** | Student hours on Zoom                     |
-| **Friday**   | Learning reflections are due              |
-
-
-## Grading
+| **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
+| **Friday**   | Homework assignment is due             |
 
 ## Homework assignments
 
+- Weekly programming assignments
+- 75% of the total grade
+
 ## Learning reflections
 
-# Homework assignment - Week 1
+- Reflections on the different class elements (lecture, homework assignment, readings)
+- minimum 200 words
+- 25% of the total grade
 
-## Homework assignment - Week 1
+## Grading {.smaller .scrollable}
 
-- Due Monday, July 11th 
+```{r}
 
+readr::read_csv(here::here("data/tab-03_grading-scheme.csv")) |>
+  knitr::kable()
+
+```
+
+## Late work policy
+
+- up to 2 working days after deadline (25% penalty for each day)
+  - Tuesday for homework assignments (-50%)
+  - Wednesday for learning reflections (-50%)
+- work handed in more than two working days after due date with be graded 0%
+
+# Homework week 1 {background-color="#0F4C81"}
+
+## Homework due dates
+
+- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-01.html)
+- Homework assignment due: Friday, 8th July
+- Learning reflection due: Monday, 11th July
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 

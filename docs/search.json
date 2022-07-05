@@ -11,7 +11,7 @@
     "href": "weeks/wk-01.html",
     "title": "Week 1",
     "section": "",
-    "text": "Learners can navigate the platforms that are used to for the course\nLearners can render a file on RStudio Cloud in PDF format\nLearners can list the six elements of the data science lifecycle\nLearners can paraphrase how a file written in a markup language like markdown (.md) differs from a file written in a proprietary file format like .docx\nLearners can identify four components of an Quarto file (YAML, code chunk, R code, markdown)"
+    "text": "Learners can navigate the platforms that are used to for the course\nLearners can render a file on RStudio Cloud in PDF format\nLearners can list the six elements of the data science lifecycle\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)"
   },
   {
     "objectID": "weeks/wk-01.html#slides",
@@ -21,25 +21,25 @@
     "text": "Slides\n🖥 Lecture 1 - Welcome!"
   },
   {
-    "objectID": "weeks/wk-01.html#readings",
-    "href": "weeks/wk-01.html#readings",
-    "title": "Week 1",
-    "section": "Readings",
-    "text": "Readings"
-  },
-  {
     "objectID": "weeks/wk-01.html#homework-assignment",
     "href": "weeks/wk-01.html#homework-assignment",
     "title": "Week 1",
     "section": "Homework assignment",
-    "text": "Homework assignment"
+    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 1 on RStudio Cloud (hw-01-data-science-lifecycle.qmd)."
+  },
+  {
+    "objectID": "weeks/wk-01.html#readings",
+    "href": "weeks/wk-01.html#readings",
+    "title": "Week 1",
+    "section": "Readings",
+    "text": "Readings\n📖 Read the Course Overview\n📖 Read R for Data Science - Section 2 - Introduction\n📖 Read R for Data Science - Section 2 - Introduction"
   },
   {
     "objectID": "weeks/wk-01.html#learning-reflection",
     "href": "weeks/wk-01.html#learning-reflection",
     "title": "Week 1",
     "section": "Learning reflection",
-    "text": "Learning reflection"
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 1 on RStudio Cloud (learning-01.qmd)."
   },
   {
     "objectID": "weeks/wk-00-template.html#slides",
@@ -72,9 +72,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "CVEN 5837 - Summer 2022",
+    "title": "Course Overview",
     "section": "",
-    "text": "Course Information\nThis course provides students with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves and others to build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nOverview of qualitative and quantitative research methods and tools\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system\n\n\n\nLearning Goals\n\nBe familiar with the most commonly used qualitative and quantitative data collection methods and tools.\nBe able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.\n\n\n\nTextbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings will be provided through Canvas.\n\n\nCourse Calendar\n\n\n\n\n\n\n\n\nweek\nday\ntopic\n\n\n\n\n1\nJuly 5\nWelcome! & Data Science Life-cycle\n\n\n2\nJuly 12\nExploratory data analysis using visualization & Data organization in spreadsheets\n\n\n3\nJuly 19\nData transformation and descriptive statistics\n\n\n4\nJuly 26\nConcept of tidy data and data tidying\n\n\n5\nAugust 2\nData communication using Quarto\n\n\n\n\n\nWeekly Structure\n\n\n\nMonday\nHomework assignment is due\n\n\nTuesday\nLecture\n\n\nWednesday\nFeedback (grading) on assignment\n\n\nThursday\nStudent hours on Zoom\n\n\nFriday\nLearning reflections are due\n\n\n\n\n\nAssignments\nHomework assignments: Each week will have at least one homework assignment. These assignments are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through Canvas. Homework assignments are graded. The scoring will be presented on Canvas.\nReadings/Learning reflections: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 100 word reflections on the material that they have learned. These reflections are graded. Scoring will be presented on Canvas.\n\n\nAttendance\nWe hope you can participate in all classes. Class participation is an essential component for successful completion of this course. If you have a valid reason to miss a class, we expect you to inform us before the beginning of the class.\n\n\nGrading scheme\nYour overall course grade will be comprised of the following components, and their weights:\n\nHomework assignments: 75 percent\nLearning reflections: 25 percent\n\nGrades will be recorded in Canvas throughout the semester. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their semester score rounded to the nearest single decimal place:\n\n\nLate work, extensions, and special circumstances\nDue dates are set and all work is due on the stated date. This helps students to keep pace through the course and allow staff to return marks and feedback timely. Submission on the due date might not always be possible when something gets in the way. We drop the lowest score for each of the assignments or learning reflections. That means you can miss one assignment or learning reflection and still achieve maximum score.\nLate work policy\nLate work will be accepted up to 2 working days after the deadline with 25% penalty for each day. That is Wednesday after deadline for the homework assignments and Tuesday after deadline for the learning reflections. Work that is handed in more than two working days after the due date will be graded with 0 percent unless a documented reason for special circumstances is provided.\nSpecial circumstances\nIf you have a documented reason for why you are unable to to complete an assignment in the course, the reason will be assessed at the end of the course by the course committee.\n\n\nClassroom behavior\nBoth students and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote or online. Those who fail to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, political affiliation or political philosophy. For more information, see the policies on classroom behavior and the Student Conduct & Conflict Resolution policies.\n\n\nRequirements for COVID-19\nAs a matter of public health and safety, all members of the CU Boulder community and all visitors to campus must follow university, department and building requirements and all public health orders in place to reduce the risk of spreading infectious disease. CU Boulder currently requires COVID-19 vaccination and boosters for all faculty, staff and students. Students, faculty and staff must upload proof of vaccination and boosters or file for an exemption based on medical, ethical or moral grounds through the MyCUHealth portal.\nThe CU Boulder campus is currently mask-optional. However, if public health conditions change and masks are again required in classrooms, students who fail to adhere to masking requirements will be asked to leave class, and students who do not leave class when asked or who refuse to comply with these requirements will be referred to Student Conduct and Conflict Resolution. For more information, see the policy on classroom behavior and the Student Code of Conduct. If you require accommodation because a disability prevents you from fulfilling these safety measures, please follow the steps in the “Accommodation for Disabilities” statement on this syllabus.\nIf you feel ill and think you might have COVID-19, if you have tested positive for COVID-19, or if you are unvaccinated or partially vaccinated and have been in close contact with someone who has COVID-19, you should stay home and follow the further guidance of the [Public Health Office])(https://www.colorado.edu/health/public-health/quarantine-and-isolation) (contacttracing@colorado.edu). If you are fully vaccinated and have been in close contact with someone who has COVID-19, you do not need to stay home; rather, you should self-monitor for symptoms and follow the further guidance of the Public Health Office (contacttracing@colorado.edu). If you have a valid reason to miss a class, we expect you to inform us before the beginning of the class.\n\n\nAccommodation for disabilities\nIf you qualify for accommodations because of a disability, please submit your accommodation letter from Disability Services to your faculty member in a timely manner so that your needs can be addressed. Disability Services determines accommodations based on documented disabilities in the academic environment. Information on requesting accommodations is located on the Disability Services website. Contact Disability Services at 303-492-8671 or dsinfo@colorado.edu for further assistance. If you have a temporary medical condition, see Temporary Medical Conditions on the Disability Services website.\n\n\nPreferred student names and pronouns\nCU Boulder recognizes that students’ legal information doesn’t always align with how they identify. Students may update their preferred names and pronouns via the student portal; those preferred names and pronouns are listed on instructors’ class rosters. In the absence of such updates, the name that appears on the class roster is the student’s legal name.\n\n\nHonor code\nAll students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code academic integrity policy. Violations of the Honor Code may include, but are not limited to: plagiarism, cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. All incidents of academic misconduct will be reported to the Honor Code (honor@colorado.edu); 303-492-5550). Students found responsible for violating the academic integrity policy will be subject to nonacademic sanctions from the Honor Code as well as academic sanctions from the faculty member. Additional information regarding the Honor Code academic integrity policy can be found on the Honor Code website.\n\n\nSexual misconduct, discrimintation, harassment and/or related retaliation\nCU Boulder is committed to fostering an inclusive and welcoming learning, working, and living environment. The university will not tolerate acts of sexual misconduct (harassment, exploitation, and assault), intimate partner violence (dating or domestic violence), stalking, or protected-class discrimination or harassment by or against members of our community. Individuals who believe they have been subject to misconduct or retaliatory actions for reporting a concern should contact the Office of Institutional Equity and Compliance (OIEC) at 303-492-2127 or email cureport@colorado.edu. Information about university policies, reporting options, and the support resources can be found on the OIEC website.\nPlease know that faculty and graduate instructors have a responsibility to inform OIEC when they are made aware of incidents of sexual misconduct, dating and domestic violence, stalking, discrimination, harassment and/or related retaliation, to ensure that individuals impacted receive information about their rights, support resources, and reporting options. To learn more about reporting and support options for a variety of concerns, visit Don’t Ignore It.\n\n\nReligious holiday\nCampus policy regarding religious observances requires that faculty make every effort to deal reasonably and fairly with all students who, because of religious obligations, have conflicts with scheduled exams, assignments or required attendance. See the campus policy regarding religious observances for full details."
+    "text": "Course Information\nThis course provides students with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves and others to build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nOverview of qualitative and quantitative research methods and tools\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system\n\n\n\nLearning Goals\n\nBe familiar with the most commonly used qualitative and quantitative data collection methods and tools.\nBe able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.\n\n\n\nTextbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings will be provided through Canvas.\n\n\nCourse Calendar\n\n\n\n\n\n\n\n\nweek\nday\ntopic\n\n\n\n\n1\nJuly 5\nWelcome! & Data Science Life-cycle\n\n\n2\nJuly 12\nExploratory data analysis using visualization & Data organization in spreadsheets\n\n\n3\nJuly 19\nData transformation and descriptive statistics\n\n\n4\nJuly 26\nConcept of tidy data and data tidying\n\n\n5\nAugust 2\nData communication using Quarto\n\n\n\n\n\nWeekly Structure\n\n\n\nMonday\nLearning reflections are due\n\n\nTuesday\nLecture\n\n\nWednesday\nFeedback (grading) on assignment\n\n\nThursday\nStudent hours on Zoom (10 am to 12 pm CEST)\n\n\nFriday\nHomework assignment is due\n\n\n\n\n\nAssignments\nHomework assignments: Each week will have at least one homework assignment. These assignments are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work as a PDF through Canvas (or by email). Homework assignments are graded. The scoring will be presented on Canvas.\nReadings/Learning reflections: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 200 word reflections on the material that they have learned. These reflections are delivered as Quarto documents and graded. Students are required to submit their work as a PDF through Canvas (or by email). Scoring will be presented on Canvas.\n\n\nAttendance\nWe hope you can participate in all classes. Class participation is an essential component for successful completion of this course. If you have a valid reason to miss a class, we expect you to inform us before the beginning of the class.\n\n\nGrading scheme\nYour overall course grade will be comprised of the following components, and their weights:\n\nHomework assignments: 75 percent\nLearning reflections: 25 percent\n\nGrades will be recorded in Canvas throughout the semester. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their semester score rounded to the nearest single decimal place:\n\n\n\nConversion from percent to grades.\n \n  \n    grade \n    percent \n  \n \n\n  \n    A+ \n    97 \n  \n  \n    A+ \n    93 \n  \n  \n    A- \n    90 \n  \n  \n    B+ \n    87 \n  \n  \n    B \n    83 \n  \n  \n    B- \n    80 \n  \n  \n    C+ \n    77 \n  \n  \n    C \n    73 \n  \n  \n    C- \n    70 \n  \n  \n    D+ \n    67 \n  \n  \n    D \n    63 \n  \n  \n    D- \n    60 \n  \n  \n    F \n    0 \n  \n\n\n\n\n\n\n\nLate work, extensions, and special circumstances\nDue dates are set and all work is due on the stated date. This helps students to keep pace through the course and allow staff to return marks and feedback timely. Submission on the due date might not always be possible when something gets in the way. We drop the lowest score for each of the assignments or learning reflections. That means you can miss one assignment or learning reflection and still achieve maximum score.\nLate work policy\nLate work will be accepted up to 2 working days after the deadline with 25% penalty for each day. That is Tuesday after deadline for the homework assignments and Wednesay after deadline for the learning reflections. Work that is handed in more than two working days after the due date will be graded with 0 percent unless a documented reason for special circumstances is provided.\nSpecial circumstances\nIf you have a documented reason for why you are unable to to complete an assignment in the course, the reason will be assessed at the end of the course by the course committee.\n\n\nClassroom behavior\nBoth students and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote or online. Those who fail to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, political affiliation or political philosophy. For more information, see the policies on classroom behavior and the Student Conduct & Conflict Resolution policies.\n\n\nRequirements for COVID-19\nAs a matter of public health and safety, all members of the CU Boulder community and all visitors to campus must follow university, department and building requirements and all public health orders in place to reduce the risk of spreading infectious disease. CU Boulder currently requires COVID-19 vaccination and boosters for all faculty, staff and students. Students, faculty and staff must upload proof of vaccination and boosters or file for an exemption based on medical, ethical or moral grounds through the MyCUHealth portal.\nThe CU Boulder campus is currently mask-optional. However, if public health conditions change and masks are again required in classrooms, students who fail to adhere to masking requirements will be asked to leave class, and students who do not leave class when asked or who refuse to comply with these requirements will be referred to Student Conduct and Conflict Resolution. For more information, see the policy on classroom behavior and the Student Code of Conduct. If you require accommodation because a disability prevents you from fulfilling these safety measures, please follow the steps in the “Accommodation for Disabilities” statement on this syllabus.\nIf you feel ill and think you might have COVID-19, if you have tested positive for COVID-19, or if you are unvaccinated or partially vaccinated and have been in close contact with someone who has COVID-19, you should stay home and follow the further guidance of the [Public Health Office])(https://www.colorado.edu/health/public-health/quarantine-and-isolation) (contacttracing@colorado.edu). If you are fully vaccinated and have been in close contact with someone who has COVID-19, you do not need to stay home; rather, you should self-monitor for symptoms and follow the further guidance of the Public Health Office (contacttracing@colorado.edu). If you have a valid reason to miss a class, we expect you to inform us before the beginning of the class.\n\n\nAccommodation for disabilities\nIf you qualify for accommodations because of a disability, please submit your accommodation letter from Disability Services to your faculty member in a timely manner so that your needs can be addressed. Disability Services determines accommodations based on documented disabilities in the academic environment. Information on requesting accommodations is located on the Disability Services website. Contact Disability Services at 303-492-8671 or dsinfo@colorado.edu for further assistance. If you have a temporary medical condition, see Temporary Medical Conditions on the Disability Services website.\n\n\nPreferred student names and pronouns\nCU Boulder recognizes that students’ legal information doesn’t always align with how they identify. Students may update their preferred names and pronouns via the student portal; those preferred names and pronouns are listed on instructors’ class rosters. In the absence of such updates, the name that appears on the class roster is the student’s legal name.\n\n\nHonor code\nAll students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code academic integrity policy. Violations of the Honor Code may include, but are not limited to: plagiarism, cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. All incidents of academic misconduct will be reported to the Honor Code (honor@colorado.edu); 303-492-5550). Students found responsible for violating the academic integrity policy will be subject to nonacademic sanctions from the Honor Code as well as academic sanctions from the faculty member. Additional information regarding the Honor Code academic integrity policy can be found on the Honor Code website.\n\n\nSexual misconduct, discrimintation, harassment and/or related retaliation\nCU Boulder is committed to fostering an inclusive and welcoming learning, working, and living environment. The university will not tolerate acts of sexual misconduct (harassment, exploitation, and assault), intimate partner violence (dating or domestic violence), stalking, or protected-class discrimination or harassment by or against members of our community. Individuals who believe they have been subject to misconduct or retaliatory actions for reporting a concern should contact the Office of Institutional Equity and Compliance (OIEC) at 303-492-2127 or email cureport@colorado.edu. Information about university policies, reporting options, and the support resources can be found on the OIEC website.\nPlease know that faculty and graduate instructors have a responsibility to inform OIEC when they are made aware of incidents of sexual misconduct, dating and domestic violence, stalking, discrimination, harassment and/or related retaliation, to ensure that individuals impacted receive information about their rights, support resources, and reporting options. To learn more about reporting and support options for a variety of concerns, visit Don’t Ignore It.\n\n\nReligious holiday\nCampus policy regarding religious observances requires that faculty make every effort to deal reasonably and fairly with all students who, because of religious obligations, have conflicts with scheduled exams, assignments or required attendance. See the campus policy regarding religious observances for full details."
   },
   {
     "objectID": "slides/lec-01-welcome.html#meet-the-lecturer",
@@ -84,18 +84,18 @@
     "text": "Meet the lecturer\n\n\nLars Schöbitz (he/him)\n\n\n\n\n\n\n\nEnvironmental Engineer\n\nOpen Science Specialist at ETH Zurich\nIndependent Instructor for Data Science with R\n\nTwitter: @larnsce"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#who-are-you",
-    "href": "slides/lec-01-welcome.html#who-are-you",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Who are you?",
-    "text": "Who are you?\n\nPick one of the items that you see here\nUse 2 minutes to think abut the task below\n\n\n\n\n\n\n\nTask\n\n\n\nWhat does the item have to do with the reason for you being here?"
-  },
-  {
     "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
     "href": "slides/lec-01-welcome.html#learning-goals-for-the-course",
     "title": "Welcome to Data Analytics for Development",
     "section": "Learning Goals (for the course)",
     "text": "Learning Goals (for the course)\n\nBe familiar with the most commonly used qualitative and quantitative data collection methods and tools.\nBe able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#who-are-you",
+    "href": "slides/lec-01-welcome.html#who-are-you",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Who are you?",
+    "text": "Who are you?\n\nPick one of the items that you see here\nUse 2 minutes to think abut the task below\n\n\n\n\n\n\n\nTask\n\n\n\nWhat does the item have to do with the reason for you being here?\n\n\n\n\n\n\nImages from: https://openclipart.org/"
   },
   {
     "objectID": "slides/lec-01-welcome.html#topics",
@@ -109,7 +109,7 @@
     "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
     "title": "Welcome to Data Analytics for Development",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\n\nLearners can navigate the platforms that are used to for the course\nLearners can render a file on RStudio Cloud in PDF format\nLearners can list the six elements of the data science lifecycle\nLearners can paraphrase how a file written in a markup language like markdown (.md) differs from a file written in a proprietary file format like .docx\nLearners can identify four components of an Quarto file (YAML, code chunk, R code, markdown)"
+    "text": "Learning Objectives (for this week)\n\n\n\n\n\nLearners can navigate the platforms that are used to for the course\nLearners can render a file on RStudio Cloud in PDF format\nLearners can list the six elements of the data science lifecycle\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
@@ -117,34 +117,6 @@
     "title": "Welcome to Data Analytics for Development",
     "section": "",
     "text": "Artwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#tools",
-    "href": "slides/lec-01-welcome.html#tools",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Tools",
-    "text": "Tools\n\nR\nRStudio (Cloud)\ntidyverse R Packages\nQuarto publihing system\n\n\n\n\nhttps://cven5837-ss22.github.io/website/"
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
-    "href": "slides/lec-01-welcome.html#platforms-and-tools",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Platforms and Tools",
-    "text": "Platforms and Tools\n\nR\nRStudio (Cloud)\ntidyverse R Packages\nQuarto publishing system"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#r-rstudio-ide",
-    "href": "slides/lec-01-welcome.html#r-rstudio-ide",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "R & RStudio IDE",
-    "text": "R & RStudio IDE\n[TODO: Add screenshots]"
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-coding-exercises",
@@ -161,11 +133,11 @@
     "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#taking-notes-together",
-    "href": "slides/lec-01-welcome.html#taking-notes-together",
+    "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
+    "href": "slides/lec-01-welcome.html#platforms-and-tools",
     "title": "Welcome to Data Analytics for Development",
-    "section": "Taking Notes Together",
-    "text": "Taking Notes Together\n\nQuestions in shared online document: https://docs.google.com/document/d/1ecXtqlO4qrq1Up1K_cs7hLhsHDjacbKi5mrE47WdC8Q/edit"
+    "section": "Platforms and Tools",
+    "text": "Platforms and Tools\n\nR\nRStudio (Cloud)\ntidyverse R Packages\nQuarto publishing system"
   },
   {
     "objectID": "slides/lec-01-welcome.html#cven5837-ss22.github.iowebsite",
@@ -182,11 +154,53 @@
     "text": "-"
   },
   {
+    "objectID": "slides/lec-01-welcome.html#section-2",
+    "href": "slides/lec-01-welcome.html#section-2",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-3",
+    "href": "slides/lec-01-welcome.html#section-3",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-4",
+    "href": "slides/lec-01-welcome.html#section-4",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-5",
+    "href": "slides/lec-01-welcome.html#section-5",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-6",
+    "href": "slides/lec-01-welcome.html#section-6",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-7",
+    "href": "slides/lec-01-welcome.html#section-7",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "-",
+    "text": "-"
+  },
+  {
     "objectID": "slides/lec-01-welcome.html#screen-setup",
     "href": "slides/lec-01-welcome.html#screen-setup",
     "title": "Welcome to Data Analytics for Development",
     "section": "Screen setup",
-    "text": "Screen setup\n\nWho uses a laptop and a second external screen?\n“Yes” in the Zoom Chat"
+    "text": "Screen setup\n\nWho uses a second external screen?\n“Yes” in the Zoom Chat"
   },
   {
     "objectID": "slides/lec-01-welcome.html#screen-setup-1",
@@ -194,6 +208,27 @@
     "title": "Welcome to Data Analytics for Development",
     "section": "Screen setup",
     "text": "Screen setup\n[TODO: Add setup screenshot]"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#live-01a-setup---rstudio-cloud-setup",
+    "href": "slides/lec-01-welcome.html#live-01a-setup---rstudio-cloud-setup",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "live-01a-setup - RStudio Cloud Setup",
+    "text": "live-01a-setup - RStudio Cloud Setup\n\nHead over to rstudio.cloud\nCreate a free account if you do not have one yet\nOpen the link that is posted to the Zoom chat\nAccept the invitation to join the cven5837-ss22 workspace\nPost “ready” to the Zoom chat when you are done"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#break",
+    "href": "slides/lec-01-welcome.html#break",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Break",
+    "text": "Break\n\n\n\n\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#think-pair-share",
+    "href": "slides/lec-01-welcome.html#think-pair-share",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Think, Pair, Share",
+    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestion\n\n\n\nWhat is your mental model of the Data Science Lifecycle?\n\n\n\n\n\nThink for 2 minutes\nPair with your neighbour for 4 minutes\nShare your answer with the class\n\n\n\n\n02:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#deep-end",
@@ -252,6 +287,20 @@
     "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
   },
   {
+    "objectID": "slides/lec-01-welcome.html#live-01b-data-science-lifecycle---data-science-lifecycle",
+    "href": "slides/lec-01-welcome.html#live-01b-data-science-lifecycle---data-science-lifecycle",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "live-01b-data-science-lifecycle - Data Science Lifecycle",
+    "text": "live-01b-data-science-lifecycle - Data Science Lifecycle\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#break-1",
+    "href": "slides/lec-01-welcome.html#break-1",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Break",
+    "text": "Break\n\n\n\n\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
     "objectID": "slides/lec-01-welcome.html#packages",
     "href": "slides/lec-01-welcome.html#packages",
     "title": "Welcome to Data Analytics for Development",
@@ -270,7 +319,7 @@
     "href": "slides/lec-01-welcome.html#objects",
     "title": "Welcome to Data Analytics for Development",
     "section": "Objects",
-    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- filter(.data = gapminder, \n       year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
+    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
   },
   {
     "objectID": "slides/lec-01-welcome.html#operators",
@@ -287,116 +336,46 @@
     "text": "Rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#screen-setup-2",
-    "href": "slides/lec-01-welcome.html#screen-setup-2",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Screen setup",
-    "text": "Screen setup"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-2",
-    "href": "slides/lec-01-welcome.html#section-2",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-3",
-    "href": "slides/lec-01-welcome.html#section-3",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-4",
-    "href": "slides/lec-01-welcome.html#section-4",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-5",
-    "href": "slides/lec-01-welcome.html#section-5",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-6",
-    "href": "slides/lec-01-welcome.html#section-6",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-7",
-    "href": "slides/lec-01-welcome.html#section-7",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#todo-write-up-instructions",
-    "href": "slides/lec-01-welcome.html#todo-write-up-instructions",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "[TODO: Write up instructions]",
-    "text": "[TODO: Write up instructions]"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#rstudio-cloud",
-    "href": "slides/lec-01-welcome.html#rstudio-cloud",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "RStudio Cloud",
-    "text": "RStudio Cloud"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#think-pair-share",
-    "href": "slides/lec-01-welcome.html#think-pair-share",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Think, Pair, Share",
-    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestion\n\n\n\nWhat is your mental model of the Data Science Lifecycle?\n\n\n\n\n\nThink for 2 minutes\nPair with your neighbour for 4 minutes\nShare your answer with the class\n\n\n\n\n02:00"
-  },
-  {
     "objectID": "slides/lec-01-welcome.html#weekly-structure",
     "href": "slides/lec-01-welcome.html#weekly-structure",
     "title": "Welcome to Data Analytics for Development",
     "section": "Weekly Structure",
-    "text": "Weekly Structure\n\n\n\nMonday\nHomework assignment is due\n\n\nTuesday\nLecture\n\n\nWednesday\nFeedback (grading) on assignment\n\n\nThursday\nStudent hours on Zoom\n\n\nFriday\nLearning reflections are due"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#grading",
-    "href": "slides/lec-01-welcome.html#grading",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Grading",
-    "text": "Grading"
+    "text": "Weekly Structure\n\n\n\nMonday\nLearning reflections are due\n\n\nTuesday\nLecture\n\n\nWednesday\nFeedback (grading) on assignment\n\n\nThursday\nStudent hours on Zoom (10 am to 12 pm CEST)\n\n\nFriday\nHomework assignment is due"
   },
   {
     "objectID": "slides/lec-01-welcome.html#homework-assignments",
     "href": "slides/lec-01-welcome.html#homework-assignments",
     "title": "Welcome to Data Analytics for Development",
     "section": "Homework assignments",
-    "text": "Homework assignments"
+    "text": "Homework assignments\n\nWeekly programming assignments\n75% of the total grade"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-reflections",
     "href": "slides/lec-01-welcome.html#learning-reflections",
     "title": "Welcome to Data Analytics for Development",
     "section": "Learning reflections",
-    "text": "Learning reflections"
+    "text": "Learning reflections\n\nReflections on the different class elements (lecture, homework assignment, readings)\nminimum 200 words\n25% of the total grade"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#readings",
-    "href": "slides/lec-01-welcome.html#readings",
+    "objectID": "slides/lec-01-welcome.html#grading",
+    "href": "slides/lec-01-welcome.html#grading",
     "title": "Welcome to Data Analytics for Development",
-    "section": "Readings",
-    "text": "Readings"
+    "section": "Grading",
+    "text": "Grading\n\n\n\n\n\ngrade\npercent\n\n\n\n\nA+\n97\n\n\nA+\n93\n\n\nA-\n90\n\n\nB+\n87\n\n\nB\n83\n\n\nB-\n80\n\n\nC+\n77\n\n\nC\n73\n\n\nC-\n70\n\n\nD+\n67\n\n\nD\n63\n\n\nD-\n60\n\n\nF\n0"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#homework-assignment---week-1-1",
-    "href": "slides/lec-01-welcome.html#homework-assignment---week-1-1",
+    "objectID": "slides/lec-01-welcome.html#late-work-policy",
+    "href": "slides/lec-01-welcome.html#late-work-policy",
     "title": "Welcome to Data Analytics for Development",
-    "section": "Homework assignment - Week 1",
-    "text": "Homework assignment - Week 1\n\nDue Monday, July 11th"
+    "section": "Late work policy",
+    "text": "Late work policy\n\nup to 2 working days after deadline (25% penalty for each day)\n\nTuesday for homework assignments (-50%)\nWednesday for learning reflections (-50%)\n\nwork handed in more than two working days after due date with be graded 0%"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#homework-1",
+    "href": "slides/lec-01-welcome.html#homework-1",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Homework",
+    "text": "Homework\n\nAll material on course website"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-15",
@@ -404,5 +383,26 @@
     "title": "Welcome to Data Analytics for Development",
     "section": "",
     "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#homework-due-dates",
+    "href": "slides/lec-01-welcome.html#homework-due-dates",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 8th July\nLearning reflection due: Monday, 11th July"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#why-are-you-here",
+    "href": "slides/lec-01-welcome.html#why-are-you-here",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Why are you here?",
+    "text": "Why are you here?\n\n\n\n\n\n\n\nPick an item\n\n\nWhat does the item you have picked have to do with the reason for you being here?"
   }
 ]

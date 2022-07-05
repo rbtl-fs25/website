@@ -1,5 +1,9 @@
 ---
+title: "Course Overview"
 editor: source
+execute: 
+  echo: false
+  warning: false
 ---
 
 # CVEN 5837: Special Topics - Data Analytics for Development
@@ -46,18 +50,18 @@ We will rely entirely on open source and open access material for this course. W
 
 |          |                                           |
 |----------|-------------------------------------------|
-| Monday   | Homework assignment is due                |
-| Tuesday  | Lecture                                   |
-| Wednesday | Feedback (grading) on assignment |
-| Thursday | Student hours on Zoom                     |
-| Friday   | Learning reflections are due              |
+| **Monday**   |  Learning reflections are due              |
+| **Tuesday**  | Lecture                                   |
+| **Wednesday** | Feedback (grading) on assignment |
+| **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
+| **Friday**   | Homework assignment is due             |
 
 
 # Assignments
 
-**Homework assignments**: Each week will have at least one homework assignment. These assignments are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through Canvas. Homework assignments are graded. The scoring will be presented on Canvas.
+**Homework assignments**: Each week will have at least one homework assignment. These assignments are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work as a PDF through Canvas (or by email). Homework assignments are graded. The scoring will be presented on Canvas.
 
-**Readings/Learning reflections**: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 100 word reflections on the material that they have learned. These reflections are graded. Scoring  will be presented on Canvas. 
+**Readings/Learning reflections**: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 200 word reflections on the material that they have learned. These reflections are delivered as Quarto documents and graded. Students are required to submit their work as a PDF through Canvas (or by email). Scoring will be presented on Canvas. 
 
 # Attendance 
 
@@ -72,13 +76,22 @@ Your overall course grade will be comprised of the following components, and the
 
 Grades will be recorded in Canvas throughout the semester. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their semester score rounded to the nearest single decimal place:
 
+```{r}
+
+readr::read_csv(here::here("data/tab-03_grading-scheme.csv")) |> 
+  knitr::kable(caption = "Conversion from percent to grades.") |> 
+  kableExtra::kable_styling(full_width = F)
+
+```
+
+
 # Late work, extensions, and special circumstances
 
 Due dates are set and all work is due on the stated date. This helps students to keep pace through the course and allow staff to return marks and feedback timely. Submission on the due date might not always be possible when something gets in the way. We drop the lowest score for each of the assignments or learning reflections. That means you can miss one assignment or learning reflection and still achieve maximum score.
 
 **Late work policy**
 
-Late work will be accepted up to 2 working days after the deadline with 25% penalty for each day. That is Wednesday after deadline for the homework assignments and Tuesday after deadline for the learning reflections. Work that is handed in more than two working days after the due date will be graded with 0 percent unless a documented reason for special circumstances is provided.
+Late work will be accepted up to 2 working days after the deadline with 25% penalty for each day. That is Tuesday after deadline for the homework assignments and Wednesay after deadline for the learning reflections. Work that is handed in more than two working days after the due date will be graded with 0 percent unless a documented reason for special circumstances is provided.
 
 **Special circumstances**
 
