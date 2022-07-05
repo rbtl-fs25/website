@@ -6,6 +6,8 @@ execute:
   warning: false
 ---
 
+<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+
 # CVEN 5837: Special Topics - Data Analytics for Development
 
 Summer Online - July 5, 2022 - August 5, 2022; Tuesday 12-2:30pm MT

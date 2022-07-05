@@ -16,12 +16,13 @@ params:
     week: 1
 ---
 
+<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+
 ```{r}
 #| include: false
 library(countdown)
 library(magrittr)
 ```
-
 
 # Welcome! `r emo::ji("wave")`  {background-color="#0F4C81"}
 
