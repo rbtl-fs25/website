@@ -91,11 +91,11 @@
     "text": "Learning Goals (for the course)\n\nBe familiar with the most commonly used qualitative and quantitative data collection methods and tools.\nBe able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health."
   },
   {
-    "objectID": "slides/lec-01-welcome.html#who-are-you",
-    "href": "slides/lec-01-welcome.html#who-are-you",
+    "objectID": "slides/lec-01-welcome.html#why-are-you-here",
+    "href": "slides/lec-01-welcome.html#why-are-you-here",
     "title": "Welcome to Data Analytics for Development",
-    "section": "Who are you?",
-    "text": "Who are you?\n\nPick one of the items that you see here\nUse 2 minutes to think abut the task below\n\n\n\n\n\n\n\nTask\n\n\n\nWhat does the item have to do with the reason for you being here?\n\n\n\n\n\n\nImages from: https://openclipart.org/"
+    "section": "Why are you here?",
+    "text": "Why are you here?\n\n\n\n\n\n\n\nPick an item\n\n\nWhat does the item you have picked have to do with the reason for you being here?"
   },
   {
     "objectID": "slides/lec-01-welcome.html#topics",
@@ -201,13 +201,6 @@
     "title": "Welcome to Data Analytics for Development",
     "section": "Screen setup",
     "text": "Screen setup\n\nWho uses a second external screen?\n“Yes” in the Zoom Chat"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#screen-setup-1",
-    "href": "slides/lec-01-welcome.html#screen-setup-1",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Screen setup",
-    "text": "Screen setup\n[TODO: Add setup screenshot]"
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-01a-setup---rstudio-cloud-setup",
@@ -371,11 +364,11 @@
     "text": "Late work policy\n\nup to 2 working days after deadline (25% penalty for each day)\n\nTuesday for homework assignments (-50%)\nWednesday for learning reflections (-50%)\n\nwork handed in more than two working days after due date with be graded 0%"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#homework-1",
-    "href": "slides/lec-01-welcome.html#homework-1",
+    "objectID": "slides/lec-01-welcome.html#homework-due-dates",
+    "href": "slides/lec-01-welcome.html#homework-due-dates",
     "title": "Welcome to Data Analytics for Development",
-    "section": "Homework",
-    "text": "Homework\n\nAll material on course website"
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 8th July\nLearning reflection due: Monday, 11th July"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-15",
@@ -390,19 +383,5 @@
     "title": "Schedule",
     "section": "",
     "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#homework-due-dates",
-    "href": "slides/lec-01-welcome.html#homework-due-dates",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 8th July\nLearning reflection due: Monday, 11th July"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#why-are-you-here",
-    "href": "slides/lec-01-welcome.html#why-are-you-here",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Why are you here?",
-    "text": "Why are you here?\n\n\n\n\n\n\n\nPick an item\n\n\nWhat does the item you have picked have to do with the reason for you being here?"
   }
 ]
