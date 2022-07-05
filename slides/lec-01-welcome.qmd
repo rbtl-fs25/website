@@ -502,7 +502,7 @@ readr::read_csv(here::here("data/tab-03_grading-scheme.csv")) |>
 ## 
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://rbtl-fs22.github.io/website/slides/pt2-d15-data-communication/pt2-d15-data-communication.pdf)
+Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-01-welcome.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 

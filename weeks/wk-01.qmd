@@ -26,7 +26,9 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 
 ## Slides
 
-`r emo::ji("desktop_computer")` [Lecture 1 - Welcome!](/slides/lec-01-welcome.html)
+`r emo::ji("desktop_computer")` [Lecture 1 - Welcome! - HTML](/slides/lec-01-welcome.html) 
+
+`r emo::ji("desktop_computer")` [Lecture 1 - Welcome! - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-01-welcome.pdf)
 
 ## Homework assignment
 
@@ -34,7 +36,7 @@ Complete the homework programming assignment that is in your project folder for 
 
 ## Readings
 
-`r emo::ji("book")` Read the [Course Overview](index.html)
+`r emo::ji("book")` Read the [Course Overview](../index.html)
 
 `r emo::ji("book")` Read [R for Data Science - Section 2 - Introduction](https://r4ds.had.co.nz/explore-intro.html)  
 
