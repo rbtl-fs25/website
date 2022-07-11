@@ -25,29 +25,30 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 2. `r lobj1[2]`
 3. `r lobj1[3]`
 4. `r lobj1[4]`
+5. `r lobj1[5]`
+6. `r lobj1[6]`
 
 ## Slides
 
-`r emo::ji("desktop_computer")` [Lecture 1 - Welcome! - HTML](/slides/lec-01-welcome.html) 
+`r emo::ji("desktop_computer")` [Lecture 2 - Data visualisation - HTML](/slides/lec-02-visualisation.html) 
 
-`r emo::ji("desktop_computer")` [Lecture 1 - Welcome! - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-01-welcome.pdf)
-
-## Pre-course survey
-
-Complete this pre-course survey, which helps us understand your current knowledge and motivation for the course: https://forms.gle/7yKyJvNCoiiUQN2R8
-
-## Homework assignment
-
-Complete the homework programming assignment that is in your project folder for week 1 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (hw-01-data-science-lifecycle.qmd). 
+`r emo::ji("desktop_computer")` [Lecture 2 - Data visualisation - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-02-visualisation.pdf)
 
 ## Readings
 
-`r emo::ji("book")` Read the [Course Overview](../index.html)
+`r emo::ji("book")` Read [R for Data Science - Section 3 to 3.6 - Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)  
 
-`r emo::ji("book")` Read [R for Data Science - Section 2 - Introduction](https://r4ds.had.co.nz/explore-intro.html)  
+`r emo::ji("book")` Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)
 
-`r emo::ji("book")` Read [R for Data Science - Section 4 - Workflow basics](https://r4ds.had.co.nz/workflow-basics.html)  
+`r emo::ji("book")` Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
+
+## Homework assignment
+
+Complete the homework programming assignments that are in your project folder for week 1 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):
+
+- hw-02a-data-visualisation.qmd 
+- hw-02b-project-data.qmd
 
 ## Learning reflection
 
-Complete the learning reflection that is in your project folder for week 1 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-01.qmd).  
+Complete the learning reflection that is in your project folder for week 1 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-02.qmd).  
