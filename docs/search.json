@@ -53,7 +53,7 @@
     "href": "weeks/wk-02.html",
     "title": "Week 2",
     "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping\nLearners can compare three different geoms and their use case\nLearners can apply a theme to control font types and sizes within a plot\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset\nLearners understand the importance of documentation and metadata for (research) data management"
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping\nLearners can compare three different geoms and their use case\nLearners can apply a theme to control font types and sizes within a plot\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset"
   },
   {
     "objectID": "weeks/wk-02.html#slides",
