@@ -165,7 +165,6 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 1. `r lobj1[3]`
 1. `r lobj1[4]`
 1. `r lobj1[5]`
-1. `r lobj1[6]`
 
 # Exploratory Data Analysis with `ggplot2` {background-color="#0F4C81"}
 
