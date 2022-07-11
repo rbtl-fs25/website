@@ -128,7 +128,7 @@ ggplot(data = global_waste_data_kg_year,
 
 ::: {.column width="50%"}
 
-![](img/welcome_to_rstats_twitter.png)
+![](img/lec-02/welcome_to_rstats_twitter.png)
 
 :::
 
@@ -141,10 +141,9 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 ## Minimal reproducible example (reprex)
 
 - Needed when asking questions online
-- We will practice this in another class
 - Good support information: https://www.tidyverse.org/help/#reprex
 
-## . {background-image="img/code_hero.jpg" background-size="contain"} 
+## . {background-image="img/lec-02/code_hero.jpg" background-size="contain"} 
 
 ::: aside
 Artwork by [@allison_horst](https://www.allisonhorst.com/)
@@ -165,6 +164,8 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 1. `r lobj1[2]`
 1. `r lobj1[3]`
 1. `r lobj1[4]`
+1. `r lobj1[5]`
+1. `r lobj1[6]`
 :::
 
 # Exploratory Data Analysis with `ggplot2` {background-color="#0F4C81"}
@@ -373,13 +374,13 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ## data-to-viz.com {background-iframe="https://www.data-to-viz.com/" background-interactive="true"}
 
-
 # Data Collection Tools
 
 ## Data Collection Tools
 
 - Questionnaires for survey based data collection
 - Spreadsheets for experimental data collection
+- Sensors for near real-time data 
 
 ## Surveys 
 

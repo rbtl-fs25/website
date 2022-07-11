@@ -396,7 +396,7 @@
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\n\nExploratory data analysis using visualization & Data organization in spreadsheets\nNA\nNA\nNA"
+    "text": "Learning Objectives (for this week)\n\n\n\n\n\nExploratory data analysis using visualization & Data organization in spreadsheets\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section",
@@ -501,7 +501,7 @@
     "href": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "Minimal reproducible example (reprex)",
-    "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nWe will practice this in another class\nGood support information: https://www.tidyverse.org/help/#reprex"
+    "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nGood support information: https://www.tidyverse.org/help/#reprex"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-3",
@@ -606,7 +606,7 @@
     "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "Data Collection Tools",
-    "text": "Data Collection Tools\n\nQuestionnaires for survey based data collection\nSpreadsheets for experimental data collection"
+    "text": "Data Collection Tools\n\nQuestionnaires for survey based data collection\nSpreadsheets for experimental data collection\nSensors for near real-time data"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#surveys",
