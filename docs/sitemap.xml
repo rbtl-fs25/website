@@ -2,26 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cven5837-ss22.github.io/website/LICENSE.html</loc>
-    <lastmod>2022-07-05T11:32:07.393Z</lastmod>
+    <lastmod>2022-07-11T14:01:52.331Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/weeks/wk-01.html</loc>
-    <lastmod>2022-07-05T11:32:08.682Z</lastmod>
+    <lastmod>2022-07-11T14:01:53.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cven5837-ss22.github.io/website/weeks/wk-02.html</loc>
+    <lastmod>2022-07-11T14:01:54.788Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/weeks/wk-00-template.html</loc>
-    <lastmod>2022-07-05T11:32:08.979Z</lastmod>
+    <lastmod>2022-07-11T14:01:55.072Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/index.html</loc>
-    <lastmod>2022-07-05T11:32:10.098Z</lastmod>
+    <lastmod>2022-07-11T14:01:56.155Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cven5837-ss22.github.io/website/slides/lec-02-visualisation.html</loc>
+    <lastmod>2022-07-11T14:01:56.968Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/slides/lec-01-welcome.html</loc>
-    <lastmod>2022-07-05T11:32:10.770Z</lastmod>
+    <lastmod>2022-07-11T14:01:57.646Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/schedule.html</loc>
-    <lastmod>2022-07-05T11:32:12.004Z</lastmod>
+    <lastmod>2022-07-11T14:01:58.899Z</lastmod>
   </url>
 </urlset>
