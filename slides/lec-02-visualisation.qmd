@@ -1,5 +1,5 @@
 ---
-title: "Data Visualitation & Data Organisation in Spreadsheets"
+title: "Data Visualisation & Data Organisation in Spreadsheets"
 subtitle: "CVEN 5837 - Summer 2022"
 author: "Lars Schöbitz"
 format: 
@@ -66,8 +66,8 @@ Artwork by [@allison_horst](https://twitter.com/allison_horst)
 **What is it?**
 
 - The biggest support network for (coding) problems 
-- Can be initimidating at first
-- Upvote system 
+- Can be intimidating at first
+- Up-vote system 
 
 :::
 
@@ -120,8 +120,8 @@ ggplot(data = global_waste_data_kg_year,
 
 ::: {.column width="50%"}
 
+- Our Google Space for the course
 - RStudio Community Forum: https://community.rstudio.com/
-- Our rbtl Slack channel
 - Documentation websites: https://dplyr.tidyverse.org/
 - Twitter community: [#rstats](https://twitter.com/search?q=%23rstats&src=typd) 
 :::
@@ -400,7 +400,7 @@ Jorunal: The American Statistician, [Screenshot taken on 2022-03-23](https://www
 
 Read the paper (it's part of your homework), but you can also:
 
-- Go through the annoated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf 
+- Go through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf 
 - Watch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156
 - Read the content on a website: https://kbroman.org/dataorg/
 

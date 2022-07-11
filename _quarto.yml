@@ -28,6 +28,8 @@ website:
         contents: 
           - href: weeks/wk-01.qmd
             text: "Week 1"
+          - href: weeks/wk-02.qmd
+            text: "Week 2"
         
 format:
   html:

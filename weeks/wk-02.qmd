@@ -1,6 +1,6 @@
 ---
 title: "Week 2"
-subtitle: "Welcome! & Data Science life-cycle"
+subtitle: "Data Visualisation & Data Organisation in Spreadsheets"
 editor: source
 params:
     week: 2
