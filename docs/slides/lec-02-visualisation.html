@@ -501,16 +501,14 @@
 <div class="cell">
 
 </div>
-<div>
 <ol type="1">
-<li class="fragment">Exploratory data analysis using visualization &amp; Data organization in spreadsheets</li>
-<li class="fragment">NA</li>
-<li class="fragment">NA</li>
-<li class="fragment">NA</li>
-<li class="fragment">NA</li>
-<li class="fragment">NA</li>
+<li>Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package</li>
+<li>Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping</li>
+<li>Learners can compare three different geoms and their use case</li>
+<li>Learners can apply a theme to control font types and sizes within a plot</li>
+<li>Learners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset</li>
+<li>Learners understand the importance of documentation and metadata for (research) data management</li>
 </ol>
-</div>
 </section></section>
 <section>
 <section id="exploratory-data-analysis-with-ggplot2" class="title-slide slide level1 center" data-background-color="#0F4C81">
@@ -616,31 +614,14 @@
 <span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section>
-<section id="goal-reproduce-this-plot" class="slide level2">
-<h2>Goal: Reproduce this plot</h2>
-</section>
-<section id="section-2" class="slide level2" data-background-image="img/lec-02/plot-waste-generation-gdp.png" data-background-size="contain">
-<h2></h2>
-</section>
-<section id="break" class="slide level2">
-<h2>Break</h2>
-
-<img data-src="img/lec-01/coffee-break.jpg" class="r-stretch"><div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_62cc0365" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
-<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
-
-<aside><div>
-<p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
-</div></aside></section></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section></section>
 <section>
-<section id="live-coding-exercise" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>Live Coding Exercise</h1>
+<section id="live-coding-exercise-reproduce-this-plot" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Live Coding Exercise: Reproduce this plot</h1>
 
+</section>
+<section id="background-imageimglec-02plot-waste-generation-gdp.png-background-sizecontain" class="slide level2">
+<h2>{background-image=“img/lec-02/plot-waste-generation-gdp.png” background-size=“contain”} ^</h2>
 </section>
 <section id="live-02a-data-visualiation---rstudio-cloud-setup" class="slide level2">
 <h2>live-02a-data-visualiation - RStudio Cloud Setup</h2>
@@ -651,7 +632,21 @@
 <li>Open the “course-materials” project</li>
 <li>Follow along with me</li>
 </ol>
-</section></section>
+</section>
+<section id="break" class="slide level2">
+<h2>Break</h2>
+
+<img data-src="img/lec-01/coffee-break.jpg" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_62cc2e74" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
+</div></aside></section></section>
 <section>
 <section id="visualising-numerical-data" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Visualising numerical data</h1>
@@ -687,7 +682,7 @@
 </div>
 </div>
 </section>
-<section id="section-3" class="slide level2" data-background-image="https://d33wubrfki0l68.cloudfront.net/1e7033393a2c70dc1255c5d0f1c563e945519251/61035/img/evol-ggplot/evol-ggplot-1.gif" data-background-size="contain">
+<section id="section-2" class="slide level2" data-background-image="https://d33wubrfki0l68.cloudfront.net/1e7033393a2c70dc1255c5d0f1c563e945519251/61035/img/evol-ggplot/evol-ggplot-1.gif" data-background-size="contain">
 <h2></h2>
 
 <aside><div>
@@ -697,21 +692,21 @@
 <h2>data-to-viz.com</h2>
 </section></section>
 <section>
-<section id="data-collection-tools" class="title-slide slide level1 center">
+<section id="data-collection-tools" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Data Collection Tools</h1>
 
 </section>
 <section id="data-collection-tools-1" class="slide level2">
 <h2>Data Collection Tools</h2>
 <ul>
-<li>Questionnaires for survey based data collection</li>
-<li>Spreadsheets for experimental data collection</li>
-<li>Sensors for near real-time data</li>
+<li>Questionnaires for survey based data</li>
+<li>Spreadsheets for manual experimental/observational data</li>
+<li>Sensors for automated near real-time data</li>
 </ul>
 </section>
-<section id="surveys" class="slide level2">
-<h2>Surveys</h2>
-<p><strong>Commonly used in the sector</strong></p>
+<section id="survey-tools" class="slide level2">
+<h2>Survey tools</h2>
+<p><strong>Commonly used in the Global Engineering and Development sector</strong></p>
 <ul>
 <li>KOBO Toolbox</li>
 <li>mWater</li>
@@ -761,9 +756,41 @@
 <p>Karl Broman, GitHub repo broman/Talk_DataOrg, <a href="https://github.com/kbroman/Talk_DataOrg">Screenshot taken on 2022-03-23</a></p>
 </div></aside></section></section>
 <section>
+<section id="pair-programming-exercise" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Pair Programming Exercise</h1>
+
+</section>
+<section id="pair-programming-exercises" class="slide level2">
+<h2>Pair Programming Exercises</h2>
+<ul>
+<li>Two learners work together in a break out session</li>
+<li>One person (the driver) shares the screen and does the typing</li>
+<li>The other person (the navigator) offers comments and suggestions</li>
+<li>Roles get switched</li>
+</ul>
+</section>
+<section id="hw-02a-data-visualiation---rstudio-cloud-setup" class="slide level2">
+<h2>hw-02a-data-visualiation - RStudio Cloud Setup</h2>
+<ol type="1">
+<li>Head over to rstudio.cloud</li>
+<li>Open the workspace for the course (cven5837-ss22)</li>
+<li>Open “Projects”</li>
+<li>Open the “course-materials” project</li>
+</ol>
+</section></section>
+<section>
 <section id="homework-week-2" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Homework week 2</h1>
 
+</section>
+<section id="bring-your-own-data" class="slide level2">
+<h2>Bring your own data</h2>
+<ul>
+<li>Generate data doing a short survey or observational study<br>
+</li>
+<li>Find a data online that interests you</li>
+<li>Use a dataset that you already have available</li>
+</ul>
 </section>
 <section id="homework-due-dates" class="slide level2">
 <h2>Homework due dates</h2>
@@ -778,7 +805,7 @@
 <h1>Thanks! 🌻</h1>
 
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/cven5837-ss22/website/raw/main/slides/lec-02-visualiation.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>

@@ -396,7 +396,7 @@
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\n\nExploratory data analysis using visualization & Data organization in spreadsheets\nNA\nNA\nNA\nNA\nNA"
+    "text": "Learning Objectives (for this week)\n\n\n\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping\nLearners can compare three different geoms and their use case\nLearners can apply a theme to control font types and sizes within a plot\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset\nLearners understand the importance of documentation and metadata for (research) data management"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section",
@@ -445,7 +445,7 @@
     "href": "slides/lec-02-visualisation.html#section-2",
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-rollercoaster",
@@ -508,7 +508,7 @@
     "href": "slides/lec-02-visualisation.html#section-3",
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "",
-    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
@@ -606,7 +606,7 @@
     "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "Data Collection Tools",
-    "text": "Data Collection Tools\n\nQuestionnaires for survey based data collection\nSpreadsheets for experimental data collection\nSensors for near real-time data"
+    "text": "Data Collection Tools\n\nQuestionnaires for survey based data\nSpreadsheets for manual experimental/observational data\nSensors for automated near real-time data"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#surveys",
@@ -656,5 +656,75 @@
     "title": "Data Visualitation & Data Organisation in Spreadsheets",
     "section": "License? CC0 (!)",
     "text": "License? CC0 (!)\n\n\n(https://github.com/kbroman/Talk_DataOrg) .footnote[Screenshot taken on 2022-03-23]\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#discrete-plot",
+    "href": "slides/lec-02-visualisation.html#discrete-plot",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "discrete plot",
+    "text": "discrete plot"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#continuous-plot",
+    "href": "slides/lec-02-visualisation.html#continuous-plot",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "continuous plot",
+    "text": "continuous plot"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#categorical-plot",
+    "href": "slides/lec-02-visualisation.html#categorical-plot",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "categorical plot",
+    "text": "categorical plot"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#surveys-tools",
+    "href": "slides/lec-02-visualisation.html#surveys-tools",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Surveys tools",
+    "text": "Surveys tools\nCommonly used in the sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-5",
+    "href": "slides/lec-02-visualisation.html#section-5",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#survey-tools",
+    "href": "slides/lec-02-visualisation.html#survey-tools",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Survey tools",
+    "text": "Survey tools\nCommonly used in the Global Engineering and Development sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#pair-programming-exercises",
+    "href": "slides/lec-02-visualisation.html#pair-programming-exercises",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Pair Programming Exercises",
+    "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#hw-02a-data-visualiation---rstudio-cloud-setup",
+    "href": "slides/lec-02-visualisation.html#hw-02a-data-visualiation---rstudio-cloud-setup",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "hw-02a-data-visualiation - RStudio Cloud Setup",
+    "text": "hw-02a-data-visualiation - RStudio Cloud Setup\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#bring-your-own-data",
+    "href": "slides/lec-02-visualisation.html#bring-your-own-data",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Bring your own data",
+    "text": "Bring your own data\n\nGenerate data doing a short survey or observational study\n\nFind a data online that interests you\nUse a dataset that you already have available"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#background-imageimglec-02plot-waste-generation-gdp.png-background-sizecontain",
+    "href": "slides/lec-02-visualisation.html#background-imageimglec-02plot-waste-generation-gdp.png-background-sizecontain",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "{background-image=“img/lec-02/plot-waste-generation-gdp.png” background-size=“contain”} ^",
+    "text": "{background-image=“img/lec-02/plot-waste-generation-gdp.png” background-size=“contain”} ^"
   }
 ]
