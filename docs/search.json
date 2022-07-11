@@ -390,5 +390,271 @@
     "title": "Schedule",
     "section": "",
     "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
+    "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\n\n\n\nExploratory data analysis using visualization & Data organization in spreadsheets\nNA\nNA\nNA"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section",
+    "href": "slides/lec-02-visualisation.html#section",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#goal",
+    "href": "slides/lec-02-visualisation.html#goal",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Goal",
+    "text": "Goal"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation---rstudio-cloud-setup",
+    "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation---rstudio-cloud-setup",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "live-02a-data-visualiation - RStudio Cloud Setup",
+    "text": "live-02a-data-visualiation - RStudio Cloud Setup\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#break",
+    "href": "slides/lec-02-visualisation.html#break",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Break",
+    "text": "Break\n\n\n\n\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#homework-due-dates",
+    "href": "slides/lec-02-visualisation.html#homework-due-dates",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 15th July\nLearning reflection due: Monday, 18th July"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-1",
+    "href": "slides/lec-02-visualisation.html#section-1",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": ".",
+    "text": ".\n\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-2",
+    "href": "slides/lec-02-visualisation.html#section-2",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#r-rollercoaster",
+    "href": "slides/lec-02-visualisation.html#r-rollercoaster",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "R Rollercoaster",
+    "text": "R Rollercoaster"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#tipps-for-search-engines",
+    "href": "slides/lec-02-visualisation.html#tipps-for-search-engines",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Tipps for search engines",
+    "text": "Tipps for search engines\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\nScroll through the top 5 results (don’t just pick the first)\n\nExample: “How to remove a legend from a plot in R ggplot2”"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#stack-overflow",
+    "href": "slides/lec-02-visualisation.html#stack-overflow",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Stack Overflow",
+    "text": "Stack Overflow\n\n\n\nWhat is it?\n\nThe biggest support network for (coding) problems\nCan be initimidating at first\nUpvote system\n\n\n\n\nWorkflow\n\nFirst, briefly read the question that was posted\nThen, read the answer marked as “correct”\nThen, read one or two more answers with high votes\nThen, check out the “Linked” posts\nAlways give credit for the solution"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#give-credit",
+    "href": "slides/lec-02-visualisation.html#give-credit",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Give credit",
+    "text": "Give credit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#give-credit-1",
+    "href": "slides/lec-02-visualisation.html#give-credit-1",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Give credit",
+    "text": "Give credit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#give-credit-2",
+    "href": "slides/lec-02-visualisation.html#give-credit-2",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Give credit",
+    "text": "Give credit\n\nggplot(data = global_waste_data_kg_year,\n       mapping = aes(x = income_id, \n                     y = capita_kg_year,\n                     color = income_id)) +\n  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220\n  theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#other-sources-for-help",
+    "href": "slides/lec-02-visualisation.html#other-sources-for-help",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Other sources for help",
+    "text": "Other sources for help\n\n\n\nRStudio Community Forum: https://community.rstudio.com/\nOur rbtl Slack channel\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
+    "href": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Minimal reproducible example (reprex)",
+    "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nWe will practice this in another class\nGood support information: https://www.tidyverse.org/help/#reprex"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-3",
+    "href": "slides/lec-02-visualisation.html#section-3",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
+    "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "R Package ggplot2",
+    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure",
+    "href": "slides/lec-02-visualisation.html#code-structure",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot() is the main function in ggplot2\nPlots are constructed in layers\nStructure of the code for plots can be summarized as\n\n\nggplot(data = [dataset], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n   geom_xxx() +\n   other options"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-1",
+    "href": "slides/lec-02-visualisation.html#code-structure-1",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-2",
+    "href": "slides/lec-02-visualisation.html#code-structure-2",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007)"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-3",
+    "href": "slides/lec-02-visualisation.html#code-structure-3",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes())"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-4",
+    "href": "slides/lec-02-visualisation.html#code-structure-4",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-5",
+    "href": "slides/lec-02-visualisation.html#code-structure-5",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-6",
+    "href": "slides/lec-02-visualisation.html#code-structure-6",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-7",
+    "href": "slides/lec-02-visualisation.html#code-structure-7",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#break-1",
+    "href": "slides/lec-02-visualisation.html#break-1",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Break",
+    "text": "Break\n\n\n\n\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#goal-reproduce-this-plot",
+    "href": "slides/lec-02-visualisation.html#goal-reproduce-this-plot",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Goal: Reproduce this plot",
+    "text": "Goal: Reproduce this plot"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#types-of-variables",
+    "href": "slides/lec-02-visualisation.html#types-of-variables",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Types of variables",
+    "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
+    "href": "slides/lec-02-visualisation.html#data-to-viz.com",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "data-to-viz.com",
+    "text": "data-to-viz.com"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-collection-tools-1",
+    "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Data Collection Tools",
+    "text": "Data Collection Tools\n\nQuestionnaires for survey based data collection\nSpreadsheets for experimental data collection"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#surveys",
+    "href": "slides/lec-02-visualisation.html#surveys",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Surveys",
+    "text": "Surveys\nCommonly used in the sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
+    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
+    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annoated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
+    "href": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "But, especially apply it to your data",
+    "text": "But, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#why",
+    "href": "slides/lec-02-visualisation.html#why",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "Why?",
+    "text": "Why?\nBecause it will make your life easier!\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-4",
+    "href": "slides/lec-02-visualisation.html#section-4",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#license-cc0",
+    "href": "slides/lec-02-visualisation.html#license-cc0",
+    "title": "Data Visualitation & Data Organisation in Spreadsheets",
+    "section": "License? CC0 (!)",
+    "text": "License? CC0 (!)\n\n\n(https://github.com/kbroman/Talk_DataOrg) .footnote[Screenshot taken on 2022-03-23]\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
   }
 ]

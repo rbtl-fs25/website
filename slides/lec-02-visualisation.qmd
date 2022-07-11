@@ -1,0 +1,459 @@
+---
+title: "Data Visualitation & Data Organisation in Spreadsheets"
+subtitle: "CVEN 5837 - Summer 2022"
+author: "Lars Schöbitz"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: img/logo.png
+    footer: "https://cven5837-ss22.github.io/website/"
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 2
+---
+
+<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+
+```{r}
+#| include: false
+library(countdown)
+library(ggplot2)
+library(readr)
+library(ggplot2)
+library(gapminder)
+library(dplyr)
+```
+
+```{r} 
+
+gapminder_yr_2007 <- gapminder |> 
+  filter(year == 2007)
+
+my_colors <- c("#ED6D37", "#901C6C", "#18A5C5", "#A6CE8F")
+
+```
+
+## {background-image="img/lec-02/r_rollercoaster.png" background-size="contain"} 
+
+::: {.aside}
+Artwork by [@allison_horst](https://twitter.com/allison_horst) 
+:::
+
+# Solving coding problems {background-color="#0F4C81"}
+
+## Tipps for search engines 
+
+- Use actionable verbs that describe what you want to do
+- Be specific 
+- Add R to the search query 
+- Add the name of the R package name to the search query
+- Scroll through the top 5 results (don't just pick the first)
+
+**Example: "How to remove a legend from a plot in R ggplot2"**
+
+## Stack Overflow
+
+::: {.incremental}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+
+**What is it?**
+
+- The biggest support network for (coding) problems 
+- Can be initimidating at first
+- Upvote system 
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+
+**Workflow**
+
+- First, briefly read the question that was posted
+- Then, read the answer marked as "correct"
+- Then, read one or two more answers with high votes
+- Then, check out the "Linked" posts 
+- Always give credit for the solution
+
+:::
+
+::::
+
+:::
+
+## Give credit
+
+![](img/lec-02/stack-overflow-share-1.png)
+
+## Give credit
+
+![](img/lec-02/stack-overflow-share-2.png)
+
+## Give credit {.smaller}
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5-6"
+ggplot(data = global_waste_data_kg_year,
+       mapping = aes(x = income_id, 
+                     y = capita_kg_year,
+                     color = income_id)) +
+  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220
+  theme(legend.position = "none")
+
+```
+
+## Other sources for help
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- RStudio Community Forum: https://community.rstudio.com/
+- Our rbtl Slack channel
+- Documentation websites: https://dplyr.tidyverse.org/
+- Twitter community: [#rstats](https://twitter.com/search?q=%23rstats&src=typd) 
+:::
+
+::: {.column width="50%"}
+
+![](img/welcome_to_rstats_twitter.png)
+
+:::
+
+::::
+
+::: aside
+Artwork by [@allison_horst](https://www.allisonhorst.com/)
+:::
+
+## Minimal reproducible example (reprex)
+
+- Needed when asking questions online
+- We will practice this in another class
+- Good support information: https://www.tidyverse.org/help/#reprex
+
+## . {background-image="img/code_hero.jpg" background-size="contain"} 
+
+::: aside
+Artwork by [@allison_horst](https://www.allisonhorst.com/)
+:::
+
+## Learning Objectives (for this week)
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+::: {.incremental}
+1. `r lobj1[1]`
+1. `r lobj1[2]`
+1. `r lobj1[3]`
+1. `r lobj1[4]`
+:::
+
+# Exploratory Data Analysis with `ggplot2` {background-color="#0F4C81"}
+
+## R Package `ggplot2`
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- **ggplot2** is tidyverse's data visualization package 
+- `gg` in `ggplot2` stands for Grammar of Graphics 
+- Inspired by the book **Grammar of Graphics** by Leland Wilkinson
+- **Documentation:** https://ggplot2.tidyverse.org/
+- **Book**: https://ggplot2-book.org
+
+:::
+
+::: {.column width="50%"}
+
+![](img/lec-02/ggplot2-part-of-tidyverse.png)
+
+```{r}
+#knitr::include_graphics(here::here("slides/img/lec-02/ggplot2-part-of-tidyverse.png"))
+```
+
+:::
+
+::::
+
+::: {.aside}
+
+Slide adapted from datasciencebox.org
+
+:::
+
+## Code structure
+
+- `ggplot()` is the main function in ggplot2
+- Plots are constructed in layers
+- Structure of the code for plots can be summarized as
+
+```{r}
+#| eval: false
+#| echo: true
+
+ggplot(data = [dataset], 
+       mapping = aes(x = [x-variable], 
+                     y = [y-variable])) +
+   geom_xxx() +
+   other options
+```
+
+## Code structure {auto-animate="true"}
+
+```{r}
+#| echo: true
+ggplot()
+```
+
+## Code structure {auto-animate="true"}
+
+```{r}
+#| echo: true
+ggplot(data = gapminder_yr_2007)
+```
+
+## Code structure {auto-animate="true"}
+
+```{r}
+#| echo: true
+ggplot(data = gapminder_yr_2007,
+       mapping = aes()) 
+
+```
+
+## Code structure {auto-animate="true"}
+
+```{r}
+#| echo: true
+ggplot(data = gapminder_yr_2007,
+       mapping = aes(x = continent,
+                     y = lifeExp))  
+
+```
+
+## Code structure {auto-animate="true"}
+
+```{r}
+#| echo: true
+ggplot(data = gapminder_yr_2007,
+       mapping = aes(x = continent,
+                     y = lifeExp)) +
+  geom_boxplot() 
+
+```
+
+## Code structure {auto-animate="true"}
+
+```{r}
+#| echo: true
+ggplot(data = gapminder_yr_2007,
+       mapping = aes(x = continent,
+                     y = lifeExp)) +
+  geom_boxplot() +
+  theme_minimal()
+
+```
+
+## Code structure {auto-animate="true"}
+
+```{r}
+#| echo: true
+ggplot(data = gapminder_yr_2007,
+       mapping = aes(x = continent,
+                     y = lifeExp)) +
+  geom_boxplot() +
+  theme_minimal(base_size = 14)
+
+```
+
+## Goal: Reproduce this plot
+
+## {background-image="img/lec-02/plot-waste-generation-gdp.png" background-size="contain"} 
+
+## Break
+
+![](img/lec-01/coffee-break.jpg)
+
+```{r}
+
+countdown(
+  minutes = 10, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+
+# Live Coding Exercise {background-color="#0F4C81"}
+
+## live-02a-data-visualiation - RStudio Cloud Setup
+
+1. Head over to rstudio.cloud
+2. Open the workspace for the course (cven5837-ss22)
+3. Open "Projects"
+4. Open the "course-materials" project
+5. Follow along with me
+
+
+# Visualising numerical data {background-color="#0F4C81"}
+
+## Types of variables 
+
+::: {.incremental}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### numerical
+
+**discrete variables**
+
+- non-negative
+- whole numbers
+- e.g. number of students, roll of a dice
+
+**continuous variables**
+
+- infinite number of values
+- also dates and times
+- e.g. length, weight, size 
+
+:::
+
+::: {.column width="50%"}
+
+### non-numerical
+
+**categorical variables**
+
+- finite number of values 
+- distinct groups (e.g. EU countries, continents)
+- **ordinal** if levels have natural ordering (e.g. week days, school grades)
+
+:::
+
+::::
+
+:::
+
+## {background-image="https://d33wubrfki0l68.cloudfront.net/1e7033393a2c70dc1255c5d0f1c563e945519251/61035/img/evol-ggplot/evol-ggplot-1.gif" background-size="contain"}
+
+::: {.aside}
+
+**Tutorial:** https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
+
+:::
+
+## data-to-viz.com {background-iframe="https://www.data-to-viz.com/" background-interactive="true"}
+
+
+# Data Collection Tools
+
+## Data Collection Tools
+
+- Questionnaires for survey based data collection
+- Spreadsheets for experimental data collection
+
+## Surveys 
+
+**Commonly used in the sector**
+
+- KOBO Toolbox
+- mWater
+- OpenDataKit
+
+## Data Organisation in Spreadsheets
+
+
+```{r}
+knitr::include_graphics("img/lec-02/data-org-paper.png")
+```
+
+::: {.aside}
+Jorunal: The American Statistician, [Screenshot taken on 2022-03-23](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989?src=)
+:::
+
+## Data Organisation in Spreadsheets
+
+Read the paper (it's part of your homework), but you can also:
+
+- Go through the annoated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf 
+- Watch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156
+- Read the content on a website: https://kbroman.org/dataorg/
+
+
+## But, especially apply it to your data
+
+<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/UEGwYCVTBFa9tJEf66" width="50%" height="50%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/rainbow-computer-data-UEGwYCVTBFa9tJEf66">via GIPHY</a></p>
+
+
+## Why? 
+
+**Because it will make your life easier!**
+
+```{r, out.width="75%"}
+knitr::include_graphics("img/lec-02/data-org-views.png")
+```
+
+::: {.aside}
+Jorunal: The American Statistician, [Screenshot taken on 2022-07-11](https://www.tandfonline.com/toc/utas20/current#b7689c1d-7975-46ed-aaf9-3a2939834054-b6de7b7c-de82-45a5-9538-313dd15c6659)]
+:::
+
+
+## License? CC0 (!)
+
+```{r, out.width="75%"}
+knitr::include_graphics("img/lec-02/data-org-license.png")
+```
+::: {.aside}
+Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](https://github.com/kbroman/Talk_DataOrg)
+:::
+
+(https://github.com/kbroman/Talk_DataOrg)
+.footnote[[Screenshot taken on 2022-03-23](https://github.com/kbroman/Talk_DataOrg)]
+
+
+# Homework week 2 {background-color="#0F4C81"}
+
+## Homework due dates
+
+- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-02.html)
+- Homework assignment due: Friday, 15th July
+- Learning reflection due: Monday, 18th July
+
+# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+
+## 
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-02-visualiation.pdf)
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
+
