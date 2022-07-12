@@ -287,9 +287,9 @@ ggplot(data = gapminder_yr_2007,
 
 # Live Coding Exercise: Reproduce this plot {background-color="#0F4C81"}
 
-## {background-image="img/lec-02/plot-waste-generation-gdp.png" background-size="contain"} ^
+## {background-image="img/lec-02/plot-waste-generation-gdp.png" background-size="contain"} 
 
-## live-02a-data-visualiation - RStudio Cloud Setup
+## live-02a-data-visualiation 
 
 1. Head over to rstudio.cloud
 2. Open the workspace for the course (cven5837-ss22)
@@ -440,7 +440,7 @@ Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](h
 - The other person (the navigator) offers comments and suggestions
 - Roles get switched 
 
-## hw-02a-data-visualiation - RStudio Cloud Setup
+## hw-02a-data-visualiation
 
 1. Head over to rstudio.cloud
 2. Open the workspace for the course (cven5837-ss22)
