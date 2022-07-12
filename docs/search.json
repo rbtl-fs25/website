@@ -252,18 +252,11 @@
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#background-imageimglec-02plot-waste-generation-gdp.png-background-sizecontain",
-    "href": "slides/lec-02-visualisation.html#background-imageimglec-02plot-waste-generation-gdp.png-background-sizecontain",
+    "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
+    "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "{background-image=“img/lec-02/plot-waste-generation-gdp.png” background-size=“contain”} ^",
-    "text": "{background-image=“img/lec-02/plot-waste-generation-gdp.png” background-size=“contain”} ^"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation---rstudio-cloud-setup",
-    "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation---rstudio-cloud-setup",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "live-02a-data-visualiation - RStudio Cloud Setup",
-    "text": "live-02a-data-visualiation - RStudio Cloud Setup\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+    "section": "live-02a-data-visualiation",
+    "text": "live-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#break",
@@ -280,8 +273,8 @@
     "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-2",
-    "href": "slides/lec-02-visualisation.html#section-2",
+    "objectID": "slides/lec-02-visualisation.html#section-3",
+    "href": "slides/lec-02-visualisation.html#section-3",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "",
     "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
@@ -350,11 +343,11 @@
     "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#hw-02a-data-visualiation---rstudio-cloud-setup",
-    "href": "slides/lec-02-visualisation.html#hw-02a-data-visualiation---rstudio-cloud-setup",
+    "objectID": "slides/lec-02-visualisation.html#hw-02a-data-visualiation",
+    "href": "slides/lec-02-visualisation.html#hw-02a-data-visualiation",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "hw-02a-data-visualiation - RStudio Cloud Setup",
-    "text": "hw-02a-data-visualiation - RStudio Cloud Setup\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project"
+    "section": "hw-02a-data-visualiation",
+    "text": "hw-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#bring-your-own-data",
@@ -371,8 +364,8 @@
     "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 15th July\nLearning reflection due: Monday, 18th July"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-3",
-    "href": "slides/lec-02-visualisation.html#section-3",
+    "objectID": "slides/lec-02-visualisation.html#section-4",
+    "href": "slides/lec-02-visualisation.html#section-4",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "",
     "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
