@@ -1,0 +1,163 @@
+---
+title: "Data Transformation with dplyr"
+subtitle: "CVEN 5837 - Summer 2022"
+author: "Lars Schöbitz"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: img/logo.png
+    footer: "https://cven5837-ss22.github.io/website/"
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 3
+---
+
+<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+
+```{r}
+#| include: false
+library(countdown)
+library(ggplot2)
+library(readr)
+library(ggplot2)
+library(gapminder)
+library(dplyr)
+```
+
+
+## {background-image="img/lec-02/r_rollercoaster.png" background-size="contain"} 
+
+::: {.aside}
+Artwork by [@allison_horst](https://twitter.com/allison_horst) 
+:::
+
+# Solving coding problems {background-color="#0F4C81"}
+
+## Learning Objectives (for this week)
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+
+1. `r lobj1[1]`
+
+# Data wrangling with dplyr  {background-color="#0F4C81"}
+
+## A grammar of data wrangling... {.smaller}
+
+... based on the concepts of functions as verbs that manipulate data frames
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{r dplyr-part-of-tidyverse, echo=FALSE, out.width="70%", caption = "dplyr is part of the tidyverse"}
+knitr::include_graphics("img/dplyr-part-of-tidyverse.png")
+```
+
+:::
+
+::: {.column width="60%"}
+
+- `select`: pick columns by name
+- `arrange`: reorder rows
+- `slice`: chooses rows based on location
+- `filter`: pick rows matching criteria
+- `relocate`: changes the order of the columns
+- `mutate`: add new variables
+- `summarise`: reduce variables to values
+- `group_by`: for grouped operations
+- ... (many more)
+:::
+
+::::
+
+::: {.aside}
+Slide taken from [Data Science in a Box](https://datasciencebox.org/)
+:::
+
+## dplyr rules
+
+Rules of `dplyr` functions:
+
+::: {.incremental}
+
+- First argument is always a data frame
+- Subsequent arguments say what to do with that data frame
+- Always return a data frame  
+- Don't modify in place 
+
+:::
+
+# Live Coding Exercise: Reproduce this plot {background-color="#0F4C81"}
+
+## live-03a-data-transformation
+
+1. Head over to rstudio.cloud
+2. Open the workspace for the course (cven5837-ss22)
+3. Open "Projects"
+4. Open the "course-materials" project
+5. Follow along with me
+
+## Break
+
+![](img/lec-01/coffee-break.jpg)
+
+```{r}
+
+countdown(
+  minutes = 10, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+
+# Pair Programming Exercise {background-color="#0F4C81"}
+
+## Pair Programming Exercises 
+
+- Two learners work together in a break out session
+- One person (the driver) shares the screen and does the typing
+- The other person (the navigator) offers comments and suggestions
+- Roles get switched 
+
+## hw-02a-data-visualiation
+
+1. Head over to rstudio.cloud
+2. Open the workspace for the course (cven5837-ss22)
+3. Open "Projects"
+4. Open the "course-materials" project
+
+# Homework week 3 {background-color="#0F4C81"}
+
+## Homework due dates
+
+- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-03.html)
+- Homework assignment due: Friday, 22th July
+- Learning reflection due: Monday, 25th July
+
+# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+
+## 
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-03-transformation.pdf)
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
+
