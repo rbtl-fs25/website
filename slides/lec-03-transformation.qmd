@@ -61,7 +61,7 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 ::: {.column width="40%"}
 
 ```{r dplyr-part-of-tidyverse, echo=FALSE, out.width="70%", caption = "dplyr is part of the tidyverse"}
-knitr::include_graphics("img/dplyr-part-of-tidyverse.png")
+knitr::include_graphics("img/lec-03/dplyr-part-of-tidyverse.png")
 ```
 
 :::

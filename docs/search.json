@@ -49,6 +49,41 @@
     "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 1 on RStudio Cloud (learning-01.qmd)."
   },
   {
+    "objectID": "weeks/wk-03.html",
+    "href": "weeks/wk-03.html",
+    "title": "Week 3",
+    "section": "",
+    "text": "NA"
+  },
+  {
+    "objectID": "weeks/wk-03.html#slides",
+    "href": "weeks/wk-03.html#slides",
+    "title": "Week 3",
+    "section": "Slides",
+    "text": "Slides\n🖥 Lecture 3 - Data transformation - HTML\n🖥 Lecture 3 - Data transformation - Download PDF"
+  },
+  {
+    "objectID": "weeks/wk-03.html#readings",
+    "href": "weeks/wk-03.html#readings",
+    "title": "Week 3",
+    "section": "Readings",
+    "text": "Readings\n📖 Read R for Data Science - Section 5 - Data transformation"
+  },
+  {
+    "objectID": "weeks/wk-03.html#homework-assignment",
+    "href": "weeks/wk-03.html#homework-assignment",
+    "title": "Week 3",
+    "section": "Homework assignment",
+    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for week 1 on RStudio Cloud:\n\nhw-03a-data-transformation.qmd"
+  },
+  {
+    "objectID": "weeks/wk-03.html#learning-reflection",
+    "href": "weeks/wk-03.html#learning-reflection",
+    "title": "Week 3",
+    "section": "Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 3 on RStudio Cloud (learning-03.qmd)."
+  },
+  {
     "objectID": "weeks/wk-02.html",
     "href": "weeks/wk-02.html",
     "title": "Week 2",
@@ -74,14 +109,14 @@
     "href": "weeks/wk-02.html#homework-assignment",
     "title": "Week 2",
     "section": "Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for week 1 on RStudio Cloud:\n\nhw-02a-data-visualisation.qmd\nhw-02b-project-data.qmd"
+    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for week 2 on RStudio Cloud:\n\nhw-02a-data-visualisation.qmd\nhw-02b-project-data.qmd"
   },
   {
     "objectID": "weeks/wk-02.html#learning-reflection",
     "href": "weeks/wk-02.html#learning-reflection",
     "title": "Week 2",
     "section": "Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 1 on RStudio Cloud (learning-02.qmd)."
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 2 on RStudio Cloud (learning-02.qmd)."
   },
   {
     "objectID": "weeks/wk-00-template.html#slides",
@@ -668,6 +703,76 @@
     "objectID": "slides/lec-01-welcome.html#section-15",
     "href": "slides/lec-01-welcome.html#section-15",
     "title": "Welcome to Data Analytics for Development",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#section",
+    "href": "slides/lec-03-transformation.html#section",
+    "title": "Data Transformation with dplyr",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
+    "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
+    "title": "Data Transformation with dplyr",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\n\n\nNA"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
+    "href": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
+    "title": "Data Transformation with dplyr",
+    "section": "A grammar of data wrangling…",
+    "text": "A grammar of data wrangling…\n… based on the concepts of functions as verbs that manipulate data frames\n\n\n\n\n\n\n\n\n\nselect: pick columns by name\narrange: reorder rows\nslice: chooses rows based on location\nfilter: pick rows matching criteria\nrelocate: changes the order of the columns\nmutate: add new variables\nsummarise: reduce variables to values\ngroup_by: for grouped operations\n… (many more)\n\n\n\n\n\nSlide taken from Data Science in a Box"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#dplyr-rules",
+    "href": "slides/lec-03-transformation.html#dplyr-rules",
+    "title": "Data Transformation with dplyr",
+    "section": "dplyr rules",
+    "text": "dplyr rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#live-03a-data-transformation",
+    "href": "slides/lec-03-transformation.html#live-03a-data-transformation",
+    "title": "Data Transformation with dplyr",
+    "section": "live-03a-data-transformation",
+    "text": "live-03a-data-transformation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#break",
+    "href": "slides/lec-03-transformation.html#break",
+    "title": "Data Transformation with dplyr",
+    "section": "Break",
+    "text": "Break\n\n\n\n\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#pair-programming-exercises",
+    "href": "slides/lec-03-transformation.html#pair-programming-exercises",
+    "title": "Data Transformation with dplyr",
+    "section": "Pair Programming Exercises",
+    "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#hw-02a-data-visualiation",
+    "href": "slides/lec-03-transformation.html#hw-02a-data-visualiation",
+    "title": "Data Transformation with dplyr",
+    "section": "hw-02a-data-visualiation",
+    "text": "hw-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#homework-due-dates",
+    "href": "slides/lec-03-transformation.html#homework-due-dates",
+    "title": "Data Transformation with dplyr",
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 22th July\nLearning reflection due: Monday, 25th July"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#section-1",
+    "href": "slides/lec-03-transformation.html#section-1",
+    "title": "Data Transformation with dplyr",
     "section": "",
     "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
   },

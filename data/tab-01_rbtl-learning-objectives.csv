@@ -8,3 +8,4 @@ date,week,title,learning_objectives
 2022-07-12T00:00:00Z,2,Exploratory data analysis using visualization & Data organization in spreadsheets,Learners can compare three different geoms and their use case
 2022-07-12T00:00:00Z,2,Exploratory data analysis using visualization & Data organization in spreadsheets,Learners can apply a theme to control font types and sizes within a plot
 2022-07-12T00:00:00Z,2,Exploratory data analysis using visualization & Data organization in spreadsheets,Learners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset
+2022-07-12T00:00:00Z,2,Data transformation with dplyr,Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot
