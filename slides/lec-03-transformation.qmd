@@ -38,11 +38,10 @@ library(dplyr)
 2. Which of the 12 rules for data organization was the least comprehensible to you?
 :::
 
-.your-turn[
 - **Think** for 2 minutes
 - **Pair** with in break-out rooms for 4 minutes
 - **Share** your answer with the class
-]
+
 
 ```{r, echo = FALSE}
 
