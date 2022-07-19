@@ -28,14 +28,32 @@ library(gapminder)
 library(dplyr)
 ```
 
+# Data Organisation in Spreadsheets {background-color="#0F4C81"}
 
-## {background-image="img/lec-02/r_rollercoaster.png" background-size="contain"} 
+## Think, Pair, Share
 
-::: {.aside}
-Artwork by [@allison_horst](https://twitter.com/allison_horst) 
+:::{.callout-note}
+## Questions
+1. Why should you not leave a blank cell in a spreadsheet used for data collection?
+2. Which of the 12 rules for data organization was the least comprehensible to you?
 :::
 
-# Solving coding problems {background-color="#0F4C81"}
+.your-turn[
+- **Think** for 2 minutes
+- **Pair** with in break-out rooms for 4 minutes
+- **Share** your answer with the class
+]
+
+```{r, echo = FALSE}
+
+countdown(
+  minutes = 2, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
 
 ## Learning Objectives (for this week)
 
@@ -46,7 +64,6 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
   dplyr::pull(learning_objectives)
 
 ```
-
 
 1. `r lobj1[1]`
 
@@ -98,7 +115,7 @@ Rules of `dplyr` functions:
 
 :::
 
-# Live Coding Exercise: Reproduce this plot {background-color="#0F4C81"}
+# Live Coding Exercise: SDG 6.2.1 {background-color="#0F4C81"}
 
 ## live-03a-data-transformation
 
@@ -127,7 +144,6 @@ countdown(
 Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
 
-
 # Pair Programming Exercise {background-color="#0F4C81"}
 
 ## Pair Programming Exercises 
@@ -137,7 +153,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 - The other person (the navigator) offers comments and suggestions
 - Roles get switched 
 
-## hw-02a-data-visualiation
+## hw-03a-data-visualiation
 
 1. Head over to rstudio.cloud
 2. Open the workspace for the course (cven5837-ss22)
@@ -145,6 +161,11 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 4. Open the "course-materials" project
 
 # Homework week 3 {background-color="#0F4C81"}
+
+## Homework late submission
+
+- ~~25%~~ 10% each day that a homework is submitted late
+
 
 ## Homework due dates
 
