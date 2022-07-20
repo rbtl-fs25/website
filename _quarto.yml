@@ -41,5 +41,6 @@ format:
     code-overflow: wrap
     toc: true
 
-
+execute: 
+  freeze: auto
 
