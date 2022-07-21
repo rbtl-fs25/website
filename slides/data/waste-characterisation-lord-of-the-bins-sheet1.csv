@@ -1,0 +1,6 @@
+objid,location,bin_id,bin_id_2,day_of_collection,non_recyclables_ Kg,pet_Kg,metal_content_alu_Kg,glass_content_kg,paper_Kg,recyclables_Kg,weight_total_kg
+900,eth,1015,1,04/07/2022,1.136,0.064,0.062,0.576,0.214,0.916,2.052
+899,eth,1014,2,04/07/2022,3.037,0.138,0.013,0.178,0.277,0.606,3.643
+921,old_town,1039,3,04/07/2022,1.572,0,0,0,0.414,0.414,1.986
+916,old_town,1032,4,04/07/2022,0.625,0.173,0.043,0.797,0.552,1.565,2.19
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
