@@ -43,7 +43,7 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 
 Complete the homework programming assignments that are in your project folder for week 4 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):
 
-- hw-03a-data-transformation.qmd 
+- hw-04a-tidyr.qmd 
 
 ## Learning reflection
 
