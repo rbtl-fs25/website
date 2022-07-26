@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cven5837-ss22.github.io/website/LICENSE.html</loc>
-    <lastmod>2022-07-20T09:12:12.942Z</lastmod>
+    <lastmod>2022-07-26T10:01:58.333Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/weeks/wk-01.html</loc>
-    <lastmod>2022-07-20T09:12:13.342Z</lastmod>
+    <lastmod>2022-07-26T10:01:58.756Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/weeks/wk-03.html</loc>
-    <lastmod>2022-07-20T09:12:13.698Z</lastmod>
+    <lastmod>2022-07-26T10:01:59.141Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/weeks/wk-02.html</loc>
-    <lastmod>2022-07-20T09:12:14.025Z</lastmod>
+    <lastmod>2022-07-26T10:01:59.474Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/weeks/wk-00-template.html</loc>
-    <lastmod>2022-07-20T09:12:14.405Z</lastmod>
+    <lastmod>2022-07-26T10:01:59.740Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cven5837-ss22.github.io/website/weeks/wk-04.html</loc>
+    <lastmod>2022-07-26T10:02:01.506Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/index.html</loc>
-    <lastmod>2022-07-20T09:12:14.835Z</lastmod>
+    <lastmod>2022-07-26T10:02:06.402Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/slides/lec-02-visualisation.html</loc>
-    <lastmod>2022-07-20T09:12:15.505Z</lastmod>
+    <lastmod>2022-07-26T10:02:02.546Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/slides/lec-01-welcome.html</loc>
-    <lastmod>2022-07-20T09:12:16.210Z</lastmod>
+    <lastmod>2022-07-26T10:02:03.193Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cven5837-ss22.github.io/website/slides/lec-04-tidy-data.html</loc>
+    <lastmod>2022-07-26T10:02:04.281Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/slides/lec-03-transformation.html</loc>
-    <lastmod>2022-07-20T09:12:16.548Z</lastmod>
+    <lastmod>2022-07-26T10:02:04.544Z</lastmod>
   </url>
   <url>
     <loc>https://cven5837-ss22.github.io/website/schedule.html</loc>
-    <lastmod>2022-07-20T09:12:17.153Z</lastmod>
+    <lastmod>2022-07-26T10:02:05.146Z</lastmod>
   </url>
 </urlset>
