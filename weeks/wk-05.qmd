@@ -1,0 +1,50 @@
+---
+title: "Week 5"
+subtitle: "Joining data & Communicating results"
+editor: source
+params:
+    week: 5
+execute: 
+  echo: false
+  warning: false
+---
+
+<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+
+## Learning Objectives
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+2. `r lobj1[2]`
+3. `r lobj1[3]`
+
+## Slides
+
+`r emo::ji("desktop_computer")` [Lecture 5 - Joining data & Communicating results - HTML](/slides/lec-05-communicate.html) 
+
+`r emo::ji("desktop_computer")` [Lecture 5 - Joining data & Communicating results - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-05-communicate.pdf)
+
+## Readings
+
+`r emo::ji("book")` Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/tidy-data.html)  
+
+`r emo::ji("book")` Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/relational-data.html)  
+
+
+
+## Homework assignment
+
+Complete the homework programming assignments that are in your project folder for week 5 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):
+
+- hw-04a-tidyr.qmd 
+
+## Learning reflection
+
+Complete the learning reflection that is in your project folder for week 5  on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-04.qmd).  

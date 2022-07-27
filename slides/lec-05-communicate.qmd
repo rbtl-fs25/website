@@ -1,0 +1,129 @@
+---
+title: "Joining data & Communicating results"
+subtitle: "CVEN 5837 - Summer 2022"
+author: "Lars Schöbitz"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: img/logo.png
+    footer: "https://cven5837-ss22.github.io/website/"
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 5
+---
+
+
+```{r}
+library(tidyverse)
+library(knitr)
+
+ggplot2::theme_set(ggplot2::theme_gray(base_size = 16))
+
+```
+
+## Learning Objectives (for this week)
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+2. `r lobj1[2]`
+3. `r lobj1[3]`
+
+# Part 1: Joining data {background-color="#0F4C81"}
+
+# Live Coding Exercise: Vectors {background-color="#0F4C81"}
+
+## live-05a-joining-data
+
+1. Head over to rstudio.cloud
+2. Open the workspace for the course (cven5837-ss22)
+3. Open "Projects"
+4. Open the "course-materials" project
+5. Follow along with me
+
+# Break One
+
+![](img/lec-01/coffee-break.jpg)
+
+```{r}
+
+countdown::countdown(
+  minutes = 10, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+# Part 2: Communicate results with Quarto {background-color="#0F4C81"}
+
+## What is Quarto? {.incremental}
+
+- Next generation version of R Markdown from RStudio 
+- Multi-language (Python, R, Julia, Observable)
+- Authoring in plain text markdown or Jupyter notebooks
+
+## Editing documents
+
+You're not limited to RStudio for editing Quarto documents...
+
+-   [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html)
+
+-   [VS Code](https://quarto.org/docs/tools/vscode.html)
+
+-   [Text Editors](https://quarto.org/docs/tools/text-editors.html)
+
+
+## Authoring {.incremental}
+
+- Technical  articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+
+- Author with scientific markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.
+
+## Documentation
+
+[![](img/website-quarto.png){fig-alt="Screenshot of the Quarto homepage at https://quarto.org/." fig-align="center"}](https://quarto.org/)
+
+# Live Coding Exercise: Build a website {background-color="#0F4C81"}
+
+## live-05b-website
+
+1. Head over to rstudio.cloud
+2. Open the workspace for the course (cven5837-ss22)
+3. Open "Projects"
+4. Open the "course-materials" project
+5. Follow along with me
+
+# Homework week 5 {background-color="#0F4C81"}
+
+## Homework due dates
+
+- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-04.html)
+- Homework assignment due: Friday, 5th August
+- Learning reflection due: Monday, 8th August
+
+# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+
+## 
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-04-tidy-data.pdf)
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
+
+
