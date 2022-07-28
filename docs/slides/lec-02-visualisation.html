@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.312">
-
+  <meta name="generator" content="quarto-0.9.180">
   <meta name="author" content="Lars Schöbitz">
   <title>CVEN 5837 - Summer 2022 - Data Visualisation &amp; Data Organisation in Spreadsheets</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -82,6 +81,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
+
   <script src="../site_libs/clipboard/clipboard.min.js"></script>
   <script src="../site_libs/quarto-html/tabby.min.js"></script>
   <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -457,7 +457,7 @@
 <section id="give-credit-2" class="slide level2 smaller">
 <h2>Give credit</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> global_waste_data_kg_year,</span>
+<div class="sourceCode" id="cb1" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> global_waste_data_kg_year,</span>
 <span id="cb1-2"><a href="#cb1-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> income_id, </span>
 <span id="cb1-3"><a href="#cb1-3"></a>                     <span class="at">y =</span> capita_kg_year,</span>
 <span id="cb1-4"><a href="#cb1-4"></a>                     <span class="at">color =</span> income_id)) <span class="sc">+</span></span>
@@ -544,7 +544,7 @@
 <li>Structure of the code for plots can be summarized as</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> [dataset], </span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> [dataset], </span>
 <span id="cb2-2"><a href="#cb2-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> [x<span class="sc">-</span>variable], </span>
 <span id="cb2-3"><a href="#cb2-3"></a>                     <span class="at">y =</span> [y<span class="sc">-</span>variable])) <span class="sc">+</span></span>
 <span id="cb2-4"><a href="#cb2-4"></a>   <span class="fu">geom_xxx</span>() <span class="sc">+</span></span>
@@ -554,21 +554,21 @@
 <section id="code-structure-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
 <span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
@@ -576,7 +576,7 @@
 <section id="code-structure-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
 <span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
@@ -585,7 +585,7 @@
 <section id="code-structure-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
 <span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
 <span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -595,7 +595,7 @@
 <section id="code-structure-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
 <span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
 <span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
@@ -606,7 +606,7 @@
 <section id="code-structure-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
 <span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb9-3" class="hljs-ln-code"><a href="#cb9-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
 <span id="cb9-4" class="hljs-ln-code"><a href="#cb9-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
@@ -819,19 +819,19 @@
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
   <script src="../site_libs/revealjs/dist/reveal.js"></script>
+
   <!-- reveal.js plugins -->
   <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
   <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
   <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
 
   <script>
 
@@ -845,9 +845,10 @@
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
+
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
- 
+
         // Display controls in the bottom right corner
         controls: false,
 
@@ -1085,10 +1086,7 @@
         button.blur();
         // flash "checked"
         button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
         setTimeout(function() {
-          button.setAttribute("title", currentTitle);
           button.classList.remove('code-copy-button-checked');
         }, 1000);
         // clear code selection

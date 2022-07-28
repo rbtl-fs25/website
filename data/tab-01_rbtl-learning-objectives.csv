@@ -15,3 +15,4 @@ date,week,title,learning_objectives
 2022-08-02T00:00:00Z,5,Joining data & data communication using Quarto,Learners can use Quarto and Netlify to publish an HTML file
 2022-08-02T00:00:00Z,5,Joining data & data communication using Quarto,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor
 2022-08-02T00:00:00Z,5,Joining data & data communication using Quarto,Learners can cross-reference figures and tables within an Quarto file
+2022-08-02T00:00:00Z,5,Joining data & data communication using Quarto,Learners can apply functions from the dplyr R Package to join multiple data sets
