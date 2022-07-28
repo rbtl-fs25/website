@@ -1,0 +1,412 @@
+---
+title: "Joining data & communicating results with Quarto"
+subtitle: "CVEN 5837 - Summer 2022"
+author: "Lars Schöbitz"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: img/logo.png
+    footer: "https://cven5837-ss22.github.io/website/"
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 5
+---
+
+
+```{r}
+library(tidyverse)
+library(knitr)
+
+ggplot2::theme_set(ggplot2::theme_gray(base_size = 16))
+
+```
+
+# Learning Objectives (for this week)
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+2. `r lobj1[2]`
+3. `r lobj1[3]`
+4. `r lobj1[4]`
+
+# Part 1: Joining data {background-color="#0F4C81"}
+
+##  We... {.smaller}
+
+...have multiple data frames
+
+...want to bring them together
+
+```{r}
+#| echo: false
+professions <- read_csv(here::here("slides/data/scientists/professions.csv"))
+dates <- read_csv(here::here("slides/data/scientists/dates.csv"))
+works <- read_csv(here::here("slides/data/scientists/works.csv"))
+```
+
+```{r}
+#| echo: true
+#| eval: false
+professions <- read_csv(here::here("data/scientists/professions.csv"))
+dates <- read_csv(here::here("data/scientists/dates.csv"))
+works <- read_csv(here::here("scientists/works.csv"))
+```
+
+## Data: Women in science {.smaller}
+
+Information on 10 women in science who changed the world
+
+```{r echo=FALSE}
+professions %>% select(name) %>% kable()
+```
+
+::: aside
+Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-10-women-in-science-who-changed-the-world)
+:::
+
+## Inputs {.smaller}
+
+::: {.panel-tabset}
+
+### professions
+
+```{r}
+professions 
+```
+
+### dates
+
+```{r}
+dates 
+```
+
+### works
+
+```{r}
+works
+```
+
+:::
+
+## Desired output {.smaller}
+
+```{r}
+professions %>%
+  left_join(dates) %>%
+  left_join(works) 
+```
+
+## Inputs, reminder {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+names(professions)
+names(dates)
+names(works)
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+nrow(professions)
+nrow(dates)
+nrow(works)
+```
+:::
+
+::::
+
+# Joining data frames {background-color="#0F4C81"}
+
+## Joining data frames
+
+```{r}
+#| echo: true
+#| eval: false
+something_join(x, y)
+```
+
+- `left_join()`: all rows from x
+- `right_join()`: all rows from y
+- `full_join()`: all rows from both x and y
+- ...
+
+## Setup {.smaller}
+
+For the next few slides...
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+x <- tibble(
+  id = c(1, 2, 3),
+  value_x = c("x1", "x2", "x3")
+  )
+```
+
+```{r}
+#| echo: true
+x
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+y <- tibble(
+  id = c(1, 2, 4),
+  value_y = c("y1", "y2", "y4")
+  )
+```
+```{r}
+#| echo: true
+y
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/left-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+left_join(x, y)
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+```{r}
+#| echo: true
+professions %>%
+  left_join(dates) 
+```
+
+## `right_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/right-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+right_join(x, y)
+```
+:::
+
+::::
+
+## `right_join()` {.smaller}
+
+```{r}
+#| echo: true
+professions %>%
+  right_join(dates)
+```
+
+## `full_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/full-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+full_join(x, y)
+```
+:::
+
+::::
+
+## `full_join()` {.smaller}
+
+```{r}
+#| echo: true
+dates %>%
+  full_join(works) 
+```
+
+## Putting it altogether {.smaller}
+
+```{r}
+#| echo: true
+professions %>%
+  left_join(dates) %>%
+  left_join(works)
+```
+
+# Part 2: Communicate results with Quarto {background-color="#0F4C81"}
+
+## What is Quarto? {.incremental}
+
+- Next generation version of R Markdown from RStudio 
+- Multi-language (Python, R, Julia, Observable)
+- Authoring in plain text markdown or Jupyter notebooks
+
+## Editing documents
+
+You're not limited to RStudio for editing Quarto documents...
+
+-   [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html)
+
+-   [VS Code](https://quarto.org/docs/tools/vscode.html)
+
+-   [Text Editors](https://quarto.org/docs/tools/text-editors.html)
+
+
+## Authoring {.incremental}
+
+- Technical  articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+
+- Author with scientific markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.
+
+## Documentation
+
+[![](img/lec-05/website-quarto.png){fig-alt="Screenshot of the Quarto homepage at https://quarto.org/." fig-align="center"}](https://quarto.org/)
+
+# Live Coding Exercise: Build a website {background-color="#0F4C81"}
+
+## live-05a-communicate
+
+1. Head over to rstudio.cloud
+2. Open the workspace for the course (cven5837-ss22)
+3. Open "Projects"
+4. Open the "course-materials" project
+5. Follow along with me
+
+# Break 
+
+![](img/lec-01/coffee-break.jpg)
+
+```{r}
+
+countdown::countdown(
+  minutes = 10, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+## Cross-references {.smaller .scrollable}
+
+- no space between `{r}` and `#| tbl-cap: "A table"`
+- spelling tbl not tab
+- no spaces (use dashes in `label`)
+
+See @tbl-simple-table...
+
+```{r}
+#| tbl-cap: "A table"
+#| label: tbl-simple-table
+#| echo: fenced
+
+tibble(
+  id = c(1, 2, 3),
+  name = c("X", "Y", "Z")
+) %>% 
+  knitr::kable()
+```
+
+
+# Homework week 5 {background-color="#0F4C81"}
+
+## Homework due dates
+
+- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-05.html)
+- Homework assignment due: Friday, 5th August
+- Learning reflection due: Monday, 8th August
+
+# What comes next?  {background-color="#0F4C81"}
+
+## Get out the cloud
+
+Install software on your computer:
+
+- R: https://cran.r-project.org/
+- RStudio IDE: https://www.rstudio.com/products/rstudio/download/
+- Quarto CLI: https://quarto.org/docs/get-started/
+
+## Start a project
+
+- Guidance: https://r4ds.had.co.nz/workflow-projects.html
+- Learn about project oriented workflows: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
+
+## Stay in touch
+
+- Email: lars@lse.de
+- Data Science for WASH Slack Community: [Slack invite link](https://join.slack.com/t/datascienceforwash/shared_invite/zt-nh47xhqt-WYV64_iqTBMxBB4CMWm33Q)
+
+# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+
+## 
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-05-communicate.pdf)
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
+
+

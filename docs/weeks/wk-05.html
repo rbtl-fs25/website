@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.180">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>CVEN 5837 - Summer 2022 - Week 1</title>
+  <title>CVEN 5837 - Summer 2022 - Week 5</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -19,8 +19,7 @@
   <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="../site_libs/quarto-search/fuse.min.js"></script>
   <script src="../site_libs/quarto-search/quarto-search.js"></script>
-  <link href="../weeks/wk-02.html" rel="next">
-  <link href="../index.html" rel="prev">
+  <link href="../weeks/wk-04.html" rel="prev">
   <script src="../site_libs/quarto-html/quarto.js"></script>
   <script src="../site_libs/quarto-html/popper.min.js"></script>
   <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,7 +58,7 @@
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 1</h1>
+      <h1 class="quarto-secondary-nav-title">Week 5</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -97,7 +96,7 @@
     <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-01.html" class="sidebar-item-text sidebar-link active">Week 1</a>
+  <a href="../weeks/wk-01.html" class="sidebar-item-text sidebar-link">Week 1</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -117,7 +116,7 @@
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-05.html" class="sidebar-item-text sidebar-link">Week 5</a>
+  <a href="../weeks/wk-05.html" class="sidebar-item-text sidebar-link active">Week 5</a>
   </div>
 </li>
     </ul>
@@ -132,9 +131,12 @@
 <ul>
 <li><a href="#learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
 <li><a href="#slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-<li><a href="#pre-course-survey" class="nav-link" data-scroll-target="#pre-course-survey">Pre-course survey</a></li>
-<li><a href="#homework-assignment" class="nav-link" data-scroll-target="#homework-assignment">Homework assignment</a></li>
 <li><a href="#readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+<li><a href="#homework-assignment" class="nav-link" data-scroll-target="#homework-assignment">Homework assignment</a>
+<ul class="collapse">
+<li><a href="#practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
+<li><a href="#slides-1" class="nav-link" data-scroll-target="#slides-1">Slides</a></li>
+</ul></li>
 <li><a href="#learning-reflection" class="nav-link" data-scroll-target="#learning-reflection">Learning reflection</a></li>
 </ul>
 </nav>
@@ -144,7 +146,7 @@
 <header id="title-block-header" class="quarto-title-block default">
 
 
-<div class="quarto-title"><h1 class="title d-none d-lg-block display-7">Week 1</h1><p class="subtitle lead">Welcome! &amp; Data Science life-cycle</p></div></header>
+<div class="quarto-title"><h1 class="title d-none d-lg-block display-7">Week 5</h1><p class="subtitle lead">Joining data &amp; communicating results with Quarto</p></div></header>
 
 <script defer="" data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 <section id="learning-objectives" class="level2">
@@ -153,34 +155,52 @@
 
 </div>
 <ol type="1">
-<li>Learners can navigate the platforms that are used to for the course</li>
-<li>Learners can render a file on RStudio Cloud in PDF format</li>
-<li>Learners can list the six elements of the data science lifecycle</li>
-<li>Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)</li>
+<li>Learners can use Quarto and Netlify to publish an HTML file</li>
+<li>Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor</li>
+<li>Learners can cross-reference figures and tables within an Quarto file</li>
+<li>Learners can apply functions from the dplyr R Package to join multiple data sets</li>
 </ol>
 </section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p>🖥 <a href="../slides/lec-01-welcome.html">Lecture 1 - Welcome! - HTML</a></p>
-<p>🖥 <a href="https://github.com/cven5837-ss22/website/raw/main/slides/lec-01-welcome.pdf">Lecture 1 - Welcome! - Download PDF</a></p>
-</section>
-<section id="pre-course-survey" class="level2">
-<h2 class="anchored" data-anchor-id="pre-course-survey">Pre-course survey</h2>
-<p>Complete this pre-course survey, which helps us understand your current knowledge and motivation for the course: https://forms.gle/7yKyJvNCoiiUQN2R8</p>
-</section>
-<section id="homework-assignment" class="level2">
-<h2 class="anchored" data-anchor-id="homework-assignment">Homework assignment</h2>
-<p>Complete the homework programming assignment that is in your project folder for week 1 on <a href="https://rstudio.cloud/spaces/260187/content/all">RStudio Cloud</a> (hw-01-data-science-lifecycle.qmd).</p>
+<p>🖥 <a href="../slides/lec-05-communicate.html">Lecture 5 - Joining data &amp; Communicating results - HTML</a></p>
+<p>🖥 <a href="https://github.com/cven5837-ss22/website/raw/main/slides/lec-05-communicate.pdf">Lecture 5 - Joining data &amp; Communicating results - Download PDF</a></p>
 </section>
 <section id="readings" class="level2">
 <h2 class="anchored" data-anchor-id="readings">Readings</h2>
-<p>📖 Read the <a href="../index.html">Course Overview</a></p>
-<p>📖 Read <a href="https://r4ds.had.co.nz/explore-intro.html">R for Data Science - Section 2 - Introduction</a></p>
-<p>📖 Read <a href="https://r4ds.had.co.nz/workflow-basics.html">R for Data Science - Section 4 - Workflow basics</a></p>
+<p>📖 Read <a href="https://r4ds.had.co.nz/tidy-data.html">R for Data Science - Section 13 - Relational data</a></p>
+<p>📖 Read <a href="https://r4ds.had.co.nz/relational-data.html">R for Data Science - Section 15 - Factors</a></p>
+</section>
+<section id="homework-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="homework-assignment">Homework assignment</h2>
+<section id="practice" class="level3">
+<h3 class="anchored" data-anchor-id="practice">Practice</h3>
+<p>This week’s homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assigment is contained in a sub-folder of week 5 titled “hw-05a-practice”.</p>
+</section>
+<section id="slides-1" class="level3">
+<h3 class="anchored" data-anchor-id="slides-1">Slides</h3>
+<p>This part of the homework programming assignment does not have a starter file. It is your task to create this file yourself.</p>
+<ol type="1">
+<li>Create a new Quarto file by navigating to the menu: File -&gt; New File -&gt; Quarto Presentation</li>
+<li>Add a title and author, and use the default Reveal JS format</li>
+<li>Save the file in “course-material/wk-05/slides” with the name index.qmd</li>
+<li>Click Render and inspect the output in the Presentation pane on the bottom right</li>
+<li>Delete all content besides the YAML header (at the top of the document)</li>
+<li>Use your own creativity and the <a href="https://quarto.org/docs/presentations/revealjs/">Quarto Guide for Revealjs slides</a> to prepare a minimum of five slides.</li>
+<li>Add the line <code>self-contained: true</code> to the YAML header</li>
+<li>Render the slides</li>
+<li>Export (download) the “slides” directory as “slides.zip” from RStudio Cloud and store the ZIP file on your computer</li>
+<li>Navigate to the folder where you stored the “slides.zip” file and unzip the compressed directory</li>
+<li>Log into your Netlifly account you created during class</li>
+<li>Upload the “slides” directory to Netlifly</li>
+<li>Wait until the site has been deployed</li>
+<li>Share the created link that shows your slides with the course instructor</li>
+</ol>
+</section>
 </section>
 <section id="learning-reflection" class="level2">
 <h2 class="anchored" data-anchor-id="learning-reflection">Learning reflection</h2>
-<p>Complete the learning reflection that is in your project folder for week 1 on <a href="https://rstudio.cloud/spaces/260187/content/all">RStudio Cloud</a> (learning-01.qmd).</p>
+<p>Complete the learning reflection that is in your project folder for week 5 on <a href="https://rstudio.cloud/spaces/260187/content/all">RStudio Cloud</a> (learning-05.qmd).</p>
 
 
 
@@ -264,14 +284,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Course Overview</span>
+      <a href="../weeks/wk-04.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 4</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../weeks/wk-02.html" class="pagination-link">
-        <span class="nav-page-text">Week 2</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

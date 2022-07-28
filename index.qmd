@@ -40,13 +40,14 @@ We will rely entirely on open source and open access material for this course. W
 
 # Course Calendar
 
-| week | day      | topic                                                                             |
-|--------------|--------------|--------------------------------------------|
-| 1    | July 5   | Welcome! & Data Science Life-cycle                                                 |
-| 2    | July 12  | Exploratory data analysis using visualization & Data organization in spreadsheets |
-| 3    | July 19  | Data transformation and descriptive statistics                                    |
-| 4    | July 26  | Concept of tidy data and data tidying                                             |
-| 5    | August 2 | Data communication using Quarto                                                |
+```{r}
+readr::read_csv("data/tab-00_rbtl-course-schedule-main.csv") |> 
+  dplyr::select(date, week, topic = title) |> 
+  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
+  knitr::kable()
+  
+```
+                         |
 
 # Weekly Structure
 
@@ -93,7 +94,7 @@ Due dates are set and all work is due on the stated date. This helps students to
 
 **Late work policy**
 
-Late work will be accepted up to 2 working days after the deadline with 25% penalty for each day. That is Tuesday after deadline for the homework assignments and Wednesay after deadline for the learning reflections. Work that is handed in more than two working days after the due date will be graded with 0 percent unless a documented reason for special circumstances is provided.
+Late work will be accepted up to 2 working days after the deadline with 10% penalty for each day. That is Tuesday after deadline for the homework assignments and Wednesay after deadline for the learning reflections. Work that is handed in more than two working days after the due date will be graded with 0 percent unless a documented reason for special circumstances is provided.
 
 **Special circumstances**
 

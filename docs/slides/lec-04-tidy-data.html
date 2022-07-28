@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.312">
-
+  <meta name="generator" content="quarto-0.9.180">
   <meta name="author" content="Lars Schöbitz">
   <title>CVEN 5837 - Summer 2022 - Concept of Tidy Data, Vectors &amp; Pivoting</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -82,6 +81,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
+
   <script src="../site_libs/clipboard/clipboard.min.js"></script>
   <script src="../site_libs/quarto-html/tabby.min.js"></script>
   <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -549,7 +549,7 @@
 <section id="oh-why-wont-you-work" class="slide level2 smaller">
 <h2>Oh why won’t you work?!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
 <span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
@@ -562,7 +562,7 @@
 <section id="oh-why-wont-you-still-work" class="slide level2 smaller">
 <h2>Oh why won’t you still work??!!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
 <span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
@@ -703,7 +703,7 @@
 <section id="very-common-data-tidying-step" class="slide level2 smaller">
 <h2>Very common data tidying step!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb5" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
 <span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
 <span id="cb5-3"><a href="#cb5-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
 <span id="cb5-4"><a href="#cb5-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
@@ -873,7 +873,7 @@
 <section id="sumamrise-argh" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Sumamrise? Argh!!!!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb6" data-code-line-numbers="9"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
 <span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
 <span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
 <span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
@@ -893,7 +893,7 @@
 <section id="always-respect-your-data-types" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Always respect your data types!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb8" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
 <span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
 <span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
 <span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
@@ -1852,7 +1852,7 @@
 <section id="how-to" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1"></a>waste_data_untidy </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1"></a>waste_data_untidy </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1978,7 +1978,7 @@
 <section id="how-to-1" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb11" data-code-line-numbers="2"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
 <span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2"></a>  <span class="fu">select</span>(objid<span class="sc">:</span>paper, non_recyclable) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
@@ -2076,7 +2076,7 @@
 <section id="how-to-2" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb12" data-code-line-numbers="3"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
 <span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a>  <span class="fu">select</span>(objid<span class="sc">:</span>paper, non_recyclable) <span class="sc">|&gt;</span> </span>
 <span id="cb12-3" class="hljs-ln-code"><a href="#cb12-3"></a>  <span class="fu">rename</span>(<span class="at">other =</span> non_recyclable) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -2175,7 +2175,7 @@
 <section id="how-to-3" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="1|6-8|9-10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
+<div class="sourceCode" id="cb13" data-code-line-numbers="1|6-8|9-10"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
 <span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2"></a></span>
 <span id="cb13-3" class="hljs-ln-code"><a href="#cb13-3"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
 <span id="cb13-4" class="hljs-ln-code"><a href="#cb13-4"></a>  <span class="fu">select</span>(objid<span class="sc">:</span>paper, non_recyclable) <span class="sc">|&gt;</span> </span>
@@ -2446,7 +2446,7 @@
 <section id="how-to-4" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="11-13|14"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
+<div class="sourceCode" id="cb14" data-code-line-numbers="11-13|14"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
 <span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a></span>
 <span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
 <span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a>  <span class="fu">select</span>(objid<span class="sc">:</span>paper, non_recyclable) <span class="sc">|&gt;</span> </span>
@@ -2762,7 +2762,7 @@
 <section id="how-to-5" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="15-16"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
+<div class="sourceCode" id="cb15" data-code-line-numbers="15-16"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
 <span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a></span>
 <span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
 <span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a>  <span class="fu">select</span>(objid<span class="sc">:</span>paper, non_recyclable) <span class="sc">|&gt;</span> </span>
@@ -3166,19 +3166,19 @@
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
   <script src="../site_libs/revealjs/dist/reveal.js"></script>
+
   <!-- reveal.js plugins -->
   <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
   <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
   <script src="../site_libs/revealjs/plugin/search/search.js"></script>
   <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
   <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
 
   <script>
 
@@ -3192,9 +3192,10 @@
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
+
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
- 
+
         // Display controls in the bottom right corner
         controls: false,
 
@@ -3432,10 +3433,7 @@
         button.blur();
         // flash "checked"
         button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
         setTimeout(function() {
-          button.setAttribute("title", currentTitle);
           button.classList.remove('code-copy-button-checked');
         }, 1000);
         // clear code selection
