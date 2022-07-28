@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.180">
   <meta name="author" content="Lars Schöbitz">
-  <title>CVEN 5837 - Summer 2022 - Joining data &amp; Communicating results</title>
+  <title>CVEN 5837 - Summer 2022 - Joining data &amp; communicating results with Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -386,7 +386,7 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">Joining data &amp; Communicating results</h1>
+  <h1 class="title">Joining data &amp; communicating results with Quarto</h1>
   <p class="subtitle">CVEN 5837 - Summer 2022</p>
   <p class="author">Lars Schöbitz</p>
 </section>
@@ -403,8 +403,9 @@
 
 </div>
 <ol type="1">
-<li>NA</li>
-<li>NA</li>
+<li>Learners can use Quarto and Netlify to publish an HTML file</li>
+<li>Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor</li>
+<li>Learners can cross-reference figures and tables within an Quarto file</li>
 <li>NA</li>
 </ol>
 </section>
@@ -484,170 +485,55 @@
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="cell">
-<div class="cell-output-display">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">name</th>
-<th style="text-align: left;">profession</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Ada Lovelace</td>
-<td style="text-align: left;">Mathematician</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Marie Curie</td>
-<td style="text-align: left;">Physicist and Chemist</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Janaki Ammal</td>
-<td style="text-align: left;">Botanist</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Chien-Shiung Wu</td>
-<td style="text-align: left;">Physicist</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Katherine Johnson</td>
-<td style="text-align: left;">Mathematician</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Rosalind Franklin</td>
-<td style="text-align: left;">Chemist</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Vera Rubin</td>
-<td style="text-align: left;">Astronomer</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Gladys West</td>
-<td style="text-align: left;">Mathematician</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Flossie Wong-Staal</td>
-<td style="text-align: left;">Virologist and Molecular Biologist</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Jennifer Doudna</td>
-<td style="text-align: left;">Biochemist</td>
-</tr>
-</tbody>
-</table>
+<div class="cell-output-stdout">
+<pre><code># A tibble: 10 × 2
+   name               profession                        
+   &lt;chr&gt;              &lt;chr&gt;                             
+ 1 Ada Lovelace       Mathematician                     
+ 2 Marie Curie        Physicist and Chemist             
+ 3 Janaki Ammal       Botanist                          
+ 4 Chien-Shiung Wu    Physicist                         
+ 5 Katherine Johnson  Mathematician                     
+ 6 Rosalind Franklin  Chemist                           
+ 7 Vera Rubin         Astronomer                        
+ 8 Gladys West        Mathematician                     
+ 9 Flossie Wong-Staal Virologist and Molecular Biologist
+10 Jennifer Doudna    Biochemist                        </code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-1-2">
 <div class="cell">
-<div class="cell-output-display">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">name</th>
-<th style="text-align: right;">birth_year</th>
-<th style="text-align: right;">death_year</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Janaki Ammal</td>
-<td style="text-align: right;">1897</td>
-<td style="text-align: right;">1984</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Chien-Shiung Wu</td>
-<td style="text-align: right;">1912</td>
-<td style="text-align: right;">1997</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Katherine Johnson</td>
-<td style="text-align: right;">1918</td>
-<td style="text-align: right;">2020</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Rosalind Franklin</td>
-<td style="text-align: right;">1920</td>
-<td style="text-align: right;">1958</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Vera Rubin</td>
-<td style="text-align: right;">1928</td>
-<td style="text-align: right;">2016</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Gladys West</td>
-<td style="text-align: right;">1930</td>
-<td style="text-align: right;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Flossie Wong-Staal</td>
-<td style="text-align: right;">1947</td>
-<td style="text-align: right;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Jennifer Doudna</td>
-<td style="text-align: right;">1964</td>
-<td style="text-align: right;">NA</td>
-</tr>
-</tbody>
-</table>
+<div class="cell-output-stdout">
+<pre><code># A tibble: 8 × 3
+  name               birth_year death_year
+  &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt;
+1 Janaki Ammal             1897       1984
+2 Chien-Shiung Wu          1912       1997
+3 Katherine Johnson        1918       2020
+4 Rosalind Franklin        1920       1958
+5 Vera Rubin               1928       2016
+6 Gladys West              1930         NA
+7 Flossie Wong-Staal       1947         NA
+8 Jennifer Doudna          1964         NA</code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-1-3">
 <div class="cell">
-<div class="cell-output-display">
-<table>
-<colgroup>
-<col style="width: 15%">
-<col style="width: 84%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">name</th>
-<th style="text-align: left;">known_for</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Ada Lovelace</td>
-<td style="text-align: left;">first computer algorithm</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Marie Curie</td>
-<td style="text-align: left;">theory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Janaki Ammal</td>
-<td style="text-align: left;">hybrid species, biodiversity protection</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Chien-Shiung Wu</td>
-<td style="text-align: left;">confim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Katherine Johnson</td>
-<td style="text-align: left;">calculations of orbital mechanics critical to sending the first Americans into space</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Vera Rubin</td>
-<td style="text-align: left;">existence of dark matter</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Gladys West</td>
-<td style="text-align: left;">mathematical modeling of the shape of the Earth which served as the foundation of GPS technology</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Flossie Wong-Staal</td>
-<td style="text-align: left;">first scientist to clone HIV and create a map of its genes which led to a test for the virus</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Jennifer Doudna</td>
-<td style="text-align: left;">one of the primary developers of CRISPR, a ground-breaking technology for editing genomes</td>
-</tr>
-</tbody>
-</table>
+<div class="cell-output-stdout">
+<pre><code># A tibble: 9 × 2
+  name               known_for                                                  
+  &lt;chr&gt;              &lt;chr&gt;                                                      
+1 Ada Lovelace       first computer algorithm                                   
+2 Marie Curie        theory of radioactivity,  discovery of elements polonium a…
+3 Janaki Ammal       hybrid species, biodiversity protection                    
+4 Chien-Shiung Wu    confim and refine theory of radioactive beta decy, Wu expe…
+5 Katherine Johnson  calculations of orbital mechanics critical to sending the …
+6 Vera Rubin         existence of dark matter                                   
+7 Gladys West        mathematical modeling of the shape of the Earth which serv…
+8 Flossie Wong-Staal first scientist to clone HIV and create a map of its genes…
+9 Jennifer Doudna    one of the primary developers of CRISPR, a ground-breaking…</code></pre>
 </div>
 </div>
 </div>
@@ -657,97 +543,20 @@
 <section id="desired-output" class="slide level2 smaller">
 <h2>Desired output</h2>
 <div class="cell">
-<div class="cell-output-display">
-<table>
-<colgroup>
-<col style="width: 10%">
-<col style="width: 19%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 57%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">name</th>
-<th style="text-align: left;">profession</th>
-<th style="text-align: right;">birth_year</th>
-<th style="text-align: right;">death_year</th>
-<th style="text-align: left;">known_for</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Ada Lovelace</td>
-<td style="text-align: left;">Mathematician</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: left;">first computer algorithm</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Marie Curie</td>
-<td style="text-align: left;">Physicist and Chemist</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: left;">theory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Janaki Ammal</td>
-<td style="text-align: left;">Botanist</td>
-<td style="text-align: right;">1897</td>
-<td style="text-align: right;">1984</td>
-<td style="text-align: left;">hybrid species, biodiversity protection</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Chien-Shiung Wu</td>
-<td style="text-align: left;">Physicist</td>
-<td style="text-align: right;">1912</td>
-<td style="text-align: right;">1997</td>
-<td style="text-align: left;">confim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Katherine Johnson</td>
-<td style="text-align: left;">Mathematician</td>
-<td style="text-align: right;">1918</td>
-<td style="text-align: right;">2020</td>
-<td style="text-align: left;">calculations of orbital mechanics critical to sending the first Americans into space</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Rosalind Franklin</td>
-<td style="text-align: left;">Chemist</td>
-<td style="text-align: right;">1920</td>
-<td style="text-align: right;">1958</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Vera Rubin</td>
-<td style="text-align: left;">Astronomer</td>
-<td style="text-align: right;">1928</td>
-<td style="text-align: right;">2016</td>
-<td style="text-align: left;">existence of dark matter</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Gladys West</td>
-<td style="text-align: left;">Mathematician</td>
-<td style="text-align: right;">1930</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: left;">mathematical modeling of the shape of the Earth which served as the foundation of GPS technology</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Flossie Wong-Staal</td>
-<td style="text-align: left;">Virologist and Molecular Biologist</td>
-<td style="text-align: right;">1947</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: left;">first scientist to clone HIV and create a map of its genes which led to a test for the virus</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Jennifer Doudna</td>
-<td style="text-align: left;">Biochemist</td>
-<td style="text-align: right;">1964</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: left;">one of the primary developers of CRISPR, a ground-breaking technology for editing genomes</td>
-</tr>
-</tbody>
-</table>
+<div class="cell-output-stdout">
+<pre><code># A tibble: 10 × 5
+   name               profession                 birth_year death_year known_for
+   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    
+ 1 Ada Lovelace       Mathematician                      NA         NA first co…
+ 2 Marie Curie        Physicist and Chemist              NA         NA theory o…
+ 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…
+ 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…
+ 5 Katherine Johnson  Mathematician                    1918       2020 calculat…
+ 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     
+ 7 Vera Rubin         Astronomer                       1928       2016 existenc…
+ 8 Gladys West        Mathematician                    1930         NA mathemat…
+ 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…
+10 Jennifer Doudna    Biochemist                       1964         NA one of t…</code></pre>
 </div>
 </div>
 </section>
@@ -756,15 +565,15 @@
 <div class="columns">
 <div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">names</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">names</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code>[1] "name"       "profession"</code></pre>
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">names</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">names</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code>[1] "name"       "birth_year" "death_year"</code></pre>
 </div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">names</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">names</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code>[1] "name"      "known_for"</code></pre>
 </div>
@@ -773,15 +582,15 @@
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">nrow</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">nrow</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code>[1] 10</code></pre>
 </div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">nrow</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">nrow</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">nrow</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">nrow</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code>[1] 9</code></pre>
 </div>
@@ -797,7 +606,7 @@
 <section id="joining-data-frames-1" class="slide level2">
 <h2>Joining data frames</h2>
 <div class="cell">
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">something_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">something_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><code>left_join()</code>: all rows from x</li>
@@ -812,13 +621,13 @@
 <div class="columns">
 <div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
-<span id="cb15-3"><a href="#cb15-3"></a>  <span class="at">value_x =</span> <span class="fu">c</span>(<span class="st">"x1"</span>, <span class="st">"x2"</span>, <span class="st">"x3"</span>)</span>
-<span id="cb15-4"><a href="#cb15-4"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb19-2"><a href="#cb19-2"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
+<span id="cb19-3"><a href="#cb19-3"></a>  <span class="at">value_x =</span> <span class="fu">c</span>(<span class="st">"x1"</span>, <span class="st">"x2"</span>, <span class="st">"x3"</span>)</span>
+<span id="cb19-4"><a href="#cb19-4"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 3 × 2
      id value_x
@@ -832,13 +641,13 @@
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>y <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb18-2"><a href="#cb18-2"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>),</span>
-<span id="cb18-3"><a href="#cb18-3"></a>  <span class="at">value_y =</span> <span class="fu">c</span>(<span class="st">"y1"</span>, <span class="st">"y2"</span>, <span class="st">"y4"</span>)</span>
-<span id="cb18-4"><a href="#cb18-4"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>y <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb22-2"><a href="#cb22-2"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>),</span>
+<span id="cb22-3"><a href="#cb22-3"></a>  <span class="at">value_y =</span> <span class="fu">c</span>(<span class="st">"y1"</span>, <span class="st">"y2"</span>, <span class="st">"y4"</span>)</span>
+<span id="cb22-4"><a href="#cb22-4"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 3 × 2
      id value_y
@@ -864,7 +673,7 @@
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">left_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">left_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 3 × 3
      id value_x value_y
@@ -880,8 +689,8 @@
 <section id="left_join-1" class="slide level2 smaller">
 <h2><code>left_join()</code></h2>
 <div class="cell">
-<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>professions <span class="sc">%&gt;%</span></span>
-<span id="cb23-2"><a href="#cb23-2"></a>  <span class="fu">left_join</span>(dates) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>professions <span class="sc">%&gt;%</span></span>
+<span id="cb27-2"><a href="#cb27-2"></a>  <span class="fu">left_join</span>(dates) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 10 × 4
    name               profession                         birth_year death_year
@@ -912,7 +721,7 @@
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">right_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">right_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 3 × 3
      id value_x value_y
@@ -928,8 +737,8 @@
 <section id="right_join-1" class="slide level2 smaller">
 <h2><code>right_join()</code></h2>
 <div class="cell">
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>professions <span class="sc">%&gt;%</span></span>
-<span id="cb27-2"><a href="#cb27-2"></a>  <span class="fu">right_join</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>professions <span class="sc">%&gt;%</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">right_join</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 8 × 4
   name               profession                         birth_year death_year
@@ -958,7 +767,7 @@
 
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">full_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">full_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 4 × 3
      id value_x value_y
@@ -975,8 +784,8 @@
 <section id="full_join-1" class="slide level2 smaller">
 <h2><code>full_join()</code></h2>
 <div class="cell">
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>dates <span class="sc">%&gt;%</span></span>
-<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">full_join</span>(works) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a>dates <span class="sc">%&gt;%</span></span>
+<span id="cb35-2"><a href="#cb35-2"></a>  <span class="fu">full_join</span>(works) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 10 × 4
    name               birth_year death_year known_for                           
@@ -997,9 +806,9 @@
 <section id="putting-it-altogether" class="slide level2 smaller">
 <h2>Putting it altogether</h2>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>professions <span class="sc">%&gt;%</span></span>
-<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">left_join</span>(dates) <span class="sc">%&gt;%</span></span>
-<span id="cb33-3"><a href="#cb33-3"></a>  <span class="fu">left_join</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource r cell-code number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>professions <span class="sc">%&gt;%</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a>  <span class="fu">left_join</span>(dates) <span class="sc">%&gt;%</span></span>
+<span id="cb37-3"><a href="#cb37-3"></a>  <span class="fu">left_join</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
 <pre><code># A tibble: 10 × 5
    name               profession                 birth_year death_year known_for
@@ -1049,7 +858,7 @@
 <section id="documentation" class="slide level2">
 <h2>Documentation</h2>
 
-<img data-src="img/website-quarto.png" alt="Screenshot of the Quarto homepage at https://quarto.org/." class="r-stretch quarto-figure-center"></section></section>
+<img data-src="img/lec-05/website-quarto.png" alt="Screenshot of the Quarto homepage at https://quarto.org/." class="r-stretch quarto-figure-center"></section></section>
 <section>
 <section id="live-coding-exercise-build-a-website" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Live Coding Exercise: Build a website</h1>
@@ -1071,7 +880,7 @@
 
 <img data-src="img/lec-01/coffee-break.jpg" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62e29479" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_62e29444" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -1089,16 +898,16 @@
 </ul>
 <p>See <a href="#/tbl-simple-table">Table&nbsp;1</a>…</p>
 <div class="cell">
-<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown cell-code number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1"></a><span class="in">```{r}</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a><span class="co">#| tbl-cap: "A table"</span></span>
-<span id="cb35-3"><a href="#cb35-3"></a><span class="co">#| label: tbl-simple-table</span></span>
-<span id="cb35-4"><a href="#cb35-4"></a></span>
-<span id="cb35-5"><a href="#cb35-5"></a><span class="fu">tibble</span>(</span>
-<span id="cb35-6"><a href="#cb35-6"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
-<span id="cb35-7"><a href="#cb35-7"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"X"</span>, <span class="st">"Y"</span>, <span class="st">"Z"</span>)</span>
-<span id="cb35-8"><a href="#cb35-8"></a>) <span class="sc">%&gt;%</span> </span>
-<span id="cb35-9"><a href="#cb35-9"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span>
-<span id="cb35-10"><a href="#cb35-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource markdown cell-code number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1"></a><span class="in">```{r}</span></span>
+<span id="cb39-2"><a href="#cb39-2"></a><span class="co">#| tbl-cap: "A table"</span></span>
+<span id="cb39-3"><a href="#cb39-3"></a><span class="co">#| label: tbl-simple-table</span></span>
+<span id="cb39-4"><a href="#cb39-4"></a></span>
+<span id="cb39-5"><a href="#cb39-5"></a><span class="fu">tibble</span>(</span>
+<span id="cb39-6"><a href="#cb39-6"></a>  <span class="at">id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</span>
+<span id="cb39-7"><a href="#cb39-7"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"X"</span>, <span class="st">"Y"</span>, <span class="st">"Z"</span>)</span>
+<span id="cb39-8"><a href="#cb39-8"></a>) <span class="sc">%&gt;%</span> </span>
+<span id="cb39-9"><a href="#cb39-9"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span>
+<span id="cb39-10"><a href="#cb39-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="tbl-simple-table">
 <table>
