@@ -1048,5 +1048,222 @@
     "title": "Schedule",
     "section": "",
     "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
+  },
+  {
+    "objectID": "weeks/wk-05.html",
+    "href": "weeks/wk-05.html",
+    "title": "Week 5",
+    "section": "",
+    "text": "NA\nNA\nNA"
+  },
+  {
+    "objectID": "weeks/wk-05.html#slides",
+    "href": "weeks/wk-05.html#slides",
+    "title": "Week 5",
+    "section": "Slides",
+    "text": "Slides\n🖥 Lecture 5 - Joining data & Communicating results - HTML\n🖥 Lecture 5 - Joining data & Communicating results - Download PDF"
+  },
+  {
+    "objectID": "weeks/wk-05.html#readings",
+    "href": "weeks/wk-05.html#readings",
+    "title": "Week 5",
+    "section": "Readings",
+    "text": "Readings\n📖 Read R for Data Science - Section 13 - Relational data\n📖 Read R for Data Science - Section 15 - Factors"
+  },
+  {
+    "objectID": "weeks/wk-05.html#homework-assignment",
+    "href": "weeks/wk-05.html#homework-assignment",
+    "title": "Week 5",
+    "section": "Homework assignment",
+    "text": "Homework assignment\n\nPractice\nThis week’s homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assigment is contained in a sub-folder of week 5 titled “hw-05a-practice”.\n\n\nSlides\nThis part of the homework programming assignment does not have a starter file. It is your task to create this file yourself.\n\nCreate a new Quarto file by navigating to the menu: File -> New File -> Quarto Presentation\nAdd a title and author, and use the default Reveal JS format\nSave the file in “course-material/wk-05/slides” with the name index.qmd\nUse your own creativity and the Quarto Guide for Revealjs slides to prepare a minimum of five slides\nAdd the line self-contained: true to the YAML header\nRender the slides\nLog into your Netlifly account you created during class\nExport the “slides” directory including the index.html from RStudio Cloud\nUpload the “slides” directory including the index.html to Netlify\nWait until your slides are deployed\nShare the created link that shows your slides with the course instructor\n\nComplete the homework programming assignments that are in your project folder for week 5 on RStudio Cloud:\n\nhw-04a-tidyr.qmd"
+  },
+  {
+    "objectID": "weeks/wk-05.html#learning-reflection",
+    "href": "weeks/wk-05.html#learning-reflection",
+    "title": "Week 5",
+    "section": "Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 5 on RStudio Cloud (learning-04.qmd)."
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#we",
+    "href": "slides/lec-05-communicate.html#we",
+    "title": "Joining data & Communicating results",
+    "section": "We…",
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\n\n\n\nprofessions <- read_csv(here::here(\"data/scientists/professions.csv\"))\ndates <- read_csv(here::here(\"data/scientists/dates.csv\"))\nworks <- read_csv(here::here(\"scientists/works.csv\"))"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#data-women-in-science",
+    "href": "slides/lec-05-communicate.html#data-women-in-science",
+    "title": "Joining data & Communicating results",
+    "section": "Data: Women in science",
+    "text": "Data: Women in science\nInformation on 10 women in science who changed the world\n\n\n\n\n\nname\n\n\n\n\nAda Lovelace\n\n\nMarie Curie\n\n\nJanaki Ammal\n\n\nChien-Shiung Wu\n\n\nKatherine Johnson\n\n\nRosalind Franklin\n\n\nVera Rubin\n\n\nGladys West\n\n\nFlossie Wong-Staal\n\n\nJennifer Doudna\n\n\n\n\n\n\n\nSource: Discover Magazine"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#inputs",
+    "href": "slides/lec-05-communicate.html#inputs",
+    "title": "Joining data & Communicating results",
+    "section": "Inputs",
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n\n\n\nname\nprofession\n\n\n\n\nAda Lovelace\nMathematician\n\n\nMarie Curie\nPhysicist and Chemist\n\n\nJanaki Ammal\nBotanist\n\n\nChien-Shiung Wu\nPhysicist\n\n\nKatherine Johnson\nMathematician\n\n\nRosalind Franklin\nChemist\n\n\nVera Rubin\nAstronomer\n\n\nGladys West\nMathematician\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n\n\nJennifer Doudna\nBiochemist\n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\n1897\n1984\n\n\nChien-Shiung Wu\n1912\n1997\n\n\nKatherine Johnson\n1918\n2020\n\n\nRosalind Franklin\n1920\n1958\n\n\nVera Rubin\n1928\n2016\n\n\nGladys West\n1930\nNA\n\n\nFlossie Wong-Staal\n1947\nNA\n\n\nJennifer Doudna\n1964\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nknown_for\n\n\n\n\nAda Lovelace\nfirst computer algorithm\n\n\nMarie Curie\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nVera Rubin\nexistence of dark matter\n\n\nGladys West\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#desired-output",
+    "href": "slides/lec-05-communicate.html#desired-output",
+    "title": "Joining data & Communicating results",
+    "section": "Desired output",
+    "text": "Desired output\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#inputs-reminder",
+    "href": "slides/lec-05-communicate.html#inputs-reminder",
+    "title": "Joining data & Communicating results",
+    "section": "Inputs, reminder",
+    "text": "Inputs, reminder\n\n\n\nnames(professions)\n\n[1] \"name\"       \"profession\"\n\nnames(dates)\n\n[1] \"name\"       \"birth_year\" \"death_year\"\n\nnames(works)\n\n[1] \"name\"      \"known_for\"\n\n\n\n\n\n\nnrow(professions)\n\n[1] 10\n\nnrow(dates)\n\n[1] 8\n\nnrow(works)\n\n[1] 9"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#joining-data-frames-1",
+    "href": "slides/lec-05-communicate.html#joining-data-frames-1",
+    "title": "Joining data & Communicating results",
+    "section": "Joining data frames",
+    "text": "Joining data frames\n\nsomething_join(x, y)\n\n\nleft_join(): all rows from x\nright_join(): all rows from y\nfull_join(): all rows from both x and y\n…"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#setup",
+    "href": "slides/lec-05-communicate.html#setup",
+    "title": "Joining data & Communicating results",
+    "section": "Setup",
+    "text": "Setup\nFor the next few slides…\n\n\n\nx <- tibble(\n  id = c(1, 2, 3),\n  value_x = c(\"x1\", \"x2\", \"x3\")\n  )\n\n\nx\n\n# A tibble: 3 × 2\n     id value_x\n  <dbl> <chr>  \n1     1 x1     \n2     2 x2     \n3     3 x3     \n\n\n\n\n\n\ny <- tibble(\n  id = c(1, 2, 4),\n  value_y = c(\"y1\", \"y2\", \"y4\")\n  )\n\n\ny\n\n# A tibble: 3 × 2\n     id value_y\n  <dbl> <chr>  \n1     1 y1     \n2     2 y2     \n3     4 y4"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#left_join",
+    "href": "slides/lec-05-communicate.html#left_join",
+    "title": "Joining data & Communicating results",
+    "section": "left_join()",
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  <dbl> <chr>   <chr>  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      <NA>"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#left_join-1",
+    "href": "slides/lec-05-communicate.html#left_join-1",
+    "title": "Joining data & Communicating results",
+    "section": "left_join()",
+    "text": "left_join()\n\nprofessions %>%\n  left_join(dates) \n\n# A tibble: 10 × 4\n   name               profession                         birth_year death_year\n   <chr>              <chr>                                   <dbl>      <dbl>\n 1 Ada Lovelace       Mathematician                              NA         NA\n 2 Marie Curie        Physicist and Chemist                      NA         NA\n 3 Janaki Ammal       Botanist                                 1897       1984\n 4 Chien-Shiung Wu    Physicist                                1912       1997\n 5 Katherine Johnson  Mathematician                            1918       2020\n 6 Rosalind Franklin  Chemist                                  1920       1958\n 7 Vera Rubin         Astronomer                               1928       2016\n 8 Gladys West        Mathematician                            1930         NA\n 9 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n10 Jennifer Doudna    Biochemist                               1964         NA"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#right_join",
+    "href": "slides/lec-05-communicate.html#right_join",
+    "title": "Joining data & Communicating results",
+    "section": "right_join()",
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  <dbl> <chr>   <chr>  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 <NA>    y4"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#right_join-1",
+    "href": "slides/lec-05-communicate.html#right_join-1",
+    "title": "Joining data & Communicating results",
+    "section": "right_join()",
+    "text": "right_join()\n\nprofessions %>%\n  right_join(dates)\n\n# A tibble: 8 × 4\n  name               profession                         birth_year death_year\n  <chr>              <chr>                                   <dbl>      <dbl>\n1 Janaki Ammal       Botanist                                 1897       1984\n2 Chien-Shiung Wu    Physicist                                1912       1997\n3 Katherine Johnson  Mathematician                            1918       2020\n4 Rosalind Franklin  Chemist                                  1920       1958\n5 Vera Rubin         Astronomer                               1928       2016\n6 Gladys West        Mathematician                            1930         NA\n7 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n8 Jennifer Doudna    Biochemist                               1964         NA"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#full_join",
+    "href": "slides/lec-05-communicate.html#full_join",
+    "title": "Joining data & Communicating results",
+    "section": "full_join()",
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  <dbl> <chr>   <chr>  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      <NA>   \n4     4 <NA>    y4"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#full_join-1",
+    "href": "slides/lec-05-communicate.html#full_join-1",
+    "title": "Joining data & Communicating results",
+    "section": "full_join()",
+    "text": "full_join()\n\ndates %>%\n  full_join(works) \n\n# A tibble: 10 × 4\n   name               birth_year death_year known_for                           \n   <chr>                   <dbl>      <dbl> <chr>                               \n 1 Janaki Ammal             1897       1984 hybrid species, biodiversity protec…\n 2 Chien-Shiung Wu          1912       1997 confim and refine theory of radioac…\n 3 Katherine Johnson        1918       2020 calculations of orbital mechanics c…\n 4 Rosalind Franklin        1920       1958 <NA>                                \n 5 Vera Rubin               1928       2016 existence of dark matter            \n 6 Gladys West              1930         NA mathematical modeling of the shape …\n 7 Flossie Wong-Staal       1947         NA first scientist to clone HIV and cr…\n 8 Jennifer Doudna          1964         NA one of the primary developers of CR…\n 9 Ada Lovelace               NA         NA first computer algorithm            \n10 Marie Curie                NA         NA theory of radioactivity,  discovery…"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#putting-it-altogether",
+    "href": "slides/lec-05-communicate.html#putting-it-altogether",
+    "title": "Joining data & Communicating results",
+    "section": "Putting it altogether",
+    "text": "Putting it altogether\n\nprofessions %>%\n  left_join(dates) %>%\n  left_join(works)\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   <chr>              <chr>                           <dbl>      <dbl> <chr>    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 <NA>     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#what-is-quarto",
+    "href": "slides/lec-05-communicate.html#what-is-quarto",
+    "title": "Joining data & Communicating results",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\n\nNext generation version of R Markdown from RStudio\nMulti-language (Python, R, Julia, Observable)\nAuthoring in plain text markdown or Jupyter notebooks"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#editing-documents",
+    "href": "slides/lec-05-communicate.html#editing-documents",
+    "title": "Joining data & Communicating results",
+    "section": "Editing documents",
+    "text": "Editing documents\nYou’re not limited to RStudio for editing Quarto documents…\n\nJupyterLab\nVS Code\nText Editors"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#authoring",
+    "href": "slides/lec-05-communicate.html#authoring",
+    "title": "Joining data & Communicating results",
+    "section": "Authoring",
+    "text": "Authoring\n\nTechnical articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nAuthor with scientific markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more."
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#documentation",
+    "href": "slides/lec-05-communicate.html#documentation",
+    "title": "Joining data & Communicating results",
+    "section": "Documentation",
+    "text": "Documentation"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#live-05b-website",
+    "href": "slides/lec-05-communicate.html#live-05b-website",
+    "title": "Joining data & Communicating results",
+    "section": "live-05b-website",
+    "text": "live-05b-website\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#cross-references",
+    "href": "slides/lec-05-communicate.html#cross-references",
+    "title": "Joining data & Communicating results",
+    "section": "Cross-references",
+    "text": "Cross-references\n\nno space between {r} and #| tbl-cap: \"A table\"\nspelling tbl not tab\nno spaces (use dashes in label)\n\nSee Table 1…\n\n```{r}\n#| tbl-cap: \"A table\"\n#| label: tbl-simple-table\n\ntibble(\n  id = c(1, 2, 3),\n  name = c(\"X\", \"Y\", \"Z\")\n) %>% \n  knitr::kable()\n```\n\n\n\nTable 1: A table\n\n\nid\nname\n\n\n\n\n1\nX\n\n\n2\nY\n\n\n3\nZ"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#homework-due-dates",
+    "href": "slides/lec-05-communicate.html#homework-due-dates",
+    "title": "Joining data & Communicating results",
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 5th August\nLearning reflection due: Monday, 8th August"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#get-out-the-cloud",
+    "href": "slides/lec-05-communicate.html#get-out-the-cloud",
+    "title": "Joining data & Communicating results",
+    "section": "Get out the cloud",
+    "text": "Get out the cloud\nInstall software on your computer:\n\nR: https://cran.r-project.org/\nRStudio IDE: https://www.rstudio.com/products/rstudio/download/\nQuarto CLI: https://quarto.org/docs/get-started/"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#start-a-project",
+    "href": "slides/lec-05-communicate.html#start-a-project",
+    "title": "Joining data & Communicating results",
+    "section": "Start a project",
+    "text": "Start a project\n\nGuidance: https://r4ds.had.co.nz/workflow-projects.html\nLearn about project oriented workflows: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#stay-in-touch",
+    "href": "slides/lec-05-communicate.html#stay-in-touch",
+    "title": "Joining data & Communicating results",
+    "section": "Stay in touch",
+    "text": "Stay in touch\n\nEmail: lars@lse.de\nData Science for WASH Slack Community: Slack invite link"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#section",
+    "href": "slides/lec-05-communicate.html#section",
+    "title": "Joining data & Communicating results",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#live-05a-communicate",
+    "href": "slides/lec-05-communicate.html#live-05a-communicate",
+    "title": "Joining data & Communicating results",
+    "section": "live-05a-communicate",
+    "text": "live-05a-communicate\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
   }
 ]

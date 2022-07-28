@@ -1,5 +1,5 @@
 ---
-title: "Joining data & Communicating results"
+title: "Joining data & communicating results with Quarto"
 subtitle: "CVEN 5837 - Summer 2022"
 author: "Lars Schöbitz"
 format: 
@@ -41,8 +41,6 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 
 # Part 1: Joining data {background-color="#0F4C81"}
 
-# Part 3: dplyr - joining data {background-color="#0F4C81"}
-
 ##  We... {.smaller}
 
 ...have multiple data frames
@@ -51,9 +49,9 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 
 ```{r}
 #| echo: false
-professions <- read_csv(here::here("slides/pt2-d13-data-wrangling-tidyr/data/scientists/professions.csv"))
-dates <- read_csv(here::here("slides/pt2-d13-data-wrangling-tidyr/data/scientists/dates.csv"))
-works <- read_csv(here::here("slides/pt2-d13-data-wrangling-tidyr/data/scientists/works.csv"))
+professions <- read_csv(here::here("slides/data/scientists/professions.csv"))
+dates <- read_csv(here::here("slides/data/scientists/dates.csv"))
+works <- read_csv(here::here("slides/data/scientists/works.csv"))
 ```
 
 ```{r}
@@ -65,7 +63,6 @@ works <- read_csv(here::here("scientists/works.csv"))
 ```
 
 ## Data: Women in science {.smaller}
-
 
 Information on 10 women in science who changed the world
 
@@ -140,7 +137,7 @@ nrow(works)
 
 ::::
 
-# Joining data frames 
+# Joining data frames {background-color="#0F4C81"}
 
 ## Joining data frames
 
@@ -202,7 +199,7 @@ y
 
 ::: {.column width="47.5%"}
 ```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
-include_graphics("img/left-join.gif")
+include_graphics("img/lec-05/left-join.gif")
 ```
 :::
 
@@ -233,7 +230,7 @@ professions %>%
 
 ::: {.column width="47.5%"}
 ```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
-include_graphics("img/right-join.gif")
+include_graphics("img/lec-05/right-join.gif")
 ```
 :::
 
@@ -264,7 +261,7 @@ professions %>%
 
 ::: {.column width="47.5%"}
 ```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
-include_graphics("img/full-join.gif")
+include_graphics("img/lec-05/full-join.gif")
 ```
 :::
 
@@ -298,25 +295,6 @@ professions %>%
   left_join(works)
 ```
 
-# Break One
-
-![](img/lec-01/coffee-break.jpg)
-
-```{r}
-
-countdown::countdown(
-  minutes = 10, seconds = 0,
-  left = 0, right = 0,
-  padding = "10px", margin = "5%",
-  font_size = "2em"
-)
-
-```
-
-::: aside
-Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
-:::
-
 # Part 2: Communicate results with Quarto {background-color="#0F4C81"}
 
 ## What is Quarto? {.incremental}
@@ -348,13 +326,32 @@ You're not limited to RStudio for editing Quarto documents...
 
 # Live Coding Exercise: Build a website {background-color="#0F4C81"}
 
-## live-05b-website
+## live-05a-communicate
 
 1. Head over to rstudio.cloud
 2. Open the workspace for the course (cven5837-ss22)
 3. Open "Projects"
 4. Open the "course-materials" project
 5. Follow along with me
+
+# Break 
+
+![](img/lec-01/coffee-break.jpg)
+
+```{r}
+
+countdown::countdown(
+  minutes = 10, seconds = 0,
+  left = 0, right = 0,
+  padding = "10px", margin = "5%",
+  font_size = "2em"
+)
+
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
 
 ## Cross-references {.smaller .scrollable}
 
@@ -381,11 +378,11 @@ tibble(
 
 ## Homework due dates
 
-- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-04.html)
+- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-05.html)
 - Homework assignment due: Friday, 5th August
 - Learning reflection due: Monday, 8th August
 
-# What comes next?
+# What comes next?  {background-color="#0F4C81"}
 
 ## Get out the cloud
 
@@ -403,13 +400,14 @@ Install software on your computer:
 ## Stay in touch
 
 - Email: lars@lse.de
+- Data Science for WASH Slack Community: [Slack invite link](https://join.slack.com/t/datascienceforwash/shared_invite/zt-nh47xhqt-WYV64_iqTBMxBB4CMWm33Q)
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
 ## 
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-04-tidy-data.pdf)
+Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-05-communicate.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 
