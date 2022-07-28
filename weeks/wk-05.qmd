@@ -34,9 +34,9 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 
 ## Readings
 
-`r emo::ji("book")` Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/tidy-data.html)  
+`r emo::ji("book")` Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)  
 
-`r emo::ji("book")` Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/relational-data.html)  
+`r emo::ji("book")` Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html)  
 
 ## Homework assignment 
 
