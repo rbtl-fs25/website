@@ -25,7 +25,7 @@ ggplot2::theme_set(ggplot2::theme_gray(base_size = 16))
 
 ```
 
-## Learning Objectives (for this week)
+# Learning Objectives (for this week)
 
 ```{r}
 
@@ -41,15 +41,262 @@ lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
 
 # Part 1: Joining data {background-color="#0F4C81"}
 
-# Live Coding Exercise: Vectors {background-color="#0F4C81"}
+# Part 3: dplyr - joining data {background-color="#0F4C81"}
 
-## live-05a-joining-data
+##  We... {.smaller}
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
-3. Open "Projects"
-4. Open the "course-materials" project
-5. Follow along with me
+...have multiple data frames
+
+...want to bring them together
+
+```{r}
+#| echo: false
+professions <- read_csv(here::here("slides/pt2-d13-data-wrangling-tidyr/data/scientists/professions.csv"))
+dates <- read_csv(here::here("slides/pt2-d13-data-wrangling-tidyr/data/scientists/dates.csv"))
+works <- read_csv(here::here("slides/pt2-d13-data-wrangling-tidyr/data/scientists/works.csv"))
+```
+
+```{r}
+#| echo: true
+#| eval: false
+professions <- read_csv(here::here("data/scientists/professions.csv"))
+dates <- read_csv(here::here("data/scientists/dates.csv"))
+works <- read_csv(here::here("scientists/works.csv"))
+```
+
+## Data: Women in science {.smaller}
+
+
+Information on 10 women in science who changed the world
+
+```{r echo=FALSE}
+professions %>% select(name) %>% kable()
+```
+
+::: aside
+Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-10-women-in-science-who-changed-the-world)
+:::
+
+## Inputs {.smaller}
+
+::: {.panel-tabset}
+
+### professions
+
+```{r}
+professions %>% 
+  kable()
+```
+
+### dates
+
+```{r}
+dates %>% 
+  kable()
+```
+
+### works
+
+```{r}
+works %>% kable()
+```
+
+:::
+
+## Desired output {.smaller}
+
+```{r}
+professions %>%
+  left_join(dates) %>%
+  left_join(works) %>% 
+  kable()
+```
+
+## Inputs, reminder {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+names(professions)
+names(dates)
+names(works)
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+nrow(professions)
+nrow(dates)
+nrow(works)
+```
+:::
+
+::::
+
+# Joining data frames 
+
+## Joining data frames
+
+```{r}
+#| echo: true
+#| eval: false
+something_join(x, y)
+```
+
+- `left_join()`: all rows from x
+- `right_join()`: all rows from y
+- `full_join()`: all rows from both x and y
+- ...
+
+## Setup {.smaller}
+
+For the next few slides...
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+x <- tibble(
+  id = c(1, 2, 3),
+  value_x = c("x1", "x2", "x3")
+  )
+```
+
+```{r}
+#| echo: true
+x
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+y <- tibble(
+  id = c(1, 2, 4),
+  value_y = c("y1", "y2", "y4")
+  )
+```
+```{r}
+#| echo: true
+y
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/left-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+left_join(x, y)
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+```{r}
+#| echo: true
+professions %>%
+  left_join(dates) 
+```
+
+## `right_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/right-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+right_join(x, y)
+```
+:::
+
+::::
+
+## `right_join()` {.smaller}
+
+```{r}
+#| echo: true
+professions %>%
+  right_join(dates)
+```
+
+## `full_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/full-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+full_join(x, y)
+```
+:::
+
+::::
+
+## `full_join()` {.smaller}
+
+```{r}
+#| echo: true
+dates %>%
+  full_join(works) 
+```
+
+## Putting it altogether {.smaller}
+
+```{r}
+#| echo: true
+professions %>%
+  left_join(dates) %>%
+  left_join(works)
+```
 
 # Break One
 
@@ -109,6 +356,27 @@ You're not limited to RStudio for editing Quarto documents...
 4. Open the "course-materials" project
 5. Follow along with me
 
+## Cross-references {.smaller .scrollable}
+
+- no space between `{r}` and `#| tbl-cap: "A table"`
+- spelling tbl not tab
+- no spaces (use dashes in `label`)
+
+See @tbl-simple-table...
+
+```{r}
+#| tbl-cap: "A table"
+#| label: tbl-simple-table
+#| echo: fenced
+
+tibble(
+  id = c(1, 2, 3),
+  name = c("X", "Y", "Z")
+) %>% 
+  knitr::kable()
+```
+
+
 # Homework week 5 {background-color="#0F4C81"}
 
 ## Homework due dates
@@ -116,6 +384,25 @@ You're not limited to RStudio for editing Quarto documents...
 - All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-04.html)
 - Homework assignment due: Friday, 5th August
 - Learning reflection due: Monday, 8th August
+
+# What comes next?
+
+## Get out the cloud
+
+Install software on your computer:
+
+- R: https://cran.r-project.org/
+- RStudio IDE: https://www.rstudio.com/products/rstudio/download/
+- Quarto CLI: https://quarto.org/docs/get-started/
+
+## Start a project
+
+- Guidance: https://r4ds.had.co.nz/workflow-projects.html
+- Learn about project oriented workflows: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
+
+## Stay in touch
+
+- Email: lars@lse.de
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
