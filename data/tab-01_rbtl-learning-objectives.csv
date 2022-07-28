@@ -12,3 +12,6 @@ date,week,title,learning_objectives
 2022-07-26T00:00:00Z,4,"Concept of tidy data, vectors and pivoting",Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa
 2022-07-26T00:00:00Z,4,"Concept of tidy data, vectors and pivoting",Learners can list the four main atomic vector types in R
 2022-07-26T00:00:00Z,4,"Concept of tidy data, vectors and pivoting",Learners can explain the three characteristics of tidy data
+2022-08-02T00:00:00Z,5,Joining data & data communication using Quarto,Learners can use Quarto and Netlify to publish an HTML file
+2022-08-02T00:00:00Z,5,Joining data & data communication using Quarto,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor
+2022-08-02T00:00:00Z,5,Joining data & data communication using Quarto,Learners can cross-reference figures and tables within an Quarto file
