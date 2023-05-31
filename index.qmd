@@ -6,11 +6,11 @@ execute:
   warning: false
 ---
 
-<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 # CVEN 5837: Special Topics - Data Analytics for Development
 
-Summer Online - July 5, 2022 - August 5, 2022; Tuesday 12-2:30pm MT
+Summer Online - Session C - June 5, 2022 - July 28, 2023; Tuesday 12-2:30pm MT
 
 Instructor: [Lars Schöbitz](https://www.colorado.edu/center/mortenson/lars-schobitz)
 
@@ -20,7 +20,6 @@ This course provides students with skills in using the collection of R tidyverse
 
 Topics include:
 
--   Overview of qualitative and quantitative research methods and tools
 -   The data science life-cycle
 -   Data organization in spreadsheets
 -   Exploratory data analysis using visualization
@@ -28,11 +27,15 @@ Topics include:
 -   Data transformation and descriptive statistics
 -   Data communication using the Quarto open-source scientific and technical publishing system
 
+
+
+    Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.
+
 # Learning Goals
 
-1.  Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
+1. Be able to use a common set of data science tools (R, RStudio IDE, tidyverse, Quarto) to illustrate and communicate the utility of solutions for water, sanitation, air quality, and global health.
 
-2.  Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
+2. Be able to apply open research principles to a data analysis and communication project using Git version control system and GitHub for collaboration.
 
 # Textbooks and Materials
 
@@ -62,9 +65,13 @@ readr::read_csv("data/tab-00_rbtl-course-schedule-main.csv") |>
 
 # Assignments
 
-**Homework assignments**: Each week will have at least one homework assignment. These assignments are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work as a PDF through Canvas (or by email). Homework assignments are graded. The scoring will be presented on Canvas.
+**Homework assignments**: Each week will have at least one homework assignment. These assignments are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub. Homework assignments are graded.
 
-**Readings/Learning reflections**: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 200 word reflections on the material that they have learned. These reflections are delivered as Quarto documents and graded. Students are required to submit their work as a PDF through Canvas (or by email). Scoring will be presented on Canvas. 
+**Readings/Learning reflections**: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 200 word reflections on the material that they have learned. These reflections are delivered as Quarto documents and graded. Students are required to submit their work through GitHub.
+
+**Capstone Project**: 
+
+**Exam**: The course will conclude 
 
 # Attendance 
 
@@ -74,8 +81,10 @@ We hope you can participate in all classes. Class participation is an essential 
 
 Your overall course grade will be comprised of the following components, and their weights:
 
-- Homework assignments: 75 percent
-- Learning reflections: 25 percent
+- Homework assignments: 40 percent
+- Learning reflections: 10 percent
+- Capstone Project: 25 percent
+- Exam: 25 percent
 
 Grades will be recorded in Canvas throughout the semester. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their semester score rounded to the nearest single decimal place:
 
