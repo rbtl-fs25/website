@@ -53,7 +53,7 @@ readr::read_csv("data/tbl-01-cven5837-ss23-course-schedule.csv") |>
 |----------|-------------------------------------------|
 | **Monday**   |  Lecture              |
 | **Tuesday**  |                                   |
-| **Wednesday** | Feedback (grading) on assignment |
+| **Wednesday** | Feedback (grading) on assignments from previous week |
 | **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
 | **Friday**   | Homework assignment and learning reflection are due             |
 
