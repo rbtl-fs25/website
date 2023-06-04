@@ -1,6 +1,6 @@
-# Website for CVEN 5837: Special Topics - Data Analytics for Development - Summer 2022
+# Website for CVEN 5837: Special Topics - Data Analytics for Development - Summer 2023
 
-This special topic is part of the series of Mortenson Center Courses at Colorado University, Boulder, USA. (Summer 2022)
+This special topic is part of the series of Mortenson Center Courses at Colorado University, Boulder, USA. (Summer 2023)
 
 ## Attribution
 
