@@ -123,7 +123,7 @@ Remember to treat your access tokens like passwords and keep them secure (e.g. a
 -   In the "Title" field
     -   write: "Homework assignments for week 1 completed".
 -   In the "Leave a comment" field,
-    -   tag the course instructor with @larnsce,
+    -   tag the course instructor with using the `@` sign in combination with `larnsce` as the username,
     -   post your question that you prepared after reading the [Course Overview](../index.html),
     -   add anything that you would like to add.
 
