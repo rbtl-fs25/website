@@ -29,3 +29,4 @@ googlesheets4::read_sheet("14znMSlTpFh9K6h46OxZznAmg6tyoNkTGX4SWN1J7NfE") |>
 
 googlesheets4::read_sheet("1KLEIEMuP_kD0U-OetubhElqUjtd90-tlSzdneBdsX_w") |> 
   write_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv"))
+

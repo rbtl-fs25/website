@@ -1,59 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cven5837-ss22.github.io/website/LICENSE.html</loc>
-    <lastmod>2023-05-31T09:26:13.401Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/LICENSE.html</loc>
+    <lastmod>2023-06-04T13:04:34.034Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/weeks/wk-01.html</loc>
-    <lastmod>2023-05-31T09:26:13.770Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-01.html</loc>
+    <lastmod>2023-06-04T13:04:35.121Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/weeks/wk-03.html</loc>
-    <lastmod>2023-05-31T09:26:14.101Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-03.html</loc>
+    <lastmod>2023-06-04T13:04:35.401Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/weeks/wk-02.html</loc>
-    <lastmod>2023-05-31T09:26:14.452Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-02.html</loc>
+    <lastmod>2023-06-04T13:04:35.648Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/weeks/wk-00-template.html</loc>
-    <lastmod>2023-05-31T09:26:14.729Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-06.html</loc>
+    <lastmod>2023-06-04T13:04:35.948Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/weeks/wk-05.html</loc>
-    <lastmod>2023-05-31T09:26:15.071Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-00-template.html</loc>
+    <lastmod>2023-06-04T13:04:36.192Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/weeks/wk-04.html</loc>
-    <lastmod>2023-05-31T09:26:15.390Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-07.html</loc>
+    <lastmod>2023-06-04T13:04:36.424Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/index.html</loc>
-    <lastmod>2023-05-31T09:43:26.269Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-05.html</loc>
+    <lastmod>2023-06-04T13:04:36.683Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/slides/lec-02-visualisation.html</loc>
-    <lastmod>2023-05-31T09:26:16.610Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-04.html</loc>
+    <lastmod>2023-06-04T13:04:36.944Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/slides/lec-01-welcome.html</loc>
-    <lastmod>2023-05-31T09:26:17.314Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/weeks/wk-08.html</loc>
+    <lastmod>2023-06-04T13:04:37.176Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/slides/lec-04-tidy-data.html</loc>
-    <lastmod>2023-05-31T09:26:18.515Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/index.html</loc>
+    <lastmod>2023-06-04T13:04:38.426Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/slides/lec-03-transformation.html</loc>
-    <lastmod>2023-05-31T09:26:18.844Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/slides/lec-02-visualisation.html</loc>
+    <lastmod>2023-06-04T13:04:39.111Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/slides/lec-05-communicate.html</loc>
-    <lastmod>2023-05-31T09:26:19.461Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/slides/lec-01-welcome.html</loc>
+    <lastmod>2023-06-04T13:04:39.823Z</lastmod>
   </url>
   <url>
-    <loc>https://cven5837-ss22.github.io/website/schedule.html</loc>
-    <lastmod>2023-05-31T09:26:20.065Z</lastmod>
+    <loc>https://cven5837-ss23.github.io/website/slides/lec-04-tidy-data.html</loc>
+    <lastmod>2023-06-04T13:04:42.028Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cven5837-ss23.github.io/website/slides/lec-03-transformation.html</loc>
+    <lastmod>2023-06-04T13:04:42.328Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cven5837-ss23.github.io/website/slides/lec-05-communicate.html</loc>
+    <lastmod>2023-06-04T13:04:42.894Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cven5837-ss23.github.io/website/schedule.html</loc>
+    <lastmod>2023-06-04T13:04:43.537Z</lastmod>
   </url>
 </urlset>

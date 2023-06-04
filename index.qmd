@@ -41,30 +41,29 @@ We will rely entirely on open source and open access material for this course. W
 
 ```{r}
 readr::read_csv("data/tbl-01-cven5837-ss23-course-schedule.csv") |> 
-  dplyr::select(date, week, topic = title) |> 
+  dplyr::select(date, week, topic = title, note) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
   
 ```
-                         |
 
 # Weekly Structure
 
 |          |                                           |
 |----------|-------------------------------------------|
-| **Monday**   |  Learning reflections are due              |
-| **Tuesday**  | Lecture                                   |
+| **Monday**   |  Lecture              |
+| **Tuesday**  |                                   |
 | **Wednesday** | Feedback (grading) on assignment |
 | **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
-| **Friday**   | Homework assignment is due             |
+| **Friday**   | Homework assignment and learning reflection are due             |
 
 # Assignments
 
-**Homework assignments**: Each week will have at least one homework assignment. These assignments are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub. Homework assignments are graded.
+**Homework assignments**: Each week will have at least one homework assignment. All assignments, but those for Week 1 are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub. Homework assignments are graded.
 
-**Readings/Learning reflections**: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 200 word reflections on the material that they have learned. These reflections are delivered as Quarto documents and graded. Students are required to submit their work through GitHub.
+**Readings/Learning reflections**: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 100 word reflections on the material that they have learned. These reflections are delivered as Quarto documents and graded. Students are required to submit their work through GitHub.
 
-**Capstone Project**: A graded capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. 
+**Capstone Project**: A graded capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions and a grading rubric for the capstone project will be provided during the course.
 
 **Exam**: There is a practical 2-hour exam, which assesses the technical skills (using R tidyverse and Quarto) taught during the course. It contains programming exercises using the R programming language and you can use any material that you want. The success of the exam depends on the effort put into the homework assignments and capstone project.
 
@@ -85,7 +84,7 @@ Grades will be recorded in Canvas throughout the semester. At the end of the ter
 
 ```{r}
 
-readr::read_csv(here::here("data/tab-03_grading-scheme.csv")) |> 
+readr::read_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv")) |> 
   knitr::kable(caption = "Conversion from percent to grades.") |> 
   kableExtra::kable_styling(full_width = F)
 
@@ -94,10 +93,6 @@ readr::read_csv(here::here("data/tab-03_grading-scheme.csv")) |>
 # Late work, extensions, and special circumstances
 
 Due dates are set and all work is due on the stated date. This helps students to keep pace through the course and allow staff to return marks and feedback timely. Submission on the due date might not always be possible when something gets in the way. We drop the lowest score for each of the assignments or learning reflections. That means you can miss one assignment or learning reflection and still achieve maximum score.
-
-**Late work policy**
-
-Late work will be accepted up to 2 working days after the deadline with 10% penalty for each day. That is Tuesday after deadline for the homework assignments and Wednesay after deadline for the learning reflections. Work that is handed in more than two working days after the due date will be graded with 0 percent unless a documented reason for special circumstances is provided.
 
 **Special circumstances**
 

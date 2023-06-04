@@ -4,13 +4,13 @@ project:
 
 website:
   page-navigation: true
-  title: "CVEN 5837 - Summer 2022"
+  title: "CVEN 5837 - Summer 2023"
   description: "Homepage for Special Topics - Data Analytics for Development"
-  site-url: "https://cven5837-ss22.github.io/website/"
+  site-url: "https://cven5837-ss23.github.io/website/"
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2022, Lars Schöbitz"
+    left: "&copy; Copyright 2023, Lars Schöbitz"
     background: "#D9E3E4"
   
   sidebar:
@@ -28,14 +28,6 @@ website:
         contents: 
           - href: weeks/wk-01.qmd
             text: "Week 1"
-          - href: weeks/wk-02.qmd
-            text: "Week 2"
-          - href: weeks/wk-03.qmd
-            text: "Week 3"
-          - href: weeks/wk-04.qmd
-            text: "Week 4"
-          - href: weeks/wk-05.qmd
-            text: "Week 5"
 format:
   html:
     theme: cosmo

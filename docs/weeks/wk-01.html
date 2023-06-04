@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CVEN 5837 - Summer 2022 - Week 1</title>
+<title>CVEN 5837 - Summer 2023 - Week 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -29,7 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../weeks/wk-02.html" rel="next">
 <link href="../index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -68,11 +67,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 1</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/wk-01.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../weeks/wk-01.html">Week 1</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -80,55 +84,38 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">Course Overview</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Weekly materials</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Weekly materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-01.html" class="sidebar-item-text sidebar-link active">Week 1</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-02.html" class="sidebar-item-text sidebar-link">Week 2</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-03.html" class="sidebar-item-text sidebar-link">Week 3</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-04.html" class="sidebar-item-text sidebar-link">Week 4</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-05.html" class="sidebar-item-text sidebar-link">Week 5</a>
+  <a href="../weeks/wk-01.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Week 1</span></a>
   </div>
 </li>
       </ul>
@@ -136,6 +123,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -144,10 +132,17 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#pre-course-survey" id="toc-pre-course-survey" class="nav-link" data-scroll-target="#pre-course-survey">Pre-course survey</a></li>
-  <li><a href="#homework-assignment" id="toc-homework-assignment" class="nav-link" data-scroll-target="#homework-assignment">Homework assignment</a></li>
   <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
-  <li><a href="#learning-reflection" id="toc-learning-reflection" class="nav-link" data-scroll-target="#learning-reflection">Learning reflection</a></li>
+  <li><a href="#homework-assignments" id="toc-homework-assignments" class="nav-link" data-scroll-target="#homework-assignments">Homework assignments</a>
+  <ul class="collapse">
+  <li><a href="#read-the-syllabus" id="toc-read-the-syllabus" class="nav-link" data-scroll-target="#read-the-syllabus">Read the syllabus</a></li>
+  <li><a href="#get-an-account-for-github" id="toc-get-an-account-for-github" class="nav-link" data-scroll-target="#get-an-account-for-github">Get an account for GitHub</a></li>
+  <li><a href="#log-into-posit-cloud-with-github-account" id="toc-log-into-posit-cloud-with-github-account" class="nav-link" data-scroll-target="#log-into-posit-cloud-with-github-account">Log into Posit Cloud with GitHub account</a></li>
+  <li><a href="#join-the-course-workspace-on-posit-cloud" id="toc-join-the-course-workspace-on-posit-cloud" class="nav-link" data-scroll-target="#join-the-course-workspace-on-posit-cloud">Join the course workspace on Posit Cloud</a></li>
+  <li><a href="#set-up-a-github-personal-access-token" id="toc-set-up-a-github-personal-access-token" class="nav-link" data-scroll-target="#set-up-a-github-personal-access-token">Set up a GitHub Personal Access Token</a></li>
+  <li><a href="#fill-out-the-pre-course-survey" id="toc-fill-out-the-pre-course-survey" class="nav-link" data-scroll-target="#fill-out-the-pre-course-survey">Fill out the pre-course survey</a></li>
+  </ul></li>
+  <li><a href="#thanks-remojisunflower" id="toc-thanks-remojisunflower" class="nav-link" data-scroll-target="#thanks-remojisunflower">Thanks! <code>r</code>emo::ji(“sunflower”)`</a></li>
   </ul>
 </nav>
     </div>
@@ -156,8 +151,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Week 1</h1>
-<p class="subtitle lead">Welcome! &amp; Data Science life-cycle</p>
+<h1 class="title">Week 1</h1>
+<p class="subtitle lead">Get ready for the course!</p>
 </div>
 
 
@@ -172,41 +167,116 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<script defer="" data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+<script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<div class="cell">
-
-</div>
 <ol type="1">
-<li>Learners can navigate the platforms that are used to for the course</li>
-<li>Learners can render a file on RStudio Cloud in PDF format</li>
-<li>Learners can list the six elements of the data science lifecycle</li>
-<li>Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)</li>
+<li>Learners can access the Posit Cloud workspace for the course.</li>
+<li>Learners have understood the grading scheme for the course.</li>
+<li>Learners can open an issue on GitHub and tag the course instructor.</li>
 </ol>
 </section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p>🖥 <a href="../slides/lec-01-welcome.html">Lecture 1 - Welcome! - HTML</a></p>
-<p>🖥 <a href="https://github.com/cven5837-ss22/website/raw/main/slides/lec-01-welcome.pdf">Lecture 1 - Welcome! - Download PDF</a></p>
-</section>
-<section id="pre-course-survey" class="level2">
-<h2 class="anchored" data-anchor-id="pre-course-survey">Pre-course survey</h2>
-<p>Complete this pre-course survey, which helps us understand your current knowledge and motivation for the course: https://forms.gle/7yKyJvNCoiiUQN2R8</p>
-</section>
-<section id="homework-assignment" class="level2">
-<h2 class="anchored" data-anchor-id="homework-assignment">Homework assignment</h2>
-<p>Complete the homework programming assignment that is in your project folder for week 1 on <a href="https://rstudio.cloud/spaces/260187/content/all">RStudio Cloud</a> (hw-01-data-science-lifecycle.qmd).</p>
 </section>
 <section id="readings" class="level2">
 <h2 class="anchored" data-anchor-id="readings">Readings</h2>
-<p>📖 Read the <a href="../index.html">Course Overview</a></p>
-<p>📖 Read <a href="https://r4ds.had.co.nz/explore-intro.html">R for Data Science - Section 2 - Introduction</a></p>
-<p>📖 Read <a href="https://r4ds.had.co.nz/workflow-basics.html">R for Data Science - Section 4 - Workflow basics</a></p>
+<p>📖 Read the <a href="../index.html">Course Overview</a> and pay special attention to the sections Assignments, Grading scheme, and late work.</p>
 </section>
-<section id="learning-reflection" class="level2">
-<h2 class="anchored" data-anchor-id="learning-reflection">Learning reflection</h2>
-<p>Complete the learning reflection that is in your project folder for week 1 on <a href="https://rstudio.cloud/spaces/260187/content/all">RStudio Cloud</a> (learning-01.qmd).</p>
+<section id="homework-assignments" class="level2">
+<h2 class="anchored" data-anchor-id="homework-assignments">Homework assignments</h2>
+<p>These homework assigments are pre-requisities for Week 2 of the. Complete them by <strong>Friday, 9th June</strong> to receive the points for this assignment.</p>
+<section id="read-the-syllabus" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-syllabus">Read the syllabus</h3>
+<p>Read the syllabus and ensure that you understood the grading scheme. Note down any questions you have and submit them to the instructor using the Discussions forum for the course on GitHub.</p>
+</section>
+<section id="get-an-account-for-github" class="level3">
+<h3 class="anchored" data-anchor-id="get-an-account-for-github">Get an account for GitHub</h3>
+<p>To set up an account on GitHub, follow these general steps:</p>
+<ol type="1">
+<li>Go to the GitHub website at https://github.com/.</li>
+<li>Click on the “Sign up” button on the top right corner of the page.</li>
+<li>Enter your preferred username, email address, and password in the provided fields.</li>
+<li>Choose whether you want to receive updates and announcements via email.</li>
+<li>Complete the verification process by solving a puzzle and entering a verification code sent to your email.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Username advice from: <a href="https://happygitwithr.com/github-acct.html#github-acct">Happy Git and GitHub for the useR</a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. <strong>Except your username. You might want to give that some thought.</strong></p>
+<p>A few tips, which sadly tend to contradict each other:</p>
+<ul>
+<li>Incorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.</li>
+<li>Reuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.</li>
+<li>Pick a username you will be comfortable revealing to your future boss.</li>
+<li>Shorter is better than longer.</li>
+<li>Be as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.</li>
+<li>Make it timeless. Don’t highlight your current university, employer, or place of residence, e.g.&nbsp;JennyFromTheBlock.</li>
+<li>Avoid words laden with special meaning in programming.</li>
+<li>Avoid the use of upper vs.&nbsp;lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen <code>-</code>.</li>
+</ul>
+<p>You can change your username later, but better to get this right the first time.</p>
+<ul>
+<li>https://help.github.com/articles/changing-your-github-username/</li>
+<li>https://help.github.com/articles/what-happens-when-i-change-my-username/</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="log-into-posit-cloud-with-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="log-into-posit-cloud-with-github-account">Log into Posit Cloud with GitHub account</h3>
+<p>Here are the instructions to login to Posit Cloud using a GitHub account:</p>
+<ol type="1">
+<li>Go to the Posit Cloud Sign Up page: https://login.posit.cloud/register</li>
+<li>Click on the <strong>“Sign Up with GitHub”</strong> button.</li>
+<li>Enter your GitHub username and password when prompted.</li>
+<li>If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.</li>
+<li>Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.</li>
+</ol>
+<p>Note that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.</p>
+</section>
+<section id="join-the-course-workspace-on-posit-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="join-the-course-workspace-on-posit-cloud">Join the course workspace on Posit Cloud</h3>
+<ul>
+<li>Open this link: https://posit.cloud/spaces/381404/join?access_code=5uSGb1oKtIngQmhbsM-th5J23j2SqMU2oIuX0go-</li>
+</ul>
+</section>
+<section id="set-up-a-github-personal-access-token" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-a-github-personal-access-token">Set up a GitHub Personal Access Token</h3>
+<p>Here are the step-by-step instructions to set up a GitHub personal access token:</p>
+<ol type="1">
+<li>Log in to your GitHub account.</li>
+<li>Click on your profile picture in the top-right corner of the page.</li>
+<li>Select “Settings” from the dropdown menu.</li>
+<li>In the left sidebar, click on “Developer settings”.</li>
+<li>Click on “Personal access tokens”.</li>
+<li>Click on <strong>“Tokens (classic)”</strong>.</li>
+<li>Click on “Generate new token” and from the dropdown menu select <strong>“Generate new token (classic)”</strong></li>
+<li>In the “Note” field, give your token the name: GITHUB_PAT</li>
+<li>Under Expiration, select “No expiration”</li>
+<li>Under “Select scopes”, select: repo, workflow, user</li>
+<li>Click on “Generate token”.</li>
+<li>Your personal access token will be displayed on the screen. Copy it and store it in a safe place.</li>
+</ol>
+<p>Remember to treat your access tokens like passwords and keep them secure (e.g.&nbsp;a password manager software).</p>
+</section>
+<section id="fill-out-the-pre-course-survey" class="level3">
+<h3 class="anchored" data-anchor-id="fill-out-the-pre-course-survey">Fill out the pre-course survey</h3>
+<ul>
+<li>Survey link: https://forms.gle/MSA4wcEHxNXJk5ef9</li>
+</ul>
+</section>
+</section>
+<section id="thanks-remojisunflower" class="level2">
+<h2 class="anchored" data-anchor-id="thanks-remojisunflower">Thanks! <code>r</code>emo::ji(“sunflower”)`</h2>
+<p>Thank you for working through these assignments.</p>
 
 
 </section>
@@ -239,9 +309,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -306,6 +390,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -352,15 +522,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../weeks/wk-02.html" class="pagination-link">
-        <span class="nav-page-text">Week 2</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© Copyright 2022, Lars Schöbitz</div>   
+    <div class="nav-footer-left">© Copyright 2023, Lars Schöbitz</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

@@ -1,7 +1,7 @@
 {
-  "hash": "a5cc5055f1a883428da9e249d62e5342",
+  "hash": "b8deef55991f7590a0c1f8e982603128",
   "result": {
-    "markdown": "---\ntitle: \"Week 4\"\nsubtitle: \"Concept of tidy data, vectors and pivoting\"\neditor: source\nparams:\n    week: 4\nexecute: \n  echo: false\n  warning: false\n---\n\n<script defer data-domain=\"cven5837-ss22.github.io/website\" src=\"https://plausible.io/js/plausible.js\"></script>\n\n## Learning Objectives\n\n::: {.cell}\n\n:::\n\n1. Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa\n2. Learners can list the four main atomic vector types in R\n3. Learners can explain the three characteristics of tidy data\n\n## Slides\n\n🖥 [Lecture 4 - Vectors & Tidy data - HTML](/slides/lec-04-tidy-data.html) \n\n🖥 [Lecture 4 - Vectors & Tidy data - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-04-tidy-data.pdf)\n\n## Readings\n\n📖 Read [R for Data Science - Section 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)  \n\n📖 Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html#factors)  \n\n\n\n## Homework assignment\n\nComplete the homework programming assignments that are in your project folder for week 4 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):\n\n- hw-04a-tidyr.qmd \n\n## Learning reflection\n\nComplete the learning reflection that is in your project folder for week 4 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-04.qmd).  ",
+    "markdown": "---\ntitle: \"Week 4\"\nsubtitle: \"Data transformation with dplyr\"\neditor: source\nparams:\n    week: 4\nexecute: \n  echo: false\n  warning: false\n---\n\n\n<script defer data-domain=\"cven5837-ss23.github.io/website\" src=\"https://plausible.io/js/plausible.js\"></script>\n\n## Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot\n\n## Slides\n\n🖥 [Lecture 3 - Data transformation - HTML](/slides/lec-03-transformation.html) \n\n🖥 [Lecture 3 - Data transformation - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-03-transformation.pdf)\n\n## Readings\n\n📖 Read [R for Data Science - Section 5 - Data transformation](https://r4ds.had.co.nz/transform.html)  \n\n## Homework assignment\n\nComplete the homework programming assignments that are in your project folder for week 3 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):\n\n- hw-03a-data-transformation.qmd \n\n## Learning reflection\n\nComplete the learning reflection that is in your project folder for week 3 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-03.qmd).  \n",
     "supporting": [
       "wk-04_files"
     ],
@@ -11,6 +11,6 @@
     "includes": {},
     "engineDependencies": {},
     "preserve": {},
-    "postProcess": null
+    "postProcess": true
   }
 }
