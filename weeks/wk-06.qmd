@@ -1,0 +1,68 @@
+---
+title: "Week 6"
+subtitle: "Joining data & communicating results with Quarto"
+editor: source
+params:
+    week: 6
+execute: 
+  echo: false
+  warning: false
+---
+
+<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+
+## Learning Objectives
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+2. `r lobj1[2]`
+3. `r lobj1[3]`
+4. `r lobj1[4]`
+
+## Slides
+
+`r emo::ji("desktop_computer")` [Lecture 5 - Joining data & Communicating results - HTML](/slides/lec-05-communicate.html) 
+
+`r emo::ji("desktop_computer")` [Lecture 5 - Joining data & Communicating results - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-05-communicate.pdf)
+
+## Readings
+
+`r emo::ji("book")` Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)  
+
+`r emo::ji("book")` Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html)  
+
+## Homework assignment 
+
+### Practice
+
+This week's homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assigment is contained in a sub-folder of week 5 titled "hw-05a-practice".
+
+### Slides
+
+This part of the homework programming assignment does not have a starter file. It is your task to create this file yourself. 
+
+1. Create a new Quarto file by navigating to the menu: File -> New File -> Quarto Presentation 
+2. Add a title and author, and use the default Reveal JS format
+3. Save the file in "course-material/wk-05/slides" with the name index.qmd
+4. Click Render and inspect the output in the Presentation pane on the bottom right
+5. Delete all content besides the YAML header (at the top of the document)
+6. Use your own creativity and the [Quarto Guide for Revealjs slides](https://quarto.org/docs/presentations/revealjs/) to prepare a minimum of five slides. 
+7. Add the line `self-contained: true` to the YAML header
+8. Render the slides
+9. Export (download) the "slides" directory as "slides.zip" from RStudio Cloud and store the ZIP file on your computer
+10. Navigate to the folder where you stored the "slides.zip" file and unzip the compressed directory
+11. Log into your Netlifly account you created during class
+12. Upload the "slides" directory to Netlifly
+13. Wait until the site has been deployed
+14. Share the created link that shows your slides with the course instructor
+ 
+## Learning reflection
+
+Complete the learning reflection that is in your project folder for week 5  on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-05.qmd).  
