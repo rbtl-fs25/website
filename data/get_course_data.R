@@ -11,23 +11,21 @@ library(dplyr)
 
 # script ------------------------------------------------------------------
 
-# tab-00_rbtl-course-schedule-main
+# tbl-01-cven5837-ss23-course-schedule
 
-googlesheets4::read_sheet("1tTu7X9sdTMx0QNMzkmKIoJVnS20yxISCNeMohuPTemw") |> 
+googlesheets4::read_sheet("1soVpEtpSr32LWGcZGEgnv1MGyVoa81afUZitk1isuq4") |> 
   mutate(title = case_when(
     is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),
     TRUE ~ title
   )) %>% 
-  write_csv(here::here("data/tab-00_rbtl-course-schedule-main.csv"))
+  write_csv(here::here("data/tbl-01-cven5837-ss23-course-schedule.csv"))
 
-# tab-01_rbtl-learning-objectives
+# tbl-02-cven5837-ss23-learning-objectives
 
-googlesheets4::read_sheet("1DcpEQbeYI9gRtAnjpDrP4OEpTrLnzwnyM3-t09y45Gs") |> 
-  write_csv(here::here("data/tab-01_rbtl-learning-objectives.csv"))
+googlesheets4::read_sheet("14znMSlTpFh9K6h46OxZznAmg6tyoNkTGX4SWN1J7NfE") |> 
+  write_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv"))
 
+# tbl-03-cven5837-ss23-grading-scheme
 
-# tab-03_grading-scheme
-
-googlesheets4::read_sheet("1Ec2u877jlw_4Ut1ZPJCBkIeAvdZ0peIl7BJcWQxIKUI") |> 
-  write_csv(here::here("data/tab-03_grading-scheme.csv"))
-
+googlesheets4::read_sheet("1KLEIEMuP_kD0U-OetubhElqUjtd90-tlSzdneBdsX_w") |> 
+  write_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv"))
