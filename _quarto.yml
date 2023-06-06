@@ -21,13 +21,20 @@ website:
     style: "docked"
     search: true
     collapse-level: 1
+    tools:
+      - icon: github
+        href: https://github.com/cven5873-ss23
+        text: "GitHub organization"
+      - icon: code-square
+        href: https://posit.cloud/spaces/381404/join?access_code=5uSGb1oKtIngQmhbsM-th5J23j2SqMU2oIuX0go-
+        text: "Posit Cloud"
     contents: 
       - href: index.qmd
         text: Course Overview
-      - section: "Weekly materials"
-        contents: 
-          - href: weeks/wk-01.qmd
-            text: "Week 1"
+      - text: "---"
+      - href: weeks/wk-01.qmd
+        text: "Week 1"
+        
 format:
   html:
     theme: cosmo
