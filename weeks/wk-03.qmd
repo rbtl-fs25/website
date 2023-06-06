@@ -11,7 +11,7 @@ execute:
 
 <script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
-## Learning Objectives
+## {{< fa bullseye >}} Learning Objectives
 
 ```{r}
 
@@ -27,27 +27,29 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 4. `r lobj1[4]`
 5. `r lobj1[5]`
 
-## Slides
+## {{< fa display >}} Slides
 
-`r emo::ji("desktop_computer")` [Lecture 2 - Data visualisation - HTML](/slides/lec-02-visualisation.html) 
+[Lecture 2 - Data visualisation - HTML](/slides/lec-02-visualisation.html) 
 
-`r emo::ji("desktop_computer")` [Lecture 2 - Data visualisation - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualisation.pdf)
+[Lecture 2 - Data visualisation - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualisation.pdf)
 
-## Readings
+## {{< fa book >}} Readings
 
-`r emo::ji("book")` Read [R for Data Science - Section 3 to 3.6 - Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)  
+Read [R for Data Science - Section 3 to 3.6 - Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)  
 
-`r emo::ji("book")` Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)
+Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)
 
-`r emo::ji("book")` Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
+Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 
-## Homework assignment
+## {{< fa code >}} Homework assignment 
 
 Complete the homework programming assignment that is in your project folder for lecture 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
 
 - hw-02a-data-visualisation.qmd 
 - hw-02b-project-data.qmd
 
-## Learning reflection
+## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for lecture 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) (learning-02.qmd).   
+Complete the learning reflection that is in your project folder for lecture 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+
+- learning-02.qmd

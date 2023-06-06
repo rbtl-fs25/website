@@ -2,8 +2,8 @@ date,week,title,learning_objectives
 2023-06-05T00:00:00Z,1,Get ready for the course,Learners can access the Posit Cloud workspace for the course.
 2023-06-05T00:00:00Z,1,Get ready for the course,Learners have understood the grading scheme for the course.
 2023-06-05T00:00:00Z,1,Get ready for the course,Learners can open an issue on GitHub and tag the course instructor.
-2023-06-12T00:00:00Z,2,Welcome! & Data Science Life-cycle,Learners can navigate the platforms that are used to for the course.
-2023-06-12T00:00:00Z,2,Welcome! & Data Science Life-cycle,Learners can render a file on RStudio Cloud in PDF format.
+2023-06-12T00:00:00Z,2,Welcome! & Data Science Life-cycle,"Learners can navigate the platforms (Posit Cloud, GitHub, Course Website) that are used to for the course."
+2023-06-12T00:00:00Z,2,Welcome! & Data Science Life-cycle,"Learners can render a Quarto file to an output file in HTML, PDF and DOCX format."
 2023-06-12T00:00:00Z,2,Welcome! & Data Science Life-cycle,Learners can list the six elements of the data science lifecycle.
 2023-06-12T00:00:00Z,2,Welcome! & Data Science Life-cycle,"Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
 2023-06-19T00:00:00Z,3,Exploratory data analysis using visualization & Data organization in spreadsheets,Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.

@@ -13,7 +13,7 @@ editor: source
 execute:
   freeze: auto
 params:
-    week: 3
+    week: 4
 ---
 
 <script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
@@ -177,7 +177,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ## 
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-03-transformation.pdf)
+Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-03-transformation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 

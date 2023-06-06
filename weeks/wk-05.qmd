@@ -11,7 +11,7 @@ execute:
 
 <script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
-## Learning Objectives
+## {{< fa bullseye >}} Learning Objectives
 
 ```{r}
 
@@ -25,25 +25,26 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 2. `r lobj1[2]`
 3. `r lobj1[3]`
 
-## Slides
+## {{< fa display >}} Slides
 
-`r emo::ji("desktop_computer")` [Lecture 4 - Vectors & Tidy data - HTML](/slides/lec-04-tidy-data.html) 
+[Lecture 4 - Vectors & Tidy data - HTML](/slides/lec-04-tidy-data.html) 
 
-`r emo::ji("desktop_computer")` [Lecture 4 - Vectors & Tidy data - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf)
+[Lecture 4 - Vectors & Tidy data - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf)
 
-## Readings
+## {{< fa book >}} Readings
 
-`r emo::ji("book")` Read [R for Data Science - Section 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)  
+Read [R for Data Science - Section 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)  
 
-`r emo::ji("book")` Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html#factors)  
+Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html#factors)  
 
-
-## Homework assignment
+## {{< fa code >}} Homework assignment 
 
 Complete the homework programming assignments that are in your project folder for lecture 4 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
 
 - hw-04a-tidyr.qmd 
 
-## Learning reflection
+## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for lecture 4 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) (learning-04.qmd).  
+Complete the learning reflection that is in your project folder for lecture 4 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) 
+
+- learning-04.qmd

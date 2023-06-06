@@ -437,10 +437,10 @@ Lars Schöbitz
 </section>
 <section id="learning-goals-for-the-course" class="slide level2">
 <h2>Learning Goals (for the course)</h2>
-<ul>
-<li>Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.</li>
-<li>Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.</li>
-</ul>
+<ol type="1">
+<li><p>Be able to use a common set of data science tools <strong>(R, RStudio IDE, Git, GitHub, tidyverse, Quarto)</strong> to illustrate and communicate the utility of solutions for water, sanitation, air quality, and global health.</p></li>
+<li><p>Learn to use the <strong>Quarto file format</strong> and the RStudio IDE visual editing mode to produce <strong>scholarly documents</strong> with citations, footnotes, cross-references, figures, and tables.</p></li>
+</ol>
 </section>
 <section id="why-are-you-here" class="slide level2">
 <h2>Why are you here?</h2>
@@ -477,10 +477,10 @@ Lars Schöbitz
 <h2>Learning Objectives (for this week)</h2>
 <div>
 <ol type="1">
-<li class="fragment">Learners can access the Posit Cloud workspace for the course.</li>
-<li class="fragment">Learners have understood the grading scheme for the course.</li>
-<li class="fragment">Learners can open an issue on GitHub and tag the course instructor.</li>
-<li class="fragment">NA</li>
+<li class="fragment">Learners can navigate the platforms (Posit Cloud, GitHub, Course Website) that are used to for the course.</li>
+<li class="fragment">Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.</li>
+<li class="fragment">Learners can list the six elements of the data science lifecycle.</li>
+<li class="fragment">Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).</li>
 </ol>
 </div>
 </section>
@@ -519,17 +519,18 @@ Lars Schöbitz
 <h2>Platforms and Tools</h2>
 <ul>
 <li>R</li>
-<li>RStudio (Cloud)</li>
+<li>Posit Cloud</li>
+<li>RStudio IDE</li>
 <li>tidyverse R Packages</li>
 <li>Quarto publishing system</li>
 </ul>
 </section>
-<section id="cven5837-ss22.github.iowebsite" class="slide level2">
-<h2><a href="https://cven5837-ss22.github.io/website/">cven5837-ss22.github.io/website/</a> 🔖</h2>
+<section id="cven5873-ss23.github.iowebsite" class="slide level2">
+<h2><a href="https://cven5873-ss23.github.io/website/">cven5873-ss23.github.io/website/</a> 🔖</h2>
 </section></section>
 <section>
-<section id="rstudio-cloud" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>RStudio Cloud</h1>
+<section id="posit-cloud" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Posit Cloud</h1>
 
 </section>
 <section id="section-1" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.001.png">
@@ -565,22 +566,45 @@ Lars Schöbitz
 <h1>Live Coding Exercise</h1>
 
 </section>
-<section id="live-01a-setup---rstudio-cloud-setup" class="slide level2">
-<h2>live-01a-setup - RStudio Cloud Setup</h2>
+<section id="live-01a-setup---posit-cloud-setup" class="slide level2">
+<h2>live-01a-setup - Posit Cloud Setup</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><strong>Follow along on the screen</strong></strong></p>
+</div>
+<div class="callout-content">
 <ol type="1">
-<li>Head over to rstudio.cloud</li>
-<li>Create a free account if you do not have one yet</li>
-<li>Open the link that is posted to the Zoom chat</li>
-<li>Accept the invitation to join the cven5837-ss22 workspace</li>
-<li>Post “ready” to the Zoom chat when you are done</li>
+<li>Open the GitHub organisation for the course: <a href="https://github.com/cven5873-ss23" class="uri">https://github.com/cven5873-ss23</a></li>
+<li>You will find a repository titled: <strong>course-material-USERNAME</strong> (with your GitHub Username)</li>
+<li>You will “clone” this repository to Posit Cloud</li>
 </ol>
+</div>
+</div>
+</div>
 </section>
 <section id="break" class="slide level2">
 <h2>Break</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>GitHub PAT from week 1</strong></p>
+</div>
+<div class="callout-content">
+<p>Do you have your <strong>GitHub Personal Access Token</strong> readily accessible?</p>
+</div>
+</div>
+</div>
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_39172716" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown" id="timer_64bc67fd" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -591,40 +615,97 @@ Lars Schöbitz
 <p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
 </div></aside></section></section>
 <section>
-<section id="data-science-lifecycle" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>Data Science Lifecycle</h1>
+<section id="version-control" class="title-slide slide level1 center">
+<h1>Version Control</h1>
 
 </section>
-<section id="think-pair-share" class="slide level2">
-<h2>Think, Pair, Share</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Question</strong></p>
-</div>
-<div class="callout-content">
-<ol type="1">
-<li>What is your mental model of the Data Science Lifecycle?</li>
-</ol>
-</div>
+<section id="version-control-with-git-and-github" class="slide level2">
+<h2>Version Control with Git and GitHub</h2>
+<p>A way to share files with others, so they can:</p>
+<ul>
+<li>download</li>
+<li>re-use</li>
+<li>contribute</li>
+</ul>
+<p>You can view the history of files, and jump back in time to any point.</p>
+</section>
+<section id="why-is-it-useful" class="slide level2">
+<h2>Why is it useful?</h2>
+
+<img data-src="img/lec-01/phd_comics_vc.gif" style="width:40.0%" class="r-stretch quarto-figure-center"></section>
+<section id="git-and-github" class="slide level2">
+<h2>Git and GitHub</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="img/lec-01/git-logo.png" style="width:25.0%"></p>
 </div>
 </div>
 <ul>
-<li><strong>Think</strong> for 2 minutes</li>
-<li><strong>Pair</strong> with your neighbour for 4 minutes</li>
-<li><strong>Share</strong> your answer with the class</li>
+<li>Git is a software for version control</li>
+<li>Released in 2005</li>
+<li>Popular among programmers collaboratively developing code</li>
+<li>Tracks changes in a set of files (directory/folder/repository)</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_ce31de37" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<p><img data-src="img/lec-01/github-logo.png" style="width:25.0%"></p>
 </div>
 </div>
+<ul>
+<li>GitHub is a hosting platform for version control using Git</li>
+<li>Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion</li>
+<li>73 million Users (<a href="https://github.com/about">February, 2022</a>)</li>
+<li>Facebook for Software Developers</li>
+</ul>
 </div>
+</div>
+</section>
+<section id="version-control---terminology" class="slide level2">
+<h2>Version Control - Terminology</h2>
+</section>
+<section id="section-8" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.001.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-9" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.002.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-10" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.003.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-11" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.004.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-12" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.005.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-13" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.006.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-14" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.007.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-15" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.008.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-16" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.009.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-17" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.010.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-18" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.011.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-19" class="slide level2" data-background-image="img/lec-01/illustration-slides-git/illustration-slides-git.012.png" data-background-size="contain">
+<h2></h2>
+</section></section>
+<section>
+<section id="data-science-lifecycle" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Data Science Lifecycle</h1>
+
 </section>
 <section id="deep-end" class="slide level2">
 <h2>Deep End</h2>
@@ -636,7 +717,7 @@ Lars Schöbitz
 <a href="https://giphy.com/gifs/matthew-west-all-in-matthew-west-3pWRgRw86JyBa">via GIPHY</a>
 </p>
 </section>
-<section id="section-8" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.001.png" data-background-size="contain">
+<section id="section-20" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.001.png" data-background-size="contain">
 <h2>-</h2>
 <aside class="notes">
 <p>Add notes</p>
@@ -652,7 +733,7 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-9" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.002.png" data-background-size="contain">
+<section id="section-21" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.002.png" data-background-size="contain">
 <h2>-</h2>
 <aside class="notes">
 <ol type="1">
@@ -678,7 +759,7 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-10" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.003.png" data-background-size="contain">
+<section id="section-22" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.003.png" data-background-size="contain">
 <h2>-</h2>
 <aside class="notes">
 <ol type="1">
@@ -700,7 +781,7 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-11" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.004.png" data-background-size="contain">
+<section id="section-23" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.004.png" data-background-size="contain">
 <h2>-</h2>
 <aside class="notes">
 <ol type="1">
@@ -725,7 +806,7 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-12" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.005.png" data-background-size="contain">
+<section id="section-24" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.005.png" data-background-size="contain">
 <h2>-</h2>
 <aside class="notes">
 <ol type="1">
@@ -751,7 +832,7 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-13" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.006.png" data-background-size="contain">
+<section id="section-25" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.006.png" data-background-size="contain">
 <h2>-</h2>
 <aside class="notes">
 <ol type="1">
@@ -770,7 +851,7 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-14" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.007.png" data-background-size="contain">
+<section id="section-26" class="slide level2" data-background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.007.png" data-background-size="contain">
 <h2>-</h2>
 <aside class="notes">
 <ol type="1">
@@ -798,10 +879,10 @@ Lars Schöbitz
 <section id="live-01b-data-science-lifecycle---data-science-lifecycle" class="slide level2">
 <h2>live-01b-data-science-lifecycle - Data Science Lifecycle</h2>
 <ol type="1">
-<li>Head over to rstudio.cloud</li>
-<li>Open the workspace for the course (cven5837-ss22)</li>
+<li>Head over to posit.cloud</li>
+<li>Open the workspace for the course (cven5837-ss23)</li>
 <li>Open “Projects”</li>
-<li>Open the “course-materials” project</li>
+<li>Open the “course-materials-USERNAME” project</li>
 <li>Follow along with me</li>
 </ol>
 </section>
@@ -810,7 +891,7 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0eea7f2e" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown" id="timer_dba57ead" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -938,18 +1019,22 @@ Lars Schöbitz
 <section id="weekly-structure" class="slide level2">
 <h2>Weekly Structure</h2>
 <table>
+<colgroup>
+<col style="width: 18%">
+<col style="width: 81%">
+</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Monday</strong></td>
-<td>Learning reflections are due</td>
+<td>Lecture</td>
 </tr>
 <tr class="even">
 <td><strong>Tuesday</strong></td>
-<td>Lecture</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><strong>Wednesday</strong></td>
-<td>Feedback (grading) on assignment</td>
+<td>Feedback (grading) on assignments from previous week</td>
 </tr>
 <tr class="even">
 <td><strong>Thursday</strong></td>
@@ -957,7 +1042,7 @@ Lars Schöbitz
 </tr>
 <tr class="odd">
 <td><strong>Friday</strong></td>
-<td>Homework assignment is due</td>
+<td>Homework assignment and learning reflection are due</td>
 </tr>
 </tbody>
 </table>
@@ -966,95 +1051,536 @@ Lars Schöbitz
 <h2>Homework assignments</h2>
 <ul>
 <li>Weekly programming assignments</li>
-<li>75% of the total grade</li>
+<li>Graded as pass/fail (100 pts)</li>
+<li>Submitted as rendered Quarto documents on GitHub</li>
+<li>weighted at 40% of the total grade</li>
 </ul>
 </section>
 <section id="learning-reflections" class="slide level2">
 <h2>Learning reflections</h2>
 <ul>
 <li>Reflections on the different class elements (lecture, homework assignment, readings)</li>
-<li>minimum 200 words</li>
-<li>25% of the total grade</li>
+<li>Graded as pass/fail (100 pts)</li>
+<li>minimum 100 words</li>
+<li>Submitted as rendered Quarto documents on GitHub</li>
+<li>weighted at 20% of the total grade</li>
+</ul>
+</section>
+<section id="capstone-project" class="slide level2">
+<h2>Capstone Project</h2>
+<ul>
+<li>Data analysis project report with a data set of your choice</li>
+<li>Graded as number of points out of 100 pts for pre-defined graded elements</li>
+<li>Submitted as rendered Quarto document on GitHub</li>
+<li>weighted at 20% of the total grade</li>
+</ul>
+</section>
+<section id="exam" class="slide level2">
+<h2>Exam</h2>
+<ul>
+<li>2-hour exam assessing the technical skills taught during the course</li>
+<li>Graded as number of points out of 100 pts for pre-defined graded elements</li>
+<li>Submitted as rendered Quarto document, but <strong>not</strong> on GitHub</li>
+<li>weighted at 20% of the total grade</li>
 </ul>
 </section>
 <section id="grading" class="slide level2 smaller scrollable">
 <h2>Grading</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">grade</th>
-<th style="text-align: right;">percent</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">A+</td>
-<td style="text-align: right;">97</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">A</td>
-<td style="text-align: right;">93</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">A-</td>
-<td style="text-align: right;">90</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B+</td>
-<td style="text-align: right;">87</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">B</td>
-<td style="text-align: right;">83</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B-</td>
-<td style="text-align: right;">80</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C+</td>
-<td style="text-align: right;">77</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">C</td>
-<td style="text-align: right;">73</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C-</td>
-<td style="text-align: right;">70</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D+</td>
-<td style="text-align: right;">67</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">D</td>
-<td style="text-align: right;">63</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D-</td>
-<td style="text-align: right;">60</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F</td>
-<td style="text-align: right;">0</td>
-</tr>
-</tbody>
+
+<div id="fzhnnjfeim" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fzhnnjfeim table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#fzhnnjfeim thead, #fzhnnjfeim tbody, #fzhnnjfeim tfoot, #fzhnnjfeim tr, #fzhnnjfeim td, #fzhnnjfeim th {
+  border-style: none;
+}
+
+#fzhnnjfeim p {
+  margin: 0;
+  padding: 0;
+}
+
+#fzhnnjfeim .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#fzhnnjfeim .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#fzhnnjfeim .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#fzhnnjfeim .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#fzhnnjfeim .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#fzhnnjfeim .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#fzhnnjfeim .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#fzhnnjfeim .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#fzhnnjfeim .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#fzhnnjfeim .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#fzhnnjfeim .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#fzhnnjfeim .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#fzhnnjfeim .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#fzhnnjfeim .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#fzhnnjfeim .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fzhnnjfeim .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#fzhnnjfeim .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#fzhnnjfeim .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#fzhnnjfeim .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fzhnnjfeim .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#fzhnnjfeim .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fzhnnjfeim .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#fzhnnjfeim .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fzhnnjfeim .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fzhnnjfeim .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fzhnnjfeim .gt_left {
+  text-align: left;
+}
+
+#fzhnnjfeim .gt_center {
+  text-align: center;
+}
+
+#fzhnnjfeim .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#fzhnnjfeim .gt_font_normal {
+  font-weight: normal;
+}
+
+#fzhnnjfeim .gt_font_bold {
+  font-weight: bold;
+}
+
+#fzhnnjfeim .gt_font_italic {
+  font-style: italic;
+}
+
+#fzhnnjfeim .gt_super {
+  font-size: 65%;
+}
+
+#fzhnnjfeim .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#fzhnnjfeim .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#fzhnnjfeim .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#fzhnnjfeim .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#fzhnnjfeim .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#fzhnnjfeim .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#fzhnnjfeim .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
+      <td colspan="2" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Conversion from percent to grades.</td>
+    </tr>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="grade">grade</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="percent">percent</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="grade" class="gt_row gt_left">A+</td>
+<td headers="percent" class="gt_row gt_right">97</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">A</td>
+<td headers="percent" class="gt_row gt_right">93</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">A-</td>
+<td headers="percent" class="gt_row gt_right">90</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">B+</td>
+<td headers="percent" class="gt_row gt_right">87</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">B</td>
+<td headers="percent" class="gt_row gt_right">83</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">B-</td>
+<td headers="percent" class="gt_row gt_right">80</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">C+</td>
+<td headers="percent" class="gt_row gt_right">77</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">C</td>
+<td headers="percent" class="gt_row gt_right">73</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">C-</td>
+<td headers="percent" class="gt_row gt_right">70</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">D+</td>
+<td headers="percent" class="gt_row gt_right">67</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">D</td>
+<td headers="percent" class="gt_row gt_right">63</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">D-</td>
+<td headers="percent" class="gt_row gt_right">60</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">F</td>
+<td headers="percent" class="gt_row gt_right">0</td></tr>
+  </tbody>
+  
+  
 </table>
+</div>
 </div>
 </div>
 </section>
 <section id="late-work-policy" class="slide level2">
 <h2>Late work policy</h2>
 <ul>
-<li>up to 2 working days after deadline (25% penalty for each day)
-<ul>
-<li>Tuesday for homework assignments (-50%)</li>
-<li>Wednesday for learning reflections (-50%)</li>
-</ul></li>
-<li>work handed in more than two working days after due date with be graded 0%</li>
+<li>due dates are set and all work is due on the stated date</li>
+<li>work not submitted by the due date will receive 0 pts</li>
+<li>the lowest score for each of the assignments or learning reflections is dropped</li>
 </ul>
 </section></section>
 <section>
@@ -1065,9 +1591,8 @@ Lars Schöbitz
 <section id="homework-due-dates" class="slide level2">
 <h2>Homework due dates</h2>
 <ul>
-<li>All material on <a href="https://cven5837-ss22.github.io/website/weeks/wk-01.html">course website</a></li>
-<li>Homework assignment due: Friday, 8th July</li>
-<li>Learning reflection due: Monday, 11th July</li>
+<li>All material on <a href="https://cven5873-ss23.github.io/website/weeks/wk-01.html">course website</a></li>
+<li>Homework assignment &amp; learning reflection due: <strong>Friday, June 16th</strong></li>
 </ul>
 </section></section>
 <section>
@@ -1075,9 +1600,9 @@ Lars Schöbitz
 <h1>Thanks! 🌻</h1>
 
 </section>
-<section id="section-15" class="slide level2">
+<section id="section-27" class="slide level2">
 <h2></h2>
-<p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/cven5837-ss22/website/raw/main/slides/lec-01-welcome.pdf">PDF on GitHub</a></p>
+<p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/cven5873-ss23/website/raw/main/slides/lec-01-welcome.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 
