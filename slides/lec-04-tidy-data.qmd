@@ -1,6 +1,6 @@
 ---
 title: "Concept of Tidy Data, Vectors & Pivoting"
-subtitle: "CVEN 5837 - Summer 2022"
+subtitle: "CVEN 5837 - Summer 2023"
 author: "Lars Schöbitz"
 format: 
   revealjs: 
@@ -8,13 +8,15 @@ format:
     transition: fade
     slide-number: true
     logo: img/logo.png
-    footer: "https://cven5837-ss22.github.io/website/"
+    footer: "https://cven5873-ss23.github.io/website/"
 editor: source
 execute:
   freeze: auto
 params:
     week: 4
 ---
+
+<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 
 ```{r}
