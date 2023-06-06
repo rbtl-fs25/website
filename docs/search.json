@@ -53,14 +53,14 @@
     "href": "weeks/wk-03.html",
     "title": "Week 3",
     "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping\nLearners can compare three different geoms and their use case\nLearners can apply a theme to control font types and sizes within a plot\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset"
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
   },
   {
     "objectID": "weeks/wk-03.html#learning-objectives",
     "href": "weeks/wk-03.html#learning-objectives",
     "title": "Week 3",
     "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping\nLearners can compare three different geoms and their use case\nLearners can apply a theme to control font types and sizes within a plot\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset"
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
   },
   {
     "objectID": "weeks/wk-03.html#slides",
@@ -81,28 +81,28 @@
     "href": "weeks/wk-03.html#homework-assignment",
     "title": "Week 3",
     "section": "Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for week 2 on RStudio Cloud:\n\nhw-02a-data-visualisation.qmd\nhw-02b-project-data.qmd"
+    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for lecture 2 on Posit Cloud\n\nhw-02a-data-visualisation.qmd\nhw-02b-project-data.qmd"
   },
   {
     "objectID": "weeks/wk-03.html#learning-reflection",
     "href": "weeks/wk-03.html#learning-reflection",
     "title": "Week 3",
     "section": "Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 2 on RStudio Cloud (learning-02.qmd)."
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for lecture 2 on Posit Cloud (learning-02.qmd)."
   },
   {
     "objectID": "weeks/wk-02.html",
     "href": "weeks/wk-02.html",
     "title": "Week 2",
     "section": "",
-    "text": "Learners can navigate the platforms that are used to for the course\nLearners can render a file on RStudio Cloud in PDF format\nLearners can list the six elements of the data science lifecycle\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)"
+    "text": "Learners can navigate the platforms that are used to for the course.\nLearners can render a file on RStudio Cloud in PDF format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
     "objectID": "weeks/wk-02.html#learning-objectives",
     "href": "weeks/wk-02.html#learning-objectives",
     "title": "Week 2",
     "section": "",
-    "text": "Learners can navigate the platforms that are used to for the course\nLearners can render a file on RStudio Cloud in PDF format\nLearners can list the six elements of the data science lifecycle\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)"
+    "text": "Learners can navigate the platforms that are used to for the course.\nLearners can render a file on RStudio Cloud in PDF format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
     "objectID": "weeks/wk-02.html#slides",
@@ -112,46 +112,39 @@
     "text": "Slides\n🖥 Lecture 1 - Welcome! - HTML\n🖥 Lecture 1 - Welcome! - Download PDF"
   },
   {
-    "objectID": "weeks/wk-02.html#pre-course-survey",
-    "href": "weeks/wk-02.html#pre-course-survey",
-    "title": "Week 2",
-    "section": "Pre-course survey",
-    "text": "Pre-course survey\nComplete this pre-course survey, which helps us understand your current knowledge and motivation for the course: https://forms.gle/7yKyJvNCoiiUQN2R8"
-  },
-  {
     "objectID": "weeks/wk-02.html#readings",
     "href": "weeks/wk-02.html#readings",
     "title": "Week 2",
     "section": "Readings",
-    "text": "Readings\n📖 Read R for Data Science - Section 2 - Introduction\n📖 Read R for Data Science - Section 4 - Workflow basics"
+    "text": "Readings\n📖 Read R for Data Science - Section 1 - Introduction through Section 1.3.4\n📖 Read R for Data Science - Section 2 - Introduction\n📖 Read R for Data Science - Section 4 - Workflow basics"
   },
   {
     "objectID": "weeks/wk-02.html#homework-assignment",
     "href": "weeks/wk-02.html#homework-assignment",
     "title": "Week 2",
     "section": "Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 1 on RStudio Cloud (hw-01-data-science-lifecycle.qmd)."
+    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for lecture 1 on Posit Cloud (hw-01-data-science-lifecycle.qmd)."
   },
   {
     "objectID": "weeks/wk-02.html#learning-reflection",
     "href": "weeks/wk-02.html#learning-reflection",
     "title": "Week 2",
     "section": "Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 1 on RStudio Cloud (learning-01.qmd)."
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for lecture 1 on Posit Cloud (learning-01.qmd)."
   },
   {
     "objectID": "weeks/wk-06.html",
     "href": "weeks/wk-06.html",
     "title": "Week 6",
     "section": "",
-    "text": "Learners can use Quarto and Netlify to publish an HTML file\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor\nLearners can cross-reference figures and tables within an Quarto file\nLearners can apply functions from the dplyr R Package to join multiple data sets"
+    "text": "Learners can use Quarto and Netlify to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can apply functions from the dplyr R Package to join multiple data sets."
   },
   {
     "objectID": "weeks/wk-06.html#learning-objectives",
     "href": "weeks/wk-06.html#learning-objectives",
     "title": "Week 6",
     "section": "",
-    "text": "Learners can use Quarto and Netlify to publish an HTML file\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor\nLearners can cross-reference figures and tables within an Quarto file\nLearners can apply functions from the dplyr R Package to join multiple data sets"
+    "text": "Learners can use Quarto and Netlify to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can apply functions from the dplyr R Package to join multiple data sets."
   },
   {
     "objectID": "weeks/wk-06.html#slides",
@@ -179,7 +172,7 @@
     "href": "weeks/wk-06.html#learning-reflection",
     "title": "Week 6",
     "section": "Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 5 on RStudio Cloud (learning-05.qmd)."
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for lecture 5 on Posit Cloud (learning-05.qmd)."
   },
   {
     "objectID": "weeks/wk-00-template.html#slides",
@@ -242,14 +235,14 @@
     "href": "weeks/wk-05.html",
     "title": "Week 5",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa\nLearners can list the four main atomic vector types in R\nLearners can explain the three characteristics of tidy data"
+    "text": "Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can list the four main atomic vector types in R.\nLearners can explain the three characteristics of tidy data."
   },
   {
     "objectID": "weeks/wk-05.html#learning-objectives",
     "href": "weeks/wk-05.html#learning-objectives",
     "title": "Week 5",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa\nLearners can list the four main atomic vector types in R\nLearners can explain the three characteristics of tidy data"
+    "text": "Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can list the four main atomic vector types in R.\nLearners can explain the three characteristics of tidy data."
   },
   {
     "objectID": "weeks/wk-05.html#slides",
@@ -270,28 +263,28 @@
     "href": "weeks/wk-05.html#homework-assignment",
     "title": "Week 5",
     "section": "Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for week 4 on RStudio Cloud:\n\nhw-04a-tidyr.qmd"
+    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for lecture 4 on Posit Cloud:\n\nhw-04a-tidyr.qmd"
   },
   {
     "objectID": "weeks/wk-05.html#learning-reflection",
     "href": "weeks/wk-05.html#learning-reflection",
     "title": "Week 5",
     "section": "Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 4 on RStudio Cloud (learning-04.qmd)."
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for lecture 4 on Posit Cloud (learning-04.qmd)."
   },
   {
     "objectID": "weeks/wk-04.html",
     "href": "weeks/wk-04.html",
     "title": "Week 4",
     "section": "",
-    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot"
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
   },
   {
     "objectID": "weeks/wk-04.html#learning-objectives",
     "href": "weeks/wk-04.html#learning-objectives",
     "title": "Week 4",
     "section": "",
-    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot"
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
   },
   {
     "objectID": "weeks/wk-04.html#slides",
@@ -312,14 +305,14 @@
     "href": "weeks/wk-04.html#homework-assignment",
     "title": "Week 4",
     "section": "Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for week 3 on RStudio Cloud:\n\nhw-03a-data-transformation.qmd"
+    "text": "Homework assignment\nComplete the homework programming assignments that are in your project folder for lecture 3 on Posit Cloud\n\nhw-03a-data-transformation.qmd"
   },
   {
     "objectID": "weeks/wk-04.html#learning-reflection",
     "href": "weeks/wk-04.html#learning-reflection",
     "title": "Week 4",
     "section": "Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 3 on RStudio Cloud (learning-03.qmd)."
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for lecture 3 on Posit Cloud"
   },
   {
     "objectID": "weeks/wk-08.html#slides",
@@ -424,7 +417,7 @@
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping\nLearners can compare three different geoms and their use case\nLearners can apply a theme to control font types and sizes within a plot\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset"
+    "text": "Learning Objectives (for this week)\n\nLearners can navigate the platforms that are used to for the course.\nLearners can render a file on RStudio Cloud in PDF format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\nNA"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
@@ -501,7 +494,7 @@
     "href": "slides/lec-02-visualisation.html#break",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Break",
-    "text": "Break\n\n\n\n\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#types-of-variables",
@@ -606,7 +599,7 @@
     "href": "slides/lec-02-visualisation.html#section-4",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
     "objectID": "slides/lec-01-welcome.html#meet-the-lecturer",
@@ -641,7 +634,7 @@
     "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
     "title": "Welcome to Data Analytics for Development",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can navigate the platforms that are used to for the course\nLearners can render a file on RStudio Cloud in PDF format\nLearners can list the six elements of the data science lifecycle\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)"
+    "text": "Learning Objectives (for this week)\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners have understood the grading scheme for the course.\nLearners can open an issue on GitHub and tag the course instructor.\nNA"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
@@ -746,14 +739,14 @@
     "href": "slides/lec-01-welcome.html#break",
     "title": "Welcome to Data Analytics for Development",
     "section": "Break",
-    "text": "Break\n\n\n\n\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#think-pair-share",
     "href": "slides/lec-01-welcome.html#think-pair-share",
     "title": "Welcome to Data Analytics for Development",
     "section": "Think, Pair, Share",
-    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestion\n\n\n\nWhat is your mental model of the Data Science Lifecycle?\n\n\n\n\n\nThink for 2 minutes\nPair with your neighbour for 4 minutes\nShare your answer with the class\n\n\n\n\n02:00"
+    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestion\n\n\n\nWhat is your mental model of the Data Science Lifecycle?\n\n\n\n\n\nThink for 2 minutes\nPair with your neighbour for 4 minutes\nShare your answer with the class\n\n\n\n\n−+\n02:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#deep-end",
@@ -823,7 +816,7 @@
     "href": "slides/lec-01-welcome.html#break-1",
     "title": "Welcome to Data Analytics for Development",
     "section": "Break",
-    "text": "Break\n\n\n\n\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#packages",
@@ -886,7 +879,7 @@
     "href": "slides/lec-01-welcome.html#grading",
     "title": "Welcome to Data Analytics for Development",
     "section": "Grading",
-    "text": "Grading\n\n\n\n\n\ngrade\npercent\n\n\n\n\nA+\n97\n\n\nA+\n93\n\n\nA-\n90\n\n\nB+\n87\n\n\nB\n83\n\n\nB-\n80\n\n\nC+\n77\n\n\nC\n73\n\n\nC-\n70\n\n\nD+\n67\n\n\nD\n63\n\n\nD-\n60\n\n\nF\n0"
+    "text": "Grading\n\n\n\n\n\ngrade\npercent\n\n\n\n\nA+\n97\n\n\nA\n93\n\n\nA-\n90\n\n\nB+\n87\n\n\nB\n83\n\n\nB-\n80\n\n\nC+\n77\n\n\nC\n73\n\n\nC-\n70\n\n\nD+\n67\n\n\nD\n63\n\n\nD-\n60\n\n\nF\n0"
   },
   {
     "objectID": "slides/lec-01-welcome.html#late-work-policy",
@@ -907,14 +900,14 @@
     "href": "slides/lec-01-welcome.html#section-15",
     "title": "Welcome to Data Analytics for Development",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
     "href": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa\nLearners can list the four main atomic vector types in R\nLearners can explain the three characteristics of tidy data"
+    "text": "Learning Objectives (for this week)\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nNA\nNA"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#why-care-about-data-types",
@@ -1131,21 +1124,21 @@
     "href": "slides/lec-04-tidy-data.html#section-3",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
     "objectID": "slides/lec-03-transformation.html#think-pair-share",
     "href": "slides/lec-03-transformation.html#think-pair-share",
     "title": "Data Transformation with dplyr",
     "section": "Think, Pair, Share",
-    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestions\n\n\n\nWhy should you not leave a blank cell in a spreadsheet used for data collection?\nWhich of the 12 rules for data organization was the least comprehensible to you?\n\n\n\n\n\nThink for 2 minutes\nPair with in break-out rooms for 4 minutes\nShare your answer with the class\n\n\n\n\n02:00"
+    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestions\n\n\n\nWhy should you not leave a blank cell in a spreadsheet used for data collection?\nWhich of the 12 rules for data organization was the least comprehensible to you?\n\n\n\n\n\nThink for 2 minutes\nPair with in break-out rooms for 4 minutes\nShare your answer with the class\n\n\n\n\n−+\n02:00"
   },
   {
     "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
     "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
     "title": "Data Transformation with dplyr",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot"
+    "text": "Learning Objectives (for this week)\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package."
   },
   {
     "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
@@ -1173,7 +1166,7 @@
     "href": "slides/lec-03-transformation.html#break",
     "title": "Data Transformation with dplyr",
     "section": "Break",
-    "text": "Break\n\n\n\n\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-03-transformation.html#pair-programming-exercises",
@@ -1208,7 +1201,7 @@
     "href": "slides/lec-03-transformation.html#section",
     "title": "Data Transformation with dplyr",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
     "objectID": "slides/lec-05-communicate.html#we",
@@ -1383,7 +1376,7 @@
     "href": "slides/lec-05-communicate.html#section",
     "title": "Joining data & communicating results with Quarto",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5837-ss22.github.io/website/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
     "objectID": "schedule.html",

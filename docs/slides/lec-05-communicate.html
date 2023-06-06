@@ -384,8 +384,8 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../site_libs/countdown-0.3.5/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.3.5/countdown.js"></script>
+  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -393,7 +393,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Joining data &amp; communicating results with Quarto</h1>
-  <p class="subtitle">CVEN 5837 - Summer 2022</p>
+  <p class="subtitle">CVEN 5837 - Summer 2023</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -404,13 +404,17 @@ Lars Schöbitz
 </div>
 
 </section>
+<section class="slide level2">
+
+<script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+</section>
 <section id="learning-objectives-for-this-week" class="title-slide slide level1 center">
 <h1>Learning Objectives (for this week)</h1>
 <ol type="1">
-<li>Learners can use Quarto and Netlify to publish an HTML file</li>
-<li>Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor</li>
-<li>Learners can cross-reference figures and tables within an Quarto file</li>
-<li>Learners can apply functions from the dplyr R Package to join multiple data sets</li>
+<li>Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.</li>
+<li>Learners can list the four main atomic vector types in R.</li>
+<li>Learners can explain the three characteristics of tidy data.</li>
+<li>NA</li>
 </ol>
 </section>
 
@@ -486,7 +490,7 @@ Lars Schöbitz
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="cell">
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 2
    name               profession                        
    &lt;chr&gt;              &lt;chr&gt;                             
@@ -505,7 +509,7 @@ Lars Schöbitz
 </div>
 <div id="tabset-1-2">
 <div class="cell">
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 3
   name               birth_year death_year
   &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt;
@@ -522,7 +526,7 @@ Lars Schöbitz
 </div>
 <div id="tabset-1-3">
 <div class="cell">
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 9 × 2
   name               known_for                                                  
   &lt;chr&gt;              &lt;chr&gt;                                                      
@@ -544,7 +548,7 @@ Lars Schöbitz
 <section id="desired-output" class="slide level2 smaller">
 <h2>Desired output</h2>
 <div class="cell">
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 5
    name               profession                 birth_year death_year known_for
    &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    
@@ -567,15 +571,15 @@ Lars Schöbitz
 <div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">names</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code>[1] "name"       "profession"</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">names</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code>[1] "name"       "birth_year" "death_year"</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">names</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code>[1] "name"      "known_for"</code></pre>
 </div>
 </div>
@@ -584,15 +588,15 @@ Lars Schöbitz
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">nrow</span>(professions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code>[1] 10</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">nrow</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">nrow</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code>[1] 9</code></pre>
 </div>
 </div>
@@ -629,7 +633,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
      id value_x
   &lt;dbl&gt; &lt;chr&gt;  
@@ -649,7 +653,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
      id value_y
   &lt;dbl&gt; &lt;chr&gt;  
@@ -675,7 +679,7 @@ Lars Schöbitz
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">left_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 3
      id value_x value_y
   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  
@@ -692,7 +696,7 @@ Lars Schöbitz
 <div class="cell">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>professions <span class="sc">%&gt;%</span></span>
 <span id="cb27-2"><a href="#cb27-2"></a>  <span class="fu">left_join</span>(dates) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
    name               profession                         birth_year death_year
    &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;
@@ -723,7 +727,7 @@ Lars Schöbitz
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">right_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 3
      id value_x value_y
   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  
@@ -740,7 +744,7 @@ Lars Schöbitz
 <div class="cell">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>professions <span class="sc">%&gt;%</span></span>
 <span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">right_join</span>(dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 4
   name               profession                         birth_year death_year
   &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;
@@ -769,7 +773,7 @@ Lars Schöbitz
 </div><div class="column" style="width:47.5%;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">full_join</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 3
      id value_x value_y
   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  
@@ -787,7 +791,7 @@ Lars Schöbitz
 <div class="cell">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a>dates <span class="sc">%&gt;%</span></span>
 <span id="cb35-2"><a href="#cb35-2"></a>  <span class="fu">full_join</span>(works) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
    name               birth_year death_year known_for                           
    &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;                               
@@ -810,7 +814,7 @@ Lars Schöbitz
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>professions <span class="sc">%&gt;%</span></span>
 <span id="cb37-2"><a href="#cb37-2"></a>  <span class="fu">left_join</span>(dates) <span class="sc">%&gt;%</span></span>
 <span id="cb37-3"><a href="#cb37-3"></a>  <span class="fu">left_join</span>(works)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 5
    name               profession                 birth_year death_year known_for
    &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    
@@ -881,7 +885,8 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62e298d9" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_56eade6e" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -991,7 +996,7 @@ Lars Schöbitz
 
 
 <img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>https://cven5837-ss22.github.io/website/</p>
+<p>https://cven5873-ss23.github.io/website/</p>
 </div>
 </section></section>
     </div>
@@ -1211,12 +1216,15 @@ Lars Schöbitz
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
       // slide changes (different for each slide format).
       (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
           const event = window.document.createEvent("Event");
           event.initEvent("slideenter", true, true);
           window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
 
           // dispatch for shiny
           if (window.jQuery) {
@@ -1227,13 +1235,6 @@ Lars Schöbitz
               window.jQuery(currentSlide).trigger("shown");
             }
           }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
         }
 
         // hookup for slidy

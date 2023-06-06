@@ -319,8 +319,8 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../site_libs/countdown-0.3.5/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.3.5/countdown.js"></script>
+  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -328,7 +328,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Data Transformation with dplyr</h1>
-  <p class="subtitle">CVEN 5837 - Summer 2022</p>
+  <p class="subtitle">CVEN 5837 - Summer 2023</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -341,7 +341,7 @@ Lars Schöbitz
 </section>
 <section class="slide level2">
 
-<script defer="" data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+<script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 </section>
 <section>
 <section id="data-organisation-in-spreadsheets" class="title-slide slide level1 center" data-background-color="#0F4C81">
@@ -373,7 +373,8 @@ Lars Schöbitz
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62d66a25" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_e79aeeb9" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -382,7 +383,7 @@ Lars Schöbitz
 <section id="learning-objectives-for-this-week" class="slide level2">
 <h2>Learning Objectives (for this week)</h2>
 <ol type="1">
-<li>Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot</li>
+<li>Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.</li>
 </ol>
 </section></section>
 <section>
@@ -451,7 +452,8 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62d669df" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_270bdea8" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -514,7 +516,7 @@ Lars Schöbitz
 
 
 <img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>https://cven5837-ss22.github.io/website/</p>
+<p>https://cven5873-ss23.github.io/website/</p>
 </div>
 </section></section>
     </div>
@@ -734,12 +736,15 @@ Lars Schöbitz
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
       // slide changes (different for each slide format).
       (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
           const event = window.document.createEvent("Event");
           event.initEvent("slideenter", true, true);
           window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
 
           // dispatch for shiny
           if (window.jQuery) {
@@ -750,13 +755,6 @@ Lars Schöbitz
               window.jQuery(currentSlide).trigger("shown");
             }
           }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
         }
 
         // hookup for slidy

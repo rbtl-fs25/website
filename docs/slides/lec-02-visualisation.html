@@ -384,8 +384,8 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../site_libs/countdown-0.3.5/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.3.5/countdown.js"></script>
+  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -393,7 +393,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Data Visualisation &amp; Data Organisation in Spreadsheets</h1>
-  <p class="subtitle">CVEN 5837 - Summer 2022</p>
+  <p class="subtitle">CVEN 5837 - Summer 2023</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -406,7 +406,7 @@ Lars Schöbitz
 </section>
 <section class="slide level2">
 
-<script defer="" data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+<script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 </section>
 <section id="section" class="slide level2" data-background-image="img/lec-02/r_rollercoaster.png" data-background-size="contain">
 <h2></h2>
@@ -509,11 +509,11 @@ Lars Schöbitz
 <section id="learning-objectives-for-this-week" class="slide level2">
 <h2>Learning Objectives (for this week)</h2>
 <ol type="1">
-<li>Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package</li>
-<li>Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping</li>
-<li>Learners can compare three different geoms and their use case</li>
-<li>Learners can apply a theme to control font types and sizes within a plot</li>
-<li>Learners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset</li>
+<li>Learners can navigate the platforms that are used to for the course.</li>
+<li>Learners can render a file on RStudio Cloud in PDF format.</li>
+<li>Learners can list the six elements of the data science lifecycle.</li>
+<li>Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).</li>
+<li>NA</li>
 </ol>
 </section></section>
 <section>
@@ -561,14 +561,14 @@ Lars Schöbitz
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
@@ -576,7 +576,7 @@ Lars Schöbitz
 <span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
@@ -585,7 +585,7 @@ Lars Schöbitz
 <span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
@@ -595,7 +595,7 @@ Lars Schöbitz
 <span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
@@ -606,7 +606,7 @@ Lars Schöbitz
 <span id="cb8-5" class="hljs-ln-code"><a href="#cb8-5"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
@@ -617,7 +617,7 @@ Lars Schöbitz
 <span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="live-coding-exercise-reproduce-this-plot" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Live Coding Exercise: Reproduce this plot</h1>
@@ -641,7 +641,8 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62cd78ec" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_0d2feb4b" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -827,7 +828,7 @@ Lars Schöbitz
 
 
 <img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>https://cven5837-ss22.github.io/website/</p>
+<p>https://cven5873-ss23.github.io/website/</p>
 </div>
 </section></section>
     </div>
@@ -1047,12 +1048,15 @@ Lars Schöbitz
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
       // slide changes (different for each slide format).
       (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
           const event = window.document.createEvent("Event");
           event.initEvent("slideenter", true, true);
           window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
 
           // dispatch for shiny
           if (window.jQuery) {
@@ -1063,13 +1067,6 @@ Lars Schöbitz
               window.jQuery(currentSlide).trigger("shown");
             }
           }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
         }
 
         // hookup for slidy

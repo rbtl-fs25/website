@@ -153,7 +153,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 
 ```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 

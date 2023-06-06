@@ -29,7 +29,7 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 `r emo::ji("desktop_computer")` [Lecture 4 - Vectors & Tidy data - HTML](/slides/lec-04-tidy-data.html) 
 
-`r emo::ji("desktop_computer")` [Lecture 4 - Vectors & Tidy data - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-04-tidy-data.pdf)
+`r emo::ji("desktop_computer")` [Lecture 4 - Vectors & Tidy data - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf)
 
 ## Readings
 
@@ -38,13 +38,12 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 `r emo::ji("book")` Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html#factors)  
 
 
-
 ## Homework assignment
 
-Complete the homework programming assignments that are in your project folder for week 4 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):
+Complete the homework programming assignments that are in your project folder for lecture 4 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
 
 - hw-04a-tidyr.qmd 
 
 ## Learning reflection
 
-Complete the learning reflection that is in your project folder for week 4 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-04.qmd).  
+Complete the learning reflection that is in your project folder for lecture 4 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) (learning-04.qmd).  

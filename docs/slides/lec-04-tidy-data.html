@@ -384,8 +384,8 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../site_libs/countdown-0.3.5/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.3.5/countdown.js"></script>
+  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -393,7 +393,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Concept of Tidy Data, Vectors &amp; Pivoting</h1>
-  <p class="subtitle">CVEN 5837 - Summer 2022</p>
+  <p class="subtitle">CVEN 5837 - Summer 2023</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -406,14 +406,15 @@ Lars Schöbitz
 </section>
 <section class="slide level2">
 
+<script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
-<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
 <section id="learning-objectives-for-this-week" class="slide level2">
 <h2>Learning Objectives (for this week)</h2>
 <ol type="1">
-<li>Learners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa</li>
-<li>Learners can list the four main atomic vector types in R</li>
-<li>Learners can explain the three characteristics of tidy data</li>
+<li>Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.</li>
+<li>NA</li>
+<li>NA</li>
 </ol>
 </section>
 <section>
@@ -944,7 +945,8 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62dfbacb" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_c44c2352" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -1130,11 +1132,11 @@ Lars Schöbitz
 <section id="how-would-you-plot-this" class="slide level2">
 <h2>How would you plot this?</h2>
 
-<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-34-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
 <section id="and-this" class="slide level2">
 <h2>And this?</h2>
 
-<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-36-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section>
 <section id="you-need-a-long-format" class="slide level2 smaller scrollable">
 <h2>You need: A long format</h2>
 <div class="cell">
@@ -1520,7 +1522,7 @@ Lars Schöbitz
 <section id="or-this" class="slide level2">
 <h2>Or this?</h2>
 
-<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-42-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
 <section id="calculate-percentages" class="slide level2 smaller scrollable">
 <h2>Calculate percentages</h2>
 <div class="cell">
@@ -3171,7 +3173,7 @@ Lars Schöbitz
 
 
 <img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>https://cven5837-ss22.github.io/website/</p>
+<p>https://cven5873-ss23.github.io/website/</p>
 </div>
 </section></section>
     </div>
@@ -3391,12 +3393,15 @@ Lars Schöbitz
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
       // slide changes (different for each slide format).
       (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
           const event = window.document.createEvent("Event");
           event.initEvent("slideenter", true, true);
           window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
 
           // dispatch for shiny
           if (window.jQuery) {
@@ -3407,13 +3412,6 @@ Lars Schöbitz
               window.jQuery(currentSlide).trigger("shown");
             }
           }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
         }
 
         // hookup for slidy

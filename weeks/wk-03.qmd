@@ -31,7 +31,7 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 `r emo::ji("desktop_computer")` [Lecture 2 - Data visualisation - HTML](/slides/lec-02-visualisation.html) 
 
-`r emo::ji("desktop_computer")` [Lecture 2 - Data visualisation - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-02-visualisation.pdf)
+`r emo::ji("desktop_computer")` [Lecture 2 - Data visualisation - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualisation.pdf)
 
 ## Readings
 
@@ -43,11 +43,11 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 ## Homework assignment
 
-Complete the homework programming assignments that are in your project folder for week 2 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):
+Complete the homework programming assignment that is in your project folder for lecture 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
 
 - hw-02a-data-visualisation.qmd 
 - hw-02b-project-data.qmd
 
 ## Learning reflection
 
-Complete the learning reflection that is in your project folder for week 2 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-02.qmd).  
+Complete the learning reflection that is in your project folder for lecture 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) (learning-02.qmd).   

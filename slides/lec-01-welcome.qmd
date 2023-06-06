@@ -80,7 +80,7 @@ What does the item you have picked have to do with the reason for you being here
 
 ```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
@@ -478,7 +478,7 @@ Rules of `dplyr` functions:
 
 ```{r}
 
-readr::read_csv(here::here("data/tab-03_grading-scheme.csv")) |>
+readr::read_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv")) |>
   knitr::kable()
 
 ```

@@ -384,8 +384,8 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../site_libs/countdown-0.3.5/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.3.5/countdown.js"></script>
+  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -393,7 +393,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Welcome to Data Analytics for Development</h1>
-  <p class="subtitle">CVEN 5837 - Summer 2022</p>
+  <p class="subtitle">CVEN 5837 - Summer 2023</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -406,7 +406,7 @@ Lars Schöbitz
 </section>
 <section class="slide level2">
 
-<script defer="" data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+<script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 </section>
 <section>
 <section id="welcome" class="title-slide slide level1 center" data-background-color="#0F4C81">
@@ -477,10 +477,10 @@ Lars Schöbitz
 <h2>Learning Objectives (for this week)</h2>
 <div>
 <ol type="1">
-<li class="fragment">Learners can navigate the platforms that are used to for the course</li>
-<li class="fragment">Learners can render a file on RStudio Cloud in PDF format</li>
-<li class="fragment">Learners can list the six elements of the data science lifecycle</li>
-<li class="fragment">Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)</li>
+<li class="fragment">Learners can access the Posit Cloud workspace for the course.</li>
+<li class="fragment">Learners have understood the grading scheme for the course.</li>
+<li class="fragment">Learners can open an issue on GitHub and tag the course instructor.</li>
+<li class="fragment">NA</li>
 </ol>
 </div>
 </section>
@@ -580,7 +580,8 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62c41f51" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_39172716" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -618,7 +619,8 @@ Lars Schöbitz
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62c4200a" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_ce31de37" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -808,7 +810,8 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_62c41e89" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;" data-warnwhen="0">
+<div class="countdown" id="timer_0eea7f2e" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
@@ -991,7 +994,7 @@ Lars Schöbitz
 <td style="text-align: right;">97</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">A+</td>
+<td style="text-align: left;">A</td>
 <td style="text-align: right;">93</td>
 </tr>
 <tr class="odd">
@@ -1079,7 +1082,7 @@ Lars Schöbitz
 
 
 <img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>https://cven5837-ss22.github.io/website/</p>
+<p>https://cven5873-ss23.github.io/website/</p>
 </div>
 </section></section>
     </div>
@@ -1299,12 +1302,15 @@ Lars Schöbitz
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
       // slide changes (different for each slide format).
       (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
           const event = window.document.createEvent("Event");
           event.initEvent("slideenter", true, true);
           window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
 
           // dispatch for shiny
           if (window.jQuery) {
@@ -1315,13 +1321,6 @@ Lars Schöbitz
               window.jQuery(currentSlide).trigger("shown");
             }
           }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
         }
 
         // hookup for slidy
