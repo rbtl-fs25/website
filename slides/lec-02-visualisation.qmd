@@ -367,7 +367,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 :::
 
-## data-to-viz.com {background-iframe="https://www.data-to-viz.com/" background-interactive="true"}
+## data-to-viz.com 
 
 # Data Collection Tools {background-color="#0F4C81"}
 
@@ -457,9 +457,8 @@ Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](h
 
 ## Homework due dates
 
-- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-02.html)
-- Homework assignment due: Friday, 15th July
-- Learning reflection due: Monday, 18th July
+- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-02.html)
+- Homework assignment & learning reflection due: **Friday, June 23th** 
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 

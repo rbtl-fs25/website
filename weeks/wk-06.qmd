@@ -65,6 +65,6 @@ This part of the homework programming assignment does not have a starter file. I
  
 ## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for lecture 5 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+Complete the learning reflection that is in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
 
-- learning-05.qmd 
+- learning-06.qmd 

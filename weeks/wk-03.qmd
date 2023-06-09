@@ -29,9 +29,11 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 ## {{< fa display >}} Slides
 
-[Lecture 2 - Data visualisation - HTML](/slides/lec-02-visualisation.html) 
+[View slides in full screen](../slides/lec-02-visualisation.html) | [Download slides as PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualisation.pdf)
 
-[Lecture 2 - Data visualisation - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualisation.pdf)
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-02-visualisation.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
 
 ## {{< fa book >}} Readings
 
@@ -43,13 +45,13 @@ Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10
 
 ## {{< fa code >}} Homework assignment 
 
-Complete the homework programming assignment that is in your project folder for lecture 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+Complete the homework programming assignment that is in your project folder for week 3 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
 
-- hw-02a-data-visualisation.qmd 
-- hw-02b-project-data.qmd
+- hw-03a-data-visualisation.qmd 
+- hw-03b-project-data.qmd
 
 ## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for lecture 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+Complete the learning reflection that is in your project folder for week 3 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
 
-- learning-02.qmd
+- learning-03.qmd

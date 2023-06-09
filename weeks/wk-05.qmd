@@ -39,12 +39,12 @@ Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.
 
 ## {{< fa code >}} Homework assignment 
 
-Complete the homework programming assignments that are in your project folder for lecture 4 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
+Complete the homework programming assignments that are in your project folder for week 5 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
 
-- hw-04a-tidyr.qmd 
+- hw-05a-tidyr.qmd 
 
 ## {{< fa pen-clip >}} Learning reflection
 
-Complete the learning reflection that is in your project folder for lecture 4 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) 
+Complete the learning reflection that is in your project folder for week 5 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) 
 
-- learning-04.qmd
+- learning-05.qmd

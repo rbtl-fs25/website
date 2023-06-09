@@ -410,14 +410,14 @@
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-cven5837-ss23-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 22 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
+    "text": "Learning Objectives (for this week)\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
     "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "R Package ggplot2",
-    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n#knitr::include_graphics(here::here(\"slides/img/lec-02/ggplot2-part-of-tidyverse.png\"))\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure",
@@ -487,7 +487,7 @@
     "href": "slides/lec-02-visualisation.html#break",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Break",
-    "text": "Break\n\n\ncountdown(\n  minutes = 10, seconds = 0,\n  left = 0, right = 0,\n  padding = \"10px\", margin = \"5%\",\n  font_size = \"2em\"\n)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#types-of-variables",
@@ -529,7 +529,7 @@
     "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\n\nknitr::include_graphics(\"img/lec-02/data-org-paper.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
+    "text": "Data Organisation in Spreadsheets\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
@@ -550,14 +550,14 @@
     "href": "slides/lec-02-visualisation.html#why",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Why?",
-    "text": "Why?\nBecause it will make your life easier!\n\nknitr::include_graphics(\"img/lec-02/data-org-views.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
+    "text": "Why?\nBecause it will make your life easier!\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#license-cc0",
     "href": "slides/lec-02-visualisation.html#license-cc0",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "License? CC0 (!)",
-    "text": "License? CC0 (!)\n\nknitr::include_graphics(\"img/lec-02/data-org-license.png\")\n\n\n\n\n\n(https://github.com/kbroman/Talk_DataOrg) .footnote[Screenshot taken on 2022-03-23]\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
+    "text": "License? CC0 (!)\n\n\n\n\n\n\n(https://github.com/kbroman/Talk_DataOrg) .footnote[Screenshot taken on 2022-03-23]\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#pair-programming-exercises",
