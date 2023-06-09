@@ -120,7 +120,7 @@ ggplot(data = global_waste_data_kg_year,
 
 ::: {.column width="50%"}
 
-- Our Google Space for the course
+- The Moodle Discussion forum TODO: add link
 - RStudio Community Forum: https://community.rstudio.com/
 - Documentation websites: https://dplyr.tidyverse.org/
 - Twitter community: [#rstats](https://twitter.com/search?q=%23rstats&src=typd) 
@@ -143,11 +143,54 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 - Needed when asking questions online
 - Good support information: https://www.tidyverse.org/help/#reprex
 
-## . {background-image="img/lec-02/code_hero.jpg" background-size="contain"} 
+## {background-image="img/lec-02/code_hero.jpg" background-size="contain"} 
 
 ::: aside
 Artwork by [@allison_horst](https://www.allisonhorst.com/)
 :::
+
+# Homework assignment solutions
+
+## remember: `git clone`  
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.001.png)
+
+
+## remember: `git commit` 
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.002.png)
+
+## remember: `git push` 
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.003.png)
+
+## remember: `git push` 
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.004.png)
+
+## collaborate: `git clone`
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.005.png)
+
+## track work: `git commit` 
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.006.png)
+
+## update: `git ???` 
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.007.png)
+
+## update: `git push`
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.008.png)
+
+## `git ???` 
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.009.png)
+
+## new: `git pull`
+
+![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.010.png)
 
 ## Learning Objectives (for this week)
 
@@ -427,25 +470,6 @@ knitr::include_graphics("img/lec-02/data-org-license.png")
 ::: {.aside}
 Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](https://github.com/kbroman/Talk_DataOrg)
 :::
-
-(https://github.com/kbroman/Talk_DataOrg)
-.footnote[[Screenshot taken on 2022-03-23](https://github.com/kbroman/Talk_DataOrg)]
-
-# Pair Programming Exercise {background-color="#0F4C81"}
-
-## Pair Programming Exercises 
-
-- Two learners work together in a break out session
-- One person (the driver) shares the screen and does the typing
-- The other person (the navigator) offers comments and suggestions
-- Roles get switched 
-
-## hw-02a-data-visualiation
-
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
-3. Open "Projects"
-4. Open the "course-materials" project
 
 # Homework week 2 {background-color="#0F4C81"}
 

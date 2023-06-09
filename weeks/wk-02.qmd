@@ -44,7 +44,7 @@ Read [R for Data Science - Section 4 - Workflow basics](https://r4ds.had.co.nz/w
 
 ## {{< fa code >}} Homework assignment 
 
-Complete the homework programming assignment that is in your project folder for week 2 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+Complete the homework programming assignment that is in your project folder for week 2 by **Friday 16th** June on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
 
 - hw-02-data-science-lifecycle.qmd
 
