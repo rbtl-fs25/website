@@ -41,3 +41,5 @@ vignettes/*.pdf
 # ignore Mac files
 .DS_Store
 /.quarto/
+
+_extensions
