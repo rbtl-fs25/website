@@ -13,7 +13,7 @@ editor: source
 execute:
   freeze: auto
 params:
-    week: 1
+    week: 2
 ---
 
 <script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
@@ -47,8 +47,9 @@ library(magrittr)
 
 ## Learning Goals (for the course)
 
-- Be familiar with the most commonly used qualitative and quantitative data collection methods and tools.
-- Be able to employ remote sensing and in-situ data, and analysis tools to illustrate the utility of solutions for water, agriculture, disaster forecasting and relief, air quality, and global health.
+1. Be able to use a common set of data science tools **(R, RStudio IDE, Git, GitHub, tidyverse, Quarto)** to illustrate and communicate the utility of solutions for water, sanitation, air quality, and global health.
+
+2. Learn to use the **Quarto file format** and the RStudio IDE visual editing mode to produce **scholarly documents** with citations, footnotes, cross-references, figures, and tables.
 
 ## Why are you here?
 
@@ -80,7 +81,7 @@ What does the item you have picked have to do with the reason for you being here
 
 ```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
+lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
@@ -121,13 +122,14 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 ## Platforms and Tools
 
 - R
-- RStudio (Cloud)
+- Posit Cloud
+- RStudio IDE
 - tidyverse R Packages
 - Quarto publishing system
 
-## [cven5837-ss22.github.io/website/](https://cven5837-ss22.github.io/website/) `r emo::ji("bookmark")`
+## [cven5873-ss23.github.io/website/](https://cven5873-ss23.github.io/website/) `r emo::ji("bookmark")`
 
-# RStudio Cloud {background-color="#0F4C81"}
+# Posit Cloud {background-color="#0F4C81"}
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.001.png"}
 
@@ -150,15 +152,25 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 
 # Live Coding Exercise {background-color="#0F4C81"}
 
-## live-01a-setup - RStudio Cloud Setup
+## live-01a-setup - Posit Cloud Setup
 
-1. Head over to rstudio.cloud
-2. Create a free account if you do not have one yet
-3. Open the link that is posted to the Zoom chat
-4. Accept the invitation to join the cven5837-ss22 workspace
-5. Post "ready" to the Zoom chat when you are done
+::: {.callout-note}
+## **Follow along on the screen**
+1. Open the GitHub organisation for the course: <https://github.com/cven5873-ss23>
+2. You will find a repository titled: **course-material-USERNAME** (with your GitHub Username)
+3. You will "clone" this repository to Posit Cloud
+:::
+
 
 ## Break
+
+::: {.callout-important}
+## GitHub PAT from week 1
+
+Do you have your **GitHub Personal Access Token** readily accessible?
+
+:::
+
 
 ![](img/lec-01/coffee-break.jpg)
 
@@ -178,33 +190,79 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
 
 
-# Data Science Lifecycle {background-color="#0F4C81"}
+# Version Control
 
-## Think, Pair, Share
+## Version Control with Git and GitHub
 
-:::{.callout-note}
+A way to share files with others, so they can:
 
-## Question 
+- download
+- re-use
+- contribute
 
-1. What is your mental model of the Data Science Lifecycle?
-:::
-
-- **Think** for 2 minutes
-- **Pair** with your neighbour for 4 minutes
-- **Share** your answer with the class
+You can view the history of files, and jump back in time to any point. 
 
 
-```{r, echo = FALSE}
+## Why is it useful?
 
-countdown(
-  minutes = 2, seconds = 0,
-  left = 0, right = 0,
-  padding = "10px", margin = "5%",
-  font_size = "2em"
-)
-
+```{r echo=FALSE, fig.align = "center", out.width="40%"}
+knitr::include_graphics("img/lec-01/phd_comics_vc.gif")
 ```
 
+## Git and GitHub 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="25%"}
+knitr::include_graphics("img/lec-01/git-logo.png")
+```
+- Git is a software for version control
+- Released in 2005
+- Popular among programmers collaboratively developing code 
+- Tracks changes in a set of files (directory/folder/repository)
+:::
+
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="25%"}
+knitr::include_graphics("img/lec-01/github-logo.png")
+```
+- GitHub is a hosting platform for version control using Git
+- Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion
+- 73 million Users ([February, 2022](https://github.com/about))
+- Facebook for Software Developers
+:::
+
+::::
+
+## Version Control - Terminology
+
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.001.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.002.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.003.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.004.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.005.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.006.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.007.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.008.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.009.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.010.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.011.png" background-size="contain"}
+
+## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.012.png" background-size="contain"}
+
+# Data Science Lifecycle {background-color="#0F4C81"}
 
 ## Deep End
 
@@ -304,10 +362,10 @@ Together, tidying and transforming are called wrangling, because getting your da
 
 ## live-01b-data-science-lifecycle - Data Science Lifecycle
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
+1. Head over to posit.cloud
+2. Open the workspace for the course (cven5837-ss23)
 3. Open "Projects"
-4. Open the "course-materials" project
+4. Open the "course-materials-USERNAME" project
 5. Follow along with me
 
 ## Break
@@ -457,53 +515,71 @@ Rules of `dplyr` functions:
 
 |          |                                           |
 |----------|-------------------------------------------|
-| **Monday**   |  Learning reflections are due              |
-| **Tuesday**  | Lecture                                   |
-| **Wednesday** | Feedback (grading) on assignment |
+| **Monday**   |  Lecture              |
+| **Tuesday**  |                                   |
+| **Wednesday** | Feedback (grading) on assignments from previous week |
 | **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
-| **Friday**   | Homework assignment is due             |
+| **Friday**   | Homework assignment and learning reflection are due             |
 
 ## Homework assignments
 
 - Weekly programming assignments
-- 75% of the total grade
+- Graded as pass/fail (100 pts)
+- Submitted as rendered Quarto documents on GitHub
+- weighted at 40% of the total grade
 
 ## Learning reflections
 
 - Reflections on the different class elements (lecture, homework assignment, readings)
-- minimum 200 words
-- 25% of the total grade
+- Graded as pass/fail (100 pts)
+- minimum 100 words
+- Submitted as rendered Quarto documents on GitHub
+- weighted at 20% of the total grade
+
+## Capstone Project
+
+- Data analysis project report with a data set of your choice
+- Graded as number of points out of 100 pts for pre-defined graded elements
+- Submitted as rendered Quarto document on GitHub
+- weighted at 20% of the total grade
+
+## Exam
+
+- 2-hour exam assessing the technical skills taught during the course
+- Graded as number of points out of 100 pts for pre-defined graded elements
+- Submitted as rendered Quarto document, but **not** on GitHub
+- weighted at 20% of the total grade
 
 ## Grading {.smaller .scrollable}
 
 ```{r}
 
-readr::read_csv(here::here("data/tab-03_grading-scheme.csv")) |>
-  knitr::kable()
+
+readr::read_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv")) |> 
+  gt::gt() |> 
+  gt::tab_header("Conversion from percent to grades.")
 
 ```
 
 ## Late work policy
 
-- up to 2 working days after deadline (25% penalty for each day)
-  - Tuesday for homework assignments (-50%)
-  - Wednesday for learning reflections (-50%)
-- work handed in more than two working days after due date with be graded 0%
+- due dates are set and all work is due on the stated date
+- work not submitted by the due date will receive 0 pts
+- the lowest score for each of the assignments or learning reflections is dropped
 
 # Homework week 1 {background-color="#0F4C81"}
 
 ## Homework due dates
 
-- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-01.html)
-- Homework assignment due: Friday, 8th July
-- Learning reflection due: Monday, 11th July
+- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-01.html)
+- Homework assignment & learning reflection due: **Friday, June 16th** 
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
 ## 
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-01-welcome.pdf)
+Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-01-welcome.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 

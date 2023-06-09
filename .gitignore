@@ -42,4 +42,6 @@ vignettes/*.pdf
 .DS_Store
 /.quarto/
 
-_extensions
+# extentions
+_extensions/
+
