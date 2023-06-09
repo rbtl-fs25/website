@@ -21,13 +21,6 @@
     "text": "Learning Objectives\n\nLearners can access the Posit Cloud workspace for the course.\nLearners have understood the grading scheme for the course.\nLearners can open an issue on GitHub and tag the course instructor."
   },
   {
-    "objectID": "weeks/wk-01.html#slides",
-    "href": "weeks/wk-01.html#slides",
-    "title": "Week 1",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
     "objectID": "weeks/wk-01.html#readings",
     "href": "weeks/wk-01.html#readings",
     "title": "Week 1",
@@ -95,21 +88,21 @@
     "href": "weeks/wk-02.html",
     "title": "Week 2",
     "section": "",
-    "text": "Learners can navigate the platforms that are used to for the course.\nLearners can render a file on RStudio Cloud in PDF format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+    "text": "Learners can navigate the platforms (Posit Cloud, GitHub, Course Website) that are used to for the course.\nLearners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
     "objectID": "weeks/wk-02.html#fa-bullseye-learning-objectives",
     "href": "weeks/wk-02.html#fa-bullseye-learning-objectives",
     "title": "Week 2",
     "section": "",
-    "text": "Learners can navigate the platforms that are used to for the course.\nLearners can render a file on RStudio Cloud in PDF format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+    "text": "Learners can navigate the platforms (Posit Cloud, GitHub, Course Website) that are used to for the course.\nLearners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
     "objectID": "weeks/wk-02.html#fa-display-slides",
     "href": "weeks/wk-02.html#fa-display-slides",
     "title": "Week 2",
     "section": " Slides",
-    "text": "Slides\nLecture 1 - Welcome! - HTML\nLecture 1 - Welcome! - Download PDF"
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
     "objectID": "weeks/wk-02.html#fa-book-readings",
@@ -417,14 +410,14 @@
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can navigate the platforms that are used to for the course.\nLearners can render a file on RStudio Cloud in PDF format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\nNA"
+    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-cven5837-ss23-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 22 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
     "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "R Package ggplot2",
-    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n#knitr::include_graphics(here::here(\"slides/img/lec-02/ggplot2-part-of-tidyverse.png\"))\n\n\n\n\n\nSlide adapted from datasciencebox.org"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure",
@@ -494,7 +487,7 @@
     "href": "slides/lec-02-visualisation.html#break",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Break",
-    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\ncountdown(\n  minutes = 10, seconds = 0,\n  left = 0, right = 0,\n  padding = \"10px\", margin = \"5%\",\n  font_size = \"2em\"\n)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#types-of-variables",
@@ -536,7 +529,7 @@
     "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
+    "text": "Data Organisation in Spreadsheets\n\nknitr::include_graphics(\"img/lec-02/data-org-paper.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
@@ -557,14 +550,14 @@
     "href": "slides/lec-02-visualisation.html#why",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Why?",
-    "text": "Why?\nBecause it will make your life easier!\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
+    "text": "Why?\nBecause it will make your life easier!\n\nknitr::include_graphics(\"img/lec-02/data-org-views.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#license-cc0",
     "href": "slides/lec-02-visualisation.html#license-cc0",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "License? CC0 (!)",
-    "text": "License? CC0 (!)\n\n\n\n\n\n\n(https://github.com/kbroman/Talk_DataOrg) .footnote[Screenshot taken on 2022-03-23]\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
+    "text": "License? CC0 (!)\n\nknitr::include_graphics(\"img/lec-02/data-org-license.png\")\n\n\n\n\n\n(https://github.com/kbroman/Talk_DataOrg) .footnote[Screenshot taken on 2022-03-23]\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#pair-programming-exercises",
@@ -665,11 +658,11 @@
     "text": "Platforms and Tools\n\nR\nPosit Cloud\nRStudio IDE\ntidyverse R Packages\nQuarto publishing system"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#cven5837-ss22.github.iowebsite",
-    "href": "slides/lec-01-welcome.html#cven5837-ss22.github.iowebsite",
+    "objectID": "slides/lec-01-welcome.html#cven5873-ss23.github.iowebsite",
+    "href": "slides/lec-01-welcome.html#cven5873-ss23.github.iowebsite",
     "title": "Welcome to Data Analytics for Development",
-    "section": "cven5837-ss22.github.io/website/ 🔖",
-    "text": "cven5837-ss22.github.io/website/ 🔖"
+    "section": "cven5873-ss23.github.io/website/ 🔖",
+    "text": "cven5873-ss23.github.io/website/ 🔖"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-1",
@@ -728,11 +721,11 @@
     "text": "Screen setup\n\nWho uses a second external screen?\n“Yes” in the Zoom Chat"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#live-01a-setup---rstudio-cloud-setup",
-    "href": "slides/lec-01-welcome.html#live-01a-setup---rstudio-cloud-setup",
+    "objectID": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",
+    "href": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",
     "title": "Welcome to Data Analytics for Development",
-    "section": "live-01a-setup - RStudio Cloud Setup",
-    "text": "live-01a-setup - RStudio Cloud Setup\n\nHead over to rstudio.cloud\nCreate a free account if you do not have one yet\nOpen the link that is posted to the Zoom chat\nAccept the invitation to join the cven5837-ss22 workspace\nPost “ready” to the Zoom chat when you are done"
+    "section": "live-01a-setup - Posit Cloud Setup",
+    "text": "live-01a-setup - Posit Cloud Setup\n\n\n\n\n\n\nFollow along on the screen\n\n\n\nOpen the GitHub organisation for the course: https://github.com/cven5873-ss23\nYou will find a repository titled: course-material-USERNAME (with your GitHub Username)\nYou will “clone” this repository to Posit Cloud"
   },
   {
     "objectID": "slides/lec-01-welcome.html#break",
@@ -742,11 +735,32 @@
     "text": "Break\n\n\n\n\n\n\nGitHub PAT from week 1\n\n\nDo you have your GitHub Personal Access Token readily accessible?\n\n\n\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#think-pair-share",
-    "href": "slides/lec-01-welcome.html#think-pair-share",
+    "objectID": "slides/lec-01-welcome.html#version-control-with-git-and-github",
+    "href": "slides/lec-01-welcome.html#version-control-with-git-and-github",
     "title": "Welcome to Data Analytics for Development",
-    "section": "Think, Pair, Share",
-    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestion\n\n\n\nWhat is your mental model of the Data Science Lifecycle?\n\n\n\n\n\nThink for 2 minutes\nPair with your neighbour for 4 minutes\nShare your answer with the class\n\n\n\n\n−+\n02:00"
+    "section": "Version Control with Git and GitHub",
+    "text": "Version Control with Git and GitHub\nA way to share files with others, so they can:\n\ndownload\nre-use\ncontribute\n\nYou can view the history of files, and jump back in time to any point."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#why-is-it-useful",
+    "href": "slides/lec-01-welcome.html#why-is-it-useful",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Why is it useful?",
+    "text": "Why is it useful?"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#git-and-github",
+    "href": "slides/lec-01-welcome.html#git-and-github",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nReleased in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n73 million Users (February, 2022)\nFacebook for Software Developers"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#version-control---terminology",
+    "href": "slides/lec-01-welcome.html#version-control---terminology",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Version Control - Terminology",
+    "text": "Version Control - Terminology"
   },
   {
     "objectID": "slides/lec-01-welcome.html#deep-end",
@@ -756,53 +770,53 @@
     "text": "Deep End\n\n\n\n\n\nvia GIPHY"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-8",
-    "href": "slides/lec-01-welcome.html#section-8",
+    "objectID": "slides/lec-01-welcome.html#section-20",
+    "href": "slides/lec-01-welcome.html#section-20",
     "title": "Welcome to Data Analytics for Development",
     "section": "-",
-    "text": "-"
+    "text": "-\n\nAdd notes"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-9",
-    "href": "slides/lec-01-welcome.html#section-9",
+    "objectID": "slides/lec-01-welcome.html#section-21",
+    "href": "slides/lec-01-welcome.html#section-21",
     "title": "Welcome to Data Analytics for Development",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-10",
-    "href": "slides/lec-01-welcome.html#section-10",
+    "objectID": "slides/lec-01-welcome.html#section-22",
+    "href": "slides/lec-01-welcome.html#section-22",
     "title": "Welcome to Data Analytics for Development",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-11",
-    "href": "slides/lec-01-welcome.html#section-11",
+    "objectID": "slides/lec-01-welcome.html#section-23",
+    "href": "slides/lec-01-welcome.html#section-23",
     "title": "Welcome to Data Analytics for Development",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-12",
-    "href": "slides/lec-01-welcome.html#section-12",
+    "objectID": "slides/lec-01-welcome.html#section-24",
+    "href": "slides/lec-01-welcome.html#section-24",
     "title": "Welcome to Data Analytics for Development",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-13",
-    "href": "slides/lec-01-welcome.html#section-13",
+    "objectID": "slides/lec-01-welcome.html#section-25",
+    "href": "slides/lec-01-welcome.html#section-25",
     "title": "Welcome to Data Analytics for Development",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-14",
-    "href": "slides/lec-01-welcome.html#section-14",
+    "objectID": "slides/lec-01-welcome.html#section-26",
+    "href": "slides/lec-01-welcome.html#section-26",
     "title": "Welcome to Data Analytics for Development",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-01b-data-science-lifecycle---data-science-lifecycle",
@@ -875,6 +889,20 @@
     "text": "Learning reflections\n\nReflections on the different class elements (lecture, homework assignment, readings)\nGraded as pass/fail (100 pts)\nminimum 100 words\nSubmitted as rendered Quarto documents on GitHub\nweighted at 20% of the total grade"
   },
   {
+    "objectID": "slides/lec-01-welcome.html#capstone-project",
+    "href": "slides/lec-01-welcome.html#capstone-project",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Capstone Project",
+    "text": "Capstone Project\n\nData analysis project report with a data set of your choice\nGraded as number of points out of 100 pts for pre-defined graded elements\nSubmitted as rendered Quarto document on GitHub\nweighted at 20% of the total grade"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#exam",
+    "href": "slides/lec-01-welcome.html#exam",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Exam",
+    "text": "Exam\n\n2-hour exam assessing the technical skills taught during the course\nGraded as number of points out of 100 pts for pre-defined graded elements\nSubmitted as rendered Quarto document, but not on GitHub\nweighted at 20% of the total grade"
+  },
+  {
     "objectID": "slides/lec-01-welcome.html#grading",
     "href": "slides/lec-01-welcome.html#grading",
     "title": "Welcome to Data Analytics for Development",
@@ -896,18 +924,18 @@
     "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 16th"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-15",
-    "href": "slides/lec-01-welcome.html#section-15",
+    "objectID": "slides/lec-01-welcome.html#section-27",
+    "href": "slides/lec-01-welcome.html#section-27",
     "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
     "href": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nNA\nNA"
+    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-cven5837-ss23-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 22 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLearners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can list the four main atomic vector types in R.\nLearners can explain the three characteristics of tidy data."
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#why-care-about-data-types",
@@ -928,14 +956,14 @@
     "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-work",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Oh why won’t you work?!",
-    "text": "Oh why won’t you work?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "text": "Oh why won’t you work?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\nWarning: There was 1 warning in `summarise()`.\nℹ In argument: `mean_price_glass = mean(price_glass)`.\nCaused by warning in `mean.default()`:\n! argument is not numeric or logical: returning NA\n\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
     "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Oh why won’t you still work??!!",
-    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\nWarning: There was 1 warning in `summarise()`.\nℹ In argument: `mean_price_glass = mean(price_glass, na.rm = TRUE)`.\nCaused by warning in `mean.default()`:\n! argument is not numeric or logical: returning NA\n\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#take-a-breath-and-look-at-your-data",
@@ -963,7 +991,7 @@
     "href": "slides/lec-04-tidy-data.html#sumamrise-argh",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Sumamrise? Argh!!!!",
-    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\nWarning: There was 1 warning in `summarise()`.\nℹ In argument: `mean_price_glass = mean(price_glass_new, na.rm = TRUE)`.\nCaused by warning in `mean.default()`:\n! argument is not numeric or logical: returning NA\n\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#always-respect-your-data-types",
@@ -1019,49 +1047,49 @@
     "href": "slides/lec-04-tidy-data.html#waste-characterisation-data",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Waste characterisation data",
-    "text": "Waste characterisation data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nrecyclable\nnon_recyclable\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n0.92\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n0.61\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n1.56\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.54\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.16\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n0.81\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n2.08\n1.99\n4.07"
+    "text": "Waste characterisation data\n\nwaste_data_untidy |&gt; \n  knitr::kable(digits = 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nrecyclable\nnon_recyclable\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n0.92\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n0.61\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n1.56\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.54\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.16\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n0.81\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n2.08\n1.99\n4.07"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#how-would-you-plot-this",
     "href": "slides/lec-04-tidy-data.html#how-would-you-plot-this",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "How would you plot this?",
-    "text": "How would you plot this?"
+    "text": "How would you plot this?\n\nggplot(data = waste_data_untidy,\n       mapping = aes(x = objid, y = total, fill = location)) +\n  geom_col()"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#and-this",
     "href": "slides/lec-04-tidy-data.html#and-this",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "And this?",
-    "text": "And this?"
+    "text": "And this?\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, y = weight, fill = waste_category)) +\n  geom_col()"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#you-need-a-long-format",
     "href": "slides/lec-04-tidy-data.html#you-need-a-long-format",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "You need: A long format",
-    "text": "You need: A long format\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+    "text": "You need: A long format\n\nwaste_data_tidy |&gt; \n  select(-percent, -type) |&gt; \n  knitr::kable(digits = 2)\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#reminder-the-wide-format",
     "href": "slides/lec-04-tidy-data.html#reminder-the-wide-format",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Reminder: The wide format",
-    "text": "Reminder: The wide format\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nrecyclable\nnon_recyclable\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n0.92\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n0.61\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n1.56\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.54\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.16\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n0.81\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n2.08\n1.99\n4.07"
+    "text": "Reminder: The wide format\n\nwaste_data_untidy |&gt; \n  knitr::kable(digits = 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nrecyclable\nnon_recyclable\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n0.92\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n0.61\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n1.56\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.54\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.16\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n0.81\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n2.08\n1.99\n4.07"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#or-this",
     "href": "slides/lec-04-tidy-data.html#or-this",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Or this?",
-    "text": "Or this?"
+    "text": "Or this?\n\nwaste_data_tidy |&gt; \n  ggplot(aes(x = objid, y = percent, fill = type)) +\n  geom_col()"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#calculate-percentages",
     "href": "slides/lec-04-tidy-data.html#calculate-percentages",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Calculate percentages",
-    "text": "Calculate percentages\n\n\n\n\n\nobjid\nlocation\nwaste_category\ntype\nweight\npercent\n\n\n\n\n900\neth\npet\nrecyclable\n0.06\n2.02\n\n\n900\neth\nmetal_alu\nrecyclable\n0.06\n1.95\n\n\n900\neth\nglass\nrecyclable\n0.58\n18.14\n\n\n900\neth\npaper\nrecyclable\n0.21\n6.74\n\n\n900\neth\nother\nnon_recyclable\n1.14\n35.78\n\n\n899\neth\npet\nrecyclable\n0.14\n3.33\n\n\n899\neth\nmetal_alu\nrecyclable\n0.01\n0.31\n\n\n899\neth\nglass\nrecyclable\n0.18\n4.30\n\n\n899\neth\npaper\nrecyclable\n0.28\n6.69\n\n\n899\neth\nother\nnon_recyclable\n3.04\n73.36\n\n\n921\nold_town\npet\nrecyclable\n0.00\n0.00\n\n\n921\nold_town\nmetal_alu\nrecyclable\n0.00\n0.00\n\n\n921\nold_town\nglass\nrecyclable\n0.00\n0.00\n\n\n921\nold_town\npaper\nrecyclable\n0.41\n9.60\n\n\n921\nold_town\nother\nnon_recyclable\n1.57\n36.46\n\n\n916\nold_town\npet\nrecyclable\n0.17\n2.76\n\n\n916\nold_town\nmetal_alu\nrecyclable\n0.04\n0.69\n\n\n916\nold_town\nglass\nrecyclable\n0.80\n12.73\n\n\n916\nold_town\npaper\nrecyclable\n0.55\n8.82\n\n\n916\nold_town\nother\nnon_recyclable\n0.62\n9.99\n\n\n900\neth\npet\nrecyclable\n0.10\n3.09\n\n\n900\neth\nmetal_alu\nrecyclable\n0.04\n1.35\n\n\n900\neth\nglass\nrecyclable\n0.00\n0.00\n\n\n900\neth\npaper\nrecyclable\n0.40\n12.60\n\n\n900\neth\nother\nnon_recyclable\n0.58\n18.33\n\n\n899\neth\npet\nrecyclable\n0.08\n1.86\n\n\n899\neth\nmetal_alu\nrecyclable\n0.03\n0.72\n\n\n899\neth\nglass\nrecyclable\n0.00\n0.00\n\n\n899\neth\npaper\nrecyclable\n0.05\n1.26\n\n\n899\neth\nother\nnon_recyclable\n0.34\n8.16\n\n\n921\nold_town\npet\nrecyclable\n0.08\n1.81\n\n\n921\nold_town\nmetal_alu\nrecyclable\n0.03\n0.70\n\n\n921\nold_town\nglass\nrecyclable\n0.30\n6.89\n\n\n921\nold_town\npaper\nrecyclable\n0.40\n9.32\n\n\n921\nold_town\nother\nnon_recyclable\n1.52\n35.21\n\n\n916\nold_town\npet\nrecyclable\n0.11\n1.74\n\n\n916\nold_town\nmetal_alu\nrecyclable\n0.04\n0.70\n\n\n916\nold_town\nglass\nrecyclable\n0.92\n14.63\n\n\n916\nold_town\npaper\nrecyclable\n1.01\n16.20\n\n\n916\nold_town\nother\nnon_recyclable\n1.99\n31.73"
+    "text": "Calculate percentages\n\nwaste_data_tidy |&gt; \n  knitr::kable(digits = 2)\n\n\n\n\nobjid\nlocation\nwaste_category\ntype\nweight\npercent\n\n\n\n\n900\neth\npet\nrecyclable\n0.06\n2.02\n\n\n900\neth\nmetal_alu\nrecyclable\n0.06\n1.95\n\n\n900\neth\nglass\nrecyclable\n0.58\n18.14\n\n\n900\neth\npaper\nrecyclable\n0.21\n6.74\n\n\n900\neth\nother\nnon_recyclable\n1.14\n35.78\n\n\n899\neth\npet\nrecyclable\n0.14\n3.33\n\n\n899\neth\nmetal_alu\nrecyclable\n0.01\n0.31\n\n\n899\neth\nglass\nrecyclable\n0.18\n4.30\n\n\n899\neth\npaper\nrecyclable\n0.28\n6.69\n\n\n899\neth\nother\nnon_recyclable\n3.04\n73.36\n\n\n921\nold_town\npet\nrecyclable\n0.00\n0.00\n\n\n921\nold_town\nmetal_alu\nrecyclable\n0.00\n0.00\n\n\n921\nold_town\nglass\nrecyclable\n0.00\n0.00\n\n\n921\nold_town\npaper\nrecyclable\n0.41\n9.60\n\n\n921\nold_town\nother\nnon_recyclable\n1.57\n36.46\n\n\n916\nold_town\npet\nrecyclable\n0.17\n2.76\n\n\n916\nold_town\nmetal_alu\nrecyclable\n0.04\n0.69\n\n\n916\nold_town\nglass\nrecyclable\n0.80\n12.73\n\n\n916\nold_town\npaper\nrecyclable\n0.55\n8.82\n\n\n916\nold_town\nother\nnon_recyclable\n0.62\n9.99\n\n\n900\neth\npet\nrecyclable\n0.10\n3.09\n\n\n900\neth\nmetal_alu\nrecyclable\n0.04\n1.35\n\n\n900\neth\nglass\nrecyclable\n0.00\n0.00\n\n\n900\neth\npaper\nrecyclable\n0.40\n12.60\n\n\n900\neth\nother\nnon_recyclable\n0.58\n18.33\n\n\n899\neth\npet\nrecyclable\n0.08\n1.86\n\n\n899\neth\nmetal_alu\nrecyclable\n0.03\n0.72\n\n\n899\neth\nglass\nrecyclable\n0.00\n0.00\n\n\n899\neth\npaper\nrecyclable\n0.05\n1.26\n\n\n899\neth\nother\nnon_recyclable\n0.34\n8.16\n\n\n921\nold_town\npet\nrecyclable\n0.08\n1.81\n\n\n921\nold_town\nmetal_alu\nrecyclable\n0.03\n0.70\n\n\n921\nold_town\nglass\nrecyclable\n0.30\n6.89\n\n\n921\nold_town\npaper\nrecyclable\n0.40\n9.32\n\n\n921\nold_town\nother\nnon_recyclable\n1.52\n35.21\n\n\n916\nold_town\npet\nrecyclable\n0.11\n1.74\n\n\n916\nold_town\nmetal_alu\nrecyclable\n0.04\n0.70\n\n\n916\nold_town\nglass\nrecyclable\n0.92\n14.63\n\n\n916\nold_town\npaper\nrecyclable\n1.01\n16.20\n\n\n916\nold_town\nother\nnon_recyclable\n1.99\n31.73"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#how-to",
@@ -1138,7 +1166,7 @@
     "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
     "title": "Data Transformation with dplyr",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package."
+    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-cven5837-ss23-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 22 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
   },
   {
     "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
@@ -1166,7 +1194,7 @@
     "href": "slides/lec-03-transformation.html#break",
     "title": "Data Transformation with dplyr",
     "section": "Break",
-    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\ncountdown(\n  minutes = 10, seconds = 0,\n  left = 0, right = 0,\n  padding = \"10px\", margin = \"5%\",\n  font_size = \"2em\"\n)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-03-transformation.html#pair-programming-exercises",
@@ -1208,7 +1236,7 @@
     "href": "slides/lec-05-communicate.html#we",
     "title": "Joining data & communicating results with Quarto",
     "section": "We…",
-    "text": "We…\n…have multiple data frames\n…want to bring them together\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\"))\ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\"))\nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\n\nRows: 10 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): name, profession\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 8 Columns: 3\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): name\ndbl (2): birth_year, death_year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 9 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): name, known_for\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\"))\ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\"))\nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
   },
   {
     "objectID": "slides/lec-05-communicate.html#data-women-in-science",
@@ -1222,14 +1250,14 @@
     "href": "slides/lec-05-communicate.html#inputs",
     "title": "Joining data & communicating results with Quarto",
     "section": "Inputs",
-    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n# A tibble: 10 × 2\n   name               profession                        \n   &lt;chr&gt;              &lt;chr&gt;                             \n 1 Ada Lovelace       Mathematician                     \n 2 Marie Curie        Physicist and Chemist             \n 3 Janaki Ammal       Botanist                          \n 4 Chien-Shiung Wu    Physicist                         \n 5 Katherine Johnson  Mathematician                     \n 6 Rosalind Franklin  Chemist                           \n 7 Vera Rubin         Astronomer                        \n 8 Gladys West        Mathematician                     \n 9 Flossie Wong-Staal Virologist and Molecular Biologist\n10 Jennifer Doudna    Biochemist                        \n\n\n\n\n\n\n# A tibble: 8 × 3\n  name               birth_year death_year\n  &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt;\n1 Janaki Ammal             1897       1984\n2 Chien-Shiung Wu          1912       1997\n3 Katherine Johnson        1918       2020\n4 Rosalind Franklin        1920       1958\n5 Vera Rubin               1928       2016\n6 Gladys West              1930         NA\n7 Flossie Wong-Staal       1947         NA\n8 Jennifer Doudna          1964         NA\n\n\n\n\n\n\n# A tibble: 9 × 2\n  name               known_for                                                  \n  &lt;chr&gt;              &lt;chr&gt;                                                      \n1 Ada Lovelace       first computer algorithm                                   \n2 Marie Curie        theory of radioactivity,  discovery of elements polonium a…\n3 Janaki Ammal       hybrid species, biodiversity protection                    \n4 Chien-Shiung Wu    confim and refine theory of radioactive beta decy, Wu expe…\n5 Katherine Johnson  calculations of orbital mechanics critical to sending the …\n6 Vera Rubin         existence of dark matter                                   \n7 Gladys West        mathematical modeling of the shape of the Earth which serv…\n8 Flossie Wong-Staal first scientist to clone HIV and create a map of its genes…\n9 Jennifer Doudna    one of the primary developers of CRISPR, a ground-breaking…"
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\nprofessions \n\n# A tibble: 10 × 2\n   name               profession                        \n   &lt;chr&gt;              &lt;chr&gt;                             \n 1 Ada Lovelace       Mathematician                     \n 2 Marie Curie        Physicist and Chemist             \n 3 Janaki Ammal       Botanist                          \n 4 Chien-Shiung Wu    Physicist                         \n 5 Katherine Johnson  Mathematician                     \n 6 Rosalind Franklin  Chemist                           \n 7 Vera Rubin         Astronomer                        \n 8 Gladys West        Mathematician                     \n 9 Flossie Wong-Staal Virologist and Molecular Biologist\n10 Jennifer Doudna    Biochemist                        \n\n\n\n\n\ndates \n\n# A tibble: 8 × 3\n  name               birth_year death_year\n  &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt;\n1 Janaki Ammal             1897       1984\n2 Chien-Shiung Wu          1912       1997\n3 Katherine Johnson        1918       2020\n4 Rosalind Franklin        1920       1958\n5 Vera Rubin               1928       2016\n6 Gladys West              1930         NA\n7 Flossie Wong-Staal       1947         NA\n8 Jennifer Doudna          1964         NA\n\n\n\n\n\nworks\n\n# A tibble: 9 × 2\n  name               known_for                                                  \n  &lt;chr&gt;              &lt;chr&gt;                                                      \n1 Ada Lovelace       first computer algorithm                                   \n2 Marie Curie        theory of radioactivity,  discovery of elements polonium a…\n3 Janaki Ammal       hybrid species, biodiversity protection                    \n4 Chien-Shiung Wu    confim and refine theory of radioactive beta decy, Wu expe…\n5 Katherine Johnson  calculations of orbital mechanics critical to sending the …\n6 Vera Rubin         existence of dark matter                                   \n7 Gladys West        mathematical modeling of the shape of the Earth which serv…\n8 Flossie Wong-Staal first scientist to clone HIV and create a map of its genes…\n9 Jennifer Doudna    one of the primary developers of CRISPR, a ground-breaking…"
   },
   {
     "objectID": "slides/lec-05-communicate.html#desired-output",
     "href": "slides/lec-05-communicate.html#desired-output",
     "title": "Joining data & communicating results with Quarto",
     "section": "Desired output",
-    "text": "Desired output\n\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
+    "text": "Desired output\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) \n\nJoining with `by = join_by(name)`\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
   },
   {
     "objectID": "slides/lec-05-communicate.html#inputs-reminder",
@@ -1257,49 +1285,49 @@
     "href": "slides/lec-05-communicate.html#left_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "left_join()",
-    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
   },
   {
     "objectID": "slides/lec-05-communicate.html#left_join-1",
     "href": "slides/lec-05-communicate.html#left_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "left_join()",
-    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n# A tibble: 10 × 4\n   name               profession                         birth_year death_year\n   &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;\n 1 Ada Lovelace       Mathematician                              NA         NA\n 2 Marie Curie        Physicist and Chemist                      NA         NA\n 3 Janaki Ammal       Botanist                                 1897       1984\n 4 Chien-Shiung Wu    Physicist                                1912       1997\n 5 Katherine Johnson  Mathematician                            1918       2020\n 6 Rosalind Franklin  Chemist                                  1920       1958\n 7 Vera Rubin         Astronomer                               1928       2016\n 8 Gladys West        Mathematician                            1930         NA\n 9 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n10 Jennifer Doudna    Biochemist                               1964         NA"
+    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 4\n   name               profession                         birth_year death_year\n   &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;\n 1 Ada Lovelace       Mathematician                              NA         NA\n 2 Marie Curie        Physicist and Chemist                      NA         NA\n 3 Janaki Ammal       Botanist                                 1897       1984\n 4 Chien-Shiung Wu    Physicist                                1912       1997\n 5 Katherine Johnson  Mathematician                            1918       2020\n 6 Rosalind Franklin  Chemist                                  1920       1958\n 7 Vera Rubin         Astronomer                               1928       2016\n 8 Gladys West        Mathematician                            1930         NA\n 9 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n10 Jennifer Doudna    Biochemist                               1964         NA"
   },
   {
     "objectID": "slides/lec-05-communicate.html#right_join",
     "href": "slides/lec-05-communicate.html#right_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "right_join()",
-    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-05-communicate.html#right_join-1",
     "href": "slides/lec-05-communicate.html#right_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "right_join()",
-    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n# A tibble: 8 × 4\n  name               profession                         birth_year death_year\n  &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;\n1 Janaki Ammal       Botanist                                 1897       1984\n2 Chien-Shiung Wu    Physicist                                1912       1997\n3 Katherine Johnson  Mathematician                            1918       2020\n4 Rosalind Franklin  Chemist                                  1920       1958\n5 Vera Rubin         Astronomer                               1928       2016\n6 Gladys West        Mathematician                            1930         NA\n7 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n8 Jennifer Doudna    Biochemist                               1964         NA"
+    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\nJoining with `by = join_by(name)`\n\n\n# A tibble: 8 × 4\n  name               profession                         birth_year death_year\n  &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;\n1 Janaki Ammal       Botanist                                 1897       1984\n2 Chien-Shiung Wu    Physicist                                1912       1997\n3 Katherine Johnson  Mathematician                            1918       2020\n4 Rosalind Franklin  Chemist                                  1920       1958\n5 Vera Rubin         Astronomer                               1928       2016\n6 Gladys West        Mathematician                            1930         NA\n7 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n8 Jennifer Doudna    Biochemist                               1964         NA"
   },
   {
     "objectID": "slides/lec-05-communicate.html#full_join",
     "href": "slides/lec-05-communicate.html#full_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "full_join()",
-    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-05-communicate.html#full_join-1",
     "href": "slides/lec-05-communicate.html#full_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "full_join()",
-    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n# A tibble: 10 × 4\n   name               birth_year death_year known_for                           \n   &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;                               \n 1 Janaki Ammal             1897       1984 hybrid species, biodiversity protec…\n 2 Chien-Shiung Wu          1912       1997 confim and refine theory of radioac…\n 3 Katherine Johnson        1918       2020 calculations of orbital mechanics c…\n 4 Rosalind Franklin        1920       1958 &lt;NA&gt;                                \n 5 Vera Rubin               1928       2016 existence of dark matter            \n 6 Gladys West              1930         NA mathematical modeling of the shape …\n 7 Flossie Wong-Staal       1947         NA first scientist to clone HIV and cr…\n 8 Jennifer Doudna          1964         NA one of the primary developers of CR…\n 9 Ada Lovelace               NA         NA first computer algorithm            \n10 Marie Curie                NA         NA theory of radioactivity,  discovery…"
+    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 4\n   name               birth_year death_year known_for                           \n   &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;                               \n 1 Janaki Ammal             1897       1984 hybrid species, biodiversity protec…\n 2 Chien-Shiung Wu          1912       1997 confim and refine theory of radioac…\n 3 Katherine Johnson        1918       2020 calculations of orbital mechanics c…\n 4 Rosalind Franklin        1920       1958 &lt;NA&gt;                                \n 5 Vera Rubin               1928       2016 existence of dark matter            \n 6 Gladys West              1930         NA mathematical modeling of the shape …\n 7 Flossie Wong-Staal       1947         NA first scientist to clone HIV and cr…\n 8 Jennifer Doudna          1964         NA one of the primary developers of CR…\n 9 Ada Lovelace               NA         NA first computer algorithm            \n10 Marie Curie                NA         NA theory of radioactivity,  discovery…"
   },
   {
     "objectID": "slides/lec-05-communicate.html#putting-it-altogether",
     "href": "slides/lec-05-communicate.html#putting-it-altogether",
     "title": "Joining data & communicating results with Quarto",
     "section": "Putting it altogether",
-    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works)\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
+    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works)\n\nJoining with `by = join_by(name)`\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
   },
   {
     "objectID": "slides/lec-05-communicate.html#what-is-quarto",
@@ -1426,145 +1454,5 @@
     "title": "Schedule",
     "section": "",
     "text": "Data in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#cven5873-ss23.github.iowebsite",
-    "href": "slides/lec-01-welcome.html#cven5873-ss23.github.iowebsite",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "cven5873-ss23.github.io/website/ 🔖",
-    "text": "cven5873-ss23.github.io/website/ 🔖"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",
-    "href": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "live-01a-setup - Posit Cloud Setup",
-    "text": "live-01a-setup - Posit Cloud Setup\n\n\n\n\n\n\nFollow along on the screen\n\n\n\nOpen the GitHub organisation for the course: https://github.com/cven5873-ss23\nYou will find a repository titled: course-material-USERNAME (with your GitHub Username)\nYou will “clone” this repository to Posit Cloud"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#capstone-project",
-    "href": "slides/lec-01-welcome.html#capstone-project",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Capstone Project",
-    "text": "Capstone Project\n\nData analysis project report with a data set of your choice\nGraded as number of points out of 100 pts for pre-defined graded elements\nSubmitted as rendered Quarto document on GitHub\nweighted at 20% of the total grade"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#exam",
-    "href": "slides/lec-01-welcome.html#exam",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Exam",
-    "text": "Exam\n\n2-hour exam assessing the technical skills taught during the course\nGraded as number of points out of 100 pts for pre-defined graded elements\nSubmitted as rendered Quarto document, but not on GitHub\nweighted at 20% of the total grade"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#version-control-with-git-and-github",
-    "href": "slides/lec-01-welcome.html#version-control-with-git-and-github",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Version Control with Git and GitHub",
-    "text": "Version Control with Git and GitHub\nA way to share files with others, so they can:\n\ndownload\nre-use\ncontribute\n\nYou can view the history of files, and jump back in time to any point."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#why-is-it-useful",
-    "href": "slides/lec-01-welcome.html#why-is-it-useful",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Why is it useful?",
-    "text": "Why is it useful?"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#git-and-github",
-    "href": "slides/lec-01-welcome.html#git-and-github",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Git and GitHub",
-    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nReleased in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n73 million Users (February, 2022)\nFacebook for Software Developers"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#version-control---terminology",
-    "href": "slides/lec-01-welcome.html#version-control---terminology",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Version Control - Terminology",
-    "text": "Version Control - Terminology"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-16",
-    "href": "slides/lec-01-welcome.html#section-16",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-17",
-    "href": "slides/lec-01-welcome.html#section-17",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-18",
-    "href": "slides/lec-01-welcome.html#section-18",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-19",
-    "href": "slides/lec-01-welcome.html#section-19",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-20",
-    "href": "slides/lec-01-welcome.html#section-20",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-\n\nAdd notes"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-21",
-    "href": "slides/lec-01-welcome.html#section-21",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-22",
-    "href": "slides/lec-01-welcome.html#section-22",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-23",
-    "href": "slides/lec-01-welcome.html#section-23",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-24",
-    "href": "slides/lec-01-welcome.html#section-24",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-25",
-    "href": "slides/lec-01-welcome.html#section-25",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-26",
-    "href": "slides/lec-01-welcome.html#section-26",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "-",
-    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-27",
-    "href": "slides/lec-01-welcome.html#section-27",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   }
 ]
