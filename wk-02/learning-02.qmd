@@ -1,0 +1,44 @@
+---
+title: "Learning Reflection"
+subtitle: "Week 2"
+format: html
+editor: visual
+---
+
+# Learning reflections
+
+Learning reflections are part of your weekly homework and have a weight of 20% of your final grade. Write a reflection in your own words on the different parts of the weeks material below. You can also use your learning reflections as a notebook as you work through exercises or readings. Write as much as you like, but a minimum of 100 words in total.
+
+# Lecture
+
+<!--# Add your reflections on the lecture of this week here -->
+
+# Homework Assignment
+
+<!--# Add your reflections on the homework programming assignment here -->
+
+# Readings
+
+<!--# Add your reflections on the required readings here -->
+
+# Submit learning reflections
+
+## Stage, Commit & Push to GitHub
+
+This final section introduces the workflow you need to follow at the end of each live coding exercise, homework assignment, learning reflection. It ensures that all the changes you have made to files in this repository (folder) are synced with the version that is stored on GitHub. The steps will be described at the end of each of the files.
+
+1.  Open the Git pane in RStudio. It's in the top right corner in a separate tab.
+2.  **Stage** your changes by checking appropriate box next to all files (if you select one file with your mouse, you can then highlight them all with Ctrl + A on your keyboard and check all boxes)
+3.  Write a meaningful commit message (e.g. "Completed homework assignment 1b) in the **Commit message** box
+4.  Click **Commit**. Note that every commit needs to have a commit message associated with it.
+5.  Go to your course-material GitHub repo and refresh the page. You should see your commit message next to the updated files.
+
+## Open an issue on GitHub
+
+Once you have ensured that the Quarto document renders without errors and you have pushed all your changes to GitHub, it is to complete the assignment by opening an issue on your course-material GitHub repo.
+
+1.  Navigate to your course-material GitHub repo.
+2.  Click on **Issues**, and then **New issue** button.
+3.  Write a meaningful title in the **Title** field
+4.  Tag the course instructor with using the `@` sign in combination with `larnsce` as the username
+5.  Add any questions or comments

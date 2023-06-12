@@ -1,0 +1,194 @@
+---
+title: "Week 02 - Homework Assignment"
+subtitle: "Data Science Lifecycle"
+format: html
+editor: visual
+execute:
+  echo: true
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Task 0: Load R packages
+
+The required R Packages are loaded at the beginning of the script.
+
+1.  Run the code contained in the code-chunk and fix any errors. (**Tipp: Green play button in the top right corner of the code-chunk.**)
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(here)
+```
+
+# Task 1: Data import
+
+**Fill in the blanks**
+
+1.  A code-chunk has already been created
+
+2.  Import the CSV file titled 'country_level_data_0.csv', contained in the 'wk-01/data' directory with help of the `read_csv()` function
+
+3.  Use the assignment operator (`<-`) to assign the data to an object named `global_waste_data`
+
+4.  Run the code contained in the code-chunk and fix any errors
+
+5.  Next to the code-chunk option `#| eval:` change the value from `false` to `true` (**Info: This tells R to eval(uate) the code-chunk on render**)
+
+6.  Render the document and fix any errors
+
+**Note:** You will learn more about the use of the `here()` function when we look at data import in more detail.
+
+```{r}
+#| eval: false
+
+___ <- read_csv(here("wk-02/data/country_level_data_0.csv"))
+```
+
+# Task 2: Data tidying (and some transformation)
+
+**Fill in the blanks**
+
+1.  A code-chunk has already been created
+
+2.  Start with the `global_waste_data` object
+
+3.  Add the pipe operator (`|>`) and on a new line use the `select()` function
+
+4.  Inside the parentheses write the names of the following variables:
+
+-   country_name
+-   iso3c
+-   income_id
+-   total_msw_total_msw_generated_tons_year
+-   population_population_number_of_people
+
+5.  Add the pipe operator (`|>`) and on a new line use the `rename()` function
+
+6.  Rename two variables:
+
+-   from 'total_msw_total_msw_generated_tons_year' to 'msw_tons_year'
+-   from 'population_population_number_of_people' to 'population'
+
+7.  Use the assignment operator (`<-`) to assign the data to an object named `global_waste_data_small`
+
+8.  Run the code contained in the code-chunk and fix any errors
+
+9.  Next to the code-chunk option `#| eval:` change the value from `false` to `true`
+
+10. Render and fix any errors
+
+```{r}
+#| eval: false
+
+global_waste_data_small <- global_waste_data |> 
+  select(country_name, 
+         iso3c, 
+         ___, 
+         ___, 
+         population_population_number_of_people) ___ 
+  rename(___ = total_msw_total_msw_generated_tons_year,
+         ___ = population_population_number_of_people) 
+```
+
+# Task 3: Data transformation
+
+**Fill in the blanks**
+
+1.  A code-chunk has already been created
+
+2.  Start with the `global_waste_data_small` object
+
+3.  Add the pipe operator (`|>`) and on a new line use the `mutate()` function
+
+4.  Create a new variable named 'capita_kg_year' by dividing 'msw_tons_year' by 'population' and multiplied by \[?\]
+
+5.  Run the code contained in the code-chunk and fix any errors
+
+6.  Next to the code-chunk option `#| eval:` change the value from `false` to `true`
+
+7.  Render and fix any errors
+
+8.  Describe in your own words what the `mutate()` function does in this code-chunk
+
+<!--# Remove this comment and write your text here -->
+
+```{r}
+#| eval: false
+
+global_waste_data_kg_year <- ___ |> 
+  ___(___ = msw_tons_year / population * ___) |> 
+  mutate(income_id = factor(income_id, 
+                            levels = c("HIC", "UMC", "LMC", "LIC")))
+
+```
+
+# Task 4: Data visualisation
+
+**Fill in the blanks**
+
+1.  A code-chunk has already been created
+
+2.  Use the `global_waste_data_kg_year` object as data for the visualisation
+
+3.  Use aesthetic mappings to plot the income category on the x-axis and MSW generation per capita on the y-axis
+
+4.  Run the code contained in the code-chunk and fix any errors
+
+5.  Use a search engine of your choice to figure out how to remove the legend from the plot (**Tipp:** Add 'ggplot2 R' to your query and focus on results from StackOverflow)
+
+6.  Run the code contained in the code-chunk and fix any errors
+
+7.  Next to the code-chunk option `#| eval:` change the value from `false` to `true`
+
+8.  Render and fix any errors
+
+9.  Look at the plot that you created and once again describe what the `mutate()` function achieved in the previous task
+
+<!--# Remove this comment and write your text here -->
+
+10. Describe in your own words what the 'color' argument inside the `aes()` does
+
+<!--# Remove this comment and write your text here -->
+
+11. Describe in your own words what the `labs()` function does
+
+<!--# Remove this comment and write your text here -->
+
+```{r}
+#| eval: false
+
+ggplot(data = global_waste_data_kg_year,
+       mapping = aes(x = ___, 
+                     y = ___,
+                     color = income_id)) +
+  geom_boxplot(___) +
+  geom_jitter(width = 0.1, alpha = 1/4, size = 3) +
+  labs(x = "income category",
+       y = "MSW generation per capita [kg/yr]") +
+  theme_minimal(base_size = 14) 
+```
+
+# Task 5: Complete assignment
+
+## Stage, Commit & Push to GitHub
+
+This final section introduces the workflow you need to follow at the end of each live coding exercise, homework assignment, learning reflection. It ensures that all the changes you have made to files in this repository (folder) are synced with the version that is stored on GitHub. The steps will be described at the end of each of the files.
+
+1.  Open the Git pane in RStudio. It's in the top right corner in a separate tab.
+2.  **Stage** your changes by checking appropriate box next to all files (if you select one file with your mouse, you can then highlight them all with Ctrl + A on your keyboard and check all boxes)
+3.  Write a meaningful commit message (e.g. "Completed homework assignment 1b) in the **Commit message** box
+4.  Click **Commit**. Note that every commit needs to have a commit message associated with it.
+5.  Go to your course-material GitHub repo and refresh the page. You should see your commit message next to the updated files.
+
+## Open an issue on GitHub
+
+Once you have ensured that the Quarto document renders without errors and you have pushed all your changes to GitHub, it is to complete the assignment by opening an issue on your course-material GitHub repo.
+
+1.  Navigate to your course-material GitHub repo.
+2.  Click on **Issues**, and then **New issue** button.
+3.  Write a meaningful title in the **Title** field
+4.  Tag the course instructor with using the `@` sign in combination with `larnsce` as the username
+5.  Add any questions or comments

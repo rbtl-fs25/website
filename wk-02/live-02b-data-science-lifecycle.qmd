@@ -1,0 +1,116 @@
+---
+title: "Live Coding - Data Science Lifecycle"
+format: html
+editor: visual
+execute:
+  echo: true
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: load-packages
+
+library(gapminder) # R package that contains the data
+library(dplyr)
+library(ggplot2)
+```
+
+# Data import
+
+Data can be imported from many different sources. In this exercise, we import data from:
+
+1.  an R Package that is loaded via the `library()` function.
+
+## Gapminder data
+
+The data is an [excerpt of the Gapminder data](https://www.gapminder.org/data/documentation/) on life expectancy, GDP per capita, and population by country. Compiled for the purpose of teaching with data until 2007. [It is not a definitive source of socioeconomic data and it is not updated](https://github.com/jennybc/gapminder).
+
+```{r}
+
+```
+
+# Data tidying
+
+Once you imported the data, the next step in any data science lifecycle is the tidying of data. It's about bringing your data into a consistent structure that let's you focus on the analysis. Depending on how messy the data structure is, this can be tedious task and take up a great part of the data science lifecycle process.
+
+## Gapminder data
+
+# Data transformation
+
+Once your data is tidy, a common first step is to transform it. This includes:
+
+1.  narrowing in on what interests you (e.g. all people without toilets in one district, or all data from last year)
+
+2.  creating new variables from existing (like toilet density, as in number of people per toilet)
+
+3.  calculating summary statistics (like counts or the mean)
+
+## Gapminder data
+
+**Goal:** Calculate the median life expectancy at birth by continent for 2007.
+
+```{r}
+#| eval: false
+
+gapminder_yr_2007 <- gapminder |> 
+  filter(year == ___)
+
+# Step 2: 
+# Group data by continent and calculate mean life expectancy
+# Store as new object: gapminder_summary_continent
+
+gapminder_summary_continent <- gapminder_yr_2007  |>
+  group_by(___) |> 
+  summarise(lifeExp = median(___))
+
+
+```
+
+# Data visualisation (and tables)
+
+## Gapminder data
+
+Africa has the lowest life expectancy and greatest spread in life expectancy globally (compare @tbl-median-continent and @fig-boxplot-continent).
+
+**Goal:** Use a boxplot with jittered points to visualize the median life expectancy by continent in 2007.
+
+```{r}
+#| label: fig-boxplot-continent
+#| fig-cap: "Median life expectancy by continent in 2007. Each dot represents one individual country."
+#| eval: false
+
+library(ggplot2)
+
+ggplot(data = ___, 
+       mapping = aes(x = ___, 
+                     y = ___)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.1, alpha = 1/4, size = 3) +
+  labs(x = NULL,
+       y = "life expectancy") +
+  theme_minimal(base_size = 14) 
+
+
+```
+
+```{r}
+#| label: tbl-median-continent
+#| tbl-cap: "Median life expectancy by continent in 2007."
+
+```
+
+# Data communication
+
+Your rendered html file is a great data communication product. You will learn a bit later in the course how you could make it accessible to others as a website, but you could also just download and share the html file with a collaborator or render the document to 'pdf' or 'docx' formats.
+
+# Stage, Commit & Push to GitHub
+
+This final section introduces the workflow you need to follow at the end of each live coding exercise, homework assignment, learning reflection. It ensures that all the changes you have made to files in this repository (folder) are synced with the version that is stored on GitHub. The steps will be described at the end of each of the files.
+
+1.  Open the Git pane in RStudio. It's in the top right corner in a separate tab.
+2.  **Stage** your changes by checking appropriate box next to all files (if you select one file with your mouse, you can then highlight them all with Ctrl + A on your keyboard and check all boxes)
+3.  Write a meaningful commit message (e.g. "Completed homework assignment 1b) in the **Commit message** box
+4.  Click **Commit**. Note that every commit needs to have a commit message associated with it.
+5.  Go to your course-material GitHub repo and refresh the page. You should see your commit message next to the updated files.
