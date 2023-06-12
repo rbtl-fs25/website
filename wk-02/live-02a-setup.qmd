@@ -1,0 +1,43 @@
+---
+title: "RStudio Setup"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+# Quarto
+
+This is a quarto document. It contains text and code. Text can be formatted using the GUI tools in visual editing mode or using markdown markup syntax in source editing mode.
+
+You can find the complete documentation on the Quarto website.
+
+## R code-chunk
+
+-   Execute code line by line using 'Ctrl / Cmd + Enter' on your keyboard
+-   Execute the whole code-chunk by clicking on the green play bottom in the top right corner of the code chunk
+
+# Configure Git
+
+There is one more thing we need to do before we can sync our work with GitHub. We need to configure your Git so that RStudio can communicate with GitHub. This requires two pieces of information: your name and email address.
+
+To do so, you will use the `use_git_config()` function from the `usethis` package.
+
+Copy the following lines of code to the **Console** in RStudio filling in your name and the email address associated with your GitHub account.
+
+```         
+usethis::use_git_config(
+  user.name = "your-name", 
+  user.email = "your-email"
+  )
+```
+
+# Stage, Commit & Push to GitHub
+
+This final section introduces the workflow you need to follow at the end of each live coding exercise, homework assignment, learning reflection. It ensures that all the changes you have made to files in this repository (folder) are synced with the version that is stored on GitHub. The steps will be described at the end of each of the files.
+
+1.  Open the Git pane in RStudio. It's in the top right corner in a separate tab.
+2.  **Stage** your changes by checking appropriate box next to all files (if you select one file with your mouse, you can then highlight them all with Ctrl + A on your keyboard and check all boxes)
+3.  Write a meaningful commit message (e.g. "Completed homework assignment 1b) in the **Commit message** box
+4.  Click **Commit**. Note that every commit needs to have a commit message associated with it.
+5.  Go to your course-material GitHub repo and refresh the page. You should see your commit message next to the updated files.
