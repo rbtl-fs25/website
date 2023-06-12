@@ -669,14 +669,28 @@
     "href": "slides/lec-01-welcome.html#why-are-you-here",
     "title": "Welcome to Data Analytics for Development",
     "section": "Why are you here?",
-    "text": "Why are you here?\n\n\n\n\n\n\n\nPick an item\n\n\nWhat does the item you have picked have to do with the reason for you being here?"
+    "text": "Why are you here?\n\n\n\n\n\n\n\nPick an item\n\n\nTake notes for 2 minutes:\nWhat does the item you have picked have to do with the reason for you being here?"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#why-are-you-here-1",
+    "href": "slides/lec-01-welcome.html#why-are-you-here-1",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Why are you here?",
+    "text": "Why are you here?\n\n\n\n\n\n\n\nIn break-out rooms\n\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#from-which-country-are-you-joining-us",
+    "href": "slides/lec-01-welcome.html#from-which-country-are-you-joining-us",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "From which country are you joining us?",
+    "text": "From which country are you joining us?\n\n\n\n\n\n\nIn the Zoom chat\n\n\nShare with us from which country you are joining us."
   },
   {
     "objectID": "slides/lec-01-welcome.html#topics",
     "href": "slides/lec-01-welcome.html#topics",
     "title": "Welcome to Data Analytics for Development",
     "section": "Topics",
-    "text": "Topics\n\n\nOverview of qualitative and quantitative research methods and tools\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system"
+    "text": "Topics\n\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
@@ -774,7 +788,14 @@
     "href": "slides/lec-01-welcome.html#screen-setup",
     "title": "Welcome to Data Analytics for Development",
     "section": "Screen setup",
-    "text": "Screen setup\n\nWho uses a second external screen?\n“Yes” in the Zoom Chat"
+    "text": "Screen setup\n\n\n\n\n\n\nWho uses a setup with one screen?\n\n\n“One screen” in the Zoom Chat\n\n\n\n\n\nPhoto by Brahm Naus"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#screen-setup-1",
+    "href": "slides/lec-01-welcome.html#screen-setup-1",
+    "title": "Welcome to Data Analytics for Development",
+    "section": "Screen setup",
+    "text": "Screen setup\n\n\n\n\n\n\nWho uses a setup with two screens?\n\n\n“Two screens” in the Zoom Chat\n\n\n\n\n\nPhoto by Daniel Korpai"
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",

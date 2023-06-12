@@ -59,16 +59,34 @@ library(magrittr)
 
 :::{.callout-note}
 
-## Pick an item
-
+## Pick an item 
+**Take notes for 2 minutes:**   
 What does the item you have picked have to do with the reason for you being here?
+:::
+
+## Why are you here?
+
+![](img/lec-01/items-slide/items-slide.001.png)
+
+:::{.callout-note}
+
+## In break-out rooms
+**Take 2 minutes each to share with your room partner:**  
+What does the item you have picked have to do with the reason for you being here?
+:::
+
+## From which country are you joining us?
+
+:::{.callout-note}
+
+## In the Zoom chat
+Share with us from which country you are joining us.
 :::
 
 
 ## Topics
 
 ::: {.incremental}
--   Overview of qualitative and quantitative research methods and tools
 -   The data science life-cycle
 -   Data organization in spreadsheets
 -   Exploratory data analysis using visualization
@@ -145,10 +163,35 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
 
+
+
 ## Screen setup
 
-- Who uses a second external screen? 
-- "Yes" in the Zoom Chat
+:::{.callout-note}
+
+## Who uses a setup with one screen? 
+"One screen" in the Zoom Chat
+:::
+
+![](img/lec-01/bram-naus-N1gUD_dCvJE-unsplash.jpg)
+
+::: footer
+Photo by [Brahm Naus](https://unsplash.com/photos/N1gUD_dCvJE)
+:::
+
+## Screen setup
+
+:::{.callout-note}
+
+## Who uses a setup with two screens? 
+"Two screens" in the Zoom Chat
+:::
+
+![](img/lec-01/daniel-korpai-vHVfpi3h5xk-unsplash.jpg)
+
+::: footer
+Photo by [Daniel Korpai](https://unsplash.com/photos/N1gUD_dCvJE)
+:::
 
 # Live Coding Exercise {background-color="#0F4C81"}
 
@@ -160,7 +203,6 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 2. You will find a repository titled: **course-material-USERNAME** (with your GitHub Username)
 3. You will "clone" this repository to Posit Cloud
 :::
-
 
 ## Break
 
