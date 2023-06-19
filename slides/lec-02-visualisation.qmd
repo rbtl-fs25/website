@@ -120,7 +120,7 @@ ggplot(data = global_waste_data_kg_year,
 
 ::: {.column width="50%"}
 
-- The Moodle Discussion forum TODO: add link
+- The [Canvas Discussion pages](https://canvas.colorado.edu/courses/94577/discussion_topics)
 - RStudio Community Forum: https://community.rstudio.com/
 - Documentation websites: https://dplyr.tidyverse.org/
 - Twitter community: [#rstats](https://twitter.com/search?q=%23rstats&src=typd) 

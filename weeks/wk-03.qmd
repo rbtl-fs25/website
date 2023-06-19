@@ -37,11 +37,11 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 ## {{< fa book >}} Readings
 
-Read [R for Data Science - Section 3 to 3.6 - Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)  
+1. Read [R for Data Science - Section 3 to 3.6 - Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)  
 
-Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)
+2. Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)
 
-Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
+3. Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 
 ## {{< fa code >}} Homework assignment 
 

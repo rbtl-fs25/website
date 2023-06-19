@@ -67,7 +67,7 @@
     "href": "weeks/wk-03.html#fa-book-readings",
     "title": "Week 3",
     "section": " Readings",
-    "text": "Readings\nRead R for Data Science - Section 3 to 3.6 - Data visualisation\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics\nRead Data Organization in Spreadsheets"
+    "text": "Readings\n\nRead R for Data Science - Section 3 to 3.6 - Data visualisation\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics\nRead Data Organization in Spreadsheets"
   },
   {
     "objectID": "weeks/wk-03.html#fa-code-homework-assignment",
@@ -389,7 +389,7 @@
     "href": "slides/lec-02-visualisation.html#other-sources-for-help",
     "title": "Data Visualisation & Data Organisation in Spreadsheets",
     "section": "Other sources for help",
-    "text": "Other sources for help\n\n\n\nThe Moodle Discussion forum TODO: add link\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
+    "text": "Other sources for help\n\n\n\nThe Canvas Discussion pages\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
