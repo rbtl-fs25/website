@@ -159,19 +159,12 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 3. Open "Projects"
 4. Open the "course-materials" project
 
-# Homework week 3 {background-color="#0F4C81"}
-
-## Homework late submission
-
-- ~~25%~~ 10% each day that a homework is submitted late
-
+# Homework week 4 {background-color="#0F4C81"}
 
 ## Homework due dates
 
-- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-03.html)
-- Homework assignment due: Friday, 22th July
-- Learning reflection due: Monday, 25th July
-
+- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-04.html)
+- Homework assignment & learning reflection due: Friday, 30th June
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
 ## 

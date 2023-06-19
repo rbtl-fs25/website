@@ -284,14 +284,14 @@
     "href": "weeks/wk-04.html#fa-display-slides",
     "title": "Week 4",
     "section": " Slides",
-    "text": "Slides\nLecture 3 - Data transformation - HTML\nLecture 3 - Data transformation - Download PDF"
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
     "objectID": "weeks/wk-04.html#fa-book-readings",
     "href": "weeks/wk-04.html#fa-book-readings",
     "title": "Week 4",
     "section": " Readings",
-    "text": "Readings\nRead R for Data Science - Section 5 - Data transformation\nRead Good enough practices in scientific computing"
+    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\nRead Good enough practices in scientific computing"
   },
   {
     "objectID": "weeks/wk-04.html#fa-code-homework-assignment",
@@ -1288,18 +1288,11 @@
     "text": "hw-03a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project"
   },
   {
-    "objectID": "slides/lec-03-transformation.html#homework-late-submission",
-    "href": "slides/lec-03-transformation.html#homework-late-submission",
-    "title": "Data Transformation with dplyr",
-    "section": "Homework late submission",
-    "text": "Homework late submission\n\n25% 10% each day that a homework is submitted late"
-  },
-  {
     "objectID": "slides/lec-03-transformation.html#homework-due-dates",
     "href": "slides/lec-03-transformation.html#homework-due-dates",
     "title": "Data Transformation with dplyr",
     "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 22th July\nLearning reflection due: Monday, 25th July"
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, 30th June # Thanks! 🌻 {background-color=“#0F4C81”}"
   },
   {
     "objectID": "slides/lec-03-transformation.html#section",
