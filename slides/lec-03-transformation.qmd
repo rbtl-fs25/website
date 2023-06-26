@@ -166,6 +166,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 - All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-04.html)
 - Homework assignment & learning reflection due: Friday, 30th June
+
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
 ## 
