@@ -291,7 +291,7 @@
     "href": "weeks/wk-04.html#fa-book-readings",
     "title": "Week 4",
     "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\nRead Good enough practices in scientific computing"
+    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\n\nRead Excuse Me, Do You Have a Moment to Talk About Version Control?"
   },
   {
     "objectID": "weeks/wk-04.html#fa-code-homework-assignment",
@@ -1243,7 +1243,7 @@
     "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
     "title": "Data Transformation with dplyr",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-cven5837-ss23-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 22 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
+    "text": "Learning Objectives (for this week)\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
   },
   {
     "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
@@ -1260,18 +1260,18 @@
     "text": "dplyr rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
   },
   {
-    "objectID": "slides/lec-03-transformation.html#live-03a-data-transformation",
-    "href": "slides/lec-03-transformation.html#live-03a-data-transformation",
+    "objectID": "slides/lec-03-transformation.html#live-04a-data-transformation",
+    "href": "slides/lec-03-transformation.html#live-04a-data-transformation",
     "title": "Data Transformation with dplyr",
-    "section": "live-03a-data-transformation",
-    "text": "live-03a-data-transformation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+    "section": "live-04a-data-transformation",
+    "text": "live-04a-data-transformation\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen your “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-03-transformation.html#break",
     "href": "slides/lec-03-transformation.html#break",
     "title": "Data Transformation with dplyr",
     "section": "Break",
-    "text": "Break\n\n\ncountdown(\n  minutes = 10, seconds = 0,\n  left = 0, right = 0,\n  padding = \"10px\", margin = \"5%\",\n  font_size = \"2em\"\n)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-03-transformation.html#pair-programming-exercises",
@@ -1281,11 +1281,11 @@
     "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
   },
   {
-    "objectID": "slides/lec-03-transformation.html#hw-03a-data-visualiation",
-    "href": "slides/lec-03-transformation.html#hw-03a-data-visualiation",
+    "objectID": "slides/lec-03-transformation.html#hw-04a-data-visualiation",
+    "href": "slides/lec-03-transformation.html#hw-04a-data-visualiation",
     "title": "Data Transformation with dplyr",
-    "section": "hw-03a-data-visualiation",
-    "text": "hw-03a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project"
+    "section": "hw-04a-data-visualiation",
+    "text": "hw-04a-data-visualiation\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen your “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-03-transformation.html#homework-due-dates",

@@ -57,7 +57,7 @@ countdown(
 ## Learning Objectives (for this week)
 
 ```{r}
-
+#| echo: false
 lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
@@ -116,12 +116,12 @@ Rules of `dplyr` functions:
 
 # Live Coding Exercise: SDG 6.2.1 {background-color="#0F4C81"}
 
-## live-03a-data-transformation
+## live-04a-data-transformation
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
+1. Head over to posit.cloud
+2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
 3. Open "Projects"
-4. Open the "course-materials" project
+4. Open your "course-materials" project
 5. Follow along with me
 
 ## Break
@@ -152,12 +152,13 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 - The other person (the navigator) offers comments and suggestions
 - Roles get switched 
 
-## hw-03a-data-visualiation
+## hw-04a-data-visualiation
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
+1. Head over to posit.cloud
+2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
 3. Open "Projects"
-4. Open the "course-materials" project
+4. Open your "course-materials" project
+5. Follow along with me
 
 # Homework week 4 {background-color="#0F4C81"}
 
