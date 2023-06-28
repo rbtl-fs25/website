@@ -14,11 +14,14 @@ execute:
   freeze: auto
 params:
     week: 5
+bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
 ---
 
+```{=html}
 <script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
-
-
+```
 ```{r}
 library(tidyverse)
 library(knitr)
@@ -57,11 +60,11 @@ survey_data_tidy <- survey_data |>
   mutate(price = as.numeric(price_new)) |> 
   select(-price_new)
 
-survey_data_tidy |> 
-  count(job, residence_situation, waste_category, price) |> 
-  ggplot(aes(x = factor(price), y = n, fill = job)) +
-  geom_col()
-
+# survey_data_tidy |> 
+#   count(job, residence_situation, waste_category, price) |> 
+#   ggplot(aes(x = factor(price), y = n, fill = job)) +
+#   geom_col()
+# 
 ```
 
 ```{r}
@@ -102,7 +105,6 @@ waste_data_tidy |>
   write_rds(here::here("slides/data/intermediate_data/waste-characterisation-lord-of-the-bins-tidy.rds"))
 
 ```
-
 
 ```{r}
 #| eval: false
@@ -159,15 +161,21 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 ```
 
-1. `r lobj1[1]`
-2. `r lobj1[2]`
-3. `r lobj1[3]`
+1.  `r lobj1[1]`
+2.  `r lobj1[2]`
+3.  `r lobj1[3]`
 
 # Part 1: Data types and vectors {background-color="#0F4C81"}
 
 ## Why care about data types?
 
-<div style="width:75%;height:0;padding-bottom:83%;position:relative;"><iframe src="https://giphy.com/embed/SvRuvlSEa67wNNHuHy" width="75%" height="75%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/Friends-episode-20-friends-tv-the-one-with-baby-shower-SvRuvlSEa67wNNHuHy">via GIPHY</a></p>
+::: {style="width:75%;height:0;padding-bottom:83%;position:relative;"}
+<iframe src="https://giphy.com/embed/SvRuvlSEa67wNNHuHy" width="75%" height="75%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+:::
+
+<p><a href="https://giphy.com/gifs/Friends-episode-20-friends-tv-the-one-with-baby-shower-SvRuvlSEa67wNNHuHy">via GIPHY</a></p>
 
 ## Example: survey data {.smaller .scrollable}
 
@@ -176,6 +184,10 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 survey_data_small |> 
   knitr::kable()
 ```
+
+::: footer
+Data from: [@benaleya2022]
+:::
 
 ## Oh why won't you work?! {.smaller}
 
@@ -196,7 +208,6 @@ survey_data_small |>
 
 ## Take a breath and look at your data {.smaller}
 
-
 ```{r}
 #| echo: false
 survey_data_small |> 
@@ -214,7 +225,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5 to 10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "20",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) 
@@ -237,7 +248,7 @@ survey_data_small |>
   knitr::kable()
 ```
 
-## Sumamrise? Argh!!!!  {auto-animate="true" .smaller}
+## Sumamrise? Argh!!!! {.smaller auto-animate="true"}
 
 ```{r}
 #| echo: true
@@ -253,10 +264,29 @@ survey_data_small |>
     TRUE ~ price_glass
   )) |> 
   summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))
-  
+
 ```
 
-## Always respect your data types!  {auto-animate="true" .smaller}
+## Always respect your data types! 
+
+::: {.callout-important appearance="simple"}
+Taking the mean of vector with type **"character"** is not possible.
+:::
+
+
+
+```{r}
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5 to 10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) 
+```
+
+## Always respect your data types! {.smaller auto-animate="true"}
 
 ```{r}
 #| echo: true
@@ -273,18 +303,18 @@ survey_data_small |>
   )) |> 
   mutate(price_glass_new = as.numeric(price_glass_new)) |> 
   summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))
-  
+
 ```
 
 # Live Coding Exercise: Vectors {background-color="#0F4C81"}
 
 ## live-04a-vectors
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
-3. Open "Projects"
-4. Open the "course-materials" project
-5. Follow along with me
+1.  Head over to rstudio.cloud
+2.  Open the workspace for the course (cven5837-ss22)
+3.  Open "Projects"
+4.  Open the "course-materials" project
+5.  Follow along with me
 
 # Break One
 
@@ -309,7 +339,6 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ## . {background-image="img/lec-04/tidydata_1.jpg" background-size="contain"}
 
-
 ::: aside
 Illustrations from the [Openscapes](https://www.openscapes.org/) blog [Tidy Data for reproducibility, efficiency, and collaboration](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by [Julia Lowndes](https://twitter.com/juliesquid) and [Allison Horst](https://twitter.com/allison_horst)
 :::
@@ -328,27 +357,22 @@ Illustrations from the [Openscapes](https://www.openscapes.org/) blog [Tidy Data
 
 ## A grammar of data tidying {.smaller}
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
-
 ```{r dplyr-part-of-tidyverse, echo=FALSE, out.width="60%", caption = "tidyr is part of the tidyverse"}
 knitr::include_graphics("img/lec-04/tidyr-part-of-tidyverse.png")
 ```
-
 :::
 
 ::: {.column width="60%"}
-
 The goal of tidyr is to help you tidy your data via
 
-- pivoting for going between wide and long data
-- splitting and combining character columns
-- nesting and unnesting columns
-- clarifying how `NA`s should be treated
+-   pivoting for going between wide and long data
+-   splitting and combining character columns
+-   nesting and unnesting columns
+-   clarifying how `NA`s should be treated
 :::
-
-::::
+:::
 
 ::: aside
 Slide taken from [Data Science in a Box](https://datasciencebox.org/)
@@ -356,7 +380,7 @@ Slide taken from [Data Science in a Box](https://datasciencebox.org/)
 
 ## Pivoting data
 
-```{r echo=FALSE, out.width="45%", out.extra ='style="background-color: #FDF6E3"'}
+```{r}
 knitr::include_graphics("img/lec-04/tidyr-longer-wider.gif")
 ```
 
@@ -365,10 +389,10 @@ knitr::include_graphics("img/lec-04/tidyr-longer-wider.gif")
 ```{r, out.width="90%"}
 
 waste_data_untidy |> 
+  select(-recyclable) |> 
+  rename(other = non_recyclable) |> 
   knitr::kable(digits = 2)
-
 ```
-
 
 ## How would you plot this?
 
@@ -376,18 +400,55 @@ waste_data_untidy |>
 
 ggplot(data = waste_data_untidy,
        mapping = aes(x = objid, y = total, fill = location)) +
-  geom_col() 
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
 
 ```
 
-## And this?
+## Three variables
+
+```{r, out.width="90%"}
+
+waste_data_untidy |> 
+  select(objid, location, total) |> 
+  knitr::kable(digits = 2)
+
+```
+
+## Three variables -> three aesthetics {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_untidy,
+       mapping = aes(x = objid, 
+                     y = total, 
+                     fill = location)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+```
+
+## And how to plot this?
 
 ```{r}
 
 ggplot(data = waste_data_tidy,
-       mapping = aes(x = objid, y = weight, fill = waste_category)) +
-  geom_col() 
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
 
+```
+
+## Reminder: Data (in wide format) {.smaller .scrollable}
+
+```{r}
+waste_data_untidy |> 
+  select(-recyclable, -total) |> 
+  rename(other = non_recyclable) |> 
+  knitr::kable(digits = 2)
 ```
 
 ## You need: A long format {.smaller .scrollable}
@@ -400,33 +461,31 @@ waste_data_tidy |>
 
 ```
 
-## Reminder: The wide format {.smaller .scrollable}
+## Three variables -> three aesthetics {.smaller}
 
 ```{r}
-waste_data_untidy |> 
-  knitr::kable(digits = 2)
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
 ```
 
-## Or this?
+
+
+
+## How to {.smaller .scrollable auto-animate="true"}
 
 ```{r}
-
-waste_data_tidy |> 
-  ggplot(aes(x = objid, y = percent, fill = type)) +
-  geom_col() 
-
+waste_data_untidy <- waste_data_untidy |> 
+  select(-recyclable, -total) |> 
+  rename(other = non_recyclable)
 ```
 
-## Calculate percentages {.smaller .scrollable}
-
-```{r}
-
-waste_data_tidy |> 
-  knitr::kable(digits = 2)
-
-```
-
-## How to {auto-animate="true" .smaller .scrollable}
 
 ```{r}
 #| echo: true
@@ -440,62 +499,42 @@ waste_data_untidy |>
   knitr::kable(digits = 2)
 ```
 
-## How to {auto-animate="true" .smaller .scrollable}
+## How to {.smaller .scrollable auto-animate="true"}
 
 ```{r}
 #| echo: true
 #| eval: false
-#| code-line-numbers: "2"
+#| code-line-numbers: "2-4"
 waste_data_untidy |> 
-  select(objid:paper, non_recyclable) 
-```
-
-```{r}
-#| echo: false
-waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  knitr::kable(digits = 2)
-
-```
-
-## How to {auto-animate="true" .smaller .scrollable}
-
-```{r}
-#| echo: true
-#| eval: false
-#| code-line-numbers: "3"
-waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") 
 
 ```
 
 ```{r}
 #| echo: false
 waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) |> 
-  knitr::kable(digits = 2)
-
-```
-
-## How to {auto-animate="true" .smaller .scrollable}
-
-```{r}
-#| echo: true
-#| eval: false
-#| code-line-numbers: "1|6-8|9-10"
-waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
-
-waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) |> 
   pivot_longer(cols = pet:other,
                names_to = "waste_category",
                values_to = "weight") |> 
-  mutate(waste_category = factor(waste_category, 
-                                 levels = waste_category_levels)) 
+  knitr::kable(digits = 2)
+```
 
+
+## How to {.smaller .scrollable auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "1|7"
+waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
+
+waste_data_untidy |> 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) 
 ```
 
 ```{r}
@@ -503,126 +542,53 @@ waste_data_untidy |>
 waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
 
 waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) |> 
   pivot_longer(cols = pet:other,
                names_to = "waste_category",
                values_to = "weight") |> 
   mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |> 
   knitr::kable(digits = 2)
 
+
 ```
 
-## How to {auto-animate="true" .smaller .scrollable}
+## Three variables -> three aesthetics {.smaller}
 
 ```{r}
 #| echo: true
-#| eval: false
-#| code-line-numbers: "11-13|14"
-waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
-
-waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) |> 
-  pivot_longer(cols = pet:other,
-               names_to = "waste_category",
-               values_to = "weight") |> 
-  mutate(waste_category = factor(waste_category, 
-                                 levels = waste_category_levels)) |>
-  mutate(type = case_when(
-    waste_category == "other" ~ "non_recyclable",
-    TRUE ~ "recyclable")) |> 
-  relocate(type, .before = weight)
-```
-
-```{r}
-#| echo: false
-waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
-
-waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) |> 
-  pivot_longer(cols = pet:other,
-               names_to = "waste_category",
-               values_to = "weight") |> 
-  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |>
-  mutate(type = case_when(
-    waste_category == "other" ~ "non_recyclable",
-    TRUE ~ "recyclable")) |> 
-  relocate(type, .before = weight) |> 
-  knitr::kable(digits = 2)
-```
-
-## How to {auto-animate="true" .smaller .scrollable}
-
-```{r}
-#| echo: true
-#| eval: false
-#| code-line-numbers: "15-16"
-waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
-
-waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) |> 
-  pivot_longer(cols = pet:other,
-               names_to = "waste_category",
-               values_to = "weight") |> 
-  mutate(waste_category = factor(waste_category, 
-                                 levels = waste_category_levels)) |> 
-  mutate(type = case_when(
-    waste_category == "other" ~ "non_recyclable",
-    TRUE ~ "recyclable")) |> 
-  relocate(type, .before = weight) |> 
-  group_by(objid) |> 
-  mutate(percent = weight / sum(weight) * 100)
-```
-
-```{r}
-#| echo: false
-waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
-
-waste_data_untidy |> 
-  select(objid:paper, non_recyclable) |> 
-  rename(other = non_recyclable) |> 
-  pivot_longer(cols = pet:other,
-               names_to = "waste_category",
-               values_to = "weight") |> 
-  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |> 
-  mutate(type = case_when(
-    waste_category == "other" ~ "non_recyclable",
-    TRUE ~ "recyclable")) |> 
-  relocate(type, .before = weight) |> 
-  group_by(objid) |> 
-  mutate(percent = weight / sum(weight) * 100) |> 
-  knitr::kable(digits = 2)
-
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
 ```
 
 # Live Coding Exercise: Pivoting {background-color="#0F4C81"}
 
-## live-04a-tidyr-pivoting
+## live-05a-tidyr-pivoting
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
-3. Open "Projects"
-4. Open the "course-materials" project
-5. Follow along with me
+1.  Head over to posit.cloud
+2.  Open the workspace for the course (cven5837-ss23)
+3.  Open "Projects"
+4.  Open the "course-materials" project
+5.  Follow along with me
 
-# Homework week 4 {background-color="#0F4C81"}
+# Homework week 5 {background-color="#0F4C81"}
 
 ## Homework due dates
 
-- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-04.html)
-- Homework assignment due: Friday, 29th July
-- Learning reflection due: Monday, 1st August
+- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-05.html)
+- Homework assignment & learning reflection due: **Friday, 7th July**
 
-# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+# Thanks! `r emo::ji("sunflower")` {background-color="#0F4C81"}
 
 ## 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf)
 
-All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
+## References
 
