@@ -318,13 +318,12 @@ survey_data_small |>
 
 # Live Coding Exercise: Vectors {background-color="#0F4C81"}
 
-## live-04a-vectors
+## live-05a-vectors
 
-1.  Head over to rstudio.cloud
-2.  Open the workspace for the course (cven5837-ss22)
-3.  Open "Projects"
-4.  Open the "course-materials" project
-5.  Follow along with me
+1. Head over to posit.cloud
+2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+3. Open your "course-materials" project
+4. Follow along with me
 
 # Break One
 
@@ -574,11 +573,11 @@ ggplot(data = waste_data_tidy,
 
 ## live-05a-tidyr-pivoting
 
-1.  Head over to posit.cloud
-2.  Open the workspace for the course (cven5837-ss23)
-3.  Open "Projects"
-4.  Open the "course-materials" project
-5.  Follow along with me
+1. Head over to posit.cloud
+2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+3. Open your "course-materials" project
+4. Follow along with me
+
 
 # Homework week 5 {background-color="#0F4C81"}
 

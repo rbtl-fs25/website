@@ -1092,11 +1092,11 @@
     "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#live-04a-vectors",
-    "href": "slides/lec-04-tidy-data.html#live-04a-vectors",
+    "objectID": "slides/lec-04-tidy-data.html#live-05a-vectors",
+    "href": "slides/lec-04-tidy-data.html#live-05a-vectors",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "live-04a-vectors",
-    "text": "live-04a-vectors\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+    "section": "live-05a-vectors",
+    "text": "live-05a-vectors\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#section",
@@ -1222,7 +1222,7 @@
     "href": "slides/lec-04-tidy-data.html#live-05a-tidyr-pivoting",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "live-05a-tidyr-pivoting",
-    "text": "live-05a-tidyr-pivoting\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+    "text": "live-05a-tidyr-pivoting\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#homework-due-dates",
