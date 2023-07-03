@@ -65,8 +65,6 @@ readr::read_csv("data/tbl-01-cven5837-ss23-course-schedule.csv") |>
 
 **Capstone Project**: A graded capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions and a grading rubric for the capstone project will be provided during the course. The project will be delivered as Quarto documents and graded with an achieved number of points out 100 points. Students are required to submit their work through GitHub.
 
-**Exam**: There is a practical 2-hour exam, which assesses the technical skills (using R tidyverse and Quarto) taught during the course. It contains programming exercises using the R programming language and you can use any material that you want. The success of the exam depends on the effort put into the homework assignments and capstone project. The exam will be written using Quarto documents and graded as pass/fail (100 points). Students will not submit their work through GitHub.
-
 # Attendance 
 
 We hope you can participate in all classes. Class participation is an essential component for successful completion of this course. If you have a valid reason to miss a class, we expect you to inform us before the beginning of the class. 
@@ -77,10 +75,9 @@ Your overall course grade will be comprised of the following components, and the
 
 - Homework assignments: 40 percent
 - Learning reflections: 20 percent
-- Capstone Project: 20 percent
-- Exam: 20 percent
+- Capstone Project: 40 percent
 
-Grades will be recorded in Canvas throughout the semester. Homework assignments and learning reflections receive a pass/fail only (100 points). The Capstone Project and Exam receive a number of points out of 100. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their score rounded to the nearest single decimal place:
+Grades will be recorded in Canvas throughout the semester. Homework assignments and learning reflections receive a pass/fail only (100 points). The Capstone Project receives a number of points out of 100. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their score rounded to the nearest single decimal place:
 
 ```{r}
 

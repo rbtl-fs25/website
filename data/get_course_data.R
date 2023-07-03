@@ -30,3 +30,9 @@ googlesheets4::read_sheet("14znMSlTpFh9K6h46OxZznAmg6tyoNkTGX4SWN1J7NfE") |>
 googlesheets4::read_sheet("1KLEIEMuP_kD0U-OetubhElqUjtd90-tlSzdneBdsX_w") |> 
   write_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv"))
 
+# tbl-05-capstone-project-grading
+
+googlesheets4::read_sheet("1OB3jd_KSybN4H7y-ALhPHSg3ltXpf85ChNjFAUa9l3E") |> 
+  write_csv(here::here("data/tbl-05-capstone-project-grading.csv"))
+
+
