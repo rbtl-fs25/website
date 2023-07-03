@@ -19,5 +19,5 @@ date,week,title,learning_objectives
 2023-07-10T00:00:00Z,6,Joining data & data communication using Quarto,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.
 2023-07-10T00:00:00Z,6,Joining data & data communication using Quarto,Learners can cross-reference figures and tables within an Quarto file.
 2023-07-10T00:00:00Z,6,Joining data & data communication using Quarto,Learners can apply functions from the dplyr R Package to join multiple data sets.
-2023-07-17T00:00:00Z,7,Capstone Project Submission,Learners can apply the skills obtained during the course to write a short data analysis project report.
-2023-07-24T00:00:00Z,8,Exam,NA
+2023-07-17T00:00:00Z,7,Capstone Project,Learners can apply the skills obtained during the course to write a short data analysis project report.
+2023-07-28T00:00:00Z,8,Capstone Project submission due date,NA

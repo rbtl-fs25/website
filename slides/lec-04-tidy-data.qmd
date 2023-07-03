@@ -151,6 +151,18 @@ waste_data_tidy |>
   facet_wrap(~waste_category, ncol = 5)
 ```
 
+## Exam Update
+
+-   No exam anymore in Week 8
+-   Due date for Capstone Project will be extended (due on 28th July)
+-   Capstone Project contributes 40% to grade instead of 20%
+
+| type                 | percent |
+|----------------------|---------|
+| Homework assignments | 40      |
+| Learning reflections | 20      |
+| Capstone project     | 40      |
+
 ## Learning Objectives (for this week)
 
 ```{r}
@@ -267,13 +279,11 @@ survey_data_small |>
 
 ```
 
-## Always respect your data types! 
+## Always respect your data types!
 
 ::: {.callout-important appearance="simple"}
 Taking the mean of vector with type **"character"** is not possible.
 :::
-
-
 
 ```{r}
 survey_data_small |> 
@@ -415,7 +425,7 @@ waste_data_untidy |>
 
 ```
 
-## Three variables -> three aesthetics {.smaller}
+## Three variables -\> three aesthetics {.smaller}
 
 ```{r}
 #| echo: true
@@ -461,7 +471,7 @@ waste_data_tidy |>
 
 ```
 
-## Three variables -> three aesthetics {.smaller}
+## Three variables -\> three aesthetics {.smaller}
 
 ```{r}
 #| echo: true
@@ -475,9 +485,6 @@ ggplot(data = waste_data_tidy,
   scale_fill_brewer(type = "qual")
 ```
 
-
-
-
 ## How to {.smaller .scrollable auto-animate="true"}
 
 ```{r}
@@ -485,7 +492,6 @@ waste_data_untidy <- waste_data_untidy |>
   select(-recyclable, -total) |> 
   rename(other = non_recyclable)
 ```
-
 
 ```{r}
 #| echo: true
@@ -521,7 +527,6 @@ waste_data_untidy |>
   knitr::kable(digits = 2)
 ```
 
-
 ## How to {.smaller .scrollable auto-animate="true"}
 
 ```{r}
@@ -551,7 +556,7 @@ waste_data_untidy |>
 
 ```
 
-## Three variables -> three aesthetics {.smaller}
+## Three variables -\> three aesthetics {.smaller}
 
 ```{r}
 #| echo: true
@@ -579,8 +584,8 @@ ggplot(data = waste_data_tidy,
 
 ## Homework due dates
 
-- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-05.html)
-- Homework assignment & learning reflection due: **Friday, 7th July**
+-   All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-05.html)
+-   Homework assignment & learning reflection due: **Friday, 7th July**
 
 # Thanks! `r emo::ji("sunflower")` {background-color="#0F4C81"}
 
@@ -591,4 +596,3 @@ Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/re
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## References
-

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -40,6 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,11 +70,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 4</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/wk-04.html">Week 4</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -80,68 +87,82 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
-    <a href="https://github.com/cven5873-ss23" title="GitHub organization" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="https://posit.cloud/spaces/381404/join?access_code=5uSGb1oKtIngQmhbsM-th5J23j2SqMU2oIuX0go-" title="Posit Cloud" class="sidebar-tool px-1"><i class="bi bi-code-square"></i></a>
+    <a href="https://github.com/cven5873-ss23" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
+    <a href="https://posit.cloud/spaces/381404/join?access_code=5uSGb1oKtIngQmhbsM-th5J23j2SqMU2oIuX0go-" title="Posit Cloud" class="quarto-navigation-tool px-1" aria-label="Posit Cloud"><i class="bi bi-code-square"></i></a>
 </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">Course Overview</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-01.html" class="sidebar-item-text sidebar-link">Week 1</a>
+  <a href="../weeks/wk-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-02.html" class="sidebar-item-text sidebar-link">Week 2</a>
+  <a href="../weeks/wk-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-03.html" class="sidebar-item-text sidebar-link">Week 3</a>
+  <a href="../weeks/wk-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-04.html" class="sidebar-item-text sidebar-link active">Week 4</a>
+  <a href="../weeks/wk-04.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Week 4</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/wk-05.html" class="sidebar-item-text sidebar-link">Week 5</a>
+  <a href="../weeks/wk-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capstone project</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#fa-bullseye-learning-objectives" id="toc-fa-bullseye-learning-objectives" class="nav-link active" data-scroll-target="#fa-bullseye-learning-objectives"> Learning Objectives</a></li>
-  <li><a href="#fa-display-slides" id="toc-fa-display-slides" class="nav-link" data-scroll-target="#fa-display-slides"> Slides</a></li>
-  <li><a href="#fa-book-readings" id="toc-fa-book-readings" class="nav-link" data-scroll-target="#fa-book-readings"> Readings</a></li>
-  <li><a href="#fa-code-homework-assignment" id="toc-fa-code-homework-assignment" class="nav-link" data-scroll-target="#fa-code-homework-assignment"> Homework assignment</a></li>
-  <li><a href="#fa-pen-clip-learning-reflection" id="toc-fa-pen-clip-learning-reflection" class="nav-link" data-scroll-target="#fa-pen-clip-learning-reflection"> Learning reflection</a></li>
+  <li><a href="#fa-bullseye-learning-objectives" id="toc-fa-bullseye-learning-objectives" class="nav-link active" data-scroll-target="#fa-bullseye-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning Objectives</a></li>
+  <li><a href="#fa-display-slides" id="toc-fa-display-slides" class="nav-link" data-scroll-target="#fa-display-slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a></li>
+  <li><a href="#fa-book-readings" id="toc-fa-book-readings" class="nav-link" data-scroll-target="#fa-book-readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</a></li>
+  <li><a href="#fa-code-homework-assignment" id="toc-fa-code-homework-assignment" class="nav-link" data-scroll-target="#fa-code-homework-assignment"><i class="fa-solid fa-code" aria-label="code"></i> Homework assignment</a></li>
+  <li><a href="#fa-pen-clip-learning-reflection" id="toc-fa-pen-clip-learning-reflection" class="nav-link" data-scroll-target="#fa-pen-clip-learning-reflection"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Learning reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -150,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Week 4</h1>
+<h1 class="title">Week 4</h1>
 <p class="subtitle lead">Data transformation with dplyr</p>
 </div>
 
@@ -168,21 +189,18 @@ ul.task-list li input[type="checkbox"] {
 
 <script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 <section id="fa-bullseye-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="fa-bullseye-learning-objectives"> Learning Objectives</h2>
-<div class="cell">
-
-</div>
+<h2 class="anchored" data-anchor-id="fa-bullseye-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning Objectives</h2>
 <ol type="1">
 <li>Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.</li>
 </ol>
 </section>
 <section id="fa-display-slides" class="level2">
-<h2 class="anchored" data-anchor-id="fa-display-slides"> Slides</h2>
+<h2 class="anchored" data-anchor-id="fa-display-slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</h2>
 <p><a href="../slides/lec-03-transformation.html">View slides in full screen</a> | <a href="https://github.com/cven5873-ss23/website/raw/main/slides/lec-03-transformation.pdf">Download slides as PDF</a></p>
 <iframe class="slide-deck" src="../slides/lec-03-transformation.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 </section>
 <section id="fa-book-readings" class="level2">
-<h2 class="anchored" data-anchor-id="fa-book-readings"> Readings</h2>
+<h2 class="anchored" data-anchor-id="fa-book-readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</h2>
 <ol type="1">
 <li>Read <a href="https://r4ds.had.co.nz/transform.html">R for Data Science - Section 5 - Data transformation</a><br>
 </li>
@@ -190,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 </section>
 <section id="fa-code-homework-assignment" class="level2">
-<h2 class="anchored" data-anchor-id="fa-code-homework-assignment"> Homework assignment</h2>
+<h2 class="anchored" data-anchor-id="fa-code-homework-assignment"><i class="fa-solid fa-code" aria-label="code"></i> Homework assignment</h2>
 <p>Homework assignment &amp; learning reflection due: <strong>Friday, 30th June</strong></p>
 <p>Complete the homework programming assignments that are in your project folder for week 4 on <a href="https://posit.cloud/spaces/381404/content/all">Posit Cloud</a></p>
 <ul>
@@ -198,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="fa-pen-clip-learning-reflection" class="level2">
-<h2 class="anchored" data-anchor-id="fa-pen-clip-learning-reflection"> Learning reflection</h2>
+<h2 class="anchored" data-anchor-id="fa-pen-clip-learning-reflection"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Learning reflection</h2>
 <p>Complete the learning reflection that is in your project folder for week 4 on <a href="https://posit.cloud/spaces/381404/content/all">Posit Cloud</a></p>
 <ul>
 <li>learning-04.qmd</li>
@@ -235,9 +253,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -302,6 +334,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -357,6 +475,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">© Copyright 2023, Lars Schöbitz</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
