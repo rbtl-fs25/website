@@ -608,14 +608,13 @@ tibble(
 
 ## Homework due dates
 
-- All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-05.html)
-- Homework assignment & learning reflection due: Friday, 14th July
+- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-05.html)
+- Homework assignment & learning reflection due: **Friday, 14th July**
 
 # Capstone Project Report
 
 ## Information
 
-- Send your data by tomorrow, 11th July
 - All material shared on website by Monday, 17th July
 - Due date for report: Friday, 28th July
 
