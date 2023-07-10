@@ -1,4 +1,68 @@
 ---
 title: "Capstone Project"
-editor: visual
+editor: source
+execute: 
+  echo: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
 ---
+
+
+```{r}
+library(tidyverse)
+
+grading <- read_csv(here::here("data/tbl-05-capstone-project-grading.csv")) 
+```
+
+
+The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see [Course Overview](../index.qmd)). The final two weeks are reserved for working on the report. 
+
+## GitHub repository
+
+A repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.
+
+The repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report.
+
+## Graded items
+
+@tbl-grading-items is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in @tbl-grading-categories.
+
+```{r}
+#| label: tbl-grading-items
+#| tbl-cap: "List of items and points for grading of the capstone project report."
+
+grading %>% 
+  select(category, items, points) %>% 
+  knitr::kable()
+
+```
+
+```{r}
+#| label: tbl-grading-categories
+#| tbl-cap: "Sum of points for technical and intellectual part of report."
+
+grading |> 
+  group_by(category, description) |> 
+  summarise(points = sum(points)) |> 
+  knitr::kable()
+
+```
+
+## Get started
+
+1. Open the GitHub Organisation for the course: <https://github.com/cven5873-ss23/>
+2. Locate the capstone-project repository with your username `capstone-project-GITHUB-USERNAME`
+3. Open your capstone-project repository
+4. Click on the green button titled "Code" (**see screenshot below**)
+5. Click on the link in the pop-up window to your clipboard (**see screenshot below**)
+ 
+![](img/clone-repo.png)
+
+6. Open the Posit Cloud workspace for the course: [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
+7. Open the "Content" page
+8. Click on "New Project" -> "New Project from Git Repository"
+9. Paste the link to your capstone-project repository from your clipboard
+10. Keep the tick next to "Add packages from the base project"
+11. Click the "OK" button
+
