@@ -1,6 +1,8 @@
 ---
 title: "Capstone Project"
 editor: source
+params:
+    week: 7
 execute: 
   echo: false
   warning: false
@@ -15,16 +17,39 @@ library(tidyverse)
 grading <- read_csv(here::here("data/tbl-05-capstone-project-grading.csv")) 
 ```
 
+<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see [Course Overview](../index.qmd)). The final two weeks are reserved for working on the report. 
 
-## GitHub repository
+
+## {{< fa bullseye >}} Learning Objectives
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+
+
+## {{< fa code >}} GitHub repository
 
 A repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.
 
 The repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report.
 
-## Graded items
+## {{< fa pen-clip >}} GitHub issue tracker
+
+The GitHub issue tracker of each student's capstone project repository is used to communicate and ask questions about the Capstone Project report.
+
+## {{< fa calendar-check >}} Submission due date
+
+The due date for submission of the report is **Friday, 28th July**. Any commits after the due date will not be counted against the graded items. 
+
+## {{< fa list-check >}} Graded items
 
 @tbl-grading-items is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in @tbl-grading-categories.
 
@@ -49,7 +74,7 @@ grading |>
 
 ```
 
-## Get started
+## {{< fa terminal >}} Get started
 
 1. Open the GitHub Organisation for the course: <https://github.com/cven5873-ss23/>
 2. Locate the capstone-project repository with your username `capstone-project-GITHUB-USERNAME`
@@ -60,9 +85,10 @@ grading |>
 ![](img/clone-repo.png)
 
 6. Open the Posit Cloud workspace for the course: [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
-7. Open the "Content" page
-8. Click on "New Project" -> "New Project from Git Repository"
+7. Open the **Content** page
+8. Click on **New Project -> New Project from Git Repository**
 9. Paste the link to your capstone-project repository from your clipboard
-10. Keep the tick next to "Add packages from the base project"
-11. Click the "OK" button
+10. Keep the **tick** next to **Add packages from the base project**
+11. Click the **OK** button
+12. Respond to the **Questions & Answer for the Capstone Project report** issue on the GitHub issue tracker of the repository and tag the course instructor with using the `@` sign in combination with larnsce as the username
 

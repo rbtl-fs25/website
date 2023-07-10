@@ -42,6 +42,10 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 Homework assignment & learning reflection due: **Friday, 14th July**
 
+Clone your Capstone Project repository to the workspace for the course on Posit Cloud:
+
+- [Follow the Instructions](../project/index.qmd)
+
 Complete the homework programming assignments that are in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
 
 - hw-06a-section-01.qmd

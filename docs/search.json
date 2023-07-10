@@ -130,14 +130,14 @@
     "href": "weeks/wk-06.html",
     "title": "Week 6",
     "section": "",
-    "text": "Learners can use Quarto and Netlify to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can apply functions from the dplyr R Package to join multiple data sets."
+    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can apply functions from the dplyr R Package to join multiple data sets."
   },
   {
     "objectID": "weeks/wk-06.html#fa-bullseye-learning-objectives",
     "href": "weeks/wk-06.html#fa-bullseye-learning-objectives",
     "title": "Week 6",
     "section": "",
-    "text": "Learners can use Quarto and Netlify to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can apply functions from the dplyr R Package to join multiple data sets."
+    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can apply functions from the dplyr R Package to join multiple data sets."
   },
   {
     "objectID": "weeks/wk-06.html#fa-display-slides",
@@ -158,7 +158,7 @@
     "href": "weeks/wk-06.html#fa-code-homework-assignment",
     "title": "Week 6",
     "section": " Homework assignment",
-    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd"
+    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nClone your Capstone Project repository to the workspace for the course on Posit Cloud:\n\nFollow the Instructions\n\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd"
   },
   {
     "objectID": "weeks/wk-06.html#fa-pen-clip-learning-reflection",
@@ -1505,25 +1505,46 @@
     "text": "The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see Course Overview). The final two weeks are reserved for working on the report."
   },
   {
-    "objectID": "project/index.html#github-repository",
-    "href": "project/index.html#github-repository",
+    "objectID": "project/index.html#fa-bullseye-learning-objectives",
+    "href": "project/index.html#fa-bullseye-learning-objectives",
     "title": "Capstone Project",
-    "section": "GitHub repository",
+    "section": " Learning Objectives",
+    "text": "Learning Objectives\n\nLearners can apply the skills obtained during the course to write a short data analysis project report."
+  },
+  {
+    "objectID": "project/index.html#fa-code-github-repository",
+    "href": "project/index.html#fa-code-github-repository",
+    "title": "Capstone Project",
+    "section": " GitHub repository",
     "text": "GitHub repository\nA repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.\nThe repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report."
   },
   {
-    "objectID": "project/index.html#graded-items",
-    "href": "project/index.html#graded-items",
+    "objectID": "project/index.html#fa-pen-clip-github-issue-tracker",
+    "href": "project/index.html#fa-pen-clip-github-issue-tracker",
     "title": "Capstone Project",
-    "section": "Graded items",
+    "section": " GitHub issue tracker",
+    "text": "GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report."
+  },
+  {
+    "objectID": "project/index.html#fa-calendar-check-submission-due-date",
+    "href": "project/index.html#fa-calendar-check-submission-due-date",
+    "title": "Capstone Project",
+    "section": " Submission due date",
+    "text": "Submission due date\nThe due date for submission of the report is Friday, 28th July. Any commits after the due date will not be counted against the graded items."
+  },
+  {
+    "objectID": "project/index.html#fa-list-check-graded-items",
+    "href": "project/index.html#fa-list-check-graded-items",
+    "title": "Capstone Project",
+    "section": " Graded items",
     "text": "Graded items\nTable 1 is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in Table 2.\n\n\n\n\nTable 1: List of items and points for grading of the capstone project report.\n\n\n\n\n\n\n\ncategory\nitems\npoints\n\n\n\n\ntechnical\nData manipulation includes at least one vector coercion (e.g. from vector type character to vector type factor).\n4\n\n\ntechnical\nThe report renders without errors to HTML format and contains at least four chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions.\n10\n\n\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n4\n\n\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n2\n\n\ntechnical\nThe report has at least two data visualisations.\n20\n\n\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n4\n\n\ntechnical\nEach data visualisation applies at least of once scaling function (e.g. color/fill, axes).\n4\n\n\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has an alternative text that describes what type of visualisation it is and trends or learnings from the visualisation.\n4\n\n\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n4\n\n\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.)\n8\n\n\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function)\n2\n\n\ntechnical\nEach table has a label defined in the code-chunk options.\n2\n\n\ntechnical\nEach table has a caption defined in the code-chunk options.\n2\n\n\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n2\n\n\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n5\n\n\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n5\n\n\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n5\n\n\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n5\n\n\n\n\n\n\n\n\n\n\nTable 2: Sum of points for technical and intellectual part of report.\n\n\n\n\n\n\n\ncategory\ndescription\npoints\n\n\n\n\nintellectual\nThis item is part of the intellectual framing of the capstone project report.\n20\n\n\ntechnical\nThis item is a technical part of the capstone project report.\n80"
   },
   {
-    "objectID": "project/index.html#get-started",
-    "href": "project/index.html#get-started",
+    "objectID": "project/index.html#fa-terminal-get-started",
+    "href": "project/index.html#fa-terminal-get-started",
     "title": "Capstone Project",
-    "section": "Get started",
-    "text": "Get started\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the capstone-project repository with your username capstone-project-GITHUB-USERNAME\nOpen your capstone-project repository\nClick on the green button titled “Code” (see screenshot below)\nClick on the link in the pop-up window to your clipboard (see screenshot below)\n\n\n\nOpen the Posit Cloud workspace for the course: (cven5837-ss23)\nOpen the “Content” page\nClick on “New Project” -&gt; “New Project from Git Repository”\nPaste the link to your capstone-project repository from your clipboard\nKeep the tick next to “Add packages from the base project”\nClick the “OK” button"
+    "section": " Get started",
+    "text": "Get started\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the capstone-project repository with your username capstone-project-GITHUB-USERNAME\nOpen your capstone-project repository\nClick on the green button titled “Code” (see screenshot below)\nClick on the link in the pop-up window to your clipboard (see screenshot below)\n\n\n\nOpen the Posit Cloud workspace for the course: (cven5837-ss23)\nOpen the Content page\nClick on New Project -&gt; New Project from Git Repository\nPaste the link to your capstone-project repository from your clipboard\nKeep the tick next to Add packages from the base project\nClick the OK button\nRespond to the Questions & Answer for the Capstone Project report issue on the GitHub issue tracker of the repository and tag the course instructor with using the @ sign in combination with larnsce as the username"
   },
   {
     "objectID": "schedule.html",
