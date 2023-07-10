@@ -144,7 +144,7 @@
     "href": "weeks/wk-06.html#fa-display-slides",
     "title": "Week 6",
     "section": " Slides",
-    "text": "Slides\nLecture 5 - Joining data & Communicating results - HTML\nLecture 5 - Joining data & Communicating results - Download PDF"
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
     "objectID": "weeks/wk-06.html#fa-book-readings",
@@ -158,7 +158,7 @@
     "href": "weeks/wk-06.html#fa-code-homework-assignment",
     "title": "Week 6",
     "section": " Homework assignment",
-    "text": "Homework assignment\n\nPractice\nThis week’s homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assignment is contained in a sub-folder of week 5 titled “hw-05a-practice”.\n\n\nSlides\nThis part of the homework programming assignment does not have a starter file. It is your task to create this file yourself.\n\nCreate a new Quarto file by navigating to the menu: File -&gt; New File -&gt; Quarto Presentation\nAdd a title and author, and use the default Reveal JS format\nSave the file in “course-material/wk-05/slides” with the name index.qmd\nClick Render and inspect the output in the Presentation pane on the bottom right\nDelete all content besides the YAML header (at the top of the document)\nUse your own creativity and the Quarto Guide for Revealjs slides to prepare a minimum of five slides.\nAdd the line self-contained: true to the YAML header\nRender the slides\nExport (download) the “slides” directory as “slides.zip” from RStudio Cloud and store the ZIP file on your computer\nNavigate to the folder where you stored the “slides.zip” file and unzip the compressed directory\nLog into your Netlifly account you created during class\nUpload the “slides” directory to Netlifly\nWait until the site has been deployed\nShare the created link that shows your slides with the course instructor"
+    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd"
   },
   {
     "objectID": "weeks/wk-06.html#fa-pen-clip-learning-reflection",
@@ -1573,5 +1573,12 @@
     "title": "Schedule",
     "section": "",
     "text": "Data in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#clone-github-repository-from-github",
+    "href": "slides/lec-05-communicate.html#clone-github-repository-from-github",
+    "title": "Joining data & communicating results with Quarto",
+    "section": "Clone GitHub repository from GitHub",
+    "text": "Clone GitHub repository from GitHub\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the wk-06 repository with your username wk-06-GITHUB-USERNAME\nFollow along with me"
   }
 ]

@@ -558,12 +558,11 @@ No slide breaks to remove, no citation style to change, no headings to re-level.
 
 # Live Coding Exercise: Write a report {background-color="#0F4C81"}
 
-## live-05a-communicate
+## Clone GitHub repository from GitHub
 
-1. Head over to posit.cloud
-2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
-3. Open your "course-materials" project
-4. Follow along with me
+1. Open the GitHub Organisation for the course: <https://github.com/cven5873-ss23/>
+2. Locate the **wk-06** repository with your username `wk-06-GITHUB-USERNAME`
+3. Follow along with me
 
 # Break 
 

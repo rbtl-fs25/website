@@ -28,9 +28,11 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 ## {{< fa display >}} Slides
 
-[Lecture 5 - Joining data & Communicating results - HTML](/slides/lec-05-communicate.html) 
+[View slides in full screen](../slides/lec-05-communicate.html) | [Download slides as PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-05-communicate.pdf)
 
-[Lecture 5 - Joining data & Communicating results - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-05-communicate.pdf)
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-05-communicate.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
 
 ## {{< fa book >}} Readings
 
@@ -38,28 +40,14 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 ## {{< fa code >}} Homework assignment 
 
-### Practice
+Homework assignment & learning reflection due: **Friday, 14th July**
 
-This week's homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assignment is contained in a sub-folder of week 5 titled "hw-05a-practice".
+Complete the homework programming assignments that are in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
 
-### Slides
-
-This part of the homework programming assignment does not have a starter file. It is your task to create this file yourself. 
-
-1. Create a new Quarto file by navigating to the menu: File -> New File -> Quarto Presentation 
-2. Add a title and author, and use the default Reveal JS format
-3. Save the file in "course-material/wk-05/slides" with the name index.qmd
-4. Click Render and inspect the output in the Presentation pane on the bottom right
-5. Delete all content besides the YAML header (at the top of the document)
-6. Use your own creativity and the [Quarto Guide for Revealjs slides](https://quarto.org/docs/presentations/revealjs/) to prepare a minimum of five slides. 
-7. Add the line `self-contained: true` to the YAML header
-8. Render the slides
-9. Export (download) the "slides" directory as "slides.zip" from RStudio Cloud and store the ZIP file on your computer
-10. Navigate to the folder where you stored the "slides.zip" file and unzip the compressed directory
-11. Log into your Netlifly account you created during class
-12. Upload the "slides" directory to Netlifly
-13. Wait until the site has been deployed
-14. Share the created link that shows your slides with the course instructor
+- hw-06a-section-01.qmd
+- hw-06b-section-02.qmd
+- hw-06c-section-03.qmd
+- hw-06d-section-04.qmd
  
 ## {{< fa pen-clip >}} Learning reflection
 
