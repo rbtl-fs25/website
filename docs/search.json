@@ -1463,11 +1463,11 @@
     "text": "Rich Documentation"
   },
   {
-    "objectID": "slides/lec-05-communicate.html#live-05a-communicate",
-    "href": "slides/lec-05-communicate.html#live-05a-communicate",
+    "objectID": "slides/lec-05-communicate.html#clone-github-repository-from-github",
+    "href": "slides/lec-05-communicate.html#clone-github-repository-from-github",
     "title": "Joining data & communicating results with Quarto",
-    "section": "live-05a-communicate",
-    "text": "live-05a-communicate\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
+    "section": "Clone GitHub repository from GitHub",
+    "text": "Clone GitHub repository from GitHub\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the wk-06 repository with your username wk-06-GITHUB-USERNAME\nFollow along with me"
   },
   {
     "objectID": "slides/lec-05-communicate.html#cross-references",
@@ -1573,12 +1573,5 @@
     "title": "Schedule",
     "section": "",
     "text": "Data in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
-  },
-  {
-    "objectID": "slides/lec-05-communicate.html#clone-github-repository-from-github",
-    "href": "slides/lec-05-communicate.html#clone-github-repository-from-github",
-    "title": "Joining data & communicating results with Quarto",
-    "section": "Clone GitHub repository from GitHub",
-    "text": "Clone GitHub repository from GitHub\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the wk-06 repository with your username wk-06-GITHUB-USERNAME\nFollow along with me"
   }
 ]
