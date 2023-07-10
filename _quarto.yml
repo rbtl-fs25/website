@@ -42,6 +42,11 @@ website:
         text: "Week 4"
       - href: weeks/wk-05.qmd
         text: "Week 5"
+      - href: weeks/wk-06.qmd
+        text: "Week 6"
+      - text: "---"
+      - href: project/index.qmd
+        text: "Capstone Project"
         
 format:
   html:

@@ -151,14 +151,14 @@
     "href": "weeks/wk-06.html#fa-book-readings",
     "title": "Week 6",
     "section": " Readings",
-    "text": "Readings\nRead R for Data Science - Section 13 - Relational data\nRead R for Data Science - Section 15 - Factors"
+    "text": "Readings\n\nRead R for Data Science - Section 13 - Relational data"
   },
   {
     "objectID": "weeks/wk-06.html#fa-code-homework-assignment",
     "href": "weeks/wk-06.html#fa-code-homework-assignment",
     "title": "Week 6",
     "section": " Homework assignment",
-    "text": "Homework assignment\n\nPractice\nThis week’s homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assigment is contained in a sub-folder of week 5 titled “hw-05a-practice”.\n\n\nSlides\nThis part of the homework programming assignment does not have a starter file. It is your task to create this file yourself.\n\nCreate a new Quarto file by navigating to the menu: File -&gt; New File -&gt; Quarto Presentation\nAdd a title and author, and use the default Reveal JS format\nSave the file in “course-material/wk-05/slides” with the name index.qmd\nClick Render and inspect the output in the Presentation pane on the bottom right\nDelete all content besides the YAML header (at the top of the document)\nUse your own creativity and the Quarto Guide for Revealjs slides to prepare a minimum of five slides.\nAdd the line self-contained: true to the YAML header\nRender the slides\nExport (download) the “slides” directory as “slides.zip” from RStudio Cloud and store the ZIP file on your computer\nNavigate to the folder where you stored the “slides.zip” file and unzip the compressed directory\nLog into your Netlifly account you created during class\nUpload the “slides” directory to Netlifly\nWait until the site has been deployed\nShare the created link that shows your slides with the course instructor"
+    "text": "Homework assignment\n\nPractice\nThis week’s homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assignment is contained in a sub-folder of week 5 titled “hw-05a-practice”.\n\n\nSlides\nThis part of the homework programming assignment does not have a starter file. It is your task to create this file yourself.\n\nCreate a new Quarto file by navigating to the menu: File -&gt; New File -&gt; Quarto Presentation\nAdd a title and author, and use the default Reveal JS format\nSave the file in “course-material/wk-05/slides” with the name index.qmd\nClick Render and inspect the output in the Presentation pane on the bottom right\nDelete all content besides the YAML header (at the top of the document)\nUse your own creativity and the Quarto Guide for Revealjs slides to prepare a minimum of five slides.\nAdd the line self-contained: true to the YAML header\nRender the slides\nExport (download) the “slides” directory as “slides.zip” from RStudio Cloud and store the ZIP file on your computer\nNavigate to the folder where you stored the “slides.zip” file and unzip the compressed directory\nLog into your Netlifly account you created during class\nUpload the “slides” directory to Netlifly\nWait until the site has been deployed\nShare the created link that shows your slides with the course instructor"
   },
   {
     "objectID": "weeks/wk-06.html#fa-pen-clip-learning-reflection",
@@ -1320,7 +1320,7 @@
     "href": "slides/lec-05-communicate.html#we",
     "title": "Joining data & communicating results with Quarto",
     "section": "We…",
-    "text": "We…\n…have multiple data frames\n…want to bring them together\n\n\nRows: 10 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): name, profession\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 8 Columns: 3\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): name\ndbl (2): birth_year, death_year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 9 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): name, known_for\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\"))\ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\"))\nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
   },
   {
     "objectID": "slides/lec-05-communicate.html#data-women-in-science",
@@ -1334,14 +1334,14 @@
     "href": "slides/lec-05-communicate.html#inputs",
     "title": "Joining data & communicating results with Quarto",
     "section": "Inputs",
-    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\nprofessions \n\n# A tibble: 10 × 2\n   name               profession                        \n   &lt;chr&gt;              &lt;chr&gt;                             \n 1 Ada Lovelace       Mathematician                     \n 2 Marie Curie        Physicist and Chemist             \n 3 Janaki Ammal       Botanist                          \n 4 Chien-Shiung Wu    Physicist                         \n 5 Katherine Johnson  Mathematician                     \n 6 Rosalind Franklin  Chemist                           \n 7 Vera Rubin         Astronomer                        \n 8 Gladys West        Mathematician                     \n 9 Flossie Wong-Staal Virologist and Molecular Biologist\n10 Jennifer Doudna    Biochemist                        \n\n\n\n\n\ndates \n\n# A tibble: 8 × 3\n  name               birth_year death_year\n  &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt;\n1 Janaki Ammal             1897       1984\n2 Chien-Shiung Wu          1912       1997\n3 Katherine Johnson        1918       2020\n4 Rosalind Franklin        1920       1958\n5 Vera Rubin               1928       2016\n6 Gladys West              1930         NA\n7 Flossie Wong-Staal       1947         NA\n8 Jennifer Doudna          1964         NA\n\n\n\n\n\nworks\n\n# A tibble: 9 × 2\n  name               known_for                                                  \n  &lt;chr&gt;              &lt;chr&gt;                                                      \n1 Ada Lovelace       first computer algorithm                                   \n2 Marie Curie        theory of radioactivity,  discovery of elements polonium a…\n3 Janaki Ammal       hybrid species, biodiversity protection                    \n4 Chien-Shiung Wu    confim and refine theory of radioactive beta decy, Wu expe…\n5 Katherine Johnson  calculations of orbital mechanics critical to sending the …\n6 Vera Rubin         existence of dark matter                                   \n7 Gladys West        mathematical modeling of the shape of the Earth which serv…\n8 Flossie Wong-Staal first scientist to clone HIV and create a map of its genes…\n9 Jennifer Doudna    one of the primary developers of CRISPR, a ground-breaking…"
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n\n\n\nname\nprofession\n\n\n\n\nAda Lovelace\nMathematician\n\n\nMarie Curie\nPhysicist and Chemist\n\n\nJanaki Ammal\nBotanist\n\n\nChien-Shiung Wu\nPhysicist\n\n\nKatherine Johnson\nMathematician\n\n\nRosalind Franklin\nChemist\n\n\nVera Rubin\nAstronomer\n\n\nGladys West\nMathematician\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n\n\nJennifer Doudna\nBiochemist\n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\n1897\n1984\n\n\nChien-Shiung Wu\n1912\n1997\n\n\nKatherine Johnson\n1918\n2020\n\n\nRosalind Franklin\n1920\n1958\n\n\nVera Rubin\n1928\n2016\n\n\nGladys West\n1930\nNA\n\n\nFlossie Wong-Staal\n1947\nNA\n\n\nJennifer Doudna\n1964\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nknown_for\n\n\n\n\nAda Lovelace\nfirst computer algorithm\n\n\nMarie Curie\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nVera Rubin\nexistence of dark matter\n\n\nGladys West\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
   },
   {
     "objectID": "slides/lec-05-communicate.html#desired-output",
     "href": "slides/lec-05-communicate.html#desired-output",
     "title": "Joining data & communicating results with Quarto",
     "section": "Desired output",
-    "text": "Desired output\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) \n\nJoining with `by = join_by(name)`\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
+    "text": "Desired output\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
   },
   {
     "objectID": "slides/lec-05-communicate.html#inputs-reminder",
@@ -1369,84 +1369,105 @@
     "href": "slides/lec-05-communicate.html#left_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "left_join()",
-    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
   },
   {
     "objectID": "slides/lec-05-communicate.html#left_join-1",
     "href": "slides/lec-05-communicate.html#left_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "left_join()",
-    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 4\n   name               profession                         birth_year death_year\n   &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;\n 1 Ada Lovelace       Mathematician                              NA         NA\n 2 Marie Curie        Physicist and Chemist                      NA         NA\n 3 Janaki Ammal       Botanist                                 1897       1984\n 4 Chien-Shiung Wu    Physicist                                1912       1997\n 5 Katherine Johnson  Mathematician                            1918       2020\n 6 Rosalind Franklin  Chemist                                  1920       1958\n 7 Vera Rubin         Astronomer                               1928       2016\n 8 Gladys West        Mathematician                            1930         NA\n 9 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n10 Jennifer Doudna    Biochemist                               1964         NA"
+    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
   },
   {
     "objectID": "slides/lec-05-communicate.html#right_join",
     "href": "slides/lec-05-communicate.html#right_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "right_join()",
-    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-05-communicate.html#right_join-1",
     "href": "slides/lec-05-communicate.html#right_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "right_join()",
-    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\nJoining with `by = join_by(name)`\n\n\n# A tibble: 8 × 4\n  name               profession                         birth_year death_year\n  &lt;chr&gt;              &lt;chr&gt;                                   &lt;dbl&gt;      &lt;dbl&gt;\n1 Janaki Ammal       Botanist                                 1897       1984\n2 Chien-Shiung Wu    Physicist                                1912       1997\n3 Katherine Johnson  Mathematician                            1918       2020\n4 Rosalind Franklin  Chemist                                  1920       1958\n5 Vera Rubin         Astronomer                               1928       2016\n6 Gladys West        Mathematician                            1930         NA\n7 Flossie Wong-Staal Virologist and Molecular Biologist       1947         NA\n8 Jennifer Doudna    Biochemist                               1964         NA"
+    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
   },
   {
     "objectID": "slides/lec-05-communicate.html#full_join",
     "href": "slides/lec-05-communicate.html#full_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "full_join()",
-    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-05-communicate.html#full_join-1",
     "href": "slides/lec-05-communicate.html#full_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "full_join()",
-    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 4\n   name               birth_year death_year known_for                           \n   &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;                               \n 1 Janaki Ammal             1897       1984 hybrid species, biodiversity protec…\n 2 Chien-Shiung Wu          1912       1997 confim and refine theory of radioac…\n 3 Katherine Johnson        1918       2020 calculations of orbital mechanics c…\n 4 Rosalind Franklin        1920       1958 &lt;NA&gt;                                \n 5 Vera Rubin               1928       2016 existence of dark matter            \n 6 Gladys West              1930         NA mathematical modeling of the shape …\n 7 Flossie Wong-Staal       1947         NA first scientist to clone HIV and cr…\n 8 Jennifer Doudna          1964         NA one of the primary developers of CR…\n 9 Ada Lovelace               NA         NA first computer algorithm            \n10 Marie Curie                NA         NA theory of radioactivity,  discovery…"
+    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
   },
   {
     "objectID": "slides/lec-05-communicate.html#putting-it-altogether",
     "href": "slides/lec-05-communicate.html#putting-it-altogether",
     "title": "Joining data & communicating results with Quarto",
     "section": "Putting it altogether",
-    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works)\n\nJoining with `by = join_by(name)`\nJoining with `by = join_by(name)`\n\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
+    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) |&gt; \n  kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
   },
   {
-    "objectID": "slides/lec-05-communicate.html#what-is-quarto",
-    "href": "slides/lec-05-communicate.html#what-is-quarto",
+    "objectID": "slides/lec-05-communicate.html#why-quarto---open-science",
+    "href": "slides/lec-05-communicate.html#why-quarto---open-science",
     "title": "Joining data & communicating results with Quarto",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\n\nNext generation version of R Markdown from RStudio\nMulti-language (Python, R, Julia, Observable)\nAuthoring in plain text markdown or Jupyter notebooks"
+    "section": "Why Quarto? -> Open Science",
+    "text": "Why Quarto? -&gt; Open Science"
   },
   {
-    "objectID": "slides/lec-05-communicate.html#editing-documents",
-    "href": "slides/lec-05-communicate.html#editing-documents",
+    "objectID": "slides/lec-05-communicate.html#section-7",
+    "href": "slides/lec-05-communicate.html#section-7",
     "title": "Joining data & communicating results with Quarto",
-    "section": "Editing documents",
-    "text": "Editing documents\nYou’re not limited to RStudio for editing Quarto documents…\n\nJupyterLab\nVS Code\nText Editors"
+    "section": "",
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
-    "objectID": "slides/lec-05-communicate.html#authoring",
-    "href": "slides/lec-05-communicate.html#authoring",
+    "objectID": "slides/lec-05-communicate.html#quarto-for-literate-programming",
+    "href": "slides/lec-05-communicate.html#quarto-for-literate-programming",
     "title": "Joining data & communicating results with Quarto",
-    "section": "Authoring",
-    "text": "Authoring\n\nTechnical articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nAuthor with scientific markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more."
+    "section": "Quarto for literate programming",
+    "text": "Quarto for literate programming"
   },
   {
-    "objectID": "slides/lec-05-communicate.html#documentation",
-    "href": "slides/lec-05-communicate.html#documentation",
+    "objectID": "slides/lec-05-communicate.html#what-is-a-.qmd",
+    "href": "slides/lec-05-communicate.html#what-is-a-.qmd",
     "title": "Joining data & communicating results with Quarto",
-    "section": "Documentation",
-    "text": "Documentation"
+    "section": "What is a .qmd?",
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
+    "href": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
+    "title": "Joining data & communicating results with Quarto",
+    "section": "Quarto makes moving between formats straightforward",
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#comfort-of-your-own-workspace",
+    "href": "slides/lec-05-communicate.html#comfort-of-your-own-workspace",
+    "title": "Joining data & communicating results with Quarto",
+    "section": "Comfort of your own workspace",
+    "text": "Comfort of your own workspace"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html#rich-documentation",
+    "href": "slides/lec-05-communicate.html#rich-documentation",
+    "title": "Joining data & communicating results with Quarto",
+    "section": "Rich Documentation",
+    "text": "Rich Documentation"
   },
   {
     "objectID": "slides/lec-05-communicate.html#live-05a-communicate",
     "href": "slides/lec-05-communicate.html#live-05a-communicate",
     "title": "Joining data & communicating results with Quarto",
     "section": "live-05a-communicate",
-    "text": "live-05a-communicate\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+    "text": "live-05a-communicate\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-05-communicate.html#cross-references",
@@ -1460,35 +1481,21 @@
     "href": "slides/lec-05-communicate.html#homework-due-dates",
     "title": "Joining data & communicating results with Quarto",
     "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment due: Friday, 5th August\nLearning reflection due: Monday, 8th August"
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, 14th July"
   },
   {
-    "objectID": "slides/lec-05-communicate.html#get-out-the-cloud",
-    "href": "slides/lec-05-communicate.html#get-out-the-cloud",
+    "objectID": "slides/lec-05-communicate.html#information",
+    "href": "slides/lec-05-communicate.html#information",
     "title": "Joining data & communicating results with Quarto",
-    "section": "Get out the cloud",
-    "text": "Get out the cloud\nInstall software on your computer:\n\nR: https://cran.r-project.org/\nRStudio IDE: https://www.rstudio.com/products/rstudio/download/\nQuarto CLI: https://quarto.org/docs/get-started/"
+    "section": "Information",
+    "text": "Information\n\nSend your data by tomorrow, 11th July\nAll material shared on website by Monday, 17th July\nDue date for report: Friday, 28th July"
   },
   {
-    "objectID": "slides/lec-05-communicate.html#start-a-project",
-    "href": "slides/lec-05-communicate.html#start-a-project",
-    "title": "Joining data & communicating results with Quarto",
-    "section": "Start a project",
-    "text": "Start a project\n\nGuidance: https://r4ds.had.co.nz/workflow-projects.html\nLearn about project oriented workflows: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/"
-  },
-  {
-    "objectID": "slides/lec-05-communicate.html#stay-in-touch",
-    "href": "slides/lec-05-communicate.html#stay-in-touch",
-    "title": "Joining data & communicating results with Quarto",
-    "section": "Stay in touch",
-    "text": "Stay in touch\n\nEmail: lars@lse.de\nData Science for WASH Slack Community: Slack invite link"
-  },
-  {
-    "objectID": "slides/lec-05-communicate.html#section",
-    "href": "slides/lec-05-communicate.html#section",
+    "objectID": "slides/lec-05-communicate.html#section-8",
+    "href": "slides/lec-05-communicate.html#section-8",
     "title": "Joining data & communicating results with Quarto",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
+    "text": "A large proportion of these slides are taken from Mine Çetinkaya Rundel’s “Hello Quarto” presentation & Thomas Mock’s “Quarto for the Curious” presentation\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
     "objectID": "schedule.html",

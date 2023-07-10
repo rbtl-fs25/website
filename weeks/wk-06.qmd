@@ -34,15 +34,13 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 
 ## {{< fa book >}} Readings
 
-Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)  
-
-Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html)  
+1. Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)
 
 ## {{< fa code >}} Homework assignment 
 
 ### Practice
 
-This week's homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assigment is contained in a sub-folder of week 5 titled "hw-05a-practice".
+This week's homework programming assignment is an assignment with four sections, which let you practice the functions you have learned during the course. The assignment is contained in a sub-folder of week 5 titled "hw-05a-practice".
 
 ### Slides
 
