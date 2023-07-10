@@ -50,18 +50,21 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 ...want to bring them together
 
 ```{r}
-#| echo: false
-professions <- read_csv(here::here("slides/data/scientists/professions.csv"))
-dates <- read_csv(here::here("slides/data/scientists/dates.csv"))
-works <- read_csv(here::here("slides/data/scientists/works.csv"))
+#| echo: false 
+
+professions <- read_csv(here::here("slides/data/scientists/professions.csv")) 
+
+dates <- read_csv(here::here("slides/data/scientists/dates.csv")) 
+
+works <- read_csv(here::here("slides/data/scientists/works.csv")) 
 ```
 
 ```{r}
 #| echo: true
 #| eval: false
-professions <- read_csv(here::here("data/scientists/professions.csv"))
-dates <- read_csv(here::here("data/scientists/dates.csv"))
-works <- read_csv(here::here("scientists/works.csv"))
+professions <- read_csv(here::here("data/scientists/professions.csv")) 
+dates <- read_csv(here::here("data/scientists/dates.csv")) 
+works <- read_csv(here::here("scientists/works.csv")) 
 ```
 
 ## Data: Women in science {.smaller}
@@ -83,19 +86,19 @@ Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-1
 ### professions
 
 ```{r}
-professions 
+professions |> kable()
 ```
 
 ### dates
 
 ```{r}
-dates 
+dates |> kable()
 ```
 
 ### works
 
 ```{r}
-works
+works |> kable()
 ```
 
 :::
@@ -105,7 +108,8 @@ works
 ```{r}
 professions %>%
   left_join(dates) %>%
-  left_join(works) 
+  left_join(works) |> 
+  kable()
 ```
 
 ## Inputs, reminder {.smaller}
@@ -219,8 +223,16 @@ left_join(x, y)
 
 ```{r}
 #| echo: true
+#| eval: false
 professions %>%
   left_join(dates) 
+```
+
+```{r}
+#| echo: false
+professions %>%
+  left_join(dates) |> 
+  kable()
 ```
 
 ## `right_join()` {.smaller}
@@ -250,8 +262,16 @@ right_join(x, y)
 
 ```{r}
 #| echo: true
+#| eval: false
 professions %>%
   right_join(dates)
+```
+
+```{r}
+#| echo: false
+professions %>%
+  right_join(dates) |> 
+  kable()
 ```
 
 ## `full_join()` {.smaller}
@@ -279,59 +299,270 @@ full_join(x, y)
 
 ## `full_join()` {.smaller}
 
+
 ```{r}
 #| echo: true
+#| eval: false
 dates %>%
   full_join(works) 
+```
+
+```{r}
+#| echo: false
+dates %>%
+  full_join(works) |> 
+  kable()
 ```
 
 ## Putting it altogether {.smaller}
 
 ```{r}
 #| echo: true
+#| eval: false
 professions %>%
   left_join(dates) %>%
-  left_join(works)
+  left_join(works) |> 
+  kable()
+```
+
+```{r}
+#| echo: false
+professions %>%
+  left_join(dates) %>%
+  left_join(works) |> 
+  kable()
 ```
 
 # Part 2: Communicate results with Quarto {background-color="#0F4C81"}
 
-## What is Quarto? {.incremental}
+## Why Quarto? -> Open Science
 
-- Next generation version of R Markdown from RStudio 
-- Multi-language (Python, R, Julia, Observable)
-- Authoring in plain text markdown or Jupyter notebooks
+##
 
-## Editing documents
+![](img/lec-05/publisher-policies-01.drawio.svg)
 
-You're not limited to RStudio for editing Quarto documents...
+##
 
--   [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html)
+![](img/lec-05/publisher-policies-02.drawio.svg)
 
--   [VS Code](https://quarto.org/docs/tools/vscode.html)
+##
 
--   [Text Editors](https://quarto.org/docs/tools/text-editors.html)
+![](img/lec-05/publisher-policies-03.drawio.svg)
+
+##
+
+![](img/lec-05/publisher-policies-04.drawio.svg)
+
+##
+
+![](img/lec-05/publisher-policies-05.drawio.svg)
+
+##
+
+![](img/lec-05/publisher-policies-06.drawio.svg)
+
+##
+
+![](img/lec-05/publisher-policies-07.drawio.svg)
+
+# What is Quarto? {background-color="#0F4C81"}
+
+##  {.centered auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 2em; color: #0F4C81"}
+Quarto is a new, open-source,<br> scientific and technical<br> publishing system
+:::
 
 
-## Authoring {.incremental}
+**the goal is to make the process of creating**<br> and collaborating dramatically better
 
-- Technical  articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
 
-- Author with scientific markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.
+::: {.fragment .fade-up}
+![](img/lec-05/horst_quarto_schematic.png){fig-align="center" width="1100px" fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto."}
+:::
 
-## Documentation
+::: footer
+Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by [Allison Horst](https://github.com/allisonhorst).
+
+:::
+
+## Quarto for literate programming
+
+::: r-stack
+
+![](img/lec-05/qmd-knitr.jpeg){.fragment width="1800" fig-alt="diagram of converting a Qmd document via knitr/pandoc into markdown and then into output formats"}
+
+![](img/lec-05/qmd-jupyter.jpeg){.fragment width="1800" fig-alt="diagram of converting a Quarto document via Jupyter/pandoc into markdown and then into output formats"}
+
+:::
+
+## What is a `.qmd`? {.smaller}
+
+> A Quarto document i.e. a `.qmd` is a plain text file
+
+. . .
+
+**Metadata (YAML)**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+``` yaml
+format: html
+engine: knitr
+```
+
+:::
+
+::: {.column width="50%"}
+
+``` yaml
+format: html
+engine: jupyter
+```
+
+:::
+
+::::
+
+. . .
+
+**Code**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+````code
+```{{r}}
+library(dplyr)
+
+mtcars |> 
+  dplyr::group_by(cyl) |> 
+  dplyr::summarize(mean = mean(mpg))
+```
+````
+
+:::
+
+::: {.column width="50%"}
+
+````code
+```{{python}}
+from siuba import _, group_by, summarize
+from siuba.data import mtcars
+(mtcars
+  >> group_by(_.cyl)
+  >> summarize(avg_mpg = _.mpg.mean())
+  )
+```
+````
+
+:::
+
+::::
+
+. . .
+
+**Text**
+
+``` markdown
+# Heading 1
+This is a sentence with some **bold text**, some *italic text* and an 
+![image](image.png){fig-alt="Alt text for this image"}.
+```
+
+## Quarto makes moving between formats straightforward {.smaller .takeaway}
+
+::: columns
+::: {.column width="33%"}
+::: fragment
+Document
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} lesson-1.qmd
+:::
+
+``` yaml
+title: "Lesson 1"
+format: html
+```
+:::
+:::
+
+::: {.column width="33%"}
+::: fragment
+Presentation
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} lesson-1.qmd
+:::
+
+``` yaml
+title: "Lesson 1"
+format: revealjs
+```
+:::
+:::
+
+::: {.column width="33%"}
+::: fragment
+Website
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} \_quarto.yml
+:::
+
+``` yaml
+project:
+  type: website
+
+website: 
+  navbar: 
+    left:
+      - lesson-1.qmd
+```
+:::
+:::
+:::
+
+::: notes
+-   It is traightforward in Quarto to move between output formats
+-   As an educator, there are two things that are important to me
+    -   reproducibility, and
+    -   ease of transitiion between output formats
+-   I am using Quarto for everything, and it's finally the tool let's me go from one output type to anoher without the to change anything by the YAML metadata
+
+For example, here are common things I produce
+
+--\> a lesson in document form <br> --\> the same content in presentation form <br> --\> the same content on a page in a website,
+
+and you can see that all that needed to change going between these formats is a few lines in the yaml.
+
+No slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!
+:::
+
+## Comfort of your own workspace
+
+::: r-stack
+![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment width="1700px" fig-alt="A screenshot of a Quarto document rendered inside RStudio"}
+
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment width="1700px" fig-alt="A screenshot of a Quarto document rendered inside JupyterLab"}
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment width="1700px" fig-alt="A screenshot of a Quarto document rendered inside VSCode"}
+:::
+
+## Rich Documentation
 
 [![](img/lec-05/website-quarto.png){fig-alt="Screenshot of the Quarto homepage at https://quarto.org/." fig-align="center"}](https://quarto.org/)
 
-# Live Coding Exercise: Build a website {background-color="#0F4C81"}
+# Live Coding Exercise: Write a report {background-color="#0F4C81"}
 
-## live-05a-communicate
+## Clone GitHub repository from GitHub
 
-1. Head over to rstudio.cloud
-2. Open the workspace for the course (cven5837-ss22)
-3. Open "Projects"
-4. Open the "course-materials" project
-5. Follow along with me
+1. Open the GitHub Organisation for the course: <https://github.com/cven5873-ss23/>
+2. Locate the **wk-06** repository with your username `wk-06-GITHUB-USERNAME`
+3. Follow along with me
 
 # Break 
 
@@ -378,32 +609,21 @@ tibble(
 ## Homework due dates
 
 - All material on [course website](https://cven5837-ss22.github.io/website/weeks/wk-05.html)
-- Homework assignment due: Friday, 5th August
-- Learning reflection due: Monday, 8th August
+- Homework assignment & learning reflection due: Friday, 14th July
 
-# What comes next?  {background-color="#0F4C81"}
+# Capstone Project Report
 
-## Get out the cloud
+## Information
 
-Install software on your computer:
-
-- R: https://cran.r-project.org/
-- RStudio IDE: https://www.rstudio.com/products/rstudio/download/
-- Quarto CLI: https://quarto.org/docs/get-started/
-
-## Start a project
-
-- Guidance: https://r4ds.had.co.nz/workflow-projects.html
-- Learn about project oriented workflows: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
-
-## Stay in touch
-
-- Email: lars@lse.de
-- Data Science for WASH Slack Community: [Slack invite link](https://join.slack.com/t/datascienceforwash/shared_invite/zt-nh47xhqt-WYV64_iqTBMxBB4CMWm33Q)
+- Send your data by tomorrow, 11th July
+- All material shared on website by Monday, 17th July
+- Due date for report: Friday, 28th July
 
 # Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
 
 ## 
+
+A large proportion of these slides are taken from [Mine Çetinkaya Rundel's "Hello Quarto" presentation](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title) & [Thomas Mock's "Quarto for the Curious" presentation](https://jthomasmock.github.io/quarto-presentation/#/TitleSlide)
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
 Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-05-communicate.pdf)
