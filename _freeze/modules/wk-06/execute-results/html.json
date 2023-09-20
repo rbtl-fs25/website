@@ -1,0 +1,14 @@
+{
+  "hash": "7ad42dbad7164a8ebf791a7d76d2b7a5",
+  "result": {
+    "markdown": "---\ntitle: \"Week 6\"\nsubtitle: \"Joining data & communicating results with Quarto\"\neditor: source\nparams:\n    week: 6\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\n2. Learners can explain the three characteristics of tidy data.\n3. Learners can list the four main atomic vector types in R.\n4. NA\n\n## {{< fa display >}} Slides\n\n[View slides in full screen](../slides/lec-05-communicate.html) | [Download slides as PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-05-communicate.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../slides/lec-05-communicate.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)\n\n## {{< fa code >}} Homework assignment \n\nHomework assignment & learning reflection due: **Friday, 14th July**\n\nClone your Capstone Project repository to the workspace for the course on Posit Cloud:\n\n- [Follow the Instructions](../project/index.qmd)\n\nComplete the homework programming assignments that are in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):\n\n- hw-06a-section-01.qmd\n- hw-06b-section-02.qmd\n- hw-06c-section-03.qmd\n- hw-06d-section-04.qmd\n \n## {{< fa pen-clip >}} Learning reflection\n\nComplete the learning reflection that is in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)\n\n- learning-06.qmd \n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

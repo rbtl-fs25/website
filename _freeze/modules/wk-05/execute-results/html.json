@@ -1,0 +1,14 @@
+{
+  "hash": "46e05f79ec986f79aa783c6bb30b8c2e",
+  "result": {
+    "markdown": "---\ntitle: \"Week 5\"\nsubtitle: \"Concept of tidy data, vectors and pivoting\"\neditor: source\nparams:\n    week: 5\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\n2. Learners can use functions of the gt R package to present summary tables in output formats.\n3. NA\n\n## {{< fa display >}} Slides\n\n[View slides in full screen](../slides/lec-04-tidy-data.html) | [Download slides as PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../slides/lec-04-tidy-data.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)  \n2. Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html#factors)  \n\n## {{< fa code >}} Homework assignment \n\nHomework assignment & learning reflection due: **Friday, 7th July**\n\nComplete the homework programming assignments that are in your project folder for week 5 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):\n\n- hw-05a-tidyr.qmd \n\n## {{< fa pen-clip >}} Learning reflection\n\nComplete the learning reflection that is in your project folder for week 5 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all) \n\n- learning-05.qmd\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

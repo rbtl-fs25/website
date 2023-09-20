@@ -1,0 +1,58 @@
+---
+title: "Week 6"
+subtitle: "Joining data & communicating results with Quarto"
+editor: source
+params:
+    week: 6
+execute: 
+  echo: false
+  warning: false
+---
+
+## {{< fa bullseye >}} Learning Objectives
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+2. `r lobj1[2]`
+3. `r lobj1[3]`
+4. `r lobj1[4]`
+
+## {{< fa display >}} Slides
+
+[View slides in full screen](../slides/lec-05-communicate.html) | [Download slides as PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-05-communicate.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-05-communicate.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## {{< fa book >}} Readings
+
+1. Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)
+
+## {{< fa code >}} Homework assignment 
+
+Homework assignment & learning reflection due: **Friday, 14th July**
+
+Clone your Capstone Project repository to the workspace for the course on Posit Cloud:
+
+- [Follow the Instructions](../project/index.qmd)
+
+Complete the homework programming assignments that are in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all):
+
+- hw-06a-section-01.qmd
+- hw-06b-section-02.qmd
+- hw-06c-section-03.qmd
+- hw-06d-section-04.qmd
+ 
+## {{< fa pen-clip >}} Learning reflection
+
+Complete the learning reflection that is in your project folder for week 6 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+
+- learning-06.qmd 

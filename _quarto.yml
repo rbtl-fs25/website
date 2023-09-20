@@ -32,6 +32,8 @@ website:
       - href: index.qmd
         text: Course Overview
       - text: "---"
+      - href: modules/md-01.qmd
+        text: Module 1
         
 format:
   html:

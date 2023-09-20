@@ -1,0 +1,14 @@
+{
+  "hash": "5d0f8d78d9a5c11b6225432ed3d332c1",
+  "result": {
+    "markdown": "---\ntitle: \"Week 3\"\nsubtitle: \"Data Visualisation & Data Organisation in Spreadsheets\"\neditor: source\nparams:\n    week: 3\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\n2. Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\n3. Learners can compare three different geoms and their use case.\n4. Learners can apply a theme to control font types and sizes within a plot.\n5. NA\n\n## {{< fa display >}} Slides\n\n[View slides in full screen](../slides/lec-02-visualisation.html) | [Download slides as PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualisation.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../slides/lec-02-visualisation.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 3 to 3.6 - Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)  \n\n2. Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)\n\n3. Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)\n\n## {{< fa code >}} Homework assignment \n\nComplete the homework programming assignment that is in your project folder for week 3 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)\n\n- hw-03a-data-visualisation.qmd \n- hw-03b-project-data.qmd\n\n## {{< fa pen-clip >}} Learning reflection\n\nComplete the learning reflection that is in your project folder for week 3 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)\n\n- learning-03.qmd\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

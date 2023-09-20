@@ -10,8 +10,8 @@ execute:
 
 Instructor: [Lars Schöbitz](https://openwashdata.org/about/lars/)
 
-Start: 2023-10-31
-End: 2024-02-06
+- Start: 2023-10-31
+- End: 2024-02-06
 
 # Course Information
 
@@ -40,8 +40,8 @@ We will rely entirely on open source and open access material for this course. W
 # Course Calendar
 
 ```{r}
-readr::read_csv("data/tbl-01-cven5837-ss23-course-schedule.csv") |> 
-  dplyr::select(date, week, topic = title, note) |> 
+readr::read_csv("data/tbl-01-ds4owd-001-course-schedule.csv") |> 
+  dplyr::select(date, week, topic = title, module) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
   
@@ -54,7 +54,7 @@ readr::read_csv("data/tbl-01-cven5837-ss23-course-schedule.csv") |>
 | **Monday**   |                |
 | **Tuesday**  |  Module from 2 pm to 4:30 pm CET                              |
 | **Wednesday** | |
-| **Thursday** | Student hours on Zoom (10 am to 12 pm CET) |
+| **Thursday** | Office hours on Zoom (10 am to 12 pm CET) |
 | **Friday**   |              |
 
 # Assignments

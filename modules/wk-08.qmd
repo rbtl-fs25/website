@@ -1,0 +1,21 @@
+---
+title: "Week 8"
+subtitle: "Exam"
+editor: source
+params:
+    week: 8
+execute: 
+  echo: false
+  warning: false
+---
+
+## Learning Objectives
+
+## Slides
+
+## Readings
+
+## Homework assignment
+
+## Learning reflection
+
