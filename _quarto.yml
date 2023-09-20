@@ -4,9 +4,9 @@ project:
 
 website:
   page-navigation: true
-  title: "CVEN 5837 - Summer 2023"
-  description: "Homepage for Special Topics - Data Analytics for Development"
-  site-url: "https://cven5837-ss23.github.io/website/"
+  title: "data science for openwashdata"
+  description: "Homepage for the course 001"
+  site-url: "https://ds4owd-001.github.io/website/"
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
@@ -23,30 +23,15 @@ website:
     collapse-level: 1
     tools:
       - icon: github
-        href: https://github.com/cven5873-ss23
+        href: https://github.com/ds4owd-001
         text: "GitHub organization"
       - icon: code-square
-        href: https://posit.cloud/spaces/381404/join?access_code=5uSGb1oKtIngQmhbsM-th5J23j2SqMU2oIuX0go-
+        href: https://posit.cloud/
         text: "Posit Cloud"
     contents: 
       - href: index.qmd
         text: Course Overview
       - text: "---"
-      - href: weeks/wk-01.qmd
-        text: "Week 1"
-      - href: weeks/wk-02.qmd
-        text: "Week 2"
-      - href: weeks/wk-03.qmd
-        text: "Week 3"
-      - href: weeks/wk-04.qmd
-        text: "Week 4"
-      - href: weeks/wk-05.qmd
-        text: "Week 5"
-      - href: weeks/wk-06.qmd
-        text: "Week 6"
-      - text: "---"
-      - href: "project/index.qmd"
-        text: "Capstone Project"
         
 format:
   html:

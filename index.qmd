@@ -6,30 +6,30 @@ execute:
   warning: false
 ---
 
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+# data science for openwashdata course 001 
 
-# CVEN 5837: Special Topics - Data Analytics for Development
+Instructor: [Lars Schöbitz](https://openwashdata.org/about/lars/)
 
-Summer Online - Session C - June 5, 2022 - July 28, 2023; Monday 12:00 - 2:30pm MT
-
-Instructor: [Lars Schöbitz](https://www.colorado.edu/center/mortenson/lars-schobitz)
+Start: 2023-10-31
+End: 2024-02-06
 
 # Course Information
 
-This course provides students with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves and others to build upon the obtained skills to apply them to their data analysis projects.
+This course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.
 
 Topics include:
 
 -   The data science life-cycle
 -   Data organization in spreadsheets
 -   Exploratory data analysis using visualization
+-   Using AI for software development in R 
 -   Concept of tidy data and data tidying
 -   Data transformation and descriptive statistics
 -   Data communication using the Quarto open-source scientific and technical publishing system
 
 # Learning Goals
 
-1. Be able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the utility of solutions for water, sanitation, air quality, and global health.
+1. Be able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.
 
 2. Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.
 
@@ -51,67 +51,26 @@ readr::read_csv("data/tbl-01-cven5837-ss23-course-schedule.csv") |>
 
 |          |                                           |
 |----------|-------------------------------------------|
-| **Monday**   |  Lecture              |
-| **Tuesday**  |                                   |
-| **Wednesday** | Feedback (grading) on assignments from previous week |
-| **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
-| **Friday**   | Homework assignment and learning reflection are due             |
+| **Monday**   |                |
+| **Tuesday**  |  Module from 2 pm to 4:30 pm CET                              |
+| **Wednesday** | |
+| **Thursday** | Student hours on Zoom (10 am to 12 pm CET) |
+| **Friday**   |              |
 
 # Assignments
 
-**Homework assignments**: Each week will have at least one homework assignment. All assignments, but those for Week 1 are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub. Homework assignments are graded as pass/fail (100 points).
+**Homework assignments**: Each week will have at least one homework assignment. All assignments, but those for Week 1 are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub.
 
-**Readings/Learning reflections**: Additional readings will be provided. Some are required, others are optional. Students will be asked to write 100 word reflections on the material that they have learned. These reflections are delivered as Quarto documents and graded as pass/fail (100 points). Students are required to submit their work through GitHub.
+**Readings**: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class.
 
-**Capstone Project**: A graded capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions and a grading rubric for the capstone project will be provided during the course. The project will be delivered as Quarto documents and graded with an achieved number of points out 100 points. Students are required to submit their work through GitHub.
+**Capstone Project**: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions for the capstone project will be provided. The project will be delivered as Quarto documents and students are asked to submit their work through GitHub.
 
 # Attendance 
 
-We hope you can participate in all classes. Class participation is an essential component for successful completion of this course. If you have a valid reason to miss a class, we expect you to inform us before the beginning of the class. 
+We hope you can participate in all classes. Class participation is an important component for successful completion of this course.
 
-# Grading scheme 
-
-Your overall course grade will be comprised of the following components, and their weights:
-
-- Homework assignments: 40 percent
-- Learning reflections: 20 percent
-- Capstone Project: 40 percent
-
-Grades will be recorded in Canvas throughout the semester. Homework assignments and learning reflections receive a pass/fail only (100 points). The Capstone Project receives a number of points out of 100. At the end of the term, the scores on all assignments are weighted by the percentages given above to determine a semester score. Student grades will be determined as follows based on their score rounded to the nearest single decimal place:
-
-```{r}
-
-readr::read_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv")) |> 
-  gt::gt() |> 
-  gt::tab_header("Conversion from percent to grades.")
-
-```
-
-# Late work, extensions, and special circumstances
-
-Due dates are set and all work is due on the stated date. This helps students to keep pace through the course and allow staff to return marks and feedback timely. Submission on the due date might not always be possible when something gets in the way. We drop the lowest score for each of the assignments or learning reflections. That means you can miss one assignment or learning reflection and still achieve maximum score.
-
-**Special circumstances**
-
-If you have a documented reason for why you are unable to to complete an assignment in the course, the reason will be assessed at the end of the course by the course committee. 
-
-# Classroom behavior 
-
-Both students and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote or online. Those who fail to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, political affiliation or political philosophy.  For more information, see the policies on [classroom behavior](http://www.colorado.edu/policies/student-classroom-and-course-related-behavior) and the [Student Conduct & Conflict Resolution policies](https://www.colorado.edu/sccr/student-conduct).
+# Code of Conduct 
 
 
-# Preferred student names and pronouns
-
-CU Boulder recognizes that students' legal information doesn't always align with how they identify. Students may update their preferred names and pronouns via the student portal; those preferred names and pronouns are listed on instructors' class rosters. In the absence of such updates, the name that appears on the class roster is the student's legal name.
-
-# Honor code
-
-All students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code academic integrity policy. Violations of the Honor Code may include, but are not limited to: plagiarism, cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. All incidents of academic misconduct will be reported to the Honor Code (honor@colorado.edu); 303-492-5550). Students found responsible for violating the academic integrity policy will be subject to nonacademic sanctions from the Honor Code as well as academic sanctions from the faculty member. Additional information regarding the Honor Code academic integrity policy can be found on the [Honor Code website](https://www.colorado.edu/osccr/honor-code).
-
-# Sexual misconduct, discrimintation, harassment and/or related retaliation
-
-CU Boulder is committed to fostering an inclusive and welcoming learning, working, and living environment. The university will not tolerate acts of sexual misconduct (harassment, exploitation, and assault), intimate partner violence (dating or domestic violence), stalking, or protected-class discrimination or harassment by or against members of our community. Individuals who believe they have been subject to misconduct or retaliatory actions for reporting a concern should contact the Office of Institutional Equity and Compliance (OIEC) at 303-492-2127 or email cureport@colorado.edu. Information about university policies, [reporting options](https://www.colorado.edu/oiec/reporting-resolutions/making-report), and the support resources can be found on the [OIEC website](http://www.colorado.edu/institutionalequity/).
-
-Please know that faculty and graduate instructors have a responsibility to inform OIEC when they are made aware of incidents of sexual misconduct, dating and domestic violence, stalking, discrimination, harassment and/or related retaliation, to ensure that individuals impacted receive information about their rights, support resources, and reporting options. To learn more about reporting and support options for a variety of concerns, visit [Don’t Ignore It](https://www.colorado.edu/dontignoreit/).
 
 
