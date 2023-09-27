@@ -8,12 +8,15 @@ execute:
   echo: false
   warning: false
 bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{=html}
 
 ```
-This first week will be used to get you set up for the course. Work through the homework assignments one after the other.
+
+This first week will be used to get you set up for the course. 
 
 ## Learning Objectives
 
@@ -29,43 +32,18 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.
 2.  `r lobj1[2]`
 3.  `r lobj1[3]`
 
-## Readings
+## {{< fa display >}} Slides
 
-`r emo::ji("book")` Read the [Course Overview](../index.html).
+- In preparation
 
-`r emo::ji("book")` Read @wilson2017 "Good enough practices in scientific computing".
+## {{< fa book >}} Readings
 
-### Get an account for GitHub
+- Read the [Course Overview](../overview.html).
+- Read @wilson2017 "Good enough practices in scientific computing".
 
-To set up an account on GitHub, follow these general steps:
+## {{< fa code >}} Assignments
 
-1.  Go to the GitHub website at <https://github.com/>.
-2.  Click on the "Sign up" button on the top right corner of the page.
-3.  Enter your preferred username, email address, and password in the provided fields.
-4.  Choose whether you want to receive updates and announcements via email.
-5.  Complete the verification process by solving a puzzle and entering a verification code sent to your email.
-
-::: callout-tip
-## Username advice from: [Happy Git and GitHub for the useR](https://happygitwithr.com/github-acct.html#github-acct)
-
-You will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don't fret about any of that now. **Except your username. You might want to give that some thought.**
-
-A few tips, which sadly tend to contradict each other:
-
--   Incorporate your actual name! People like to know who they're dealing with. Also makes your username easier for people to guess or remember.
--   Reuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.
--   Pick a username you will be comfortable revealing to your future boss.
--   Shorter is better than longer.
--   Be as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.
--   Make it timeless. Don't highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.
--   Avoid words laden with special meaning in programming.
--   Avoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen `-`.
-
-You can change your username later, but better to get this right the first time.
-
--   <https://help.github.com/articles/changing-your-github-username/>
--   <https://help.github.com/articles/what-happens-when-i-change-my-username/>
-:::
+We will work through these assignments live during our first class. If you missed the class, you could still join be working through the following assignments indepedently.
 
 ### Log into Posit Cloud with GitHub account
 
@@ -81,7 +59,7 @@ Note that you will need to have a GitHub account in order to use this login meth
 
 ### Join the course workspace on Posit Cloud
 
--   Open this link: 
+The link will be shared during the class on 31st October 2023. If you missed the class, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=ds4owd-001: Posit Cloud link" target="_blank">Email</a> and we will share it with you.
 
 ### Set up a GitHub Personal Access Token
 
@@ -107,12 +85,17 @@ Remember to treat your access tokens like passwords and keep them secure (e.g. a
 -   Open the issue tracker on the website repository: <https://github.com/ds4owd-001/website/issues>.
 -   Click on "New issue" button.
 -   In the "Title" field
-    -   write: "Homework assignments for week 1 completed".
+    -   write: "Create a first issue on GitHub".
 -   In the "Leave a comment" field,
-    -   tag the course instructor with using the `@` sign in combination with `larnsce` as the username,
-    -   post your question that you prepared after reading the [Course Overview](../index.html),
+    -   tag the course instructors with using the `@` sign in combination with `larnsce` and `mianzg` as the username,
     -   add anything that you would like to add.
+    
+### Join our Chat on Element
 
-## Thanks! `r emo::ji("sunflower")`
+We will work through these steps, but you can also find a detailed description on how to join our chat here: <https://openwashdata.org/pages/community/chat/>
 
-Thank you for working through these assignments. I am looking forward to meeting you next week.
+{{< fa envelope-circle-check >}} If we can support you to setup the chat, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=openwashdata support" target="_blank">Email</a> and we will schedule a call for a walk through. 
+
+## Thanks! 
+
+Thank you for working through these assignments. 

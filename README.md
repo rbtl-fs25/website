@@ -2,6 +2,8 @@
 
 This course is offered by the [openwashdata community](https://openwashdata.org/). 
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+
 ## Attribution
 
 The layout of the website and naming convention are based on [STA 210 at Duke University (Spring 2022)

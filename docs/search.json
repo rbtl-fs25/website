@@ -1,323 +1,379 @@
 [
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "data science for openwashdata",
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
     "section": "",
-    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+    "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Course Overview",
+    "objectID": "schedule.html#week-0---pre-work",
+    "href": "schedule.html#week-0---pre-work",
+    "title": "Schedule",
     "section": "",
-    "text": "data science for openwashdata course 001\nInstructor: Lars Schöbitz\n\nStart: 2023-10-31\nEnd: 2024-02-06\n\n\n\nCourse Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nUsing AI for software development in R\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system\n\n\n\nLearning Goals\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.\n\n\n\nTextbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.\n\n\nCourse Calendar\n\n\n\n\n\n\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science Life-cycle\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & Functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nNA\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nmodule 10\n\n\n\n\n\n\n\nWeekly Structure\n\n\n\n\n\n\n\nMonday\n\n\n\nTuesday\nModule from 2 pm to 4:30 pm CET\n\n\nWednesday\n\n\n\nThursday\nOffice hours on Zoom (10 am to 12 pm CET)\n\n\nFriday\n\n\n\n\n\n\nAssignments\nHomework assignments: Each week will have at least one homework assignment. All assignments, but those for Week 1 are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub.\nReadings: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class.\nCapstone Project: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions for the capstone project will be provided. The project will be delivered as Quarto documents and students are asked to submit their work through GitHub.\n\n\nAttendance\nWe hope you can participate in all classes. Class participation is an important component for successful completion of this course.\n\n\nCode of Conduct"
+    "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section",
-    "href": "slides/lec-02-visualisation.html#section",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "schedule.html#week-1---introduction",
+    "href": "schedule.html#week-1---introduction",
+    "title": "Schedule",
     "section": "",
-    "text": "Artwork by @allison_horst"
+    "text": "GitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#tipps-for-search-engines",
-    "href": "slides/lec-02-visualisation.html#tipps-for-search-engines",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Tipps for search engines",
-    "text": "Tipps for search engines\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\nScroll through the top 5 results (don’t just pick the first)\n\nExample: “How to remove a legend from a plot in R ggplot2”"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#stack-overflow",
-    "href": "slides/lec-02-visualisation.html#stack-overflow",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Stack Overflow",
-    "text": "Stack Overflow\n\n\n\nWhat is it?\n\nThe biggest support network for (coding) problems\nCan be intimidating at first\nUp-vote system\n\n\n\n\nWorkflow\n\nFirst, briefly read the question that was posted\nThen, read the answer marked as “correct”\nThen, read one or two more answers with high votes\nThen, check out the “Linked” posts\nAlways give credit for the solution"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#give-credit",
-    "href": "slides/lec-02-visualisation.html#give-credit",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Give credit",
-    "text": "Give credit"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#give-credit-1",
-    "href": "slides/lec-02-visualisation.html#give-credit-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Give credit",
-    "text": "Give credit"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#give-credit-2",
-    "href": "slides/lec-02-visualisation.html#give-credit-2",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Give credit",
-    "text": "Give credit\n\nggplot(data = global_waste_data_kg_year,\n       mapping = aes(x = income_id, \n                     y = capita_kg_year,\n                     color = income_id)) +\n  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220\n  theme(legend.position = \"none\")"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#other-sources-for-help",
-    "href": "slides/lec-02-visualisation.html#other-sources-for-help",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Other sources for help",
-    "text": "Other sources for help\n\n\n\nThe Canvas Discussion pages\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
-    "href": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Minimal reproducible example (reprex)",
-    "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nGood support information: https://www.tidyverse.org/help/#reprex"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-1",
-    "href": "slides/lec-02-visualisation.html#section-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "schedule.html#week-2---data-import",
+    "href": "schedule.html#week-2---data-import",
+    "title": "Schedule",
     "section": "",
-    "text": "Artwork by @allison_horst"
+    "text": "Installing packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#remember-git-clone",
-    "href": "slides/lec-02-visualisation.html#remember-git-clone",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "remember: git clone",
-    "text": "remember: git clone"
+    "objectID": "schedule.html#week-3---data-visualisation",
+    "href": "schedule.html#week-3---data-visualisation",
+    "title": "Schedule",
+    "section": "",
+    "text": "Concept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#remember-git-commit",
-    "href": "slides/lec-02-visualisation.html#remember-git-commit",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "remember: git commit",
-    "text": "remember: git commit"
+    "objectID": "schedule.html#week-4---data-transformation",
+    "href": "schedule.html#week-4---data-transformation",
+    "title": "Schedule",
+    "section": "",
+    "text": "Subsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#remember-git-push",
-    "href": "slides/lec-02-visualisation.html#remember-git-push",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "remember: git push",
-    "text": "remember: git push"
+    "objectID": "schedule.html#week-5---communication",
+    "href": "schedule.html#week-5---communication",
+    "title": "Schedule",
+    "section": "",
+    "text": "Data in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#remember-git-push-1",
-    "href": "slides/lec-02-visualisation.html#remember-git-push-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "remember: git push",
-    "text": "remember: git push"
+    "objectID": "modules/wk-04.html",
+    "href": "modules/wk-04.html",
+    "title": "Week 4",
+    "section": "",
+    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#collaborate-git-clone",
-    "href": "slides/lec-02-visualisation.html#collaborate-git-clone",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "collaborate: git clone",
-    "text": "collaborate: git clone"
+    "objectID": "modules/wk-04.html#learning-objectives",
+    "href": "modules/wk-04.html#learning-objectives",
+    "title": "Week 4",
+    "section": "",
+    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#track-work-git-commit",
-    "href": "slides/lec-02-visualisation.html#track-work-git-commit",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "track work: git commit",
-    "text": "track work: git commit"
+    "objectID": "modules/wk-04.html#slides",
+    "href": "modules/wk-04.html#slides",
+    "title": "Week 4",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#update-git",
-    "href": "slides/lec-02-visualisation.html#update-git",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "update: git ???",
-    "text": "update: git ???"
+    "objectID": "modules/wk-04.html#readings",
+    "href": "modules/wk-04.html#readings",
+    "title": "Week 4",
+    "section": " Readings",
+    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\n\nRead Excuse Me, Do You Have a Moment to Talk About Version Control?"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#update-git-push",
-    "href": "slides/lec-02-visualisation.html#update-git-push",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "update: git push",
-    "text": "update: git push"
+    "objectID": "modules/wk-04.html#homework-assignment",
+    "href": "modules/wk-04.html#homework-assignment",
+    "title": "Week 4",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 30th June\nComplete the homework programming assignments that are in your project folder for week 4 on Posit Cloud\n\nhw-04a-data-transformation.qmd"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#git",
-    "href": "slides/lec-02-visualisation.html#git",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "git ???",
-    "text": "git ???"
+    "objectID": "modules/wk-04.html#learning-reflection",
+    "href": "modules/wk-04.html#learning-reflection",
+    "title": "Week 4",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 4 on Posit Cloud\n\nlearning-04.qmd"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#new-git-pull",
-    "href": "slides/lec-02-visualisation.html#new-git-pull",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "new: git pull",
-    "text": "new: git pull"
+    "objectID": "modules/wk-07.html#slides",
+    "href": "modules/wk-07.html#slides",
+    "title": "Week 7",
+    "section": "Slides",
+    "text": "Slides"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
-    "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "modules/wk-07.html#readings",
+    "href": "modules/wk-07.html#readings",
+    "title": "Week 7",
+    "section": "Readings",
+    "text": "Readings"
+  },
+  {
+    "objectID": "modules/wk-07.html#homework-assignment",
+    "href": "modules/wk-07.html#homework-assignment",
+    "title": "Week 7",
+    "section": "Homework assignment",
+    "text": "Homework assignment"
+  },
+  {
+    "objectID": "modules/wk-07.html#learning-reflection",
+    "href": "modules/wk-07.html#learning-reflection",
+    "title": "Week 7",
+    "section": "Learning reflection",
+    "text": "Learning reflection"
+  },
+  {
+    "objectID": "modules/wk-06.html",
+    "href": "modules/wk-06.html",
+    "title": "Week 6",
+    "section": "",
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R.\nNA"
+  },
+  {
+    "objectID": "modules/wk-06.html#learning-objectives",
+    "href": "modules/wk-06.html#learning-objectives",
+    "title": "Week 6",
+    "section": "",
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R.\nNA"
+  },
+  {
+    "objectID": "modules/wk-06.html#slides",
+    "href": "modules/wk-06.html#slides",
+    "title": "Week 6",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
+  },
+  {
+    "objectID": "modules/wk-06.html#readings",
+    "href": "modules/wk-06.html#readings",
+    "title": "Week 6",
+    "section": " Readings",
+    "text": "Readings\n\nRead R for Data Science - Section 13 - Relational data"
+  },
+  {
+    "objectID": "modules/wk-06.html#homework-assignment",
+    "href": "modules/wk-06.html#homework-assignment",
+    "title": "Week 6",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nClone your Capstone Project repository to the workspace for the course on Posit Cloud:\n\nFollow the Instructions\n\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd"
+  },
+  {
+    "objectID": "modules/wk-06.html#learning-reflection",
+    "href": "modules/wk-06.html#learning-reflection",
+    "title": "Week 6",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 6 on Posit Cloud\n\nlearning-06.qmd"
+  },
+  {
+    "objectID": "modules/wk-02.html",
+    "href": "modules/wk-02.html",
+    "title": "Week 2",
+    "section": "",
+    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\nNA"
+  },
+  {
+    "objectID": "modules/wk-02.html#learning-objectives",
+    "href": "modules/wk-02.html#learning-objectives",
+    "title": "Week 2",
+    "section": "",
+    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\nNA"
+  },
+  {
+    "objectID": "modules/wk-02.html#slides",
+    "href": "modules/wk-02.html#slides",
+    "title": "Week 2",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
+  },
+  {
+    "objectID": "modules/wk-02.html#readings",
+    "href": "modules/wk-02.html#readings",
+    "title": "Week 2",
+    "section": " Readings",
+    "text": "Readings\nRead R for Data Science - Section 1 - Introduction through Section 1.3.4\nRead R for Data Science - Section 2 - Introduction\nRead R for Data Science - Section 4 - Workflow basics"
+  },
+  {
+    "objectID": "modules/wk-02.html#homework-assignment",
+    "href": "modules/wk-02.html#homework-assignment",
+    "title": "Week 2",
+    "section": " Homework assignment",
+    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 2 by Friday 16th June on Posit Cloud\n\nhw-02-data-science-lifecycle.qmd"
+  },
+  {
+    "objectID": "modules/wk-02.html#learning-reflection",
+    "href": "modules/wk-02.html#learning-reflection",
+    "title": "Week 2",
+    "section": " Learning reflection",
+    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 2 on Posit Cloud\n\nlearning-02.qmd"
+  },
+  {
+    "objectID": "project/index.html",
+    "href": "project/index.html",
+    "title": "Capstone Project",
+    "section": "",
+    "text": "The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see Course Overview). The final two weeks are reserved for working on the report."
+  },
+  {
+    "objectID": "project/index.html#learning-objectives",
+    "href": "project/index.html#learning-objectives",
+    "title": "Capstone Project",
+    "section": " Learning Objectives",
+    "text": "Learning Objectives\n\nLearners can apply the skills obtained during the course to write a short data analysis project report."
+  },
+  {
+    "objectID": "project/index.html#github-repository",
+    "href": "project/index.html#github-repository",
+    "title": "Capstone Project",
+    "section": " GitHub repository",
+    "text": "GitHub repository\nA repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.\nThe repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report."
+  },
+  {
+    "objectID": "project/index.html#github-issue-tracker",
+    "href": "project/index.html#github-issue-tracker",
+    "title": "Capstone Project",
+    "section": " GitHub issue tracker",
+    "text": "GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report."
+  },
+  {
+    "objectID": "project/index.html#submission-due-date",
+    "href": "project/index.html#submission-due-date",
+    "title": "Capstone Project",
+    "section": " Submission due date",
+    "text": "Submission due date\nThe due date for submission of the report is Friday, 28th July. Any commits after the due date will not be counted against the graded items."
+  },
+  {
+    "objectID": "project/index.html#graded-items",
+    "href": "project/index.html#graded-items",
+    "title": "Capstone Project",
+    "section": " Graded items",
+    "text": "Graded items\nTable 1 is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in Table 2.\n\n\n\n\nTable 1: List of items and points for grading of the capstone project report.\n\n\n\n\n\n\n\ncategory\nitems\npoints\n\n\n\n\ntechnical\nThe report renders without errors to HTML format and contains at least four chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions.\n10\n\n\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n8\n\n\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n2\n\n\ntechnical\nThe report has at least two data visualisations.\n20\n\n\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n4\n\n\ntechnical\nEach data visualisation applies at least of once scaling function (e.g. color/fill, axes).\n4\n\n\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has an alternative text that describes what type of visualisation it is and trends or learnings from the visualisation.\n4\n\n\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n4\n\n\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.)\n8\n\n\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function)\n2\n\n\ntechnical\nEach table has a label defined in the code-chunk options.\n2\n\n\ntechnical\nEach table has a caption defined in the code-chunk options.\n2\n\n\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n2\n\n\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n5\n\n\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n5\n\n\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n5\n\n\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n5\n\n\n\n\n\n\n\n\n\n\nTable 2: Sum of points for technical and intellectual part of report.\n\n\n\n\n\n\n\ncategory\ndescription\npoints\n\n\n\n\nintellectual\nThis item is part of the intellectual framing of the capstone project report.\n20\n\n\ntechnical\nThis item is a technical part of the capstone project report.\n80"
+  },
+  {
+    "objectID": "project/index.html#get-started",
+    "href": "project/index.html#get-started",
+    "title": "Capstone Project",
+    "section": " Get started",
+    "text": "Get started\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the capstone-project repository with your username capstone-project-GITHUB-USERNAME\nOpen your capstone-project repository\nClick on the green button titled “Code” (see screenshot below)\nClick on the link in the pop-up window to your clipboard (see screenshot below)\n\n\n\nOpen the Posit Cloud workspace for the course: (cven5837-ss23)\nOpen the Content page\nClick on New Project -&gt; New Project from Git Repository\nPaste the link to your capstone-project repository from your clipboard\nKeep the tick next to Add packages from the base project\nClick the OK button\nRespond to the Questions & Answer for the Capstone Project report issue on the GitHub issue tracker of the repository and tag the course instructor with using the @ sign in combination with larnsce as the username"
+  },
+  {
+    "objectID": "code_of_conduct.html",
+    "href": "code_of_conduct.html",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n\n\n\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting\n\n\n\n\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.\n\n\n\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.\n\n\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at ghe@mavt.ethz.ch. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident.\n\n\n\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community.\n\n\n\n\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "code_of_conduct.html#our-pledge",
+    "href": "code_of_conduct.html#our-pledge",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+  },
+  {
+    "objectID": "code_of_conduct.html#our-standards",
+    "href": "code_of_conduct.html#our-standards",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Examples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting"
+  },
+  {
+    "objectID": "code_of_conduct.html#enforcement-responsibilities",
+    "href": "code_of_conduct.html#enforcement-responsibilities",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+  },
+  {
+    "objectID": "code_of_conduct.html#scope",
+    "href": "code_of_conduct.html#scope",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+  },
+  {
+    "objectID": "code_of_conduct.html#enforcement",
+    "href": "code_of_conduct.html#enforcement",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at ghe@mavt.ethz.ch. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
+  },
+  {
+    "objectID": "code_of_conduct.html#enforcement-guidelines",
+    "href": "code_of_conduct.html#enforcement-guidelines",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
+  },
+  {
+    "objectID": "code_of_conduct.html#attribution",
+    "href": "code_of_conduct.html#attribution",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#think-pair-share",
+    "href": "slides/lec-03-transformation.html#think-pair-share",
+    "title": "Data Transformation with dplyr",
+    "section": "Think, Pair, Share",
+    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestions\n\n\n\nWhy should you not leave a blank cell in a spreadsheet used for data collection?\nWhich of the 12 rules for data organization was the least comprehensible to you?\n\n\n\n\n\nThink for 2 minutes\nPair with in break-out rooms for 4 minutes\nShare your answer with the class\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
+    "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
+    "title": "Data Transformation with dplyr",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
+    "text": "Learning Objectives (for this week)\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
-    "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "R Package ggplot2",
-    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+    "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
+    "href": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
+    "title": "Data Transformation with dplyr",
+    "section": "A grammar of data wrangling…",
+    "text": "A grammar of data wrangling…\n… based on the concepts of functions as verbs that manipulate data frames\n\n\n\n\n\n\n\n\n\nselect: pick columns by name\narrange: reorder rows\nslice: chooses rows based on location\nfilter: pick rows matching criteria\nrelocate: changes the order of the columns\nmutate: add new variables\nsummarise: reduce variables to values\ngroup_by: for grouped operations\n… (many more)\n\n\n\n\n\nSlide taken from Data Science in a Box"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#code-structure",
-    "href": "slides/lec-02-visualisation.html#code-structure",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot() is the main function in ggplot2\nPlots are constructed in layers\nStructure of the code for plots can be summarized as\n\n\nggplot(data = [dataset], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n   geom_xxx() +\n   other options"
+    "objectID": "slides/lec-03-transformation.html#dplyr-rules",
+    "href": "slides/lec-03-transformation.html#dplyr-rules",
+    "title": "Data Transformation with dplyr",
+    "section": "dplyr rules",
+    "text": "dplyr rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#code-structure-1",
-    "href": "slides/lec-02-visualisation.html#code-structure-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot()"
+    "objectID": "slides/lec-03-transformation.html#live-04a-data-transformation",
+    "href": "slides/lec-03-transformation.html#live-04a-data-transformation",
+    "title": "Data Transformation with dplyr",
+    "section": "live-04a-data-transformation",
+    "text": "live-04a-data-transformation\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen your “course-materials” project\nFollow along with me"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#code-structure-2",
-    "href": "slides/lec-02-visualisation.html#code-structure-2",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007)"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#code-structure-3",
-    "href": "slides/lec-02-visualisation.html#code-structure-3",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes())"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#code-structure-4",
-    "href": "slides/lec-02-visualisation.html#code-structure-4",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#code-structure-5",
-    "href": "slides/lec-02-visualisation.html#code-structure-5",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#code-structure-6",
-    "href": "slides/lec-02-visualisation.html#code-structure-6",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#code-structure-7",
-    "href": "slides/lec-02-visualisation.html#code-structure-7",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
-    "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "live-02a-data-visualiation",
-    "text": "live-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#break",
-    "href": "slides/lec-02-visualisation.html#break",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "slides/lec-03-transformation.html#break",
+    "href": "slides/lec-03-transformation.html#break",
+    "title": "Data Transformation with dplyr",
     "section": "Break",
     "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#types-of-variables",
-    "href": "slides/lec-02-visualisation.html#types-of-variables",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Types of variables",
-    "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
+    "objectID": "slides/lec-03-transformation.html#pair-programming-exercises",
+    "href": "slides/lec-03-transformation.html#pair-programming-exercises",
+    "title": "Data Transformation with dplyr",
+    "section": "Pair Programming Exercises",
+    "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-3",
-    "href": "slides/lec-02-visualisation.html#section-3",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "",
-    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+    "objectID": "slides/lec-03-transformation.html#hw-04a-data-visualiation",
+    "href": "slides/lec-03-transformation.html#hw-04a-data-visualiation",
+    "title": "Data Transformation with dplyr",
+    "section": "hw-04a-data-visualiation",
+    "text": "hw-04a-data-visualiation\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen your “course-materials” project\nFollow along with me"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
-    "href": "slides/lec-02-visualisation.html#data-to-viz.com",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "data-to-viz.com",
-    "text": "data-to-viz.com"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#data-collection-tools-1",
-    "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Data Collection Tools",
-    "text": "Data Collection Tools\n\nQuestionnaires for survey based data\nSpreadsheets for manual experimental/observational data\nSensors for automated near real-time data"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#survey-tools",
-    "href": "slides/lec-02-visualisation.html#survey-tools",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Survey tools",
-    "text": "Survey tools\nCommonly used in the Global Engineering and Development sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
-    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
-    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
-    "href": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "But, especially apply it to your data",
-    "text": "But, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#why",
-    "href": "slides/lec-02-visualisation.html#why",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Why?",
-    "text": "Why?\nBecause it will make your life easier!\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#license-cc0",
-    "href": "slides/lec-02-visualisation.html#license-cc0",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "License? CC0 (!)",
-    "text": "License? CC0 (!)\n\n\n\n\n\n\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#bring-your-own-data",
-    "href": "slides/lec-02-visualisation.html#bring-your-own-data",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
-    "section": "Bring your own data",
-    "text": "Bring your own data\n\nGenerate data doing a short survey or observational study\n\nFind a data online that interests you\nUse a dataset that you already have available"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#homework-due-dates",
-    "href": "slides/lec-02-visualisation.html#homework-due-dates",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "slides/lec-03-transformation.html#homework-due-dates",
+    "href": "slides/lec-03-transformation.html#homework-due-dates",
+    "title": "Data Transformation with dplyr",
     "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 23th"
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, 30th June"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-4",
-    "href": "slides/lec-02-visualisation.html#section-4",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "slides/lec-03-transformation.html#section",
+    "href": "slides/lec-03-transformation.html#section",
+    "title": "Data Transformation with dplyr",
     "section": "",
     "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
@@ -368,7 +424,7 @@
     "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
     "title": "Welcome to Data Analytics for Development",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\n\nLearners can navigate the platforms (Posit Cloud, GitHub, Course Website) that are used to for the course.\nLearners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+    "text": "Learning Objectives (for this week)\n\n\nLearners can navigate the platforms (Posit Cloud, GitHub, Course Website) that are used to for the course.\nLearners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
@@ -599,14 +655,14 @@
     "href": "slides/lec-01-welcome.html#objects",
     "title": "Welcome to Data Analytics for Development",
     "section": "Objects",
-    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
+    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
   },
   {
     "objectID": "slides/lec-01-welcome.html#operators",
     "href": "slides/lec-01-welcome.html#operators",
     "title": "Welcome to Data Analytics for Development",
     "section": "Operators",
-    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- gapminder |> \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: <-\nPipe operator: |>"
+    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: &lt;-\nPipe operator: |&gt;"
   },
   {
     "objectID": "slides/lec-01-welcome.html#rules",
@@ -655,7 +711,7 @@
     "href": "slides/lec-01-welcome.html#grading",
     "title": "Welcome to Data Analytics for Development",
     "section": "Grading",
-    "text": "Grading\n\n\n\n\n\n\n  \n    \n      Conversion from percent to grades.\n    \n    \n    \n      grade\n      percent\n    \n  \n  \n    A+\n97\n    A\n93\n    A-\n90\n    B+\n87\n    B\n83\n    B-\n80\n    C+\n77\n    C\n73\n    C-\n70\n    D+\n67\n    D\n63\n    D-\n60\n    F\n0"
+    "text": "Grading\n\n\n\n\n\n  \n    \n      Conversion from percent to grades.\n    \n    \n    \n      grade\n      percent\n    \n  \n  \n    A+\n97\n    A\n93\n    A-\n90\n    B+\n87\n    B\n83\n    B-\n80\n    C+\n77\n    C\n73\n    C-\n70\n    D+\n67\n    D\n63\n    D-\n60\n    F\n0"
   },
   {
     "objectID": "slides/lec-01-welcome.html#late-work-policy",
@@ -679,6 +735,377 @@
     "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sign-up for data science for openwashdata course 001",
+    "section": "",
+    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks at the following times:\nMore details can be found one the Course Overview page."
+  },
+  {
+    "objectID": "index.html#how-do-i-sign-up",
+    "href": "index.html#how-do-i-sign-up",
+    "title": "Sign-up for data science for openwashdata course 001",
+    "section": " How do I sign up?",
+    "text": "How do I sign up?\nTo sign up for the course, you need to complete the following three steps:\n\nStep 1: Get an account on GitHub\nStep 2: Register for an ORCID iD\nStep 3: Fill out our registration form\n\n\nStep 1: Get an account on GitHub\nTo set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\n\n\nStep 2: Register for an ORCID iD\n\nCreate your ORCID iD at: https://orcid.org/register\n\nLearn more about ORCID and why you should get one, even if your are not a researcher or working in academia.\n\n\nStep 3: Fill out our registration form\n\nFill out this form: https://forms.gle/JvPfVubntbaDrNZQ8"
+  },
+  {
+    "objectID": "index.html#thanks",
+    "href": "index.html#thanks",
+    "title": "Sign-up for data science for openwashdata course 001",
+    "section": "Thanks",
+    "text": "Thanks\nThank you. You will hear from us with more details about a week before the start of the course."
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "We will meet on Zoom for 10 modules over 15 weeks (see Course Calendar below) at the following times:\nWe will use Posit Cloud infrastructure, so you do not need to install any software. You will hear from us about a week before the course start.\nSign up for the course here: https://forms.gle/AhhWpPfnbLwzp5Ai9"
+  },
+  {
+    "objectID": "overview.html#course-information",
+    "href": "overview.html#course-information",
+    "title": "Course Overview",
+    "section": "Course Information",
+    "text": "Course Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nUsing AI for software development in R\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system"
+  },
+  {
+    "objectID": "overview.html#learning-goals",
+    "href": "overview.html#learning-goals",
+    "title": "Course Overview",
+    "section": "Learning Goals",
+    "text": "Learning Goals\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables."
+  },
+  {
+    "objectID": "overview.html#textbooks-and-materials",
+    "href": "overview.html#textbooks-and-materials",
+    "title": "Course Overview",
+    "section": "Textbooks and Materials",
+    "text": "Textbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website."
+  },
+  {
+    "objectID": "overview.html#course-calendar",
+    "href": "overview.html#course-calendar",
+    "title": "Course Overview",
+    "section": "Course Calendar",
+    "text": "Course Calendar\n\n\n\n\n\n\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science Life-cycle\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & Functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nNA\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nmodule 10"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "data science for openwashdata",
+    "section": "",
+    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section",
+    "href": "slides/lec-02-visualisation.html#section",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#tipps-for-search-engines",
+    "href": "slides/lec-02-visualisation.html#tipps-for-search-engines",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Tipps for search engines",
+    "text": "Tipps for search engines\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\nScroll through the top 5 results (don’t just pick the first)\n\nExample: “How to remove a legend from a plot in R ggplot2”"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#stack-overflow",
+    "href": "slides/lec-02-visualisation.html#stack-overflow",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Stack Overflow",
+    "text": "Stack Overflow\n\n\n\nWhat is it?\n\nThe biggest support network for (coding) problems\nCan be intimidating at first\nUp-vote system\n\n\n\n\nWorkflow\n\nFirst, briefly read the question that was posted\nThen, read the answer marked as “correct”\nThen, read one or two more answers with high votes\nThen, check out the “Linked” posts\nAlways give credit for the solution"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#give-credit",
+    "href": "slides/lec-02-visualisation.html#give-credit",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Give credit",
+    "text": "Give credit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#give-credit-1",
+    "href": "slides/lec-02-visualisation.html#give-credit-1",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Give credit",
+    "text": "Give credit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#give-credit-2",
+    "href": "slides/lec-02-visualisation.html#give-credit-2",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Give credit",
+    "text": "Give credit\n\nggplot(data = global_waste_data_kg_year,\n       mapping = aes(x = income_id, \n                     y = capita_kg_year,\n                     color = income_id)) +\n  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220\n  theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#other-sources-for-help",
+    "href": "slides/lec-02-visualisation.html#other-sources-for-help",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Other sources for help",
+    "text": "Other sources for help\n\n\n\nThe Canvas Discussion pages\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
+    "href": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Minimal reproducible example (reprex)",
+    "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nGood support information: https://www.tidyverse.org/help/#reprex"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-1",
+    "href": "slides/lec-02-visualisation.html#section-1",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#remember-git-clone",
+    "href": "slides/lec-02-visualisation.html#remember-git-clone",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "remember: git clone",
+    "text": "remember: git clone"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#remember-git-commit",
+    "href": "slides/lec-02-visualisation.html#remember-git-commit",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "remember: git commit",
+    "text": "remember: git commit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#remember-git-push",
+    "href": "slides/lec-02-visualisation.html#remember-git-push",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "remember: git push",
+    "text": "remember: git push"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#remember-git-push-1",
+    "href": "slides/lec-02-visualisation.html#remember-git-push-1",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "remember: git push",
+    "text": "remember: git push"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#collaborate-git-clone",
+    "href": "slides/lec-02-visualisation.html#collaborate-git-clone",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "collaborate: git clone",
+    "text": "collaborate: git clone"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#track-work-git-commit",
+    "href": "slides/lec-02-visualisation.html#track-work-git-commit",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "track work: git commit",
+    "text": "track work: git commit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#update-git",
+    "href": "slides/lec-02-visualisation.html#update-git",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "update: git ???",
+    "text": "update: git ???"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#update-git-push",
+    "href": "slides/lec-02-visualisation.html#update-git-push",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "update: git push",
+    "text": "update: git push"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#git",
+    "href": "slides/lec-02-visualisation.html#git",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "git ???",
+    "text": "git ???"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#new-git-pull",
+    "href": "slides/lec-02-visualisation.html#new-git-pull",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "new: git pull",
+    "text": "new: git pull"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
+    "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
+    "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "R Package ggplot2",
+    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure",
+    "href": "slides/lec-02-visualisation.html#code-structure",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot() is the main function in ggplot2\nPlots are constructed in layers\nStructure of the code for plots can be summarized as\n\n\nggplot(data = [dataset], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n   geom_xxx() +\n   other options"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-1",
+    "href": "slides/lec-02-visualisation.html#code-structure-1",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-2",
+    "href": "slides/lec-02-visualisation.html#code-structure-2",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007)"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-3",
+    "href": "slides/lec-02-visualisation.html#code-structure-3",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes())"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-4",
+    "href": "slides/lec-02-visualisation.html#code-structure-4",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-5",
+    "href": "slides/lec-02-visualisation.html#code-structure-5",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-6",
+    "href": "slides/lec-02-visualisation.html#code-structure-6",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#code-structure-7",
+    "href": "slides/lec-02-visualisation.html#code-structure-7",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Code structure",
+    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
+    "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "live-02a-data-visualiation",
+    "text": "live-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#break",
+    "href": "slides/lec-02-visualisation.html#break",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Break",
+    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#types-of-variables",
+    "href": "slides/lec-02-visualisation.html#types-of-variables",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Types of variables",
+    "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-3",
+    "href": "slides/lec-02-visualisation.html#section-3",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
+    "href": "slides/lec-02-visualisation.html#data-to-viz.com",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "data-to-viz.com",
+    "text": "data-to-viz.com"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-collection-tools-1",
+    "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Data Collection Tools",
+    "text": "Data Collection Tools\n\nQuestionnaires for survey based data\nSpreadsheets for manual experimental/observational data\nSensors for automated near real-time data"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#survey-tools",
+    "href": "slides/lec-02-visualisation.html#survey-tools",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Survey tools",
+    "text": "Survey tools\nCommonly used in the Global Engineering and Development sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
+    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
+    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
+    "href": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "But, especially apply it to your data",
+    "text": "But, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#why",
+    "href": "slides/lec-02-visualisation.html#why",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Why?",
+    "text": "Why?\nBecause it will make your life easier!\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#license-cc0",
+    "href": "slides/lec-02-visualisation.html#license-cc0",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "License? CC0 (!)",
+    "text": "License? CC0 (!)\n\n\n\n\n\n\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#bring-your-own-data",
+    "href": "slides/lec-02-visualisation.html#bring-your-own-data",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Bring your own data",
+    "text": "Bring your own data\n\nGenerate data doing a short survey or observational study\n\nFind a data online that interests you\nUse a dataset that you already have available"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#homework-due-dates",
+    "href": "slides/lec-02-visualisation.html#homework-due-dates",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 23th"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-4",
+    "href": "slides/lec-02-visualisation.html#section-4",
+    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
+  },
+  {
     "objectID": "slides/lec-04-tidy-data.html#exam-update",
     "href": "slides/lec-04-tidy-data.html#exam-update",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
@@ -690,7 +1117,7 @@
     "href": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\nLearners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can list the four main atomic vector types in R.\nLearners can explain the three characteristics of tidy data."
+    "text": "Learning Objectives (for this week)\n\nLearners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can list the four main atomic vector types in R.\nLearners can explain the three characteristics of tidy data."
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#why-care-about-data-types",
@@ -711,14 +1138,14 @@
     "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-work",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Oh why won’t you work?!",
-    "text": "Oh why won’t you work?!\n\nsurvey_data_small |> \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             <dbl>\n1               NA"
+    "text": "Oh why won’t you work?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
     "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Oh why won’t you still work??!!",
-    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |> \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             <dbl>\n1               NA"
+    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#take-a-breath-and-look-at-your-data",
@@ -732,7 +1159,7 @@
     "href": "slides/lec-04-tidy-data.html#very-common-data-tidying-step",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Very common data tidying step!",
-    "text": "Very common data tidying step!\n\nsurvey_data_small |> \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+    "text": "Very common data tidying step!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#very-common-data-tidying-step-1",
@@ -746,21 +1173,21 @@
     "href": "slides/lec-04-tidy-data.html#sumamrise-argh",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Sumamrise? Argh!!!!",
-    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |> \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |> \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             <dbl>\n1               NA"
+    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#always-respect-your-data-types",
     "href": "slides/lec-04-tidy-data.html#always-respect-your-data-types",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Always respect your data types!",
-    "text": "Always respect your data types!\n\n\n\n\n\n\nTaking the mean of vector with type “character” is not possible.\n\n\n\n\n\n# A tibble: 22 × 4\n      id job      price_glass price_glass_new\n   <int> <chr>    <chr>       <chr>          \n 1     1 Student  0           0              \n 2     2 Retired  0           0              \n 3     3 Other    0           0              \n 4     4 Employed 10          10             \n 5     5 Employed See comment <NA>           \n 6     6 Student  05-Oct      7.5            \n 7     7 Student  0           0              \n 8     8 Retired  0           0              \n 9     9 Student  10          10             \n10    10 Employed 0           0              \n# ℹ 12 more rows"
+    "text": "Always respect your data types!\n\n\n\n\n\n\n\n\n\nTaking the mean of vector with type “character” is not possible.\n\n\n\n\n\n# A tibble: 22 × 4\n      id job      price_glass price_glass_new\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;          \n 1     1 Student  0           0              \n 2     2 Retired  0           0              \n 3     3 Other    0           0              \n 4     4 Employed 10          10             \n 5     5 Employed See comment &lt;NA&gt;           \n 6     6 Student  05-Oct      7.5            \n 7     7 Student  0           0              \n 8     8 Retired  0           0              \n 9     9 Student  10          10             \n10    10 Employed 0           0              \n# ℹ 12 more rows"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#always-respect-your-data-types-1",
     "href": "slides/lec-04-tidy-data.html#always-respect-your-data-types-1",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Always respect your data types!",
-    "text": "Always respect your data types!\n\nsurvey_data_small |> \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |> \n  mutate(price_glass_new = as.numeric(price_glass_new)) |> \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             <dbl>\n1             4.76"
+    "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#live-05a-vectors",
@@ -830,7 +1257,7 @@
     "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Three variables -> three aesthetics",
-    "text": "Three variables -> three aesthetics\n\nggplot(data = waste_data_untidy,\n       mapping = aes(x = objid, \n                     y = total, \n                     fill = location)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_untidy,\n       mapping = aes(x = objid, \n                     y = total, \n                     fill = location)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#and-how-to-plot-this",
@@ -858,35 +1285,35 @@
     "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-1",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Three variables -> three aesthetics",
-    "text": "Three variables -> three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#how-to",
     "href": "slides/lec-04-tidy-data.html#how-to",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "How to",
-    "text": "How to\n\n\n\n\nwaste_data_untidy \n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+    "text": "How to\n\nwaste_data_untidy \n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#how-to-1",
     "href": "slides/lec-04-tidy-data.html#how-to-1",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "How to",
-    "text": "How to\n\nwaste_data_untidy |> \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+    "text": "How to\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#how-to-2",
     "href": "slides/lec-04-tidy-data.html#how-to-2",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "How to",
-    "text": "How to\n\nwaste_category_levels <- c(\"glass\", \"metal_alu\", \"paper\", \"pet\", \"other\")\n\nwaste_data_untidy |> \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") |> \n  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+    "text": "How to\n\nwaste_category_levels &lt;- c(\"glass\", \"metal_alu\", \"paper\", \"pet\", \"other\")\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") |&gt; \n  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-2",
     "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-2",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Three variables -> three aesthetics",
-    "text": "Three variables -> three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#live-05a-tidyr-pivoting",
@@ -917,81 +1344,11 @@
     "text": "References\n\n\n\nhttps://cven5873-ss23.github.io/website/\n\n\n\nBen Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. “Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.” Zenodo. https://doi.org/10.5281/ZENODO.7331119."
   },
   {
-    "objectID": "slides/lec-03-transformation.html#think-pair-share",
-    "href": "slides/lec-03-transformation.html#think-pair-share",
-    "title": "Data Transformation with dplyr",
-    "section": "Think, Pair, Share",
-    "text": "Think, Pair, Share\n\n\n\n\n\n\nQuestions\n\n\n\nWhy should you not leave a blank cell in a spreadsheet used for data collection?\nWhich of the 12 rules for data organization was the least comprehensible to you?\n\n\n\n\n\nThink for 2 minutes\nPair with in break-out rooms for 4 minutes\nShare your answer with the class\n\n\n\n\n−+\n02:00"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
-    "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
-    "title": "Data Transformation with dplyr",
-    "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
-    "href": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
-    "title": "Data Transformation with dplyr",
-    "section": "A grammar of data wrangling…",
-    "text": "A grammar of data wrangling…\n… based on the concepts of functions as verbs that manipulate data frames\n\n\n\n\n\n\n\n\n\nselect: pick columns by name\narrange: reorder rows\nslice: chooses rows based on location\nfilter: pick rows matching criteria\nrelocate: changes the order of the columns\nmutate: add new variables\nsummarise: reduce variables to values\ngroup_by: for grouped operations\n… (many more)\n\n\n\n\n\nSlide taken from Data Science in a Box"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#dplyr-rules",
-    "href": "slides/lec-03-transformation.html#dplyr-rules",
-    "title": "Data Transformation with dplyr",
-    "section": "dplyr rules",
-    "text": "dplyr rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#live-04a-data-transformation",
-    "href": "slides/lec-03-transformation.html#live-04a-data-transformation",
-    "title": "Data Transformation with dplyr",
-    "section": "live-04a-data-transformation",
-    "text": "live-04a-data-transformation\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen your “course-materials” project\nFollow along with me"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#break",
-    "href": "slides/lec-03-transformation.html#break",
-    "title": "Data Transformation with dplyr",
-    "section": "Break",
-    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#pair-programming-exercises",
-    "href": "slides/lec-03-transformation.html#pair-programming-exercises",
-    "title": "Data Transformation with dplyr",
-    "section": "Pair Programming Exercises",
-    "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#hw-04a-data-visualiation",
-    "href": "slides/lec-03-transformation.html#hw-04a-data-visualiation",
-    "title": "Data Transformation with dplyr",
-    "section": "hw-04a-data-visualiation",
-    "text": "hw-04a-data-visualiation\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen your “course-materials” project\nFollow along with me"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#homework-due-dates",
-    "href": "slides/lec-03-transformation.html#homework-due-dates",
-    "title": "Data Transformation with dplyr",
-    "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, 30th June"
-  },
-  {
-    "objectID": "slides/lec-03-transformation.html#section",
-    "href": "slides/lec-03-transformation.html#section",
-    "title": "Data Transformation with dplyr",
-    "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
-  },
-  {
     "objectID": "slides/lec-05-communicate.html#we",
     "href": "slides/lec-05-communicate.html#we",
     "title": "Joining data & communicating results with Quarto",
     "section": "We…",
-    "text": "We…\n…have multiple data frames\n…want to bring them together\n\n\n\n\nprofessions <- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates <- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks <- read_csv(here::here(\"scientists/works.csv\"))"
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
   },
   {
     "objectID": "slides/lec-05-communicate.html#data-women-in-science",
@@ -1033,63 +1390,63 @@
     "href": "slides/lec-05-communicate.html#setup",
     "title": "Joining data & communicating results with Quarto",
     "section": "Setup",
-    "text": "Setup\nFor the next few slides…\n\n\n\nx <- tibble(\n  id = c(1, 2, 3),\n  value_x = c(\"x1\", \"x2\", \"x3\")\n  )\n\n\nx\n\n# A tibble: 3 × 2\n     id value_x\n  <dbl> <chr>  \n1     1 x1     \n2     2 x2     \n3     3 x3     \n\n\n\n\n\n\ny <- tibble(\n  id = c(1, 2, 4),\n  value_y = c(\"y1\", \"y2\", \"y4\")\n  )\n\n\ny\n\n# A tibble: 3 × 2\n     id value_y\n  <dbl> <chr>  \n1     1 y1     \n2     2 y2     \n3     4 y4"
+    "text": "Setup\nFor the next few slides…\n\n\n\nx &lt;- tibble(\n  id = c(1, 2, 3),\n  value_x = c(\"x1\", \"x2\", \"x3\")\n  )\n\n\nx\n\n# A tibble: 3 × 2\n     id value_x\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 x1     \n2     2 x2     \n3     3 x3     \n\n\n\n\n\n\ny &lt;- tibble(\n  id = c(1, 2, 4),\n  value_y = c(\"y1\", \"y2\", \"y4\")\n  )\n\n\ny\n\n# A tibble: 3 × 2\n     id value_y\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 y1     \n2     2 y2     \n3     4 y4"
   },
   {
     "objectID": "slides/lec-05-communicate.html#left_join",
     "href": "slides/lec-05-communicate.html#left_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "left_join()",
-    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  <dbl> <chr>   <chr>  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      <NA>"
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
   },
   {
     "objectID": "slides/lec-05-communicate.html#left_join-1",
     "href": "slides/lec-05-communicate.html#left_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "left_join()",
-    "text": "left_join()\n\nprofessions %>%\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
   },
   {
     "objectID": "slides/lec-05-communicate.html#right_join",
     "href": "slides/lec-05-communicate.html#right_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "right_join()",
-    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  <dbl> <chr>   <chr>  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 <NA>    y4"
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-05-communicate.html#right_join-1",
     "href": "slides/lec-05-communicate.html#right_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "right_join()",
-    "text": "right_join()\n\nprofessions %>%\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
   },
   {
     "objectID": "slides/lec-05-communicate.html#full_join",
     "href": "slides/lec-05-communicate.html#full_join",
     "title": "Joining data & communicating results with Quarto",
     "section": "full_join()",
-    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  <dbl> <chr>   <chr>  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      <NA>   \n4     4 <NA>    y4"
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-05-communicate.html#full_join-1",
     "href": "slides/lec-05-communicate.html#full_join-1",
     "title": "Joining data & communicating results with Quarto",
     "section": "full_join()",
-    "text": "full_join()\n\ndates %>%\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
+    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
   },
   {
     "objectID": "slides/lec-05-communicate.html#putting-it-altogether",
     "href": "slides/lec-05-communicate.html#putting-it-altogether",
     "title": "Joining data & communicating results with Quarto",
     "section": "Putting it altogether",
-    "text": "Putting it altogether\n\nprofessions %>%\n  left_join(dates) %>%\n  left_join(works) |> \n  kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) |&gt; \n  kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
   },
   {
     "objectID": "slides/lec-05-communicate.html#why-quarto---open-science",
     "href": "slides/lec-05-communicate.html#why-quarto---open-science",
     "title": "Joining data & communicating results with Quarto",
     "section": "Why Quarto? -> Open Science",
-    "text": "Why Quarto? -> Open Science"
+    "text": "Why Quarto? -&gt; Open Science"
   },
   {
     "objectID": "slides/lec-05-communicate.html#section-7",
@@ -1110,14 +1467,14 @@
     "href": "slides/lec-05-communicate.html#what-is-a-.qmd",
     "title": "Joining data & communicating results with Quarto",
     "section": "What is a .qmd?",
-    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |> \n  dplyr::group_by(cyl) |> \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  >> group_by(_.cyl)\n  >> summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
   },
   {
     "objectID": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
     "href": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
     "title": "Joining data & communicating results with Quarto",
     "section": "Quarto makes moving between formats straightforward",
-    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–> a lesson in document form  –> the same content in presentation form  –> the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
   },
   {
     "objectID": "slides/lec-05-communicate.html#comfort-of-your-own-workspace",
@@ -1145,7 +1502,7 @@
     "href": "slides/lec-05-communicate.html#cross-references",
     "title": "Joining data & communicating results with Quarto",
     "section": "Cross-references",
-    "text": "Cross-references\n\nno space between {r} and #| tbl-cap: \"A table\"\nspelling tbl not tab\nno spaces (use dashes in label)\n\nSee Table 1…\n\n```{r}\n#| tbl-cap: \"A table\"\n#| label: tbl-simple-table\n\ntibble(\n  id = c(1, 2, 3),\n  name = c(\"X\", \"Y\", \"Z\")\n) %>% \n  knitr::kable()\n```\n\n\n\nTable 1: A table\n\n\nid\nname\n\n\n\n\n1\nX\n\n\n2\nY\n\n\n3\nZ"
+    "text": "Cross-references\n\nno space between {r} and #| tbl-cap: \"A table\"\nspelling tbl not tab\nno spaces (use dashes in label)\n\nSee Table 1…\n\n```{r}\n#| tbl-cap: \"A table\"\n#| label: tbl-simple-table\n\ntibble(\n  id = c(1, 2, 3),\n  name = c(\"X\", \"Y\", \"Z\")\n) %&gt;% \n  knitr::kable()\n```\n\n\n\nTable 1: A table\n\n\nid\nname\n\n\n\n\n1\nX\n\n\n2\nY\n\n\n3\nZ"
   },
   {
     "objectID": "slides/lec-05-communicate.html#homework-due-dates",
@@ -1169,55 +1526,6 @@
     "text": "A large proportion of these slides are taken from Mine Çetinkaya Rundel’s “Hello Quarto” presentation & Thomas Mock’s “Quarto for the Curious” presentation\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
-    "objectID": "project/index.html",
-    "href": "project/index.html",
-    "title": "Capstone Project",
-    "section": "",
-    "text": "The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see Course Overview). The final two weeks are reserved for working on the report."
-  },
-  {
-    "objectID": "project/index.html#fa-bullseye-learning-objectives",
-    "href": "project/index.html#fa-bullseye-learning-objectives",
-    "title": "Capstone Project",
-    "section": " Learning Objectives",
-    "text": "Learning Objectives\n\n\n\n\nLearners can apply the skills obtained during the course to write a short data analysis project report."
-  },
-  {
-    "objectID": "project/index.html#fa-code-github-repository",
-    "href": "project/index.html#fa-code-github-repository",
-    "title": "Capstone Project",
-    "section": " GitHub repository",
-    "text": "GitHub repository\nA repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.\nThe repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report."
-  },
-  {
-    "objectID": "project/index.html#fa-pen-clip-github-issue-tracker",
-    "href": "project/index.html#fa-pen-clip-github-issue-tracker",
-    "title": "Capstone Project",
-    "section": " GitHub issue tracker",
-    "text": "GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report."
-  },
-  {
-    "objectID": "project/index.html#fa-calendar-check-submission-due-date",
-    "href": "project/index.html#fa-calendar-check-submission-due-date",
-    "title": "Capstone Project",
-    "section": " Submission due date",
-    "text": "Submission due date\nThe due date for submission of the report is Friday, 28th July. Any commits after the due date will not be counted against the graded items."
-  },
-  {
-    "objectID": "project/index.html#fa-list-check-graded-items",
-    "href": "project/index.html#fa-list-check-graded-items",
-    "title": "Capstone Project",
-    "section": " Graded items",
-    "text": "Graded items\nTable 1 is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in Table 2.\n\n\n\n\nTable 1: List of items and points for grading of the capstone project report.\n\n\n\n\n\n\n\ncategory\nitems\npoints\n\n\n\n\ntechnical\nThe report renders without errors to HTML format and contains at least four chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions.\n10\n\n\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n8\n\n\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n2\n\n\ntechnical\nThe report has at least two data visualisations.\n20\n\n\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n4\n\n\ntechnical\nEach data visualisation applies at least of once scaling function (e.g. color/fill, axes).\n4\n\n\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has an alternative text that describes what type of visualisation it is and trends or learnings from the visualisation.\n4\n\n\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n4\n\n\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.)\n8\n\n\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function)\n2\n\n\ntechnical\nEach table has a label defined in the code-chunk options.\n2\n\n\ntechnical\nEach table has a caption defined in the code-chunk options.\n2\n\n\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n2\n\n\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n5\n\n\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n5\n\n\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n5\n\n\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n5\n\n\n\n\n\n\n\n\n\n\nTable 2: Sum of points for technical and intellectual part of report.\n\n\n\n\n\n\n\ncategory\ndescription\npoints\n\n\n\n\nintellectual\nThis item is part of the intellectual framing of the capstone project report.\n20\n\n\ntechnical\nThis item is a technical part of the capstone project report.\n80"
-  },
-  {
-    "objectID": "project/index.html#fa-terminal-get-started",
-    "href": "project/index.html#fa-terminal-get-started",
-    "title": "Capstone Project",
-    "section": " Get started",
-    "text": "Get started\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the capstone-project repository with your username capstone-project-GITHUB-USERNAME\nOpen your capstone-project repository\nClick on the green button titled “Code” (see screenshot below)\nClick on the link in the pop-up window to your clipboard (see screenshot below)\n\n\n\nOpen the Posit Cloud workspace for the course: (cven5837-ss23)\nOpen the Content page\nClick on New Project -> New Project from Git Repository\nPaste the link to your capstone-project repository from your clipboard\nKeep the tick next to Add packages from the base project\nClick the OK button\nRespond to the Questions & Answer for the Capstone Project report issue on the GitHub issue tracker of the repository and tag the course instructor with using the @ sign in combination with larnsce as the username"
-  },
-  {
     "objectID": "modules/wk-03.html",
     "href": "modules/wk-03.html",
     "title": "Week 3",
@@ -1225,130 +1533,81 @@
     "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nNA"
   },
   {
-    "objectID": "modules/wk-03.html#fa-display-slides",
-    "href": "modules/wk-03.html#fa-display-slides",
+    "objectID": "modules/wk-03.html#learning-objectives",
+    "href": "modules/wk-03.html#learning-objectives",
+    "title": "Week 3",
+    "section": "",
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nNA"
+  },
+  {
+    "objectID": "modules/wk-03.html#slides",
+    "href": "modules/wk-03.html#slides",
     "title": "Week 3",
     "section": " Slides",
     "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
-    "objectID": "modules/wk-03.html#fa-book-readings",
-    "href": "modules/wk-03.html#fa-book-readings",
+    "objectID": "modules/wk-03.html#readings",
+    "href": "modules/wk-03.html#readings",
     "title": "Week 3",
     "section": " Readings",
     "text": "Readings\n\nRead R for Data Science - Section 3 to 3.6 - Data visualisation\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics\nRead Data Organization in Spreadsheets"
   },
   {
-    "objectID": "modules/wk-03.html#fa-code-homework-assignment",
-    "href": "modules/wk-03.html#fa-code-homework-assignment",
+    "objectID": "modules/wk-03.html#homework-assignment",
+    "href": "modules/wk-03.html#homework-assignment",
     "title": "Week 3",
     "section": " Homework assignment",
     "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 3 on Posit Cloud\n\nhw-03a-data-visualisation.qmd\nhw-03b-project-data.qmd"
   },
   {
-    "objectID": "modules/wk-03.html#fa-pen-clip-learning-reflection",
-    "href": "modules/wk-03.html#fa-pen-clip-learning-reflection",
+    "objectID": "modules/wk-03.html#learning-reflection",
+    "href": "modules/wk-03.html#learning-reflection",
     "title": "Week 3",
     "section": " Learning reflection",
     "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 3 on Posit Cloud\n\nlearning-03.qmd"
-  },
-  {
-    "objectID": "modules/wk-02.html",
-    "href": "modules/wk-02.html",
-    "title": "Week 2",
-    "section": "",
-    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\nNA"
-  },
-  {
-    "objectID": "modules/wk-02.html#fa-display-slides",
-    "href": "modules/wk-02.html#fa-display-slides",
-    "title": "Week 2",
-    "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
-  },
-  {
-    "objectID": "modules/wk-02.html#fa-book-readings",
-    "href": "modules/wk-02.html#fa-book-readings",
-    "title": "Week 2",
-    "section": " Readings",
-    "text": "Readings\nRead R for Data Science - Section 1 - Introduction through Section 1.3.4\nRead R for Data Science - Section 2 - Introduction\nRead R for Data Science - Section 4 - Workflow basics"
-  },
-  {
-    "objectID": "modules/wk-02.html#fa-code-homework-assignment",
-    "href": "modules/wk-02.html#fa-code-homework-assignment",
-    "title": "Week 2",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 2 by Friday 16th June on Posit Cloud\n\nhw-02-data-science-lifecycle.qmd"
-  },
-  {
-    "objectID": "modules/wk-02.html#fa-pen-clip-learning-reflection",
-    "href": "modules/wk-02.html#fa-pen-clip-learning-reflection",
-    "title": "Week 2",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 2 on Posit Cloud\n\nlearning-02.qmd"
   },
   {
     "objectID": "modules/md-01.html",
     "href": "modules/md-01.html",
     "title": "Week 1",
     "section": "",
-    "text": "This first week will be used to get you set up for the course. Work through the homework assignments one after the other."
+    "text": "This first week will be used to get you set up for the course."
   },
   {
     "objectID": "modules/md-01.html#learning-objectives",
     "href": "modules/md-01.html#learning-objectives",
     "title": "Week 1",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\n\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor."
+    "text": "Learning Objectives\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor."
+  },
+  {
+    "objectID": "modules/md-01.html#slides",
+    "href": "modules/md-01.html#slides",
+    "title": "Week 1",
+    "section": " Slides",
+    "text": "Slides\n\nIn preparation"
   },
   {
     "objectID": "modules/md-01.html#readings",
     "href": "modules/md-01.html#readings",
     "title": "Week 1",
-    "section": "Readings",
-    "text": "Readings\n📖 Read the Course Overview.\n📖 Read Wilson et al. (2017) “Good enough practices in scientific computing”.\n\nGet an account for GitHub\nTo set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nUsername advice from: Happy Git and GitHub for the useR\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\n\nLog into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link:\n\n\n\nSet up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).\n\n\nOpen an issue on GitHub\n\nOpen the issue tracker on the website repository: https://github.com/ds4owd-001/website/issues.\nClick on “New issue” button.\nIn the “Title” field\n\nwrite: “Homework assignments for week 1 completed”.\n\nIn the “Leave a comment” field,\n\ntag the course instructor with using the @ sign in combination with larnsce as the username,\npost your question that you prepared after reading the Course Overview,\nadd anything that you would like to add."
+    "section": " Readings",
+    "text": "Readings\n\nRead the Course Overview.\nRead Wilson et al. (2017) “Good enough practices in scientific computing”."
+  },
+  {
+    "objectID": "modules/md-01.html#assignments",
+    "href": "modules/md-01.html#assignments",
+    "title": "Week 1",
+    "section": " Assignments",
+    "text": "Assignments\nWe will work through these assignments live during our first class. If you missed the class, you could still join be working through the following assignments indepedently.\n\nLog into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\nThe link will be shared during the class on 31st October 2023. If you missed the class, get in touch with us via Email and we will share it with you.\n\n\nSet up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).\n\n\nOpen an issue on GitHub\n\nOpen the issue tracker on the website repository: https://github.com/ds4owd-001/website/issues.\nClick on “New issue” button.\nIn the “Title” field\n\nwrite: “Create a first issue on GitHub”.\n\nIn the “Leave a comment” field,\n\ntag the course instructors with using the @ sign in combination with larnsce and mianzg as the username,\nadd anything that you would like to add.\n\n\n\n\nJoin our Chat on Element\nWe will work through these steps, but you can also find a detailed description on how to join our chat here: https://openwashdata.org/pages/community/chat/\n If we can support you to setup the chat, get in touch with us via Email and we will schedule a call for a walk through."
   },
   {
     "objectID": "modules/md-01.html#thanks",
     "href": "modules/md-01.html#thanks",
     "title": "Week 1",
-    "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nThank you for working through these assignments. I am looking forward to meeting you next week."
-  },
-  {
-    "objectID": "modules/wk-06.html",
-    "href": "modules/wk-06.html",
-    "title": "Week 6",
-    "section": "",
-    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R.\nNA"
-  },
-  {
-    "objectID": "modules/wk-06.html#fa-display-slides",
-    "href": "modules/wk-06.html#fa-display-slides",
-    "title": "Week 6",
-    "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
-  },
-  {
-    "objectID": "modules/wk-06.html#fa-book-readings",
-    "href": "modules/wk-06.html#fa-book-readings",
-    "title": "Week 6",
-    "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 13 - Relational data"
-  },
-  {
-    "objectID": "modules/wk-06.html#fa-code-homework-assignment",
-    "href": "modules/wk-06.html#fa-code-homework-assignment",
-    "title": "Week 6",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nClone your Capstone Project repository to the workspace for the course on Posit Cloud:\n\nFollow the Instructions\n\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd"
-  },
-  {
-    "objectID": "modules/wk-06.html#fa-pen-clip-learning-reflection",
-    "href": "modules/wk-06.html#fa-pen-clip-learning-reflection",
-    "title": "Week 6",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 6 on Posit Cloud\n\nlearning-06.qmd"
+    "section": "Thanks!",
+    "text": "Thanks!\nThank you for working through these assignments."
   },
   {
     "objectID": "modules/wk-00-template.html#slides",
@@ -1379,34 +1638,6 @@
     "text": "Learning reflection"
   },
   {
-    "objectID": "modules/wk-07.html#slides",
-    "href": "modules/wk-07.html#slides",
-    "title": "Week 7",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "modules/wk-07.html#readings",
-    "href": "modules/wk-07.html#readings",
-    "title": "Week 7",
-    "section": "Readings",
-    "text": "Readings"
-  },
-  {
-    "objectID": "modules/wk-07.html#homework-assignment",
-    "href": "modules/wk-07.html#homework-assignment",
-    "title": "Week 7",
-    "section": "Homework assignment",
-    "text": "Homework assignment"
-  },
-  {
-    "objectID": "modules/wk-07.html#learning-reflection",
-    "href": "modules/wk-07.html#learning-reflection",
-    "title": "Week 7",
-    "section": "Learning reflection",
-    "text": "Learning reflection"
-  },
-  {
     "objectID": "modules/wk-05.html",
     "href": "modules/wk-05.html",
     "title": "Week 5",
@@ -1414,67 +1645,39 @@
     "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats.\nNA"
   },
   {
-    "objectID": "modules/wk-05.html#fa-display-slides",
-    "href": "modules/wk-05.html#fa-display-slides",
+    "objectID": "modules/wk-05.html#learning-objectives",
+    "href": "modules/wk-05.html#learning-objectives",
+    "title": "Week 5",
+    "section": "",
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats.\nNA"
+  },
+  {
+    "objectID": "modules/wk-05.html#slides",
+    "href": "modules/wk-05.html#slides",
     "title": "Week 5",
     "section": " Slides",
     "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
-    "objectID": "modules/wk-05.html#fa-book-readings",
-    "href": "modules/wk-05.html#fa-book-readings",
+    "objectID": "modules/wk-05.html#readings",
+    "href": "modules/wk-05.html#readings",
     "title": "Week 5",
     "section": " Readings",
     "text": "Readings\n\nRead R for Data Science - Section 12 - Tidy data\n\nRead R for Data Science - Section 15 - Factors"
   },
   {
-    "objectID": "modules/wk-05.html#fa-code-homework-assignment",
-    "href": "modules/wk-05.html#fa-code-homework-assignment",
+    "objectID": "modules/wk-05.html#homework-assignment",
+    "href": "modules/wk-05.html#homework-assignment",
     "title": "Week 5",
     "section": " Homework assignment",
     "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 7th July\nComplete the homework programming assignments that are in your project folder for week 5 on Posit Cloud:\n\nhw-05a-tidyr.qmd"
   },
   {
-    "objectID": "modules/wk-05.html#fa-pen-clip-learning-reflection",
-    "href": "modules/wk-05.html#fa-pen-clip-learning-reflection",
+    "objectID": "modules/wk-05.html#learning-reflection",
+    "href": "modules/wk-05.html#learning-reflection",
     "title": "Week 5",
     "section": " Learning reflection",
     "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 5 on Posit Cloud\n\nlearning-05.qmd"
-  },
-  {
-    "objectID": "modules/wk-04.html",
-    "href": "modules/wk-04.html",
-    "title": "Week 4",
-    "section": "",
-    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
-  },
-  {
-    "objectID": "modules/wk-04.html#fa-display-slides",
-    "href": "modules/wk-04.html#fa-display-slides",
-    "title": "Week 4",
-    "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
-  },
-  {
-    "objectID": "modules/wk-04.html#fa-book-readings",
-    "href": "modules/wk-04.html#fa-book-readings",
-    "title": "Week 4",
-    "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\n\nRead Excuse Me, Do You Have a Moment to Talk About Version Control?"
-  },
-  {
-    "objectID": "modules/wk-04.html#fa-code-homework-assignment",
-    "href": "modules/wk-04.html#fa-code-homework-assignment",
-    "title": "Week 4",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 30th June\nComplete the homework programming assignments that are in your project folder for week 4 on Posit Cloud\n\nhw-04a-data-transformation.qmd"
-  },
-  {
-    "objectID": "modules/wk-04.html#fa-pen-clip-learning-reflection",
-    "href": "modules/wk-04.html#fa-pen-clip-learning-reflection",
-    "title": "Week 4",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 4 on Posit Cloud\n\nlearning-04.qmd"
   },
   {
     "objectID": "modules/wk-08.html#slides",
@@ -1503,12 +1706,5 @@
     "title": "Week 8",
     "section": "Learning reflection",
     "text": "Learning reflection"
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Register for an account on GitHub and share your GitHub user name [here]\nRegister for an account on RStudio Cloud\nJoin the RStudio Cloud workspace for the course\nRead the course syllabus\n\n\n\n\n\n\n\n\nGitHub Account\nRStudio Cloud Account\nBrowser: Firefox, Chrome, Opera, Edge, (not Internet Explorer)\n\n\n\n\n\nGood data entry practices - formatting data tables in spreadsheets\nHow to avoid common formatting mistakes\nApproaches for handling dates in spreadsheets\nBasic quality control in spreadsheets\nHow to combine text and code output in one document\nMost helpful keyboard shortcuts\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/column-names.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/rmarkdown.png\"))\n\n\n\n\n\n\n\n\nCourse overview\n(Research) data collection methods\n\nQualitative\nQuantitaive\n\nData collection tools\n\nsurveys\ninterviews\nfocus group discussions\nobservations\nsensors\nimages\n\nData organization in spreadsheets\nRStudio IDE\nData communication\n\nmarkdown\nR markdown document format\n\nYAML\nCode chunks\nKnit\n\n\n\n\n\n\n\nR4DS https://r4ds.had.co.nz/explore-intro.html\nData Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989\n\n\n\n\nAssignment 1\n\nImport [this] dataset into your R Markdown document\nExplore the data using [these] functions\n\nHow many rows does the dataset have?\nHow many variables does that dataset have?\nWhat do the values “character”, “double”, “dttm”, “factor” stand for?\n\nStart a Google Form and design a questionnaire with 10 questions, include at least two question of each of the following types:\n\nAssignment 2\n\nConnect your GitHub account with the RStudio Cloud\nOpen the GitHub Organization for this course\nFind the GitHub Repository that is assigned to your GitHub user name\nStart a new project in the RStudio Cloud Workspace for the course\n\n\n\n\n\n\n\nData Carpentry Course: Data Organization in Spreadsheets for Ecologists\n\nhttps://datacarpentry.org/spreadsheet-ecology-lesson/\n\nExercise: Vectors and data types\n\nhttps://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Vectors_and_data_types\n\nReading: https://datacarpentry.org/spreadsheets-socialsci/02-common-mistakes/index.html\n\n\n\n\n\nSAFI (Studying African Farmer-Led Irrigation) Survey Results\n\nhttps://figshare.com/articles/dataset/SAFI_Survey_Results/6262019\nhttps://datacarpentry.org/socialsci-workshop/data/\n\nR Package, washdata: Urban Water and Sanitation Survey Dataset\n\nhttps://katilingban.io/washdata/\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalling packages\nSeeking help\nBasic data structures (focusing on vectors and dataframes)\nData import and export\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/data-types.png\"))\n\n\n\n\n\n\n\n\nData storage\n\nCSV\n\nlocal\nweb\n\nGoogle Sheets\nDatabase (SQL?)\n\nR functions\n\nbase\n\ninstall.packages()\nlibrary()\nstr()\nsummrary()\n\nData import\n\nread_csv()\nread_delim()\nread_sheet()\n\nData exploration\n\nglimpse()\n\n\nData types\n\ncharacter\nnumeric\ndate/time\nlogical\n\nVectors and dataframes\nData\n\nHelp files / Documentation using ?\n\n\n\n\n\n\n\n\nAssignment 1\n\nSelect two of the 5 following journal articles, and import the data contained in supplementary information into an R Markdown Script\nUse function to explore the variables of the data\nDiscuss the choice of variable names and identify rate each variable name with good or bad choice\nWrite a data dictionary\nInstall the “skim” Package and use the skimr() function. Compare the output with the output of the summary() function\nIdentify for each dataset which variables are:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConcept Map\n\nknitr::include_graphics(here::here(\"img/visualization.png\"))\n\n\n\n\n\n\n\n\nggplot2 concept of aesthetic mappings\n\nx, y\ncolour\nshape\nsize\nalpha\n\nR functions of ggplot2 Package\n\ngeom_point()\ngeom_jitter()\ngeom_boxplot()\ngeom_bar()\nfacet_wrap()\nlabs()\nscale_* family of functions (example using colour)\nthemes and customization\nggsave()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSubsetting - using dplyr Syntax\nData type conversions\nHandling missing data\nDate formatting\nData reshaping with pivot_wider and pivot_longer()\n\nQuestions\n\nHow can I select specific rows and/or columns from a dataframe?\nHow can I combine multiple commands into a single command?\nHow can I create new columns or remove existing columns from a dataframe?\nHow can I reformat a dataframe to meet my needs?\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/dplyr.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/filter.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/select.png\"))\n\n\n\n\n\nknitr::include_graphics(here::here(\"img/group_by-summarize.png\"))\n\n\n\n\n\n\n\n\nR Functions\n\nselect()\narrange()\nmutate()\nfilter()\ngroup_by()\nsummarize()\n\nn()\nsum()\nmean()\nmedian()\nsd()\nmin()\nmax()\n\n\nMissing data\n\nna_drop()\nis.na()\n!is.na()\n\nBooleans\n\n& (and)\n(or)\n! (not)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndplyr slides: https://docs.google.com/presentation/d/1A9abypFdFp8urAe9z7GCMjFr4aPeIb8mZAtJA2F7H0w/edit#slide=id.g652714585f_0_114\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
   }
 ]

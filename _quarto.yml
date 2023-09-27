@@ -5,17 +5,29 @@ project:
 website:
   page-navigation: true
   title: "data science for openwashdata"
-  description: "Homepage for the course 001"
+  description: "Website for data science for openwashdata course 001"
   site-url: "https://ds4owd-001.github.io/website/"
-  
-  page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2023, Lars Schöbitz"
-    background: "#D9E3E4"
+  search: false
+  page-footer: 
+    left: | 
+        This courseproject was supported by the 
+        [Open Research Data Program of the ETH Board](https://ethrat.ch/en/eth-domain/open-research-data/)
+    right:
+      - text: Code of Conduct
+        href: code_of_conduct.qmd
+      - icon: "envelope-at"
+        href: "mailto:ghe@mavt.ethz.ch?subject=ds4owd support"
+        aria-label: Email
+      - icon: github
+        href: https://github.com/ds4owd-001
+        aria-label: GitHub
+      - icon: chat-left-dots
+        href: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch
+        aria-label: Matrix
   
   sidebar:
-    background: "#D9E3E4"
-    logo: "img/logo.png"
+    background: "#C8CDF3"
+    logo: "img/ghe-square-logo-vector.svg"
     pinned: true
     align: center
     style: "docked"
@@ -30,6 +42,9 @@ website:
         text: "Posit Cloud"
     contents: 
       - href: index.qmd
+        text: Sign-up here
+      - text: "---"
+      - href: overview.qmd
         text: Course Overview
       - text: "---"
       - href: modules/md-01.qmd
@@ -37,11 +52,21 @@ website:
         
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [litera, theme.scss]
+    highlight-style: a11y-dark
     css: styles.css
     code-copy: true
     code-overflow: wrap
     toc: true
+    mainfont: "Atkinson Hyperlegible"
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+    include-in-header: 
+        - text: |
+            <script defer data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 execute: 
   freeze: auto

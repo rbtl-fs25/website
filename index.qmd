@@ -1,76 +1,71 @@
 ---
-title: "Course Overview"
+title: "Sign-up for data science for openwashdata course 001"
 editor: source
 execute: 
   echo: false
   warning: false
 ---
 
-# data science for openwashdata course 001 
+Thank you for your interest in this course. Your course instructors: [Lars Schöbitz](https://openwashdata.org/about/lars/) & [Mian Zhong](https://openwashdata.org/about/mian/) are looking forward to meet you. 
 
-Instructor: [Lars Schöbitz](https://openwashdata.org/about/lars/)
+We will meet on Zoom for 10 modules over 15 weeks at the following times: 
 
-- Start: 2023-10-31
-- End: 2024-02-06
+- **Start:** 31st October 2023 - 2 pm to 4:30 pm CET 
+- **End:** 6th February 2024 - 2 pm to 4:30 pm CET
 
-# Course Information
+More details can be found one the [Course Overview](overview.html) page.
 
-This course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.
+## {{< fa circle-question >}} How do I sign up? 
 
-Topics include:
+To sign up for the course, you need to complete the following three steps:
 
--   The data science life-cycle
--   Data organization in spreadsheets
--   Exploratory data analysis using visualization
--   Using AI for software development in R 
--   Concept of tidy data and data tidying
--   Data transformation and descriptive statistics
--   Data communication using the Quarto open-source scientific and technical publishing system
+- Step 1: Get an account on GitHub
+- Step 2: Register for an ORCID iD
+- Step 3: Fill out our registration form
 
-# Learning Goals
+### Step 1: Get an account on GitHub
 
-1. Be able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.
+To set up an account on GitHub, follow these general steps:
 
-2. Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.
+1.  Go to the GitHub website at <https://github.com/>.
+2.  Click on the "Sign up" button on the top right corner of the page.
+3.  Enter your preferred username, email address, and password in the provided fields.
+4.  Choose whether you want to receive updates and announcements via email.
+5.  Complete the verification process by solving a puzzle and entering a verification code sent to your email.
 
-# Textbooks and Materials
+::: {.callout-tip collapse="true"}
+## Username advice from: [Happy Git and GitHub for the useR](https://happygitwithr.com/github-acct.html#github-acct)
 
-We will rely entirely on open source and open access material for this course. We will use "R for Data Science" by Hadley Wickham, and "Tidyverse Skills for Data Science" by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website. 
+You will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don't fret about any of that now. **Except your username. You might want to give that some thought.**
 
-# Course Calendar
+A few tips, which sadly tend to contradict each other:
 
-```{r}
-readr::read_csv("data/tbl-01-ds4owd-001-course-schedule.csv") |> 
-  dplyr::select(date, week, topic = title, module) |> 
-  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
-  knitr::kable()
-  
-```
+-   Incorporate your actual name! People like to know who they're dealing with. Also makes your username easier for people to guess or remember.
+-   Reuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.
+-   Pick a username you will be comfortable revealing to your future boss.
+-   Shorter is better than longer.
+-   Be as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.
+-   Make it timeless. Don't highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.
+-   Avoid words laden with special meaning in programming.
+-   Avoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen `-`.
 
-# Weekly Structure
+You can change your username later, but better to get this right the first time.
 
-|          |                                           |
-|----------|-------------------------------------------|
-| **Monday**   |                |
-| **Tuesday**  |  Module from 2 pm to 4:30 pm CET                              |
-| **Wednesday** | |
-| **Thursday** | Office hours on Zoom (10 am to 12 pm CET) |
-| **Friday**   |              |
+-   <https://help.github.com/articles/changing-your-github-username/>
+-   <https://help.github.com/articles/what-happens-when-i-change-my-username/>
+:::
 
-# Assignments
+### Step 2: Register for an ORCID iD
 
-**Homework assignments**: Each week will have at least one homework assignment. All assignments, but those for Week 1 are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub.
+1. Create your ORCID iD at: <https://orcid.org/register>
 
-**Readings**: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class.
+[Learn more about ORCID and why you should get one](https://the-turing-way.netlify.app/communication/citable/citable-orcid.html?highlight=orcid), even if your are not a researcher or working in academia.
 
-**Capstone Project**: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions for the capstone project will be provided. The project will be delivered as Quarto documents and students are asked to submit their work through GitHub.
+### Step 3: Fill out our registration form
 
-# Attendance 
+- Fill out this form: <https://forms.gle/JvPfVubntbaDrNZQ8>
 
-We hope you can participate in all classes. Class participation is an important component for successful completion of this course.
+## Thanks 
 
-# Code of Conduct 
-
-
-
+Thank you. You will hear from us with more details about a week before the start of the course.
 

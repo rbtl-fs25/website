@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.4.217">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data science for openwashdata - Course Overview</title>
+<title>data science for openwashdata - Sign-up for data science for openwashdata course 001</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -25,10 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -38,13 +34,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,9 +46,11 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
+<script defer="" data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -66,11 +60,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Course Overview</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Sign-up here</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -78,52 +77,60 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./img/ghe-square-logo-vector.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
-    <a href="https://github.com/ds4owd-001" title="GitHub organization" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="https://posit.cloud/" title="Posit Cloud" class="sidebar-tool px-1"><i class="bi bi-code-square"></i></a>
+    <a href="https://github.com/ds4owd-001" rel="" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
+    <a href="https://posit.cloud/" rel="" title="Posit Cloud" class="quarto-navigation-tool px-1" aria-label="Posit Cloud"><i class="bi bi-code-square"></i></a>
 </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Course Overview</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Sign-up here</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-01.html" class="sidebar-item-text sidebar-link">Module 1</a>
+  <a href="./overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Overview</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modules/md-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 1</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-science-for-openwashdata-course-001" id="toc-data-science-for-openwashdata-course-001" class="nav-link active" data-scroll-target="#data-science-for-openwashdata-course-001">data science for openwashdata course 001</a></li>
-  <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course Information</a></li>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning Goals</a></li>
-  <li><a href="#textbooks-and-materials" id="toc-textbooks-and-materials" class="nav-link" data-scroll-target="#textbooks-and-materials">Textbooks and Materials</a></li>
-  <li><a href="#course-calendar" id="toc-course-calendar" class="nav-link" data-scroll-target="#course-calendar">Course Calendar</a></li>
-  <li><a href="#weekly-structure" id="toc-weekly-structure" class="nav-link" data-scroll-target="#weekly-structure">Weekly Structure</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
-  <li><a href="#attendance" id="toc-attendance" class="nav-link" data-scroll-target="#attendance">Attendance</a></li>
-  <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
+  <li><a href="#how-do-i-sign-up" id="toc-how-do-i-sign-up" class="nav-link active" data-scroll-target="#how-do-i-sign-up"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> How do I sign up?</a>
+  <ul class="collapse">
+  <li><a href="#step-1-get-an-account-on-github" id="toc-step-1-get-an-account-on-github" class="nav-link" data-scroll-target="#step-1-get-an-account-on-github">Step 1: Get an account on GitHub</a></li>
+  <li><a href="#step-2-register-for-an-orcid-id" id="toc-step-2-register-for-an-orcid-id" class="nav-link" data-scroll-target="#step-2-register-for-an-orcid-id">Step 2: Register for an ORCID iD</a></li>
+  <li><a href="#step-3-fill-out-our-registration-form" id="toc-step-3-fill-out-our-registration-form" class="nav-link" data-scroll-target="#step-3-fill-out-our-registration-form">Step 3: Fill out our registration form</a></li>
+  </ul></li>
+  <li><a href="#thanks" id="toc-thanks" class="nav-link" data-scroll-target="#thanks">Thanks</a></li>
   </ul>
 </nav>
     </div>
@@ -132,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Course Overview</h1>
+<h1 class="title">Sign-up for data science for openwashdata course 001</h1>
 </div>
 
 
@@ -147,197 +154,81 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="data-science-for-openwashdata-course-001" class="level1">
-<h1>data science for openwashdata course 001</h1>
-<p>Instructor: <a href="https://openwashdata.org/about/lars/">Lars Schöbitz</a></p>
+<p>Thank you for your interest in this course. Your course instructors: <a href="https://openwashdata.org/about/lars/">Lars Schöbitz</a> &amp; <a href="https://openwashdata.org/about/mian/">Mian Zhong</a> are looking forward to meet you.</p>
+<p>We will meet on Zoom for 10 modules over 15 weeks at the following times:</p>
 <ul>
-<li>Start: 2023-10-31</li>
-<li>End: 2024-02-06</li>
+<li><strong>Start:</strong> 31st October 2023 - 2 pm to 4:30 pm CET</li>
+<li><strong>End:</strong> 6th February 2024 - 2 pm to 4:30 pm CET</li>
 </ul>
-</section>
-<section id="course-information" class="level1">
-<h1>Course Information</h1>
-<p>This course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.</p>
-<p>Topics include:</p>
+<p>More details can be found one the <a href="overview.html">Course Overview</a> page.</p>
+<section id="how-do-i-sign-up" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-sign-up"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> How do I sign up?</h2>
+<p>To sign up for the course, you need to complete the following three steps:</p>
 <ul>
-<li>The data science life-cycle</li>
-<li>Data organization in spreadsheets</li>
-<li>Exploratory data analysis using visualization</li>
-<li>Using AI for software development in R</li>
-<li>Concept of tidy data and data tidying</li>
-<li>Data transformation and descriptive statistics</li>
-<li>Data communication using the Quarto open-source scientific and technical publishing system</li>
+<li>Step 1: Get an account on GitHub</li>
+<li>Step 2: Register for an ORCID iD</li>
+<li>Step 3: Fill out our registration form</li>
 </ul>
-</section>
-<section id="learning-goals" class="level1">
-<h1>Learning Goals</h1>
+<section id="step-1-get-an-account-on-github" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-get-an-account-on-github">Step 1: Get an account on GitHub</h3>
+<p>To set up an account on GitHub, follow these general steps:</p>
 <ol type="1">
-<li><p>Be able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.</p></li>
-<li><p>Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.</p></li>
+<li>Go to the GitHub website at <a href="https://github.com/" class="uri">https://github.com/</a>.</li>
+<li>Click on the “Sign up” button on the top right corner of the page.</li>
+<li>Enter your preferred username, email address, and password in the provided fields.</li>
+<li>Choose whether you want to receive updates and announcements via email.</li>
+<li>Complete the verification process by solving a puzzle and entering a verification code sent to your email.</li>
 </ol>
-</section>
-<section id="textbooks-and-materials" class="level1">
-<h1>Textbooks and Materials</h1>
-<p>We will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.</p>
-</section>
-<section id="course-calendar" class="level1">
-<h1>Course Calendar</h1>
-<div class="cell">
-<div class="cell-output-display">
-<table class="table table-sm table-striped">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 4%">
-<col style="width: 70%">
-<col style="width: 9%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">date</th>
-<th style="text-align: right;">week</th>
-<th style="text-align: left;">topic</th>
-<th style="text-align: left;">module</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">31 October 2023</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">Welcome &amp; get ready for the course</td>
-<td style="text-align: left;">module 1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">07 November 2023</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">Data science Life-cycle</td>
-<td style="text-align: left;">module 2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">14 November 2023</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">Exploratory data analysis using visualization</td>
-<td style="text-align: left;">module 3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">21 November 2023</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">Data organization in spreadsheets</td>
-<td style="text-align: left;">module 4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">28 November 2023</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">Data transformation, descriptive statistics and gt</td>
-<td style="text-align: left;">module 5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">05 December 2023</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: left;">Concept of tidy data &amp; Vectors in R</td>
-<td style="text-align: left;">module 6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">12 December 2023</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">Joining data &amp; Functions</td>
-<td style="text-align: left;">module 7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">19 December 2023</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">Using AI for software development in R</td>
-<td style="text-align: left;">module 8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">26 December 2023</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: left;">Break</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">02 January 2024</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: left;">Break</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">09 January 2024</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: left;">Break</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">16 January 2024</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">Personal website development with Quarto and publication of capstone project</td>
-<td style="text-align: left;">module 9</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">23 January 2024</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: left;">Work on Capstone project</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">30 January 2024</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: left;">Final submission date of Capstone project</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">06 February 2024</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: left;">Graduation party of openwashdata academy</td>
-<td style="text-align: left;">module 10</td>
-</tr>
-</tbody>
-</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Username advice from: <a href="https://happygitwithr.com/github-acct.html#github-acct">Happy Git and GitHub for the useR</a>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. <strong>Except your username. You might want to give that some thought.</strong></p>
+<p>A few tips, which sadly tend to contradict each other:</p>
+<ul>
+<li>Incorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.</li>
+<li>Reuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.</li>
+<li>Pick a username you will be comfortable revealing to your future boss.</li>
+<li>Shorter is better than longer.</li>
+<li>Be as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.</li>
+<li>Make it timeless. Don’t highlight your current university, employer, or place of residence, e.g.&nbsp;JennyFromTheBlock.</li>
+<li>Avoid words laden with special meaning in programming.</li>
+<li>Avoid the use of upper vs.&nbsp;lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen <code>-</code>.</li>
+</ul>
+<p>You can change your username later, but better to get this right the first time.</p>
+<ul>
+<li><a href="https://help.github.com/articles/changing-your-github-username/" class="uri">https://help.github.com/articles/changing-your-github-username/</a></li>
+<li><a href="https://help.github.com/articles/what-happens-when-i-change-my-username/" class="uri">https://help.github.com/articles/what-happens-when-i-change-my-username/</a></li>
+</ul>
+</div>
 </div>
 </div>
 </section>
-<section id="weekly-structure" class="level1">
-<h1>Weekly Structure</h1>
-<table class="table">
-<colgroup>
-<col style="width: 18%">
-<col style="width: 81%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Monday</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Tuesday</strong></td>
-<td>Module from 2 pm to 4:30 pm CET</td>
-</tr>
-<tr class="odd">
-<td><strong>Wednesday</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Thursday</strong></td>
-<td>Office hours on Zoom (10 am to 12 pm CET)</td>
-</tr>
-<tr class="odd">
-<td><strong>Friday</strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<section id="step-2-register-for-an-orcid-id" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-register-for-an-orcid-id">Step 2: Register for an ORCID iD</h3>
+<ol type="1">
+<li>Create your ORCID iD at: <a href="https://orcid.org/register" class="uri">https://orcid.org/register</a></li>
+</ol>
+<p><a href="https://the-turing-way.netlify.app/communication/citable/citable-orcid.html?highlight=orcid">Learn more about ORCID and why you should get one</a>, even if your are not a researcher or working in academia.</p>
 </section>
-<section id="assignments" class="level1">
-<h1>Assignments</h1>
-<p><strong>Homework assignments</strong>: Each week will have at least one homework assignment. All assignments, but those for Week 1 are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub.</p>
-<p><strong>Readings</strong>: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class.</p>
-<p><strong>Capstone Project</strong>: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions for the capstone project will be provided. The project will be delivered as Quarto documents and students are asked to submit their work through GitHub.</p>
+<section id="step-3-fill-out-our-registration-form" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-fill-out-our-registration-form">Step 3: Fill out our registration form</h3>
+<ul>
+<li>Fill out this form: <a href="https://forms.gle/JvPfVubntbaDrNZQ8" class="uri">https://forms.gle/JvPfVubntbaDrNZQ8</a></li>
+</ul>
 </section>
-<section id="attendance" class="level1">
-<h1>Attendance</h1>
-<p>We hope you can participate in all classes. Class participation is an important component for successful completion of this course.</p>
 </section>
-<section id="code-of-conduct" class="level1">
-<h1>Code of Conduct</h1>
+<section id="thanks" class="level2">
+<h2 class="anchored" data-anchor-id="thanks">Thanks</h2>
+<p>Thank you. You will hear from us with more details about a week before the start of the course.</p>
 
 
 </section>
@@ -370,9 +261,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -408,10 +313,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -421,8 +325,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -437,6 +350,147 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      try { hash = new URL(url).hash; } catch {}
+      const id = hash.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note !== null) {
+        try {
+          const html = processXRef(id, note);
+          instance.setContent(html);
+        } finally {
+          instance.enable();
+          instance.show();
+        }
+      } else {
+        // See if we can fetch this
+        fetch(url.split('#')[0])
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.getElementById(id);
+          if (note !== null) {
+            const html = processXRef(id, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -479,10 +533,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© Copyright 2023, Lars Schöbitz</div>   
-    <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
+    <div class="nav-footer-left">
+<p>This courseproject was supported by the <a href="https://ethrat.ch/en/eth-domain/open-research-data/">Open Research Data Program of the ETH Board</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./code_of_conduct.html">
+<p>Code of Conduct</p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support">
+      <i class="bi bi-envelope-at" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link active" href="https://github.com/ds4owd-001" aria-current="page">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch">
+      <i class="bi bi-chat-left-dots" role="img" aria-label="Matrix">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
+
 
 
 
