@@ -73,6 +73,6 @@ We hope you can participate in all classes. Class participation is an important 
 
 # Code of Conduct 
 
-
+This course and the openwashdata community follows a [code of conduct](code_of_conduct.html). Please ensure that you have read it.
 
 
