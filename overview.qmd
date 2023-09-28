@@ -15,6 +15,26 @@ We will use Posit Cloud infrastructure, so you do not need to install any softwa
 
 Sign up for the course here: <https://forms.gle/AhhWpPfnbLwzp5Ai9>
 
+## Who can participate?
+
+To participate in this course, you need:
+
+- to have a stable internet connection
+- to somewhat be connected to the greater Water, Sanitation and Hygiene (WASH) sector (yes, public health, solid waste management, global health engineering, and related topics also count)
+- to commit 10 * 2.5 hours to participate in Zoom calls
+- to commit another 2 hours/week for readings and additional exercises for practice
+- to identify a dataset of your own or your organisation that you are interested to share with the public
+- an openess to new ideas and workflows that disrupt current practice
+
+## What do we offer?
+
+This course is:
+
+- free
+- provides you with a certificate for successful completion
+- using exclusively tools that are free and open source
+- offers 1:1 coding support between lectures and beyond the course
+
 ## Course Information
 
 This course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.

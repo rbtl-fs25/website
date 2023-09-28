@@ -22,6 +22,7 @@ To sign up for the course, you need to complete the following three steps:
 - Step 1: Get an account on GitHub
 - Step 2: Register for an ORCID iD
 - Step 3: Fill out our registration form
+- Step 4: Register for the scheduled Zoom calls
 
 ### Step 1: Get an account on GitHub
 
@@ -64,6 +65,10 @@ You can change your username later, but better to get this right the first time.
 ### Step 3: Fill out our registration form
 
 - Fill out this form: <https://forms.gle/JvPfVubntbaDrNZQ8>
+
+### Step 4: Register for the scheduled Zoom calls
+
+- Register for the Zoom calls here: <https://ethz.zoom.us/meeting/register/u5EsdO6vqjkqGtBNj9qCUXVOXy8hPobo3hI2>
 
 ## Thanks 
 
