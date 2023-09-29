@@ -16,10 +16,10 @@ library(dplyr)
 gs4_auth()
 
 googlesheets4::read_sheet("18vF8LFHg3CBrcRqZZcE13G9UxgFXWmQwTnTUi_H8yGU") |> 
-  # mutate(title = case_when(
-  #   is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),
-  #   TRUE ~ title
-  # )) |> 
+  mutate(title = case_when(
+    is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),
+    TRUE ~ title
+  )) |>
   write_csv(here::here("data/tbl-01-ds4owd-001-course-schedule.csv"))
 
 # learning-objectives

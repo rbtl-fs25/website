@@ -3,9 +3,9 @@ date,week,title,learning_objectives
 2023-10-31T00:00:00Z,1,Welcome & get ready for the course,Learners can use the Element chat to introduce themselves.
 2023-10-31T00:00:00Z,1,Welcome & get ready for the course,Learners can open an issue on GitHub and tag the course instructor.
 2023-10-31T00:00:00Z,1,Welcome & get ready for the course,Learners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.
-2023-11-07T00:00:00Z,2,Data science Life-cycle,"Learners can render a Quarto file to an output file in HTML, PDF and DOCX format."
-2023-11-07T00:00:00Z,2,Data science Life-cycle,Learners can list the six elements of the data science lifecycle.
-2023-11-07T00:00:00Z,2,Data science Life-cycle,"Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+2023-11-07T00:00:00Z,2,Data science lifecycle & Quarto,"Learners can render a Quarto file to an output file in HTML, PDF and DOCX format."
+2023-11-07T00:00:00Z,2,Data science lifecycle & Quarto,Learners can list the six elements of the data science lifecycle.
+2023-11-07T00:00:00Z,2,Data science lifecycle & Quarto,"Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
 2023-11-14T00:00:00Z,3,Exploratory data analysis using visualization,Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.
 2023-11-14T00:00:00Z,3,Exploratory data analysis using visualization,Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping.
 2023-11-14T00:00:00Z,3,Exploratory data analysis using visualization,Learners can compare three different geoms and their use case.
@@ -17,14 +17,14 @@ date,week,title,learning_objectives
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can explain the three characteristics of tidy data.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can list the four main atomic vector types in R.
-2023-12-12T00:00:00Z,7,Joining data & Functions,Learners can apply functions from the dplyr R Package to join multiple data sets.
-2023-12-12T00:00:00Z,7,Joining data & Functions,Learners can write functions that reduce repition in dplyr and ggplot2 code sequences.
+2023-12-12T00:00:00Z,7,Joining data & wrting functions,Learners can apply functions from the dplyr R Package to join multiple data sets.
+2023-12-12T00:00:00Z,7,Joining data & wrting functions,Learners can write functions that reduce repition in dplyr and ggplot2 code sequences.
 2023-12-19T00:00:00Z,8,Using AI for software development in R,"Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)"
 2023-12-19T00:00:00Z,8,Using AI for software development in R,Learners are aware of the responsibility for using AI and critically and evaluating all its output.
 2023-12-19T00:00:00Z,8,Using AI for software development in R,Learners can explain the basics of AI and its potential for improving software development workflows
 2024-01-16T00:00:00Z,12,Personal website development with Quarto and publication of capstone project,Learners can use Quarto and GitHub Pages to publish an HTML file.
 2024-01-16T00:00:00Z,12,Personal website development with Quarto and publication of capstone project,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.
 2024-01-16T00:00:00Z,12,Personal website development with Quarto and publication of capstone project,Learners can cross-reference figures and tables within an Quarto file.
-2024-01-23T00:00:00Z,13,Work on Capstone project,Learners can apply the skills obtained during the course to write a short data analysis project report.
-2024-01-30T00:00:00Z,14,Final submission date of Capstone project,NA
+2024-01-23T00:00:00Z,13,Work on Capstone project,NA
+2024-01-30T00:00:00Z,14,Final submission date of Capstone project,Learners can apply the skills obtained during the course to write a short data analysis project report.
 2024-02-06T00:00:00Z,15,Graduation party of openwashdata academy,NA
