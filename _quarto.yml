@@ -46,10 +46,29 @@ website:
       - text: "---"
       - href: overview.qmd
         text: Course Overview
+      - href: calendar.qmd
+        text: Course Calendar
       - text: "---"
       - href: modules/md-01.qmd
         text: Module 1
-        
+      - href: modules/md-02.qmd
+        text: Module 2
+      - href: modules/md-03.qmd
+        text: Module 3
+      - href: modules/md-04.qmd
+        text: Module 4
+      - href: modules/md-05.qmd
+        text: Module 5
+      - href: modules/md-06.qmd
+        text: Module 6
+      - href: modules/md-07.qmd
+        text: Module 7
+      - href: modules/md-08.qmd
+        text: Module 8
+      - href: modules/md-09.qmd
+        text: Module 9
+      - href: modules/md-10.qmd
+        text: Module 10
 format:
   html:
     theme:

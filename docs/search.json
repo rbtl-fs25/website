@@ -115,8 +115,8 @@
     "objectID": "modules/md-10.html#slides",
     "href": "modules/md-10.html#slides",
     "title": "Module 10",
-    "section": "Slides",
-    "text": "Slides"
+    "section": " Slides",
+    "text": "Slides\n\nIn preparation"
   },
   {
     "objectID": "modules/md-10.html#readings",
@@ -129,8 +129,8 @@
     "objectID": "modules/md-10.html#assignments",
     "href": "modules/md-10.html#assignments",
     "title": "Module 10",
-    "section": "Assignments",
-    "text": "Assignments"
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-05.html",
@@ -802,7 +802,7 @@
     "href": "overview.html#course-calendar",
     "title": "Course Overview",
     "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\n\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science Life-cycle\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & Functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nNA\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nmodule 10"
+    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
   },
   {
     "objectID": "LICENSE.html",
@@ -1748,5 +1748,61 @@
     "title": "Module 8",
     "section": " Assignments",
     "text": "Assignments\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-09.html",
+    "href": "modules/md-09.html",
+    "title": "Module 9",
+    "section": "",
+    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file."
+  },
+  {
+    "objectID": "modules/md-09.html#learning-objectives",
+    "href": "modules/md-09.html#learning-objectives",
+    "title": "Module 9",
+    "section": "",
+    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file."
+  },
+  {
+    "objectID": "modules/md-09.html#slides",
+    "href": "modules/md-09.html#slides",
+    "title": "Module 9",
+    "section": " Slides",
+    "text": "Slides\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-09.html#readings",
+    "href": "modules/md-09.html#readings",
+    "title": "Module 9",
+    "section": " Readings",
+    "text": "Readings\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-09.html#assignments",
+    "href": "modules/md-09.html#assignments",
+    "title": "Module 9",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-10.html",
+    "href": "modules/md-10.html",
+    "title": "Module 10",
+    "section": "",
+    "text": "Learners can apply the skills obtained during the course to write a short data analysis project report."
+  },
+  {
+    "objectID": "modules/md-10.html#learning-objectives",
+    "href": "modules/md-10.html#learning-objectives",
+    "title": "Module 10",
+    "section": "",
+    "text": "Learners can apply the skills obtained during the course to write a short data analysis project report."
+  },
+  {
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Course Calendar",
+    "section": "",
+    "text": "date\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
   }
 ]

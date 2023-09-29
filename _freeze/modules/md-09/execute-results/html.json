@@ -1,0 +1,14 @@
+{
+  "hash": "ba7bca71df2506601d671bc69fde0a6c",
+  "result": {
+    "markdown": "---\ntitle: \"Module 9\"\nsubtitle: \"Personal website development with Quarto and publication of capstone project\"\neditor: source\nparams:\n    week: 12\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can use Quarto and GitHub Pages to publish an HTML file.\n2. Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\n3. Learners can cross-reference figures and tables within an Quarto file.\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: "Module 6"
-subtitle: "Concept of tidy data, vectors and pivoting"
+subtitle: "Concept of tidy data & Vectors in R"
 editor: source
 params:
     week: 6
