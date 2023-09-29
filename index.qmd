@@ -13,7 +13,7 @@ We will meet on Zoom for 10 modules over 15 weeks at the following times:
 - **Start:** 31st October 2023 - 2 pm to 4:30 pm CET 
 - **End:** 6th February 2024 - 2 pm to 4:30 pm CET
 
-More details can be found one the [Course Overview](overview.html) page.
+This course teaches data science with R for people in the greater Water, Sanitation and Hygiene (WASH) sector. It is offered by offered by the [openwashdata academy](https://openwashdata.org/pages/academy/) with the mission to empower WASH professionals to engage with tools and workflows for open data and code. More details can be found on the [Course Overview](overview.html) page.
 
 ## {{< fa circle-question >}} How do I sign up? 
 
@@ -24,7 +24,7 @@ To sign up for the course, you need to complete the following three steps:
 - Step 3: Fill out our registration form
 - Step 4: Register for the scheduled Zoom calls
 
-### Step 1: Get an account on GitHub
+### {{< fa brands github >}} Step 1: Get an account on GitHub
 
 To set up an account on GitHub, follow these general steps:
 
@@ -56,21 +56,21 @@ You can change your username later, but better to get this right the first time.
 -   <https://help.github.com/articles/what-happens-when-i-change-my-username/>
 :::
 
-### Step 2: Register for an ORCID iD
+### {{< fa brands orcid >}} Step 2: Register for an ORCID iD
 
 1. Create your ORCID iD at: <https://orcid.org/register>
 
 [Learn more about ORCID and why you should get one](https://the-turing-way.netlify.app/communication/citable/citable-orcid.html?highlight=orcid), even if your are not a researcher or working in academia.
 
-### Step 3: Fill out our registration form
+### {{< fa pen-clip >}} Step 3: Fill out our registration form
 
 - Fill out this form: <https://forms.gle/JvPfVubntbaDrNZQ8>
 
-### Step 4: Register for the scheduled Zoom calls
+### {{< fa headset >}} Step 4: Register for the scheduled Zoom meetings
 
-- Register for the Zoom calls here: <https://ethz.zoom.us/meeting/register/u5EsdO6vqjkqGtBNj9qCUXVOXy8hPobo3hI2>
+- Register here: <https://ethz.zoom.us/meeting/register/u5EsdO6vqjkqGtBNj9qCUXVOXy8hPobo3hI2>
 
-## Thanks 
+## Thanks for signing up!
 
-Thank you. You will hear from us with more details about a week before the start of the course.
+You will hear from us with more details a week before the start of the course.
 
