@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data science for openwashdata - Module 1</title>
+<title>data science for openwashdata - Module 5</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -84,7 +65,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/md-01.html">Module 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Module 5</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -129,7 +110,7 @@ div.csl-indent {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/md-01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../modules/md-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 1</span></a>
   </div>
 </li>
@@ -143,18 +124,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning Objectives</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a></li>
   <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments"><i class="fa-solid fa-code" aria-label="code"></i> Assignments</a>
-  <ul class="collapse">
-  <li><a href="#log-into-posit-cloud-with-github-account" id="toc-log-into-posit-cloud-with-github-account" class="nav-link" data-scroll-target="#log-into-posit-cloud-with-github-account">Log into Posit Cloud with GitHub account</a></li>
-  <li><a href="#join-the-course-workspace-on-posit-cloud" id="toc-join-the-course-workspace-on-posit-cloud" class="nav-link" data-scroll-target="#join-the-course-workspace-on-posit-cloud">Join the course workspace on Posit Cloud</a></li>
-  <li><a href="#set-up-a-github-personal-access-token" id="toc-set-up-a-github-personal-access-token" class="nav-link" data-scroll-target="#set-up-a-github-personal-access-token">Set up a GitHub Personal Access Token</a></li>
-  <li><a href="#open-an-issue-on-github" id="toc-open-an-issue-on-github" class="nav-link" data-scroll-target="#open-an-issue-on-github">Open an issue on GitHub</a></li>
-  <li><a href="#join-our-chat-on-element" id="toc-join-our-chat-on-element" class="nav-link" data-scroll-target="#join-our-chat-on-element">Join our Chat on Element</a></li>
-  </ul></li>
-  <li><a href="#thanks" id="toc-thanks" class="nav-link" data-scroll-target="#thanks">Thanks!</a></li>
+  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments"><i class="fa-solid fa-code" aria-label="code"></i> Assignments</a></li>
   </ul>
 </nav>
     </div>
@@ -163,8 +136,8 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Module 1</h1>
-<p class="subtitle lead">Welcome &amp; get ready for the course</p>
+<h1 class="title">Module 5</h1>
+<p class="subtitle lead">Data transformation, descriptive statistics and gt</p>
 </div>
 
 
@@ -179,15 +152,11 @@ div.csl-indent {
 
 </header>
 
-
-<p>This first week will be used to get you set up for the course.</p>
 <section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<h2 class="anchored" data-anchor-id="learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning Objectives</h2>
 <ol type="1">
-<li>Learners can access the Posit Cloud workspace for the course.</li>
-<li>Learners can use the Element chat to introduce themselves.</li>
-<li>Learners can open an issue on GitHub and tag the course instructor.</li>
-<li>Learners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.</li>
+<li>Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.</li>
+<li>Learners can use functions of the gt R package to present summary tables in output formats.</li>
 </ol>
 </section>
 <section id="slides" class="level2">
@@ -198,84 +167,22 @@ div.csl-indent {
 </section>
 <section id="readings" class="level2">
 <h2 class="anchored" data-anchor-id="readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</h2>
-<ul>
-<li>Read the <a href="../overview.html">Course Overview</a>.</li>
-<li>Read <span class="citation" data-cites="wilson2017">Wilson et al. (<a href="#ref-wilson2017" role="doc-biblioref">2017</a>)</span> “Good enough practices in scientific computing”.</li>
-</ul>
+<ol type="1">
+<li>Read <a href="https://r4ds.had.co.nz/transform.html">R for Data Science - Section 5 - Data transformation</a><br>
+</li>
+<li>Read <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1399928">Excuse Me, Do You Have a Moment to Talk About Version Control?</a></li>
+</ol>
 </section>
 <section id="assignments" class="level2">
 <h2 class="anchored" data-anchor-id="assignments"><i class="fa-solid fa-code" aria-label="code"></i> Assignments</h2>
-<p>We will work through these assignments live during our first class. If you missed the class, you could still join be working through the following assignments indepedently.</p>
-<section id="log-into-posit-cloud-with-github-account" class="level3">
-<h3 class="anchored" data-anchor-id="log-into-posit-cloud-with-github-account">Log into Posit Cloud with GitHub account</h3>
-<p>Here are the instructions to login to Posit Cloud using a GitHub account:</p>
-<ol type="1">
-<li>Go to the Posit Cloud Sign Up page: <a href="https://login.posit.cloud/register" class="uri">https://login.posit.cloud/register</a></li>
-<li>Click on the <strong>“Sign Up with GitHub”</strong> button.</li>
-<li>Enter your GitHub username and password when prompted.</li>
-<li>If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.</li>
-<li>Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.</li>
-</ol>
-<p>Note that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.</p>
-</section>
-<section id="join-the-course-workspace-on-posit-cloud" class="level3">
-<h3 class="anchored" data-anchor-id="join-the-course-workspace-on-posit-cloud">Join the course workspace on Posit Cloud</h3>
-<p>The link will be shared during the class on 31st October 2023. If you missed the class, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=ds4owd-001: Posit Cloud link" target="_blank">Email</a> and we will share it with you.</p>
-</section>
-<section id="set-up-a-github-personal-access-token" class="level3">
-<h3 class="anchored" data-anchor-id="set-up-a-github-personal-access-token">Set up a GitHub Personal Access Token</h3>
-<p>Here are the step-by-step instructions to set up a GitHub personal access token:</p>
-<ol type="1">
-<li>Log in to your GitHub account.</li>
-<li>Click on your profile picture in the top-right corner of the page.</li>
-<li>Select “Settings” from the dropdown menu.</li>
-<li>In the left sidebar, click on “Developer settings”.</li>
-<li>Click on “Personal access tokens”.</li>
-<li>Click on <strong>“Tokens (classic)”</strong>.</li>
-<li>Click on “Generate new token” and from the dropdown menu select <strong>“Generate new token (classic)”.</strong></li>
-<li>In the “Note” field, give your token the name: GITHUB_PAT</li>
-<li>Under Expiration, select “No expiration”</li>
-<li>Under “Select scopes”, select: <strong>repo, workflow, user</strong></li>
-<li>Click on “Generate token”.</li>
-<li>Your personal access token will be displayed on the screen. Copy it and store it in a safe place.</li>
-</ol>
-<p>Remember to treat your access tokens like passwords and keep them secure (e.g.&nbsp;a password manager software).</p>
-</section>
-<section id="open-an-issue-on-github" class="level3">
-<h3 class="anchored" data-anchor-id="open-an-issue-on-github">Open an issue on GitHub</h3>
 <ul>
-<li>Open the issue tracker on the website repository: <a href="https://github.com/ds4owd-001/website/issues" class="uri">https://github.com/ds4owd-001/website/issues</a>.</li>
-<li>Click on “New issue” button.</li>
-<li>In the “Title” field
-<ul>
-<li>write: “Create a first issue on GitHub”.</li>
-</ul></li>
-<li>In the “Leave a comment” field,
-<ul>
-<li>tag the course instructors with using the <code>@</code> sign in combination with <code>larnsce</code> and <code>mianzg</code> as the username,</li>
-<li>add anything that you would like to add.</li>
-</ul></li>
+<li>In preparation</li>
 </ul>
-</section>
-<section id="join-our-chat-on-element" class="level3">
-<h3 class="anchored" data-anchor-id="join-our-chat-on-element">Join our Chat on Element</h3>
-<p>We will work through these steps, but you can also find a detailed description on how to join our chat here: <a href="https://openwashdata.org/pages/community/chat/" class="uri">https://openwashdata.org/pages/community/chat/</a></p>
-<p><i class="fa-solid fa-envelope-circle-check" aria-label="envelope-circle-check"></i> If we can support you to setup the chat, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=openwashdata support" target="_blank">Email</a> and we will schedule a call for a walk through.</p>
-</section>
-</section>
-<section id="thanks" class="level2">
-<h2 class="anchored" data-anchor-id="thanks">Thanks!</h2>
-<p>Thank you for working through these assignments.</p>
-
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-wilson2017" class="csl-entry" role="listitem">
-Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. <span>“Good Enough Practices in Scientific Computing.”</span> Edited by Francis Ouellette. <em>PLOS Computational Biology</em> 13 (6): e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,0 +1,39 @@
+---
+title: "Module 3"
+subtitle: "Exploratory data analysis using visualization"
+editor: source
+params:
+    week: 3
+execute: 
+  echo: false
+  warning: false
+---
+
+## {{< fa bullseye >}} Learning Objectives
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+2. `r lobj1[2]`
+3. `r lobj1[3]`
+4. `r lobj1[4]`
+
+## {{< fa display >}} Slides
+
+- In preparation
+
+## {{< fa book >}} Readings
+
+1. Read [R for Data Science - Section 2 - Data visualization](https://r4ds.hadley.nz/data-visualize)  
+2. Read [Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html)
+
+## {{< fa code >}} Assignments
+
+- In preparation
+

@@ -13,6 +13,8 @@ library(dplyr)
 
 # course-schedule
 
+gs4_auth()
+
 googlesheets4::read_sheet("18vF8LFHg3CBrcRqZZcE13G9UxgFXWmQwTnTUi_H8yGU") |> 
   # mutate(title = case_when(
   #   is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),

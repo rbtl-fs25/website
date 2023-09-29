@@ -1,9 +1,9 @@
 ---
-title: "Week 7"
-subtitle: "Capstone project submission"
+title: "Module 10"
+subtitle: "Final submission date of Capstone project"
 editor: source
 params:
-    week: 7
+    week: 14
 execute: 
   echo: false
   warning: false
@@ -15,7 +15,5 @@ execute:
 
 ## Readings
 
-## Homework assignment
-
-## Learning reflection
+## Assignments
 

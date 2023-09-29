@@ -19,9 +19,9 @@ date,week,title,learning_objectives
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can list the four main atomic vector types in R.
 2023-12-12T00:00:00Z,7,Joining data & Functions,Learners can apply functions from the dplyr R Package to join multiple data sets.
 2023-12-12T00:00:00Z,7,Joining data & Functions,Learners can write functions that reduce repition in dplyr and ggplot2 code sequences.
-2023-12-19T00:00:00Z,8,Using AI for software development in R,TODO
-2023-12-19T00:00:00Z,8,Using AI for software development in R,TODO
-2023-12-19T00:00:00Z,8,Using AI for software development in R,TODO
+2023-12-19T00:00:00Z,8,Using AI for software development in R,"Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)"
+2023-12-19T00:00:00Z,8,Using AI for software development in R,Learners are aware of the responsibility for using AI and critically and evaluating all its output.
+2023-12-19T00:00:00Z,8,Using AI for software development in R,Learners can explain the basics of AI and its potential for improving software development workflows
 2024-01-16T00:00:00Z,12,Personal website development with Quarto and publication of capstone project,Learners can use Quarto and GitHub Pages to publish an HTML file.
 2024-01-16T00:00:00Z,12,Personal website development with Quarto and publication of capstone project,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.
 2024-01-16T00:00:00Z,12,Personal website development with Quarto and publication of capstone project,Learners can cross-reference figures and tables within an Quarto file.

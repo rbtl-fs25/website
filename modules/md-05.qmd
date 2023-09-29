@@ -1,0 +1,39 @@
+---
+title: "Module 5"
+subtitle: "Data transformation, descriptive statistics and gt"
+editor: source
+params:
+    week: 5
+execute: 
+  echo: false
+  warning: false
+---
+
+## {{< fa bullseye >}} Learning Objectives
+
+```{r}
+#| echo: false
+
+lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+1. `r lobj1[2]`
+
+## {{< fa display >}} Slides
+
+- In preparation
+
+## {{< fa book >}} Readings
+
+1. Read [R for Data Science - Section 5 - Data transformation](https://r4ds.had.co.nz/transform.html)  
+2. Read [Excuse Me, Do You Have a Moment to Talk About Version Control?](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1399928)
+
+## {{< fa code >}} Assignments
+
+- In preparation
+
+

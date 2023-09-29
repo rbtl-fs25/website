@@ -1,0 +1,36 @@
+---
+title: "Module 4"
+subtitle: "Data organization in spreadsheets"
+editor: source
+params:
+    week: 4
+execute: 
+  echo: false
+  warning: false
+---
+
+## {{< fa bullseye >}} Learning Objectives
+
+```{r}
+
+lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+1. `r lobj1[1]`
+2. `r lobj1[2]`
+
+## {{< fa display >}} Slides
+
+- In preparation
+
+## {{< fa book >}} Readings
+
+3. Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
+
+## {{< fa code >}} Assignments
+
+- In preparation
+

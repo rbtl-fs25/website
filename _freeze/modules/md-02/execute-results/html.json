@@ -1,0 +1,14 @@
+{
+  "hash": "bdcf5faf4f12922fb188a0bfc61ffa8a",
+  "result": {
+    "markdown": "---\ntitle: \"Module 2\"\nsubtitle: \"Data science lifecycle & Quarto\"\neditor: source\nparams:\n    week: 2\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\n2. Learners can list the six elements of the data science lifecycle.\n3. Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 1 - Introduction](https://r4ds.hadley.nz/intro) through **Section 1.3.3**\n2. Read [R for Data Science - Whole game](https://r4ds.hadley.nz/whole-game)\n3. Read [R for Data Science - Section 3 - Workflow basics](https://r4ds.hadley.nz/workflow-basics) \n\n## {{< fa code >}} Assignments\n\n- In preparation\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data science for openwashdata - Week 5</title>
+<title>data science for openwashdata - Module 10</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,8 +34,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -65,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Week 5</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Module 10</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -124,11 +122,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning Objectives</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a></li>
-  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</a></li>
-  <li><a href="#homework-assignment" id="toc-homework-assignment" class="nav-link" data-scroll-target="#homework-assignment"><i class="fa-solid fa-code" aria-label="code"></i> Homework assignment</a></li>
-  <li><a href="#learning-reflection" id="toc-learning-reflection" class="nav-link" data-scroll-target="#learning-reflection"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Learning reflection</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
   </ul>
 </nav>
     </div>
@@ -137,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 5</h1>
-<p class="subtitle lead">Concept of tidy data, vectors and pivoting</p>
+<h1 class="title">Module 10</h1>
+<p class="subtitle lead">Final submission date of Capstone project</p>
 </div>
 
 
@@ -154,40 +151,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning Objectives</h2>
-<ol type="1">
-<li>Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.</li>
-<li>Learners can use functions of the gt R package to present summary tables in output formats.</li>
-<li>NA</li>
-</ol>
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 </section>
 <section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</h2>
-<p><a href="../slides/lec-04-tidy-data.html">View slides in full screen</a> | <a href="https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf">Download slides as PDF</a></p>
-<iframe class="slide-deck" src="../slides/lec-04-tidy-data.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
 </section>
 <section id="readings" class="level2">
-<h2 class="anchored" data-anchor-id="readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</h2>
-<ol type="1">
-<li>Read <a href="https://r4ds.had.co.nz/tidy-data.html">R for Data Science - Section 12 - Tidy data</a><br>
-</li>
-<li>Read <a href="https://r4ds.had.co.nz/factors.html#factors">R for Data Science - Section 15 - Factors</a></li>
-</ol>
+<h2 class="anchored" data-anchor-id="readings">Readings</h2>
 </section>
-<section id="homework-assignment" class="level2">
-<h2 class="anchored" data-anchor-id="homework-assignment"><i class="fa-solid fa-code" aria-label="code"></i> Homework assignment</h2>
-<p>Homework assignment &amp; learning reflection due: <strong>Friday, 7th July</strong></p>
-<p>Complete the homework programming assignments that are in your project folder for week 5 on <a href="https://posit.cloud/spaces/381404/content/all">Posit Cloud</a>:</p>
-<ul>
-<li>hw-05a-tidyr.qmd</li>
-</ul>
-</section>
-<section id="learning-reflection" class="level2">
-<h2 class="anchored" data-anchor-id="learning-reflection"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Learning reflection</h2>
-<p>Complete the learning reflection that is in your project folder for week 5 on <a href="https://posit.cloud/spaces/381404/content/all">Posit Cloud</a></p>
-<ul>
-<li>learning-05.qmd</li>
-</ul>
+<section id="assignments" class="level2">
+<h2 class="anchored" data-anchor-id="assignments">Assignments</h2>
 
 
 </section>

@@ -49,158 +49,158 @@
     "text": "Data in wide and data in long formats\nInstructions for final project\nCreating new variables with conditional formatting\n\nConcept Maps\n\nknitr::include_graphics(here::here(\"img/pivoting.png\"))\n\n\n\n\n\n\n\n\nR functions\n\npivot_wider()\npivot_longer()\ncase_when()\n\nFinal project\n\n\n\n\n\n\n\nFinal Assignment\n\nOptional: Start a new repository on GitHub for your final project and clone the repository into the RStudio Cloud workspace for the course\nStart a new project on RStudio Cloud and setup your project folder\n\ndata\ndoc\nfigs\n\nImport a data set of your choice into an R Markdown file, either from a dataset that was introduced to you during the course, that you have identified yourself online, or that you actually collected yourself as part of the course. The dataset should fullfil the following requirements:\n\nReq 1\nReq 2\nReq 3\nReq 4\n\nImport the data, bring the data into a tidy format and prepare at least two (publication ready) plots to describe the data. The plots must fullfil the following requirements\n\nMust be of two different types (e.g. barplot and scatterplot)\nMust use illustratte at least three variables of the dataset and use the aesthetic mapping colour colour (e.g. x-axis, colour, fact_wrap OR x-axis, y-axis, colour)\nMust use a scaling function to change the colour scale\nMust contain information to be a stand-along self-explanatory figure (title, caption, legend title, etc.)\nMust have human readible axis labels\n\nExport the figures as a JPG and store them in the “figs” directory with a name that follows best practices for naming conventions\nWrite a data dictionary for your dataset as a markdown file and store the file as README.md in your data folder\nDescribe what you have learned from exploring the data and identify at least three questions that could be answered with your dataset"
   },
   {
-    "objectID": "modules/wk-04.html",
-    "href": "modules/wk-04.html",
-    "title": "Week 4",
+    "objectID": "modules/md-07.html",
+    "href": "modules/md-07.html",
+    "title": "Module 7",
     "section": "",
-    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences."
   },
   {
-    "objectID": "modules/wk-04.html#learning-objectives",
-    "href": "modules/wk-04.html#learning-objectives",
-    "title": "Week 4",
+    "objectID": "modules/md-07.html#learning-objectives",
+    "href": "modules/md-07.html#learning-objectives",
+    "title": "Module 7",
     "section": "",
-    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences."
   },
   {
-    "objectID": "modules/wk-04.html#slides",
-    "href": "modules/wk-04.html#slides",
-    "title": "Week 4",
+    "objectID": "modules/md-07.html#slides",
+    "href": "modules/md-07.html#slides",
+    "title": "Module 7",
     "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/wk-04.html#readings",
-    "href": "modules/wk-04.html#readings",
-    "title": "Week 4",
-    "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\n\nRead Excuse Me, Do You Have a Moment to Talk About Version Control?"
-  },
-  {
-    "objectID": "modules/wk-04.html#homework-assignment",
-    "href": "modules/wk-04.html#homework-assignment",
-    "title": "Week 4",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 30th June\nComplete the homework programming assignments that are in your project folder for week 4 on Posit Cloud\n\nhw-04a-data-transformation.qmd"
-  },
-  {
-    "objectID": "modules/wk-04.html#learning-reflection",
-    "href": "modules/wk-04.html#learning-reflection",
-    "title": "Week 4",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 4 on Posit Cloud\n\nlearning-04.qmd"
-  },
-  {
-    "objectID": "modules/wk-07.html#slides",
-    "href": "modules/wk-07.html#slides",
-    "title": "Week 7",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "modules/wk-07.html#readings",
-    "href": "modules/wk-07.html#readings",
-    "title": "Week 7",
-    "section": "Readings",
-    "text": "Readings"
-  },
-  {
-    "objectID": "modules/wk-07.html#homework-assignment",
-    "href": "modules/wk-07.html#homework-assignment",
-    "title": "Week 7",
-    "section": "Homework assignment",
-    "text": "Homework assignment"
-  },
-  {
-    "objectID": "modules/wk-07.html#learning-reflection",
-    "href": "modules/wk-07.html#learning-reflection",
-    "title": "Week 7",
-    "section": "Learning reflection",
-    "text": "Learning reflection"
-  },
-  {
-    "objectID": "modules/wk-06.html",
-    "href": "modules/wk-06.html",
-    "title": "Week 6",
-    "section": "",
-    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R.\nNA"
-  },
-  {
-    "objectID": "modules/wk-06.html#learning-objectives",
-    "href": "modules/wk-06.html#learning-objectives",
-    "title": "Week 6",
-    "section": "",
-    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R.\nNA"
-  },
-  {
-    "objectID": "modules/wk-06.html#slides",
-    "href": "modules/wk-06.html#slides",
-    "title": "Week 6",
-    "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
-  },
-  {
-    "objectID": "modules/wk-06.html#readings",
-    "href": "modules/wk-06.html#readings",
-    "title": "Week 6",
+    "objectID": "modules/md-07.html#readings",
+    "href": "modules/md-07.html#readings",
+    "title": "Module 7",
     "section": " Readings",
     "text": "Readings\n\nRead R for Data Science - Section 13 - Relational data"
   },
   {
-    "objectID": "modules/wk-06.html#homework-assignment",
-    "href": "modules/wk-06.html#homework-assignment",
-    "title": "Week 6",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 14th July\nClone your Capstone Project repository to the workspace for the course on Posit Cloud:\n\nFollow the Instructions\n\nComplete the homework programming assignments that are in your project folder for week 6 on Posit Cloud:\n\nhw-06a-section-01.qmd\nhw-06b-section-02.qmd\nhw-06c-section-03.qmd\nhw-06d-section-04.qmd"
+    "objectID": "modules/md-07.html#assignments",
+    "href": "modules/md-07.html#assignments",
+    "title": "Module 7",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
   },
   {
-    "objectID": "modules/wk-06.html#learning-reflection",
-    "href": "modules/wk-06.html#learning-reflection",
-    "title": "Week 6",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 6 on Posit Cloud\n\nlearning-06.qmd"
-  },
-  {
-    "objectID": "modules/wk-02.html",
-    "href": "modules/wk-02.html",
-    "title": "Week 2",
+    "objectID": "modules/md-12.html",
+    "href": "modules/md-12.html",
+    "title": "Module 12",
     "section": "",
-    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\nNA"
+    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows"
   },
   {
-    "objectID": "modules/wk-02.html#learning-objectives",
-    "href": "modules/wk-02.html#learning-objectives",
-    "title": "Week 2",
+    "objectID": "modules/md-12.html#learning-objectives",
+    "href": "modules/md-12.html#learning-objectives",
+    "title": "Module 12",
     "section": "",
-    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).\nNA"
+    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows"
   },
   {
-    "objectID": "modules/wk-02.html#slides",
-    "href": "modules/wk-02.html#slides",
-    "title": "Week 2",
+    "objectID": "modules/md-12.html#slides",
+    "href": "modules/md-12.html#slides",
+    "title": "Module 12",
     "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/wk-02.html#readings",
-    "href": "modules/wk-02.html#readings",
-    "title": "Week 2",
+    "objectID": "modules/md-12.html#assignments",
+    "href": "modules/md-12.html#assignments",
+    "title": "Module 12",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-10.html#slides",
+    "href": "modules/md-10.html#slides",
+    "title": "Module 10",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "modules/md-10.html#readings",
+    "href": "modules/md-10.html#readings",
+    "title": "Module 10",
+    "section": "Readings",
+    "text": "Readings"
+  },
+  {
+    "objectID": "modules/md-10.html#assignments",
+    "href": "modules/md-10.html#assignments",
+    "title": "Module 10",
+    "section": "Assignments",
+    "text": "Assignments"
+  },
+  {
+    "objectID": "modules/md-05.html",
+    "href": "modules/md-05.html",
+    "title": "Module 5",
+    "section": "",
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats."
+  },
+  {
+    "objectID": "modules/md-05.html#learning-objectives",
+    "href": "modules/md-05.html#learning-objectives",
+    "title": "Module 5",
+    "section": "",
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats."
+  },
+  {
+    "objectID": "modules/md-05.html#slides",
+    "href": "modules/md-05.html#slides",
+    "title": "Module 5",
+    "section": " Slides",
+    "text": "Slides\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-05.html#readings",
+    "href": "modules/md-05.html#readings",
+    "title": "Module 5",
     "section": " Readings",
-    "text": "Readings\nRead R for Data Science - Section 1 - Introduction through Section 1.3.4\nRead R for Data Science - Section 2 - Introduction\nRead R for Data Science - Section 4 - Workflow basics"
+    "text": "Readings\n\nRead R for Data Science - Section 5 - Data transformation\n\nRead Excuse Me, Do You Have a Moment to Talk About Version Control?"
   },
   {
-    "objectID": "modules/wk-02.html#homework-assignment",
-    "href": "modules/wk-02.html#homework-assignment",
-    "title": "Week 2",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 2 by Friday 16th June on Posit Cloud\n\nhw-02-data-science-lifecycle.qmd"
+    "objectID": "modules/md-05.html#assignments",
+    "href": "modules/md-05.html#assignments",
+    "title": "Module 5",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
   },
   {
-    "objectID": "modules/wk-02.html#learning-reflection",
-    "href": "modules/wk-02.html#learning-reflection",
-    "title": "Week 2",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 2 on Posit Cloud\n\nlearning-02.qmd"
+    "objectID": "modules/md-02.html",
+    "href": "modules/md-02.html",
+    "title": "Module 2",
+    "section": "",
+    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+  },
+  {
+    "objectID": "modules/md-02.html#learning-objectives",
+    "href": "modules/md-02.html#learning-objectives",
+    "title": "Module 2",
+    "section": "",
+    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+  },
+  {
+    "objectID": "modules/md-02.html#slides",
+    "href": "modules/md-02.html#slides",
+    "title": "Module 2",
+    "section": " Slides",
+    "text": "Slides\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-02.html#readings",
+    "href": "modules/md-02.html#readings",
+    "title": "Module 2",
+    "section": " Readings",
+    "text": "Readings\n\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
+  },
+  {
+    "objectID": "modules/md-02.html#assignments",
+    "href": "modules/md-02.html#assignments",
+    "title": "Module 2",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "project/index.html",
@@ -1540,86 +1540,79 @@
     "text": "A large proportion of these slides are taken from Mine Çetinkaya Rundel’s “Hello Quarto” presentation & Thomas Mock’s “Quarto for the Curious” presentation\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
-    "objectID": "modules/wk-03.html",
-    "href": "modules/wk-03.html",
-    "title": "Week 3",
+    "objectID": "modules/md-03.html",
+    "href": "modules/md-03.html",
+    "title": "Module 3",
     "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nNA"
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot."
   },
   {
-    "objectID": "modules/wk-03.html#learning-objectives",
-    "href": "modules/wk-03.html#learning-objectives",
-    "title": "Week 3",
+    "objectID": "modules/md-03.html#learning-objectives",
+    "href": "modules/md-03.html#learning-objectives",
+    "title": "Module 3",
     "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nNA"
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot."
   },
   {
-    "objectID": "modules/wk-03.html#slides",
-    "href": "modules/wk-03.html#slides",
-    "title": "Week 3",
+    "objectID": "modules/md-03.html#slides",
+    "href": "modules/md-03.html#slides",
+    "title": "Module 3",
     "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/wk-03.html#readings",
-    "href": "modules/wk-03.html#readings",
-    "title": "Week 3",
+    "objectID": "modules/md-03.html#readings",
+    "href": "modules/md-03.html#readings",
+    "title": "Module 3",
     "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 3 to 3.6 - Data visualisation\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics\nRead Data Organization in Spreadsheets"
+    "text": "Readings\n\nRead R for Data Science - Section 2 - Data visualization\n\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics"
   },
   {
-    "objectID": "modules/wk-03.html#homework-assignment",
-    "href": "modules/wk-03.html#homework-assignment",
-    "title": "Week 3",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nComplete the homework programming assignment that is in your project folder for week 3 on Posit Cloud\n\nhw-03a-data-visualisation.qmd\nhw-03b-project-data.qmd"
-  },
-  {
-    "objectID": "modules/wk-03.html#learning-reflection",
-    "href": "modules/wk-03.html#learning-reflection",
-    "title": "Week 3",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 3 on Posit Cloud\n\nlearning-03.qmd"
+    "objectID": "modules/md-03.html#assignments",
+    "href": "modules/md-03.html#assignments",
+    "title": "Module 3",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-01.html",
     "href": "modules/md-01.html",
-    "title": "Week 1",
+    "title": "Module 1",
     "section": "",
     "text": "This first week will be used to get you set up for the course."
   },
   {
     "objectID": "modules/md-01.html#learning-objectives",
     "href": "modules/md-01.html#learning-objectives",
-    "title": "Week 1",
+    "title": "Module 1",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor."
+    "text": "Learning Objectives\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
   },
   {
     "objectID": "modules/md-01.html#slides",
     "href": "modules/md-01.html#slides",
-    "title": "Week 1",
+    "title": "Module 1",
     "section": " Slides",
     "text": "Slides\n\nIn preparation"
   },
   {
     "objectID": "modules/md-01.html#readings",
     "href": "modules/md-01.html#readings",
-    "title": "Week 1",
+    "title": "Module 1",
     "section": " Readings",
     "text": "Readings\n\nRead the Course Overview.\nRead Wilson et al. (2017) “Good enough practices in scientific computing”."
   },
   {
     "objectID": "modules/md-01.html#assignments",
     "href": "modules/md-01.html#assignments",
-    "title": "Week 1",
+    "title": "Module 1",
     "section": " Assignments",
     "text": "Assignments\nWe will work through these assignments live during our first class. If you missed the class, you could still join be working through the following assignments indepedently.\n\nLog into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\nThe link will be shared during the class on 31st October 2023. If you missed the class, get in touch with us via Email and we will share it with you.\n\n\nSet up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).\n\n\nOpen an issue on GitHub\n\nOpen the issue tracker on the website repository: https://github.com/ds4owd-001/website/issues.\nClick on “New issue” button.\nIn the “Title” field\n\nwrite: “Create a first issue on GitHub”.\n\nIn the “Leave a comment” field,\n\ntag the course instructors with using the @ sign in combination with larnsce and mianzg as the username,\nadd anything that you would like to add.\n\n\n\n\nJoin our Chat on Element\nWe will work through these steps, but you can also find a detailed description on how to join our chat here: https://openwashdata.org/pages/community/chat/\n If we can support you to setup the chat, get in touch with us via Email and we will schedule a call for a walk through."
   },
   {
     "objectID": "modules/md-01.html#thanks",
     "href": "modules/md-01.html#thanks",
-    "title": "Week 1",
+    "title": "Module 1",
     "section": "Thanks!",
     "text": "Thanks!\nThank you for working through these assignments."
   },
@@ -1652,73 +1645,108 @@
     "text": "Learning reflection"
   },
   {
-    "objectID": "modules/wk-05.html",
-    "href": "modules/wk-05.html",
-    "title": "Week 5",
+    "objectID": "modules/md-04.html",
+    "href": "modules/md-04.html",
+    "title": "Module 4",
     "section": "",
-    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats.\nNA"
+    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure."
   },
   {
-    "objectID": "modules/wk-05.html#learning-objectives",
-    "href": "modules/wk-05.html#learning-objectives",
-    "title": "Week 5",
+    "objectID": "modules/md-04.html#learning-objectives",
+    "href": "modules/md-04.html#learning-objectives",
+    "title": "Module 4",
     "section": "",
-    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats.\nNA"
+    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure."
   },
   {
-    "objectID": "modules/wk-05.html#slides",
-    "href": "modules/wk-05.html#slides",
-    "title": "Week 5",
+    "objectID": "modules/md-04.html#slides",
+    "href": "modules/md-04.html#slides",
+    "title": "Module 4",
     "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF"
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/wk-05.html#readings",
-    "href": "modules/wk-05.html#readings",
-    "title": "Week 5",
+    "objectID": "modules/md-04.html#readings",
+    "href": "modules/md-04.html#readings",
+    "title": "Module 4",
+    "section": " Readings",
+    "text": "Readings\n\nRead Data Organization in Spreadsheets"
+  },
+  {
+    "objectID": "modules/md-04.html#assignments",
+    "href": "modules/md-04.html#assignments",
+    "title": "Module 4",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-06.html",
+    "href": "modules/md-06.html",
+    "title": "Module 6",
+    "section": "",
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R."
+  },
+  {
+    "objectID": "modules/md-06.html#learning-objectives",
+    "href": "modules/md-06.html#learning-objectives",
+    "title": "Module 6",
+    "section": "",
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R."
+  },
+  {
+    "objectID": "modules/md-06.html#slides",
+    "href": "modules/md-06.html#slides",
+    "title": "Module 6",
+    "section": " Slides",
+    "text": "Slides\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-06.html#readings",
+    "href": "modules/md-06.html#readings",
+    "title": "Module 6",
     "section": " Readings",
     "text": "Readings\n\nRead R for Data Science - Section 12 - Tidy data\n\nRead R for Data Science - Section 15 - Factors"
   },
   {
-    "objectID": "modules/wk-05.html#homework-assignment",
-    "href": "modules/wk-05.html#homework-assignment",
-    "title": "Week 5",
-    "section": " Homework assignment",
-    "text": "Homework assignment\nHomework assignment & learning reflection due: Friday, 7th July\nComplete the homework programming assignments that are in your project folder for week 5 on Posit Cloud:\n\nhw-05a-tidyr.qmd"
+    "objectID": "modules/md-06.html#assignments",
+    "href": "modules/md-06.html#assignments",
+    "title": "Module 6",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
   },
   {
-    "objectID": "modules/wk-05.html#learning-reflection",
-    "href": "modules/wk-05.html#learning-reflection",
-    "title": "Week 5",
-    "section": " Learning reflection",
-    "text": "Learning reflection\nComplete the learning reflection that is in your project folder for week 5 on Posit Cloud\n\nlearning-05.qmd"
+    "objectID": "modules/md-08.html",
+    "href": "modules/md-08.html",
+    "title": "Module 8",
+    "section": "",
+    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows"
   },
   {
-    "objectID": "modules/wk-08.html#slides",
-    "href": "modules/wk-08.html#slides",
-    "title": "Week 8",
-    "section": "Slides",
-    "text": "Slides"
+    "objectID": "modules/md-08.html#learning-objectives",
+    "href": "modules/md-08.html#learning-objectives",
+    "title": "Module 8",
+    "section": "",
+    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows"
   },
   {
-    "objectID": "modules/wk-08.html#readings",
-    "href": "modules/wk-08.html#readings",
-    "title": "Week 8",
-    "section": "Readings",
+    "objectID": "modules/md-08.html#slides",
+    "href": "modules/md-08.html#slides",
+    "title": "Module 8",
+    "section": " Slides",
+    "text": "Slides\n\nIn preparation"
+  },
+  {
+    "objectID": "modules/md-08.html#readings",
+    "href": "modules/md-08.html#readings",
+    "title": "Module 8",
+    "section": " Readings",
     "text": "Readings"
   },
   {
-    "objectID": "modules/wk-08.html#homework-assignment",
-    "href": "modules/wk-08.html#homework-assignment",
-    "title": "Week 8",
-    "section": "Homework assignment",
-    "text": "Homework assignment"
-  },
-  {
-    "objectID": "modules/wk-08.html#learning-reflection",
-    "href": "modules/wk-08.html#learning-reflection",
-    "title": "Week 8",
-    "section": "Learning reflection",
-    "text": "Learning reflection"
+    "objectID": "modules/md-08.html#assignments",
+    "href": "modules/md-08.html#assignments",
+    "title": "Module 8",
+    "section": " Assignments",
+    "text": "Assignments\n\nIn preparation"
   }
 ]
