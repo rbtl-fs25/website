@@ -28,7 +28,8 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.
 
 ## {{< fa book >}} Readings
 
-1. Read [R for Data Science - Section 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)
+1. Read [R for Data Science - Section 20 - Joins](https://r4ds.hadley.nz/joins)
+2. Read [R for Data Science - Section 26 - Functions](https://r4ds.hadley.nz/functions)
 
 ## {{< fa code >}} Assignments
 

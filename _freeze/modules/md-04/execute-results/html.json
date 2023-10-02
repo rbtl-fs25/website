@@ -1,7 +1,7 @@
 {
-  "hash": "09e35fcd4599b600f749d7e30fa252b5",
+  "hash": "fe4dd7c7b1f8100ca19862b0cfe264d3",
   "result": {
-    "markdown": "---\ntitle: \"Module 4\"\nsubtitle: \"Data organization in spreadsheets\"\neditor: source\nparams:\n    week: 4\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\n2. Learners can discuss the difference between data in an unprocessed structure and in a processed structure.\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n1. Read [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)\n\n## {{< fa code >}} Assignments\n\n- In preparation\n\n",
+    "markdown": "---\ntitle: \"Module 4\"\nsubtitle: \"Data organization in spreadsheets\"\neditor: source\nparams:\n    week: 4\nexecute: \n  echo: false\n  warning: false\nbibliography: references.bib\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1.  Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\n2.  Learners can discuss the difference between data in an unprocessed structure and in a processed structure.\n\n## {{< fa display >}} Slides\n\n-   In preparation\n\n## {{< fa book >}} Readings\n\n1.  Read [@broman2018data]\n\n## {{< fa code >}} Assignments\n\n-   In preparation\n",
     "supporting": [
       "md-04_files"
     ],
