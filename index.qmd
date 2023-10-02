@@ -17,7 +17,7 @@ This course teaches data science with R for people in the greater Water, Sanitat
 
 ## {{< fa circle-question >}} How do I sign up? 
 
-To sign up for the course, you need to complete the following three steps:
+To sign up for the course, you need to complete the following four steps:
 
 - Step 1: Get an account on GitHub
 - Step 2: Register for an ORCID iD
