@@ -29,9 +29,5 @@ Remember to treat your access tokens like passwords and keep them secure (e.g. a
 
 -   Open the issue tracker on the website repository: <https://github.com/ds4owd-001/website/issues>.
 -   Click on "New issue" button.
--   In the "Title" field
-    -   write: "Create a first issue on GitHub".
--   In the "Leave a comment" field,
-    -   tag the course instructors with using the `@` sign in combination with `larnsce` and `mianzg` as the username,
-    -   add anything that you would like to add.
-    
+-   In the "Title" field write: "Create a first issue on GitHub".
+-   In the "Leave a comment" field, tag the course instructors with using the `@` sign in combination with `larnsce` and `mianzg` as the username. Add anything that you would like to add.
