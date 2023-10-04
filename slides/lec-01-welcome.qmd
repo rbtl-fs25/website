@@ -162,8 +162,6 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
 
-
-
 ## Screen setup
 
 :::{.callout-note}
@@ -259,7 +257,7 @@ knitr::include_graphics("img/lec-01/phd_comics_vc.gif")
 knitr::include_graphics("img/lec-01/git-logo.png")
 ```
 - Git is a software for version control
-- Released in 2005
+- Created in 2005
 - Popular among programmers collaboratively developing code 
 - Tracks changes in a set of files (directory/folder/repository)
 :::
@@ -270,13 +268,13 @@ knitr::include_graphics("img/lec-01/github-logo.png")
 ```
 - GitHub is a hosting platform for version control using Git
 - Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion
-- 73 million Users ([February, 2022](https://github.com/about))
-- Facebook for Software Developers
+- >100 million Users (20.5 in 2022 alone) ([October, 2023](https://octoverse.github.com/2022/global-tech-talent))
+- Social media for software developers
 :::
 
 ::::
 
-## Version Control - Terminology
+12## Version Control - Terminology
 
 
 ## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.001.png" background-size="contain"}

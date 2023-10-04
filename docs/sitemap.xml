@@ -2,98 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ds4owd-001.github.io/website/overview.html</loc>
-    <lastmod>2023-10-04T09:11:43.192Z</lastmod>
+    <lastmod>2023-10-04T12:22:34.270Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/LICENSE.html</loc>
-    <lastmod>2023-10-04T09:11:43.577Z</lastmod>
+    <lastmod>2023-10-04T12:22:34.675Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/index.html</loc>
-    <lastmod>2023-10-04T09:12:09.275Z</lastmod>
+    <lastmod>2023-10-04T12:22:35.118Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-02-visualisation.html</loc>
-    <lastmod>2023-10-04T09:11:44.901Z</lastmod>
+    <lastmod>2023-10-04T12:22:35.970Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-01-welcome.html</loc>
-    <lastmod>2023-10-04T09:19:37.798Z</lastmod>
+    <lastmod>2023-10-04T12:22:38.878Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-04-tidy-data.html</loc>
-    <lastmod>2023-10-04T09:11:46.923Z</lastmod>
+    <lastmod>2023-10-04T12:22:39.990Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-03-transformation.html</loc>
-    <lastmod>2023-10-04T09:11:47.413Z</lastmod>
+    <lastmod>2023-10-04T12:22:40.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ds4owd-001.github.io/website/slides/sd-01-welcome.html</loc>
+    <lastmod>2023-10-04T12:22:40.807Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-05-communicate.html</loc>
-    <lastmod>2023-10-04T09:11:48.352Z</lastmod>
+    <lastmod>2023-10-04T12:22:41.804Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/code_of_conduct.html</loc>
-    <lastmod>2023-10-04T09:11:48.778Z</lastmod>
+    <lastmod>2023-10-04T12:22:42.242Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/about.html</loc>
-    <lastmod>2023-10-04T09:11:49.122Z</lastmod>
+    <lastmod>2023-10-04T12:22:42.600Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/project/index.html</loc>
-    <lastmod>2023-10-04T09:11:49.578Z</lastmod>
+    <lastmod>2023-10-04T12:22:43.132Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-03.html</loc>
-    <lastmod>2023-10-04T09:11:49.981Z</lastmod>
+    <lastmod>2023-10-04T12:22:43.570Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-02.html</loc>
-    <lastmod>2023-10-04T09:11:50.352Z</lastmod>
+    <lastmod>2023-10-04T12:22:44.031Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-01.html</loc>
-    <lastmod>2023-10-04T09:11:50.758Z</lastmod>
+    <lastmod>2023-10-04T12:22:44.512Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-05.html</loc>
-    <lastmod>2023-10-04T09:11:51.155Z</lastmod>
+    <lastmod>2023-10-04T12:22:45.052Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/wk-00-template.html</loc>
-    <lastmod>2023-10-04T09:11:51.514Z</lastmod>
+    <lastmod>2023-10-04T12:22:45.465Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-10.html</loc>
-    <lastmod>2023-10-04T09:11:51.855Z</lastmod>
+    <lastmod>2023-10-04T12:22:45.880Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-04.html</loc>
-    <lastmod>2023-10-04T09:11:52.238Z</lastmod>
+    <lastmod>2023-10-04T12:22:46.292Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-06.html</loc>
-    <lastmod>2023-10-04T09:11:52.590Z</lastmod>
+    <lastmod>2023-10-04T12:22:46.749Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-07.html</loc>
-    <lastmod>2023-10-04T09:11:52.963Z</lastmod>
+    <lastmod>2023-10-04T12:22:47.264Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-09.html</loc>
-    <lastmod>2023-10-04T09:11:53.332Z</lastmod>
+    <lastmod>2023-10-04T12:22:47.750Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-08.html</loc>
-    <lastmod>2023-10-04T09:11:53.697Z</lastmod>
+    <lastmod>2023-10-04T12:22:48.164Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/schedule.html</loc>
-    <lastmod>2023-10-04T09:11:54.365Z</lastmod>
+    <lastmod>2023-10-04T12:22:48.928Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/calendar.html</loc>
-    <lastmod>2023-10-04T09:11:54.720Z</lastmod>
+    <lastmod>2023-10-04T12:22:49.405Z</lastmod>
   </url>
 </urlset>

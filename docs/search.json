@@ -564,14 +564,7 @@
     "href": "slides/lec-01-welcome.html#git-and-github",
     "title": "Welcome to Data Analytics for Development",
     "section": "Git and GitHub",
-    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nReleased in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n73 million Users (February, 2022)\nFacebook for Software Developers"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#version-control---terminology",
-    "href": "slides/lec-01-welcome.html#version-control---terminology",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Version Control - Terminology",
-    "text": "Version Control - Terminology"
+    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nCreated in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n\n100 million Users (20.5 in 2022 alone) (October, 2023)\n\nSocial media for software developers\n\n\n\n12## Version Control - Terminology"
   },
   {
     "objectID": "slides/lec-01-welcome.html#deep-end",
@@ -693,39 +686,11 @@
     "text": "Homework assignments\n\nWeekly programming assignments\nGraded as pass/fail (100 pts)\nSubmitted as rendered Quarto documents on GitHub\nweighted at 40% of the total grade"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#learning-reflections",
-    "href": "slides/lec-01-welcome.html#learning-reflections",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Learning reflections",
-    "text": "Learning reflections\n\nReflections on the different class elements (lecture, homework assignment, readings)\nGraded as pass/fail (100 pts)\nminimum 100 words\nSubmitted as rendered Quarto documents on GitHub\nweighted at 20% of the total grade"
-  },
-  {
     "objectID": "slides/lec-01-welcome.html#capstone-project",
     "href": "slides/lec-01-welcome.html#capstone-project",
     "title": "Welcome to Data Analytics for Development",
     "section": "Capstone Project",
     "text": "Capstone Project\n\nData analysis project report with a data set of your choice\nGraded as number of points out of 100 pts for pre-defined graded elements\nSubmitted as rendered Quarto document on GitHub\nweighted at 20% of the total grade"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#exam",
-    "href": "slides/lec-01-welcome.html#exam",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Exam",
-    "text": "Exam\n\n2-hour exam assessing the technical skills taught during the course\nGraded as number of points out of 100 pts for pre-defined graded elements\nSubmitted as rendered Quarto document, but not on GitHub\nweighted at 20% of the total grade"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#grading",
-    "href": "slides/lec-01-welcome.html#grading",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Grading",
-    "text": "Grading\n\n\n\n\n\n\n  \n    \n      Conversion from percent to grades.\n    \n    \n    \n      grade\n      percent\n    \n  \n  \n    A+\n97\n    A\n93\n    A-\n90\n    B+\n87\n    B\n83\n    B-\n80\n    C+\n77\n    C\n73\n    C-\n70\n    D+\n67\n    D\n63\n    D-\n60\n    F\n0"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#late-work-policy",
-    "href": "slides/lec-01-welcome.html#late-work-policy",
-    "title": "Welcome to Data Analytics for Development",
-    "section": "Late work policy",
-    "text": "Late work policy\n\ndue dates are set and all work is due on the stated date\nwork not submitted by the due date will receive 0 pts\nthe lowest score for each of the assignments or learning reflections is dropped"
   },
   {
     "objectID": "slides/lec-01-welcome.html#homework-due-dates",
@@ -1048,6 +1013,62 @@
     "title": "Data Transformation with dplyr",
     "section": "",
     "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#section",
+    "href": "slides/sd-01-welcome.html#section",
+    "title": "data science for openwashdata",
+    "section": "",
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#quarto-for-literate-programming",
+    "href": "slides/sd-01-welcome.html#quarto-for-literate-programming",
+    "title": "data science for openwashdata",
+    "section": "Quarto for literate programming",
+    "text": "Quarto for literate programming"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#what-is-a-.qmd",
+    "href": "slides/sd-01-welcome.html#what-is-a-.qmd",
+    "title": "data science for openwashdata",
+    "section": "What is a .qmd?",
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |> \n  dplyr::group_by(cyl) |> \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  >> group_by(_.cyl)\n  >> summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#quarto-makes-moving-between-formats-straightforward",
+    "href": "slides/sd-01-welcome.html#quarto-makes-moving-between-formats-straightforward",
+    "title": "data science for openwashdata",
+    "section": "Quarto makes moving between formats straightforward",
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–> a lesson in document form  –> the same content in presentation form  –> the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#comfort-of-your-own-workspace",
+    "href": "slides/sd-01-welcome.html#comfort-of-your-own-workspace",
+    "title": "data science for openwashdata",
+    "section": "Comfort of your own workspace",
+    "text": "Comfort of your own workspace"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#posit-cloud-rstudio-ide",
+    "href": "slides/sd-01-welcome.html#posit-cloud-rstudio-ide",
+    "title": "data science for openwashdata",
+    "section": "Posit Cloud & RStudio IDE",
+    "text": "Posit Cloud & RStudio IDE"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#posit-cloud-rstudio-ide-1",
+    "href": "slides/sd-01-welcome.html#posit-cloud-rstudio-ide-1",
+    "title": "data science for openwashdata",
+    "section": "Posit Cloud & RStudio IDE",
+    "text": "Posit Cloud & RStudio IDE"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#posit-cloud-rstudio-ide-2",
+    "href": "slides/sd-01-welcome.html#posit-cloud-rstudio-ide-2",
+    "title": "data science for openwashdata",
+    "section": "Posit Cloud & RStudio IDE",
+    "text": "Posit Cloud & RStudio IDE\n\n\n\n\nhttps://ds4owd-001.github.io/website/"
   },
   {
     "objectID": "slides/lec-05-communicate.html#we",
