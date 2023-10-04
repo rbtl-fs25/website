@@ -27,7 +27,7 @@ website:
   
   sidebar:
     background: "#C8CDF3"
-    logo: "img/ghe-square-logo-vector.svg"
+    logo: "img/OWD-logo-20.svg"
     pinned: true
     align: center
     style: "docked"
