@@ -27,7 +27,8 @@ website:
   
   sidebar:
     background: "#C8CDF3"
-    logo: "img/OWD-logo-20.svg"
+    logo: "img/OWD-logo-20.png"
+    logo-alt: "openwashdata logo."
     pinned: true
     align: center
     style: "docked"
