@@ -99,7 +99,7 @@ Share with us from which country you are joining us.
 
 ```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
+lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |>
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
@@ -109,7 +109,6 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectiv
 1. `r lobj1[1]`
 1. `r lobj1[2]`
 1. `r lobj1[3]`
-1. `r lobj1[4]`
 :::
 
 ##
@@ -570,44 +569,12 @@ Rules of `dplyr` functions:
 - Submitted as rendered Quarto documents on GitHub
 - weighted at 40% of the total grade
 
-## Learning reflections
-
-- Reflections on the different class elements (lecture, homework assignment, readings)
-- Graded as pass/fail (100 pts)
-- minimum 100 words
-- Submitted as rendered Quarto documents on GitHub
-- weighted at 20% of the total grade
-
 ## Capstone Project
 
 - Data analysis project report with a data set of your choice
 - Graded as number of points out of 100 pts for pre-defined graded elements
 - Submitted as rendered Quarto document on GitHub
 - weighted at 20% of the total grade
-
-## Exam
-
-- 2-hour exam assessing the technical skills taught during the course
-- Graded as number of points out of 100 pts for pre-defined graded elements
-- Submitted as rendered Quarto document, but **not** on GitHub
-- weighted at 20% of the total grade
-
-## Grading {.smaller .scrollable}
-
-```{r}
-
-
-readr::read_csv(here::here("data/tbl-03-cven5837-ss23-grading-scheme.csv")) |> 
-  gt::gt() |> 
-  gt::tab_header("Conversion from percent to grades.")
-
-```
-
-## Late work policy
-
-- due dates are set and all work is due on the stated date
-- work not submitted by the due date will receive 0 pts
-- the lowest score for each of the assignments or learning reflections is dropped
 
 # Homework week 1 {background-color="#0F4C81"}
 

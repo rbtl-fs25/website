@@ -7,6 +7,7 @@ website:
   title: "data science for openwashdata"
   description: "Website for data science for openwashdata course 001"
   site-url: "https://ds4owd-001.github.io/website/"
+  repo-url: "https://github.com/ds4owd-001"
   favicon: "img/OWD-logo-18.png"
   search: false
   page-footer: 
@@ -27,7 +28,7 @@ website:
         aria-label: Matrix
   
   sidebar:
-    background: "#C8CDF3"
+    background: "#C8CEF3"
     logo: "img/OWD-logo-20.png"
     logo-alt: "openwashdata logo."
     pinned: true
@@ -39,9 +40,6 @@ website:
       - icon: github
         href: https://github.com/ds4owd-001
         text: "GitHub organization"
-      - icon: code-square
-        href: https://posit.cloud/
-        text: "Posit Cloud"
     contents: 
       - href: index.qmd
         text: Sign-up here
