@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>data science for openwashdata - Communication in a chat</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../../modules/md-02.html" rel="next">
+<link href="../../assignments/md-01/am-01-2-github.html" rel="prev">
+<link href="../../img/OWD-logo-18.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script defer="" data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Communication in a chat</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../img/OWD-logo-20.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/ds4owd-001" title="GitHub organization" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">Sign-up here</a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../overview.html" class="sidebar-item-text sidebar-link">Course Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../calendar.html" class="sidebar-item-text sidebar-link">Course Calendar</a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../modules/md-01.html" class="sidebar-item-text sidebar-link">Module 01</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-01/am-01-1-posit.html" class="sidebar-item-text sidebar-link">am-01: Posit Cloud</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-01/am-01-2-github.html" class="sidebar-item-text sidebar-link">am-02: GitHub</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-01/am-01-3-element.html" class="sidebar-item-text sidebar-link active">am-03: Element</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-02.html" class="sidebar-item-text sidebar-link">Module 02</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-03.html" class="sidebar-item-text sidebar-link">Module 03</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-04.html" class="sidebar-item-text sidebar-link">Module 04</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-05.html" class="sidebar-item-text sidebar-link">Module 05</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-06.html" class="sidebar-item-text sidebar-link">Module 06</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-07.html" class="sidebar-item-text sidebar-link">Module 07</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-08.html" class="sidebar-item-text sidebar-link">Module 08</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-09.html" class="sidebar-item-text sidebar-link">Module 09</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../modules/md-10.html" class="sidebar-item-text sidebar-link">Module 10</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1-join-the-chat" id="toc-step-1-join-the-chat" class="nav-link active" data-scroll-target="#step-1-join-the-chat">Step 1: Join the chat</a></li>
+  <li><a href="#step-2-verify-element-session" id="toc-step-2-verify-element-session" class="nav-link" data-scroll-target="#step-2-verify-element-session">Step 2: Verify element session</a></li>
+  <li><a href="#step-3-download-element-optional" id="toc-step-3-download-element-optional" class="nav-link" data-scroll-target="#step-3-download-element-optional">Step 3: Download Element (optional)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Communication in a chat</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels.</p>
+<p>We want to communicate through a chat client called Element, providing the open source, free-of-charge Slack-like experience.</p>
+<p>On Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself.</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Struggeling to setup Element?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><i class="fa-solid fa-envelope-circle-check" aria-label="envelope-circle-check"></i> If we can support you to setup the chat, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=openwashdata support" target="_blank">Email</a> and we will schedule a call for a walk through.</p>
+</div>
+</div>
+</div>
+<p>To set it up, please follow the steps below:</p>
+<section id="step-1-join-the-chat" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-join-the-chat">Step 1: Join the chat</h2>
+<ol type="1">
+<li><p>Open the following link in your browser: <a href="https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch" class="uri">https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch</a></p></li>
+<li><p>Click on <span class="highlight-peach">Continue</span></p></li>
+</ol>
+<p><img src="images/setup-element-01.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Click on <span class="highlight-peach">Sign Up</span></li>
+</ol>
+<p><img src="images/setup-element-02.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Click on the <span class="highlight-peach">GitHub icon</span></li>
+</ol>
+<p><img src="images/setup-element-03.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>Click on <span class="highlight-peach">Continue</span></li>
+</ol>
+<p><img src="images/setup-element-04.png" class="img-fluid"></p>
+<ol start="6" type="1">
+<li>Click on the <span class="highlight-peach">X</span> to close the dialogue</li>
+</ol>
+<p><img src="images/setup-element-05.png" class="img-fluid"></p>
+<ol start="7" type="1">
+<li>Click on <span class="highlight-peach">“I’ll verify later”</span> to close the dialogue</li>
+</ol>
+<p><img src="images/setup-element-06.png" class="img-fluid"> 8. Click on <span class="highlight-peach">“Join the Discussion”</span></p>
+<p><img src="images/setup-element-07.png" class="img-fluid"> 9. Leave a message</p>
+<p>You are now in the lobby of the openwashdata community. <span class="highlight-peach">Leave a message</span> to introduce yourself. You will be added to the room ds4owd-001 that is specifically for this course.</p>
+<p><img src="images/setup-element-08.png" class="img-fluid"></p>
+</section>
+<section id="step-2-verify-element-session" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-verify-element-session">Step 2: Verify element session</h2>
+<ol type="1">
+<li>Click on the icon in the <span class="highlight-peach">top left corner</span></li>
+</ol>
+<p><img src="images/verify-element-session-01.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Click on <span class="highlight-peach">All settings</span></li>
+</ol>
+<p><img src="images/verify-element-session-02.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Select Sessions in the navigation pane on the left, click Verify session</li>
+</ol>
+<p><img src="images/verify-element-session-03.png" class="img-fluid"> 4. Click <span class="highlight-peach">Proceed with reset</span></p>
+<p><img src="images/verify-element-session-04.png" class="img-fluid"> 5. Select Generate a Security Key and click <span class="highlight-peach">Continue</span></p>
+<p><img src="images/verify-element-session-05.png" class="img-fluid"> 6. Click <span class="highlight-peach">Download</span> and save downloaded security-key.txt securely</p>
+<p><img src="images/verify-element-session-06.png" class="img-fluid"> 7. Click <span class="highlight-peach">Continue</span></p>
+<p><img src="images/verify-element-session-07.png" class="img-fluid"></p>
+<ol start="8" type="1">
+<li>You have succesfully verified your session</li>
+</ol>
+<p>You can download Element as an app for your computer and also your phone. If you proceed to do this, then use the stored security key to verify those additional sessions.</p>
+<p><img src="images/verify-element-session-08.png" class="img-fluid"></p>
+</section>
+<section id="step-3-download-element-optional" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-download-element-optional">Step 3: Download Element (optional)</h2>
+<ol type="1">
+<li>Download and install Element: https://element.io/download</li>
+</ol>
+<p>It’s available on Windows, Linux and Mac OS, as well as Android and iPhone.</p>
+<ol start="2" type="1">
+<li><p>Open the Element App on your device</p></li>
+<li><p>Click on Sign In</p></li>
+<li><p>Sign in with GitHub</p></li>
+<li><p>Click on <span class="highlight-peach">Verify with Security Key</span></p></li>
+</ol>
+<p><img src="images/verify-element-app-session-01.png" class="img-fluid"> 6. Copy/paste the Security key from the downloaded <code>security-key.txt</code> you received when setting up the app in your browser. And hit Continue.</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+I cannot click Continue
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>If a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.</p>
+</div>
+</div>
+</div>
+<p><img src="images/verify-element-app-session-02.png" class="img-fluid"> 7. You have successfully verified your device</p>
+<p><img src="images/verify-element-app-session-03.png" class="img-fluid"></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../assignments/md-01/am-01-2-github.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">am-02: GitHub</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../modules/md-02.html" class="pagination-link">
+        <span class="nav-page-text">Module 02</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This course is part of the <a href="https://openwashdata.org/">openwashdata project</a> supported by the <a href="https://ethrat.ch/en/eth-domain/open-research-data/">Open Research Data Program of the ETH Board</a></div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../code_of_conduct.html">Code of Conduct</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support">
+      <i class="bi bi-envelope-at" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link active" href="https://github.com/ds4owd-001" aria-current="page">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch">
+      <i class="bi bi-chat-left-dots" role="img" aria-label="Matrix">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -56,6 +56,55 @@
     "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
   },
   {
+    "objectID": "assignments/md-01/am-01-1-posit.html",
+    "href": "assignments/md-01/am-01-1-posit.html",
+    "title": "Working with R, RStudio on Posit Cloud",
+    "section": "",
+    "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-2-github.html",
+    "href": "assignments/md-01/am-01-2-github.html",
+    "title": "Interaction with GitHub",
+    "section": "",
+    "text": "Here are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nWarning\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software)."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-2-github.html#open-an-issue-on-github",
+    "href": "assignments/md-01/am-01-2-github.html#open-an-issue-on-github",
+    "title": "Interaction with GitHub",
+    "section": "Open an issue on GitHub",
+    "text": "Open an issue on GitHub\n\nOpen the issue tracker on the website repository: https://github.com/ds4owd-001/website/issues.\nClick on “New issue” button.\nIn the “Title” field\n\nwrite: “Create a first issue on GitHub”.\n\nIn the “Leave a comment” field,\n\ntag the course instructors with using the @ sign in combination with larnsce and mianzg as the username,\nadd anything that you would like to add."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-element.html",
+    "href": "assignments/md-01/am-01-3-element.html",
+    "title": "Communication in a chat",
+    "section": "",
+    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels.\nWe want to communicate through a chat client called Element, providing the open source, free-of-charge Slack-like experience.\nOn Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself.\nTo set it up, please follow the steps below:"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-element.html#step-1-join-the-chat",
+    "href": "assignments/md-01/am-01-3-element.html#step-1-join-the-chat",
+    "title": "Communication in a chat",
+    "section": "Step 1: Join the chat",
+    "text": "Step 1: Join the chat\n\nOpen the following link in your browser: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch\nClick on Continue\n\n\n\nClick on Sign Up\n\n\n\nClick on the GitHub icon\n\n\n\nClick on Continue\n\n\n\nClick on the X to close the dialogue\n\n\n\nClick on “I’ll verify later” to close the dialogue\n\n 8. Click on “Join the Discussion”\n 9. Leave a message\nYou are now in the lobby of the openwashdata community. Leave a message to introduce yourself. You will be added to the room ds4owd-001 that is specifically for this course."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-element.html#step-2-verify-element-session",
+    "href": "assignments/md-01/am-01-3-element.html#step-2-verify-element-session",
+    "title": "Communication in a chat",
+    "section": "Step 2: Verify element session",
+    "text": "Step 2: Verify element session\n\nClick on the icon in the top left corner\n\n\n\nClick on All settings\n\n\n\nSelect Sessions in the navigation pane on the left, click Verify session\n\n 4. Click Proceed with reset\n 5. Select Generate a Security Key and click Continue\n 6. Click Download and save downloaded security-key.txt securely\n 7. Click Continue\n\n\nYou have succesfully verified your session\n\nYou can download Element as an app for your computer and also your phone. If you proceed to do this, then use the stored security key to verify those additional sessions."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-element.html#step-3-download-element-optional",
+    "href": "assignments/md-01/am-01-3-element.html#step-3-download-element-optional",
+    "title": "Communication in a chat",
+    "section": "Step 3: Download Element (optional)",
+    "text": "Step 3: Download Element (optional)\n\nDownload and install Element: https://element.io/download\n\nIt’s available on Windows, Linux and Mac OS, as well as Android and iPhone.\n\nOpen the Element App on your device\nClick on Sign In\nSign in with GitHub\nClick on Verify with Security Key\n\n 6. Copy/paste the Security key from the downloaded security-key.txt you received when setting up the app in your browser. And hit Continue.\n\n\n\n\n\n\nI cannot click Continue\n\n\n\n\n\nIf a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.\n\n\n\n 7. You have successfully verified your device"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sign-up for data science for openwashdata course 001",
@@ -1397,14 +1446,7 @@
     "href": "modules/md-01.html#fa-code-assignments",
     "title": "Module 1",
     "section": " Assignments",
-    "text": "Assignments\nWe will work through these assignments live during our first class. If you missed the class, you could still join be working through the following assignments indepedently.\n\nLog into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\nThe link will be shared during the class on 31st October 2023. If you missed the class, get in touch with us via Email and we will share it with you.\n\n\nSet up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).\n\n\nOpen an issue on GitHub\n\nOpen the issue tracker on the website repository: https://github.com/ds4owd-001/website/issues.\nClick on “New issue” button.\nIn the “Title” field\n\nwrite: “Create a first issue on GitHub”.\n\nIn the “Leave a comment” field,\n\ntag the course instructors with using the @ sign in combination with larnsce and mianzg as the username,\nadd anything that you would like to add.\n\n\n\n\nJoin our Chat on Element\nWe will work through these steps, but you can also find a detailed description on how to join our chat here: https://openwashdata.org/pages/community/chat/\n If we can support you to setup the chat, get in touch with us via Email and we will schedule a call for a walk through."
-  },
-  {
-    "objectID": "modules/md-01.html#thanks",
-    "href": "modules/md-01.html#thanks",
-    "title": "Module 1",
-    "section": "Thanks!",
-    "text": "Thanks!\nThank you for working through these assignments."
+    "text": "Assignments\nWe will work through these assignments live during our first class. If we were too quick, your internet connection interrupted, or you missed the class, you can follow these instructions independently:\n\nAssignment 1: Working with R, RStudio on Posit Cloud\nAssignment 2: Interaction with GitHub\nAssignment 3: Communication in a chat\n\nThank you for working through these assignments."
   },
   {
     "objectID": "modules/md-05.html",

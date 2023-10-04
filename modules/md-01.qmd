@@ -44,59 +44,10 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.
 
 ## {{< fa code >}} Assignments
 
-We will work through these assignments live during our first class. If you missed the class, you could still join be working through the following assignments indepedently.
+We will work through these assignments live during our first class. If we were too quick, your internet connection interrupted, or you missed the class, you can follow these instructions independently:
 
-### Log into Posit Cloud with GitHub account
-
-Here are the instructions to login to Posit Cloud using a GitHub account:
-
-1.  Go to the Posit Cloud Sign Up page: <https://login.posit.cloud/register>
-2.  Click on the **"Sign Up with GitHub"** button.
-3.  Enter your GitHub username and password when prompted.
-4.  If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.
-5.  Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.
-
-Note that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.
-
-### Join the course workspace on Posit Cloud
-
-The link will be shared during the class on 31st October 2023. If you missed the class, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=ds4owd-001: Posit Cloud link" target="_blank">Email</a> and we will share it with you.
-
-### Set up a GitHub Personal Access Token
-
-Here are the step-by-step instructions to set up a GitHub personal access token:
-
-1.  Log in to your GitHub account.
-2.  Click on your profile picture in the top-right corner of the page.
-3.  Select "Settings" from the dropdown menu.
-4.  In the left sidebar, click on "Developer settings".
-5.  Click on "Personal access tokens".
-6.  Click on **"Tokens (classic)"**.
-7.  Click on "Generate new token" and from the dropdown menu select **"Generate new token (classic)".**
-8.  In the "Note" field, give your token the name: GITHUB_PAT
-9.  Under Expiration, select "No expiration"
-10. Under "Select scopes", select: **repo, workflow, user**
-11. Click on "Generate token".
-12. Your personal access token will be displayed on the screen. Copy it and store it in a safe place.
-
-Remember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).
-
-### Open an issue on GitHub
-
--   Open the issue tracker on the website repository: <https://github.com/ds4owd-001/website/issues>.
--   Click on "New issue" button.
--   In the "Title" field
-    -   write: "Create a first issue on GitHub".
--   In the "Leave a comment" field,
-    -   tag the course instructors with using the `@` sign in combination with `larnsce` and `mianzg` as the username,
-    -   add anything that you would like to add.
-    
-### Join our Chat on Element
-
-We will work through these steps, but you can also find a detailed description on how to join our chat here: <https://openwashdata.org/pages/community/chat/>
-
-{{< fa envelope-circle-check >}} If we can support you to setup the chat, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=openwashdata support" target="_blank">Email</a> and we will schedule a call for a walk through. 
-
-## Thanks! 
+-   [Assignment 1](../assignments/md-01/am-01-1-posit.qmd): Working with R, RStudio on Posit Cloud
+-   [Assignment 2](../assignments/md-01/am-01-1-posit.qmd): Interaction with GitHub
+-   [Assignment 3](../assignments/md-01/am-01-1-posit.qmd): Communication in a chat
 
 Thank you for working through these assignments. 

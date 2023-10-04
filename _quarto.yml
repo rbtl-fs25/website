@@ -49,24 +49,31 @@ website:
       - href: calendar.qmd
         text: Course Calendar
       - text: "---"
-      - href: modules/md-01.qmd
-        text: Module 1
+      - section: "Module 01"
+        href: modules/md-01.qmd
+        contents:
+          - href: assignments/md-01/am-01-1-posit.qmd
+            text: "am-01: Posit Cloud"
+          - href: assignments/md-01/am-01-2-github.qmd
+            text: "am-02: GitHub"
+          - href: assignments/md-01/am-01-3-element.qmd
+            text: "am-03: Element"
       - href: modules/md-02.qmd
-        text: Module 2
+        text: Module 02
       - href: modules/md-03.qmd
-        text: Module 3
+        text: Module 03
       - href: modules/md-04.qmd
-        text: Module 4
+        text: Module 04
       - href: modules/md-05.qmd
-        text: Module 5
+        text: Module 05
       - href: modules/md-06.qmd
-        text: Module 6
+        text: Module 06
       - href: modules/md-07.qmd
-        text: Module 7
+        text: Module 07
       - href: modules/md-08.qmd
-        text: Module 8
+        text: Module 08
       - href: modules/md-09.qmd
-        text: Module 9
+        text: Module 09
       - href: modules/md-10.qmd
         text: Module 10
 format:
