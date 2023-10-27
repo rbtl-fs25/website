@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.4.444">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -47,7 +47,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script defer="" data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
@@ -60,11 +61,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Sign-up for data science for openwashdata course 001</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Sign-up here</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -72,124 +78,141 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/OWD-logo-20.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
-    <a href="https://github.com/ds4owd-001" title="GitHub organization" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/ds4owd-001" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
 </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Sign-up here</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Sign-up here</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./overview.html" class="sidebar-item-text sidebar-link">Course Overview</a>
+  <a href="./overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./calendar.html" class="sidebar-item-text sidebar-link">Course Calendar</a>
+  <a href="./calendar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Calendar</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./modules/md-01.html" class="sidebar-item-text sidebar-link">Module 01</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a href="./modules/md-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 01</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/md-01/am-01-1-posit.html" class="sidebar-item-text sidebar-link">am-01: Posit Cloud</a>
+  <a href="./assignments/md-01/am-01-1-posit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Posit Cloud</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/md-01/am-01-2-github.html" class="sidebar-item-text sidebar-link">am-02: GitHub</a>
+  <a href="./assignments/md-01/am-01-2-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-02: GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/md-01/am-01-3-element.html" class="sidebar-item-text sidebar-link">am-03: Element</a>
+  <a href="./assignments/md-01/am-01-3-element.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-03: Element</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-02.html" class="sidebar-item-text sidebar-link">Module 02</a>
+  <a href="./modules/md-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 02</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-03.html" class="sidebar-item-text sidebar-link">Module 03</a>
+  <a href="./modules/md-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 03</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-04.html" class="sidebar-item-text sidebar-link">Module 04</a>
+  <a href="./modules/md-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 04</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-05.html" class="sidebar-item-text sidebar-link">Module 05</a>
+  <a href="./modules/md-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 05</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-06.html" class="sidebar-item-text sidebar-link">Module 06</a>
+  <a href="./modules/md-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 06</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-07.html" class="sidebar-item-text sidebar-link">Module 07</a>
+  <a href="./modules/md-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 07</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-08.html" class="sidebar-item-text sidebar-link">Module 08</a>
+  <a href="./modules/md-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 08</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-09.html" class="sidebar-item-text sidebar-link">Module 09</a>
+  <a href="./modules/md-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 09</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-10.html" class="sidebar-item-text sidebar-link">Module 10</a>
+  <a href="./modules/md-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 10</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#fa-circle-question-how-do-i-sign-up" id="toc-fa-circle-question-how-do-i-sign-up" class="nav-link active" data-scroll-target="#fa-circle-question-how-do-i-sign-up"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> How do I sign up?</a>
+  <li><a href="#how-do-i-sign-up" id="toc-how-do-i-sign-up" class="nav-link active" data-scroll-target="#how-do-i-sign-up"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> How do I sign up?</a>
   <ul class="collapse">
-  <li><a href="#fa-brands-github-step-1-get-an-account-on-github" id="toc-fa-brands-github-step-1-get-an-account-on-github" class="nav-link" data-scroll-target="#fa-brands-github-step-1-get-an-account-on-github"><i class="fa-brands fa-github" aria-label="github"></i> Step 1: Get an account on GitHub</a></li>
-  <li><a href="#fa-brands-orcid-step-2-register-for-an-orcid-id" id="toc-fa-brands-orcid-step-2-register-for-an-orcid-id" class="nav-link" data-scroll-target="#fa-brands-orcid-step-2-register-for-an-orcid-id"><i class="fa-brands fa-orcid" aria-label="orcid"></i> Step 2: Register for an ORCID iD</a></li>
-  <li><a href="#fa-pen-clip-step-3-fill-out-our-registration-form" id="toc-fa-pen-clip-step-3-fill-out-our-registration-form" class="nav-link" data-scroll-target="#fa-pen-clip-step-3-fill-out-our-registration-form"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Step 3: Fill out our registration form</a></li>
-  <li><a href="#fa-headset-step-4-register-for-the-scheduled-zoom-meetings" id="toc-fa-headset-step-4-register-for-the-scheduled-zoom-meetings" class="nav-link" data-scroll-target="#fa-headset-step-4-register-for-the-scheduled-zoom-meetings"><i class="fa-solid fa-headset" aria-label="headset"></i> Step 4: Register for the scheduled Zoom meetings</a></li>
+  <li><a href="#step-1-get-an-account-on-github" id="toc-step-1-get-an-account-on-github" class="nav-link" data-scroll-target="#step-1-get-an-account-on-github"><i class="fa-brands fa-github" aria-label="github"></i> Step 1: Get an account on GitHub</a></li>
+  <li><a href="#step-2-register-for-an-orcid-id" id="toc-step-2-register-for-an-orcid-id" class="nav-link" data-scroll-target="#step-2-register-for-an-orcid-id"><i class="fa-brands fa-orcid" aria-label="orcid"></i> Step 2: Register for an ORCID iD</a></li>
+  <li><a href="#step-3-fill-out-our-registration-form" id="toc-step-3-fill-out-our-registration-form" class="nav-link" data-scroll-target="#step-3-fill-out-our-registration-form"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Step 3: Fill out our registration form</a></li>
+  <li><a href="#step-4-register-for-the-scheduled-zoom-meetings" id="toc-step-4-register-for-the-scheduled-zoom-meetings" class="nav-link" data-scroll-target="#step-4-register-for-the-scheduled-zoom-meetings"><i class="fa-solid fa-headset" aria-label="headset"></i> Step 4: Register for the scheduled Zoom meetings</a></li>
   </ul></li>
   <li><a href="#thanks-for-signing-up" id="toc-thanks-for-signing-up" class="nav-link" data-scroll-target="#thanks-for-signing-up">Thanks for signing up!</a></li>
   </ul>
@@ -200,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Sign-up for data science for openwashdata course 001</h1>
+<h1 class="title">Sign-up for data science for openwashdata course 001</h1>
 </div>
 
 
@@ -213,7 +236,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Thank you for your interest in this course. Your course instructors: <a href="https://openwashdata.org/about/lars/">Lars Schöbitz</a> &amp; <a href="https://openwashdata.org/about/mian/">Mian Zhong</a> are looking forward to meet you.</p>
 <p>We will meet on Zoom for 10 modules over 15 weeks at the following times:</p>
@@ -222,8 +247,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>End:</strong> 6th February 2024 - 2 pm to 4:30 pm CET</li>
 </ul>
 <p>This course teaches data science with R for people in the greater Water, Sanitation and Hygiene (WASH) sector. It is offered by offered by the <a href="https://openwashdata.org/pages/academy/">openwashdata academy</a> with the mission to empower WASH professionals to engage with tools and workflows for open data and code. More details can be found on the <a href="overview.html">Course Overview</a> page.</p>
-<section id="fa-circle-question-how-do-i-sign-up" class="level2">
-<h2 class="anchored" data-anchor-id="fa-circle-question-how-do-i-sign-up"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> How do I sign up?</h2>
+<section id="how-do-i-sign-up" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-sign-up"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> How do I sign up?</h2>
 <p>To sign up for the course, you need to complete the following four steps:</p>
 <ul>
 <li>Step 1: Get an account on GitHub</li>
@@ -231,8 +256,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Step 3: Fill out our registration form</li>
 <li>Step 4: Register for the scheduled Zoom calls</li>
 </ul>
-<section id="fa-brands-github-step-1-get-an-account-on-github" class="level3">
-<h3 class="anchored" data-anchor-id="fa-brands-github-step-1-get-an-account-on-github"><i class="fa-brands fa-github" aria-label="github"></i> Step 1: Get an account on GitHub</h3>
+<section id="step-1-get-an-account-on-github" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-get-an-account-on-github"><i class="fa-brands fa-github" aria-label="github"></i> Step 1: Get an account on GitHub</h3>
 <p>To set up an account on GitHub, follow these general steps:</p>
 <ol type="1">
 <li>Go to the GitHub website at <a href="https://github.com/" class="uri">https://github.com/</a>.</li>
@@ -241,12 +266,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Choose whether you want to receive updates and announcements via email.</li>
 <li>Complete the verification process by solving a puzzle and entering a verification code sent to your email.</li>
 </ol>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Username advice from: <a href="https://happygitwithr.com/github-acct.html#github-acct">Happy Git and GitHub for the useR</a>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -274,21 +299,21 @@ Username advice from: <a href="https://happygitwithr.com/github-acct.html#github
 </div>
 </div>
 </section>
-<section id="fa-brands-orcid-step-2-register-for-an-orcid-id" class="level3">
-<h3 class="anchored" data-anchor-id="fa-brands-orcid-step-2-register-for-an-orcid-id"><i class="fa-brands fa-orcid" aria-label="orcid"></i> Step 2: Register for an ORCID iD</h3>
+<section id="step-2-register-for-an-orcid-id" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-register-for-an-orcid-id"><i class="fa-brands fa-orcid" aria-label="orcid"></i> Step 2: Register for an ORCID iD</h3>
 <ol type="1">
 <li>Create your ORCID iD at: <a href="https://orcid.org/register" class="uri">https://orcid.org/register</a></li>
 </ol>
 <p><a href="https://the-turing-way.netlify.app/communication/citable/citable-orcid.html?highlight=orcid">Learn more about ORCID and why you should get one</a>, even if your are not a researcher or working in academia.</p>
 </section>
-<section id="fa-pen-clip-step-3-fill-out-our-registration-form" class="level3">
-<h3 class="anchored" data-anchor-id="fa-pen-clip-step-3-fill-out-our-registration-form"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Step 3: Fill out our registration form</h3>
+<section id="step-3-fill-out-our-registration-form" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-fill-out-our-registration-form"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> Step 3: Fill out our registration form</h3>
 <ul>
 <li>Fill out this form: <a href="https://forms.gle/JvPfVubntbaDrNZQ8" class="uri">https://forms.gle/JvPfVubntbaDrNZQ8</a></li>
 </ul>
 </section>
-<section id="fa-headset-step-4-register-for-the-scheduled-zoom-meetings" class="level3">
-<h3 class="anchored" data-anchor-id="fa-headset-step-4-register-for-the-scheduled-zoom-meetings"><i class="fa-solid fa-headset" aria-label="headset"></i> Step 4: Register for the scheduled Zoom meetings</h3>
+<section id="step-4-register-for-the-scheduled-zoom-meetings" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-register-for-the-scheduled-zoom-meetings"><i class="fa-solid fa-headset" aria-label="headset"></i> Step 4: Register for the scheduled Zoom meetings</h3>
 <ul>
 <li>Register here: <a href="https://ethz.zoom.us/meeting/register/u5EsdO6vqjkqGtBNj9qCUXVOXy8hPobo3hI2" class="uri">https://ethz.zoom.us/meeting/register/u5EsdO6vqjkqGtBNj9qCUXVOXy8hPobo3hI2</a></li>
 </ul>
@@ -329,9 +354,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -367,10 +406,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -380,8 +418,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -396,6 +443,241 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -438,11 +720,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">This course is part of the <a href="https://openwashdata.org/">openwashdata project</a> supported by the <a href="https://ethrat.ch/en/eth-domain/open-research-data/">Open Research Data Program of the ETH Board</a></div>   
+    <div class="nav-footer-left">
+<p>This course is part of the <a href="https://openwashdata.org/">openwashdata project</a> supported by the <a href="https://ethrat.ch/en/eth-domain/open-research-data/">Open Research Data Program of the ETH Board</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./code_of_conduct.html">Code of Conduct</a>
+    <a class="nav-link" href="./code_of_conduct.html">
+<p>Code of Conduct</p>
+</a>
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support">
@@ -466,6 +755,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

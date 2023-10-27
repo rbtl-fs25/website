@@ -274,8 +274,7 @@ knitr::include_graphics("img/lec-01/github-logo.png")
 
 ::::
 
-12## Version Control - Terminology
-
+## Version Control - Terminology
 
 ## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.001.png" background-size="contain"}
 
