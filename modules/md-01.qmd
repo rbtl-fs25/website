@@ -35,19 +35,23 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.
 
 ## {{< fa display >}} Slides
 
-- In preparation
+[View slides in full screen](../slides/lec-01-welcome.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-01-welcome.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-01-welcome.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
 
 ## {{< fa book >}} Readings
 
 - Read the [Course Overview](../overview.html).
-- Read @wilson2017 "Good enough practices in scientific computing".
 
 ## {{< fa code >}} Assignments
 
-We will work through these assignments live during our first class. If we were too quick, your internet connection interrupted, or you missed the class, you can follow these instructions independently:
+Please complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.
 
--   [Assignment 1](../assignments/md-01/am-01-1-posit.qmd): Working with R, RStudio on Posit Cloud
--   [Assignment 2](../assignments/md-01/am-01-1-posit.qmd): Interaction with GitHub
--   [Assignment 3](../assignments/md-01/am-01-1-posit.qmd): Communication in a chat
+-   [Assignment 1](../assignments/md-01/am-01-1-posit.qmd): In class: Working with R, RStudio on Posit Cloud
+-   [Assignment 2](../assignments/md-01/am-01-2-element.qmd): Homework: Communication in a chat
+-   [Assignment 3](../assignments/md-01/am-01-3-github.qmd): Homework: Interaction with GitHub
 
 Thank you for working through these assignments. 

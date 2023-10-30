@@ -42,9 +42,6 @@ website:
         text: "GitHub organization"
     contents: 
       - href: index.qmd
-        text: Sign-up here
-      - text: "---"
-      - href: overview.qmd
         text: Course Overview
       - href: calendar.qmd
         text: Course Calendar
@@ -54,10 +51,10 @@ website:
         contents:
           - href: assignments/md-01/am-01-1-posit.qmd
             text: "am-01: Posit Cloud"
-          - href: assignments/md-01/am-01-2-github.qmd
-            text: "am-02: GitHub"
-          - href: assignments/md-01/am-01-3-element.qmd
-            text: "am-03: Element"
+          - href: assignments/md-01/am-01-2-element.qmd
+            text: "am-02: Element"
+          - href: assignments/md-01/am-01-3-github.qmd
+            text: "am-03: GitHub"
       - href: modules/md-02.qmd
         text: Module 02
       - href: modules/md-03.qmd
@@ -80,7 +77,6 @@ format:
   html:
     theme:
       light: [litera, theme.scss]
-    highlight-style: a11y-dark
     css: styles.css
     code-copy: true
     code-overflow: wrap

@@ -8,9 +8,9 @@ We want to communicate through a chat client called Element, providing the open 
 
 On Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself. 
 
-::: {.callout-warning}
+::: {.callout-tip}
 ## Struggeling to setup Element?
-{{< fa envelope-circle-check >}} If we can support you to setup the chat, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=openwashdata support" target="_blank">Email</a> and we will schedule a call for a walk through. 
+{{< fa envelope-circle-check >}} If we can support you to setup the chat, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support: element" target="_blank">Email</a> and we will schedule a call for a walk through. 
 :::
 
 To set it up, please follow the steps below:

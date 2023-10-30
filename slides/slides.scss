@@ -9,7 +9,7 @@
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
 $font-family-monospace: "Source Code Pro", monospace;
 $presentation-heading-color: #4C326A; 
-$link-color: #5536A7;
+$link-color: #FF6100;
 $hover-color: lighten($link-color, 10%);
 $code-block-font-size: 0.7em;
 $presentation-h2-font-size: 1.4em !default;
@@ -32,3 +32,89 @@ $presentation-font-size-root: 36px !default;
   background-color: #FEBC94;
   padding: 0.0em 0.1em;
 }
+
+.center-align {
+  text-align: center;
+}
+
+.reveal .slide .task {
+  font-size: 0.80em;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-left: solid 5px #461a52;
+  background-color: #ECEEF8;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.smallest {
+  font-size: 0.5em;
+}
+
+.large {
+  font-size: 1.5em;
+}
+
+.medium {
+  font-size: 0.9em;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.reveal .hand {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.2em
+}
+
+.reveal .hand-purple {
+  font-family: 'Gochi Hand', cursive;
+  color: #461a52;
+  font-size: 1.2em
+}
+
+.reveal .hand-purple-large {
+  font-family: 'Gochi Hand', cursive;
+  color: #461a52;
+  font-size: 3em
+}
+
+.reveal a{
+  color: $link-color;
+  text-decoration: underline;
+
+  &:hover{
+    color: $hover-color;
+  }
+
+}
+
+.reveal .footer a{
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover{
+    color: $hover-color;
+  }
+
+}
+
+.highlight-yellow {
+  background-color: #FAE3B4;
+  padding: 0.0em 0.1em;
+}
+
+.reveal .slide .learn-more {
+  text-align: center;
+  font-family: $font-family-monospace;
+  padding-bottom: 10px;
+}
+
+

@@ -1,22 +1,23 @@
 ---
-title: "Welcome to Data Analytics for Development"
-subtitle: "CVEN 5837 - Summer 2023"
+title: "Welcome & get ready for the course"
+subtitle: "ds4owd - data science for the course"
 author: "Lars Schöbitz"
+date: "2023-10-31"
 format: 
   revealjs: 
     theme: slides.scss
     transition: fade
     slide-number: true
-    logo: img/logo.png
-    footer: "https://cven5873-ss23.github.io/website/"
+    logo: ../img/OWD-logo-20.png
+footer: "[{{< fa link >}} ds4owd-001.github.io/website/](https://ds4owd-001.github.io/website/)"
 editor: source
 execute:
   freeze: auto
 params:
-    week: 2
+    week: 1
+editor_options: 
+  chunk_output_type: console
 ---
-
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 ```{r}
 #| include: false
@@ -24,76 +25,134 @@ library(countdown)
 library(magrittr)
 ```
 
-# Welcome! `r emo::ji("wave")`  {background-color="#0F4C81"}
+## Email from GitHub? {.center-align}
 
-## Meet the lecturer
+While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course.
+
+![](img/lec-01/github-invitation.png)
+
+# Welcome! `r emo::ji("wave")` {background-color="#4C326A"}
+
+## Meet the team
 
 ::: columns
+::: {.column width="33%"}
+**Lars Schöbitz**
 
-::: {.column width="50%"}
+![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
 
-**Lars Schöbitz (he/him)** 
-
-![](img/lec-01/lars_schoebitz_profile_photo.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
+-   Env. Engineer
+- WASH Researcher
+-   RStudio certified instructor
 :::
 
-::: {.column width="50%"}
-- Environmental Engineer  
-- Open Science Specialist at ETH Zurich
-- Independent Instructor for Data Science with R  
-- Twitter: [@larnsce](https://twitter.com/larnsce)
+::: {.column width="33%"}
+**Mian Zhong**
+
+![](img/lec-01/profile-mian.png){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
+
+-   Data Scientist
+-   
+- 
+:::
+
+::: {.column width="33%"}
+**Sophia Skorik**
+
+![](img/lec-01/profile-sophia.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
+
+-   Computer Scientist
+-   
+- 
 :::
 :::
 
 ## Learning Goals (for the course)
 
-1. Be able to use a common set of data science tools **(R, RStudio IDE, Git, GitHub, tidyverse, Quarto)** to illustrate and communicate the utility of solutions for water, sanitation, air quality, and global health.
+1.  Be able to use a common set of data science tools [(R, RStudio IDE, Git, GitHub, tidyverse, Quarto)]{.highlight-yellow} to illustrate and communicate the results of data analysis projects.
 
-2. Learn to use the **Quarto file format** and the RStudio IDE visual editing mode to produce **scholarly documents** with citations, footnotes, cross-references, figures, and tables.
+2.  Learn to use the [Quarto file format]{.highlight-yellow} and the RStudio IDE visual editing mode to produce [documents]{.highlight-yellow} with citations, footnotes, cross-references, figures, and tables.
 
-## Why are you here?
+## About you
 
+::: task
+Pick an item and take notes for 1 minute:
 
-![](img/lec-01/items-slide/items-slide.001.png)
-
-
-:::{.callout-note}
-
-## Pick an item 
-**Take notes for 2 minutes:**   
 What does the item you have picked have to do with the reason for you being here?
 :::
 
-## Why are you here?
-
 ![](img/lec-01/items-slide/items-slide.001.png)
 
-:::{.callout-note}
+```{r}
+#| echo: false
+
+countdown(minutes = 1)
+```
 
 ## In break-out rooms
-**Take 2 minutes each to share with your room partner:**  
+
+::: task
+**Take 2 minutes each to share with your room partner:**
+
 What does the item you have picked have to do with the reason for you being here?
 :::
 
-## From which country are you joining us?
+![](img/lec-01/items-slide/items-slide.001.png)
 
-:::{.callout-note}
+## Course Calendar {.smallest .scrollable}
 
-## In the Zoom chat
-Share with us from which country you are joining us.
-:::
+```{r}
+readr::read_csv("../data/tbl-01-ds4owd-001-course-schedule.csv") |> 
+  dplyr::select(date, week, topic = title, module) |> 
+  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
+  knitr::kable()
+```
+
+## Course structure
+
+-   [My turn]{.highlight-yellow}: Lecture segments + live coding
+-   [Our turn]{.highlight-yellow}: Live coding + follow along
+-   [Your turn]{.highlight-yellow}: Exercises in break-out rooms
+
+## My turn: Lecture segments + live coding
+
+-   Instructor writes and narrates code out loud
+-   Instructor explains concepts and principles that are relevant
+
+## Our turn: Live coding + follow along
+
+-   Instructor writes and narrates code out loud
+-   Instructor explains concepts and principles that are relevant
+-   Code is displayed on second screen / split screen
+-   Learners join by writing and executing the same code
+
+## Your turn: Exercises in break-out rooms
+
+-   Two learners work together in a break out session
+-   One person (the driver) shares the screen and does the typing
+-   The other person (the navigator) offers comments and suggestions
+-   Roles get switched
+
+## Getting help
+
+-   During [my turn]{.highlight-yellow} and [our turn]{.highlight-yellow} segments: Please keep your microphone on mute. Send a [direct message]{.highlight-yellow} to [Mian]{.highlight-yellow} or [Sophia]{.highlight-yellow}
+
+-   During [your turn]{.highlight-yellow} segments: Call someone to join the [break-out room]{.highlight-yellow}
 
 
-## Topics
 
-::: {.incremental}
--   The data science life-cycle
--   Data organization in spreadsheets
--   Exploratory data analysis using visualization
--   Concept of tidy data and data tidying
--   Data transformation and descriptive statistics
--   Data communication using the Quarto open-source scientific and technical publishing system
-:::
+## Platforms and Tools
+
+-   R
+-   tidyverse R Packages
+-   Posit Cloud
+-   RStudio IDE
+-   Quarto publishing system
+-   Element
+
+## Bookmark {.center-align .large}
+
+[ds4owd-001.github.io/website/](https://ds4owd-001.github.io/website/)
 
 ## Learning Objectives (for this week)
 
@@ -105,48 +164,22 @@ lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.
 
 ```
 
-::: {.incremental}
-1. `r lobj1[1]`
-1. `r lobj1[2]`
-1. `r lobj1[3]`
+::: incremental
+1.  `r lobj1[1]`
+2.  `r lobj1[2]`
+3.  `r lobj1[3]`
+4.  `r lobj1[4]`
 :::
 
-##
+## 
 
 ![](img/lec-01/starwars-rey-rstats.png)
 
 ::: aside
-Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](https://twitter.com/openscapes) (illustrated by [@allison_horst](https://twitter.com/allison_horst))
+Artwork from [\@juliesquid](https://twitter.com/juliesquid) for [\@openscapes](https://twitter.com/openscapes) (illustrated by [\@allison_horst](https://twitter.com/allison_horst))
 :::
 
-# Classroom tools {background-color="#0F4C81"}
-
-## Live Coding Exercises 
-
-- Instructor writes and narrates code out loud 
-- Intstructor explains elements and principles that are relevant
-- Code is displayed on second screen / split screen
-- Learners join by writing and executing the same code
-- Learners "code-along" with the instructor
-
-## Pair Programming Exercises 
-
-- Two learners work together in a break out session
-- One person (the driver) shares the screen and does the typing
-- The other person (the navigator) offers comments and suggestions
-- Roles get switched 
-
-## Platforms and Tools
-
-- R
-- Posit Cloud
-- RStudio IDE
-- tidyverse R Packages
-- Quarto publishing system
-
-## [cven5873-ss23.github.io/website/](https://cven5873-ss23.github.io/website/) `r emo::ji("bookmark")`
-
-# Posit Cloud {background-color="#0F4C81"}
+# Posit Cloud {background-color="#4C326A"}
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.001.png"}
 
@@ -162,72 +195,230 @@ Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](htt
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
 
-## Screen setup
+## Screen setup - Poll
 
-:::{.callout-note}
-
-## Who uses a setup with one screen? 
-"One screen" in the Zoom Chat
+::: columns
+::: {.column width="50%"}
+One screen ![](img/lec-01/bram-naus-N1gUD_dCvJE-unsplash.jpg)
 :::
 
-![](img/lec-01/bram-naus-N1gUD_dCvJE-unsplash.jpg)
-
-::: footer
-Photo by [Brahm Naus](https://unsplash.com/photos/N1gUD_dCvJE)
+::: {.column width="50%"}
+Two screens or more ![](img/lec-01/daniel-korpai-vHVfpi3h5xk-unsplash.jpg)
+:::
 :::
 
-## Screen setup
+# Hello Quarto
 
-:::{.callout-note}
+## Meeting you where you are
 
-## Who uses a setup with two screens? 
-"Two screens" in the Zoom Chat
+::: columns
+::: {.column width="50%"}
+::: {.fragment .fade-in-then-semi-out}
+I'll **assume** you
+
+-   know do [not]{.highlight-yellow} have R or git experience
+
+-   have [not]{.highlight-yellow} worked in an IDE before (e.g. RStudio IDE)
+
+-   want to learn about R
+
+-   want to learn about Quarto and publishing
+
+-   want to learn about project management with GitHub
+:::
 :::
 
-![](img/lec-01/daniel-korpai-vHVfpi3h5xk-unsplash.jpg)
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+I'll **teach** you
 
-::: footer
-Photo by [Daniel Korpai](https://unsplash.com/photos/N1gUD_dCvJE)
+-   R
+
+-   Quarto syntax and formats
+
+-   Markdown
+
+-   GitHub issues, project management, and publishing
+:::
+:::
 :::
 
-# Live Coding Exercise {background-color="#0F4C81"}
+# What is Quarto?
 
-## live-01a-setup - Posit Cloud Setup
+## Quarto ...
 
-::: {.callout-note}
-## **Follow along on the screen**
-1. Open the GitHub organisation for the course: <https://github.com/cven5873-ss23>
-2. You will find a repository titled: **course-material-USERNAME** (with your GitHub Username)
-3. You will "clone" this repository to Posit Cloud
+-   is a new, open-source, scientific, and technical publishing system
+-   aims to make the process of creating and collaborating dramatically better
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/lec-01/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+
+## My turn: A tour of Quarto
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
 :::
 
-## Break
+## Your turn: Log into Posit Cloud with GitHub account
 
-::: {.callout-important}
-## GitHub PAT from week 1
+-   Go to the Posit Cloud Sign Up page: [login.posit.cloud/register](https://login.posit.cloud/register)
+-   Click on the "Sign Up with GitHub" button.
+-   Enter your GitHub username and password when prompted.
+-   Open and accept the workspace invitation ([Link is in the Zoom chat now]{.highlight-yellow}).
+-   Bookmark this tab in your browser.
 
-Do you have your **GitHub Personal Access Token** readily accessible?
-
+::: callout-note
+-   If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.
+-   Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.
 :::
 
+::: speaker-notes
+https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3
+:::
 
-![](img/lec-01/coffee-break.jpg)
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+## Your turn
+
+::: task
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark)
+2. Open the ds4owd workspace for the cour
+3.  Click [Start]{.highlight-yellow} next to [md-01-exercises]{.highlight-yellow}
+4.  Render the document
+5.  Add `author:` to the YAML header and add your name
+6.  Re-render the document
+7. Inspect components of the document and make one more update and re-render.
+8. Discuss notes about updates you've made with your neighbors and note any aspects of the document that are not clear after the tour and your first interaction with it.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 15)
+```
+
+## From the comfort of your own workspace
+
+::: r-stack
+![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside RStudio" width="1200"}
+
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="1200"}
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="1200"}
+:::
+
+# Quarto formats
+
+## One install, "Batteries included"
+
+-   RMarkdown grew into a large ecosystem, with **varying syntax**.
+
+. . .
+
+-   Quarto comes **"batteries included"** straight out of the box
+
+    -   HTML reports and websites
+    -   PDF reports
+    -   MS Office (Word, Powerpoint)
+    -   Presentations (Powerpoint, Beamer, `revealjs`)
+    -   Books
+
+. . .
+
+-   Any language, *exact* same approach and syntax
+
+## Many Quarto formats {.smaller}
+
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Feature         | R Markdown                                                                                           | Quarto                                                                         |
++=================+======================================================================================================+================================================================================+
+| Basic Formats   | [html_document](https://pkgs.rstudio.com/rmarkdown/reference/html_document.html)                     | [html](https://quarto.org/docs/output-formats/html-basics.html)                |
+|                 |                                                                                                      |                                                                                |
+|                 | [pdf_document](https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html)                       | [pdf](https://quarto.org/docs/output-formats/pdf-basics.html)                  |
+|                 |                                                                                                      |                                                                                |
+|                 | [word_document](https://pkgs.rstudio.com/rmarkdown/reference/word_document.html)                     | [docx](https://quarto.org/docs/output-formats/ms-word.html)                    |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Beamer          | [beamer_presentation](https://pkgs.rstudio.com/rmarkdown/reference/beamer_presentation.html)         | [beamer](https://quarto.org/docs/presentations/beamer.html)                    |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| PowerPoint      | [powerpoint_presentation](https://pkgs.rstudio.com/rmarkdown/reference/powerpoint_presentation.html) | [pptx](https://quarto.org/docs/presentations/powerpoint.html)                  |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| HTML Slides     | [xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html)                                       | [revealjs](https://quarto.org/docs/presentations/revealjs/)                    |
+|                 |                                                                                                      |                                                                                |
+|                 | [ioslides](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html)                          |                                                                                |
+|                 |                                                                                                      |                                                                                |
+|                 | [revealjs](https://bookdown.org/yihui/rmarkdown/revealjs.html)                                       |                                                                                |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Advanced Layout | [tufte](https://bookdown.org/yihui/rmarkdown/tufte-handouts.html)                                    | [Quarto Article Layout](https://quarto.org/docs/authoring/article-layout.html) |
+|                 |                                                                                                      |                                                                                |
+|                 | [distill](https://rstudio.github.io/distill/figures.html)                                            |                                                                                |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+
+## Many Quarto formats {.smaller}
+
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Feature          | R Markdown                                                                   | Quarto                                                                      |
++==================+==============================================================================+=============================================================================+
+| Cross References | [html_document2](https://bookdown.org/yihui/bookdown/a-single-document.html) | [Quarto Crossrefs](https://quarto.org/docs/authoring/cross-references.html) |
+|                  |                                                                              |                                                                             |
+|                  | [pdf_document2](https://bookdown.org/yihui/bookdown/a-single-document.html)  |                                                                             |
+|                  |                                                                              |                                                                             |
+|                  | [word_document2](https://bookdown.org/yihui/bookdown/a-single-document.html) |                                                                             |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Websites & Blogs | [blogdown](https://pkgs.rstudio.com/blogdown/)                               | [Quarto Websites](https://quarto.org/docs/websites/)                        |
+|                  |                                                                              |                                                                             |
+|                  | [distill](https://pkgs.rstudio.com/distill/)                                 | [Quarto Blogs](https://quarto.org/docs/websites/website-blog.html)          |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Books            | [bookdown](https://pkgs.rstudio.com/bookdown/)                               | [Quarto Books](https://quarto.org/docs/books/)                              |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Interactivity    | [Shiny Documents](https://bookdown.org/yihui/rmarkdown/shiny-documents.html) | [Quarto Interactive Documents](https://quarto.org/docs/interactive/shiny/)  |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Journal Articles | [rticles](https://pkgs.rstudio.com/rticles/)                                 | [Journal Articles](https://quarto.org/docs/journals/index.html)             |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Dashboards       | [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)                     | [Quarto Dashboards](https://quarto.org/docs/dashboards/index.html)          |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+
+## Your turn
+
+::: task
+In your exercises project in RStudio on Posit Cloud, go to [File \> New File \> Quarto document]{.highlight-yellow} to create a Quarto document with HTML output. Render the document, which will ask you to give it a name -- you can use `my-first-document.qmd`.
+
+Use the visual editor for the next steps.
+
+-   Add a title and your name as the author.
+
+-   Create four sections with headings of level 2 (Introduction, Methods, Results, Conclusions)
+
+-   Add a table of contents.
+
+-   [**Stretch goal:**]{.highlight-yellow} Change the html theme to `sketchy`. Tipp: Check [quarto.org](https://quarto.org/) and use search function {{< fa magnifying-glass >}} with "HTML theming"
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-01/coffee-break.jpg){width="40%"}
 
 ```{r}
 
-countdown(
-  minutes = 10, seconds = 0,
-  left = 0, right = 0,
-  padding = "10px", margin = "5%",
-  font_size = "2em"
-)
+countdown(10)
 
 ```
 
 ::: aside
 Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
-
 
 # Version Control
 
@@ -235,12 +426,11 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 A way to share files with others, so they can:
 
-- download
-- re-use
-- contribute
+-   download
+-   re-use
+-   contribute
 
-You can view the history of files, and jump back in time to any point. 
-
+You can view the history of files, and jump back in time to any point.
 
 ## Why is it useful?
 
@@ -248,193 +438,82 @@ You can view the history of files, and jump back in time to any point.
 knitr::include_graphics("img/lec-01/phd_comics_vc.gif")
 ```
 
-## Git and GitHub 
+## Git and GitHub
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
 ```{r echo=FALSE, out.width="25%"}
 knitr::include_graphics("img/lec-01/git-logo.png")
 ```
-- Git is a software for version control
-- Created in 2005
-- Popular among programmers collaboratively developing code 
-- Tracks changes in a set of files (directory/folder/repository)
+
+-   Git is a software for version control
+-   Created in 2005
+-   Popular among programmers collaboratively developing code
+-   Tracks changes in a set of files (directory/folder/repository)
 :::
 
 ::: {.column width="50%"}
 ```{r echo=FALSE, out.width="25%"}
 knitr::include_graphics("img/lec-01/github-logo.png")
 ```
-- GitHub is a hosting platform for version control using Git
-- Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion
-- >100 million Users (20.5 in 2022 alone) ([October, 2023](https://octoverse.github.com/2022/global-tech-talent))
-- Social media for software developers
+
+-   GitHub is a hosting platform for version control using Git
+
+-   Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US\$ 7.5 billion
+
+-   
+
+    > 100 million Users (20.5 in 2022 alone) ([October, 2023](https://octoverse.github.com/2022/global-tech-talent))
+
+-   Social media for software developers
+:::
 :::
 
-::::
+## My turn: A tour of GitHub
 
-## Version Control - Terminology
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.001.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.002.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.003.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.004.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.005.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.006.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.007.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.008.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.009.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.010.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.011.png" background-size="contain"}
-
-## {background-image="img/lec-01/illustration-slides-git/illustration-slides-git.012.png" background-size="contain"}
-
-# Data Science Lifecycle {background-color="#0F4C81"}
-
-## Deep End
-
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/3pWRgRw86JyBa" width="75%" height="75%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/matthew-west-all-in-matthew-west-3pWRgRw86JyBa">via GIPHY</a></p>
-
-## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.001.png" background-size="contain"}
-
-::: {.notes}
-
-Add notes
-
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
 :::
 
-## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.002.png" background-size="contain"}
+## Your turn: Create an issue on GitHub
 
-::: {.notes}
+::: task
 
-1. First you must import your data into R. This typically means that you take data stored:
-
-- in a file
-- in a database, 
-- or web application, and load it into R. 
-
-2. If you can get your data into R, you can  do data science on it!
-
+1. Open github.com in your browser and login with your credentials
+2. Exchange your GitHub username with your room partner
+3. Find and open the md-01-homework repository that ends with your GitHub username
+4. Find the issue tracker
+5. Open an issue with the title "Support for module 1 homework" 
+6. Add your room partner to the list of Assignees on the right panel
+7. Add a comment to the issue and tag Mian with [@mianzg]{.highlight-yellow}, Sophia with [@sskorik01]{.highlight-yellow}, and your [room partner]{.highlight-yellow} to ask for support during the homework assignments
+8. Click submit new issue
 :::
-
-## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.003.png" background-size="contain"}
-
-::: {.notes}
-
-1. Once you’ve imported your data, it is a good idea to tidy it. 
-
-2. This means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in
-
-3. This is the step where we spend by far the biggest amount of our time. 
-
-4. It has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.
-
-5. In my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill.
-
-:::
-
-## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.004.png" background-size="contain"}
-
-::: {.notes}
-
-1. Once your data is tidy, a common first step is to transform it.
-
-2. This includes 
-- narrowing in on what interests you (like all people without toilets in one district, or all data from last year)
-- creating new variables from existing (like toilet density, as in number of people per toilet) 
-- calculating summary statistics (like counts or the mean)
-
-Together, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!
-
-:::
-
-## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.005.png" background-size="contain"}
-
-::: {.notes}
-
-1. Once you have tidy data with the variables you need, there are two main engines of knowledge generation: 
-
-- visualisation 
-- and modelling. 
-
-2. These have complementary strengths and weaknesses so any real analysis will iterate between them many times.
-
-3. Visualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data.
-
-:::
-
-## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.006.png" background-size="contain"}
-
-::: {.notes}
-
-1. Models are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.
-
-2. In my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage.
-
-:::
-
-## - {background-image="img/lec-01/data-science-lifecycle/data-science-lifecycle.007.png" background-size="contain"}
-
-::: {.notes}
-
-1. The last step of data science is communication, an absolutely critical part of any data analysis project. 
-
-2. It doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.
-
-3. And this is a part where R has become really strong.
-
-:::
-
-# Live Coding Exercise {background-color="#0F4C81"}
-
-## live-01b-data-science-lifecycle - Data Science Lifecycle
-
-1. Head over to posit.cloud
-2. Open the workspace for the course (cven5837-ss23)
-3. Open "Projects"
-4. Open the "course-materials-USERNAME" project
-5. Follow along with me
-
-## Break
-
-![](img/lec-01/coffee-break.jpg)
 
 ```{r}
+countdown(10)
+```
 
-countdown(
-  minutes = 5, seconds = 0,
-  left = 0, right = 0,
-  padding = "10px", margin = "5%",
-  font_size = "2em"
-)
+## Take a break
 
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-01/coffee-break.jpg){width="40%"}
+
+```{r}
+countdown(10)
 ```
 
 ::: aside
 Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
 
-# R {background-color="#0F4C81"}
+# R fundamentals {background-color="#4C326A"}
 
 ## Packages {auto-animate="true"}
 
-::: {.incremental}
-
-:::: {.columns}
-
+::: incremental
+::: columns
 ::: {.column width="40%"}
-
 **base R**
 
 ```{r}
@@ -444,16 +523,13 @@ sqrt(49)
 sum(1, 2)
 ```
 
-- Functions come with R
-
+-   Functions come with R
 :::
 
 ::: {.column width="5%"}
-
 :::
 
 ::: {.column width="55%"}
-
 **R Packages**
 
 ```{r}
@@ -463,23 +539,18 @@ library(dplyr)
 
 ```
 
-- Installed once in the Console: `install.packages("dplyr")`
-- Loaded per script
-
+-   Installed once in the Console: `install.packages("dplyr")`
+-   Loaded per script
+:::
+:::
 :::
 
-::::
-
-:::
-
-::: {.notes}
-
+::: notes
 Packages
 
-- Main way that reusable code is shared in R
-- Combination of code, data, and documentation
-- R has a rich ecosystem of packages for data manipulation & analysis
-
+-   Main way that reusable code is shared in R
+-   Combination of code, data, and documentation
+-   R has a rich ecosystem of packages for data manipulation & analysis
 :::
 
 ## Functions & Arguments {auto-animate="true"}
@@ -494,9 +565,9 @@ filter(.data = gapminder,
        year == 2007)
 ```
 
-- Function: `filter()`
-- Argument: `.data = ` 
-- Arguments following: `year == 2007` **What do do with the data**
+-   Function: `filter()`
+-   Argument: `.data =`
+-   Arguments following: `year == 2007` **What do do with the data**
 
 ## Objects {auto-animate="true"}
 
@@ -510,10 +581,10 @@ gapminder_yr_2007 <- filter(.data = gapminder,
                             year == 2007)
 ```
 
-- Function: `filter()`
-- Argument: `.data = `
-- Arguments following: `year == 2007` **What do do with the data**
-- Object: `gapminder_yr_2007`
+-   Function: `filter()`
+-   Argument: `.data =`
+-   Arguments following: `year == 2007` **What do do with the data**
+-   Object: `gapminder_yr_2007`
 
 ## Operators {auto-animate="true"}
 
@@ -527,65 +598,59 @@ gapminder_yr_2007 <- gapminder |>
   filter(year == 2007) 
 ```
 
-- Function: `filter()`
-- Argument: `.data = `
-- Arguments following: `year == 2007` **What do do with the data**
-- Object: `gapminder_yr_2007`
-- Assignment operator: `<-`
-- Pipe operator: `|>`
+-   Function: `filter()`
+-   Argument: `.data =`
+-   Arguments following: `year == 2007` **What do do with the data**
+-   Object: `gapminder_yr_2007`
+-   Assignment operator: `<-`
+-   Pipe operator: `|>`
 
 ## Rules
 
 Rules of `dplyr` functions:
 
-::: {.incremental}
-
-- First argument is always a data frame
-- Subsequent arguments say what to do with that data frame
-- Always return a data frame  
-- Don't modify in place 
-
+::: incremental
+-   First argument is always a data frame
+-   Subsequent arguments say what to do with that data frame
+-   Always return a data frame\
+-   Don't modify in place
 :::
 
-# Course information {background-color="#0F4C81"}
+# Course information {background-color="#4C326A"}
 
 ## Weekly Structure
 
 |          |                                           |
 |----------|-------------------------------------------|
-| **Monday**   |  Lecture              |
-| **Tuesday**  |                                   |
-| **Wednesday** | Feedback (grading) on assignments from previous week |
-| **Thursday** | Student hours on Zoom (10 am to 12 pm CEST) |
-| **Friday**   | Homework assignment and learning reflection are due             |
+| **Monday**   |                |
+| **Tuesday**  |  Module from 2 pm to 4:30 pm CET                              |
+| **Wednesday** | |
+| **Thursday** | Office hours on Zoom (2 pm to 3:30 pm CET) |
+| **Friday**   |              |
+
 
 ## Homework assignments
 
-- Weekly programming assignments
-- Graded as pass/fail (100 pts)
-- Submitted as rendered Quarto documents on GitHub
-- weighted at 40% of the total grade
+-   Weekly assignments ([module 1 homework is required for participation]{.highlight-yellow})
+-   Submitted as rendered Quarto documents on GitHub
+-   Reviewed by course instructors for errors
+-   Management and support through GitHub issue tracker
 
 ## Capstone Project
 
-- Data analysis project report with a data set of your choice
-- Graded as number of points out of 100 pts for pre-defined graded elements
-- Submitted as rendered Quarto document on GitHub
-- weighted at 20% of the total grade
+-   Data analysis project report with a dataset of your choice
+-   Submitted as rendered Quarto document on GitHub
+-   Submission required for successful completion of the course
 
-# Homework week 1 {background-color="#0F4C81"}
+# Homework assignments {background-color="#4C326A"}
 
 ## Homework due dates
 
-- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-01.html)
-- Homework assignment & learning reflection due: **Friday, June 16th** 
+-   All material on course website: [{{< fa link >}} ds4owd-001.github.io/website/](https://ds4owd-001.github.io/website/)
+-   Homework assignment due: [Monday, November 6th]{.highlight-yellow}
 
-# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+## Thanks! `r emo::ji("sunflower")` 
 
-## 
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-01-welcome.pdf)
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-01-welcome.pdf)
-
-All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
-
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
