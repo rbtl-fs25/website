@@ -56,7 +56,7 @@ Remember to treat your access tokens like passwords and keep them secure (e.g. a
 #| eval: false
 
 library(usethis)
-use_git_config(user.name = "larnsce", user.email = "Your Email")
+use_git_config(user.name = "Your Name", user.email = "Your Email")
 ```
 
 ## Step 4: Commit and push your changes

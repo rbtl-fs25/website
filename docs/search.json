@@ -1120,7 +1120,7 @@
     "href": "assignments/md-01/am-01-3-github.html#step-3-introduce-yourself-to-git",
     "title": "Interaction with GitHub",
     "section": "Step 3: Introduce yourself to git",
-    "text": "Step 3: Introduce yourself to git\n\nOpen the md-01-assignments project in Posit Cloud\nOpen the git-configuration.qmd file from the bottom right window of RStudio\nEdit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\nRender the document\nContinue with the next step\n\n\nlibrary(usethis)\nuse_git_config(user.name = \"larnsce\", user.email = \"Your Email\")",
+    "text": "Step 3: Introduce yourself to git\n\nOpen the md-01-assignments project in Posit Cloud\nOpen the git-configuration.qmd file from the bottom right window of RStudio\nEdit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\nRender the document\nContinue with the next step\n\n\nlibrary(usethis)\nuse_git_config(user.name = \"Your Name\", user.email = \"Your Email\")",
     "crumbs": [
       "Module 01",
       "am-03: GitHub"
