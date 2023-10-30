@@ -60,7 +60,10 @@
     "href": "index.html",
     "title": "Sign-up for data science for openwashdata course 001",
     "section": "",
-    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks at the following times:\nThis course teaches data science with R for people in the greater Water, Sanitation and Hygiene (WASH) sector. It is offered by offered by the openwashdata academy with the mission to empower WASH professionals to engage with tools and workflows for open data and code. More details can be found on the Course Overview page."
+    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks at the following times:\nThis course teaches data science with R for people in the greater Water, Sanitation and Hygiene (WASH) sector. It is offered by offered by the openwashdata academy with the mission to empower WASH professionals to engage with tools and workflows for open data and code. More details can be found on the Course Overview page.",
+    "crumbs": [
+      "Sign-up here"
+    ]
   },
   {
     "objectID": "index.html#fa-circle-question-how-do-i-sign-up",
@@ -74,7 +77,10 @@
     "href": "index.html#thanks-for-signing-up",
     "title": "Sign-up for data science for openwashdata course 001",
     "section": "Thanks for signing up!",
-    "text": "Thanks for signing up!\nYou will hear from us with more details a week before the start of the course."
+    "text": "Thanks for signing up!\nYou will hear from us with more details a week before the start of the course.",
+    "crumbs": [
+      "Sign-up here"
+    ]
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section",
@@ -387,324 +393,324 @@
   {
     "objectID": "slides/lec-01-welcome.html#meet-the-lecturer",
     "href": "slides/lec-01-welcome.html#meet-the-lecturer",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Meet the lecturer",
-    "text": "Meet the lecturer\n\n\nLars Schöbitz (he/him)\n\n\n\n\n\n\n\nEnvironmental Engineer\n\nOpen Science Specialist at ETH Zurich\nIndependent Instructor for Data Science with R\n\nTwitter: @larnsce"
+    "text": "Meet the lecturer\n\n\nLars Schöbitz (he/him)\n\n\n\nEnvironmental Engineer\n\nOpen Science Specialist at ETH Zurich\nIndependent Instructor for Data Science with R\n\nTwitter: @larnsce"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
     "href": "slides/lec-01-welcome.html#learning-goals-for-the-course",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Learning Goals (for the course)",
-    "text": "Learning Goals (for the course)\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the utility of solutions for water, sanitation, air quality, and global health.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables."
+    "text": "Learning Goals (for the course)\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce documents with citations, footnotes, cross-references, figures, and tables."
   },
   {
     "objectID": "slides/lec-01-welcome.html#why-are-you-here",
     "href": "slides/lec-01-welcome.html#why-are-you-here",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Why are you here?",
     "text": "Why are you here?\n\n\n\n\n\n\n\nPick an item\n\n\nTake notes for 2 minutes:\nWhat does the item you have picked have to do with the reason for you being here?"
   },
   {
     "objectID": "slides/lec-01-welcome.html#why-are-you-here-1",
     "href": "slides/lec-01-welcome.html#why-are-you-here-1",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Why are you here?",
     "text": "Why are you here?\n\n\n\n\n\n\n\nIn break-out rooms\n\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?"
   },
   {
     "objectID": "slides/lec-01-welcome.html#from-which-country-are-you-joining-us",
     "href": "slides/lec-01-welcome.html#from-which-country-are-you-joining-us",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "From which country are you joining us?",
     "text": "From which country are you joining us?\n\n\n\n\n\n\nIn the Zoom chat\n\n\nShare with us from which country you are joining us."
   },
   {
     "objectID": "slides/lec-01-welcome.html#topics",
     "href": "slides/lec-01-welcome.html#topics",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Topics",
     "text": "Topics\n\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
     "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\n\n\n\nLearners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+    "text": "Learning Objectives (for this week)\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
     "href": "slides/lec-01-welcome.html#section",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "",
     "text": "Artwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-coding-exercises",
     "href": "slides/lec-01-welcome.html#live-coding-exercises",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Live Coding Exercises",
     "text": "Live Coding Exercises\n\nInstructor writes and narrates code out loud\nIntstructor explains elements and principles that are relevant\nCode is displayed on second screen / split screen\nLearners join by writing and executing the same code\nLearners “code-along” with the instructor"
   },
   {
     "objectID": "slides/lec-01-welcome.html#pair-programming-exercises",
     "href": "slides/lec-01-welcome.html#pair-programming-exercises",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Pair Programming Exercises",
     "text": "Pair Programming Exercises\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
   },
   {
     "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
     "href": "slides/lec-01-welcome.html#platforms-and-tools",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Platforms and Tools",
-    "text": "Platforms and Tools\n\nR\nPosit Cloud\nRStudio IDE\ntidyverse R Packages\nQuarto publishing system"
+    "text": "Platforms and Tools\n\nR\ntidyverse R Packages\nPosit Cloud\nRStudio IDE\nQuarto publishing system\nElement"
   },
   {
     "objectID": "slides/lec-01-welcome.html#cven5873-ss23.github.iowebsite",
     "href": "slides/lec-01-welcome.html#cven5873-ss23.github.iowebsite",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "cven5873-ss23.github.io/website/ 🔖",
     "text": "cven5873-ss23.github.io/website/ 🔖"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-1",
     "href": "slides/lec-01-welcome.html#section-1",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-2",
     "href": "slides/lec-01-welcome.html#section-2",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-3",
     "href": "slides/lec-01-welcome.html#section-3",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-4",
     "href": "slides/lec-01-welcome.html#section-4",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-5",
     "href": "slides/lec-01-welcome.html#section-5",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-6",
     "href": "slides/lec-01-welcome.html#section-6",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-7",
     "href": "slides/lec-01-welcome.html#section-7",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-"
   },
   {
     "objectID": "slides/lec-01-welcome.html#screen-setup",
     "href": "slides/lec-01-welcome.html#screen-setup",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Screen setup",
-    "text": "Screen setup\n\n\n\n\n\n\nWho uses a setup with one screen?\n\n\n“One screen” in the Zoom Chat\n\n\n\n\n\nPhoto by Brahm Naus"
+    "text": "Screen setup\n\n\n\n\n\n\nWho uses a setup with two screens?\n\n\n“Two screens” in the Zoom Chat\n\n\n\n\n\nPhoto by Daniel Korpai"
   },
   {
     "objectID": "slides/lec-01-welcome.html#screen-setup-1",
     "href": "slides/lec-01-welcome.html#screen-setup-1",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Screen setup",
     "text": "Screen setup\n\n\n\n\n\n\nWho uses a setup with two screens?\n\n\n“Two screens” in the Zoom Chat\n\n\n\n\n\nPhoto by Daniel Korpai"
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",
     "href": "slides/lec-01-welcome.html#live-01a-setup---posit-cloud-setup",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "live-01a-setup - Posit Cloud Setup",
     "text": "live-01a-setup - Posit Cloud Setup\n\n\n\n\n\n\nFollow along on the screen\n\n\n\nOpen the GitHub organisation for the course: https://github.com/cven5873-ss23\nYou will find a repository titled: course-material-USERNAME (with your GitHub Username)\nYou will “clone” this repository to Posit Cloud"
   },
   {
     "objectID": "slides/lec-01-welcome.html#break",
     "href": "slides/lec-01-welcome.html#break",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Break",
-    "text": "Break\n\n\n\n\n\n\nGitHub PAT from week 1\n\n\nDo you have your GitHub Personal Access Token readily accessible?\n\n\n\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#version-control-with-git-and-github",
     "href": "slides/lec-01-welcome.html#version-control-with-git-and-github",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Version Control with Git and GitHub",
     "text": "Version Control with Git and GitHub\nA way to share files with others, so they can:\n\ndownload\nre-use\ncontribute\n\nYou can view the history of files, and jump back in time to any point."
   },
   {
     "objectID": "slides/lec-01-welcome.html#why-is-it-useful",
     "href": "slides/lec-01-welcome.html#why-is-it-useful",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Why is it useful?",
     "text": "Why is it useful?"
   },
   {
     "objectID": "slides/lec-01-welcome.html#git-and-github",
     "href": "slides/lec-01-welcome.html#git-and-github",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Git and GitHub",
-    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nCreated in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n\n100 million Users (20.5 in 2022 alone) (October, 2023)\n\nSocial media for software developers\n\n\n\n12## Version Control - Terminology"
+    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nCreated in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n\n100 million Users (20.5 in 2022 alone) (October, 2023)\n\nSocial media for software developers"
   },
   {
     "objectID": "slides/lec-01-welcome.html#deep-end",
     "href": "slides/lec-01-welcome.html#deep-end",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Deep End",
     "text": "Deep End\n\n\n\n\n\nvia GIPHY"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-20",
     "href": "slides/lec-01-welcome.html#section-20",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-\n\nAdd notes"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-21",
     "href": "slides/lec-01-welcome.html#section-21",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-22",
     "href": "slides/lec-01-welcome.html#section-22",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-23",
     "href": "slides/lec-01-welcome.html#section-23",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-24",
     "href": "slides/lec-01-welcome.html#section-24",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-25",
     "href": "slides/lec-01-welcome.html#section-25",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-26",
     "href": "slides/lec-01-welcome.html#section-26",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "-",
     "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
   },
   {
     "objectID": "slides/lec-01-welcome.html#live-01b-data-science-lifecycle---data-science-lifecycle",
     "href": "slides/lec-01-welcome.html#live-01b-data-science-lifecycle---data-science-lifecycle",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "live-01b-data-science-lifecycle - Data Science Lifecycle",
     "text": "live-01b-data-science-lifecycle - Data Science Lifecycle\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen “Projects”\nOpen the “course-materials-USERNAME” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-01-welcome.html#break-1",
     "href": "slides/lec-01-welcome.html#break-1",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Break",
     "text": "Break\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#packages",
     "href": "slides/lec-01-welcome.html#packages",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Packages",
     "text": "Packages\n\n\n\nbase R\n\nsqrt(49)\nsum(1, 2)\n\n\nFunctions come with R\n\n\n\n\nR Packages\n\nlibrary(dplyr)\n\n\nInstalled once in the Console: install.packages(\"dplyr\")\nLoaded per script\n\n\n\n\n\nPackages\n\nMain way that reusable code is shared in R\nCombination of code, data, and documentation\nR has a rich ecosystem of packages for data manipulation & analysis"
   },
   {
     "objectID": "slides/lec-01-welcome.html#functions-arguments",
     "href": "slides/lec-01-welcome.html#functions-arguments",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Functions & Arguments",
     "text": "Functions & Arguments\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data"
   },
   {
     "objectID": "slides/lec-01-welcome.html#objects",
     "href": "slides/lec-01-welcome.html#objects",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Objects",
-    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
+    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
   },
   {
     "objectID": "slides/lec-01-welcome.html#operators",
     "href": "slides/lec-01-welcome.html#operators",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Operators",
-    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 <- gapminder |> \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: <-\nPipe operator: |>"
+    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: &lt;-\nPipe operator: |&gt;"
   },
   {
     "objectID": "slides/lec-01-welcome.html#rules",
     "href": "slides/lec-01-welcome.html#rules",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Rules",
     "text": "Rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
   },
   {
     "objectID": "slides/lec-01-welcome.html#weekly-structure",
     "href": "slides/lec-01-welcome.html#weekly-structure",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Weekly Structure",
-    "text": "Weekly Structure\n\n\n\n\n\n\n\nMonday\nLecture\n\n\nTuesday\n\n\n\nWednesday\nFeedback (grading) on assignments from previous week\n\n\nThursday\nStudent hours on Zoom (10 am to 12 pm CEST)\n\n\nFriday\nHomework assignment and learning reflection are due"
+    "text": "Weekly Structure\n\n\n\n\n\n\n\nMonday\n\n\n\nTuesday\nModule from 2 pm to 4:30 pm CET\n\n\nWednesday\n\n\n\nThursday\nOffice hours on Zoom (2 pm to 3:30 pm CET)\n\n\nFriday"
   },
   {
     "objectID": "slides/lec-01-welcome.html#homework-assignments",
     "href": "slides/lec-01-welcome.html#homework-assignments",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Homework assignments",
-    "text": "Homework assignments\n\nWeekly programming assignments\nGraded as pass/fail (100 pts)\nSubmitted as rendered Quarto documents on GitHub\nweighted at 40% of the total grade"
+    "text": "Homework assignments\n\nWeekly assignments (module 1 homework is required for participation)\nSubmitted as rendered Quarto documents on GitHub\nReviewed by course instructors for errors\nManagement and support through GitHub issue tracker"
   },
   {
     "objectID": "slides/lec-01-welcome.html#capstone-project",
     "href": "slides/lec-01-welcome.html#capstone-project",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Capstone Project",
-    "text": "Capstone Project\n\nData analysis project report with a data set of your choice\nGraded as number of points out of 100 pts for pre-defined graded elements\nSubmitted as rendered Quarto document on GitHub\nweighted at 20% of the total grade"
+    "text": "Capstone Project\n\nData analysis project report with a dataset of your choice\nSubmitted as rendered Quarto document on GitHub\nSubmission required for successful completion of the course"
   },
   {
     "objectID": "slides/lec-01-welcome.html#homework-due-dates",
     "href": "slides/lec-01-welcome.html#homework-due-dates",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 16th"
+    "text": "Homework due dates\n\nAll material on course website:  ds4owd-001.github.io/website/\nHomework assignment due: Monday, November 6th"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-27",
     "href": "slides/lec-01-welcome.html#section-27",
-    "title": "Welcome to Data Analytics for Development",
+    "title": "Welcome & get ready for the course",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ost-hs23.github.io/website/"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#exam-update",
@@ -1019,7 +1025,7 @@
     "href": "slides/sd-01-welcome.html#section",
     "title": "data science for openwashdata",
     "section": "",
-    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "slides/sd-01-welcome.html#quarto-for-literate-programming",
@@ -1033,14 +1039,14 @@
     "href": "slides/sd-01-welcome.html#what-is-a-.qmd",
     "title": "data science for openwashdata",
     "section": "What is a .qmd?",
-    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |> \n  dplyr::group_by(cyl) |> \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  >> group_by(_.cyl)\n  >> summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
   },
   {
     "objectID": "slides/sd-01-welcome.html#quarto-makes-moving-between-formats-straightforward",
     "href": "slides/sd-01-welcome.html#quarto-makes-moving-between-formats-straightforward",
     "title": "data science for openwashdata",
     "section": "Quarto makes moving between formats straightforward",
-    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–> a lesson in document form  –> the same content in presentation form  –> the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
   },
   {
     "objectID": "slides/sd-01-welcome.html#comfort-of-your-own-workspace",
@@ -1636,5 +1642,295 @@
     "title": "Course Calendar",
     "section": "",
     "text": "date\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
+  },
+  {
+    "objectID": "index.html#how-do-i-sign-up",
+    "href": "index.html#how-do-i-sign-up",
+    "title": "Sign-up for data science for openwashdata course 001",
+    "section": " How do I sign up?",
+    "text": "How do I sign up?\nTo sign up for the course, you need to complete the following four steps:\n\nStep 1: Get an account on GitHub\nStep 2: Register for an ORCID iD\nStep 3: Fill out our registration form\nStep 4: Register for the scheduled Zoom calls\n\n\n Step 1: Get an account on GitHub\nTo set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\n\n\n Step 2: Register for an ORCID iD\n\nCreate your ORCID iD at: https://orcid.org/register\n\nLearn more about ORCID and why you should get one, even if your are not a researcher or working in academia.\n\n\n Step 3: Fill out our registration form\n\nFill out this form: https://forms.gle/JvPfVubntbaDrNZQ8\n\n\n\n Step 4: Register for the scheduled Zoom meetings\n\nRegister here: https://ethz.zoom.us/meeting/register/u5EsdO6vqjkqGtBNj9qCUXVOXy8hPobo3hI2",
+    "crumbs": [
+      "Sign-up here"
+    ]
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#meet-the-lecturer",
+    "href": "slides/sd-01-welcome.html#meet-the-lecturer",
+    "title": "data science for openwashdata",
+    "section": "Meet the lecturer",
+    "text": "Meet the lecturer\n\n\nLars Schöbitz (he/him)\n\n\n\nEnvironmental Engineer\n\nOpen Science Specialist at ETH Zurich\nIndependent Instructor for Data Science with R\n\nTwitter: @larnsce"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#learning-goals-for-the-course",
+    "href": "slides/sd-01-welcome.html#learning-goals-for-the-course",
+    "title": "data science for openwashdata",
+    "section": "Learning Goals (for the course)",
+    "text": "Learning Goals (for the course)\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the utility of solutions for water, sanitation, air quality, and global health.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables."
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#why-are-you-here",
+    "href": "slides/sd-01-welcome.html#why-are-you-here",
+    "title": "data science for openwashdata",
+    "section": "Why are you here?",
+    "text": "Why are you here?\n\n\n\n\n\n\n\nPick an item\n\n\nTake notes for 2 minutes:\nWhat does the item you have picked have to do with the reason for you being here?"
+  },
+  {
+    "objectID": "slides/sd-01-welcome.html#why-are-you-here-1",
+    "href": "slides/sd-01-welcome.html#why-are-you-here-1",
+    "title": "data science for openwashdata",
+    "section": "Why are you here?",
+    "text": "Why are you here?\n\n\n\n\n\n\n\nIn break-out rooms\n\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#meet-the-team",
+    "href": "slides/lec-01-welcome.html#meet-the-team",
+    "title": "Welcome & get ready for the course",
+    "section": "Meet the team",
+    "text": "Meet the team\n\n\nLars Schöbitz\n\n\nEnv. Engineer\nWASH Researcher\nRStudio certified instructor\n\n\nMian Zhong\n\n\nData Scientist\n\n\n\n\nSophia Skorik\n\n\nComputer Scientist"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#email-from-github",
+    "href": "slides/lec-01-welcome.html#email-from-github",
+    "title": "Welcome & get ready for the course",
+    "section": "Email from GitHub?",
+    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#about-you",
+    "href": "slides/lec-01-welcome.html#about-you",
+    "title": "Welcome & get ready for the course",
+    "section": "About you",
+    "text": "About you\n\nPick an item and take notes for 1 minute:\nWhat does the item you have picked have to do with the reason for you being here?\n\n\n\n\n\n−+\n01:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#in-break-out-rooms",
+    "href": "slides/lec-01-welcome.html#in-break-out-rooms",
+    "title": "Welcome & get ready for the course",
+    "section": "In break-out rooms",
+    "text": "In break-out rooms\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#course-calendar",
+    "href": "slides/lec-01-welcome.html#course-calendar",
+    "title": "Welcome & get ready for the course",
+    "section": "Course Calendar",
+    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#course-calendar-1",
+    "href": "slides/lec-01-welcome.html#course-calendar-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Course Calendar",
+    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#course-structure",
+    "href": "slides/lec-01-welcome.html#course-structure",
+    "title": "Welcome & get ready for the course",
+    "section": "Course structure",
+    "text": "Course structure"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#course-structure-1",
+    "href": "slides/lec-01-welcome.html#course-structure-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Course structure",
+    "text": "Course structure\n\nMy turn: Lecture segments + live coding\nOur turn: Live coding + follow along\nYour turn: Exercises in break-out rooms"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#live-coding-follow-along",
+    "href": "slides/lec-01-welcome.html#live-coding-follow-along",
+    "title": "Welcome & get ready for the course",
+    "section": "Live coding + follow along",
+    "text": "Live coding + follow along\n\nInstructor writes and narrates code out loud\nIntstructor explains elements and principles that are relevant\nCode is displayed on second screen / split screen\nLearners join by writing and executing the same code\nLearners “code-along” with the instructor"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
+    "href": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
+    "title": "Welcome & get ready for the course",
+    "section": "Our turn: Live coding + follow along",
+    "text": "Our turn: Live coding + follow along\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant\nCode is displayed on second screen / split screen\nLearners join by writing and executing the same code"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-exercises-in-break-out-rooms",
+    "href": "slides/lec-01-welcome.html#your-turn-exercises-in-break-out-rooms",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Exercises in break-out rooms",
+    "text": "Your turn: Exercises in break-out rooms\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
+    "href": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
+    "title": "Welcome & get ready for the course",
+    "section": "My turn: Lecture segments + live coding",
+    "text": "My turn: Lecture segments + live coding\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#getting-help",
+    "href": "slides/lec-01-welcome.html#getting-help",
+    "title": "Welcome & get ready for the course",
+    "section": "Getting help",
+    "text": "Getting help\n\nDuring my turn and our turn segments: Please keep your microphone on mute. Send a direct message to Mian or Sophia\nDuring your turn segments: Call someone to join the break-out room"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#httpsds4owd-001.github.iowebsite",
+    "href": "slides/lec-01-welcome.html#httpsds4owd-001.github.iowebsite",
+    "title": "Welcome & get ready for the course",
+    "section": "https://ds4owd-001.github.io/website/ 🔖",
+    "text": "https://ds4owd-001.github.io/website/ 🔖"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#httpsds4owd-001.github.iowebsite-center-align",
+    "href": "slides/lec-01-welcome.html#httpsds4owd-001.github.iowebsite-center-align",
+    "title": "Welcome & get ready for the course",
+    "section": "https://ds4owd-001.github.io/website/ 🔖 {center-align}",
+    "text": "https://ds4owd-001.github.io/website/ 🔖 {center-align}"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#bookmark",
+    "href": "slides/lec-01-welcome.html#bookmark",
+    "title": "Welcome & get ready for the course",
+    "section": "Bookmark",
+    "text": "Bookmark\nds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#screen-setup---poll",
+    "href": "slides/lec-01-welcome.html#screen-setup---poll",
+    "title": "Welcome & get ready for the course",
+    "section": "Screen setup - Poll",
+    "text": "Screen setup - Poll\n\n\nOne screen \n\nTwo screens or more"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#jj",
+    "href": "slides/lec-01-welcome.html#jj",
+    "title": "Welcome & get ready for the course",
+    "section": "jj",
+    "text": "jj\n\n\n\n\n\n\nWho uses a setup with one screen?\n\n\n“One screen” in the Zoom Chat\n\n\n\n\nPhoto by Brahm Naus"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#meeting-you-where-you-are",
+    "href": "slides/lec-01-welcome.html#meeting-you-where-you-are",
+    "title": "Welcome & get ready for the course",
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\nknow do not have R or git experience\nhave not worked in an IDE before (e.g. RStudio IDE)\nwant to learn about R\nwant to learn about Quarto and publishing\nwant to learn about project management with GitHub\n\n\n\n\nI’ll teach you\n\nR\nQuarto syntax and formats\nMarkdown\nGitHub issues, project management, and publishing"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#quarto",
+    "href": "slides/lec-01-welcome.html#quarto",
+    "title": "Welcome & get ready for the course",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#my-turn-live-coding",
+    "href": "slides/lec-01-welcome.html#my-turn-live-coding",
+    "title": "Welcome & get ready for the course",
+    "section": "My turn: live coding",
+    "text": "My turn: live coding"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
+    "href": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
+    "title": "Welcome & get ready for the course",
+    "section": "My turn: A tour of Quarto",
+    "text": "My turn: A tour of Quarto\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#our-turn---live-coding-follow-along",
+    "href": "slides/lec-01-welcome.html#our-turn---live-coding-follow-along",
+    "title": "Welcome & get ready for the course",
+    "section": "Our turn - live coding & follow along",
+    "text": "Our turn - live coding & follow along"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn",
+    "href": "slides/lec-01-welcome.html#your-turn",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen posit.cloud in your browser (use your bookmark)\nOpen the ds4owd workspace for the cour\nClick Start next to md-01-exercises\nRender the document\nAdd author: to the YAML header and add your name\nRe-render the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbors and note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
+    "href": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
+    "title": "Welcome & get ready for the course",
+    "section": "From the comfort of your own workspace",
+    "text": "From the comfort of your own workspace"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#one-install-batteries-included",
+    "href": "slides/lec-01-welcome.html#one-install-batteries-included",
+    "title": "Welcome & get ready for the course",
+    "section": "One install, “Batteries included”",
+    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n\n\n\nAny language, exact same approach and syntax"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#many-quarto-formats",
+    "href": "slides/lec-01-welcome.html#many-quarto-formats",
+    "title": "Welcome & get ready for the course",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nBasic Formats\nhtml_document\npdf_document\nword_document\nhtml\npdf\ndocx\n\n\nBeamer\nbeamer_presentation\nbeamer\n\n\nPowerPoint\npowerpoint_presentation\npptx\n\n\nHTML Slides\nxaringan\nioslides\nrevealjs\nrevealjs\n\n\nAdvanced Layout\ntufte\ndistill\nQuarto Article Layout"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#many-quarto-formats-1",
+    "href": "slides/lec-01-welcome.html#many-quarto-formats-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nCross References\nhtml_document2\npdf_document2\nword_document2\nQuarto Crossrefs\n\n\nWebsites & Blogs\nblogdown\ndistill\nQuarto Websites\nQuarto Blogs\n\n\nBooks\nbookdown\nQuarto Books\n\n\nInteractivity\nShiny Documents\nQuarto Interactive Documents\n\n\nJournal Articles\nrticles\nJournal Articles\n\n\nDashboards\nflexdashboard\nQuarto Dashboards"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-1",
+    "href": "slides/lec-01-welcome.html#your-turn-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output. Render the document, which will ask you to give it a name – you can use my-first-document.qmd.\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions)\nAdd a table of contents.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#take-a-break",
+    "href": "slides/lec-01-welcome.html#take-a-break",
+    "title": "Welcome & get ready for the course",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
+    "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Log into Posit Cloud with GitHub account",
+    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark this tab in your browser.\n\n\n\n\n\n\n\nNote\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-8",
+    "href": "slides/lec-01-welcome.html#section-8",
+    "title": "Welcome & get ready for the course",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-github",
+    "href": "slides/lec-01-welcome.html#my-turn-a-tour-of-github",
+    "title": "Welcome & get ready for the course",
+    "section": "My turn: A tour of GitHub",
+    "text": "My turn: A tour of GitHub\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
+    "href": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Create an issue on GitHub",
+    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser\nExchange your GitHub username with your room partner\nFind the md-01-homework repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick Submit new issue\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#take-a-break-1",
+    "href": "slides/lec-01-welcome.html#take-a-break-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#thanks",
+    "href": "slides/lec-01-welcome.html#thanks",
+    "title": "Welcome & get ready for the course",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
   }
 ]
