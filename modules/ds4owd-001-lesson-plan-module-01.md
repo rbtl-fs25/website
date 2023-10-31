@@ -1,0 +1,110 @@
+- ## Part 1 (46)
+    - ### GitHub email (5)
+        - Late start: 5 minutes
+    - ### Welcome (20)
+        - Meet the team (5)
+        - Learning Goals (1)
+        - About you (7)
+            - Notes 
+            - Break-out
+        - Course Calendar (1)
+        - Course structure (2)
+            - My turn
+            - Our turn
+            - Your turn
+        - Getting help (1)
+        - Platforms and Tools (1)
+        - Bookmark website (0.5)
+        - Learning Objectives (1)
+        - Magic (0.5)
+    - ### Posit Cloud (3)
+        - Screenshots (2)
+        - Screen setup (1)
+            - Poll
+    - ### Hello Quarto (1)
+        - Meeting you where you are (1)
+    - ### What is Quarto Part 1 (17)
+        - Quarto ... (1)
+        - **My turn:** A tour of Quarto (10)
+            - Visual editor
+                - YAML Metadata
+                - Headings
+                    - Add Heading 2: Analysis
+                - Text
+                    - Bold text
+                    - Add hyperlink
+                        - https://jennybc.github.io/gapminder/
+                - Bullets
+                - Code chunk
+                    - Code-chunk options
+                    - Run code
+                - Render
+                    - HTML
+                - YAML metadta
+                    - Add author
+                    - Add date: today
+                - Render
+                    - HTML
+                - Add table of contents and code-fold
+                    - format: 
+  html:
+    toc: true
+    code-fold: true
+                - Render
+                    - HTML
+                - Add pdf: default
+                    - format: 
+  html:
+    toc: true
+    code-fold: true
+  pdf: default
+                - Render
+        - **Your turn:** Log into Posit Cloud with GitHub account (5)
+- ## Break (10)
+- ## Part 2 (46)
+    - ### What is Quarto Part 2 (11)
+        - **Your turn**: md-01-exercises (10)
+        - From the comfort of your own workspace (1)
+    - ### Quarto formats (12)
+        - One install, "Batteries included" (1)
+        - Many Quarto formats (1)
+        - **Your Turn:** Create a new Quarto document (10)
+    - 
+    - ### Version Control (23)
+        - Version Control with Git and GitHub (1)
+        - Why is it useful? (1)
+        - Git and GitHub (1)
+        - **My turn:** A tour of GitHub (5)
+            - Dashboard
+            - My account
+            - GitHub organisation
+            - Issue tracker
+        - **Our turn**: Configure Notifications settings (5)
+        - **Your turn**: Create an issue on GitHub (10)
+- ## Break (10)
+- ## Part 3 (20)
+    - ### Anatomy of a Quarto document (2)
+        - Components (0.5)
+        - Literate programming (1.5)
+    - ### Metadata (7)
+        - YAML (0.5)
+        - Output options (1.5)
+        - Output option arguments (1)
+        - YAML validation (2)
+        - Quarto linting (1)
+        - Quarto YAML Intelligence (1)
+    - ### R fundamentals (5)
+        - Packages (1)
+        - Functions & Arguments (1)
+        - Objects (1)
+        - Operators (1)
+        - Rules (1)
+    - ### Course information (3)
+        - Weekly structure (1)
+        - Homework assignments (1)
+        - Capstone Project (1)
+    - ### Homework assignments module 1 (2)
+        - Module 1 documentation (1.5)
+        - Homework due date (0.5)
+    - ### Wrap-up (1)
+        - Thanks (1)

@@ -140,11 +140,9 @@ readr::read_csv("../data/tbl-01-ds4owd-001-course-schedule.csv") |>
 
 ## Getting help
 
--   During [my turn]{.highlight-yellow} and [our turn]{.highlight-yellow} segments: Please keep your microphone on mute. Send a [direct message]{.highlight-yellow} to [Mian]{.highlight-yellow} or [Sophia]{.highlight-yellow}.
+-   During [my turn]{.highlight-yellow} and [our turn]{.highlight-yellow} segments: Please keep your microphone on mute. Send message to the [Zoom chat]{.highlight-yellow} Mian and Sophia will support you.
 
--   During [your turn]{.highlight-yellow} segments: Call someone to join the [break-out room]{.highlight-yellow}.
-
-
+-   During [your turn]{.highlight-yellow} segments: Due to the large number of participants, it will not be feasible to join individual break-out rooms, but you will always be working in pairs. 
 
 
 ## Platforms and Tools
