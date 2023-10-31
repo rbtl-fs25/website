@@ -103,6 +103,8 @@
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -412,7 +414,7 @@ Lars Schöbitz
 </section>
 <section id="email-from-github" class="slide level2 center-align">
 <h2>Email from GitHub?</h2>
-<p>While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course.</p>
+<p>While we are getting ready, please check for this email from GitHub and <span class="highlight-yellow">accept the invitation</span> to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates).</p>
 
 <img data-src="img/lec-01/github-invitation.png" class="r-stretch"></section>
 <section>
@@ -428,16 +430,15 @@ Lars Schöbitz
 <p><img data-src="img/lec-01/profile-lars.png" class="quarto-figure-center" alt="Headshot of Lars Schöbitz"></p>
 <ul>
 <li>Env. Engineer</li>
-<li>WASH Researcher</li>
-<li>RStudio certified instructor</li>
+<li>retired WASH Researcher</li>
+<li><a href="https://education.rstudio.com/trainers/">RStudio certified instructor</a></li>
 </ul>
 </div><div class="column" style="width:33%;">
 <p><strong>Mian Zhong</strong></p>
 <p><img data-src="img/lec-01/profile-mian.png" class="quarto-figure-center" alt="Headshot of Lars Schöbitz"></p>
 <ul>
 <li>Data Scientist</li>
-<li></li>
-<li></li>
+<li>Advocate for data for social good</li>
 </ul>
 </div><div class="column" style="width:33%;">
 <p><strong>Sophia Skorik</strong></p>
@@ -457,8 +458,8 @@ Lars Schöbitz
 <li><p>Learn to use the <span class="highlight-yellow">Quarto file format</span> and the RStudio IDE visual editing mode to produce <span class="highlight-yellow">documents</span> with citations, footnotes, cross-references, figures, and tables.</p></li>
 </ol>
 </section>
-<section id="about-you" class="slide level2">
-<h2>About you</h2>
+<section id="your-turn-about-you" class="slide level2">
+<h2>Your turn: About you</h2>
 <div class="task">
 <p>Pick an item and take notes for 1 minute:</p>
 <p>What does the item you have picked have to do with the reason for you being here?</p>
@@ -466,7 +467,7 @@ Lars Schöbitz
 
 <img data-src="img/lec-01/items-slide/items-slide.001.png" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_f70f56fa" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_c8c072fb" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -480,7 +481,15 @@ Lars Schöbitz
 <p>What does the item you have picked have to do with the reason for you being here?</p>
 </div>
 
-<img data-src="img/lec-01/items-slide/items-slide.001.png" class="r-stretch"></section>
+<img data-src="img/lec-01/items-slide/items-slide.001.png" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_59663720" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
 <section id="course-calendar" class="slide level2 smallest scrollable">
 <h2>Course Calendar</h2>
 <div class="cell">
@@ -626,8 +635,8 @@ Lars Schöbitz
 <section id="getting-help" class="slide level2">
 <h2>Getting help</h2>
 <ul>
-<li><p>During <span class="highlight-yellow">my turn</span> and <span class="highlight-yellow">our turn</span> segments: Please keep your microphone on mute. Send a <span class="highlight-yellow">direct message</span> to <span class="highlight-yellow">Mian</span> or <span class="highlight-yellow">Sophia</span></p></li>
-<li><p>During <span class="highlight-yellow">your turn</span> segments: Call someone to join the <span class="highlight-yellow">break-out room</span></p></li>
+<li><p>During <span class="highlight-yellow">my turn</span> and <span class="highlight-yellow">our turn</span> segments: Please keep your microphone on mute. Send a <span class="highlight-yellow">direct message</span> to <span class="highlight-yellow">Mian</span> or <span class="highlight-yellow">Sophia</span>.</p></li>
+<li><p>During <span class="highlight-yellow">your turn</span> segments: Call someone to join the <span class="highlight-yellow">break-out room</span>.</p></li>
 </ul>
 </section>
 <section id="platforms-and-tools" class="slide level2">
@@ -700,7 +709,7 @@ Lars Schöbitz
 </div>
 </section></section>
 <section>
-<section id="hello-quarto" class="title-slide slide level1 center">
+<section id="hello-quarto" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Hello Quarto</h1>
 
 </section>
@@ -711,11 +720,11 @@ Lars Schöbitz
 <div class="fragment fade-in-then-semi-out">
 <p>I’ll <strong>assume</strong> you</p>
 <ul>
-<li><p>know do <span class="highlight-yellow">not</span> have R or git experience</p></li>
+<li><p>do <span class="highlight-yellow">not</span> have R or git experience</p></li>
 <li><p>have <span class="highlight-yellow">not</span> worked in an IDE before (e.g.&nbsp;RStudio IDE)</p></li>
-<li><p>want to learn about R</p></li>
-<li><p>want to learn about Quarto and publishing</p></li>
-<li><p>want to learn about project management with GitHub</p></li>
+<li><p>want to <span class="highlight-yellow">learn</span> about R</p></li>
+<li><p>want to <span class="highlight-yellow">learn</span> about Quarto and publishing</p></li>
+<li><p>want to <span class="highlight-yellow">learn</span> about project management with GitHub</p></li>
 </ul>
 </div>
 </div><div class="column" style="width:50%;">
@@ -725,6 +734,7 @@ Lars Schöbitz
 <li><p>R</p></li>
 <li><p>Quarto syntax and formats</p></li>
 <li><p>Markdown</p></li>
+<li><p>Git via RStudio GUI</p></li>
 <li><p>GitHub issues, project management, and publishing</p></li>
 </ul>
 </div>
@@ -732,7 +742,7 @@ Lars Schöbitz
 </div>
 </section></section>
 <section>
-<section id="what-is-quarto" class="title-slide slide level1 center">
+<section id="what-is-quarto" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>What is Quarto?</h1>
 
 </section>
@@ -751,22 +761,22 @@ Lars Schöbitz
 <p>Sit back and enjoy!</p>
 </div>
 </section>
-<section id="your-turn-log-into-posit-cloud-with-github-account" class="slide level2">
+<section id="your-turn-log-into-posit-cloud-with-github-account" class="slide level2 smaller">
 <h2>Your turn: Log into Posit Cloud with GitHub account</h2>
 <ul>
 <li>Go to the Posit Cloud Sign Up page: <a href="https://login.posit.cloud/register">login.posit.cloud/register</a></li>
-<li>Click on the “Sign Up with GitHub” button.</li>
+<li>Click on the <span class="highlight-yellow">Sign Up with GitHub</span> button.</li>
 <li>Enter your GitHub username and password when prompted.</li>
 <li>Open and accept the workspace invitation (<span class="highlight-yellow">Link is in the Zoom chat now</span>).</li>
-<li>Bookmark this tab in your browser.</li>
+<li>Bookmark the address of the open tab in your browser.</li>
 </ul>
-<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Note</strong></p>
+<p><strong>GitHub Authorisation</strong></p>
 </div>
 <div class="callout-content">
 <ul>
@@ -781,32 +791,49 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_8f7185ad" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_9cc569b2" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="take-a-break" class="slide level2">
+<h2>Take a break</h2>
+<p><span class="highlight-yellow">Please get up and move!</span> Let your emails rest in peace.</p>
+<p><img data-src="img/lec-01/coffee-break.jpg" style="width:25.0%"></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_e142b7f9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
-</section>
-<section id="your-turn" class="slide level2">
-<h2>Your turn</h2>
+
+<aside><div>
+<p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
+</div></aside></section>
+<section id="your-turn-md-01-exercises" class="slide level2">
+<h2>Your turn: md-01-exercises</h2>
 <div class="task">
 <ol type="1">
-<li>Open <a href="https://posit.cloud">posit.cloud</a> in your browser (use your bookmark)</li>
-<li>Open the ds4owd workspace for the cour</li>
-<li>Click <span class="highlight-yellow">Start</span> next to <span class="highlight-yellow">md-01-exercises</span></li>
-<li>Render the document</li>
+<li>Open <a href="https://posit.cloud">posit.cloud</a> in your browser (use your bookmark).</li>
+<li>Open the ds4owd workspace for the course.</li>
+<li>Click <span class="highlight-yellow">Start</span> next to <span class="highlight-yellow">md-01-exercises</span>.</li>
+<li>In the File Manager in the bottom right window, locate the <code>hello-quarto.qmd</code> file and click on it to open it in the top left window.</li>
+<li>Render the document.</li>
 <li>Add <code>author:</code> to the YAML header and add your name</li>
 <li>Re-render the document</li>
 <li>Inspect components of the document and make one more update and re-render.</li>
-<li>Discuss notes about updates you’ve made with your neighbors and note any aspects of the document that are not clear after the tour and your first interaction with it.</li>
+<li>Discuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.</li>
 </ol>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_35269239" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_cf2fb131" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
@@ -820,7 +847,7 @@ Lars Schöbitz
 </div>
 </section></section>
 <section>
-<section id="quarto-formats" class="title-slide slide level1 center">
+<section id="quarto-formats" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Quarto formats</h1>
 
 </section>
@@ -941,45 +968,32 @@ Lars Schöbitz
 </tbody>
 </table>
 </section>
-<section id="your-turn-1" class="slide level2">
-<h2>Your turn</h2>
+<section id="your-turn-create-a-new-quarto-document" class="slide level2">
+<h2>Your turn: Create a new Quarto document</h2>
 <div class="task">
-<p>In your exercises project in RStudio on Posit Cloud, go to <span class="highlight-yellow">File &gt; New File &gt; Quarto document</span> to create a Quarto document with HTML output. Render the document, which will ask you to give it a name – you can use <code>my-first-document.qmd</code>.</p>
+<p>In your exercises project in RStudio on Posit Cloud, go to <span class="highlight-yellow">File &gt; New File &gt; Quarto document</span> to create a Quarto document with HTML output.</p>
+<ul>
+<li>Render the document, which will ask you to give it a name – you can use <code>my-first-document.qmd</code>.</li>
+</ul>
 <p>Use the visual editor for the next steps.</p>
 <ul>
 <li><p>Add a title and your name as the author.</p></li>
-<li><p>Create four sections with headings of level 2 (Introduction, Methods, Results, Conclusions)</p></li>
-<li><p>Add a table of contents.</p></li>
-<li><p><span class="highlight-yellow"><strong>Stretch goal:</strong></span> Change the html theme to <code>sketchy</code>. Tipp: Check <a href="https://quarto.org/">quarto.org</a> and use search function <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> with “HTML theming”</p></li>
+<li><p>Create four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).</p></li>
+<li><p><span class="highlight-yellow"><strong>Stretch goal</strong></span>: Add a table of contents. Note: Watch out for the indentation.</p></li>
+<li><p><span class="highlight-yellow"><strong>Stretch goal</strong></span>: Change the html theme to <code>sketchy</code>. Tipp: Check <a href="https://quarto.org/">quarto.org</a> and use search function <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> with “HTML theming”</p></li>
 </ul>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_ffa7b1d0" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_c994559e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
-</section>
-<section id="take-a-break" class="slide level2">
-<h2>Take a break</h2>
-<p><span class="highlight-yellow">Please get up and move!</span> Let your emails rest in peace.</p>
-<p><img data-src="img/lec-01/coffee-break.jpg" style="width:40.0%"></p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_042a96be" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
-
-<aside><div>
-<p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
-</div></aside></section></section>
+</section></section>
 <section>
-<section id="version-control" class="title-slide slide level1 center">
+<section id="version-control" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Version Control</h1>
 
 </section>
@@ -1035,23 +1049,41 @@ Lars Schöbitz
 <p>Sit back and enjoy!</p>
 </div>
 </section>
-<section id="your-turn-create-an-issue-on-github" class="slide level2">
+<section id="our-turn-configure-notifications-settings" class="slide level2">
+<h2>Our turn: Configure Notifications settings</h2>
+<div class="task">
+<p>Currently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive <span class="hightlight-yellow">notifications On GitHub</span>.</p>
+</div>
+
+<img data-src="img/lec-01/github-notifications-settings.png" width="542" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_9e21a7ac" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="your-turn-create-an-issue-on-github" class="slide level2 smaller">
 <h2>Your turn: Create an issue on GitHub</h2>
 <div class="task">
 <ol type="1">
-<li>Open github.com in your browser and login with your credentials</li>
+<li>Open <a href="https://github.com/">github.com</a> in your browser and login with your credentials</li>
 <li>Exchange your GitHub username with your room partner</li>
-<li>Find and open the md-01-homework repository that ends with your GitHub username</li>
+<li>Find and open the md-01-assignments-USERNAME repository that ends with your GitHub username</li>
 <li>Find the issue tracker</li>
 <li>Open an issue with the title “Support for module 1 homework”</li>
 <li>Add your room partner to the list of Assignees on the right panel</li>
 <li>Add a comment to the issue and tag Mian with <span class="highlight-yellow"><span class="citation" data-cites="mianzg">@mianzg</span></span>, Sophia with <span class="highlight-yellow"><span class="citation" data-cites="sskorik01">@sskorik01</span></span>, and your <span class="highlight-yellow">room partner</span> to ask for support during the homework assignments</li>
 <li>Click submit new issue</li>
+<li>Check if you have received a notification on GitHub, and open the inbox.</li>
+<li>Open the issue and respond to the comment of your room partner.</li>
 </ol>
 </div>
-<div class="cell">
+
+<img data-src="img/lec-01/github-notifications-inbox.png" width="450" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0f83fa10" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_5e4c117a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1061,10 +1093,10 @@ Lars Schöbitz
 <section id="take-a-break-1" class="slide level2">
 <h2>Take a break</h2>
 <p><span class="highlight-yellow">Please get up and move!</span> Let your emails rest in peace.</p>
-<p><img data-src="img/lec-01/coffee-break.jpg" style="width:40.0%"></p>
+<p><img data-src="img/lec-01/coffee-break.jpg" style="width:25.0%"></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_21e95325" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_5ea51201" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1074,6 +1106,133 @@ Lars Schöbitz
 <aside><div>
 <p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
 </div></aside></section></section>
+<section>
+<section id="anatomy-of-a-quarto-document" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Anatomy of a Quarto document</h1>
+
+</section>
+<section id="components" class="slide level2">
+<h2>Components</h2>
+<ol type="1">
+<li><p>Metadata: YAML</p></li>
+<li><p>Text: Markdown</p></li>
+<li><p>Code: Executed via <code>knitr</code> or <code>jupyter</code></p></li>
+</ol>
+<div class="fragment">
+<p><strong>Weave it all together</strong>, and you have beautiful, powerful, and useful outputs!</p>
+</div>
+</section>
+<section id="literate-programming" class="slide level2 smaller">
+<h2>Literate programming</h2>
+<p>Literate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "ggplot2 demo"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="an">date:</span><span class="co"> "5/23/2023"</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co">---</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="fu">## MPG</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>There is a relationship between city and highway mileage.</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="in">```{r}</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="in">#| label: fig-mpg</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="in">ggplot(mpg, aes(x = cty, y = hwy)) + </span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="in">  geom_point() + </span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="in">  geom_smooth(method = "loess")</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<aside><div>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Literate_programming" class="uri">https://en.wikipedia.org/wiki/Literate_programming</a></p>
+</div></aside></section></section>
+<section>
+<section id="metadata" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Metadata</h1>
+
+</section>
+<section id="yaml" class="slide level2">
+<h2>YAML</h2>
+<p>“Yet Another Markup Language” or “YAML Ain’t Markup Language” is used to provide document level metadata.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">key</span><span class="kw">:</span><span class="at"> value</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="output-options" class="slide level2">
+<h2>Output options</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> something</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><br></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> pdf</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="output-option-arguments" class="slide level2">
+<h2>Output option arguments</h2>
+<p>Indentation matters!</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="yaml-validation" class="slide level2 smaller">
+<h2>YAML validation</h2>
+<ul>
+<li>Invalid: No space after <code>:</code></li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="at">format:html</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Invalid: Read as missing</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="pp">---</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="at">html</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="yaml-validation-1" class="slide level2 smaller">
+<h2>YAML validation</h2>
+<p>There are multiple ways of formatting valid YAML:</p>
+<ul>
+<li>Valid: There’s a space after <code>:</code></li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Valid: <code>format: html</code> with selections made with proper indentation</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="quarto-linting" class="slide level2">
+<h2>Quarto linting</h2>
+<p>Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.</p>
+<p><br></p>
+<p><img data-src="img/lec-01/lint-rstudio.png" alt="Linter showing message for badly formatted YAML."></p>
+
+<aside><div>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Lint_(software)" class="uri">https://en.wikipedia.org/wiki/Lint_(software)</a></p>
+</div></aside></section>
+<section id="quarto-yaml-intelligence" class="slide level2">
+<h2>Quarto YAML Intelligence</h2>
+<p>RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd><code>Ctrl + space</code></kbd> to see all available options.</p>
+<p><br></p>
+
+<img data-src="img/lec-01/quarto-tab-complete.png" class="quarto-figure-center r-stretch" width="600"></section></section>
 <section>
 <section id="r-fundamentals" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>R fundamentals</h1>
@@ -1086,8 +1245,8 @@ Lars Schöbitz
 <div class="column" style="width:40%;">
 <p><strong>base R</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">sqrt</span>(<span class="dv">49</span>)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">sqrt</span>(<span class="dv">49</span>)</span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment">Functions come with R</li>
@@ -1097,7 +1256,7 @@ Lars Schöbitz
 </div><div class="column" style="width:55%;">
 <p><strong>R Packages</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment">Installed once in the Console: <code>install.packages("dplyr")</code></li>
@@ -1128,10 +1287,10 @@ Lars Schöbitz
 <section id="functions-arguments" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Functions &amp; Arguments</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-2" class="hljs-ln-code"><a href="#cb3-2"></a></span>
-<span id="cb3-3" class="hljs-ln-code"><a href="#cb3-3"></a><span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
-<span id="cb3-4" class="hljs-ln-code"><a href="#cb3-4"></a>       year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a></span>
+<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a><span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
+<span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a>       year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Function: <code>filter()</code></li>
@@ -1142,10 +1301,10 @@ Lars Schöbitz
 <section id="objects" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Objects</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a></span>
-<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3"></a>gapminder_yr_2007 <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
-<span id="cb4-4" class="hljs-ln-code"><a href="#cb4-4"></a>                            year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a></span>
+<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a>gapminder_yr_2007 <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
+<span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a>                            year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Function: <code>filter()</code></li>
@@ -1157,10 +1316,10 @@ Lars Schöbitz
 <section id="operators" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Operators</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a></span>
-<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>gapminder_yr_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
-<span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb16-1" class="hljs-ln-code"><a href="#cb16-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb16-2" class="hljs-ln-code"><a href="#cb16-2"></a></span>
+<span id="cb16-3" class="hljs-ln-code"><a href="#cb16-3"></a>gapminder_yr_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
+<span id="cb16-4" class="hljs-ln-code"><a href="#cb16-4"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Function: <code>filter()</code></li>
@@ -1234,20 +1393,31 @@ Lars Schöbitz
 <ul>
 <li>Data analysis project report with a dataset of your choice</li>
 <li>Submitted as rendered Quarto document on GitHub</li>
-<li>Submission required for successful completion of the course</li>
+<li>Submission <span class="highlight-yellow">required for successful completion</span> of the course</li>
 </ul>
 </section></section>
 <section>
-<section id="homework-assignments-1" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Homework assignments</h1>
+<section id="homework-assignments-module-1" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Homework assignments module 1</h1>
 
 </section>
-<section id="homework-due-dates" class="slide level2">
-<h2>Homework due dates</h2>
+<section id="module-1-documentation" class="slide level2">
+<h2>Module 1 documentation</h2>
+<div class="learn-more">
+<p><a href="https://ds4owd-001.github.io/website/modules/md-01.html">ds4owd-001.github.io/website/modules/md-01.html</a></p>
+<iframe src="https://ds4owd-001.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+</div>
+</section>
+<section id="homework-due-date" class="slide level2">
+<h2>Homework due date</h2>
 <ul>
-<li>All material on course website: <a href="https://ds4owd-001.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> ds4owd-001.github.io/website/</a></li>
 <li>Homework assignment due: <span class="highlight-yellow">Monday, November 6th</span></li>
 </ul>
+</section></section>
+<section>
+<section id="wrap-up" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Wrap-up</h1>
+
 </section>
 <section id="thanks" class="slide level2">
 <h2>Thanks! 🌻</h2>
@@ -1269,6 +1439,7 @@ Lars Schöbitz
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -1289,7 +1460,8 @@ Lars Schöbitz
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1460,7 +1632,7 @@ Lars Schöbitz
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,

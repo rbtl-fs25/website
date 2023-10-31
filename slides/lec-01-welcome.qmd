@@ -9,6 +9,7 @@ format:
     transition: fade
     slide-number: true
     logo: ../img/OWD-logo-20.png
+    chalkboard: true
 footer: "[{{< fa link >}} ds4owd-001.github.io/website/](https://ds4owd-001.github.io/website/)"
 editor: source
 execute:
@@ -27,7 +28,7 @@ library(magrittr)
 
 ## Email from GitHub? {.center-align}
 
-While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course.
+While we are getting ready, please check for this email from GitHub and [accept the invitation]{.highlight-yellow} to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren't your primary inbox (e.g Updates).
 
 ![](img/lec-01/github-invitation.png)
 
@@ -42,8 +43,8 @@ While we are getting ready, please check for this email from GitHub and accept t
 ![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
 
 -   Env. Engineer
-- WASH Researcher
--   RStudio certified instructor
+- retired WASH Researcher
+-   [RStudio certified instructor](https://education.rstudio.com/trainers/)
 :::
 
 ::: {.column width="33%"}
@@ -52,8 +53,7 @@ While we are getting ready, please check for this email from GitHub and accept t
 ![](img/lec-01/profile-mian.png){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
 
 -   Data Scientist
--   
-- 
+-   Advocate for data for social good
 :::
 
 ::: {.column width="33%"}
@@ -73,7 +73,7 @@ While we are getting ready, please check for this email from GitHub and accept t
 
 2.  Learn to use the [Quarto file format]{.highlight-yellow} and the RStudio IDE visual editing mode to produce [documents]{.highlight-yellow} with citations, footnotes, cross-references, figures, and tables.
 
-## About you
+## Your turn: About you
 
 ::: task
 Pick an item and take notes for 1 minute:
@@ -98,6 +98,12 @@ What does the item you have picked have to do with the reason for you being here
 :::
 
 ![](img/lec-01/items-slide/items-slide.001.png)
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
 
 ## Course Calendar {.smallest .scrollable}
 
@@ -135,9 +141,10 @@ readr::read_csv("../data/tbl-01-ds4owd-001-course-schedule.csv") |>
 
 ## Getting help
 
--   During [my turn]{.highlight-yellow} and [our turn]{.highlight-yellow} segments: Please keep your microphone on mute. Send a [direct message]{.highlight-yellow} to [Mian]{.highlight-yellow} or [Sophia]{.highlight-yellow}
+-   During [my turn]{.highlight-yellow} and [our turn]{.highlight-yellow} segments: Please keep your microphone on mute. Send a [direct message]{.highlight-yellow} to [Mian]{.highlight-yellow} or [Sophia]{.highlight-yellow}.
 
--   During [your turn]{.highlight-yellow} segments: Call someone to join the [break-out room]{.highlight-yellow}
+-   During [your turn]{.highlight-yellow} segments: Call someone to join the [break-out room]{.highlight-yellow}.
+
 
 
 
@@ -207,7 +214,7 @@ Two screens or more ![](img/lec-01/daniel-korpai-vHVfpi3h5xk-unsplash.jpg)
 :::
 :::
 
-# Hello Quarto
+# Hello Quarto {background-color="#4C326A"}
 
 ## Meeting you where you are
 
@@ -216,15 +223,15 @@ Two screens or more ![](img/lec-01/daniel-korpai-vHVfpi3h5xk-unsplash.jpg)
 ::: {.fragment .fade-in-then-semi-out}
 I'll **assume** you
 
--   know do [not]{.highlight-yellow} have R or git experience
+-   do [not]{.highlight-yellow} have R or git experience
 
 -   have [not]{.highlight-yellow} worked in an IDE before (e.g. RStudio IDE)
 
--   want to learn about R
+-   want to [learn]{.highlight-yellow} about R
 
--   want to learn about Quarto and publishing
+-   want to [learn]{.highlight-yellow} about Quarto and publishing
 
--   want to learn about project management with GitHub
+-   want to [learn]{.highlight-yellow} about project management with GitHub
 :::
 :::
 
@@ -238,12 +245,14 @@ I'll **teach** you
 
 -   Markdown
 
+-   Git via RStudio GUI
+
 -   GitHub issues, project management, and publishing
 :::
 :::
 :::
 
-# What is Quarto?
+# What is Quarto? {background-color="#4C326A"}
 
 ## Quarto ...
 
@@ -260,15 +269,17 @@ I'll **teach** you
 Sit back and enjoy!
 :::
 
-## Your turn: Log into Posit Cloud with GitHub account
+## Your turn: Log into Posit Cloud with GitHub account {.smaller}
 
 -   Go to the Posit Cloud Sign Up page: [login.posit.cloud/register](https://login.posit.cloud/register)
--   Click on the "Sign Up with GitHub" button.
+-   Click on the [Sign Up with GitHub]{.highlight-yellow} button.
 -   Enter your GitHub username and password when prompted.
 -   Open and accept the workspace invitation ([Link is in the Zoom chat now]{.highlight-yellow}).
--   Bookmark this tab in your browser.
+-   Bookmark the address of the open tab in your browser.
 
-::: callout-note
+::: callout-warning
+
+# GitHub Authorisation
 -   If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.
 -   Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.
 :::
@@ -280,26 +291,41 @@ https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6x
 ```{r}
 #| echo: false
 
+countdown(minutes = 5)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-01/coffee-break.jpg){width="25%"}
+
+```{r}
 countdown(minutes = 10)
 ```
 
-## Your turn
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+## Your turn: md-01-exercises
 
 ::: task
-1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark)
-2. Open the ds4owd workspace for the cour
-3.  Click [Start]{.highlight-yellow} next to [md-01-exercises]{.highlight-yellow}
-4.  Render the document
-5.  Add `author:` to the YAML header and add your name
-6.  Re-render the document
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2. Open the ds4owd workspace for the course.
+3. Click [Start]{.highlight-yellow} next to [md-01-exercises]{.highlight-yellow}.
+4. In the File Manager in the bottom right window, locate the `hello-quarto.qmd` file and click on it to open it in the top left window.
+4. Render the document.
+5. Add `author:` to the YAML header and add your name
+6. Re-render the document
 7. Inspect components of the document and make one more update and re-render.
-8. Discuss notes about updates you've made with your neighbors and note any aspects of the document that are not clear after the tour and your first interaction with it.
+8. Discuss notes about updates you've made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.
 :::
 
 ```{r}
 #| echo: false
 
-countdown(minutes = 15)
+countdown(minutes = 10)
 ```
 
 ## From the comfort of your own workspace
@@ -312,7 +338,7 @@ countdown(minutes = 15)
 ![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="1200"}
 :::
 
-# Quarto formats
+# Quarto formats {background-color="#4C326A"}
 
 ## One install, "Batteries included"
 
@@ -382,20 +408,22 @@ countdown(minutes = 15)
 | Dashboards       | [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)                     | [Quarto Dashboards](https://quarto.org/docs/dashboards/index.html)          |
 +------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 
-## Your turn
+## Your turn: Create a new Quarto document
 
 ::: task
-In your exercises project in RStudio on Posit Cloud, go to [File \> New File \> Quarto document]{.highlight-yellow} to create a Quarto document with HTML output. Render the document, which will ask you to give it a name -- you can use `my-first-document.qmd`.
+In your exercises project in RStudio on Posit Cloud, go to [File \> New File \> Quarto document]{.highlight-yellow} to create a Quarto document with HTML output. 
+
+- Render the document, which will ask you to give it a name -- you can use `my-first-document.qmd`.
 
 Use the visual editor for the next steps.
 
 -   Add a title and your name as the author.
 
--   Create four sections with headings of level 2 (Introduction, Methods, Results, Conclusions)
+-   Create four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).
 
--   Add a table of contents.
+-   [**Stretch goal**]{.highlight-yellow}: Add a table of contents. Note: Watch out for the indentation.
 
--   [**Stretch goal:**]{.highlight-yellow} Change the html theme to `sketchy`. Tipp: Check [quarto.org](https://quarto.org/) and use search function {{< fa magnifying-glass >}} with "HTML theming"
+-   [**Stretch goal**]{.highlight-yellow}: Change the html theme to `sketchy`. Tipp: Check [quarto.org](https://quarto.org/) and use search function {{< fa magnifying-glass >}} with "HTML theming"
 :::
 
 ```{r}
@@ -404,23 +432,7 @@ Use the visual editor for the next steps.
 countdown(minutes = 10)
 ```
 
-## Take a break
-
-[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
-
-![](img/lec-01/coffee-break.jpg){width="40%"}
-
-```{r}
-
-countdown(10)
-
-```
-
-::: aside
-Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
-:::
-
-# Version Control
+# Version Control {background-color="#4C326A"}
 
 ## Version Control with Git and GitHub
 
@@ -475,19 +487,41 @@ knitr::include_graphics("img/lec-01/github-logo.png")
 Sit back and enjoy!
 :::
 
-## Your turn: Create an issue on GitHub
+## Our turn: Configure Notifications settings
+
+::: task
+Currently, you receive emails when someone mentions you in a comment on GitHub. Let's change the settings to receive [notifications On GitHub]{.hightlight-yellow}. 
+:::
+
+```{r}
+knitr::include_graphics(here::here("slides/img/lec-01/github-notifications-settings.png"))
+```
+
+
+```{r}
+countdown(5)
+```
+
+## Your turn: Create an issue on GitHub {.smaller}
 
 ::: task
 
-1. Open github.com in your browser and login with your credentials
+1. Open [github.com](https://github.com/) in your browser and login with your credentials
 2. Exchange your GitHub username with your room partner
-3. Find and open the md-01-homework repository that ends with your GitHub username
+3. Find and open the md-01-assignments-USERNAME repository that ends with your GitHub username
 4. Find the issue tracker
 5. Open an issue with the title "Support for module 1 homework" 
 6. Add your room partner to the list of Assignees on the right panel
 7. Add a comment to the issue and tag Mian with [@mianzg]{.highlight-yellow}, Sophia with [@sskorik01]{.highlight-yellow}, and your [room partner]{.highlight-yellow} to ask for support during the homework assignments
 8. Click submit new issue
+9. Check if you have received a notification on GitHub, and open the inbox.
+10. Open the issue and respond to the comment of your room partner.
 :::
+
+```{r}
+knitr::include_graphics(here::here("slides/img/lec-01/github-notifications-inbox.png"))
+```
+
 
 ```{r}
 countdown(10)
@@ -497,15 +531,171 @@ countdown(10)
 
 [Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
 
-![](img/lec-01/coffee-break.jpg){width="40%"}
+![](img/lec-01/coffee-break.jpg){width="25%"}
 
 ```{r}
-countdown(10)
+countdown(minutes = 10)
 ```
 
 ::: aside
 Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
+
+# Anatomy of a Quarto document {background-color="#4C326A"}
+
+## Components
+
+1.  Metadata: YAML
+
+2.  Text: Markdown
+
+3.  Code: Executed via `knitr` or `jupyter`
+
+. . .
+
+**Weave it all together**, and you have beautiful, powerful, and useful outputs!
+
+## Literate programming {.smaller}
+
+Literate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.
+
+````         
+---
+title: "ggplot2 demo"
+date: "5/23/2023"
+format: html
+---
+
+## MPG
+
+There is a relationship between city and highway mileage.
+
+```{{r}}
+#| label: fig-mpg
+
+library(ggplot2)
+
+ggplot(mpg, aes(x = cty, y = hwy)) + 
+  geom_point() + 
+  geom_smooth(method = "loess")
+```
+````
+
+::: aside
+Source: <https://en.wikipedia.org/wiki/Literate_programming>
+:::
+
+# Metadata {background-color="#4C326A"}
+
+## YAML
+
+"Yet Another Markup Language" or "YAML Ain't Markup Language" is used to provide document level metadata.
+
+``` yaml
+---
+key: value
+---
+```
+
+## Output options
+
+``` yaml
+---
+format: something
+---
+```
+
+. . .
+
+<br>
+
+``` yaml
+---
+format: html
+---
+```
+
+``` yaml
+---
+format: pdf
+---
+```
+
+``` yaml
+---
+format: revealjs
+---
+```
+
+## Output option arguments
+
+Indentation matters!
+
+``` yaml
+---
+format: 
+  html:
+    toc: true
+    code-fold: true
+---
+```
+
+## YAML validation {.smaller}
+
+-   Invalid: No space after `:`
+
+``` yaml
+---
+format:html
+---
+```
+
+-   Invalid: Read as missing
+
+``` yaml
+---
+format:
+html
+---
+```
+
+## YAML validation {.smaller}
+
+There are multiple ways of formatting valid YAML:
+
+-   Valid: There's a space after `:`
+
+``` yaml
+format: html
+```
+
+-   Valid: `format: html` with selections made with proper indentation
+
+``` yaml
+format: 
+  html:
+    toc: true
+```
+
+## Quarto linting
+
+Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.
+
+<br>
+
+![](img/lec-01/lint-rstudio.png){fig-alt="Linter showing message for badly formatted YAML."}
+
+::: aside
+Source: <https://en.wikipedia.org/wiki/Lint_(software)>
+:::
+
+## Quarto YAML Intelligence
+
+RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd>`Ctrl + space`</kbd> to see all available options.
+
+<br>
+
+![](img/lec-01/quarto-tab-complete.png){fig-align="center" width="600"}
 
 # R fundamentals {background-color="#4C326A"}
 
@@ -640,14 +830,25 @@ Rules of `dplyr` functions:
 
 -   Data analysis project report with a dataset of your choice
 -   Submitted as rendered Quarto document on GitHub
--   Submission required for successful completion of the course
+-   Submission [required for successful completion]{.highlight-yellow} of the course
 
-# Homework assignments {background-color="#4C326A"}
+# Homework assignments module 1 {background-color="#4C326A"}
 
-## Homework due dates
+## Module 1 documentation
 
--   All material on course website: [{{< fa link >}} ds4owd-001.github.io/website/](https://ds4owd-001.github.io/website/)
+::: learn-more
+[ds4owd-001.github.io/website/modules/md-01.html](https://ds4owd-001.github.io/website/modules/md-01.html)
+
+```{=html}
+<iframe src="https://ds4owd-001.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+```
+:::
+
+## Homework due date
+
 -   Homework assignment due: [Monday, November 6th]{.highlight-yellow}
+
+# Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")` 
 

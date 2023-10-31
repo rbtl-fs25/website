@@ -34,7 +34,7 @@ Remember to treat your access tokens like passwords and keep them secure (e.g. a
 
 1. Open github.com in your browser.
 2. Navigate to the GitHub organisation for the course.
-3. Find the repository md-01-assignments that ends with your GitHub username.
+3. Find the repository md-01-assignments-USERNAME that ends with your GitHub username, and open it.
 4. Click on the green "Code" button.
 5. Copy the HTTPS URL to your clipboard.
 6. Open the ds4owd workspace on [posit.cloud](https://posit.cloud/spaces/426916/content/all?sort=name_asc)
@@ -45,8 +45,8 @@ Remember to treat your access tokens like passwords and keep them secure (e.g. a
 
 ## Step 3: Introduce yourself to git
 
-1. Open the md-01-assignments project in Posit Cloud 
-2. Open the git-configuration.qmd file from the bottom right window of RStudio
+1. In Posit Cloud, open the md-01-assignments-USERNAME project that ends with your GitHub username.
+2. Open the git-configuration.qmd file from the bottom right window of RStudio.
 3. Edit the code chunk under "Git configuration details" and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)
 4. Render the document
 5. Continue with the next step
@@ -56,6 +56,8 @@ Remember to treat your access tokens like passwords and keep them secure (e.g. a
 #| eval: false
 
 library(usethis)
+
+# Replace Your Name and Your Email with your details. Do not delete the quotes "".
 use_git_config(user.name = "Your Name", user.email = "Your Email")
 ```
 

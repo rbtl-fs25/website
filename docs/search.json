@@ -1285,14 +1285,14 @@
     "href": "slides/lec-01-welcome.html#email-from-github",
     "title": "Welcome & get ready for the course",
     "section": "Email from GitHub?",
-    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course."
+    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
   },
   {
     "objectID": "slides/lec-01-welcome.html#meet-the-team",
     "href": "slides/lec-01-welcome.html#meet-the-team",
     "title": "Welcome & get ready for the course",
     "section": "Meet the team",
-    "text": "Meet the team\n\n\nLars Schöbitz\n\n\nEnv. Engineer\nWASH Researcher\nRStudio certified instructor\n\n\nMian Zhong\n\n\nData Scientist\n\n\n\n\nSophia Skorik\n\n\nComputer Scientist"
+    "text": "Meet the team\n\n\nLars Schöbitz\n\n\nEnv. Engineer\nretired WASH Researcher\nRStudio certified instructor\n\n\nMian Zhong\n\n\nData Scientist\nAdvocate for data for social good\n\n\nSophia Skorik\n\n\nComputer Scientist"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
@@ -1313,7 +1313,7 @@
     "href": "slides/lec-01-welcome.html#in-break-out-rooms",
     "title": "Welcome & get ready for the course",
     "section": "In break-out rooms",
-    "text": "In break-out rooms\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?"
+    "text": "In break-out rooms\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#course-calendar",
@@ -1355,7 +1355,7 @@
     "href": "slides/lec-01-welcome.html#getting-help",
     "title": "Welcome & get ready for the course",
     "section": "Getting help",
-    "text": "Getting help\n\nDuring my turn and our turn segments: Please keep your microphone on mute. Send a direct message to Mian or Sophia\nDuring your turn segments: Call someone to join the break-out room"
+    "text": "Getting help\n\nDuring my turn and our turn segments: Please keep your microphone on mute. Send a direct message to Mian or Sophia.\nDuring your turn segments: Call someone to join the break-out room."
   },
   {
     "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
@@ -1446,7 +1446,7 @@
     "href": "slides/lec-01-welcome.html#meeting-you-where-you-are",
     "title": "Welcome & get ready for the course",
     "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\nknow do not have R or git experience\nhave not worked in an IDE before (e.g. RStudio IDE)\nwant to learn about R\nwant to learn about Quarto and publishing\nwant to learn about project management with GitHub\n\n\n\n\nI’ll teach you\n\nR\nQuarto syntax and formats\nMarkdown\nGitHub issues, project management, and publishing"
+    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\ndo not have R or git experience\nhave not worked in an IDE before (e.g. RStudio IDE)\nwant to learn about R\nwant to learn about Quarto and publishing\nwant to learn about project management with GitHub\n\n\n\n\nI’ll teach you\n\nR\nQuarto syntax and formats\nMarkdown\nGit via RStudio GUI\nGitHub issues, project management, and publishing"
   },
   {
     "objectID": "slides/lec-01-welcome.html#quarto",
@@ -1467,14 +1467,14 @@
     "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Log into Posit Cloud with GitHub account",
-    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark this tab in your browser.\n\n\n\n\n\n\n\nNote\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the Sign Up with GitHub button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark the address of the open tab in your browser.\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn",
     "href": "slides/lec-01-welcome.html#your-turn",
     "title": "Welcome & get ready for the course",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOpen posit.cloud in your browser (use your bookmark)\nOpen the ds4owd workspace for the cour\nClick Start next to md-01-exercises\nRender the document\nAdd author: to the YAML header and add your name\nRe-render the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbors and note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n15:00"
+    "text": "Your turn\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output. Render the document, which will ask you to give it a name – you can use my-first-document.qmd.\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions)\nAdd a table of contents.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
@@ -1551,7 +1551,7 @@
     "href": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Create an issue on GitHub",
-    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-homework repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\n\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#take-a-break-1",
@@ -1621,7 +1621,7 @@
     "href": "slides/lec-01-welcome.html#homework-due-dates",
     "title": "Welcome & get ready for the course",
     "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website:  ds4owd-001.github.io/website/\nHomework assignment due: Monday, November 6th"
+    "text": "Homework due dates\n\nHomework assignment due: Monday, November 6th"
   },
   {
     "objectID": "slides/lec-01-welcome.html#thanks",
@@ -1998,5 +1998,124 @@
     "crumbs": [
       "Module 08"
     ]
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
+    "href": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
+    "title": "Welcome & get ready for the course",
+    "section": "Our turn: Configure Notifications settings",
+    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-about-you",
+    "href": "slides/lec-01-welcome.html#your-turn-about-you",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: About you",
+    "text": "Your turn: About you\n\nPick an item and take notes for 1 minute:\nWhat does the item you have picked have to do with the reason for you being here?\n\n\n\n\n\n−+\n01:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
+    "href": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: md-01-exercises",
+    "text": "Your turn: md-01-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-01-exercises.\nIn the File Manager in the bottom right window, locate the hello-quarto.qmd file and click on it to open it in the top left window.\nRender the document.\nAdd author: to the YAML header and add your name\nRe-render the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
+    "href": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Create a new Quarto document",
+    "text": "Your turn: Create a new Quarto document\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output.\n\nRender the document, which will ask you to give it a name – you can use my-first-document.qmd.\n\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).\nStretch goal: Add a table of contents. Note: Watch out for the indentation.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#take-a-break-2",
+    "href": "slides/lec-01-welcome.html#take-a-break-2",
+    "title": "Welcome & get ready for the course",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-8",
+    "href": "slides/lec-01-welcome.html#section-8",
+    "title": "Welcome & get ready for the course",
+    "section": "",
+    "text": ":::"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#module-1-documentation",
+    "href": "slides/lec-01-welcome.html#module-1-documentation",
+    "title": "Welcome & get ready for the course",
+    "section": "Module 1 documentation",
+    "text": "Module 1 documentation\n\nds4owd-001.github.io/website/modules/md-01.html"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#homework-due-date",
+    "href": "slides/lec-01-welcome.html#homework-due-date",
+    "title": "Welcome & get ready for the course",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, November 6th"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#components",
+    "href": "slides/lec-01-welcome.html#components",
+    "title": "Welcome & get ready for the course",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#literate-programming",
+    "href": "slides/lec-01-welcome.html#literate-programming",
+    "title": "Welcome & get ready for the course",
+    "section": "Literate programming",
+    "text": "Literate programming\nLiterate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.\n---\ntitle: \"ggplot2 demo\"\ndate: \"5/23/2023\"\nformat: html\n---\n\n## MPG\n\nThere is a relationship between city and highway mileage.\n\n```{r}\n#| label: fig-mpg\n\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = cty, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#yaml",
+    "href": "slides/lec-01-welcome.html#yaml",
+    "title": "Welcome & get ready for the course",
+    "section": "YAML",
+    "text": "YAML\n“Yet Another Markup Language” or “YAML Ain’t Markup Language” is used to provide document level metadata.\n---\nkey: value\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#output-options",
+    "href": "slides/lec-01-welcome.html#output-options",
+    "title": "Welcome & get ready for the course",
+    "section": "Output options",
+    "text": "Output options\n---\nformat: something\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#output-option-arguments",
+    "href": "slides/lec-01-welcome.html#output-option-arguments",
+    "title": "Welcome & get ready for the course",
+    "section": "Output option arguments",
+    "text": "Output option arguments\nIndentation matters!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#yaml-validation",
+    "href": "slides/lec-01-welcome.html#yaml-validation",
+    "title": "Welcome & get ready for the course",
+    "section": "YAML validation",
+    "text": "YAML validation\n\nInvalid: No space after :\n\n---\nformat:html\n---\n\nInvalid: Read as missing\n\n---\nformat:\nhtml\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#yaml-validation-1",
+    "href": "slides/lec-01-welcome.html#yaml-validation-1",
+    "title": "Welcome & get ready for the course",
+    "section": "YAML validation",
+    "text": "YAML validation\nThere are multiple ways of formatting valid YAML:\n\nValid: There’s a space after :\n\nformat: html\n\nValid: format: html with selections made with proper indentation\n\nformat: \n  html:\n    toc: true"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#quarto-linting",
+    "href": "slides/lec-01-welcome.html#quarto-linting",
+    "title": "Welcome & get ready for the course",
+    "section": "Quarto linting",
+    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#quarto-yaml-intelligence",
+    "href": "slides/lec-01-welcome.html#quarto-yaml-intelligence",
+    "title": "Welcome & get ready for the course",
+    "section": "Quarto YAML Intelligence",
+    "text": "Quarto YAML Intelligence\nRStudio + VSCode provide rich tab-completion - start a word and tab to complete, or Ctrl + space to see all available options."
   }
 ]
