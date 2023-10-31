@@ -62,8 +62,7 @@ While we are getting ready, please check for this email from GitHub and [accept 
 ![](img/lec-01/profile-sophia.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
 
 -   Computer Scientist
--   
-- 
+-   Technical support for the course
 :::
 :::
 
