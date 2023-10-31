@@ -319,7 +319,7 @@ Important
 <ol type="1">
 <li>Open github.com in your browser.</li>
 <li>Navigate to the GitHub organisation for the course.</li>
-<li>Find the repository md-01-assignments that ends with your GitHub username.</li>
+<li>Find the repository md-01-assignments-USERNAME that ends with your GitHub username, and open it.</li>
 <li>Click on the green “Code” button.</li>
 <li>Copy the HTTPS URL to your clipboard.</li>
 <li>Open the ds4owd workspace on <a href="https://posit.cloud/spaces/426916/content/all?sort=name_asc">posit.cloud</a></li>
@@ -332,15 +332,17 @@ Important
 <section id="step-3-introduce-yourself-to-git" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-introduce-yourself-to-git">Step 3: Introduce yourself to git</h2>
 <ol type="1">
-<li>Open the md-01-assignments project in Posit Cloud</li>
-<li>Open the git-configuration.qmd file from the bottom right window of RStudio</li>
+<li>In Posit Cloud, open the md-01-assignments-USERNAME project that ends with your GitHub username.</li>
+<li>Open the git-configuration.qmd file from the bottom right window of RStudio.</li>
 <li>Edit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)</li>
 <li>Render the document</li>
 <li>Continue with the next step</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Your Name"</span>, <span class="at">user.email =</span> <span class="st">"Your Email"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace Your Name and Your Email with your details. Do not delete the quotes "".</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Your Name"</span>, <span class="at">user.email =</span> <span class="st">"Your Email"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="step-4-commit-and-push-your-changes" class="level2">
