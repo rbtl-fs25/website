@@ -4,160 +4,112 @@
     "href": "calendar.html",
     "title": "Course Calendar",
     "section": "",
-    "text": "date\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA",
-    "crumbs": [
-      "Course Calendar"
-    ]
+    "text": "date\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
   },
   {
     "objectID": "modules/md-08.html",
     "href": "modules/md-08.html",
     "title": "Module 8",
     "section": "",
-    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows",
-    "crumbs": [
-      "Module 08"
-    ]
+    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows"
   },
   {
-    "objectID": "modules/md-08.html#learning-objectives",
-    "href": "modules/md-08.html#learning-objectives",
+    "objectID": "modules/md-08.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-08.html#fa-bullseye-learning-objectives",
     "title": "Module 8",
     "section": "",
-    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows",
-    "crumbs": [
-      "Module 08"
-    ]
+    "text": "Learners can describe the key ethical concerns related to using AI (human bias, misinformation, privacy, security, etc.)\nLearners are aware of the responsibility for using AI and critically and evaluating all its output.\nLearners can explain the basics of AI and its potential for improving software development workflows"
   },
   {
-    "objectID": "modules/md-08.html#slides",
-    "href": "modules/md-08.html#slides",
+    "objectID": "modules/md-08.html#fa-display-slides",
+    "href": "modules/md-08.html#fa-display-slides",
     "title": "Module 8",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 08"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-08.html#readings",
-    "href": "modules/md-08.html#readings",
+    "objectID": "modules/md-08.html#fa-book-readings",
+    "href": "modules/md-08.html#fa-book-readings",
     "title": "Module 8",
     "section": " Readings",
-    "text": "Readings\n\nIn preparation",
-    "crumbs": [
-      "Module 08"
-    ]
+    "text": "Readings\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-08.html#assignments",
-    "href": "modules/md-08.html#assignments",
+    "objectID": "modules/md-08.html#fa-code-assignments",
+    "href": "modules/md-08.html#fa-code-assignments",
     "title": "Module 8",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 08"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-07.html",
     "href": "modules/md-07.html",
     "title": "Module 7",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences.",
-    "crumbs": [
-      "Module 07"
-    ]
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences."
   },
   {
-    "objectID": "modules/md-07.html#learning-objectives",
-    "href": "modules/md-07.html#learning-objectives",
+    "objectID": "modules/md-07.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-07.html#fa-bullseye-learning-objectives",
     "title": "Module 7",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences.",
-    "crumbs": [
-      "Module 07"
-    ]
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences."
   },
   {
-    "objectID": "modules/md-07.html#slides",
-    "href": "modules/md-07.html#slides",
+    "objectID": "modules/md-07.html#fa-display-slides",
+    "href": "modules/md-07.html#fa-display-slides",
     "title": "Module 7",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 07"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-07.html#readings",
-    "href": "modules/md-07.html#readings",
+    "objectID": "modules/md-07.html#fa-book-readings",
+    "href": "modules/md-07.html#fa-book-readings",
     "title": "Module 7",
     "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 20 - Joins\nRead R for Data Science - Section 26 - Functions",
-    "crumbs": [
-      "Module 07"
-    ]
+    "text": "Readings\n\nRead R for Data Science - Section 20 - Joins\nRead R for Data Science - Section 26 - Functions"
   },
   {
-    "objectID": "modules/md-07.html#assignments",
-    "href": "modules/md-07.html#assignments",
+    "objectID": "modules/md-07.html#fa-code-assignments",
+    "href": "modules/md-07.html#fa-code-assignments",
     "title": "Module 7",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 07"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-04.html",
     "href": "modules/md-04.html",
     "title": "Module 4",
     "section": "",
-    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure.",
-    "crumbs": [
-      "Module 04"
-    ]
+    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure."
   },
   {
-    "objectID": "modules/md-04.html#learning-objectives",
-    "href": "modules/md-04.html#learning-objectives",
+    "objectID": "modules/md-04.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-04.html#fa-bullseye-learning-objectives",
     "title": "Module 4",
     "section": "",
-    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure.",
-    "crumbs": [
-      "Module 04"
-    ]
+    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure."
   },
   {
-    "objectID": "modules/md-04.html#slides",
-    "href": "modules/md-04.html#slides",
+    "objectID": "modules/md-04.html#fa-display-slides",
+    "href": "modules/md-04.html#fa-display-slides",
     "title": "Module 4",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 04"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-04.html#readings",
-    "href": "modules/md-04.html#readings",
+    "objectID": "modules/md-04.html#fa-book-readings",
+    "href": "modules/md-04.html#fa-book-readings",
     "title": "Module 4",
     "section": " Readings",
-    "text": "Readings\n\nRead (Broman and Woo 2018)",
-    "crumbs": [
-      "Module 04"
-    ]
+    "text": "Readings\n\nRead (Broman and Woo 2018)"
   },
   {
-    "objectID": "modules/md-04.html#assignments",
-    "href": "modules/md-04.html#assignments",
+    "objectID": "modules/md-04.html#fa-code-assignments",
+    "href": "modules/md-04.html#fa-code-assignments",
     "title": "Module 4",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 04"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/wk-00-template.html#slides",
@@ -192,100 +144,70 @@
     "href": "modules/md-01.html",
     "title": "Module 1",
     "section": "",
-    "text": "This first week will be used to get you set up for the course.",
-    "crumbs": [
-      "Module 01"
-    ]
+    "text": "This first week will be used to get you set up for the course."
   },
   {
     "objectID": "modules/md-01.html#learning-objectives",
     "href": "modules/md-01.html#learning-objectives",
     "title": "Module 1",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.",
-    "crumbs": [
-      "Module 01"
-    ]
+    "text": "Learning Objectives\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
   },
   {
-    "objectID": "modules/md-01.html#slides",
-    "href": "modules/md-01.html#slides",
+    "objectID": "modules/md-01.html#fa-display-slides",
+    "href": "modules/md-01.html#fa-display-slides",
     "title": "Module 1",
     "section": " Slides",
-    "text": "Slides\nView slides in full screen | Download slides as PDF",
-    "crumbs": [
-      "Module 01"
-    ]
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
-    "objectID": "modules/md-01.html#readings",
-    "href": "modules/md-01.html#readings",
+    "objectID": "modules/md-01.html#fa-book-readings",
+    "href": "modules/md-01.html#fa-book-readings",
     "title": "Module 1",
     "section": " Readings",
-    "text": "Readings\n\nRead the Course Overview.",
-    "crumbs": [
-      "Module 01"
-    ]
+    "text": "Readings\n\nRead the Course Overview."
   },
   {
-    "objectID": "modules/md-01.html#assignments",
-    "href": "modules/md-01.html#assignments",
+    "objectID": "modules/md-01.html#fa-code-assignments",
+    "href": "modules/md-01.html#fa-code-assignments",
     "title": "Module 1",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.\n\nAssignment 1: In class: Working with R, RStudio on Posit Cloud\nAssignment 2: Homework: Communication in a chat\nAssignment 3: Homework: Interaction with GitHub\n\nThank you for working through these assignments.",
-    "crumbs": [
-      "Module 01"
-    ]
+    "text": "Assignments\nPlease complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.\n\nAssignment 1: In class: Working with R, RStudio on Posit Cloud\nAssignment 2: Homework: Communication in a chat\nAssignment 3: Homework: Interaction with GitHub\n\nThank you for working through these assignments."
   },
   {
     "objectID": "modules/md-03.html",
     "href": "modules/md-03.html",
     "title": "Module 3",
     "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.",
-    "crumbs": [
-      "Module 03"
-    ]
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot."
   },
   {
-    "objectID": "modules/md-03.html#learning-objectives",
-    "href": "modules/md-03.html#learning-objectives",
+    "objectID": "modules/md-03.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-03.html#fa-bullseye-learning-objectives",
     "title": "Module 3",
     "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.",
-    "crumbs": [
-      "Module 03"
-    ]
+    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot."
   },
   {
-    "objectID": "modules/md-03.html#slides",
-    "href": "modules/md-03.html#slides",
+    "objectID": "modules/md-03.html#fa-display-slides",
+    "href": "modules/md-03.html#fa-display-slides",
     "title": "Module 3",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 03"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-03.html#readings",
-    "href": "modules/md-03.html#readings",
+    "objectID": "modules/md-03.html#fa-book-readings",
+    "href": "modules/md-03.html#fa-book-readings",
     "title": "Module 3",
     "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 2 - Data visualization\n\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics",
-    "crumbs": [
-      "Module 03"
-    ]
+    "text": "Readings\n\nRead R for Data Science - Section 2 - Data visualization\n\nRead Fundamentals of Data Visualization - Section 2 - Visualizing data: Mapping data onto aesthetics"
   },
   {
-    "objectID": "modules/md-03.html#assignments",
-    "href": "modules/md-03.html#assignments",
+    "objectID": "modules/md-03.html#fa-code-assignments",
+    "href": "modules/md-03.html#fa-code-assignments",
     "title": "Module 3",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 03"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "sign-up.html",
@@ -295,8 +217,8 @@
     "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong & Sophia Skorik are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks at the following times:\nThis course teaches data science with R for people in the greater Water, Sanitation and Hygiene (WASH) sector. It is offered by offered by the openwashdata academy with the mission to empower WASH professionals to engage with tools and workflows for open data and code. More details can be found on the Course Overview page."
   },
   {
-    "objectID": "sign-up.html#how-do-i-sign-up",
-    "href": "sign-up.html#how-do-i-sign-up",
+    "objectID": "sign-up.html#fa-circle-question-how-do-i-sign-up",
+    "href": "sign-up.html#fa-circle-question-how-do-i-sign-up",
     "title": "Sign-up for data science for openwashdata course 001",
     "section": " How do I sign up?",
     "text": "How do I sign up?\nTo sign up for the course, you need to complete the following four steps:\n\nStep 1: Get an account on GitHub\nStep 2: Register for an ORCID iD\nStep 3: Fill out our registration form\nStep 4: Register for the scheduled Zoom calls\n\n\n Step 1: Get an account on GitHub\nTo set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\n\n\n Step 2: Register for an ORCID iD\n\nCreate your ORCID iD at: https://orcid.org/register\n\nLearn more about ORCID and why you should get one, even if your are not a researcher or working in academia.\n\n\n Step 3: Fill out our registration form\n\nFill out this form: https://forms.gle/JvPfVubntbaDrNZQ8\n\n\n\n Step 4: Register for the scheduled Zoom meetings\n\nRegister here: https://ethz.zoom.us/meeting/register/u5EsdO6vqjkqGtBNj9qCUXVOXy8hPobo3hI2"
@@ -390,7 +312,7 @@
     "href": "slides/lec-01-welcome.html#meet-the-team",
     "title": "Welcome & get ready for the course",
     "section": "Meet the team",
-    "text": "Meet the team\n\n\nLars Schöbitz\n\n\nEnv. Engineer\nretired WASH Researcher\nRStudio certified instructor\n\n\nMian Zhong\n\n\nData Scientist\nAdvocate for data for social good\n\n\nSophia Skorik\n\n\nComputer Scientist\nTechnical support for the course"
+    "text": "Meet the team\n\n\nLars Schöbitz\n\n\n\n\n\n\nEnv. Engineer\nretired WASH Researcher\nRStudio certified instructor\n\n\nMian Zhong\n\n\n\n\n\n\nData Scientist\nAdvocate for data for social good\n\n\nSophia Skorik\n\n\n\n\n\n\nComputer Scientist\nTechnical support for the course"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
@@ -810,114 +732,77 @@
     "href": "index.html",
     "title": "Course Overview",
     "section": "",
-    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong & Sophia Skorik are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks (see Course Calendar below) at the following times:\nWe will use Posit Cloud infrastructure, so you do not need to install any software. You will hear from us about a week before the course start.\nThe registration window for this course has closed, but you can fill out the following form to sign up for the next time we host thise course: https://forms.gle/AhhWpPfnbLwzp5Ai9",
-    "crumbs": [
-      "Course Overview"
-    ]
+    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong & Sophia Skorik are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks (see Course Calendar below) at the following times:\nWe will use Posit Cloud infrastructure, so you do not need to install any software. You will hear from us about a week before the course start.\nThe registration window for this course has closed, but you can fill out the following form to sign up for the next time we host thise course: https://forms.gle/AhhWpPfnbLwzp5Ai9"
   },
   {
     "objectID": "index.html#who-can-participate",
     "href": "index.html#who-can-participate",
     "title": "Course Overview",
     "section": "Who can participate?",
-    "text": "Who can participate?\nTo participate in this course, you need:\n\nto have a stable internet connection\nto somewhat be connected to the greater Water, Sanitation and Hygiene (WASH) sector (yes, public health, solid waste management, global health engineering, and related topics also count)\nto commit 10 * 2.5 hours to participate in Zoom calls\nto commit another 2 hours/week for readings and additional exercises for practice\nto identify a dataset of your own or your organisation that you are interested to share with the public\nan openess to new ideas and workflows that disrupt current practice",
-    "crumbs": [
-      "Course Overview"
-    ]
+    "text": "Who can participate?\nTo participate in this course, you need:\n\nto have a stable internet connection\nto somewhat be connected to the greater Water, Sanitation and Hygiene (WASH) sector (yes, public health, solid waste management, global health engineering, and related topics also count)\nto commit 10 * 2.5 hours to participate in Zoom calls\nto commit another 2 hours/week for readings and additional exercises for practice\nto identify a dataset of your own or your organisation that you are interested to share with the public\nan openess to new ideas and workflows that disrupt current practice"
   },
   {
     "objectID": "index.html#what-do-we-offer",
     "href": "index.html#what-do-we-offer",
     "title": "Course Overview",
     "section": "What do we offer?",
-    "text": "What do we offer?\nThis course is:\n\nfree\nprovides you with a certificate for successful completion\nusing exclusively tools that are free and open source\noffers 1:1 coding support between lectures and beyond the course",
-    "crumbs": [
-      "Course Overview"
-    ]
+    "text": "What do we offer?\nThis course is:\n\nfree\nprovides you with a certificate for successful completion\nusing exclusively tools that are free and open source\noffers 1:1 coding support between lectures and beyond the course"
   },
   {
     "objectID": "index.html#course-information",
     "href": "index.html#course-information",
     "title": "Course Overview",
     "section": "Course Information",
-    "text": "Course Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nUsing AI for software development in R\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system",
-    "crumbs": [
-      "Course Overview"
-    ]
+    "text": "Course Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nUsing AI for software development in R\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system"
   },
   {
     "objectID": "index.html#learning-goals",
     "href": "index.html#learning-goals",
     "title": "Course Overview",
     "section": "Learning Goals",
-    "text": "Learning Goals\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.",
-    "crumbs": [
-      "Course Overview"
-    ]
+    "text": "Learning Goals\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables."
   },
   {
     "objectID": "index.html#textbooks-and-materials",
     "href": "index.html#textbooks-and-materials",
     "title": "Course Overview",
     "section": "Textbooks and Materials",
-    "text": "Textbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.",
-    "crumbs": [
-      "Course Overview"
-    ]
+    "text": "Textbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website."
   },
   {
     "objectID": "index.html#course-calendar",
     "href": "index.html#course-calendar",
     "title": "Course Overview",
     "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA",
-    "crumbs": [
-      "Course Overview"
-    ]
+    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
   },
   {
     "objectID": "assignments/md-01/am-01-2-element.html",
     "href": "assignments/md-01/am-01-2-element.html",
     "title": "Communication in a chat",
     "section": "",
-    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels.\nWe want to communicate through a chat client called Element, providing the open source, free-of-charge Slack-like experience.\nOn Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself.\nTo set it up, please follow the steps below:",
-    "crumbs": [
-      "Module 01",
-      "am-02: Element"
-    ]
+    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels.\nWe want to communicate through a chat client called Element, providing the open source, free-of-charge Slack-like experience.\nOn Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself.\nTo set it up, please follow the steps below:"
   },
   {
     "objectID": "assignments/md-01/am-01-2-element.html#step-1-join-the-chat",
     "href": "assignments/md-01/am-01-2-element.html#step-1-join-the-chat",
     "title": "Communication in a chat",
     "section": "Step 1: Join the chat",
-    "text": "Step 1: Join the chat\n\nOpen the following link in your browser: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch\nClick on Continue\n\n\n\nClick on Sign Up\n\n\n\nClick on the GitHub icon\n\n\n\nClick on Continue\n\n\n\nClick on the X to close the dialogue\n\n\n\nClick on “I’ll verify later” to close the dialogue\n\n 8. Click on “Join the Discussion”\n 9. Leave a message\nYou are now in the lobby of the openwashdata community. Leave a message to introduce yourself. You will be added to the room ds4owd-001 that is specifically for this course.",
-    "crumbs": [
-      "Module 01",
-      "am-02: Element"
-    ]
+    "text": "Step 1: Join the chat\n\nOpen the following link in your browser: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch\nClick on Continue\n\n\n\nClick on Sign Up\n\n\n\nClick on the GitHub icon\n\n\n\nClick on Continue\n\n\n\nClick on the X to close the dialogue\n\n\n\nClick on “I’ll verify later” to close the dialogue\n\n 8. Click on “Join the Discussion”\n 9. Leave a message\nYou are now in the lobby of the openwashdata community. Leave a message to introduce yourself. You will be added to the room ds4owd-001 that is specifically for this course."
   },
   {
     "objectID": "assignments/md-01/am-01-2-element.html#step-2-verify-element-session",
     "href": "assignments/md-01/am-01-2-element.html#step-2-verify-element-session",
     "title": "Communication in a chat",
     "section": "Step 2: Verify element session",
-    "text": "Step 2: Verify element session\n\nClick on the icon in the top left corner\n\n\n\nClick on All settings\n\n\n\nSelect Sessions in the navigation pane on the left, click Verify session\n\n 4. Click Proceed with reset\n 5. Select Generate a Security Key and click Continue\n 6. Click Download and save downloaded security-key.txt securely\n 7. Click Continue\n\n\nYou have succesfully verified your session\n\nYou can download Element as an app for your computer and also your phone. If you proceed to do this, then use the stored security key to verify those additional sessions.",
-    "crumbs": [
-      "Module 01",
-      "am-02: Element"
-    ]
+    "text": "Step 2: Verify element session\n\nClick on the icon in the top left corner\n\n\n\nClick on All settings\n\n\n\nSelect Sessions in the navigation pane on the left, click Verify session\n\n 4. Click Proceed with reset\n 5. Select Generate a Security Key and click Continue\n 6. Click Download and save downloaded security-key.txt securely\n 7. Click Continue\n\n\nYou have succesfully verified your session\n\nYou can download Element as an app for your computer and also your phone. If you proceed to do this, then use the stored security key to verify those additional sessions."
   },
   {
     "objectID": "assignments/md-01/am-01-2-element.html#step-3-download-element-optional",
     "href": "assignments/md-01/am-01-2-element.html#step-3-download-element-optional",
     "title": "Communication in a chat",
     "section": "Step 3: Download Element (optional)",
-    "text": "Step 3: Download Element (optional)\n\nDownload and install Element: https://element.io/download\n\nIt’s available on Windows, Linux and Mac OS, as well as Android and iPhone.\n\nOpen the Element App on your device\nClick on Sign In\nSign in with GitHub\nClick on Verify with Security Key\n\n 6. Copy/paste the Security key from the downloaded security-key.txt you received when setting up the app in your browser. And hit Continue.\n\n\n\n\n\n\nI cannot click Continue\n\n\n\n\n\nIf a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.\n\n\n\n 7. You have successfully verified your device",
-    "crumbs": [
-      "Module 01",
-      "am-02: Element"
-    ]
+    "text": "Step 3: Download Element (optional)\n\nDownload and install Element: https://element.io/download\n\nIt’s available on Windows, Linux and Mac OS, as well as Android and iPhone.\n\nOpen the Element App on your device\nClick on Sign In\nSign in with GitHub\nClick on Verify with Security Key\n\n 6. Copy/paste the Security key from the downloaded security-key.txt you received when setting up the app in your browser. And hit Continue.\n\n\n\n\n\n\nI cannot click Continue\n\n\n\n\n\nIf a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.\n\n\n\n 7. You have successfully verified your device"
   },
   {
     "objectID": "LICENSE.html",
@@ -931,77 +816,49 @@
     "href": "assignments/md-01/am-01-1-posit.html",
     "title": "Working with R, RStudio on Posit Cloud",
     "section": "",
-    "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3",
-    "crumbs": [
-      "Module 01",
-      "am-01: Posit Cloud"
-    ]
+    "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3"
   },
   {
     "objectID": "assignments/md-01/am-01-3-github.html",
     "href": "assignments/md-01/am-01-3-github.html",
     "title": "Interaction with GitHub",
     "section": "",
-    "text": "Struggeling with the setup of GitHub?\n\n\n\n If we can support you to setup GitHub, get in touch with us via Email and we will schedule a call for a walk through.",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub"
-    ]
+    "text": "Struggeling with the setup of GitHub?\n\n\n\n If we can support you to setup GitHub, get in touch with us via Email and we will schedule a call for a walk through."
   },
   {
     "objectID": "assignments/md-01/am-01-3-github.html#step-1-set-up-a-github-personal-access-token",
     "href": "assignments/md-01/am-01-3-github.html#step-1-set-up-a-github-personal-access-token",
     "title": "Interaction with GitHub",
     "section": "Step 1: Set up a GitHub Personal Access Token",
-    "text": "Step 1: Set up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub"
-    ]
+    "text": "Step 1: Set up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software)."
   },
   {
     "objectID": "assignments/md-01/am-01-3-github.html#step-2-clone-a-repository",
     "href": "assignments/md-01/am-01-3-github.html#step-2-clone-a-repository",
     "title": "Interaction with GitHub",
     "section": "Step 2: Clone a repository",
-    "text": "Step 2: Clone a repository\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed\nContinue with the next step",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub"
-    ]
+    "text": "Step 2: Clone a repository\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed\nContinue with the next step"
   },
   {
     "objectID": "assignments/md-01/am-01-3-github.html#step-3-introduce-yourself-to-git",
     "href": "assignments/md-01/am-01-3-github.html#step-3-introduce-yourself-to-git",
     "title": "Interaction with GitHub",
     "section": "Step 3: Introduce yourself to git",
-    "text": "Step 3: Introduce yourself to git\n\nIn Posit Cloud, open the md-01-assignments-USERNAME project that ends with your GitHub username.\nOpen the git-configuration.qmd file from the bottom right window of RStudio.\nEdit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\nRender the document\nContinue with the next step\n\n\nlibrary(usethis)\n\n# Replace Your Name and Your Email with your details. Do not delete the quotes \"\".\nuse_git_config(user.name = \"Your Name\", user.email = \"Your Email\")",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub"
-    ]
+    "text": "Step 3: Introduce yourself to git\n\nIn Posit Cloud, open the md-01-assignments-USERNAME project that ends with your GitHub username.\nOpen the git-configuration.qmd file from the bottom right window of RStudio.\nEdit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\nRender the document\nContinue with the next step\n\n\nlibrary(usethis)\n\n# Replace Your Name and Your Email with your details. Do not delete the quotes \"\".\nuse_git_config(user.name = \"Your Name\", user.email = \"Your Email\")"
   },
   {
     "objectID": "assignments/md-01/am-01-3-github.html#step-4-commit-and-push-your-changes",
     "href": "assignments/md-01/am-01-3-github.html#step-4-commit-and-push-your-changes",
     "title": "Interaction with GitHub",
     "section": "Step 4: Commit and push your changes",
-    "text": "Step 4: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to the git-configuration.qmd file to stage it for commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button$\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub.",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub"
-    ]
+    "text": "Step 4: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to the git-configuration.qmd file to stage it for commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button$\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
   },
   {
     "objectID": "assignments/md-01/am-01-3-github.html#step-5-open-an-issue-on-github",
     "href": "assignments/md-01/am-01-3-github.html#step-5-open-an-issue-on-github",
     "title": "Interaction with GitHub",
     "section": "Step 5: Open an issue on GitHub",
-    "text": "Step 5: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub"
-    ]
+    "text": "Step 5: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section",
@@ -1659,7 +1516,7 @@
     "href": "slides/lec-05-communicate.html#section-7",
     "title": "Joining data & communicating results with Quarto",
     "section": "",
-    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto is a new, open-source, scientific and technical publishing system\n\nthe goal is to make the process of creating and collaborating dramatically better\n\n\n\n\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "slides/lec-05-communicate.html#quarto-for-literate-programming",
@@ -1708,7 +1565,7 @@
     "href": "slides/lec-05-communicate.html#cross-references",
     "title": "Joining data & communicating results with Quarto",
     "section": "Cross-references",
-    "text": "Cross-references\n\nno space between {r} and #| tbl-cap: \"A table\"\nspelling tbl not tab\nno spaces (use dashes in label)\n\nSee Table 1…\n\n```{r}\n#| tbl-cap: \"A table\"\n#| label: tbl-simple-table\n\ntibble(\n  id = c(1, 2, 3),\n  name = c(\"X\", \"Y\", \"Z\")\n) %&gt;% \n  knitr::kable()\n```\n\n\n\nTable 1: A table\n\n\n\n\n\n\nid\nname\n\n\n\n\n1\nX\n\n\n2\nY\n\n\n3\nZ"
+    "text": "Cross-references\n\nno space between {r} and #| tbl-cap: \"A table\"\nspelling tbl not tab\nno spaces (use dashes in label)\n\nSee Table 1…\n\n```{r}\n#| tbl-cap: \"A table\"\n#| label: tbl-simple-table\n\ntibble(\n  id = c(1, 2, 3),\n  name = c(\"X\", \"Y\", \"Z\")\n) %&gt;% \n  knitr::kable()\n```\n\n\n\nTable 1: A table\n\n\nid\nname\n\n\n\n\n1\nX\n\n\n2\nY\n\n\n3\nZ"
   },
   {
     "objectID": "slides/lec-05-communicate.html#homework-due-dates",
@@ -1795,43 +1652,43 @@
     "text": "The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see Course Overview). The final two weeks are reserved for working on the report."
   },
   {
-    "objectID": "project/index.html#learning-objectives",
-    "href": "project/index.html#learning-objectives",
+    "objectID": "project/index.html#fa-bullseye-learning-objectives",
+    "href": "project/index.html#fa-bullseye-learning-objectives",
     "title": "Capstone Project",
     "section": " Learning Objectives",
     "text": "Learning Objectives\n\nLearners can apply the skills obtained during the course to write a short data analysis project report."
   },
   {
-    "objectID": "project/index.html#github-repository",
-    "href": "project/index.html#github-repository",
+    "objectID": "project/index.html#fa-code-github-repository",
+    "href": "project/index.html#fa-code-github-repository",
     "title": "Capstone Project",
     "section": " GitHub repository",
     "text": "GitHub repository\nA repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.\nThe repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report."
   },
   {
-    "objectID": "project/index.html#github-issue-tracker",
-    "href": "project/index.html#github-issue-tracker",
+    "objectID": "project/index.html#fa-pen-clip-github-issue-tracker",
+    "href": "project/index.html#fa-pen-clip-github-issue-tracker",
     "title": "Capstone Project",
     "section": " GitHub issue tracker",
     "text": "GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report."
   },
   {
-    "objectID": "project/index.html#submission-due-date",
-    "href": "project/index.html#submission-due-date",
+    "objectID": "project/index.html#fa-calendar-check-submission-due-date",
+    "href": "project/index.html#fa-calendar-check-submission-due-date",
     "title": "Capstone Project",
     "section": " Submission due date",
     "text": "Submission due date\nThe due date for submission of the report is Friday, 28th July. Any commits after the due date will not be counted against the graded items."
   },
   {
-    "objectID": "project/index.html#graded-items",
-    "href": "project/index.html#graded-items",
+    "objectID": "project/index.html#fa-list-check-graded-items",
+    "href": "project/index.html#fa-list-check-graded-items",
     "title": "Capstone Project",
     "section": " Graded items",
-    "text": "Graded items\nTable 1 is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in Table 2.\n\n\n\n\nTable 1: List of items and points for grading of the capstone project report.\n\n\n\n\n\n\n\n\n\n\n\ncategory\nitems\npoints\n\n\n\n\ntechnical\nThe report renders without errors to HTML format and contains at least four chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions.\n10\n\n\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n8\n\n\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n2\n\n\ntechnical\nThe report has at least two data visualisations.\n20\n\n\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n4\n\n\ntechnical\nEach data visualisation applies at least of once scaling function (e.g. color/fill, axes).\n4\n\n\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has an alternative text that describes what type of visualisation it is and trends or learnings from the visualisation.\n4\n\n\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n4\n\n\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.)\n8\n\n\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function)\n2\n\n\ntechnical\nEach table has a label defined in the code-chunk options.\n2\n\n\ntechnical\nEach table has a caption defined in the code-chunk options.\n2\n\n\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n2\n\n\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n5\n\n\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n5\n\n\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n5\n\n\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n5\n\n\n\n\n\n\n\n\n\n\n\n\nTable 2: Sum of points for technical and intellectual part of report.\n\n\n\n\n\n\n\n\n\n\n\ncategory\ndescription\npoints\n\n\n\n\nintellectual\nThis item is part of the intellectual framing of the capstone project report.\n20\n\n\ntechnical\nThis item is a technical part of the capstone project report.\n80"
+    "text": "Graded items\nTable 1 is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in Table 2.\n\n\n\n\nTable 1: List of items and points for grading of the capstone project report.\n\n\n\n\n\n\n\ncategory\nitems\npoints\n\n\n\n\ntechnical\nThe report renders without errors to HTML format and contains at least four chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions.\n10\n\n\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n8\n\n\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n2\n\n\ntechnical\nThe report has at least two data visualisations.\n20\n\n\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n4\n\n\ntechnical\nEach data visualisation applies at least of once scaling function (e.g. color/fill, axes).\n4\n\n\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n4\n\n\ntechnical\nEach data visualisation has an alternative text that describes what type of visualisation it is and trends or learnings from the visualisation.\n4\n\n\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n4\n\n\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.)\n8\n\n\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function)\n2\n\n\ntechnical\nEach table has a label defined in the code-chunk options.\n2\n\n\ntechnical\nEach table has a caption defined in the code-chunk options.\n2\n\n\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n2\n\n\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n5\n\n\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n5\n\n\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n5\n\n\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n5\n\n\n\n\n\n\n\n\n\n\nTable 2: Sum of points for technical and intellectual part of report.\n\n\n\n\n\n\n\ncategory\ndescription\npoints\n\n\n\n\nintellectual\nThis item is part of the intellectual framing of the capstone project report.\n20\n\n\ntechnical\nThis item is a technical part of the capstone project report.\n80"
   },
   {
-    "objectID": "project/index.html#get-started",
-    "href": "project/index.html#get-started",
+    "objectID": "project/index.html#fa-terminal-get-started",
+    "href": "project/index.html#fa-terminal-get-started",
     "title": "Capstone Project",
     "section": " Get started",
     "text": "Get started\n\nOpen the GitHub Organisation for the course: https://github.com/cven5873-ss23/\nLocate the capstone-project repository with your username capstone-project-GITHUB-USERNAME\nOpen your capstone-project repository\nClick on the green button titled “Code” (see screenshot below)\nClick on the link in the pop-up window to your clipboard (see screenshot below)\n\n\n\nOpen the Posit Cloud workspace for the course: (cven5837-ss23)\nOpen the Content page\nClick on New Project -&gt; New Project from Git Repository\nPaste the link to your capstone-project repository from your clipboard\nKeep the tick next to Add packages from the base project\nClick the OK button\nRespond to the Questions & Answer for the Capstone Project report issue on the GitHub issue tracker of the repository and tag the course instructor with using the @ sign in combination with larnsce as the username"
@@ -1841,240 +1698,168 @@
     "href": "modules/md-02.html",
     "title": "Module 2",
     "section": "",
-    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).",
-    "crumbs": [
-      "Module 02"
-    ]
+    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
-    "objectID": "modules/md-02.html#learning-objectives",
-    "href": "modules/md-02.html#learning-objectives",
+    "objectID": "modules/md-02.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-02.html#fa-bullseye-learning-objectives",
     "title": "Module 2",
     "section": "",
-    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).",
-    "crumbs": [
-      "Module 02"
-    ]
+    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
-    "objectID": "modules/md-02.html#slides",
-    "href": "modules/md-02.html#slides",
+    "objectID": "modules/md-02.html#fa-display-slides",
+    "href": "modules/md-02.html#fa-display-slides",
     "title": "Module 2",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 02"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-02.html#readings",
-    "href": "modules/md-02.html#readings",
+    "objectID": "modules/md-02.html#fa-book-readings",
+    "href": "modules/md-02.html#fa-book-readings",
     "title": "Module 2",
     "section": " Readings",
-    "text": "Readings\n\nRead @wilson2017 “Good enough practices in scientific computing”.\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics",
-    "crumbs": [
-      "Module 02"
-    ]
+    "text": "Readings\n\nRead @wilson2017 “Good enough practices in scientific computing”.\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
   },
   {
-    "objectID": "modules/md-02.html#assignments",
-    "href": "modules/md-02.html#assignments",
+    "objectID": "modules/md-02.html#fa-code-assignments",
+    "href": "modules/md-02.html#fa-code-assignments",
     "title": "Module 2",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 02"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-05.html",
     "href": "modules/md-05.html",
     "title": "Module 5",
     "section": "",
-    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats.",
-    "crumbs": [
-      "Module 05"
-    ]
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats."
   },
   {
-    "objectID": "modules/md-05.html#learning-objectives",
-    "href": "modules/md-05.html#learning-objectives",
+    "objectID": "modules/md-05.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-05.html#fa-bullseye-learning-objectives",
     "title": "Module 5",
     "section": "",
-    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats.",
-    "crumbs": [
-      "Module 05"
-    ]
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\nLearners can use functions of the gt R package to present summary tables in output formats."
   },
   {
-    "objectID": "modules/md-05.html#slides",
-    "href": "modules/md-05.html#slides",
+    "objectID": "modules/md-05.html#fa-display-slides",
+    "href": "modules/md-05.html#fa-display-slides",
     "title": "Module 5",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 05"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-05.html#readings",
-    "href": "modules/md-05.html#readings",
+    "objectID": "modules/md-05.html#fa-book-readings",
+    "href": "modules/md-05.html#fa-book-readings",
     "title": "Module 5",
     "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 4 - Data transformation\n\nRead (Bryan 2018)",
-    "crumbs": [
-      "Module 05"
-    ]
+    "text": "Readings\n\nRead R for Data Science - Section 4 - Data transformation\n\nRead (Bryan 2018)"
   },
   {
-    "objectID": "modules/md-05.html#assignments",
-    "href": "modules/md-05.html#assignments",
+    "objectID": "modules/md-05.html#fa-code-assignments",
+    "href": "modules/md-05.html#fa-code-assignments",
     "title": "Module 5",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 05"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-10.html",
     "href": "modules/md-10.html",
     "title": "Module 10",
     "section": "",
-    "text": "Learners can apply the skills obtained during the course to write a short data analysis project report.",
-    "crumbs": [
-      "Module 10"
-    ]
+    "text": "Learners can apply the skills obtained during the course to write a short data analysis project report."
   },
   {
-    "objectID": "modules/md-10.html#learning-objectives",
-    "href": "modules/md-10.html#learning-objectives",
+    "objectID": "modules/md-10.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-10.html#fa-bullseye-learning-objectives",
     "title": "Module 10",
     "section": "",
-    "text": "Learners can apply the skills obtained during the course to write a short data analysis project report.",
-    "crumbs": [
-      "Module 10"
-    ]
+    "text": "Learners can apply the skills obtained during the course to write a short data analysis project report."
   },
   {
-    "objectID": "modules/md-10.html#slides",
-    "href": "modules/md-10.html#slides",
+    "objectID": "modules/md-10.html#fa-display-slides",
+    "href": "modules/md-10.html#fa-display-slides",
     "title": "Module 10",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 10"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-10.html#assignments",
-    "href": "modules/md-10.html#assignments",
+    "objectID": "modules/md-10.html#fa-code-assignments",
+    "href": "modules/md-10.html#fa-code-assignments",
     "title": "Module 10",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 10"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-06.html",
     "href": "modules/md-06.html",
     "title": "Module 6",
     "section": "",
-    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R.",
-    "crumbs": [
-      "Module 06"
-    ]
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R."
   },
   {
-    "objectID": "modules/md-06.html#learning-objectives",
-    "href": "modules/md-06.html#learning-objectives",
+    "objectID": "modules/md-06.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-06.html#fa-bullseye-learning-objectives",
     "title": "Module 6",
     "section": "",
-    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R.",
-    "crumbs": [
-      "Module 06"
-    ]
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can explain the three characteristics of tidy data.\nLearners can list the four main atomic vector types in R."
   },
   {
-    "objectID": "modules/md-06.html#slides",
-    "href": "modules/md-06.html#slides",
+    "objectID": "modules/md-06.html#fa-display-slides",
+    "href": "modules/md-06.html#fa-display-slides",
     "title": "Module 6",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 06"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-06.html#readings",
-    "href": "modules/md-06.html#readings",
+    "objectID": "modules/md-06.html#fa-book-readings",
+    "href": "modules/md-06.html#fa-book-readings",
     "title": "Module 6",
     "section": " Readings",
-    "text": "Readings\n\nRead R for Data Science - Section 6 - Data tidying\n\nRead R for Data Science - Section 17 - Factors",
-    "crumbs": [
-      "Module 06"
-    ]
+    "text": "Readings\n\nRead R for Data Science - Section 6 - Data tidying\n\nRead R for Data Science - Section 17 - Factors"
   },
   {
-    "objectID": "modules/md-06.html#assignments",
-    "href": "modules/md-06.html#assignments",
+    "objectID": "modules/md-06.html#fa-code-assignments",
+    "href": "modules/md-06.html#fa-code-assignments",
     "title": "Module 6",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 06"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/md-09.html",
     "href": "modules/md-09.html",
     "title": "Module 9",
     "section": "",
-    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.",
-    "crumbs": [
-      "Module 09"
-    ]
+    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file."
   },
   {
-    "objectID": "modules/md-09.html#learning-objectives",
-    "href": "modules/md-09.html#learning-objectives",
+    "objectID": "modules/md-09.html#fa-bullseye-learning-objectives",
+    "href": "modules/md-09.html#fa-bullseye-learning-objectives",
     "title": "Module 9",
     "section": "",
-    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.",
-    "crumbs": [
-      "Module 09"
-    ]
+    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file."
   },
   {
-    "objectID": "modules/md-09.html#slides",
-    "href": "modules/md-09.html#slides",
+    "objectID": "modules/md-09.html#fa-display-slides",
+    "href": "modules/md-09.html#fa-display-slides",
     "title": "Module 9",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
-    "crumbs": [
-      "Module 09"
-    ]
+    "text": "Slides\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-09.html#readings",
-    "href": "modules/md-09.html#readings",
+    "objectID": "modules/md-09.html#fa-book-readings",
+    "href": "modules/md-09.html#fa-book-readings",
     "title": "Module 9",
     "section": " Readings",
-    "text": "Readings\n\nIn preparation",
-    "crumbs": [
-      "Module 09"
-    ]
+    "text": "Readings\n\nIn preparation"
   },
   {
-    "objectID": "modules/md-09.html#assignments",
-    "href": "modules/md-09.html#assignments",
+    "objectID": "modules/md-09.html#fa-code-assignments",
+    "href": "modules/md-09.html#fa-code-assignments",
     "title": "Module 9",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
-    "crumbs": [
-      "Module 09"
-    ]
+    "text": "Assignments\n\nIn preparation"
   },
   {
     "objectID": "modules/ds4owd-001-lesson-plan-module-01.html",
