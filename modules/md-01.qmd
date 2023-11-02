@@ -1,6 +1,6 @@
 ---
 title: "Module 1"
-subtitle: "Welcome & get ready for the course"
+subtitle: "{{< var md-01.title >}}"
 editor: source
 params:
     week: 1

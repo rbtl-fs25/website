@@ -1,7 +1,7 @@
 ---
-title: "Welcome & get ready for the course"
-subtitle: "ds4owd - data science for the course"
-author: "Lars Schöbitz"
+title: "{{< var md-02.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "{{< var author >}}"
 date: "2023-11-07"
 format: 
   revealjs: 
@@ -10,7 +10,7 @@ format:
     slide-number: true
     logo: ../img/OWD-logo-20.png
     chalkboard: true
-footer: "[{{< fa link >}} ds4owd-001.github.io/website/](https://ds4owd-001.github.io/website/)"
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
 execute:
   freeze: auto
@@ -31,6 +31,8 @@ library(dplyr)
 ```
 
 ```{r} 
+
+
 
 gapminder_yr_2007 <- gapminder |> 
   filter(year == 2007)

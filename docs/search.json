@@ -290,8 +290,8 @@
     "objectID": "slides/lec-01-welcome.html#email-from-github",
     "href": "slides/lec-01-welcome.html#email-from-github",
     "title": "Welcome & get ready for the course",
-    "section": "Email from GitHub?",
-    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
+    "section": "",
+    "text": "While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
   },
   {
     "objectID": "slides/lec-01-welcome.html#meet-the-team",
@@ -326,7 +326,7 @@
     "href": "slides/lec-01-welcome.html#course-calendar",
     "title": "Welcome & get ready for the course",
     "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
+    "text": "Course Calendar\n\nreadr::read_csv(\"../data/tbl-01-ds4owd-001-course-schedule.csv\") |&gt; \n  dplyr::select(date, week, topic = title, module) |&gt; \n  dplyr::mutate(date = format(date, format = \"%d %B %Y\")) |&gt; \n  knitr::kable()\n\nRows: 15 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (3): title, module, page_link\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Exploratory data analysis using visualization\nmodule 2\n\n\n14 November 2023\n3\nNA\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
   },
   {
     "objectID": "slides/lec-01-welcome.html#course-structure",
@@ -382,7 +382,7 @@
     "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
     "title": "Welcome & get ready for the course",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
+    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-ds4owd-001-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 31 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
@@ -459,7 +459,7 @@
     "href": "slides/lec-01-welcome.html#quarto",
     "title": "Welcome & get ready for the course",
     "section": "Quarto …",
-    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
@@ -473,14 +473,14 @@
     "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Log into Posit Cloud with GitHub account",
-    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the Sign Up with GitHub button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark the address of the open tab in your browser.\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n05:00"
+    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the Sign Up with GitHub button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark the address of the open tab in your browser.\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#take-a-break",
     "href": "slides/lec-01-welcome.html#take-a-break",
     "title": "Welcome & get ready for the course",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
@@ -501,7 +501,7 @@
     "href": "slides/lec-01-welcome.html#one-install-batteries-included",
     "title": "Welcome & get ready for the course",
     "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n\n\n\nAny language, exact same approach and syntax"
+    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n. . .\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n. . .\n\nAny language, exact same approach and syntax"
   },
   {
     "objectID": "slides/lec-01-welcome.html#many-quarto-formats",
@@ -557,28 +557,28 @@
     "href": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
     "title": "Welcome & get ready for the course",
     "section": "Our turn: Configure Notifications settings",
-    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\n\n\n\n−+\n05:00"
+    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-settings.png\"))\n\n\n\n\n\ncountdown(5)\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
     "href": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Create an issue on GitHub",
-    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-inbox.png\"))\n\n\n\n\n\ncountdown(10)\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#take-a-break-1",
     "href": "slides/lec-01-welcome.html#take-a-break-1",
     "title": "Welcome & get ready for the course",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#components",
     "href": "slides/lec-01-welcome.html#components",
     "title": "Welcome & get ready for the course",
     "section": "Components",
-    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n. . .\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
   },
   {
     "objectID": "slides/lec-01-welcome.html#literate-programming",
@@ -599,7 +599,7 @@
     "href": "slides/lec-01-welcome.html#output-options",
     "title": "Welcome & get ready for the course",
     "section": "Output options",
-    "text": "Output options\n---\nformat: something\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+    "text": "Output options\n---\nformat: something\n---\n. . .\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
   },
   {
     "objectID": "slides/lec-01-welcome.html#output-option-arguments",
@@ -711,7 +711,7 @@
     "href": "slides/lec-01-welcome.html#thanks",
     "title": "Welcome & get ready for the course",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "index.html",
@@ -793,9 +793,9 @@
   {
     "objectID": "assignments/md-02/am-02-1-reading.html",
     "href": "assignments/md-02/am-02-1-reading.html",
-    "title": "Good enough practices in scientific computing",
+    "title": "Module 2 - Assignment 1",
     "section": "",
-    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, or government, and others.\nFor this assignment, we ask you to:\n\nRead (Wilson et al. 2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nUse your browser, the Zotero Connector and Zotero to store the following paper in your personal Zotero library (My Library or a sub-folder at the top left): https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510.\nRead Wilson et al. (2017).\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your research process. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
+    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
   },
   {
     "objectID": "LICENSE.html",
@@ -856,364 +856,364 @@
   {
     "objectID": "slides/lec-02-visualisation.html#section",
     "href": "slides/lec-02-visualisation.html#section",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "",
     "text": "Artwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#tipps-for-search-engines",
     "href": "slides/lec-02-visualisation.html#tipps-for-search-engines",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Tipps for search engines",
     "text": "Tipps for search engines\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\nScroll through the top 5 results (don’t just pick the first)\n\nExample: “How to remove a legend from a plot in R ggplot2”"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#stack-overflow",
     "href": "slides/lec-02-visualisation.html#stack-overflow",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Stack Overflow",
     "text": "Stack Overflow\n\n\n\nWhat is it?\n\nThe biggest support network for (coding) problems\nCan be intimidating at first\nUp-vote system\n\n\n\n\nWorkflow\n\nFirst, briefly read the question that was posted\nThen, read the answer marked as “correct”\nThen, read one or two more answers with high votes\nThen, check out the “Linked” posts\nAlways give credit for the solution"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#give-credit",
     "href": "slides/lec-02-visualisation.html#give-credit",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Give credit",
     "text": "Give credit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#give-credit-1",
     "href": "slides/lec-02-visualisation.html#give-credit-1",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Give credit",
     "text": "Give credit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#give-credit-2",
     "href": "slides/lec-02-visualisation.html#give-credit-2",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Give credit",
     "text": "Give credit\n\nggplot(data = global_waste_data_kg_year,\n       mapping = aes(x = income_id, \n                     y = capita_kg_year,\n                     color = income_id)) +\n  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#other-sources-for-help",
     "href": "slides/lec-02-visualisation.html#other-sources-for-help",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Other sources for help",
     "text": "Other sources for help\n\n\n\nThe Canvas Discussion pages\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
     "href": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Minimal reproducible example (reprex)",
     "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nGood support information: https://www.tidyverse.org/help/#reprex"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-1",
     "href": "slides/lec-02-visualisation.html#section-1",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "",
     "text": "Artwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-clone",
     "href": "slides/lec-02-visualisation.html#remember-git-clone",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "remember: git clone",
     "text": "remember: git clone"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-commit",
     "href": "slides/lec-02-visualisation.html#remember-git-commit",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "remember: git commit",
     "text": "remember: git commit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-push",
     "href": "slides/lec-02-visualisation.html#remember-git-push",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "remember: git push",
     "text": "remember: git push"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-push-1",
     "href": "slides/lec-02-visualisation.html#remember-git-push-1",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "remember: git push",
     "text": "remember: git push"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#collaborate-git-clone",
     "href": "slides/lec-02-visualisation.html#collaborate-git-clone",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "collaborate: git clone",
     "text": "collaborate: git clone"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#track-work-git-commit",
     "href": "slides/lec-02-visualisation.html#track-work-git-commit",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "track work: git commit",
     "text": "track work: git commit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#update-git",
     "href": "slides/lec-02-visualisation.html#update-git",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "update: git ???",
     "text": "update: git ???"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#update-git-push",
     "href": "slides/lec-02-visualisation.html#update-git-push",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "update: git push",
     "text": "update: git push"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#git",
     "href": "slides/lec-02-visualisation.html#git",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "git ???",
     "text": "git ???"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#new-git-pull",
     "href": "slides/lec-02-visualisation.html#new-git-pull",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "new: git pull",
     "text": "new: git pull"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-ds4owd-001-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 31 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLearners can list the six elements of the data science lifecycle.\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms (bar/col, histogram, point) and their use case.\nNA"
+    "text": "Learning Objectives (for this week)\n\nLearners can list the six elements of the data science lifecycle.\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms (bar/col, histogram, point) and their use case.\nNA"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#deep-end",
     "href": "slides/lec-02-visualisation.html#deep-end",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Deep End",
     "text": "Deep End\n\n\n\n\n\nvia GIPHY"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-2",
     "href": "slides/lec-02-visualisation.html#section-2",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
     "text": "-\n\nAdd notes"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-3",
     "href": "slides/lec-02-visualisation.html#section-3",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
     "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-4",
     "href": "slides/lec-02-visualisation.html#section-4",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
     "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-5",
     "href": "slides/lec-02-visualisation.html#section-5",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
     "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-6",
     "href": "slides/lec-02-visualisation.html#section-6",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
     "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-7",
     "href": "slides/lec-02-visualisation.html#section-7",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
     "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-8",
     "href": "slides/lec-02-visualisation.html#section-8",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
     "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
     "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "R Package ggplot2",
-    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n#knitr::include_graphics(here::here(\"slides/img/lec-02/ggplot2-part-of-tidyverse.png\"))\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure",
     "href": "slides/lec-02-visualisation.html#code-structure",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot() is the main function in ggplot2\nPlots are constructed in layers\nStructure of the code for plots can be summarized as\n\n\nggplot(data = [dataset], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n   geom_xxx() +\n   other options"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-1",
     "href": "slides/lec-02-visualisation.html#code-structure-1",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-2",
     "href": "slides/lec-02-visualisation.html#code-structure-2",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-3",
     "href": "slides/lec-02-visualisation.html#code-structure-3",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes())"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-4",
     "href": "slides/lec-02-visualisation.html#code-structure-4",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-5",
     "href": "slides/lec-02-visualisation.html#code-structure-5",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-6",
     "href": "slides/lec-02-visualisation.html#code-structure-6",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-7",
     "href": "slides/lec-02-visualisation.html#code-structure-7",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
     "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "live-02a-data-visualiation",
     "text": "live-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#break",
     "href": "slides/lec-02-visualisation.html#break",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Break",
-    "text": "Break\n\n\ncountdown(\n  minutes = 10, seconds = 0,\n  left = 0, right = 0,\n  padding = \"10px\", margin = \"5%\",\n  font_size = \"2em\"\n)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#types-of-variables",
     "href": "slides/lec-02-visualisation.html#types-of-variables",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Types of variables",
     "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-10",
     "href": "slides/lec-02-visualisation.html#section-10",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "",
     "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
     "href": "slides/lec-02-visualisation.html#data-to-viz.com",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "data-to-viz.com",
     "text": "data-to-viz.com"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-collection-tools-1",
     "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Data Collection Tools",
     "text": "Data Collection Tools\n\nQuestionnaires for survey based data\nSpreadsheets for manual experimental/observational data\nSensors for automated near real-time data"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#survey-tools",
     "href": "slides/lec-02-visualisation.html#survey-tools",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Survey tools",
     "text": "Survey tools\nCommonly used in the Global Engineering and Development sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
     "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\n\nknitr::include_graphics(\"img/lec-02/data-org-paper.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
+    "text": "Data Organisation in Spreadsheets\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
     "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Data Organisation in Spreadsheets",
     "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
     "href": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "But, especially apply it to your data",
     "text": "But, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#why",
     "href": "slides/lec-02-visualisation.html#why",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Why?",
-    "text": "Why?\nBecause it will make your life easier!\n\nknitr::include_graphics(\"img/lec-02/data-org-views.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
+    "text": "Why?\nBecause it will make your life easier!\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#license-cc0",
     "href": "slides/lec-02-visualisation.html#license-cc0",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "License? CC0 (!)",
-    "text": "License? CC0 (!)\n\nknitr::include_graphics(\"img/lec-02/data-org-license.png\")\n\n\n\n\n\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
+    "text": "License? CC0 (!)\n\n\n\n\n\n\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#bring-your-own-data",
     "href": "slides/lec-02-visualisation.html#bring-your-own-data",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Bring your own data",
     "text": "Bring your own data\n\nGenerate data doing a short survey or observational study\n\nFind a data online that interests you\nUse a dataset that you already have available"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#homework-due-dates",
     "href": "slides/lec-02-visualisation.html#homework-due-dates",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Homework due dates",
     "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 23th"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-11",
     "href": "slides/lec-02-visualisation.html#section-11",
-    "title": "Welcome & get ready for the course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "",
     "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
   },
@@ -1768,14 +1768,14 @@
     "href": "modules/md-02.html#fa-book-readings",
     "title": "Module 2",
     "section": " Readings",
-    "text": "Readings\n\nRead (Wilson et al. 2017): “Good enough practices in scientific computing”.\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
+    "text": "Readings\n\nRead (Wilson et al. 2017): “Good enough practices in scientific computing”. (This also an assignment for this week)\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
   },
   {
     "objectID": "modules/md-02.html#fa-code-assignments",
     "href": "modules/md-02.html#fa-code-assignments",
     "title": "Module 2",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation"
+    "text": "Assignments\nPlease complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.\n\nAssignment 1: Homework: “Good enough practices in scientific computing”\n\nThank you for working through these assignments."
   },
   {
     "objectID": "modules/md-05.html",
@@ -1916,5 +1916,12 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html",
+    "href": "slides/lec-01-welcome.html",
+    "title": "Welcome & get ready for the course",
+    "section": "",
+    "text": "While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
   }
 ]
