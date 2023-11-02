@@ -8,11 +8,14 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Lars Schöbitz">
-  <title>data science for openwashdata - Data Visualisation &amp; Data Organisation in Spreadsheets</title>
+  <meta name="dcterms.date" content="2023-11-07">
+  <title>data science for openwashdata - Welcome &amp; get ready for the course</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -100,6 +103,8 @@
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -393,8 +398,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Data Visualisation &amp; Data Organisation in Spreadsheets</h1>
-  <p class="subtitle">CVEN 5837 - Summer 2023</p>
+  <h1 class="title">Welcome &amp; get ready for the course</h1>
+  <p class="subtitle">ds4owd - data science for the course</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -404,10 +409,16 @@ Lars Schöbitz
 </div>
 </div>
 
+  <p class="date">2023-11-07</p>
 </section>
 <section class="slide level2">
 
-<script defer="" data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>gapminder_yr_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>my_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#ED6D37"</span>, <span class="st">"#901C6C"</span>, <span class="st">"#18A5C5"</span>, <span class="st">"#A6CE8F"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="section" class="slide level2" data-background-image="img/lec-02/r_rollercoaster.png" data-background-size="contain">
 <h2></h2>
@@ -468,12 +479,12 @@ Lars Schöbitz
 <section id="give-credit-2" class="slide level2 smaller">
 <h2>Give credit</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> global_waste_data_kg_year,</span>
-<span id="cb1-2"><a href="#cb1-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> income_id, </span>
-<span id="cb1-3"><a href="#cb1-3"></a>                     <span class="at">y =</span> capita_kg_year,</span>
-<span id="cb1-4"><a href="#cb1-4"></a>                     <span class="at">color =</span> income_id)) <span class="sc">+</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="do">## Remove legend ref: https://stackoverflow.com/a/35622358/6816220</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> global_waste_data_kg_year,</span>
+<span id="cb2-2"><a href="#cb2-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> income_id, </span>
+<span id="cb2-3"><a href="#cb2-3"></a>                     <span class="at">y =</span> capita_kg_year,</span>
+<span id="cb2-4"><a href="#cb2-4"></a>                     <span class="at">color =</span> income_id)) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="do">## Remove legend ref: https://stackoverflow.com/a/35622358/6816220</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="other-sources-for-help" class="slide level2">
@@ -554,13 +565,198 @@ Lars Schöbitz
 <img data-src="img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.010.png" class="r-stretch"></section>
 <section id="learning-objectives-for-this-week" class="slide level2">
 <h2>Learning Objectives (for this week)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>lobj1 <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/tbl-02-ds4owd-001-learning-objectives.csv"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(week <span class="sc">==</span> params<span class="sc">$</span>week) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>  dplyr<span class="sc">::</span><span class="fu">pull</span>(learning_objectives)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 31 Columns: 4
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): title, learning_objectives
+dbl  (1): week
+dttm (1): date
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
 <ol type="1">
+<li>Learners can list the six elements of the data science lifecycle.</li>
 <li>Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.</li>
 <li>Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping.</li>
-<li>Learners can compare three different geoms and their use case.</li>
-<li>Learners can apply a theme to control font types and sizes within a plot.</li>
-<li>Learners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset.</li>
+<li>Learners can compare three different geoms (bar/col, histogram, point) and their use case.</li>
+<li>NA</li>
 </ol>
+</section></section>
+<section>
+<section id="data-science-lifecycle" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Data Science Lifecycle</h1>
+
+</section>
+<section id="deep-end" class="slide level2">
+<h2>Deep End</h2>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+<iframe src="https://giphy.com/embed/3pWRgRw86JyBa" width="75%" height="75%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+</div>
+<p>
+<a href="https://giphy.com/gifs/matthew-west-all-in-matthew-west-3pWRgRw86JyBa">via GIPHY</a>
+</p>
+</section>
+<section id="section-2" class="slide level2" data-background-image="img/lec-02/data-science-lifecycle/data-science-lifecycle.001.png" data-background-size="contain">
+<h2>-</h2>
+<aside class="notes">
+<p>Add notes</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-3" class="slide level2" data-background-image="img/lec-02/data-science-lifecycle/data-science-lifecycle.002.png" data-background-size="contain">
+<h2>-</h2>
+<aside class="notes">
+<ol type="1">
+<li>First you must import your data into R. This typically means that you take data stored:</li>
+</ol>
+<ul>
+<li>in a file</li>
+<li>in a database,</li>
+<li>or web application, and load it into R.</li>
+</ul>
+<ol start="2" type="1">
+<li>If you can get your data into R, you can do data science on it!</li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-4" class="slide level2" data-background-image="img/lec-02/data-science-lifecycle/data-science-lifecycle.003.png" data-background-size="contain">
+<h2>-</h2>
+<aside class="notes">
+<ol type="1">
+<li><p>Once you’ve imported your data, it is a good idea to tidy it.</p></li>
+<li><p>This means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in</p></li>
+<li><p>This is the step where we spend by far the biggest amount of our time.</p></li>
+<li><p>It has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.</p></li>
+<li><p>In my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-5" class="slide level2" data-background-image="img/lec-02/data-science-lifecycle/data-science-lifecycle.004.png" data-background-size="contain">
+<h2>-</h2>
+<aside class="notes">
+<ol type="1">
+<li><p>Once your data is tidy, a common first step is to transform it.</p></li>
+<li><p>This includes</p></li>
+</ol>
+<ul>
+<li>narrowing in on what interests you (like all people without toilets in one district, or all data from last year)</li>
+<li>creating new variables from existing (like toilet density, as in number of people per toilet)</li>
+<li>calculating summary statistics (like counts or the mean)</li>
+</ul>
+<p>Together, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-6" class="slide level2" data-background-image="img/lec-02/data-science-lifecycle/data-science-lifecycle.005.png" data-background-size="contain">
+<h2>-</h2>
+<aside class="notes">
+<ol type="1">
+<li>Once you have tidy data with the variables you need, there are two main engines of knowledge generation:</li>
+</ol>
+<ul>
+<li>visualisation</li>
+<li>and modelling.</li>
+</ul>
+<ol start="2" type="1">
+<li><p>These have complementary strengths and weaknesses so any real analysis will iterate between them many times.</p></li>
+<li><p>Visualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-7" class="slide level2" data-background-image="img/lec-02/data-science-lifecycle/data-science-lifecycle.006.png" data-background-size="contain">
+<h2>-</h2>
+<aside class="notes">
+<ol type="1">
+<li><p>Models are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.</p></li>
+<li><p>In my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-8" class="slide level2" data-background-image="img/lec-02/data-science-lifecycle/data-science-lifecycle.007.png" data-background-size="contain">
+<h2>-</h2>
+<aside class="notes">
+<ol type="1">
+<li><p>The last step of data science is communication, an absolutely critical part of any data analysis project.</p></li>
+<li><p>It doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.</p></li>
+<li><p>And this is a part where R has become really strong.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="exploratory-data-analysis-with-ggplot2" class="title-slide slide level1 center" data-background-color="#0F4C81">
@@ -580,6 +776,9 @@ Lars Schöbitz
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="img/lec-02/ggplot2-part-of-tidyverse.png"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#knitr::include_graphics(here::here("slides/img/lec-02/ggplot2-part-of-tidyverse.png"))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 
@@ -594,82 +793,82 @@ Lars Schöbitz
 <li>Structure of the code for plots can be summarized as</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> [dataset], </span>
-<span id="cb2-2"><a href="#cb2-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> [x<span class="sc">-</span>variable], </span>
-<span id="cb2-3"><a href="#cb2-3"></a>                     <span class="at">y =</span> [y<span class="sc">-</span>variable])) <span class="sc">+</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>   <span class="fu">geom_xxx</span>() <span class="sc">+</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>   other options</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> [dataset], </span>
+<span id="cb6-2"><a href="#cb6-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> [x<span class="sc">-</span>variable], </span>
+<span id="cb6-3"><a href="#cb6-3"></a>                     <span class="at">y =</span> [y<span class="sc">-</span>variable])) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>   <span class="fu">geom_xxx</span>() <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>   other options</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="code-structure-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-html/unnamed-chunk-7-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-html/unnamed-chunk-8-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
-<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-html/unnamed-chunk-9-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
-<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<span id="cb10-2" class="hljs-ln-code"><a href="#cb10-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb10-3" class="hljs-ln-code"><a href="#cb10-3"></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-html/unnamed-chunk-10-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
-<span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
-<span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb11-3" class="hljs-ln-code"><a href="#cb11-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb11-4" class="hljs-ln-code"><a href="#cb11-4"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-html/unnamed-chunk-11-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
-<span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
-<span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb8-5" class="hljs-ln-code"><a href="#cb8-5"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb12-3" class="hljs-ln-code"><a href="#cb12-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb12-4" class="hljs-ln-code"><a href="#cb12-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb12-5" class="hljs-ln-code"><a href="#cb12-5"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-html/unnamed-chunk-12-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
-<span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb9-3" class="hljs-ln-code"><a href="#cb9-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
-<span id="cb9-4" class="hljs-ln-code"><a href="#cb9-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb13-3" class="hljs-ln-code"><a href="#cb13-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb13-4" class="hljs-ln-code"><a href="#cb13-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb13-5" class="hljs-ln-code"><a href="#cb13-5"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="lec-02-visualisation_files/figure-html/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section></section>
 <section>
 <section id="live-coding-exercise-reproduce-this-plot" class="title-slide slide level1 center" data-background-color="#0F4C81">
 <h1>Live Coding Exercise: Reproduce this plot</h1>
 
 </section>
-<section id="section-2" class="slide level2" data-background-image="img/lec-02/plot-waste-generation-gdp.png" data-background-size="contain">
+<section id="section-9" class="slide level2" data-background-image="img/lec-02/plot-waste-generation-gdp.png" data-background-size="contain">
 <h2></h2>
 </section>
 <section id="live-02a-data-visualiation" class="slide level2">
@@ -686,8 +885,14 @@ Lars Schöbitz
 <h2>Break</h2>
 <p><img data-src="img/lec-01/coffee-break.jpg"></p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">countdown</span>(</span>
+<span id="cb14-2"><a href="#cb14-2"></a>  <span class="at">minutes =</span> <span class="dv">10</span>, <span class="at">seconds =</span> <span class="dv">0</span>,</span>
+<span id="cb14-3"><a href="#cb14-3"></a>  <span class="at">left =</span> <span class="dv">0</span>, <span class="at">right =</span> <span class="dv">0</span>,</span>
+<span id="cb14-4"><a href="#cb14-4"></a>  <span class="at">padding =</span> <span class="st">"10px"</span>, <span class="at">margin =</span> <span class="st">"5%"</span>,</span>
+<span id="cb14-5"><a href="#cb14-5"></a>  <span class="at">font_size =</span> <span class="st">"2em"</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_01055ea3" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown" id="timer_cccba92d" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -732,7 +937,7 @@ Lars Schöbitz
 </div>
 </div>
 </section>
-<section id="section-3" class="slide level2" data-background-image="https://d33wubrfki0l68.cloudfront.net/1e7033393a2c70dc1255c5d0f1c563e945519251/61035/img/evol-ggplot/evol-ggplot-1.gif" data-background-size="contain">
+<section id="section-10" class="slide level2" data-background-image="https://d33wubrfki0l68.cloudfront.net/1e7033393a2c70dc1255c5d0f1c563e945519251/61035/img/evol-ggplot/evol-ggplot-1.gif" data-background-size="contain">
 <h2></h2>
 
 <aside><div>
@@ -766,6 +971,7 @@ Lars Schöbitz
 <section id="data-organisation-in-spreadsheets" class="slide level2">
 <h2>Data Organisation in Spreadsheets</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/lec-02/data-org-paper.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="img/lec-02/data-org-paper.png" width="782"></p>
 </div>
@@ -797,6 +1003,7 @@ Lars Schöbitz
 <h2>Why?</h2>
 <p><strong>Because it will make your life easier!</strong></p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/lec-02/data-org-views.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="img/lec-02/data-org-views.png" style="width:75.0%"></p>
 </div>
@@ -808,6 +1015,7 @@ Lars Schöbitz
 <section id="license-cc0" class="slide level2">
 <h2>License? CC0 (!)</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"img/lec-02/data-org-license.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="img/lec-02/data-org-license.png" style="width:75.0%"></p>
 </div>
@@ -842,14 +1050,14 @@ Lars Schöbitz
 <h1>Thanks! 🌻</h1>
 
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualiation.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 
-<img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>https://cven5873-ss23.github.io/website/</p>
+<img src="../img/OWD-logo-20.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><a href="https://ds4owd-001.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> ds4owd-001.github.io/website/</a></p>
 </div>
 </section></section>
     </div>
@@ -862,6 +1070,7 @@ Lars Schöbitz
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -883,7 +1092,8 @@ Lars Schöbitz
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1054,7 +1264,7 @@ Lars Schöbitz
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -1063,44 +1273,6 @@ Lars Schöbitz
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

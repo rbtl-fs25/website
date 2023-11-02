@@ -1,8 +1,10 @@
 {
-  "hash": "dc7b739c89e279645a1d6fef508030b7",
+  "hash": "6e30cda6a1a02cfb85f33f6d106aa302",
   "result": {
-    "markdown": "---\ntitle: \"Module 5\"\nsubtitle: \"Data transformation, descriptive statistics and gt\"\neditor: source\nparams:\n    week: 5\nexecute: \n  echo: false\n  warning: false\nbibliography: references.bib\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1.  Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\n2.  Learners can use functions of the gt R package to present summary tables in output formats.\n\n## {{< fa display >}} Slides\n\n-   In preparation\n\n## {{< fa book >}} Readings\n\n1.  Read [R for Data Science - Section 4 - Data transformation](https://r4ds.hadley.nz/data-transform)\\\n2.  Read [@bryan2018excuse]\n\n## {{< fa code >}} Assignments\n\n-   In preparation\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Module 5\"\nsubtitle: \"Data transformation, descriptive statistics and gt\"\neditor: source\nparams:\n    week: 5\nexecute: \n  echo: false\n  warning: false\nbibliography: references.bib\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\n2. Learners can use functions of the gt R package to present summary tables in output formats.\n:::\n\n\n## {{< fa display >}} Slides\n\n-   In preparation\n\n## {{< fa book >}} Readings\n\n1.  Read [R for Data Science - Section 4 - Data transformation](https://r4ds.hadley.nz/data-transform)\\\n2.  Read [@bryan2018excuse]\n\n## {{< fa code >}} Assignments\n\n-   In preparation\n",
+    "supporting": [
+      "md-05_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

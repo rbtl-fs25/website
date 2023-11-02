@@ -1,8 +1,10 @@
 {
-  "hash": "8a0d1d5e74a4308f62bac7564ef69b78",
+  "hash": "0cdc2cd6f9aa2d7148dd9dd1647b8876",
   "result": {
-    "markdown": "---\ntitle: \"Module 10\"\nsubtitle: \"Final submission date of Capstone project\"\neditor: source\nparams:\n    week: 14\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can apply the skills obtained during the course to write a short data analysis project report.\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Module 10\"\nsubtitle: \"Final submission date of Capstone project\"\neditor: source\nparams:\n    week: 14\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply the skills obtained during the course to write a short data analysis project report.\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "supporting": [
+      "md-10_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

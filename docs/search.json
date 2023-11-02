@@ -151,7 +151,7 @@
     "href": "modules/md-01.html#learning-objectives",
     "title": "Module 1",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
+    "text": "Learning Objectives\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
   },
   {
     "objectID": "modules/md-01.html#fa-display-slides",
@@ -173,20 +173,6 @@
     "title": "Module 1",
     "section": " Assignments",
     "text": "Assignments\nPlease complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.\n\nAssignment 1: In class: Working with R, RStudio on Posit Cloud\nAssignment 2: Homework: Communication in a chat\nAssignment 3: Homework: Interaction with GitHub\n\nThank you for working through these assignments."
-  },
-  {
-    "objectID": "modules/md-03.html",
-    "href": "modules/md-03.html",
-    "title": "Module 3",
-    "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot."
-  },
-  {
-    "objectID": "modules/md-03.html#fa-bullseye-learning-objectives",
-    "href": "modules/md-03.html#fa-bullseye-learning-objectives",
-    "title": "Module 3",
-    "section": "",
-    "text": "Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot."
   },
   {
     "objectID": "modules/md-03.html#fa-display-slides",
@@ -805,6 +791,13 @@
     "text": "Step 3: Download Element (optional)\n\nDownload and install Element: https://element.io/download\n\nIt’s available on Windows, Linux and Mac OS, as well as Android and iPhone.\n\nOpen the Element App on your device\nClick on Sign In\nSign in with GitHub\nClick on Verify with Security Key\n\n 6. Copy/paste the Security key from the downloaded security-key.txt you received when setting up the app in your browser. And hit Continue.\n\n\n\n\n\n\nI cannot click Continue\n\n\n\n\n\nIf a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.\n\n\n\n 7. You have successfully verified your device"
   },
   {
+    "objectID": "assignments/md-02/am-02-1-reading.html",
+    "href": "assignments/md-02/am-02-1-reading.html",
+    "title": "Good enough practices in scientific computing",
+    "section": "",
+    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, or government, and others.\nFor this assignment, we ask you to:\n\nRead (Wilson et al. 2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nUse your browser, the Zotero Connector and Zotero to store the following paper in your personal Zotero library (My Library or a sub-folder at the top left): https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510.\nRead Wilson et al. (2017).\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your research process. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
+  },
+  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "data science for openwashdata",
@@ -863,310 +856,366 @@
   {
     "objectID": "slides/lec-02-visualisation.html#section",
     "href": "slides/lec-02-visualisation.html#section",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "",
     "text": "Artwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#tipps-for-search-engines",
     "href": "slides/lec-02-visualisation.html#tipps-for-search-engines",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Tipps for search engines",
     "text": "Tipps for search engines\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\nScroll through the top 5 results (don’t just pick the first)\n\nExample: “How to remove a legend from a plot in R ggplot2”"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#stack-overflow",
     "href": "slides/lec-02-visualisation.html#stack-overflow",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Stack Overflow",
     "text": "Stack Overflow\n\n\n\nWhat is it?\n\nThe biggest support network for (coding) problems\nCan be intimidating at first\nUp-vote system\n\n\n\n\nWorkflow\n\nFirst, briefly read the question that was posted\nThen, read the answer marked as “correct”\nThen, read one or two more answers with high votes\nThen, check out the “Linked” posts\nAlways give credit for the solution"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#give-credit",
     "href": "slides/lec-02-visualisation.html#give-credit",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Give credit",
     "text": "Give credit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#give-credit-1",
     "href": "slides/lec-02-visualisation.html#give-credit-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Give credit",
     "text": "Give credit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#give-credit-2",
     "href": "slides/lec-02-visualisation.html#give-credit-2",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Give credit",
     "text": "Give credit\n\nggplot(data = global_waste_data_kg_year,\n       mapping = aes(x = income_id, \n                     y = capita_kg_year,\n                     color = income_id)) +\n  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#other-sources-for-help",
     "href": "slides/lec-02-visualisation.html#other-sources-for-help",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Other sources for help",
     "text": "Other sources for help\n\n\n\nThe Canvas Discussion pages\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
     "href": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Minimal reproducible example (reprex)",
     "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nGood support information: https://www.tidyverse.org/help/#reprex"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-1",
     "href": "slides/lec-02-visualisation.html#section-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "",
     "text": "Artwork by @allison_horst"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-clone",
     "href": "slides/lec-02-visualisation.html#remember-git-clone",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "remember: git clone",
     "text": "remember: git clone"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-commit",
     "href": "slides/lec-02-visualisation.html#remember-git-commit",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "remember: git commit",
     "text": "remember: git commit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-push",
     "href": "slides/lec-02-visualisation.html#remember-git-push",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "remember: git push",
     "text": "remember: git push"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-push-1",
     "href": "slides/lec-02-visualisation.html#remember-git-push-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "remember: git push",
     "text": "remember: git push"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#collaborate-git-clone",
     "href": "slides/lec-02-visualisation.html#collaborate-git-clone",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "collaborate: git clone",
     "text": "collaborate: git clone"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#track-work-git-commit",
     "href": "slides/lec-02-visualisation.html#track-work-git-commit",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "track work: git commit",
     "text": "track work: git commit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#update-git",
     "href": "slides/lec-02-visualisation.html#update-git",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "update: git ???",
     "text": "update: git ???"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#update-git-push",
     "href": "slides/lec-02-visualisation.html#update-git-push",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "update: git push",
     "text": "update: git push"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#git",
     "href": "slides/lec-02-visualisation.html#git",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "git ???",
     "text": "git ???"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#new-git-pull",
     "href": "slides/lec-02-visualisation.html#new-git-pull",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "new: git pull",
     "text": "new: git pull"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms and their use case.\nLearners can apply a theme to control font types and sizes within a plot.\nLearners can apply 12 principles for data organisation in spreadsheets in the layout of a collected dataset."
+    "text": "Learning Objectives (for this week)\n\nlobj1 &lt;- readr::read_csv(here::here(\"data/tbl-02-ds4owd-001-learning-objectives.csv\")) |&gt;\n  dplyr::filter(week == params$week) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 31 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLearners can list the six elements of the data science lifecycle.\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms (bar/col, histogram, point) and their use case.\nNA"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#deep-end",
+    "href": "slides/lec-02-visualisation.html#deep-end",
+    "title": "Welcome & get ready for the course",
+    "section": "Deep End",
+    "text": "Deep End\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-2",
+    "href": "slides/lec-02-visualisation.html#section-2",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-\n\nAdd notes"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-3",
+    "href": "slides/lec-02-visualisation.html#section-3",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-4",
+    "href": "slides/lec-02-visualisation.html#section-4",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-5",
+    "href": "slides/lec-02-visualisation.html#section-5",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-6",
+    "href": "slides/lec-02-visualisation.html#section-6",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-7",
+    "href": "slides/lec-02-visualisation.html#section-7",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-8",
+    "href": "slides/lec-02-visualisation.html#section-8",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
     "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "R Package ggplot2",
-    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n#knitr::include_graphics(here::here(\"slides/img/lec-02/ggplot2-part-of-tidyverse.png\"))\n\n\n\n\n\nSlide adapted from datasciencebox.org"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure",
     "href": "slides/lec-02-visualisation.html#code-structure",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot() is the main function in ggplot2\nPlots are constructed in layers\nStructure of the code for plots can be summarized as\n\n\nggplot(data = [dataset], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n   geom_xxx() +\n   other options"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-1",
     "href": "slides/lec-02-visualisation.html#code-structure-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-2",
     "href": "slides/lec-02-visualisation.html#code-structure-2",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-3",
     "href": "slides/lec-02-visualisation.html#code-structure-3",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes())"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-4",
     "href": "slides/lec-02-visualisation.html#code-structure-4",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-5",
     "href": "slides/lec-02-visualisation.html#code-structure-5",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-6",
     "href": "slides/lec-02-visualisation.html#code-structure-6",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-7",
     "href": "slides/lec-02-visualisation.html#code-structure-7",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Code structure",
     "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
     "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "live-02a-data-visualiation",
     "text": "live-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#break",
     "href": "slides/lec-02-visualisation.html#break",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Break",
-    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Break\n\n\ncountdown(\n  minutes = 10, seconds = 0,\n  left = 0, right = 0,\n  padding = \"10px\", margin = \"5%\",\n  font_size = \"2em\"\n)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#types-of-variables",
     "href": "slides/lec-02-visualisation.html#types-of-variables",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Types of variables",
     "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-3",
-    "href": "slides/lec-02-visualisation.html#section-3",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "slides/lec-02-visualisation.html#section-10",
+    "href": "slides/lec-02-visualisation.html#section-10",
+    "title": "Welcome & get ready for the course",
     "section": "",
     "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
     "href": "slides/lec-02-visualisation.html#data-to-viz.com",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "data-to-viz.com",
     "text": "data-to-viz.com"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-collection-tools-1",
     "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Data Collection Tools",
     "text": "Data Collection Tools\n\nQuestionnaires for survey based data\nSpreadsheets for manual experimental/observational data\nSensors for automated near real-time data"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#survey-tools",
     "href": "slides/lec-02-visualisation.html#survey-tools",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Survey tools",
     "text": "Survey tools\nCommonly used in the Global Engineering and Development sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
     "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
+    "text": "Data Organisation in Spreadsheets\n\nknitr::include_graphics(\"img/lec-02/data-org-paper.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
     "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Data Organisation in Spreadsheets",
     "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
     "href": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "But, especially apply it to your data",
     "text": "But, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#why",
     "href": "slides/lec-02-visualisation.html#why",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Why?",
-    "text": "Why?\nBecause it will make your life easier!\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
+    "text": "Why?\nBecause it will make your life easier!\n\nknitr::include_graphics(\"img/lec-02/data-org-views.png\")\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#license-cc0",
     "href": "slides/lec-02-visualisation.html#license-cc0",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "License? CC0 (!)",
-    "text": "License? CC0 (!)\n\n\n\n\n\n\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
+    "text": "License? CC0 (!)\n\nknitr::include_graphics(\"img/lec-02/data-org-license.png\")\n\n\n\n\n\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#bring-your-own-data",
     "href": "slides/lec-02-visualisation.html#bring-your-own-data",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Bring your own data",
     "text": "Bring your own data\n\nGenerate data doing a short survey or observational study\n\nFind a data online that interests you\nUse a dataset that you already have available"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#homework-due-dates",
     "href": "slides/lec-02-visualisation.html#homework-due-dates",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "title": "Welcome & get ready for the course",
     "section": "Homework due dates",
     "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 23th"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-4",
-    "href": "slides/lec-02-visualisation.html#section-4",
-    "title": "Data Visualisation & Data Organisation in Spreadsheets",
+    "objectID": "slides/lec-02-visualisation.html#section-11",
+    "href": "slides/lec-02-visualisation.html#section-11",
+    "title": "Welcome & get ready for the course",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#exam-update",
@@ -1698,14 +1747,14 @@
     "href": "modules/md-02.html",
     "title": "Module 2",
     "section": "",
-    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+    "text": "Are you ready for some data visualisations? This week is all about exploring data with ggplot2 R package. We will also learn about the data science lifecycle."
   },
   {
     "objectID": "modules/md-02.html#fa-bullseye-learning-objectives",
     "href": "modules/md-02.html#fa-bullseye-learning-objectives",
     "title": "Module 2",
-    "section": "",
-    "text": "Learners can render a Quarto file to an output file in HTML, PDF and DOCX format.\nLearners can list the six elements of the data science lifecycle.\nLearners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+    "section": " Learning Objectives",
+    "text": "Learning Objectives\n\n\nLearners can list the six elements of the data science lifecycle.\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms (bar/col, histogram, point) and their use case."
   },
   {
     "objectID": "modules/md-02.html#fa-display-slides",
@@ -1719,7 +1768,7 @@
     "href": "modules/md-02.html#fa-book-readings",
     "title": "Module 2",
     "section": " Readings",
-    "text": "Readings\n\nRead @wilson2017 “Good enough practices in scientific computing”.\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
+    "text": "Readings\n\nRead (Wilson et al. 2017): “Good enough practices in scientific computing”.\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
   },
   {
     "objectID": "modules/md-02.html#fa-code-assignments",
