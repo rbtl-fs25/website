@@ -95,28 +95,6 @@ Artwork by [@allison_horst](https://twitter.com/allison_horst)
 
 :::
 
-## Give credit
-
-![](img/lec-02/stack-overflow-share-1.png)
-
-## Give credit
-
-![](img/lec-02/stack-overflow-share-2.png)
-
-## Give credit {.smaller}
-
-```{r}
-#| eval: false
-#| echo: true
-#| code-line-numbers: "5-6"
-ggplot(data = global_waste_data_kg_year,
-       mapping = aes(x = income_id, 
-                     y = capita_kg_year,
-                     color = income_id)) +
-  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220
-  theme(legend.position = "none")
-
-```
 
 ## Other sources for help
 
@@ -124,28 +102,18 @@ ggplot(data = global_waste_data_kg_year,
 
 ::: {.column width="50%"}
 
-- The [Canvas Discussion pages](https://canvas.colorado.edu/courses/94577/discussion_topics)
-- RStudio Community Forum: https://community.rstudio.com/
-- Documentation websites: https://dplyr.tidyverse.org/
-- Twitter community: [#rstats](https://twitter.com/search?q=%23rstats&src=typd) 
+- Posit Community Forum: <https://community.rstudio.com/>
+- Documentation websites: <https://dplyr.tidyverse.org/>
+- Mastodon tag: [#rstats](https://fosstodon.org/tags/rstats)
+- Quarto GitHub Discussion: <https://github.com/quarto-dev/quarto-cli/discussions>
 :::
 
 ::: {.column width="50%"}
 
-![](img/lec-02/welcome_to_rstats_twitter.png)
+![](img/lec-02/dalle3-image-colorful-coding.png)
 
-:::
-
+::: 
 ::::
-
-::: aside
-Artwork by [@allison_horst](https://www.allisonhorst.com/)
-:::
-
-## Minimal reproducible example (reprex)
-
-- Needed when asking questions online
-- Good support information: https://www.tidyverse.org/help/#reprex
 
 ## {background-image="img/lec-02/code_hero.jpg" background-size="contain"} 
 
@@ -153,12 +121,40 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 Artwork by [@allison_horst](https://www.allisonhorst.com/)
 :::
 
-# Homework assignment solutions
+# Homework assignment {background-color="#4C326A"}
 
-## remember: `git clone`  
+## on GitHub
+
+
+
+## command: `git clone`  
 
 ![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.001.png)
+## Version Control - Terminology
 
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.001.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.002.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.003.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.004.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.005.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.006.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.007.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.008.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.009.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.010.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.011.png" background-size="contain"}
+
+## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.012.png" background-size="contain"}
 
 ## remember: `git commit` 
 

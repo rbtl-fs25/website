@@ -290,8 +290,8 @@
     "objectID": "slides/lec-01-welcome.html#email-from-github",
     "href": "slides/lec-01-welcome.html#email-from-github",
     "title": "Welcome & get ready for the course",
-    "section": "",
-    "text": "While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
+    "section": "Email from GitHub?",
+    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
   },
   {
     "objectID": "slides/lec-01-welcome.html#meet-the-team",
@@ -459,7 +459,7 @@
     "href": "slides/lec-01-welcome.html#quarto",
     "title": "Welcome & get ready for the course",
     "section": "Quarto …",
-    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
@@ -473,7 +473,7 @@
     "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Log into Posit Cloud with GitHub account",
-    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the Sign Up with GitHub button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark the address of the open tab in your browser.\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n05:00"
+    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the Sign Up with GitHub button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark the address of the open tab in your browser.\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#take-a-break",
@@ -501,7 +501,7 @@
     "href": "slides/lec-01-welcome.html#one-install-batteries-included",
     "title": "Welcome & get ready for the course",
     "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n. . .\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n. . .\n\nAny language, exact same approach and syntax"
+    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n\n\n\nAny language, exact same approach and syntax"
   },
   {
     "objectID": "slides/lec-01-welcome.html#many-quarto-formats",
@@ -557,14 +557,14 @@
     "href": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
     "title": "Welcome & get ready for the course",
     "section": "Our turn: Configure Notifications settings",
-    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-settings.png\"))\n\n\n\n\n\ncountdown(5)\n\n\n−+\n05:00"
+    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-settings.png\"))\n\n\n\ncountdown(5)\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
     "href": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Create an issue on GitHub",
-    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-inbox.png\"))\n\n\n\n\n\ncountdown(10)\n\n\n−+\n10:00"
+    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-inbox.png\"))\n\n\n\ncountdown(10)\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#take-a-break-1",
@@ -578,7 +578,7 @@
     "href": "slides/lec-01-welcome.html#components",
     "title": "Welcome & get ready for the course",
     "section": "Components",
-    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n. . .\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
   },
   {
     "objectID": "slides/lec-01-welcome.html#literate-programming",
@@ -599,7 +599,7 @@
     "href": "slides/lec-01-welcome.html#output-options",
     "title": "Welcome & get ready for the course",
     "section": "Output options",
-    "text": "Output options\n---\nformat: something\n---\n. . .\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+    "text": "Output options\n---\nformat: something\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
   },
   {
     "objectID": "slides/lec-01-welcome.html#output-option-arguments",
@@ -711,7 +711,7 @@
     "href": "slides/lec-01-welcome.html#thanks",
     "title": "Welcome & get ready for the course",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
   },
   {
     "objectID": "index.html",
@@ -900,7 +900,7 @@
     "href": "slides/lec-02-visualisation.html#other-sources-for-help",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Other sources for help",
-    "text": "Other sources for help\n\n\n\nThe Canvas Discussion pages\nRStudio Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nTwitter community: #rstats\n\n\n\n\n\n\n\nArtwork by @allison_horst"
+    "text": "Other sources for help\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Discussion: https://github.com/quarto-dev/quarto-cli/discussions"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
@@ -921,7 +921,7 @@
     "href": "slides/lec-02-visualisation.html#remember-git-clone",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "remember: git clone",
-    "text": "remember: git clone"
+    "text": "remember: git clone\n ## Version Control - Terminology"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-commit",
@@ -1005,49 +1005,49 @@
     "href": "slides/lec-02-visualisation.html#section-2",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-\n\nAdd notes"
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-3",
     "href": "slides/lec-02-visualisation.html#section-3",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-4",
     "href": "slides/lec-02-visualisation.html#section-4",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-5",
     "href": "slides/lec-02-visualisation.html#section-5",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-6",
     "href": "slides/lec-02-visualisation.html#section-6",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-7",
     "href": "slides/lec-02-visualisation.html#section-7",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-8",
     "href": "slides/lec-02-visualisation.html#section-8",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
@@ -1137,8 +1137,8 @@
     "objectID": "slides/lec-02-visualisation.html#section-10",
     "href": "slides/lec-02-visualisation.html#section-10",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "",
-    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+    "section": "-",
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
@@ -1214,8 +1214,8 @@
     "objectID": "slides/lec-02-visualisation.html#section-11",
     "href": "slides/lec-02-visualisation.html#section-11",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+    "section": "-",
+    "text": "-"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#exam-update",
@@ -1768,7 +1768,7 @@
     "href": "modules/md-02.html#fa-book-readings",
     "title": "Module 2",
     "section": " Readings",
-    "text": "Readings\n\nRead (Wilson et al. 2017): “Good enough practices in scientific computing”. (This also an assignment for this week)\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
+    "text": "Readings\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”. (This also an assignment for this week)\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
   },
   {
     "objectID": "modules/md-02.html#fa-code-assignments",
@@ -1918,10 +1918,101 @@
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
   },
   {
-    "objectID": "slides/lec-01-welcome.html",
-    "href": "slides/lec-01-welcome.html",
-    "title": "Welcome & get ready for the course",
+    "objectID": "slides/lec-02-visualisation.html#section-14",
+    "href": "slides/lec-02-visualisation.html#section-14",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-\n\nAdd notes"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-15",
+    "href": "slides/lec-02-visualisation.html#section-15",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-16",
+    "href": "slides/lec-02-visualisation.html#section-16",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-17",
+    "href": "slides/lec-02-visualisation.html#section-17",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-18",
+    "href": "slides/lec-02-visualisation.html#section-18",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-19",
+    "href": "slides/lec-02-visualisation.html#section-19",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-20",
+    "href": "slides/lec-02-visualisation.html#section-20",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-22",
+    "href": "slides/lec-02-visualisation.html#section-22",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "",
-    "text": "While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
+    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-23",
+    "href": "slides/lec-02-visualisation.html#section-23",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-9",
+    "href": "slides/lec-02-visualisation.html#section-9",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-12",
+    "href": "slides/lec-02-visualisation.html#section-12",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-13",
+    "href": "slides/lec-02-visualisation.html#section-13",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#command-git-clone",
+    "href": "slides/lec-02-visualisation.html#command-git-clone",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "command: git clone",
+    "text": "command: git clone\n ## Version Control - Terminology"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-github",
+    "href": "slides/lec-02-visualisation.html#on-github",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on GitHub",
+    "text": "on GitHub"
   }
 ]
