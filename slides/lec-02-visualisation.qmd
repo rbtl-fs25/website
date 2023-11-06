@@ -28,6 +28,7 @@ library(readr)
 library(ggplot2)
 library(gapminder)
 library(dplyr)
+library(epoxy)
 ```
 
 ```{r} 
@@ -47,7 +48,7 @@ my_colors <- c("#ED6D37", "#901C6C", "#18A5C5", "#A6CE8F")
 Artwork by [@allison_horst](https://twitter.com/allison_horst) 
 :::
 
-# Solving coding problems {background-color="#0F4C81"}
+# Solving coding problems {background-color="#4C326A"}
 
 ## Tipps for search engines 
 
@@ -95,6 +96,15 @@ Artwork by [@allison_horst](https://twitter.com/allison_horst)
 
 :::
 
+## Tipps for AI tools 
+
+- Use actionable verbs that describe what you want to do
+- Be specific 
+- Add R to the search query 
+- Add the name of the R package name to the search query
+- Scroll through the top 5 results (don't just pick the first)
+
+**Example: "How to remove a legend from a plot in R ggplot2"**
 
 ## Other sources for help
 
@@ -123,14 +133,46 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 
 # Homework assignment {background-color="#4C326A"}
 
-## on GitHub
+## on GitHub Organisation
 
+[Bookmark this link in your browser!]{.highlight-yellow}
 
+::: learn-more
+[github.com/ds4owd-001](https://github.com/ds4owd-001)
+
+![](img/lec-02/github-search-repo.png)
+
+:::
+
+## on your repository
+
+![](img/lec-02/github-assignment-repo.png)
+
+## on Posit Cloud
+
+[Bookmark this link in your browser!]{.highlight-yellow}
+
+::: learn-more
+[posit.cloud/spaces/426916/content/](https://posit.cloud/spaces/426916/content/)
+
+![](img/lec-02/posit-cloud-new-project.png)
+
+:::
+
+## on Posit Cloud
+
+::: learn-more
+[posit.cloud/spaces/426916/content/](https://posit.cloud/spaces/426916/content/)
+
+![](img/lec-02/posit-cloud-project-link.png)
+
+:::
 
 ## command: `git clone`  
 
 ![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.001.png)
-## Version Control - Terminology
+
+# Version Control - Terminology {background-color="#4C326A"}
 
 ## - {background-image="img/lec-02/illustration-slides-git/illustration-slides-git.001.png" background-size="contain"}
 
@@ -194,22 +236,21 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 
 ## Learning Objectives (for this week)
 
-```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |>
+```{r}
+#| label: learning-objectives
+
+lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
 ```
 
+```{epoxy}
+{1:length(lobj)}. {lobj[1:length(lobj)]}
+```
 
-1. `r lobj1[1]`
-1. `r lobj1[2]`
-1. `r lobj1[3]`
-1. `r lobj1[4]`
-1. `r lobj1[5]`
-
-# Data Science Lifecycle {background-color="#0F4C81"}
+# Data Science Lifecycle {background-color="#4C326A"}
 
 ## Deep End
 
@@ -305,7 +346,7 @@ Together, tidying and transforming are called wrangling, because getting your da
 
 :::
 
-# Exploratory Data Analysis with `ggplot2` {background-color="#0F4C81"}
+# Exploratory Data Analysis with `ggplot2` {background-color="#4C326A"}
 
 ## R Package `ggplot2`
 
@@ -424,7 +465,7 @@ ggplot(data = gapminder_yr_2007,
 
 ```
 
-# Live Coding Exercise: Reproduce this plot {background-color="#0F4C81"}
+# Live Coding Exercise: Reproduce this plot {background-color="#4C326A"}
 
 ## {background-image="img/lec-02/plot-waste-generation-gdp.png" background-size="contain"} 
 
@@ -456,7 +497,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
 
 
-# Visualising numerical data {background-color="#0F4C81"}
+# Visualising data {background-color="#4C326A"}
 
 ## Types of variables 
 
@@ -508,7 +549,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ## data-to-viz.com 
 
-# Data Collection Tools {background-color="#0F4C81"}
+# Data Collection Tools {background-color="#4C326A"}
 
 ## Data Collection Tools
 
@@ -567,7 +608,7 @@ knitr::include_graphics("img/lec-02/data-org-license.png")
 Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](https://github.com/kbroman/Talk_DataOrg)
 :::
 
-# Homework week 2 {background-color="#0F4C81"}
+# Homework week 2 {background-color="#4C326A"}
 
 ## Bring your own data
 
@@ -580,7 +621,7 @@ Karl Broman, GitHub repo broman/Talk_DataOrg, [Screenshot taken on 2022-03-23](h
 - All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-02.html)
 - Homework assignment & learning reflection due: **Friday, June 23th** 
 
-# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+# Thanks! `r emo::ji("sunflower")`  {background-color="#4C326A"}
 
 ## 
 

@@ -991,7 +991,7 @@
     "href": "slides/lec-02-visualisation.html#learning-objectives-for-this-week",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can list the six elements of the data science lifecycle.\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms (bar/col, histogram, point) and their use case.\nNA"
+    "text": "Learning Objectives (for this week)\n\n\nLearners can list the six elements of the data science lifecycle.\nLearners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.\nLearners can control the colour scaling applied to a plot using colour as an aesthetic mapping.\nLearners can compare three different geoms (bar/col, histogram, point) and their use case."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#deep-end",
@@ -2006,7 +2006,7 @@
     "href": "slides/lec-02-visualisation.html#command-git-clone",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "command: git clone",
-    "text": "command: git clone\n ## Version Control - Terminology"
+    "text": "command: git clone"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#on-github",
@@ -2014,5 +2014,54 @@
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "on GitHub",
     "text": "on GitHub"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#open-github-organisation",
+    "href": "slides/lec-02-visualisation.html#open-github-organisation",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "open GitHub Organisation",
+    "text": "open GitHub Organisation\nBookmark this link in your browser!\n\ngithub.com/ds4owd-001"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-your-repository",
+    "href": "slides/lec-02-visualisation.html#on-your-repository",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on your repository",
+    "text": "on your repository"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-posit-cloud",
+    "href": "slides/lec-02-visualisation.html#on-posit-cloud",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on Posit Cloud",
+    "text": "on Posit Cloud\nBookmark this link in your browser!\n\nposit.cloud/spaces/426916/content/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-posit-cloud-1",
+    "href": "slides/lec-02-visualisation.html#on-posit-cloud-1",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on Posit Cloud",
+    "text": "on Posit Cloud\n\nposit.cloud/spaces/426916/content/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-github-organisation",
+    "href": "slides/lec-02-visualisation.html#on-github-organisation",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on GitHub Organisation",
+    "text": "on GitHub Organisation\nBookmark this link in your browser!\n\ngithub.com/ds4owd-001"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#version-control---terminology",
+    "href": "slides/lec-02-visualisation.html#version-control---terminology",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Version Control - Terminology",
+    "text": "Version Control - Terminology"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#tipps-for-ai-tools",
+    "href": "slides/lec-02-visualisation.html#tipps-for-ai-tools",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Tipps for AI tools",
+    "text": "Tipps for AI tools\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\nScroll through the top 5 results (don’t just pick the first)\n\nExample: “How to remove a legend from a plot in R ggplot2”"
   }
 ]
