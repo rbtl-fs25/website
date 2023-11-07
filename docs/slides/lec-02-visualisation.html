@@ -411,6 +411,15 @@ Lars Schöbitz
 
   <p class="date">2023-11-07</p>
 </section>
+<section id="fa-circle-question" class="slide level2 center-align">
+<h2><i class="fa-solid fa-circle-question" aria-label="circle-question"></i></h2>
+<div style="margin-top: 50px; font-size: 1.5em">
+<p>Q: How do I successfully complete the course?</p>
+</div>
+<p>You successfully complete the course and you will receive a certificate of completion if you:</p>
+<p><span class="highlight-yellow">hand in a complete capstone project report that uses a dataset of your choice by 30 January 2024 (instructions will follow)</span></p>
+<p>This is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed.</p>
+</section>
 <section id="section" class="slide level2" data-background-image="img/lec-02/r_rollercoaster.png" data-background-size="contain">
 <h2></h2>
 
@@ -466,7 +475,6 @@ Lars Schöbitz
 <li>Be specific</li>
 <li>Add R to the search query</li>
 <li>Add the name of the R package name to the search query</li>
-<li>Scroll through the top 5 results (don’t just pick the first)</li>
 </ul>
 <p><strong>Example: “How to remove a legend from a plot in R ggplot2”</strong></p>
 </section>
@@ -476,7 +484,7 @@ Lars Schöbitz
 <div class="column" style="width:50%;">
 <ul>
 <li>Posit Community Forum: <a href="https://community.rstudio.com/" class="uri">https://community.rstudio.com/</a></li>
-<li>Documentation websites: <a href="https://dplyr.tidyverse.org/" class="uri">https://dplyr.tidyverse.org/</a></li>
+<li>Documentation websites: <a href="https://ggplot2.tidyverse.org/" class="uri">https://ggplot2.tidyverse.org/</a></li>
 <li>Mastodon tag: <a href="https://fosstodon.org/tags/rstats">#rstats</a></li>
 <li>Quarto GitHub Discussion: <a href="https://github.com/quarto-dev/quarto-cli/discussions" class="uri">https://github.com/quarto-dev/quarto-cli/discussions</a></li>
 </ul>
@@ -484,16 +492,19 @@ Lars Schöbitz
 <p><img data-src="img/lec-02/dalle3-image-colorful-coding.png"></p>
 </div>
 </div>
+<div class="footer">
+<p>Image generated with <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
+</div>
 </section>
 <section id="section-1" class="slide level2" data-background-image="img/lec-02/code_hero.jpg" data-background-size="contain">
 <h2></h2>
-
-<aside><div>
+<div class="footer">
 <p>Artwork by <a href="https://www.allisonhorst.com/"><span class="citation" data-cites="allison_horst">@allison_horst</span></a></p>
-</div></aside></section></section>
+</div>
+</section></section>
 <section>
-<section id="homework-assignment" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Homework assignment</h1>
+<section id="homework-assignment-module-1" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Homework assignment module 1</h1>
 
 </section>
 <section id="on-github-organisation" class="slide level2">
@@ -808,6 +819,13 @@ Lars Schöbitz
 <aside><div>
 <p>Slide adapted from datasciencebox.org</p>
 </div></aside></section>
+<section id="my-turn-working-with-r" class="slide level2">
+<h2>My turn: Working with R</h2>
+<p><br><br></p>
+<div class="hand-purple-large" style="text-align: center;">
+<p>Sit back and enjoy!</p>
+</div>
+</section>
 <section id="code-structure" class="slide level2">
 <h2>Code structure</h2>
 <ul>
@@ -819,8 +837,8 @@ Lars Schöbitz
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> [dataset], </span>
 <span id="cb1-2"><a href="#cb1-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> [x<span class="sc">-</span>variable], </span>
 <span id="cb1-3"><a href="#cb1-3"></a>                     <span class="at">y =</span> [y<span class="sc">-</span>variable])) <span class="sc">+</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>   <span class="fu">geom_xxx</span>() <span class="sc">+</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>   other options</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="fu">geom_xxx</span>() <span class="sc">+</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  other options</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="code-structure-1" class="slide level2" data-auto-animate="true">
@@ -833,14 +851,14 @@ Lars Schöbitz
 <section id="code-structure-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 <section id="code-structure-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
@@ -848,7 +866,7 @@ Lars Schöbitz
 <section id="code-structure-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
@@ -857,7 +875,7 @@ Lars Schöbitz
 <section id="code-structure-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
 <span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -867,7 +885,7 @@ Lars Schöbitz
 <section id="code-structure-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
 <span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
@@ -878,7 +896,7 @@ Lars Schöbitz
 <section id="code-structure-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_yr_2007,</span>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
 <span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
@@ -887,38 +905,111 @@ Lars Schöbitz
 </div>
 <img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section></section>
 <section>
-<section id="live-coding-exercise-reproduce-this-plot" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Live Coding Exercise: Reproduce this plot</h1>
+<section id="polls" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Polls</h1>
 
 </section>
-<section id="section-21" class="slide level2" data-background-image="img/lec-02/plot-waste-generation-gdp.png" data-background-size="contain">
-<h2></h2>
-</section>
-<section id="live-02a-data-visualiation" class="slide level2">
-<h2>live-02a-data-visualiation</h2>
+<section id="poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent" class="slide level2 smaller">
+<h2>Poll 1: What does the thick line inside the box of a boxplot represent?</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
 <ol type="1">
-<li>Head over to rstudio.cloud</li>
-<li>Open the workspace for the course (cven5837-ss22)</li>
-<li>Open “Projects”</li>
-<li>Open the “course-materials” project</li>
-<li>Follow along with me</li>
+<li>the mean of the observations</li>
+<li>the middle of the box</li>
+<li>the median of the observations</li>
+<li>none of the above</li>
+</ol>
+</div><div class="column" style="width:70%;">
+<div class="cell" data-fig.asp="0.618">
+<div class="cell-output-display">
+<p><img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-14-1.png" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot-interquartile-range" class="slide level2 smaller">
+<h2>Poll 2: What percentage of observations are contained inside the box of a boxplot (interquartile range)?</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ol type="1">
+<li>25%</li>
+<li>depends on the median</li>
+<li>50%</li>
+<li>none of the above</li>
+</ol>
+</div><div class="column" style="width:70%;">
+<div class="cell" data-fig.asp="0.618">
+<div class="cell-output-display">
+<p><img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-15-1.png" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="poll-3-what-is-the-median-of-a-set-of-observations" class="slide level2 smaller">
+<h2>Poll 3: What is the median of a set of observations?</h2>
+<ol type="1">
+<li>The median is the most frequently occurring value in a dataset.</li>
+<li>The median is the sum of all values in a dataset divided by the number of observations.</li>
+<li>The median is the point above and below which half (50%) of the observations falls.</li>
+<li>The median is the square root of the sum of the squares of each value in a dataset.</li>
 </ol>
 </section>
-<section id="break" class="slide level2">
-<h2>Break</h2>
-<p><img data-src="img/lec-01/coffee-break.jpg"></p>
+<section id="poll-4-if-you-have-the-values-1-2-3-and-10-which-statistical-measure-best-represents-the-true-value" class="slide level2 smaller">
+<h2>Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the “true” value?</h2>
+<ol type="1">
+<li>The mean</li>
+<li>The standard deviation</li>
+<li>The median</li>
+<li>The interquartile range</li>
+</ol>
+</section>
+<section id="boxplot-explained" class="slide level2">
+<h2>Boxplot, explained</h2>
+
+<img data-src="https://r4ds.hadley.nz/images/EDA-boxplot.png" alt="A diagram depicting how a boxplot is created following the steps outlined above." class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: Diagram depicting how a boxplot is created.</p><div class="footer">
+<p>Image taken from: <a href="https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot" class="uri">https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot</a></p>
+</div>
+<aside class="notes">
+<ul>
+<li><p>A box that indicates the range of the middle half of the data, a distance known as the interquartile range (IQR), stretching from the 25th percentile of the distribution to the 75th percentile.</p></li>
+<li><p>In the middle of the box is a line that displays the median, i.e.&nbsp;50th percentile, of the distribution.</p></li>
+<li><p>These three lines give you a sense of the spread of the distribution and whether or not the distribution is symmetric about the median or skewed to one side.</p></li>
+<li><p>Visual points that display observations that fall more than 1.5 times the IQR from either edge of the box. These outlying points are unusual so are plotted individually.</p></li>
+<li><p>A line (or whisker) that extends from each end of the box and goes to the farthest non-outlier point in the distribution.</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="our-turn-md-02-exercises" class="slide level2">
+<h2>Our turn: md-02-exercises</h2>
+<div class="task">
+<ol type="1">
+<li>Open <a href="https://posit.cloud">posit.cloud</a> in your browser (use your bookmark).</li>
+<li>Open the <span class="highlight-yellow">ds4owd workspace</span> for the course.</li>
+<li>Click <span class="highlight-yellow">Start</span> next to <span class="highlight-yellow">md-02-exercises</span>.</li>
+<li>In the File Manager in the bottom right window, locate the <span class="highlight-yellow"><code>md-02b-data-visualization.qmd</code></span> file and click on it to open it in the top left window.</li>
+</ol>
+</div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_93af3902" data-update-every="1" tabindex="0" style="right:0;bottom:0;left:0;margin:5%;padding:10px;font-size:2em;">
+<div class="countdown" id="timer_353006fe" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
-
-<aside><div>
-<p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
-</div></aside></section></section>
+</section></section>
 <section>
 <section id="visualising-data" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Visualising data</h1>
@@ -954,119 +1045,93 @@ Lars Schöbitz
 </div>
 </div>
 </section>
-<section id="section-22" class="slide level2" data-background-image="https://d33wubrfki0l68.cloudfront.net/1e7033393a2c70dc1255c5d0f1c563e945519251/61035/img/evol-ggplot/evol-ggplot-1.gif" data-background-size="contain">
-<h2></h2>
+<section id="histogram" class="slide level2">
+<h2>Histogram</h2>
+<ul>
+<li>for visualizing distribution of continuous (numerical) variables</li>
+</ul>
+<div class="cell" data-fig.asp="0.618">
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb9-2"><a href="#cb9-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g)) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<aside><div>
-<p><strong>Tutorial:</strong> https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</p>
-</div></aside></section>
-<section id="data-to-viz.com" class="slide level2">
-<h2>data-to-viz.com</h2>
+</div>
+<img data-src="lec-02-visualisation_files/figure-revealjs/histogram-penguins-1.png" width="576" class="r-stretch"></section>
+<section id="barplot" class="slide level2">
+<h2>Barplot</h2>
+<ul>
+<li>for visualizing distribution of categorical (non-numerical) variables</li>
+</ul>
+<div class="cell" data-fig.asp="0.618">
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb10-2"><a href="#cb10-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="lec-02-visualisation_files/figure-revealjs/barplot-penguins-1.png" width="576" class="r-stretch"></section>
+<section id="scatterplot" class="slide level2 smallest">
+<h2>Scatterplot</h2>
+<ul>
+<li>for visualising relationships between two continuous (numerical) variables</li>
+</ul>
+<div class="cell" data-fig.asp="0.618">
+<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
+<span id="cb11-2"><a href="#cb11-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap,</span>
+<span id="cb11-3"><a href="#cb11-3"></a>                     <span class="at">y =</span> lifeExp,</span>
+<span id="cb11-4"><a href="#cb11-4"></a>                     <span class="at">size =</span> pop,</span>
+<span id="cb11-5"><a href="#cb11-5"></a>                     <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-7"><a href="#cb11-7"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
+<span id="cb11-8"><a href="#cb11-8"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="lec-02-visualisation_files/figure-revealjs/scatterplot-gdp-lifeExp-1.png" width="576" class="r-stretch"></section>
+<section id="your-turn-md-02-exercises" class="slide level2">
+<h2>Your turn: md-02-exercises</h2>
+<div class="task">
+<ol type="1">
+<li>Open <a href="https://posit.cloud">posit.cloud</a> in your browser (use your bookmark).</li>
+<li>Open the <span class="highlight-yellow">ds4owd workspace</span> for the course.</li>
+<li>In the File Manager in the bottom right window, locate the <span class="highlight-yellow"><code>md-02c-make-a-plot.qmd</code></span> file and click on it to open it in the top left window.</li>
+<li>Follow instructions in the file</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_69411ad8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
 </section></section>
 <section>
-<section id="data-collection-tools" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Data Collection Tools</h1>
+<section id="homework-assignments-module-2" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Homework assignments module 2</h1>
 
 </section>
-<section id="data-collection-tools-1" class="slide level2">
-<h2>Data Collection Tools</h2>
+<section id="module-2-documentation" class="slide level2">
+<h2>Module 2 documentation</h2>
+<div class="learn-more">
+<p><a href="https://ds4owd-001.github.io/website/modules/md-02.html">ds4owd-001.github.io/website/modules/md-02.html</a></p>
+<iframe src="https://ds4owd-001.github.io/website/modules/md-02.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 2 documentation"></iframe>
+</div>
+</section>
+<section id="homework-due-date" class="slide level2">
+<h2>Homework due date</h2>
 <ul>
-<li>Questionnaires for survey based data</li>
-<li>Spreadsheets for manual experimental/observational data</li>
-<li>Sensors for automated near real-time data</li>
-</ul>
-</section>
-<section id="survey-tools" class="slide level2">
-<h2>Survey tools</h2>
-<p><strong>Commonly used in the Global Engineering and Development sector</strong></p>
-<ul>
-<li>KOBO Toolbox</li>
-<li>mWater</li>
-<li>OpenDataKit</li>
-</ul>
-</section>
-<section id="data-organisation-in-spreadsheets" class="slide level2">
-<h2>Data Organisation in Spreadsheets</h2>
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="img/lec-02/data-org-paper.png" width="782"></p>
-</div>
-</div>
-
-<aside><div>
-<p>Jorunal: The American Statistician, <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989?src=">Screenshot taken on 2022-03-23</a></p>
-</div></aside></section>
-<section id="data-organisation-in-spreadsheets-1" class="slide level2">
-<h2>Data Organisation in Spreadsheets</h2>
-<p>Read the paper (it’s part of your homework), but you can also:</p>
-<ul>
-<li>Go through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf</li>
-<li>Watch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156</li>
-<li>Read the content on a website: https://kbroman.org/dataorg/</li>
-</ul>
-</section>
-<section id="but-especially-apply-it-to-your-data" class="slide level2">
-<h2>But, especially apply it to your data</h2>
-<div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-<iframe src="https://giphy.com/embed/UEGwYCVTBFa9tJEf66" width="50%" height="50%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen="">
-</iframe>
-</div>
-<p>
-<a href="https://giphy.com/gifs/rainbow-computer-data-UEGwYCVTBFa9tJEf66">via GIPHY</a>
-</p>
-</section>
-<section id="why" class="slide level2">
-<h2>Why?</h2>
-<p><strong>Because it will make your life easier!</strong></p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="img/lec-02/data-org-views.png" style="width:75.0%"></p>
-</div>
-</div>
-
-<aside><div>
-<p>Jorunal: The American Statistician, <a href="https://www.tandfonline.com/toc/utas20/current#b7689c1d-7975-46ed-aaf9-3a2939834054-b6de7b7c-de82-45a5-9538-313dd15c6659">Screenshot taken on 2022-07-11</a>]</p>
-</div></aside></section>
-<section id="license-cc0" class="slide level2">
-<h2>License? CC0 (!)</h2>
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="img/lec-02/data-org-license.png" style="width:75.0%"></p>
-</div>
-</div>
-
-<aside><div>
-<p>Karl Broman, GitHub repo broman/Talk_DataOrg, <a href="https://github.com/kbroman/Talk_DataOrg">Screenshot taken on 2022-03-23</a></p>
-</div></aside></section></section>
-<section>
-<section id="homework-week-2" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Homework week 2</h1>
-
-</section>
-<section id="bring-your-own-data" class="slide level2">
-<h2>Bring your own data</h2>
-<ul>
-<li>Generate data doing a short survey or observational study<br>
-</li>
-<li>Find a data online that interests you</li>
-<li>Use a dataset that you already have available</li>
-</ul>
-</section>
-<section id="homework-due-dates" class="slide level2">
-<h2>Homework due dates</h2>
-<ul>
-<li>All material on <a href="https://cven5873-ss23.github.io/website/weeks/wk-02.html">course website</a></li>
-<li>Homework assignment &amp; learning reflection due: <strong>Friday, June 23th</strong></li>
+<li>Homework assignment due: <span class="highlight-yellow">Monday, November 13th</span></li>
+<li>Correction &amp; feedback phase up to: Thursday, November 16th</li>
 </ul>
 </section></section>
 <section>
-<section id="thanks" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Thanks! 🌻</h1>
+<section id="wrap-up" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Wrap-up</h1>
 
 </section>
-<section id="section-23" class="slide level2">
-<h2></h2>
-<p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/cven5873-ss23/website/raw/main/slides/lec-02-visualiation.pdf">PDF on GitHub</a></p>
+<section id="thanks" class="slide level2">
+<h2>Thanks! 🌻</h2>
+<p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/ds4owd-001/website/raw/main/slides/lec-01-welcome.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 

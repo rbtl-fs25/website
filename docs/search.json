@@ -900,7 +900,7 @@
     "href": "slides/lec-02-visualisation.html#other-sources-for-help",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Other sources for help",
-    "text": "Other sources for help\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDocumentation websites: https://dplyr.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Discussion: https://github.com/quarto-dev/quarto-cli/discussions"
+    "text": "Other sources for help\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDocumentation websites: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Discussion: https://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
@@ -1061,7 +1061,7 @@
     "href": "slides/lec-02-visualisation.html#code-structure",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
-    "text": "Code structure\n\nggplot() is the main function in ggplot2\nPlots are constructed in layers\nStructure of the code for plots can be summarized as\n\n\nggplot(data = [dataset], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n   geom_xxx() +\n   other options"
+    "text": "Code structure\n\nggplot() is the main function in ggplot2\nPlots are constructed in layers\nStructure of the code for plots can be summarized as\n\n\nggplot(data = [dataset], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n  geom_xxx() +\n  other options"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-1",
@@ -1075,42 +1075,42 @@
     "href": "slides/lec-02-visualisation.html#code-structure-2",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007)"
+    "text": "Code structure\n\nggplot(data = gapminder)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-3",
     "href": "slides/lec-02-visualisation.html#code-structure-3",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes())"
+    "text": "Code structure\n\nggplot(data = gapminder,\n       mapping = aes())"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-4",
     "href": "slides/lec-02-visualisation.html#code-structure-4",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
+    "text": "Code structure\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-5",
     "href": "slides/lec-02-visualisation.html#code-structure-5",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
+    "text": "Code structure\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-6",
     "href": "slides/lec-02-visualisation.html#code-structure-6",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
+    "text": "Code structure\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure-7",
     "href": "slides/lec-02-visualisation.html#code-structure-7",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Code structure",
-    "text": "Code structure\n\nggplot(data = gapminder_yr_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
+    "text": "Code structure\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
@@ -2062,6 +2062,230 @@
     "href": "slides/lec-02-visualisation.html#tipps-for-ai-tools",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Tipps for AI tools",
-    "text": "Tipps for AI tools\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\nScroll through the top 5 results (don’t just pick the first)\n\nExample: “How to remove a legend from a plot in R ggplot2”"
+    "text": "Tipps for AI tools\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\n\nExample: “How to remove a legend from a plot in R ggplot2”"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#module-2-documentation",
+    "href": "slides/lec-02-visualisation.html#module-2-documentation",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Module 2 documentation",
+    "text": "Module 2 documentation\n\nds4owd-001.github.io/website/modules/md-02.html"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#homework-due-date",
+    "href": "slides/lec-02-visualisation.html#homework-due-date",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, November 13th\nCorrection & feedback phase up to: Thursday, November 16th"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#thanks",
+    "href": "slides/lec-02-visualisation.html#thanks",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#polls",
+    "href": "slides/lec-02-visualisation.html#polls",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Polls",
+    "text": "Polls\n\n\nPoll 1: What does the thick line inside the box of a boxplot represent?\n\nthe mean of all observations\nthe middle of the box\nthe median of all observations\nnone of the above\n\n\n\n\n\n\n\n\n\n\nWhat does the thick line inside the box of a boxplot represent?\nHow many observations of the total number of observations are contained inside the box?\nHow is the line (whisker) outside the box calculated?"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#boxplot",
+    "href": "slides/lec-02-visualisation.html#boxplot",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Boxplot",
+    "text": "Boxplot"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#histogram",
+    "href": "slides/lec-02-visualisation.html#histogram",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Histogram",
+    "text": "Histogram\n\nfor visualizing distribution of continuous (numerical) variables\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#barplot",
+    "href": "slides/lec-02-visualisation.html#barplot",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Barplot",
+    "text": "Barplot\n\nfor visualizing distribution of categorical (non-numerical) variables\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#scatterplot",
+    "href": "slides/lec-02-visualisation.html#scatterplot",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Scatterplot",
+    "text": "Scatterplot\n\nfor visualising relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#data---polls",
+    "href": "slides/lec-02-visualisation.html#data---polls",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Data - Polls",
+    "text": "Data - Polls\n\nWhat type of variable is the number of students in this class?"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#my-turn-a-tour-of-ggplot2",
+    "href": "slides/lec-02-visualisation.html#my-turn-a-tour-of-ggplot2",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "My turn: A tour of ggplot2",
+    "text": "My turn: A tour of ggplot2\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent",
+    "href": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 1: What does the thick line inside the box of a boxplot represent?",
+    "text": "Poll 1: What does the thick line inside the box of a boxplot represent?\n\n\n\nthe mean of the observations\nthe middle of the box\nthe median of the observations\nnone of the above"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-2-how-many-observations-of-the-total-number-of-observations-are-contained-inside-the-box",
+    "href": "slides/lec-02-visualisation.html#poll-2-how-many-observations-of-the-total-number-of-observations-are-contained-inside-the-box",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 2: How many observations of the total number of observations are contained inside the box?",
+    "text": "Poll 2: How many observations of the total number of observations are contained inside the box?\n\n\n\nthe mean of the observations\nthe middle of the box\nthe median of the observations\nnone of the above\n\n\n\n\n\n\n\n\n\n\nWhat does the thick line inside the box of a boxplot represent?\nHow many observations of the total number of observations are contained inside the box?\nHow is the line (whisker) outside the box calculated?"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent-1",
+    "href": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent-1",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 1: What does the thick line inside the box of a boxplot represent?",
+    "text": "Poll 1: What does the thick line inside the box of a boxplot represent?\n\n\n\nthe mean of the observations\nthe middle of the box\nthe median of the observations\nnone of the above"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-2-what-is-the-median",
+    "href": "slides/lec-02-visualisation.html#poll-2-what-is-the-median",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 2: What is the median?",
+    "text": "Poll 2: What is the median?"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-number-of-observations",
+    "href": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-number-of-observations",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 2: What is the median of a number of observations?",
+    "text": "Poll 2: What is the median of a number of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-set-of-observations",
+    "href": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-set-of-observations",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 2: What is the median of a set of observations?",
+    "text": "Poll 2: What is the median of a set of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations",
+    "href": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 3: What is the median of a set of observations?",
+    "text": "Poll 3: What is the median of a set of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box",
+    "href": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 2: What percentage of observations are contained inside the box?",
+    "text": "Poll 2: What percentage of observations are contained inside the box?\n\n\n\n25%\ndepends on the median\n50%\nnone of the above"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-1",
+    "href": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-1",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 3: What is the median of a set of observations?",
+    "text": "Poll 3: What is the median of a set of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-2",
+    "href": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-2",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 3: What is the median of a set of observations?",
+    "text": "Poll 3: What is the median of a set of observations?\nIf I have the values: 1, 2, 3, and 10: which statistical measure best represents the true value?\n\nThe mean\nThe standard deviation\nThe median\nThe interquartile range"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot",
+    "href": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 2: What percentage of observations are contained inside the box of a boxplot?",
+    "text": "Poll 2: What percentage of observations are contained inside the box of a boxplot?\n\n\n\n25%\ndepends on the median\n50%\nnone of the above"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-4-if-you-have-the-values-1-2-3-and-10-which-statistical-measure-best-represents-the-true-value",
+    "href": "slides/lec-02-visualisation.html#poll-4-if-you-have-the-values-1-2-3-and-10-which-statistical-measure-best-represents-the-true-value",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the “true” value?",
+    "text": "Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the “true” value?\n\nThe mean\nThe standard deviation\nThe median\nThe interquartile range"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot-interquartile-range",
+    "href": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot-interquartile-range",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 2: What percentage of observations are contained inside the box of a boxplot (interquartile range)?",
+    "text": "Poll 2: What percentage of observations are contained inside the box of a boxplot (interquartile range)?\n\n\n\n25%\ndepends on the median\n50%\nnone of the above"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#boxplot-explained",
+    "href": "slides/lec-02-visualisation.html#boxplot-explained",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Boxplot, explained",
+    "text": "Boxplot, explained\n\nFigure 1: Diagram depicting how a boxplot is created.\nImage taken from: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nA box that indicates the range of the middle half of the data, a distance known as the interquartile range (IQR), stretching from the 25th percentile of the distribution to the 75th percentile.\nIn the middle of the box is a line that displays the median, i.e. 50th percentile, of the distribution.\nThese three lines give you a sense of the spread of the distribution and whether or not the distribution is symmetric about the median or skewed to one side.\nVisual points that display observations that fall more than 1.5 times the IQR from either edge of the box. These outlying points are unusual so are plotted individually.\nA line (or whisker) that extends from each end of the box and goes to the farthest non-outlier point in the distribution."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#our-turn-configure-notifications-settings",
+    "href": "slides/lec-02-visualisation.html#our-turn-configure-notifications-settings",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Our turn: Configure Notifications settings",
+    "text": "Our turn: Configure Notifications settings\n\n\nOpen posit.cloud\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#our-turn-md-02-exercises",
+    "href": "slides/lec-02-visualisation.html#our-turn-md-02-exercises",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Our turn: md-02-exercises",
+    "text": "Our turn: md-02-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-02-exercises.\nIn the File Manager in the bottom right window, locate the md-02b-data-visualization.qmd file and click on it to open it in the top left window.\n\n\n\n\n\n−+\n30:00"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#my-turn-working-with-r",
+    "href": "slides/lec-02-visualisation.html#my-turn-working-with-r",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "My turn: Working with R",
+    "text": "My turn: Working with R\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#scatterplot-output",
+    "href": "slides/lec-02-visualisation.html#scatterplot-output",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Scatterplot",
+    "text": "Scatterplot"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#your-turn-md-02-exercises",
+    "href": "slides/lec-02-visualisation.html#your-turn-md-02-exercises",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Your turn: md-02-exercises",
+    "text": "Your turn: md-02-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-02c-make-a-plot.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#how-do-i-successfully-complete-the-course",
+    "href": "slides/lec-02-visualisation.html#how-do-i-successfully-complete-the-course",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "How do I successfully complete the course?",
+    "text": "How do I successfully complete the course?\nYou successfully complete the course and will receive a certificate of completion if you:\nhand in a complete capstone project report that uses a dataset of your choice by 30 January 2024 (instructions will follow)\nThis is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#fa-circle-question",
+    "href": "slides/lec-02-visualisation.html#fa-circle-question",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "",
+    "text": "Q: How do I successfully complete the course?\n\nYou successfully complete the course and you will receive a certificate of completion if you:\nhand in a complete capstone project report that uses a dataset of your choice by 30 January 2024 (instructions will follow)\nThis is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#tipps-for-ai-tools-search-engines",
+    "href": "slides/lec-02-visualisation.html#tipps-for-ai-tools-search-engines",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Tipps for AI tools & search engines",
+    "text": "Tipps for AI tools & search engines\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\n\nExample: “How to remove a legend from a plot in R ggplot2”"
   }
 ]
