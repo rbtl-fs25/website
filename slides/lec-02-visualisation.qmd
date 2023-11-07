@@ -175,15 +175,9 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 ## on Posit Cloud
 
 ::: learn-more
-[posit.cloud/spaces/426916/content/](https://posit.cloud/spaces/426916/content/)
-
 ![](img/lec-02/posit-cloud-project-link.png)
 
 :::
-
-## command: `git clone`  
-
-![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.001.png)
 
 # Version Control - Terminology {background-color="#4C326A"}
 
@@ -328,12 +322,12 @@ Together, tidying and transforming are called wrangling, because getting your da
 
 1. Once you have tidy data with the variables you need, there are two main engines of knowledge generation: 
 
-- visualisation 
+- visualization 
 - and modelling. 
 
 2. These have complementary strengths and weaknesses so any real analysis will iterate between them many times.
 
-3. Visualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data.
+3. Visualization is a fundamentally human activity. A good visualization will show you things that you did not expect, or raise new questions about the data.
 
 :::
 
@@ -341,7 +335,7 @@ Together, tidying and transforming are called wrangling, because getting your da
 
 ::: {.notes}
 
-1. Models are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.
+1. Models are complementary tools to visualization. Once you have made your questions sufficiently precise, you can use a model to answer them.
 
 2. In my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage.
 
@@ -353,7 +347,7 @@ Together, tidying and transforming are called wrangling, because getting your da
 
 1. The last step of data science is communication, an absolutely critical part of any data analysis project. 
 
-2. It doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.
+2. It doesn’t matter how well your models and visualization have led you to understand the data, unless you can also communicate your results to others.
 
 3. And this is a part where R has become really strong.
 
@@ -401,6 +395,20 @@ Slide adapted from datasciencebox.org
 Sit back and enjoy!
 :::
 
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-02/emails-rest-in-peace.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
 ## Code structure
 
 - `ggplot()` is the main function in ggplot2
@@ -422,6 +430,8 @@ ggplot(data = [dataset],
 
 ```{r}
 #| echo: true
+#| fig-width: 7
+#| fig-asp: 0.618
 ggplot()
 ```
 
@@ -429,6 +439,8 @@ ggplot()
 
 ```{r}
 #| echo: true
+#| fig-width: 7
+#| fig-asp: 0.618
 ggplot(data = gapminder)
 ```
 
@@ -436,6 +448,8 @@ ggplot(data = gapminder)
 
 ```{r}
 #| echo: true
+#| fig-width: 7
+#| fig-asp: 0.618
 ggplot(data = gapminder,
        mapping = aes()) 
 
@@ -445,6 +459,8 @@ ggplot(data = gapminder,
 
 ```{r}
 #| echo: true
+#| fig-width: 7
+#| fig-asp: 0.618
 ggplot(data = gapminder,
        mapping = aes(x = continent,
                      y = lifeExp))  
@@ -455,6 +471,8 @@ ggplot(data = gapminder,
 
 ```{r}
 #| echo: true
+#| fig-width: 7
+#| fig-asp: 0.618
 ggplot(data = gapminder,
        mapping = aes(x = continent,
                      y = lifeExp)) +
@@ -466,6 +484,8 @@ ggplot(data = gapminder,
 
 ```{r}
 #| echo: true
+#| fig-width: 7
+#| fig-asp: 0.618
 ggplot(data = gapminder,
        mapping = aes(x = continent,
                      y = lifeExp)) +
@@ -473,19 +493,6 @@ ggplot(data = gapminder,
   theme_minimal()
 
 ```
-
-## Code structure {auto-animate="true"}
-
-```{r}
-#| echo: true
-ggplot(data = gapminder,
-       mapping = aes(x = continent,
-                     y = lifeExp)) +
-  geom_boxplot() +
-  theme_minimal(base_size = 14)
-
-```
-
 
 # Polls {background-color="#4C326A"}
 
@@ -601,7 +608,7 @@ Image taken from: <https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot>
 countdown(30)
 ```
 
-# Visualising data {background-color="#4C326A"}
+# Visualizing data {background-color="#4C326A"}
 
 ## Types of variables 
 
@@ -675,7 +682,7 @@ ggplot(data = penguins,
 
 ## Scatterplot {.smallest}
 
-- for visualising relationships between two continuous (numerical) variables
+- for visualizing relationships between two continuous (numerical) variables
 
 ```{r}
 #| label: scatterplot-gdp-lifeExp

@@ -1,0 +1,69 @@
+- ## Part 1 (47)
+    - ### Course completion (5)
+        - Late start: 5 minutes
+    - ### R Rollercoaster (1)
+    - ### Solving coding problems (7)
+        - Tipps for search engines (1)
+        - Stack Overflow (1)
+        - Tipps for AI tools (1)
+        - perplexity.ai (2)
+            - How to remove a legend from a plot in R ggplot2
+        - Other sources for help (1)
+        - Trampolin (1)
+    - ### Homework assignment module 1 (3)
+        - on your repository (1)
+        - on Posit Cloud (1)
+        - screenshot: git clone (1)
+    - ### Version Control - Terminology (8)
+        - 21 screenshots (8) 
+    - ### Learning Objectives (1)
+    - ### Data Science Lifecycle (7)
+        - Screenshots (7)
+    - ### Exploratory Data Analysis with ggplot2 (15)
+        - R Package ggplot2 (2)
+        - **My turn: Working with R** (13)
+            - Head to posit.cloud (2)
+                - Open the Contents in the workspace for the course
+                - Click Start
+            - Re-iterate the different windows (1)
+            - Open: working-with-R (10)
+                - Highlight that we are working in visual editing mode
+                - Import
+                    - Add code chunk
+                    - Load ggplot2, dplyr, gapminder
+                - Explore
+                    - Add code chunk
+                    - head, tail, glimpse, str, nrow, ncol
+                    - View(gapminder) in Console
+                - Transform - narrow down
+                    - Native pipe operator
+                        - Tools > Global Options > Code > Use native pipe operator
+                    - Add code chunk
+                        - filter for year 2007
+                        - Keyboard shortcut for pipe operator: Ctrl / Cmd + Shift + M 
+                        - Keyboard shortcut for assignment operator: Alt + -
+                        - New object
+                - Visualize
+                    - Highlight eval: false
+                    - Fill in gaps
+                    - Run code-chunk
+- ## Break (10)
+- ## Part 2 (50)
+    - ### Code structure (5)
+    - ### Polls (8)
+    - ### Boxplot, explained (2)
+    - ### **Our turn: md-02-data-visualisation** (35)
+- ## Break (10)
+- ## Part 3 (26)
+    - ### Visualising data (8)
+        - Types of variables (3)
+        - Histogram (2)
+        - Barplot (1)
+        - Scatterplot(2)
+    - ### **Your turn: md-02c-make-a-plot.qmd** (15)
+    - ### Homework assignments module 2 (2)
+        - Website
+        - Homework due date
+    - ### Wrap-up (1)
+        - Thanjs
+- ##  

@@ -530,14 +530,9 @@ Lars Schöbitz
 <section id="on-posit-cloud-1" class="slide level2">
 <h2>on Posit Cloud</h2>
 <div class="learn-more">
-<p><a href="https://posit.cloud/spaces/426916/content/">posit.cloud/spaces/426916/content/</a></p>
 <p><img data-src="img/lec-02/posit-cloud-project-link.png"></p>
 </div>
-</section>
-<section id="command-git-clone" class="slide level2">
-<h2>command: <code>git clone</code></h2>
-
-<img data-src="img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.001.png" class="r-stretch"></section></section>
+</section></section>
 <section>
 <section id="version-control---terminology" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Version Control - Terminology</h1>
@@ -737,12 +732,12 @@ Lars Schöbitz
 <li>Once you have tidy data with the variables you need, there are two main engines of knowledge generation:</li>
 </ol>
 <ul>
-<li>visualisation</li>
+<li>visualization</li>
 <li>and modelling.</li>
 </ul>
 <ol start="2" type="1">
 <li><p>These have complementary strengths and weaknesses so any real analysis will iterate between them many times.</p></li>
-<li><p>Visualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data.</p></li>
+<li><p>Visualization is a fundamentally human activity. A good visualization will show you things that you did not expect, or raise new questions about the data.</p></li>
 </ol>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -760,7 +755,7 @@ Lars Schöbitz
 <h2>-</h2>
 <aside class="notes">
 <ol type="1">
-<li><p>Models are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.</p></li>
+<li><p>Models are complementary tools to visualization. Once you have made your questions sufficiently precise, you can use a model to answer them.</p></li>
 <li><p>In my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage.</p></li>
 </ol>
 <style type="text/css">
@@ -780,7 +775,7 @@ Lars Schöbitz
 <aside class="notes">
 <ol type="1">
 <li><p>The last step of data science is communication, an absolutely critical part of any data analysis project.</p></li>
-<li><p>It doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.</p></li>
+<li><p>It doesn’t matter how well your models and visualization have led you to understand the data, unless you can also communicate your results to others.</p></li>
 <li><p>And this is a part where R has become really strong.</p></li>
 </ol>
 <style type="text/css">
@@ -826,6 +821,22 @@ Lars Schöbitz
 <p>Sit back and enjoy!</p>
 </div>
 </section>
+<section id="take-a-break" class="slide level2">
+<h2>Take a break</h2>
+<p><span class="highlight-yellow">Please get up and move!</span> Let your emails rest in peace.</p>
+
+<img data-src="img/lec-02/emails-rest-in-peace.png" style="width:50.0%" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_b0770c59" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Image generated with <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
+</div>
+</section>
 <section id="code-structure" class="slide level2">
 <h2>Code structure</h2>
 <ul>
@@ -843,48 +854,48 @@ Lars Schöbitz
 </section>
 <section id="code-structure-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
-<div class="cell">
+<div class="cell" data-fig.asp="0.618">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-8-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
-<div class="cell">
+<div class="cell" data-fig.asp="0.618">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-9-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
-<div class="cell">
+<div class="cell" data-fig.asp="0.618">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-10-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
-<div class="cell">
+<div class="cell" data-fig.asp="0.618">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-11-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
-<div class="cell">
+<div class="cell" data-fig.asp="0.618">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
 <span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-12-1.png" width="672" class="r-stretch"></section>
 <section id="code-structure-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code structure</h2>
-<div class="cell">
+<div class="cell" data-fig.asp="0.618">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
 <span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
 <span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
@@ -892,18 +903,7 @@ Lars Schöbitz
 <span id="cb7-5" class="hljs-ln-code"><a href="#cb7-5"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
-<section id="code-structure-7" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Code structure</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
-<span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
-<span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb8-5" class="hljs-ln-code"><a href="#cb8-5"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="lec-02-visualisation_files/figure-revealjs/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section></section>
 <section>
 <section id="polls" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Polls</h1>
@@ -1003,7 +1003,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_353006fe" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_9c855a45" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1011,8 +1011,8 @@ Lars Schöbitz
 </div>
 </section></section>
 <section>
-<section id="visualising-data" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Visualising data</h1>
+<section id="visualizing-data" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Visualizing data</h1>
 
 </section>
 <section id="types-of-variables" class="slide level2">
@@ -1051,9 +1051,9 @@ Lars Schöbitz
 <li>for visualizing distribution of continuous (numerical) variables</li>
 </ul>
 <div class="cell" data-fig.asp="0.618">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
-<span id="cb9-2"><a href="#cb9-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g)) <span class="sc">+</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb8-2"><a href="#cb8-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g)) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-02-visualisation_files/figure-revealjs/histogram-penguins-1.png" width="576" class="r-stretch"></section>
@@ -1063,26 +1063,26 @@ Lars Schöbitz
 <li>for visualizing distribution of categorical (non-numerical) variables</li>
 </ul>
 <div class="cell" data-fig.asp="0.618">
-<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
-<span id="cb10-2"><a href="#cb10-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
-<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb9-2"><a href="#cb9-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-02-visualisation_files/figure-revealjs/barplot-penguins-1.png" width="576" class="r-stretch"></section>
 <section id="scatterplot" class="slide level2 smallest">
 <h2>Scatterplot</h2>
 <ul>
-<li>for visualising relationships between two continuous (numerical) variables</li>
+<li>for visualizing relationships between two continuous (numerical) variables</li>
 </ul>
 <div class="cell" data-fig.asp="0.618">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
-<span id="cb11-2"><a href="#cb11-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap,</span>
-<span id="cb11-3"><a href="#cb11-3"></a>                     <span class="at">y =</span> lifeExp,</span>
-<span id="cb11-4"><a href="#cb11-4"></a>                     <span class="at">size =</span> pop,</span>
-<span id="cb11-5"><a href="#cb11-5"></a>                     <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb11-7"><a href="#cb11-7"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
-<span id="cb11-8"><a href="#cb11-8"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
+<span id="cb10-2"><a href="#cb10-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap,</span>
+<span id="cb10-3"><a href="#cb10-3"></a>                     <span class="at">y =</span> lifeExp,</span>
+<span id="cb10-4"><a href="#cb10-4"></a>                     <span class="at">size =</span> pop,</span>
+<span id="cb10-5"><a href="#cb10-5"></a>                     <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-02-visualisation_files/figure-revealjs/scatterplot-gdp-lifeExp-1.png" width="576" class="r-stretch"></section>
@@ -1098,7 +1098,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_69411ad8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_72ac0ccd" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
