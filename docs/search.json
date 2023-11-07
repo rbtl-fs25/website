@@ -791,11 +791,32 @@
     "text": "Step 3: Download Element (optional)\n\nDownload and install Element: https://element.io/download\n\nIt’s available on Windows, Linux and Mac OS, as well as Android and iPhone.\n\nOpen the Element App on your device\nClick on Sign In\nSign in with GitHub\nClick on Verify with Security Key\n\n 6. Copy/paste the Security key from the downloaded security-key.txt you received when setting up the app in your browser. And hit Continue.\n\n\n\n\n\n\nI cannot click Continue\n\n\n\n\n\nIf a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.\n\n\n\n 7. You have successfully verified your device"
   },
   {
-    "objectID": "assignments/md-02/am-02-1-reading.html",
-    "href": "assignments/md-02/am-02-1-reading.html",
-    "title": "Module 2 - Assignment 1",
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html",
+    "title": "Data visualisation with ggplot2",
     "section": "",
-    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
+    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-1-clone-your-module-2-assignments-repository",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-1-clone-your-module-2-assignments-repository",
+    "title": "Data visualisation with ggplot2",
+    "section": "Step 1: Clone your module 2 assignments repository",
+    "text": "Step 1: Clone your module 2 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-02-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-02a-data-visualization.qmd and follow the instructions to work through the tasks."
+  },
+  {
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-2-commit-and-push-your-changes",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-2-commit-and-push-your-changes",
+    "title": "Data visualisation with ggplot2",
+    "section": "Step 2: Commit and push your changes",
+    "text": "Step 2: Commit and push your changes\nThe below is also described as Task 14 in md-02a-data-visualization.qmd\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage then it for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-3-open-an-issue-on-github",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-3-open-an-issue-on-github",
+    "title": "Data visualisation with ggplot2",
+    "section": "Step 3: Open an issue on GitHub",
+    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-02-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
   },
   {
     "objectID": "LICENSE.html",
@@ -803,6 +824,13 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-1-reading.html",
+    "href": "assignments/md-03/am-03-1-reading.html",
+    "title": "Module 2 - Assignment 1",
+    "section": "",
+    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
   },
   {
     "objectID": "assignments/md-01/am-01-1-posit.html",
@@ -854,6 +882,13 @@
     "text": "Step 5: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
   },
   {
+    "objectID": "slides/lec-02-visualisation.html#fa-circle-question",
+    "href": "slides/lec-02-visualisation.html#fa-circle-question",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "",
+    "text": "Q: How do I successfully complete the course?\n\nYou successfully complete the course and you will receive a certificate of completion if you:\nhand in a complete capstone project report that uses a dataset of your choice by 30 January 2024 (instructions will follow)\nThis is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed."
+  },
+  {
     "objectID": "slides/lec-02-visualisation.html#section",
     "href": "slides/lec-02-visualisation.html#section",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
@@ -875,25 +910,11 @@
     "text": "Stack Overflow\n\n\n\nWhat is it?\n\nThe biggest support network for (coding) problems\nCan be intimidating at first\nUp-vote system\n\n\n\n\nWorkflow\n\nFirst, briefly read the question that was posted\nThen, read the answer marked as “correct”\nThen, read one or two more answers with high votes\nThen, check out the “Linked” posts\nAlways give credit for the solution"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#give-credit",
-    "href": "slides/lec-02-visualisation.html#give-credit",
+    "objectID": "slides/lec-02-visualisation.html#tipps-for-ai-tools",
+    "href": "slides/lec-02-visualisation.html#tipps-for-ai-tools",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Give credit",
-    "text": "Give credit"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#give-credit-1",
-    "href": "slides/lec-02-visualisation.html#give-credit-1",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Give credit",
-    "text": "Give credit"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#give-credit-2",
-    "href": "slides/lec-02-visualisation.html#give-credit-2",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Give credit",
-    "text": "Give credit\n\nggplot(data = global_waste_data_kg_year,\n       mapping = aes(x = income_id, \n                     y = capita_kg_year,\n                     color = income_id)) +\n  ## Remove legend ref: https://stackoverflow.com/a/35622358/6816220\n  theme(legend.position = \"none\")"
+    "section": "Tipps for AI tools",
+    "text": "Tipps for AI tools\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\n\nExample: “How to remove a legend from a plot in R ggplot2”"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#other-sources-for-help",
@@ -903,13 +924,6 @@
     "text": "Other sources for help\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDocumentation websites: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Discussion: https://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
-    "href": "slides/lec-02-visualisation.html#minimal-reproducible-example-reprex",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Minimal reproducible example (reprex)",
-    "text": "Minimal reproducible example (reprex)\n\nNeeded when asking questions online\nGood support information: https://www.tidyverse.org/help/#reprex"
-  },
-  {
     "objectID": "slides/lec-02-visualisation.html#section-1",
     "href": "slides/lec-02-visualisation.html#section-1",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
@@ -917,11 +931,123 @@
     "text": "Artwork by @allison_horst"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#remember-git-clone",
-    "href": "slides/lec-02-visualisation.html#remember-git-clone",
+    "objectID": "slides/lec-02-visualisation.html#on-github-organisation",
+    "href": "slides/lec-02-visualisation.html#on-github-organisation",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "remember: git clone",
-    "text": "remember: git clone\n ## Version Control - Terminology"
+    "section": "on GitHub Organisation",
+    "text": "on GitHub Organisation\nBookmark this link in your browser!\n\ngithub.com/ds4owd-001"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-your-repository",
+    "href": "slides/lec-02-visualisation.html#on-your-repository",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on your repository",
+    "text": "on your repository"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-posit-cloud",
+    "href": "slides/lec-02-visualisation.html#on-posit-cloud",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on Posit Cloud",
+    "text": "on Posit Cloud\nBookmark this link in your browser!\n\nposit.cloud/spaces/426916/content/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#on-posit-cloud-1",
+    "href": "slides/lec-02-visualisation.html#on-posit-cloud-1",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "on Posit Cloud",
+    "text": "on Posit Cloud\n\nposit.cloud/spaces/426916/content/"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#command-git-clone",
+    "href": "slides/lec-02-visualisation.html#command-git-clone",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "command: git clone",
+    "text": "command: git clone"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-2",
+    "href": "slides/lec-02-visualisation.html#section-2",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-3",
+    "href": "slides/lec-02-visualisation.html#section-3",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-4",
+    "href": "slides/lec-02-visualisation.html#section-4",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-5",
+    "href": "slides/lec-02-visualisation.html#section-5",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-6",
+    "href": "slides/lec-02-visualisation.html#section-6",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-7",
+    "href": "slides/lec-02-visualisation.html#section-7",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-8",
+    "href": "slides/lec-02-visualisation.html#section-8",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-9",
+    "href": "slides/lec-02-visualisation.html#section-9",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-10",
+    "href": "slides/lec-02-visualisation.html#section-10",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-11",
+    "href": "slides/lec-02-visualisation.html#section-11",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-12",
+    "href": "slides/lec-02-visualisation.html#section-12",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#section-13",
+    "href": "slides/lec-02-visualisation.html#section-13",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "-",
+    "text": "-"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#remember-git-commit",
@@ -1001,53 +1127,53 @@
     "text": "Deep End\n\n\n\n\n\nvia GIPHY"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-2",
-    "href": "slides/lec-02-visualisation.html#section-2",
+    "objectID": "slides/lec-02-visualisation.html#section-14",
+    "href": "slides/lec-02-visualisation.html#section-14",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-"
+    "text": "-\n\nAdd notes"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-3",
-    "href": "slides/lec-02-visualisation.html#section-3",
+    "objectID": "slides/lec-02-visualisation.html#section-15",
+    "href": "slides/lec-02-visualisation.html#section-15",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-4",
-    "href": "slides/lec-02-visualisation.html#section-4",
+    "objectID": "slides/lec-02-visualisation.html#section-16",
+    "href": "slides/lec-02-visualisation.html#section-16",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-5",
-    "href": "slides/lec-02-visualisation.html#section-5",
+    "objectID": "slides/lec-02-visualisation.html#section-17",
+    "href": "slides/lec-02-visualisation.html#section-17",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-6",
-    "href": "slides/lec-02-visualisation.html#section-6",
+    "objectID": "slides/lec-02-visualisation.html#section-18",
+    "href": "slides/lec-02-visualisation.html#section-18",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-7",
-    "href": "slides/lec-02-visualisation.html#section-7",
+    "objectID": "slides/lec-02-visualisation.html#section-19",
+    "href": "slides/lec-02-visualisation.html#section-19",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-8",
-    "href": "slides/lec-02-visualisation.html#section-8",
+    "objectID": "slides/lec-02-visualisation.html#section-20",
+    "href": "slides/lec-02-visualisation.html#section-20",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "-",
-    "text": "-"
+    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#r-package-ggplot2",
@@ -1055,6 +1181,13 @@
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "R Package ggplot2",
     "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#my-turn-working-with-r",
+    "href": "slides/lec-02-visualisation.html#my-turn-working-with-r",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "My turn: Working with R",
+    "text": "My turn: Working with R\n\n\nSit back and enjoy!"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#code-structure",
@@ -1113,18 +1246,46 @@
     "text": "Code structure\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
-    "href": "slides/lec-02-visualisation.html#live-02a-data-visualiation",
+    "objectID": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent",
+    "href": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "live-02a-data-visualiation",
-    "text": "live-02a-data-visualiation\n\nHead over to rstudio.cloud\nOpen the workspace for the course (cven5837-ss22)\nOpen “Projects”\nOpen the “course-materials” project\nFollow along with me"
+    "section": "Poll 1: What does the thick line inside the box of a boxplot represent?",
+    "text": "Poll 1: What does the thick line inside the box of a boxplot represent?\n\n\n\nthe mean of the observations\nthe middle of the box\nthe median of the observations\nnone of the above"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#break",
-    "href": "slides/lec-02-visualisation.html#break",
+    "objectID": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot-interquartile-range",
+    "href": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot-interquartile-range",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Break",
-    "text": "Break\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "section": "Poll 2: What percentage of observations are contained inside the box of a boxplot (interquartile range)?",
+    "text": "Poll 2: What percentage of observations are contained inside the box of a boxplot (interquartile range)?\n\n\n\n25%\ndepends on the median\n50%\nnone of the above"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations",
+    "href": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 3: What is the median of a set of observations?",
+    "text": "Poll 3: What is the median of a set of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#poll-4-if-you-have-the-values-1-2-3-and-10-which-statistical-measure-best-represents-the-true-value",
+    "href": "slides/lec-02-visualisation.html#poll-4-if-you-have-the-values-1-2-3-and-10-which-statistical-measure-best-represents-the-true-value",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the “true” value?",
+    "text": "Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the “true” value?\n\nThe mean\nThe standard deviation\nThe median\nThe interquartile range"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#boxplot-explained",
+    "href": "slides/lec-02-visualisation.html#boxplot-explained",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Boxplot, explained",
+    "text": "Boxplot, explained\n\nFigure 1: Diagram depicting how a boxplot is created.\nImage taken from: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nA box that indicates the range of the middle half of the data, a distance known as the interquartile range (IQR), stretching from the 25th percentile of the distribution to the 75th percentile.\nIn the middle of the box is a line that displays the median, i.e. 50th percentile, of the distribution.\nThese three lines give you a sense of the spread of the distribution and whether or not the distribution is symmetric about the median or skewed to one side.\nVisual points that display observations that fall more than 1.5 times the IQR from either edge of the box. These outlying points are unusual so are plotted individually.\nA line (or whisker) that extends from each end of the box and goes to the farthest non-outlier point in the distribution."
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html#our-turn-md-02-exercises",
+    "href": "slides/lec-02-visualisation.html#our-turn-md-02-exercises",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "Our turn: md-02-exercises",
+    "text": "Our turn: md-02-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-02-exercises.\nIn the File Manager in the bottom right window, locate the md-02b-data-visualization.qmd file and click on it to open it in the top left window.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#types-of-variables",
@@ -1134,88 +1295,53 @@
     "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#section-10",
-    "href": "slides/lec-02-visualisation.html#section-10",
+    "objectID": "slides/lec-02-visualisation.html#histogram",
+    "href": "slides/lec-02-visualisation.html#histogram",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-"
+    "section": "Histogram",
+    "text": "Histogram\n\nfor visualizing distribution of continuous (numerical) variables\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#data-to-viz.com",
-    "href": "slides/lec-02-visualisation.html#data-to-viz.com",
+    "objectID": "slides/lec-02-visualisation.html#barplot",
+    "href": "slides/lec-02-visualisation.html#barplot",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "data-to-viz.com",
-    "text": "data-to-viz.com"
+    "section": "Barplot",
+    "text": "Barplot\n\nfor visualizing distribution of categorical (non-numerical) variables\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#data-collection-tools-1",
-    "href": "slides/lec-02-visualisation.html#data-collection-tools-1",
+    "objectID": "slides/lec-02-visualisation.html#scatterplot",
+    "href": "slides/lec-02-visualisation.html#scatterplot",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Data Collection Tools",
-    "text": "Data Collection Tools\n\nQuestionnaires for survey based data\nSpreadsheets for manual experimental/observational data\nSensors for automated near real-time data"
+    "section": "Scatterplot",
+    "text": "Scatterplot\n\nfor visualising relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#survey-tools",
-    "href": "slides/lec-02-visualisation.html#survey-tools",
+    "objectID": "slides/lec-02-visualisation.html#your-turn-md-02-exercises",
+    "href": "slides/lec-02-visualisation.html#your-turn-md-02-exercises",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Survey tools",
-    "text": "Survey tools\nCommonly used in the Global Engineering and Development sector\n\nKOBO Toolbox\nmWater\nOpenDataKit"
+    "section": "Your turn: md-02-exercises",
+    "text": "Your turn: md-02-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-02c-make-a-plot.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n15:00"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
-    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets",
+    "objectID": "slides/lec-02-visualisation.html#module-2-documentation",
+    "href": "slides/lec-02-visualisation.html#module-2-documentation",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-03-23"
+    "section": "Module 2 documentation",
+    "text": "Module 2 documentation\n\nds4owd-001.github.io/website/modules/md-02.html"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
-    "href": "slides/lec-02-visualisation.html#data-organisation-in-spreadsheets-1",
+    "objectID": "slides/lec-02-visualisation.html#homework-due-date",
+    "href": "slides/lec-02-visualisation.html#homework-due-date",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, November 13th\nCorrection & feedback phase up to: Thursday, November 16th"
   },
   {
-    "objectID": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
-    "href": "slides/lec-02-visualisation.html#but-especially-apply-it-to-your-data",
+    "objectID": "slides/lec-02-visualisation.html#thanks",
+    "href": "slides/lec-02-visualisation.html#thanks",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "But, especially apply it to your data",
-    "text": "But, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#why",
-    "href": "slides/lec-02-visualisation.html#why",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Why?",
-    "text": "Why?\nBecause it will make your life easier!\n\n\n\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2022-07-11]"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#license-cc0",
-    "href": "slides/lec-02-visualisation.html#license-cc0",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "License? CC0 (!)",
-    "text": "License? CC0 (!)\n\n\n\n\n\n\n\nKarl Broman, GitHub repo broman/Talk_DataOrg, Screenshot taken on 2022-03-23"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#bring-your-own-data",
-    "href": "slides/lec-02-visualisation.html#bring-your-own-data",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Bring your own data",
-    "text": "Bring your own data\n\nGenerate data doing a short survey or observational study\n\nFind a data online that interests you\nUse a dataset that you already have available"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#homework-due-dates",
-    "href": "slides/lec-02-visualisation.html#homework-due-dates",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, June 23th"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-11",
-    "href": "slides/lec-02-visualisation.html#section-11",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-"
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#exam-update",
@@ -1761,21 +1887,21 @@
     "href": "modules/md-02.html#fa-display-slides",
     "title": "Module 2",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation"
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
     "objectID": "modules/md-02.html#fa-book-readings",
     "href": "modules/md-02.html#fa-book-readings",
     "title": "Module 2",
     "section": " Readings",
-    "text": "Readings\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”. (This also an assignment for this week)\nRead R for Data Science - Section 1 - Introduction through Section 1.3.3\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics"
+    "text": "Readings\n\nRead R for Data Science - Whole game\nRead R for Data Science - Section 3 - Workflow basics\nRead R for Data Science - Section 2 - Data visualization"
   },
   {
     "objectID": "modules/md-02.html#fa-code-assignments",
     "href": "modules/md-02.html#fa-code-assignments",
     "title": "Module 2",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.\n\nAssignment 1: Homework: “Good enough practices in scientific computing”\n\nThank you for working through these assignments."
+    "text": "Assignments\nPlease complete the following assignment by Monday, 13th November 2023.\n\nAssignment 1: Data visualisation\n\nThank you for working through this assignment."
   },
   {
     "objectID": "modules/md-05.html",
@@ -1916,376 +2042,5 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-14",
-    "href": "slides/lec-02-visualisation.html#section-14",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-\n\nAdd notes"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-15",
-    "href": "slides/lec-02-visualisation.html#section-15",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-\n\n\nFirst you must import your data into R. This typically means that you take data stored:\n\n\nin a file\nin a database,\nor web application, and load it into R.\n\n\nIf you can get your data into R, you can do data science on it!"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-16",
-    "href": "slides/lec-02-visualisation.html#section-16",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-\n\n\nOnce you’ve imported your data, it is a good idea to tidy it.\nThis means to get it into a structure that lets you focus on the questions about your data and not the format it needs to be in\nThis is the step where we spend by far the biggest amount of our time.\nIt has been estimated that we spend about 80% of our time with cleaning and tidying data, so that we can use it fo our analyses.\nIn my courses you will learn how to structure your data in a tidy format as you collect it, and before you import it. A highly underestimated skill."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-17",
-    "href": "slides/lec-02-visualisation.html#section-17",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-\n\n\nOnce your data is tidy, a common first step is to transform it.\nThis includes\n\n\nnarrowing in on what interests you (like all people without toilets in one district, or all data from last year)\ncreating new variables from existing (like toilet density, as in number of people per toilet)\ncalculating summary statistics (like counts or the mean)\n\nTogether, tidying and transforming are called wrangling, because getting your data in a form that’s natural to work with often feels like a fight!"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-18",
-    "href": "slides/lec-02-visualisation.html#section-18",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-\n\n\nOnce you have tidy data with the variables you need, there are two main engines of knowledge generation:\n\n\nvisualisation\nand modelling.\n\n\nThese have complementary strengths and weaknesses so any real analysis will iterate between them many times.\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-19",
-    "href": "slides/lec-02-visualisation.html#section-19",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-\n\n\nModels are complementary tools to visualisation. Once you have made your questions sufficiently precise, you can use a model to answer them.\nIn my courses, they play a very small part, but I am confident that you will be able to enhance your knowledge on modelling once you understand the basic principles of using the R lanuage."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-20",
-    "href": "slides/lec-02-visualisation.html#section-20",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-\n\n\nThe last step of data science is communication, an absolutely critical part of any data analysis project.\nIt doesn’t matter how well your models and visualisation have led you to understand the data, unless you can also communicate your results to others.\nAnd this is a part where R has become really strong."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-22",
-    "href": "slides/lec-02-visualisation.html#section-22",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "",
-    "text": "Tutorial: https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-23",
-    "href": "slides/lec-02-visualisation.html#section-23",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-9",
-    "href": "slides/lec-02-visualisation.html#section-9",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-12",
-    "href": "slides/lec-02-visualisation.html#section-12",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#section-13",
-    "href": "slides/lec-02-visualisation.html#section-13",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#command-git-clone",
-    "href": "slides/lec-02-visualisation.html#command-git-clone",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "command: git clone",
-    "text": "command: git clone"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#on-github",
-    "href": "slides/lec-02-visualisation.html#on-github",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "on GitHub",
-    "text": "on GitHub"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#open-github-organisation",
-    "href": "slides/lec-02-visualisation.html#open-github-organisation",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "open GitHub Organisation",
-    "text": "open GitHub Organisation\nBookmark this link in your browser!\n\ngithub.com/ds4owd-001"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#on-your-repository",
-    "href": "slides/lec-02-visualisation.html#on-your-repository",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "on your repository",
-    "text": "on your repository"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#on-posit-cloud",
-    "href": "slides/lec-02-visualisation.html#on-posit-cloud",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "on Posit Cloud",
-    "text": "on Posit Cloud\nBookmark this link in your browser!\n\nposit.cloud/spaces/426916/content/"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#on-posit-cloud-1",
-    "href": "slides/lec-02-visualisation.html#on-posit-cloud-1",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "on Posit Cloud",
-    "text": "on Posit Cloud\n\nposit.cloud/spaces/426916/content/"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#on-github-organisation",
-    "href": "slides/lec-02-visualisation.html#on-github-organisation",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "on GitHub Organisation",
-    "text": "on GitHub Organisation\nBookmark this link in your browser!\n\ngithub.com/ds4owd-001"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#version-control---terminology",
-    "href": "slides/lec-02-visualisation.html#version-control---terminology",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Version Control - Terminology",
-    "text": "Version Control - Terminology"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#tipps-for-ai-tools",
-    "href": "slides/lec-02-visualisation.html#tipps-for-ai-tools",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Tipps for AI tools",
-    "text": "Tipps for AI tools\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\n\nExample: “How to remove a legend from a plot in R ggplot2”"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#module-2-documentation",
-    "href": "slides/lec-02-visualisation.html#module-2-documentation",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Module 2 documentation",
-    "text": "Module 2 documentation\n\nds4owd-001.github.io/website/modules/md-02.html"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#homework-due-date",
-    "href": "slides/lec-02-visualisation.html#homework-due-date",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Homework due date",
-    "text": "Homework due date\n\nHomework assignment due: Monday, November 13th\nCorrection & feedback phase up to: Thursday, November 16th"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#thanks",
-    "href": "slides/lec-02-visualisation.html#thanks",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#polls",
-    "href": "slides/lec-02-visualisation.html#polls",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Polls",
-    "text": "Polls\n\n\nPoll 1: What does the thick line inside the box of a boxplot represent?\n\nthe mean of all observations\nthe middle of the box\nthe median of all observations\nnone of the above\n\n\n\n\n\n\n\n\n\n\nWhat does the thick line inside the box of a boxplot represent?\nHow many observations of the total number of observations are contained inside the box?\nHow is the line (whisker) outside the box calculated?"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#boxplot",
-    "href": "slides/lec-02-visualisation.html#boxplot",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Boxplot",
-    "text": "Boxplot"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#histogram",
-    "href": "slides/lec-02-visualisation.html#histogram",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Histogram",
-    "text": "Histogram\n\nfor visualizing distribution of continuous (numerical) variables\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#barplot",
-    "href": "slides/lec-02-visualisation.html#barplot",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Barplot",
-    "text": "Barplot\n\nfor visualizing distribution of categorical (non-numerical) variables\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#scatterplot",
-    "href": "slides/lec-02-visualisation.html#scatterplot",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Scatterplot",
-    "text": "Scatterplot\n\nfor visualising relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#data---polls",
-    "href": "slides/lec-02-visualisation.html#data---polls",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Data - Polls",
-    "text": "Data - Polls\n\nWhat type of variable is the number of students in this class?"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#my-turn-a-tour-of-ggplot2",
-    "href": "slides/lec-02-visualisation.html#my-turn-a-tour-of-ggplot2",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "My turn: A tour of ggplot2",
-    "text": "My turn: A tour of ggplot2\n\n\nSit back and enjoy!"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent",
-    "href": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 1: What does the thick line inside the box of a boxplot represent?",
-    "text": "Poll 1: What does the thick line inside the box of a boxplot represent?\n\n\n\nthe mean of the observations\nthe middle of the box\nthe median of the observations\nnone of the above"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-2-how-many-observations-of-the-total-number-of-observations-are-contained-inside-the-box",
-    "href": "slides/lec-02-visualisation.html#poll-2-how-many-observations-of-the-total-number-of-observations-are-contained-inside-the-box",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 2: How many observations of the total number of observations are contained inside the box?",
-    "text": "Poll 2: How many observations of the total number of observations are contained inside the box?\n\n\n\nthe mean of the observations\nthe middle of the box\nthe median of the observations\nnone of the above\n\n\n\n\n\n\n\n\n\n\nWhat does the thick line inside the box of a boxplot represent?\nHow many observations of the total number of observations are contained inside the box?\nHow is the line (whisker) outside the box calculated?"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent-1",
-    "href": "slides/lec-02-visualisation.html#poll-1-what-does-the-thick-line-inside-the-box-of-a-boxplot-represent-1",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 1: What does the thick line inside the box of a boxplot represent?",
-    "text": "Poll 1: What does the thick line inside the box of a boxplot represent?\n\n\n\nthe mean of the observations\nthe middle of the box\nthe median of the observations\nnone of the above"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-2-what-is-the-median",
-    "href": "slides/lec-02-visualisation.html#poll-2-what-is-the-median",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 2: What is the median?",
-    "text": "Poll 2: What is the median?"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-number-of-observations",
-    "href": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-number-of-observations",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 2: What is the median of a number of observations?",
-    "text": "Poll 2: What is the median of a number of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-set-of-observations",
-    "href": "slides/lec-02-visualisation.html#poll-2-what-is-the-median-of-a-set-of-observations",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 2: What is the median of a set of observations?",
-    "text": "Poll 2: What is the median of a set of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations",
-    "href": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 3: What is the median of a set of observations?",
-    "text": "Poll 3: What is the median of a set of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box",
-    "href": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 2: What percentage of observations are contained inside the box?",
-    "text": "Poll 2: What percentage of observations are contained inside the box?\n\n\n\n25%\ndepends on the median\n50%\nnone of the above"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-1",
-    "href": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-1",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 3: What is the median of a set of observations?",
-    "text": "Poll 3: What is the median of a set of observations?\n\nThe median is the most frequently occurring value in a dataset.\nThe median is the sum of all values in a dataset divided by the number of observations.\nThe median is the point above and below which half (50%) of the observations falls.\nThe median is the square root of the sum of the squares of each value in a dataset."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-2",
-    "href": "slides/lec-02-visualisation.html#poll-3-what-is-the-median-of-a-set-of-observations-2",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 3: What is the median of a set of observations?",
-    "text": "Poll 3: What is the median of a set of observations?\nIf I have the values: 1, 2, 3, and 10: which statistical measure best represents the true value?\n\nThe mean\nThe standard deviation\nThe median\nThe interquartile range"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot",
-    "href": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 2: What percentage of observations are contained inside the box of a boxplot?",
-    "text": "Poll 2: What percentage of observations are contained inside the box of a boxplot?\n\n\n\n25%\ndepends on the median\n50%\nnone of the above"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-4-if-you-have-the-values-1-2-3-and-10-which-statistical-measure-best-represents-the-true-value",
-    "href": "slides/lec-02-visualisation.html#poll-4-if-you-have-the-values-1-2-3-and-10-which-statistical-measure-best-represents-the-true-value",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the “true” value?",
-    "text": "Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the “true” value?\n\nThe mean\nThe standard deviation\nThe median\nThe interquartile range"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot-interquartile-range",
-    "href": "slides/lec-02-visualisation.html#poll-2-what-percentage-of-observations-are-contained-inside-the-box-of-a-boxplot-interquartile-range",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Poll 2: What percentage of observations are contained inside the box of a boxplot (interquartile range)?",
-    "text": "Poll 2: What percentage of observations are contained inside the box of a boxplot (interquartile range)?\n\n\n\n25%\ndepends on the median\n50%\nnone of the above"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#boxplot-explained",
-    "href": "slides/lec-02-visualisation.html#boxplot-explained",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Boxplot, explained",
-    "text": "Boxplot, explained\n\nFigure 1: Diagram depicting how a boxplot is created.\nImage taken from: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nA box that indicates the range of the middle half of the data, a distance known as the interquartile range (IQR), stretching from the 25th percentile of the distribution to the 75th percentile.\nIn the middle of the box is a line that displays the median, i.e. 50th percentile, of the distribution.\nThese three lines give you a sense of the spread of the distribution and whether or not the distribution is symmetric about the median or skewed to one side.\nVisual points that display observations that fall more than 1.5 times the IQR from either edge of the box. These outlying points are unusual so are plotted individually.\nA line (or whisker) that extends from each end of the box and goes to the farthest non-outlier point in the distribution."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#our-turn-configure-notifications-settings",
-    "href": "slides/lec-02-visualisation.html#our-turn-configure-notifications-settings",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Our turn: Configure Notifications settings",
-    "text": "Our turn: Configure Notifications settings\n\n\nOpen posit.cloud\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#our-turn-md-02-exercises",
-    "href": "slides/lec-02-visualisation.html#our-turn-md-02-exercises",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Our turn: md-02-exercises",
-    "text": "Our turn: md-02-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-02-exercises.\nIn the File Manager in the bottom right window, locate the md-02b-data-visualization.qmd file and click on it to open it in the top left window.\n\n\n\n\n\n−+\n30:00"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#my-turn-working-with-r",
-    "href": "slides/lec-02-visualisation.html#my-turn-working-with-r",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "My turn: Working with R",
-    "text": "My turn: Working with R\n\n\nSit back and enjoy!"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#scatterplot-output",
-    "href": "slides/lec-02-visualisation.html#scatterplot-output",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Scatterplot",
-    "text": "Scatterplot"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#your-turn-md-02-exercises",
-    "href": "slides/lec-02-visualisation.html#your-turn-md-02-exercises",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Your turn: md-02-exercises",
-    "text": "Your turn: md-02-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-02c-make-a-plot.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n15:00"
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#how-do-i-successfully-complete-the-course",
-    "href": "slides/lec-02-visualisation.html#how-do-i-successfully-complete-the-course",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "How do I successfully complete the course?",
-    "text": "How do I successfully complete the course?\nYou successfully complete the course and will receive a certificate of completion if you:\nhand in a complete capstone project report that uses a dataset of your choice by 30 January 2024 (instructions will follow)\nThis is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#fa-circle-question",
-    "href": "slides/lec-02-visualisation.html#fa-circle-question",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "",
-    "text": "Q: How do I successfully complete the course?\n\nYou successfully complete the course and you will receive a certificate of completion if you:\nhand in a complete capstone project report that uses a dataset of your choice by 30 January 2024 (instructions will follow)\nThis is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed."
-  },
-  {
-    "objectID": "slides/lec-02-visualisation.html#tipps-for-ai-tools-search-engines",
-    "href": "slides/lec-02-visualisation.html#tipps-for-ai-tools-search-engines",
-    "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Tipps for AI tools & search engines",
-    "text": "Tipps for AI tools & search engines\n\nUse actionable verbs that describe what you want to do\nBe specific\nAdd R to the search query\nAdd the name of the R package name to the search query\n\nExample: “How to remove a legend from a plot in R ggplot2”"
   }
 ]

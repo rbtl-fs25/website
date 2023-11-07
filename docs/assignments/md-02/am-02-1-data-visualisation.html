@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data science for openwashdata – code_of_conduct</title>
+<title>data science for openwashdata - Data visualisation with ggplot2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,18 +23,20 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="./img/OWD-logo-18.png" rel="icon" type="image/png">
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../../modules/md-03.html" rel="next">
+<link href="../../modules/md-02.html" rel="prev">
+<link href="../../img/OWD-logo-18.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -52,7 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -64,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-02.html">Module 02</a></li><li class="breadcrumb-item"><a href="../../assignments/md-02/am-02-1-data-visualisation.html">am-01: Data visualization</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -78,8 +80,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./img/OWD-logo-20.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../img/OWD-logo-20.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/ds4owd-001" rel="" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
@@ -94,20 +96,20 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./calendar.html" class="sidebar-item-text sidebar-link">
+  <a href="../../calendar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Calendar</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./modules/md-01.html" class="sidebar-item-text sidebar-link">
+            <a href="../../modules/md-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 01</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -116,19 +118,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/md-01/am-01-1-posit.html" class="sidebar-item-text sidebar-link">
+  <a href="../../assignments/md-01/am-01-1-posit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">am-01: Posit Cloud</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/md-01/am-01-2-element.html" class="sidebar-item-text sidebar-link">
+  <a href="../../assignments/md-01/am-01-2-element.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">am-02: Element</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/md-01/am-01-3-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../../assignments/md-01/am-01-3-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">am-03: GitHub</span></a>
   </div>
 </li>
@@ -136,16 +138,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./modules/md-02.html" class="sidebar-item-text sidebar-link">
+            <a href="../../modules/md-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 02</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/md-02/am-02-1-data-visualisation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../assignments/md-02/am-02-1-data-visualisation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">am-01: Data visualization</span></a>
   </div>
 </li>
@@ -153,49 +155,49 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 03</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 04</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 05</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 06</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 07</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 08</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 09</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modules/md-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/md-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 10</span></a>
   </div>
 </li>
@@ -209,102 +211,98 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contributor-covenant-code-of-conduct" id="toc-contributor-covenant-code-of-conduct" class="nav-link active" data-scroll-target="#contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</a>
-  <ul class="collapse">
-  <li><a href="#our-pledge" id="toc-our-pledge" class="nav-link" data-scroll-target="#our-pledge">Our Pledge</a></li>
-  <li><a href="#our-standards" id="toc-our-standards" class="nav-link" data-scroll-target="#our-standards">Our Standards</a></li>
-  <li><a href="#enforcement-responsibilities" id="toc-enforcement-responsibilities" class="nav-link" data-scroll-target="#enforcement-responsibilities">Enforcement Responsibilities</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
-  <li><a href="#enforcement" id="toc-enforcement" class="nav-link" data-scroll-target="#enforcement">Enforcement</a></li>
-  <li><a href="#enforcement-guidelines" id="toc-enforcement-guidelines" class="nav-link" data-scroll-target="#enforcement-guidelines">Enforcement Guidelines</a>
-  <ul class="collapse">
-  <li><a href="#correction" id="toc-correction" class="nav-link" data-scroll-target="#correction">1. Correction</a></li>
-  <li><a href="#warning" id="toc-warning" class="nav-link" data-scroll-target="#warning">2. Warning</a></li>
-  <li><a href="#temporary-ban" id="toc-temporary-ban" class="nav-link" data-scroll-target="#temporary-ban">3. Temporary Ban</a></li>
-  <li><a href="#permanent-ban" id="toc-permanent-ban" class="nav-link" data-scroll-target="#permanent-ban">4. Permanent Ban</a></li>
-  </ul></li>
-  <li><a href="#attribution" id="toc-attribution" class="nav-link" data-scroll-target="#attribution">Attribution</a></li>
-  </ul></li>
+  <li><a href="#step-1-clone-your-module-2-assignments-repository" id="toc-step-1-clone-your-module-2-assignments-repository" class="nav-link active" data-scroll-target="#step-1-clone-your-module-2-assignments-repository">Step 1: Clone your module 2 assignments repository</a></li>
+  <li><a href="#step-2-commit-and-push-your-changes" id="toc-step-2-commit-and-push-your-changes" class="nav-link" data-scroll-target="#step-2-commit-and-push-your-changes">Step 2: Commit and push your changes</a></li>
+  <li><a href="#step-3-open-an-issue-on-github" id="toc-step-3-open-an-issue-on-github" class="nav-link" data-scroll-target="#step-3-open-an-issue-on-github">Step 3: Open an issue on GitHub</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data visualisation with ggplot2</h1>
+</div>
 
 
-<section id="contributor-covenant-code-of-conduct" class="level1">
-<h1>Contributor Covenant Code of Conduct</h1>
-<section id="our-pledge" class="level2">
-<h2 class="anchored" data-anchor-id="our-pledge">Our Pledge</h2>
-<p>We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.</p>
-<p>We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.</p>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Have you completed the assignments for module 1?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub.</p>
+</div>
+</div>
+<section id="step-1-clone-your-module-2-assignments-repository" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-clone-your-module-2-assignments-repository">Step 1: Clone your module 2 assignments repository</h2>
+<ol type="1">
+<li>Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).</li>
+<li>Find the repository md-02-assignments-USERNAME that ends with your GitHub username, and open it.</li>
+<li>Click on the green “Code” button.</li>
+<li>Copy the HTTPS URL to your clipboard.</li>
+<li>Open the ds4owd workspace on <a href="https://posit.cloud/spaces/426916/content/all?sort=name_asc">posit.cloud</a></li>
+<li>Click New Project &gt; New Project from Git Repository</li>
+<li>Paste the HTTPS URL from GitHub into the “URL of your Git Repository” field.</li>
+<li>Wait until the project is deployed.</li>
+<li>Open <code>md-02a-data-visualization.qmd</code> and follow the instructions to work through the tasks.</li>
+</ol>
 </section>
-<section id="our-standards" class="level2">
-<h2 class="anchored" data-anchor-id="our-standards">Our Standards</h2>
-<p>Examples of behavior that contributes to a positive environment for our community include:</p>
-<ul>
-<li>Demonstrating empathy and kindness toward other people</li>
-<li>Being respectful of differing opinions, viewpoints, and experiences</li>
-<li>Giving and gracefully accepting constructive feedback</li>
-<li>Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience</li>
-<li>Focusing on what is best not just for us as individuals, but for the overall community</li>
-</ul>
-<p>Examples of unacceptable behavior include:</p>
-<ul>
-<li>The use of sexualized language or imagery, and sexual attention or advances of any kind</li>
-<li>Trolling, insulting or derogatory comments, and personal or political attacks</li>
-<li>Public or private harassment</li>
-<li>Publishing others’ private information, such as a physical or email address, without their explicit permission</li>
-<li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
-</ul>
+<section id="step-2-commit-and-push-your-changes" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-commit-and-push-your-changes">Step 2: Commit and push your changes</h2>
+<p>The below is also described as Task 14 in <code>md-02a-data-visualization.qmd</code></p>
+<ol type="1">
+<li>Navigate to the Git pane in the top-right window of RStudio</li>
+<li>Check the box next to all files to stage then it for a commit</li>
+<li>Click on the “Commit” button</li>
+<li>Enter a commit message in the “Commit message” field</li>
+<li>Click on the “Commit” button</li>
+<li>Click on the “Push” button</li>
+<li>Enter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do not use your GitHub password
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub.</p>
+</div>
+</div>
 </section>
-<section id="enforcement-responsibilities" class="level2">
-<h2 class="anchored" data-anchor-id="enforcement-responsibilities">Enforcement Responsibilities</h2>
-<p>Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.</p>
-<p>Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.</p>
-</section>
-<section id="scope" class="level2">
-<h2 class="anchored" data-anchor-id="scope">Scope</h2>
-<p>This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.</p>
-</section>
-<section id="enforcement" class="level2">
-<h2 class="anchored" data-anchor-id="enforcement">Enforcement</h2>
-<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at ghe@mavt.ethz.ch. All complaints will be reviewed and investigated promptly and fairly.</p>
-<p>All community leaders are obligated to respect the privacy and security of the reporter of any incident.</p>
-</section>
-<section id="enforcement-guidelines" class="level2">
-<h2 class="anchored" data-anchor-id="enforcement-guidelines">Enforcement Guidelines</h2>
-<p>Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:</p>
-<section id="correction" class="level3">
-<h3 class="anchored" data-anchor-id="correction">1. Correction</h3>
-<p><strong>Community Impact</strong>: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.</p>
-<p><strong>Consequence</strong>: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.</p>
-</section>
-<section id="warning" class="level3">
-<h3 class="anchored" data-anchor-id="warning">2. Warning</h3>
-<p><strong>Community Impact</strong>: A violation through a single incident or series of actions.</p>
-<p><strong>Consequence</strong>: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.</p>
-</section>
-<section id="temporary-ban" class="level3">
-<h3 class="anchored" data-anchor-id="temporary-ban">3. Temporary Ban</h3>
-<p><strong>Community Impact</strong>: A serious violation of community standards, including sustained inappropriate behavior.</p>
-<p><strong>Consequence</strong>: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.</p>
-</section>
-<section id="permanent-ban" class="level3">
-<h3 class="anchored" data-anchor-id="permanent-ban">4. Permanent Ban</h3>
-<p><strong>Community Impact</strong>: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.</p>
-<p><strong>Consequence</strong>: A permanent ban from any sort of public interaction within the community.</p>
-</section>
-</section>
-<section id="attribution" class="level2">
-<h2 class="anchored" data-anchor-id="attribution">Attribution</h2>
-<p>This Code of Conduct is adapted from the <a href="https://www.contributor-covenant.org">Contributor Covenant</a>, version 2.1, available at <a href="https://www.contributor-covenant.org/version/2/1/code_of_conduct.html">https://www.contributor-covenant.org/version/2/1/code_of_conduct.html</a>.</p>
-<p>Community Impact Guidelines were inspired by <a href="https://github.com/mozilla/diversity">Mozilla’s code of conduct enforcement ladder</a>.</p>
-<p>For answers to common questions about this code of conduct, see the FAQ at <a href="https://www.contributor-covenant.org/faq">https://www.contributor-covenant.org/faq</a>. Translations are available at <a href="https://www.contributor-covenant.org/translations">https://www.contributor-covenant.org/translations</a>.</p>
+<section id="step-3-open-an-issue-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-open-an-issue-on-github">Step 3: Open an issue on GitHub</h2>
+<ol type="1">
+<li>Open <a href="https://github.com/">github.com</a> in your browser.</li>
+<li>Navigate to the GitHub organisation for the course.</li>
+<li>Find the repository md-02-assignments that ends with your GitHub username.</li>
+<li>Click on the “Issues” tab.</li>
+<li>Click on the green “New issue” button.</li>
+<li>In the “Title” field write: “Completed module 1 assignments”.</li>
+<li>In the “Leave a comment” field, tag the course instructors <span class="citation" data-cites="larnsce">@larnsce</span> <span class="citation" data-cites="mianzg">@mianzg</span> <span class="citation" data-cites="sskorik01">@sskorik01</span></li>
+</ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -541,6 +539,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../modules/md-02.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 02</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../modules/md-03.html" class="pagination-link">
+        <span class="nav-page-text">Module 03</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -551,7 +561,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link active" href="./code_of_conduct.html" aria-current="page">Code of Conduct</a>
+    <a class="nav-link" href="../../code_of_conduct.html">Code of Conduct</a>
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support">
@@ -560,7 +570,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/ds4owd-001">
+    <a class="nav-link active" href="https://github.com/ds4owd-001" aria-current="page">
       <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>
