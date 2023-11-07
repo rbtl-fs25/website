@@ -1,6 +1,6 @@
 ---
 title: "Module 1"
-subtitle: "Welcome & get ready for the course"
+subtitle: "{{< var md-01.title >}}"
 editor: source
 params:
     week: 1
@@ -12,26 +12,29 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{=html}
-
-```
-
 This first week will be used to get you set up for the course. 
 
 ## Learning Objectives
 
 ```{r}
+#| label: setup
 
-lobj1 <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+library(epoxy)
+```
+
+```{r}
+#| label: learning-objectives
+
+lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
 ```
 
-1.  `r lobj1[1]`
-2.  `r lobj1[2]`
-3.  `r lobj1[3]`
-4.  `r lobj1[4]`
+```{epoxy}
+{1:length(lobj)}. {lobj[1:length(lobj)]}
+```
+
 
 ## {{< fa display >}} Slides
 

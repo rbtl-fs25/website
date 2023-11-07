@@ -1,0 +1,19 @@
+author: "Lars Schöbitz"
+institute: "ETH Zurich"
+department: "Global Health Engineering"
+
+course:
+  code: "ds4owd"
+  short-title: "ds4owd"
+  long-title: "ds4owd - data science for openwashdata"
+  site: "https://ds4owd-001.github.io/website/"
+  site-short: "ds4owd-001.github.io/website/"
+  github-org: "https://github.com/ds4owd-001"
+
+md-01:
+  title: "Welcome & get ready for the course"
+  date: "2023-10-31"
+
+md-02:
+  title: "Data science lifecycle & Exploratory data analysis using visualization"
+  date: "2023-11-07"

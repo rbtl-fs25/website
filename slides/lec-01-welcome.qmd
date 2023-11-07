@@ -1,8 +1,9 @@
 ---
-title: "Welcome & get ready for the course"
-subtitle: "ds4owd - data science for the course"
-author: "Lars Schöbitz"
+title: "{{< var md-01.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "{{< var author >}}"
 date: "2023-10-31"
+date-format: "MMM D, YYYY"
 format: 
   revealjs: 
     theme: slides.scss

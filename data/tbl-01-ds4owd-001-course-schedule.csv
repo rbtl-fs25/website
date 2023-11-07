@@ -1,7 +1,7 @@
 date,week,title,module,page_link
 2023-10-31T00:00:00Z,1,[Welcome & get ready for the course](https://ds4owd-001.github.io/website/modules/md-01.html),module 1,https://ds4owd-001.github.io/website/modules/md-01.html
-2023-11-07T00:00:00Z,2,[Data science lifecycle & Quarto](https://ds4owd-001.github.io/website/modules/md-02.html),module 2,https://ds4owd-001.github.io/website/modules/md-02.html
-2023-11-14T00:00:00Z,3,[Exploratory data analysis using visualization](https://ds4owd-001.github.io/website/modules/md-03.html),module 3,https://ds4owd-001.github.io/website/modules/md-03.html
+2023-11-07T00:00:00Z,2,[Data science lifecycle & Exploratory data analysis using visualization](https://ds4owd-001.github.io/website/modules/md-02.html),module 2,https://ds4owd-001.github.io/website/modules/md-02.html
+2023-11-14T00:00:00Z,3,[NA](https://ds4owd-001.github.io/website/modules/md-03.html),module 3,https://ds4owd-001.github.io/website/modules/md-03.html
 2023-11-21T00:00:00Z,4,[Data organization in spreadsheets](https://ds4owd-001.github.io/website/modules/md-04.html),module 4,https://ds4owd-001.github.io/website/modules/md-04.html
 2023-11-28T00:00:00Z,5,"[Data transformation, descriptive statistics and gt](https://ds4owd-001.github.io/website/modules/md-05.html)",module 5,https://ds4owd-001.github.io/website/modules/md-05.html
 2023-12-05T00:00:00Z,6,[Concept of tidy data & Vectors in R](https://ds4owd-001.github.io/website/modules/md-06.html),module 6,https://ds4owd-001.github.io/website/modules/md-06.html

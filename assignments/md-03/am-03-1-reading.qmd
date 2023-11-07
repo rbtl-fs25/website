@@ -1,0 +1,18 @@
+---
+title: "Module 2 - Assignment 1"
+subtitle: "Good enough practices in scientific computing"
+bibliography: "../../ds4owd-001.bib"
+---
+
+This course introduces participants to tools and workflows for collaborative  writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management. 
+
+The following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.
+
+For this assignment, we ask you to:
+
+1. Read @wilson2017good: "Good enough practices in scientific computing".
+2. Chose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:
+4.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
+4.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your work.
+5.  Be prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
+

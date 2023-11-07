@@ -1,7 +1,7 @@
 {
-  "hash": "bfd8c6ac864cc49f8a19a6bb71ad46ac",
+  "hash": "9fce981f4500d740af01422d87dec53b",
   "result": {
-    "markdown": "---\ntitle: \"Module 7\"\nsubtitle: \"Joining data & wrting functions\"\neditor: source\nparams:\n    week: 7\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n\n1. Learners can apply functions from the dplyr R Package to join multiple data sets.\n2. Learners can write functions that reduce repition in dplyr and ggplot2 code sequences.\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 20 - Joins](https://r4ds.hadley.nz/joins)\n2. Read [R for Data Science - Section 26 - Functions](https://r4ds.hadley.nz/functions)\n\n## {{< fa code >}} Assignments\n\n- In preparation\n \n",
+    "markdown": "---\ntitle: \"Module 7\"\nsubtitle: \"Joining data & wrting functions\"\neditor: source\nparams:\n    week: 7\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply functions from the dplyr R Package to join multiple data sets.\n2. Learners can write functions that reduce repition in dplyr and ggplot2 code sequences.\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 20 - Joins](https://r4ds.hadley.nz/joins)\n2. Read [R for Data Science - Section 26 - Functions](https://r4ds.hadley.nz/functions)\n\n## {{< fa code >}} Assignments\n\n- In preparation\n \n",
     "supporting": [
       "md-07_files"
     ],
