@@ -604,9 +604,24 @@ Image taken from: <https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot>
 3. Click [Start]{.highlight-yellow} next to [md-02-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`md-02b-data-visualization.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
+
 ```{r}
 countdown(30)
 ```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-02/emails-rest-in-peace.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
 
 # Visualizing data {background-color="#4C326A"}
 
