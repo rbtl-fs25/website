@@ -45,6 +45,8 @@ website:
         text: Course Overview
       - href: calendar.qmd
         text: Course Calendar
+      - href: guide/index.qmd
+        text: Guide
       - text: "---"
       - section: "Module 01"
         href: modules/md-01.qmd
