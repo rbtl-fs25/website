@@ -1,0 +1,39 @@
+---
+title: "Guide"
+format:
+  html:
+    number-sections: true
+execute:
+  echo: false
+---
+
+This guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions. 
+
+If you have a request, let us know and we will add guidance here.
+
+## Switch pipe operator
+
+By default, R uses `%>%` as the pipe operator from the `magrittr` package. Since R 4.1.0, the pipe operator is also available as `|>` without loading any packages. The `|>` operator is recommended to be used instead of `%>%`.
+
+To switch to the native pipe operator, follow these steps:
+
+1. Open your project on Posit Cloud
+2. On the menu bar of RStudio, click on `Tools` > `Global Options...` (see @fig-global-options)
+3. On the left panel, click on `Code`
+4. On the right panel, select the 4th check-box from the top next to 'Use native pipe operator, |> (requires R 4.1+) (see @fig-native-pipe)
+5. Click on `Apply` and `OK`
+
+```{r}
+#| label: fig-global-options
+#| fig-cap: RStudio Global Options
+#| out-width: 75%
+knitr::include_graphics("images/rstudio-tools-global-options.png")
+```
+
+```{r}
+#| label: fig-native-pipe
+#| fig-cap: RStudio Code Options
+#| out-width: 75%
+knitr:::include_graphics("images/rstudio-code-native-pipe.png")
+```
+

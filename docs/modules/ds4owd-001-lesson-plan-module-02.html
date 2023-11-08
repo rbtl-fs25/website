@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>data science for openwashdata – ds4owd-001-lesson-plan-module-02</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../img/OWD-logo-18.png" rel="icon" type="image/png">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script defer="" data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/OWD-logo-20.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/ds4owd-001" title="GitHub organization" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Course Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../calendar.html" class="sidebar-item-text sidebar-link">Course Calendar</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../guide/index.html" class="sidebar-item-text sidebar-link">Guide</a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-01.html" class="sidebar-item-text sidebar-link">Module 01</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-01/am-01-1-posit.html" class="sidebar-item-text sidebar-link">am-01: Posit Cloud</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-01/am-01-2-element.html" class="sidebar-item-text sidebar-link">am-02: Element</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-01/am-01-3-github.html" class="sidebar-item-text sidebar-link">am-03: GitHub</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-02.html" class="sidebar-item-text sidebar-link">Module 02</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-02/am-02-1-data-visualisation.html" class="sidebar-item-text sidebar-link">am-01: Data visualization</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-03.html" class="sidebar-item-text sidebar-link">Module 03</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-04.html" class="sidebar-item-text sidebar-link">Module 04</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-05.html" class="sidebar-item-text sidebar-link">Module 05</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-06.html" class="sidebar-item-text sidebar-link">Module 06</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-07.html" class="sidebar-item-text sidebar-link">Module 07</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-08.html" class="sidebar-item-text sidebar-link">Module 08</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-09.html" class="sidebar-item-text sidebar-link">Module 09</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-10.html" class="sidebar-item-text sidebar-link">Module 10</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<ul>
+<li><h2 id="part-1-47" class="anchored">Part 1 (47)</h2>
+<ul>
+<li><h3 id="course-completion-5" class="anchored">Course completion (5)</h3>
+<ul>
+<li>Late start: 5 minutes</li>
+</ul></li>
+<li><h3 id="r-rollercoaster-1" class="anchored">R Rollercoaster (1)</h3></li>
+<li><h3 id="solving-coding-problems-7" class="anchored">Solving coding problems (7)</h3>
+<ul>
+<li>Tipps for search engines (1)</li>
+<li>Stack Overflow (1)</li>
+<li>Tipps for AI tools (1)</li>
+<li>perplexity.ai (2)
+<ul>
+<li>How to remove a legend from a plot in R ggplot2</li>
+</ul></li>
+<li>Other sources for help (1)</li>
+<li>Trampolin (1)</li>
+</ul></li>
+<li><h3 id="homework-assignment-module-1-3" class="anchored">Homework assignment module 1 (3)</h3>
+<ul>
+<li>on your repository (1)</li>
+<li>on Posit Cloud (1)</li>
+<li>screenshot: git clone (1)</li>
+</ul></li>
+<li><h3 id="version-control---terminology-8" class="anchored">Version Control - Terminology (8)</h3>
+<ul>
+<li>21 screenshots (8)</li>
+</ul></li>
+<li><h3 id="learning-objectives-1" class="anchored">Learning Objectives (1)</h3></li>
+<li><h3 id="data-science-lifecycle-7" class="anchored">Data Science Lifecycle (7)</h3>
+<ul>
+<li>Screenshots (7)</li>
+</ul></li>
+<li><h3 id="exploratory-data-analysis-with-ggplot2-15" class="anchored">Exploratory Data Analysis with ggplot2 (15)</h3>
+<ul>
+<li>R Package&nbsp;ggplot2 (2)</li>
+<li><strong>My turn: Working with R</strong> (13)
+<ul>
+<li>Head to posit.cloud (2)
+<ul>
+<li>Open the Contents in the workspace for the course</li>
+<li>Click Start</li>
+</ul></li>
+<li>Re-iterate the different windows (1)</li>
+<li>Open: working-with-R (10)
+<ul>
+<li>Highlight that we are working in visual editing mode</li>
+<li>Import
+<ul>
+<li>Add code chunk</li>
+<li>Load ggplot2, dplyr, gapminder</li>
+</ul></li>
+<li>Explore
+<ul>
+<li>Add code chunk</li>
+<li>head, tail, glimpse, str, nrow, ncol</li>
+<li>View(gapminder) in Console</li>
+</ul></li>
+<li>Transform - narrow down
+<ul>
+<li>Native pipe operator
+<ul>
+<li>Tools &gt; Global Options &gt; Code &gt; Use native pipe operator</li>
+</ul></li>
+<li>Add code chunk
+<ul>
+<li>filter for year 2007</li>
+<li>Keyboard shortcut for pipe operator: Ctrl / Cmd + Shift + M</li>
+<li>Keyboard shortcut for assignment operator: Alt + -</li>
+<li>New object</li>
+</ul></li>
+</ul></li>
+<li>Visualize
+<ul>
+<li>Highlight eval: false</li>
+<li>Fill in gaps</li>
+<li>Run code-chunk</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><h2 id="break-10" class="anchored">Break (10)</h2></li>
+<li><h2 id="part-2-50" class="anchored">Part 2 (50)</h2>
+<ul>
+<li><h3 id="code-structure-5" class="anchored">Code structure (5)</h3></li>
+<li><h3 id="polls-8" class="anchored">Polls (8)</h3></li>
+<li><h3 id="boxplot-explained-2" class="anchored">Boxplot, explained (2)</h3></li>
+<li><h3 id="our-turn-md-02-data-visualisation-35" class="anchored"><strong>Our turn: md-02-data-visualisation</strong> (35)</h3></li>
+</ul></li>
+<li><h2 id="break-10-1" class="anchored">Break (10)</h2></li>
+<li><h2 id="part-3-26" class="anchored">Part 3 (26)</h2>
+<ul>
+<li><h3 id="visualising-data-8" class="anchored">Visualising data (8)</h3>
+<ul>
+<li>Types of variables (3)</li>
+<li>Histogram (2)</li>
+<li>Barplot (1)</li>
+<li>Scatterplot(2)</li>
+</ul></li>
+<li><h3 id="your-turn-md-02c-make-a-plot.qmd-15" class="anchored"><strong>Your turn: md-02c-make-a-plot.qmd</strong> (15)</h3></li>
+<li><h3 id="homework-assignments-module-2-2" class="anchored">Homework assignments module 2 (2)</h3>
+<ul>
+<li>Website</li>
+<li>Homework due date</li>
+</ul></li>
+<li><h3 id="wrap-up-1" class="anchored">Wrap-up (1)</h3>
+<ul>
+<li>Thanjs</li>
+</ul></li>
+</ul></li>
+<li><h2 id="section" class="anchored"></h2></li>
+</ul>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This course is part of the <a href="https://openwashdata.org/">openwashdata project</a> supported by the <a href="https://ethrat.ch/en/eth-domain/open-research-data/">Open Research Data Program of the ETH Board</a></div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../code_of_conduct.html">Code of Conduct</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support">
+      <i class="bi bi-envelope-at" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link active" href="https://github.com/ds4owd-001" aria-current="page">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch">
+      <i class="bi bi-chat-left-dots" role="img" aria-label="Matrix">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
