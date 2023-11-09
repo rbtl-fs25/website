@@ -1,0 +1,14 @@
+{
+  "hash": "3d7456af8715a78b2cfa0420cdfca385",
+  "result": {
+    "markdown": "---\ntitle: \"Guide\"\nformat:\n  html:\n    number-sections: true\nexecute:\n  echo: false\n---\n\n\nThis guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions. \n\nIf you have a request, let us know and we will add guidance here.\n\n## Switch pipe operator\n\nBy default, R uses `%>%` as the pipe operator from the `magrittr` package. Since R 4.1.0, the pipe operator is also available as `|>` without loading any packages. The `|>` operator is recommended to be used instead of `%>%`.\n\nTo switch to the native pipe operator, follow these steps:\n\n1. Open your project on Posit Cloud\n2. On the menu bar of RStudio, click on `Tools` > `Global Options...` (see @fig-global-options)\n3. On the left panel, click on `Code`\n4. On the right panel, select the 4th check-box from the top next to 'Use native pipe operator, |> (requires R 4.1+) (see @fig-native-pipe)\n5. Click on `Apply` and `OK`\n\n\n::: {.cell}\n::: {.cell-output-display}\n![RStudio Global Options](images/rstudio-tools-global-options.png){#fig-global-options width=75%}\n:::\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![RStudio Code Options](images/rstudio-code-native-pipe.png){#fig-native-pipe width=75%}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
