@@ -17,3 +17,7 @@ md-01:
 md-02:
   title: "Data science lifecycle & Exploratory data analysis using visualization"
   date: "2023-11-07"
+  
+md-03:
+  title: "Data transformation with dplyr"
+  date: "2023-11-14"

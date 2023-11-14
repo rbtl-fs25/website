@@ -1,72 +1,53 @@
 ---
-title: "Data Transformation with dplyr"
-subtitle: "CVEN 5837 - Summer 2023"
-author: "Lars Schöbitz"
+title: "{{< var md-03.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "{{< var author >}}"
+date: "2023-11-14"
 format: 
   revealjs: 
     theme: slides.scss
     transition: fade
     slide-number: true
-    logo: img/logo.png
-    footer: "https://cven5873-ss23.github.io/website/"
+    logo: ../img/OWD-logo-20.png
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
 execute:
   freeze: auto
 params:
-    week: 4
+    week: 3
+editor_options: 
+  chunk_output_type: console
 ---
-
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 ```{r}
 #| include: false
 library(countdown)
 library(ggplot2)
 library(readr)
-library(ggplot2)
-library(gapminder)
 library(dplyr)
-```
-
-# Data Organisation in Spreadsheets {background-color="#0F4C81"}
-
-## Think, Pair, Share
-
-:::{.callout-note}
-## Questions
-1. Why should you not leave a blank cell in a spreadsheet used for data collection?
-2. Which of the 12 rules for data organization was the least comprehensible to you?
-:::
-
-- **Think** for 2 minutes
-- **Pair** with in break-out rooms for 4 minutes
-- **Share** your answer with the class
-
-
-```{r, echo = FALSE}
-
-countdown(
-  minutes = 2, seconds = 0,
-  left = 0, right = 0,
-  padding = "10px", margin = "5%",
-  font_size = "2em"
-)
-
+library(gapminder)
+library(epoxy)
+library(ggthemes)
 ```
 
 ## Learning Objectives (for this week)
 
 ```{r}
-#| echo: false
-lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
+#| label: learning-objectives
+
+lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
 ```
 
-1. `r lobj1[1]`
+```{epoxy}
+{1:length(lobj)}. {lobj[1:length(lobj)]}
+```
 
-# Data wrangling with dplyr  {background-color="#0F4C81"}
+
+# Data wrangling with dplyr  {background-color="#4C326A"}
 
 ## A grammar of data wrangling... {.smaller}
 
@@ -86,7 +67,6 @@ knitr::include_graphics("img/lec-03/dplyr-part-of-tidyverse.png")
 
 - `select`: pick columns by name
 - `arrange`: reorder rows
-- `slice`: chooses rows based on location
 - `filter`: pick rows matching criteria
 - `relocate`: changes the order of the columns
 - `mutate`: add new variables
@@ -114,65 +94,302 @@ Rules of `dplyr` functions:
 
 :::
 
-# Live Coding Exercise: SDG 6.2.1 {background-color="#0F4C81"}
+## Functions & Arguments {auto-animate="true"}
 
-## live-04a-data-transformation
+```{r}
+#| code-line-numbers: "3-4"
+#| eval: false
+#| echo: true
+library(dplyr)
 
-1. Head over to posit.cloud
-2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
-3. Open "Projects"
-4. Open your "course-materials" project
-5. Follow along with me
+filter(.data = gapminder, 
+       year == 2007)
+```
 
-## Break
+-   Function: `filter()`
+-   Argument: `.data =`
+-   Arguments following: `year == 2007` [What to do with the data]{.highlight-yellow}
 
-![](img/lec-01/coffee-break.jpg)
+## Objects {auto-animate="true"}
+
+```{r}
+#| eval: false
+#| code-line-numbers: "3-4"
+#| echo: true
+library(dplyr)
+
+gapminder_2007 <- filter(.data = gapminder, 
+                            year == 2007)
+```
+
+-   Function: `filter()`
+-   Argument: `.data =`
+-   Arguments following: `year == 2007` [What to do with the data]{.highlight-yellow}
+-   Data (Object): `gapminder_2007`
+
+## Operators {auto-animate="true"}
+
+```{r}
+#| eval: false
+#| code-line-numbers: "3-4"
+#| echo: true
+library(dplyr)
+
+gapminder_2007 <- gapminder |> 
+  filter(year == 2007) 
+```
+
+-   Function: `filter()`
+-   Argument: `.data =`
+-   Arguments following: `year == 2007` [What to do with the data]{.highlight-yellow}
+-   Data (Object): `gapminder_2007`
+-   Assignment operator: `<-`
+-   Pipe operator: `|>`
+
+## Plot {auto-animate="true" .smaller}
+
+```{r}
+#| eval: true
+#| code-line-numbers: "3-4,6"
+#| echo: true
+#| fig.width: 4
+#| fig.asp: 0.618
+
+library(dplyr)
+
+gapminder_2007 <- gapminder |> 
+  filter(year == 2007) 
+
+ggplot(data = gapminder_2007,
+       mapping = aes(x = continent,
+                     y = lifeExp,
+                     fill = continent)) +
+  geom_boxplot(outlier.shape = NA) 
+```
+
+# Our turn: SDG 6.2.1 {background-color="#4C326A"}
+
+## Data {.smallest}
 
 ```{r}
 
-countdown(
-  minutes = 10, seconds = 0,
-  left = 0, right = 0,
-  padding = "10px", margin = "5%",
-  font_size = "2em"
-)
+sanitation <- read_csv("https://raw.githubusercontent.com/ds4owd/md-03-exercises/master/data/jmp_wld_sanitation_long.csv")
 
 ```
 
-::: aside
-Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+```{r}
+#| echo: true
+#| eval: false
+
+head(sanitation)
+```
+
+<br>
+
+```{r}
+#| echo: false
+
+head(sanitation) |> 
+  knitr::kable(digits = 1)
+```
+
+<br>
+
+. . .
+
+```{r}
+#| echo: true
+ncol(sanitation)
+```
+
+<br>
+
+. . .
+
+```{r}
+#| echo: true
+nrow(sanitation)
+```
+
+## Data {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+sanitation |> 
+  count(varname_short, varname_long)
+```
+
+
+```{r}
+#| echo: false
+#| eval: true
+sanitation |> 
+  count(varname_short, varname_long) |> 
+  knitr::kable()
+```
+
+## Our turn: md-03-exercises
+
+::: task
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3. Click [Start]{.highlight-yellow} next to [md-03-exercises]{.highlight-yellow}.
+4. In the File Manager in the bottom right window, locate the [`md-03a-data-transformation.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+:::
+```{r}
+countdown(15)
+```
+
+## Your turn: md-03b-your-turn-filter.qmd
+
+::: task
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3. In the File Manager in the bottom right window, locate the [`md-03b-your-turn-filter.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4. Follow instructions in the file
+:::
+```{r}
+countdown(20)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-03/get-up-and-move.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# Pair Programming Exercise {background-color="#0F4C81"}
+## R Terminology
 
-## Pair Programming Exercises 
+```{r}
+#| eval: false
+#| echo: true
+library(dplyr)
 
-- Two learners work together in a break out session
-- One person (the driver) shares the screen and does the typing
-- The other person (the navigator) offers comments and suggestions
-- Roles get switched 
+sanitation_national_2020_sm <- sanitation |> 
+  filter(residence == "national",
+         year == 2020,
+         varname_short == "san_sm")
+```
 
-## hw-04a-data-visualiation
+-   Function: `filter()`
+-   Arguments following: `residence == "national", etc.` [What to do with the data]{.highlight-yellow}
+-   Data (Object): `sanitation_national_2020_sm`
+-   Assignment operator: `<-`
+-   Pipe operator: `|>`
 
-1. Head over to posit.cloud
-2. Open the workspace for the course [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
-3. Open "Projects"
-4. Open your "course-materials" project
-5. Follow along with me
 
-# Homework week 4 {background-color="#0F4C81"}
+## Task 1.2
 
-## Homework due dates
+1.  Use the `filter()` function to create a subset from the `sanitation` data containing urban and rural estimates for Nigeria.
+2.  Store the result as a new object in your environment with the name `sanitation_nigeria_urban_rural`
 
-- All material on [course website](https://cven5873-ss23.github.io/website/weeks/wk-04.html)
-- Homework assignment & learning reflection due: Friday, 30th June
+```{r}
+#| echo: true
+sanitation_nigeria_urban_rural <- sanitation |> 
+  filter(name == "Nigeria", residence != "national")
+```
 
-# Thanks! `r emo::ji("sunflower")`  {background-color="#0F4C81"}
+## Task 1.3 - Connected scatterplot {}
 
-## 
+{{< fa thumbs-up >}} Great for timeseries data {{< fa calendar >}}
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-03-transformation.pdf)
+::: small
 
-All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
+1.  Use the `ggplot()` function to create a connected scatterplot with `geom_point()` and `geom_line()` for the data you created in Task 1.2.
 
+2.  Use the `aes()` function to map the year variable to the x-axis, the `percent` variable to the y-axis, and the `varname_short` variable to color and group aesthetic.
+
+3.  Use `facet_wrap()` to create a separate plot urban and rural populations.
+
+4.  Change the colors using `scale_color_colorblind()`.
+
+:::
+
+```{r}
+#| fig.width: 7
+#| fig.asp: 0.618
+#| out-width: 100%
+#| output-location: slide
+#| echo: true
+ggplot(data = sanitation_nigeria_urban_rural,
+       mapping = aes(x = year, 
+                     y = percent, 
+                     group = varname_short, 
+                     color = varname_short)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~residence) +
+  scale_color_colorblind() 
+```
+
+## Our turn: back to md-03a-data-transformation.qmd
+
+::: task
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3. Click [Start]{.highlight-yellow} next to [md-03-exercises]{.highlight-yellow}.
+4. In the File Manager in the bottom right window, locate the [`md-03a-data-transformation.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+:::
+```{r}
+countdown(30)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-03/get-up-and-move.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Your turn: md-03c-your-turn-summarise.qmd
+
+::: task
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3. In the File Manager in the bottom right window, locate the [`md-03c-your-turn-summarise.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4. Follow instructions in the file
+:::
+```{r}
+countdown(40)
+```
+
+# Homework assignments module 3 {background-color="#4C326A"}
+
+## Module 3 documentation
+
+::: learn-more
+[ds4owd-001.github.io/website/modules/md-03.html](https://ds4owd-001.github.io/website/modules/md-03.html)
+
+```{=html}
+<iframe src="https://ds4owd-001.github.io/website/modules/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 documentation"></iframe>
+```
+:::
+
+## Homework due date
+
+-   Homework assignment due: [Monday, November 20th]{.highlight-yellow}
+-   Correction & feedback phase up to: Thursday, November 23rd 
+
+# Wrap-up {background-color="#4C326A"}
+
+## Thanks! `r emo::ji("sunflower")` 
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-03-transformation.pdf)
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

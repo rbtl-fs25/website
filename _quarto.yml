@@ -62,8 +62,11 @@ website:
         contents:
           - href: assignments/md-02/am-02-1-data-visualisation.qmd
             text: "am-01: Data visualization"
-      - href: modules/md-03.qmd
-        text: Module 03
+      - section: "Module 03"
+        href: modules/md-03.qmd
+        contents:
+          - href: assignments/md-03/am-03-1-data-transformation.qmd
+            text: "am-01: Data transformation"
       - href: modules/md-04.qmd
         text: Module 04
       - href: modules/md-05.qmd
