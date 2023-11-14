@@ -1,10 +1,8 @@
 {
-  "hash": "a5b4be6587ead880737fc78e9fd01d52",
+  "hash": "a2cda3f0bcd432a2021f85d687c17c74",
   "result": {
-    "markdown": "---\ntitle: \"Module 3\"\nsubtitle: \"{{< var md-03.title >}}\"\neditor: source\nparams:\n    week: 3\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\n:::\n\n\n## {{< fa display >}} Slides\n\n[View slides in full screen](../slides/lec-03-transformation.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-03-transformation.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../slides/lec-03-transformation.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 3 - Data transformation](https://r4ds.hadley.nz/data-transform)  \n\n## {{< fa code >}} Assignments\n\nPlease complete the following assignment by Monday, 20th November 2023. \n\n-   [Assignment 1](../assignments/md-03/am-03-1-data-transformation.qmd): Data transformation\n\nThank you for working through this assignment. \n\n",
-    "supporting": [
-      "md-03_files"
-    ],
+    "markdown": "---\ntitle: \"Module 3\"\nsubtitle: \"{{< var md-03.title >}}\"\neditor: source\nparams:\n    week: 3\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\n:::\n\n\n## {{< fa display >}} Slides\n\n[View slides in full screen](../slides/lec-03-transformation.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-03-transformation.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../slides/lec-03-transformation.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 3 - Data transformation](https://r4ds.hadley.nz/data-transform)  \n\n## {{< fa code >}} Assignments\n\nPlease complete the following assignment by Monday, 20th November 2023. \n\n-   [Assignment 1](../assignments/md-03/am-03-1-data-transformation.qmd): Data transformation\n-   [Assignment 2](../assignments/md-03/am-03-2-spreadsheet.qmd): Create a spreadsheet\n\nThank you for working through this assignment. \n\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

@@ -67,6 +67,8 @@ website:
         contents:
           - href: assignments/md-03/am-03-1-data-transformation.qmd
             text: "am-01: Data transformation"
+          - href: assignments/md-03/am-03-2-spreadsheet.qmd
+            text: "am-02: Spreadsheet"
       - href: modules/md-04.qmd
         text: Module 04
       - href: modules/md-05.qmd

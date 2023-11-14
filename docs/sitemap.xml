@@ -2,130 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ds4owd-001.github.io/website/calendar.html</loc>
-    <lastmod>2023-11-14T10:21:02.025Z</lastmod>
+    <lastmod>2023-11-14T12:26:31.639Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-08.html</loc>
-    <lastmod>2023-11-14T10:21:01.286Z</lastmod>
+    <lastmod>2023-11-14T12:26:30.969Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-07.html</loc>
-    <lastmod>2023-11-14T10:21:00.770Z</lastmod>
+    <lastmod>2023-11-14T12:26:30.424Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-04.html</loc>
-    <lastmod>2023-11-14T10:21:00.217Z</lastmod>
+    <lastmod>2023-11-14T12:26:29.893Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/wk-00-template.html</loc>
-    <lastmod>2023-11-14T10:20:59.693Z</lastmod>
+    <lastmod>2023-11-14T12:26:29.352Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-01.html</loc>
-    <lastmod>2023-11-14T10:20:59.169Z</lastmod>
+    <lastmod>2023-11-14T12:26:28.849Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-03.html</loc>
-    <lastmod>2023-11-14T10:20:58.551Z</lastmod>
+    <lastmod>2023-11-14T12:26:28.236Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/project/index.html</loc>
-    <lastmod>2023-11-14T10:20:57.935Z</lastmod>
+    <lastmod>2023-11-14T12:26:27.615Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/code_of_conduct.html</loc>
-    <lastmod>2023-11-14T10:20:57.229Z</lastmod>
+    <lastmod>2023-11-14T12:26:26.942Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-05-communicate.html</loc>
-    <lastmod>2023-11-14T10:20:56.557Z</lastmod>
+    <lastmod>2023-11-14T12:26:26.260Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-04-tidy-data.html</loc>
-    <lastmod>2023-11-14T10:20:54.747Z</lastmod>
+    <lastmod>2023-11-14T12:26:24.520Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-02-visualisation.html</loc>
-    <lastmod>2023-11-14T10:20:51.965Z</lastmod>
+    <lastmod>2023-11-14T12:26:21.877Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/assignments/md-01/am-01-3-github.html</loc>
-    <lastmod>2023-11-14T10:20:50.623Z</lastmod>
+    <lastmod>2023-11-14T12:26:20.593Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/assignments/md-01/am-01-1-posit.html</loc>
-    <lastmod>2023-11-14T10:20:49.719Z</lastmod>
+    <lastmod>2023-11-14T12:26:19.744Z</lastmod>
   </url>
   <url>
-    <loc>https://ds4owd-001.github.io/website/assignments/md-03/am-03-1-data-transformation.html</loc>
-    <lastmod>2023-11-14T10:20:49.125Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ds4owd-001.github.io/website/LICENSE.html</loc>
-    <lastmod>2023-11-14T10:20:48.487Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ds4owd-001.github.io/website/guide/index.html</loc>
-    <lastmod>2023-11-14T10:20:48.219Z</lastmod>
+    <loc>https://ds4owd-001.github.io/website/assignments/md-03/am-03-2-spreadsheet.html</loc>
+    <lastmod>2023-11-14T12:26:19.147Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/assignments/md-04/am-04-1-reading.html</loc>
-    <lastmod>2023-11-14T10:20:48.807Z</lastmod>
+    <lastmod>2023-11-14T12:26:18.471Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ds4owd-001.github.io/website/guide/index.html</loc>
+    <lastmod>2023-11-14T12:26:17.903Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ds4owd-001.github.io/website/LICENSE.html</loc>
+    <lastmod>2023-11-14T12:26:18.168Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ds4owd-001.github.io/website/assignments/md-03/am-03-1-data-transformation.html</loc>
+    <lastmod>2023-11-14T12:26:18.768Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/assignments/md-02/am-02-1-data-visualisation.html</loc>
-    <lastmod>2023-11-14T10:20:49.453Z</lastmod>
+    <lastmod>2023-11-14T12:26:19.469Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/assignments/md-01/am-01-2-element.html</loc>
-    <lastmod>2023-11-14T10:20:50.070Z</lastmod>
+    <lastmod>2023-11-14T12:26:20.078Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/index.html</loc>
-    <lastmod>2023-11-14T10:20:51.076Z</lastmod>
+    <lastmod>2023-11-14T12:26:21.054Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-01-welcome.html</loc>
-    <lastmod>2023-11-14T10:20:53.080Z</lastmod>
+    <lastmod>2023-11-14T12:26:22.930Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/slides/lec-03-transformation.html</loc>
-    <lastmod>2023-11-14T10:20:55.466Z</lastmod>
+    <lastmod>2023-11-14T12:26:25.185Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/sign-up.html</loc>
-    <lastmod>2023-11-14T10:20:56.898Z</lastmod>
+    <lastmod>2023-11-14T12:26:26.600Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/about.html</loc>
-    <lastmod>2023-11-14T10:20:57.492Z</lastmod>
+    <lastmod>2023-11-14T12:26:27.180Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/ds4owd-001-lesson-plan-module-02.html</loc>
-    <lastmod>2023-11-14T10:20:58.277Z</lastmod>
+    <lastmod>2023-11-14T12:26:27.975Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-02.html</loc>
-    <lastmod>2023-11-14T10:20:58.847Z</lastmod>
+    <lastmod>2023-11-14T12:26:28.544Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-05.html</loc>
-    <lastmod>2023-11-14T10:20:59.459Z</lastmod>
+    <lastmod>2023-11-14T12:26:29.120Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-10.html</loc>
-    <lastmod>2023-11-14T10:20:59.941Z</lastmod>
+    <lastmod>2023-11-14T12:26:29.597Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-06.html</loc>
-    <lastmod>2023-11-14T10:21:00.492Z</lastmod>
+    <lastmod>2023-11-14T12:26:30.154Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/md-09.html</loc>
-    <lastmod>2023-11-14T10:21:01.025Z</lastmod>
+    <lastmod>2023-11-14T12:26:30.694Z</lastmod>
   </url>
   <url>
     <loc>https://ds4owd-001.github.io/website/modules/ds4owd-001-lesson-plan-module-01.html</loc>
-    <lastmod>2023-11-14T10:21:01.689Z</lastmod>
+    <lastmod>2023-11-14T12:26:31.328Z</lastmod>
   </url>
 </urlset>

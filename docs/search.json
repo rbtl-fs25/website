@@ -207,7 +207,7 @@
     "href": "modules/md-03.html#fa-code-assignments",
     "title": "Module 3",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Monday, 20th November 2023.\n\nAssignment 1: Data transformation\n\nThank you for working through this assignment."
+    "text": "Assignments\nPlease complete the following assignment by Monday, 20th November 2023.\n\nAssignment 1: Data transformation\nAssignment 2: Create a spreadsheet\n\nThank you for working through this assignment."
   },
   {
     "objectID": "project/index.html",
@@ -1246,6 +1246,76 @@
     "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3"
   },
   {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html",
+    "title": "Create a spreadsheet",
+    "section": "",
+    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-1-make-a-spreadsheet-and-save-it",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-1-make-a-spreadsheet-and-save-it",
+    "title": "Create a spreadsheet",
+    "section": "Step 1: Make a spreadsheet and save it",
+    "text": "Step 1: Make a spreadsheet and save it\nLayout a spreadsheet for data collection using a spreadsheet-based software (Google Sheets or MS Excel).\nYou are taking 20 samples of 1 liter faecal sludge from pit latrines and septic tanks at households and public toilets (5 samples each). For each sample, you note the number of daily users of the sanitation system.\nYour sample collection starts on 1st November 2022. On day 5, you analyse the data in the laboratory for totals solids (TS) in g/L. In your spreadsheet, note the exact date of each collected sample.\nThis is you data collection plan:\n\nDay 1: 5 samples at households using pit latrines\nDay 2: 5 samples at households using septic tanks\nDay 3: 5 samples at public toilets that are pit latrines\nDay 4: 5 samples at public toilets that are septic tanks\nDay 5: Analyses of all 20 samples for total solids (TS) in g/L on a lab scale with accuracy of 0.01 g\n\nMake up the resultsfor the total solids (TS) analyses (e.g. 12.482 g/L).\nSave the spreadsheet as XLSX with a file name of your choice."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-2-create-a-new-repository-on-github-clone-to-posit-cloud",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-2-create-a-new-repository-on-github-clone-to-posit-cloud",
+    "title": "Create a spreadsheet",
+    "section": "Step 2: Create a new repository on GitHub & clone to Posit Cloud",
+    "text": "Step 2: Create a new repository on GitHub & clone to Posit Cloud\n\nOpen the GitHub Organisation for the course https://github.com/ds4owd-001\nTo right of the field “Find a repository”, click on the green “New” button.\n\n\n\n\n\n\n\nIn the “Repository name” field write samples-USERNAME. Replace USERNAME with your GitHub username. Avoid using spaces.\n\n\n\n\n\n\n\nScroll down on the same page, and click “Create repository”.\n\n\n\n\n\n\n\nIn the “Quick setup” field, click on the clipboard next to the HTTPs URL\n\n\n\n\n\n\n\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-3-upload-the-data",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-3-upload-the-data",
+    "title": "Create a spreadsheet",
+    "section": "Step 3: Upload the data",
+    "text": "Step 3: Upload the data\n\nUse the Files tab in the bottom right window to upload your spreadsheet from Task 1 into the folder"
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-3-commit-and-push-your-changes",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-3-commit-and-push-your-changes",
+    "title": "Create a spreadsheet",
+    "section": "Step 3: Commit and push your changes",
+    "text": "Step 3: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-4-open-an-issue-on-github",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-4-open-an-issue-on-github",
+    "title": "Create a spreadsheet",
+    "section": "Step 4: Open an issue on GitHub",
+    "text": "Step 4: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository samples- that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Create spreadsheet and upload to cloud”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html",
+    "href": "assignments/md-04/am-04-1-reading.html",
+    "title": "Module 2 - Assignment 1",
+    "section": "",
+    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
+  },
+  {
+    "objectID": "guide/index.html",
+    "href": "guide/index.html",
+    "title": "Guide",
+    "section": "",
+    "text": "This guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions.\nIf you have a request, let us know and we will add guidance here."
+  },
+  {
+    "objectID": "guide/index.html#switch-pipe-operator",
+    "href": "guide/index.html#switch-pipe-operator",
+    "title": "Guide",
+    "section": "1 Switch pipe operator",
+    "text": "1 Switch pipe operator\nBy default, R uses %&gt;% as the pipe operator from the magrittr package. Since R 4.1.0, the pipe operator is also available as |&gt; without loading any packages. The |&gt; operator is recommended to be used instead of %&gt;%.\nTo switch to the native pipe operator, follow these steps:\n\nOpen your project on Posit Cloud\nOn the menu bar of RStudio, click on Tools &gt; Global Options... (see Figure 1)\nOn the left panel, click on Code\nOn the right panel, select the 4th check-box from the top next to ’Use native pipe operator, |&gt; (requires R 4.1+) (see Figure 2)\nClick on Apply and OK\n\n\n\n\n\n\nFigure 1: RStudio Global Options\n\n\n\n\n\n\n\n\n\nFigure 2: RStudio Code Options"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "data science for openwashdata",
+    "section": "",
+    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+  },
+  {
     "objectID": "assignments/md-03/am-03-1-data-transformation.html",
     "href": "assignments/md-03/am-03-1-data-transformation.html",
     "title": "Data transformation with dplyr",
@@ -1264,7 +1334,7 @@
     "href": "assignments/md-03/am-03-1-data-transformation.html#step-2-commit-and-push-your-changes",
     "title": "Data transformation with dplyr",
     "section": "Step 2: Commit and push your changes",
-    "text": "Step 2: Commit and push your changes\nThe below is also described in md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage then it for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+    "text": "Step 2: Commit and push your changes\nThe below is also described in md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
   },
   {
     "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-3-open-an-issue-on-github",
@@ -1272,34 +1342,6 @@
     "title": "Data transformation with dplyr",
     "section": "Step 3: Open an issue on GitHub",
     "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-03-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 3 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "data science for openwashdata",
-    "section": "",
-    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
-  },
-  {
-    "objectID": "guide/index.html",
-    "href": "guide/index.html",
-    "title": "Guide",
-    "section": "",
-    "text": "This guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions.\nIf you have a request, let us know and we will add guidance here."
-  },
-  {
-    "objectID": "guide/index.html#switch-pipe-operator",
-    "href": "guide/index.html#switch-pipe-operator",
-    "title": "Guide",
-    "section": "1 Switch pipe operator",
-    "text": "1 Switch pipe operator\nBy default, R uses %&gt;% as the pipe operator from the magrittr package. Since R 4.1.0, the pipe operator is also available as |&gt; without loading any packages. The |&gt; operator is recommended to be used instead of %&gt;%.\nTo switch to the native pipe operator, follow these steps:\n\nOpen your project on Posit Cloud\nOn the menu bar of RStudio, click on Tools &gt; Global Options... (see Figure 1)\nOn the left panel, click on Code\nOn the right panel, select the 4th check-box from the top next to ’Use native pipe operator, |&gt; (requires R 4.1+) (see Figure 2)\nClick on Apply and OK\n\n\n\n\n\n\nFigure 1: RStudio Global Options\n\n\n\n\n\n\n\n\n\nFigure 2: RStudio Code Options"
-  },
-  {
-    "objectID": "assignments/md-04/am-04-1-reading.html",
-    "href": "assignments/md-04/am-04-1-reading.html",
-    "title": "Module 2 - Assignment 1",
-    "section": "",
-    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
   },
   {
     "objectID": "assignments/md-02/am-02-1-data-visualisation.html",

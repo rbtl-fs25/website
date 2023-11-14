@@ -24,7 +24,7 @@ A pre-requisite for this homework is that you worked through the "Interaction wi
 The below is also described in `md-03a-penguins-practice.qmd` & `md-03b-sanitation-visualise.qmd`
 
 1. Navigate to the Git pane in the top-right window of RStudio
-2. Check the box next to all files to stage then it for a commit
+2. Check the box next to all files to stage them for a commit
 3. Click on the "Commit" button
 4. Enter a commit message in the "Commit message" field
 5. Click on the "Commit" button
