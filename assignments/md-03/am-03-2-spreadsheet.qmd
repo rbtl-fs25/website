@@ -25,7 +25,7 @@ This is you data collection plan:
 - Day 4: 5 samples at public toilets that are septic tanks
 - Day 5: Analyses of all 20 samples for total solids (TS) in g/L on a lab scale with accuracy of 0.01 g
 
-Make up the resultsfor the total solids (TS) analyses (e.g. 12.482 g/L).
+Make up the resultsfor the total solids (TS) analyses (e.g. 12.48 g/L).
 
 Save the spreadsheet as XLSX with a file name of your choice.
 
