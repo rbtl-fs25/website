@@ -8,14 +8,12 @@ NA,1,Welcome & get ready for the course,"Learners can identify four components o
 2023-11-07T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.
 2023-11-07T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping.
 2023-11-07T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,"Learners can compare three different geoms (bar/col, histogram, point) and their use case."
-2023-11-14T00:00:00Z,3,NA,NA
-2023-11-14T00:00:00Z,3,NA,NA
-2023-11-14T00:00:00Z,3,NA,NA
-2023-11-14T00:00:00Z,3,NA,NA
+2023-11-14T00:00:00Z,3,Data transformation with dplyr,Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.
 2023-11-21T00:00:00Z,4,Data organization in spreadsheets,Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.
-2023-11-21T00:00:00Z,4,Data organization in spreadsheets,Learners can discuss the difference between data in an unprocessed structure and in a processed structure.
-2023-11-28T00:00:00Z,5,"Data transformation, descriptive statistics and gt",Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.
-2023-11-28T00:00:00Z,5,"Data transformation, descriptive statistics and gt",Learners can use functions of the gt R package to present summary tables in output formats.
+2023-11-21T00:00:00Z,4,Data organization in spreadsheets,"Learners can discuss the difference between unprocessed data, analysis-ready data, and data underlying a publication."
+2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,"Learners can explain the differences between measures of centrality (mean, median, mode)."
+2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,Learners can define what a distribution is.
+2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,Learners can describe the characteristics of a normal distribution.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can explain the three characteristics of tidy data.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can list the four main atomic vector types in R.

@@ -733,6 +733,6 @@ countdown(15)
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-01-welcome.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-03-visualisation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
