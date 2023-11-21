@@ -15,7 +15,7 @@
 
   <meta name="author" content="Lars Schöbitz">
   <meta name="dcterms.date" content="2023-11-21">
-  <title>data science for openwashdata - ?var:md-04.title</title>
+  <title>data science for openwashdata - Data import &amp; Data organization in spreadsheets</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -398,7 +398,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title"><strong>?var:md-04.title</strong></h1>
+  <h1 class="title">Data import &amp; Data organization in spreadsheets</h1>
   <p class="subtitle">ds4owd - data science for openwashdata</p>
 
 <div class="quarto-title-authors">
@@ -415,8 +415,10 @@ Lars Schöbitz
 <h2>Learning Objectives (for this week)</h2>
 <div class="cell">
 <ol type="1">
+<li>Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.</li>
+<li>Learners can explain the difference between the vector class character and the vector class factor.</li>
+<li>Learners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.</li>
 <li>Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.</li>
-<li>Learners can discuss the difference between unprocessed data, analysis-ready data, and data underlying a publication.</li>
 </ol>
 </div>
 </section>
@@ -427,6 +429,33 @@ Lars Schöbitz
 </section>
 <section id="task-3-data-for-a-country-of-your-choice" class="slide level2 smaller">
 <h2>Task 3: Data for a country of your choice</h2>
+<ul>
+<li>for the country you live or work in</li>
+<li>for the year 2000 and 2020</li>
+<li>for all variables that are not “safely managed sanitation services”</li>
+</ul>
+</section>
+<section id="task-3-data-for-a-country-of-your-choice-1" class="slide level2 smaller">
+<h2>Task 3: Data for a country of your choice</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><i class="fa-solid fa-square-check" aria-label="square-check"></i> <span class="highlight-yellow">for the country you live or work in</span></li>
+<li><i class="fa-solid fa-square-check" aria-label="square-check"></i> for the year 2000 and 2020</li>
+<li><i class="fa-solid fa-square-check" aria-label="square-check"></i> <span class="highlight-yellow">for all variables that are not “safely managed sanitation services”</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="2,4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>sanitation_uga <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">filter</span>(iso3 <span class="sc">==</span> <span class="st">"UGA"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3"></a>         year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2000</span>, <span class="dv">2020</span>), </span>
+<span id="cb1-4"><a href="#cb1-4"></a>         varname_short <span class="sc">!=</span> <span class="st">"san_sm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="task-3-data-for-a-country-of-your-choice-2" class="slide level2 smaller">
+<h2>Task 3: Data for a country of your choice</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -436,514 +465,15 @@ Lars Schöbitz
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>sanitation_uga <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">filter</span>(iso3 <span class="sc">==</span> <span class="st">"UGA"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3"></a>         year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2000</span>, <span class="dv">2020</span>), </span>
-<span id="cb1-4"><a href="#cb1-4"></a>         varname_short <span class="sc">!=</span> <span class="st">"san_sm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><n> <n></n></n></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>sanitation_uga <span class="sc">|&gt;</span> </span>
-<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">count</span>(iso3, year, varname_short)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><n></n></p>
-<div class="cell">
-<div class="cell-output-display">
-
-<div id="uxhdxojdfc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#uxhdxojdfc table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#uxhdxojdfc thead, #uxhdxojdfc tbody, #uxhdxojdfc tfoot, #uxhdxojdfc tr, #uxhdxojdfc td, #uxhdxojdfc th {
-  border-style: none;
-}
-
-#uxhdxojdfc p {
-  margin: 0;
-  padding: 0;
-}
-
-#uxhdxojdfc .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#uxhdxojdfc .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#uxhdxojdfc .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#uxhdxojdfc .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#uxhdxojdfc .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#uxhdxojdfc .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#uxhdxojdfc .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#uxhdxojdfc .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#uxhdxojdfc .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#uxhdxojdfc .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#uxhdxojdfc .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#uxhdxojdfc .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#uxhdxojdfc .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#uxhdxojdfc .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#uxhdxojdfc .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#uxhdxojdfc .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#uxhdxojdfc .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#uxhdxojdfc .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#uxhdxojdfc .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#uxhdxojdfc .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#uxhdxojdfc .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#uxhdxojdfc .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#uxhdxojdfc .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#uxhdxojdfc .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#uxhdxojdfc .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#uxhdxojdfc .gt_left {
-  text-align: left;
-}
-
-#uxhdxojdfc .gt_center {
-  text-align: center;
-}
-
-#uxhdxojdfc .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#uxhdxojdfc .gt_font_normal {
-  font-weight: normal;
-}
-
-#uxhdxojdfc .gt_font_bold {
-  font-weight: bold;
-}
-
-#uxhdxojdfc .gt_font_italic {
-  font-style: italic;
-}
-
-#uxhdxojdfc .gt_super {
-  font-size: 65%;
-}
-
-#uxhdxojdfc .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#uxhdxojdfc .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#uxhdxojdfc .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#uxhdxojdfc .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#uxhdxojdfc .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#uxhdxojdfc .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#uxhdxojdfc .gt_indent_5 {
-  text-indent: 25px;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="iso3">iso3</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="year">year</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="varname_short">varname_short</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="font-weight: bold;" scope="col" id="n">n</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2000</td>
-<td headers="varname_short" class="gt_row gt_left">san_bas</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2000</td>
-<td headers="varname_short" class="gt_row gt_left">san_lim</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2000</td>
-<td headers="varname_short" class="gt_row gt_left">san_od</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2000</td>
-<td headers="varname_short" class="gt_row gt_left">san_unimp</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2020</td>
-<td headers="varname_short" class="gt_row gt_left">san_bas</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2020</td>
-<td headers="varname_short" class="gt_row gt_left">san_lim</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2020</td>
-<td headers="varname_short" class="gt_row gt_left">san_od</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-    <tr><td headers="iso3" class="gt_row gt_left">UGA</td>
-<td headers="year" class="gt_row gt_right">2020</td>
-<td headers="varname_short" class="gt_row gt_left">san_unimp</td>
-<td headers="n" class="gt_row gt_right">3</td></tr>
-  </tbody>
-  
-  
-</table>
-</div>
-</div>
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>sanitation_uga <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">filter</span>(iso3 <span class="sc">==</span> <span class="st">"UGA"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3"></a>         year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2000</span>, <span class="dv">2020</span>), </span>
+<span id="cb2-4"><a href="#cb2-4"></a>         varname_short <span class="sc">!=</span> <span class="st">"san_sm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="task-3-data-for-a-country-of-your-choice-1" class="slide level2 smaller">
+<section id="task-3-data-for-a-country-of-your-choice-3" class="slide level2 smaller">
 <h2>Task 3: Data for a country of your choice</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -968,23 +498,23 @@ Lars Schöbitz
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="usmdcsyudt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#usmdcsyudt table {
+<div id="zfpjtgqfsg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zfpjtgqfsg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#usmdcsyudt thead, #usmdcsyudt tbody, #usmdcsyudt tfoot, #usmdcsyudt tr, #usmdcsyudt td, #usmdcsyudt th {
+#zfpjtgqfsg thead, #zfpjtgqfsg tbody, #zfpjtgqfsg tfoot, #zfpjtgqfsg tr, #zfpjtgqfsg td, #zfpjtgqfsg th {
   border-style: none;
 }
 
-#usmdcsyudt p {
+#zfpjtgqfsg p {
   margin: 0;
   padding: 0;
 }
 
-#usmdcsyudt .gt_table {
+#zfpjtgqfsg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1010,12 +540,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_caption {
+#zfpjtgqfsg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#usmdcsyudt .gt_title {
+#zfpjtgqfsg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1027,7 +557,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#usmdcsyudt .gt_subtitle {
+#zfpjtgqfsg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1039,7 +569,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#usmdcsyudt .gt_heading {
+#zfpjtgqfsg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1051,13 +581,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_bottom_border {
+#zfpjtgqfsg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_col_headings {
+#zfpjtgqfsg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1072,7 +602,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_col_heading {
+#zfpjtgqfsg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1092,7 +622,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#usmdcsyudt .gt_column_spanner_outer {
+#zfpjtgqfsg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1104,15 +634,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#usmdcsyudt .gt_column_spanner_outer:first-child {
+#zfpjtgqfsg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#usmdcsyudt .gt_column_spanner_outer:last-child {
+#zfpjtgqfsg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#usmdcsyudt .gt_column_spanner {
+#zfpjtgqfsg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1124,11 +654,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#usmdcsyudt .gt_spanner_row {
+#zfpjtgqfsg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#usmdcsyudt .gt_group_heading {
+#zfpjtgqfsg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1154,7 +684,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#usmdcsyudt .gt_empty_group_heading {
+#zfpjtgqfsg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1169,15 +699,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#usmdcsyudt .gt_from_md > :first-child {
+#zfpjtgqfsg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#usmdcsyudt .gt_from_md > :last-child {
+#zfpjtgqfsg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#usmdcsyudt .gt_row {
+#zfpjtgqfsg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1196,7 +726,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#usmdcsyudt .gt_stub {
+#zfpjtgqfsg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1209,7 +739,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#usmdcsyudt .gt_stub_row_group {
+#zfpjtgqfsg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1223,15 +753,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#usmdcsyudt .gt_row_group_first td {
+#zfpjtgqfsg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#usmdcsyudt .gt_row_group_first th {
+#zfpjtgqfsg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#usmdcsyudt .gt_summary_row {
+#zfpjtgqfsg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1241,16 +771,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#usmdcsyudt .gt_first_summary_row {
+#zfpjtgqfsg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_first_summary_row.thick {
+#zfpjtgqfsg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#usmdcsyudt .gt_last_summary_row {
+#zfpjtgqfsg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1260,7 +790,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_grand_summary_row {
+#zfpjtgqfsg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1270,7 +800,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#usmdcsyudt .gt_first_grand_summary_row {
+#zfpjtgqfsg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1280,7 +810,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_last_grand_summary_row_top {
+#zfpjtgqfsg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1290,11 +820,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_striped {
+#zfpjtgqfsg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#usmdcsyudt .gt_table_body {
+#zfpjtgqfsg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1303,7 +833,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_footnotes {
+#zfpjtgqfsg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1317,7 +847,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_footnote {
+#zfpjtgqfsg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1326,7 +856,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#usmdcsyudt .gt_sourcenotes {
+#zfpjtgqfsg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1340,7 +870,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#usmdcsyudt .gt_sourcenote {
+#zfpjtgqfsg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1348,63 +878,63 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#usmdcsyudt .gt_left {
+#zfpjtgqfsg .gt_left {
   text-align: left;
 }
 
-#usmdcsyudt .gt_center {
+#zfpjtgqfsg .gt_center {
   text-align: center;
 }
 
-#usmdcsyudt .gt_right {
+#zfpjtgqfsg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#usmdcsyudt .gt_font_normal {
+#zfpjtgqfsg .gt_font_normal {
   font-weight: normal;
 }
 
-#usmdcsyudt .gt_font_bold {
+#zfpjtgqfsg .gt_font_bold {
   font-weight: bold;
 }
 
-#usmdcsyudt .gt_font_italic {
+#zfpjtgqfsg .gt_font_italic {
   font-style: italic;
 }
 
-#usmdcsyudt .gt_super {
+#zfpjtgqfsg .gt_super {
   font-size: 65%;
 }
 
-#usmdcsyudt .gt_footnote_marks {
+#zfpjtgqfsg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#usmdcsyudt .gt_asterisk {
+#zfpjtgqfsg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#usmdcsyudt .gt_indent_1 {
+#zfpjtgqfsg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#usmdcsyudt .gt_indent_2 {
+#zfpjtgqfsg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#usmdcsyudt .gt_indent_3 {
+#zfpjtgqfsg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#usmdcsyudt .gt_indent_4 {
+#zfpjtgqfsg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#usmdcsyudt .gt_indent_5 {
+#zfpjtgqfsg .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1461,7 +991,7 @@ Lars Schöbitz
 </div>
 </div>
 </section>
-<section id="task-3-data-for-a-country-of-your-choice-2" class="slide level2 smaller">
+<section id="task-3-data-for-a-country-of-your-choice-4" class="slide level2 smaller">
 <h2>Task 3: Data for a country of your choice</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -1486,23 +1016,23 @@ Lars Schöbitz
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="kkrhztpcnn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kkrhztpcnn table {
+<div id="niqswgvlvl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#niqswgvlvl table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kkrhztpcnn thead, #kkrhztpcnn tbody, #kkrhztpcnn tfoot, #kkrhztpcnn tr, #kkrhztpcnn td, #kkrhztpcnn th {
+#niqswgvlvl thead, #niqswgvlvl tbody, #niqswgvlvl tfoot, #niqswgvlvl tr, #niqswgvlvl td, #niqswgvlvl th {
   border-style: none;
 }
 
-#kkrhztpcnn p {
+#niqswgvlvl p {
   margin: 0;
   padding: 0;
 }
 
-#kkrhztpcnn .gt_table {
+#niqswgvlvl .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1528,12 +1058,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_caption {
+#niqswgvlvl .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kkrhztpcnn .gt_title {
+#niqswgvlvl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1545,7 +1075,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#kkrhztpcnn .gt_subtitle {
+#niqswgvlvl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1557,7 +1087,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#kkrhztpcnn .gt_heading {
+#niqswgvlvl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1569,13 +1099,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_bottom_border {
+#niqswgvlvl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_col_headings {
+#niqswgvlvl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1590,7 +1120,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_col_heading {
+#niqswgvlvl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1610,7 +1140,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#kkrhztpcnn .gt_column_spanner_outer {
+#niqswgvlvl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1622,15 +1152,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#kkrhztpcnn .gt_column_spanner_outer:first-child {
+#niqswgvlvl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kkrhztpcnn .gt_column_spanner_outer:last-child {
+#niqswgvlvl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kkrhztpcnn .gt_column_spanner {
+#niqswgvlvl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1642,11 +1172,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#kkrhztpcnn .gt_spanner_row {
+#niqswgvlvl .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kkrhztpcnn .gt_group_heading {
+#niqswgvlvl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1672,7 +1202,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#kkrhztpcnn .gt_empty_group_heading {
+#niqswgvlvl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1687,15 +1217,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#kkrhztpcnn .gt_from_md > :first-child {
+#niqswgvlvl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kkrhztpcnn .gt_from_md > :last-child {
+#niqswgvlvl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kkrhztpcnn .gt_row {
+#niqswgvlvl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1714,7 +1244,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#kkrhztpcnn .gt_stub {
+#niqswgvlvl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1727,7 +1257,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#kkrhztpcnn .gt_stub_row_group {
+#niqswgvlvl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1741,15 +1271,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#kkrhztpcnn .gt_row_group_first td {
+#niqswgvlvl .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kkrhztpcnn .gt_row_group_first th {
+#niqswgvlvl .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kkrhztpcnn .gt_summary_row {
+#niqswgvlvl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1759,16 +1289,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#kkrhztpcnn .gt_first_summary_row {
+#niqswgvlvl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_first_summary_row.thick {
+#niqswgvlvl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kkrhztpcnn .gt_last_summary_row {
+#niqswgvlvl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1778,7 +1308,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_grand_summary_row {
+#niqswgvlvl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1788,7 +1318,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#kkrhztpcnn .gt_first_grand_summary_row {
+#niqswgvlvl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1798,7 +1328,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_last_grand_summary_row_top {
+#niqswgvlvl .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1808,11 +1338,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_striped {
+#niqswgvlvl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kkrhztpcnn .gt_table_body {
+#niqswgvlvl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1821,7 +1351,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_footnotes {
+#niqswgvlvl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1835,7 +1365,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_footnote {
+#niqswgvlvl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1844,7 +1374,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#kkrhztpcnn .gt_sourcenotes {
+#niqswgvlvl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1858,7 +1388,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#kkrhztpcnn .gt_sourcenote {
+#niqswgvlvl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1866,63 +1396,63 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#kkrhztpcnn .gt_left {
+#niqswgvlvl .gt_left {
   text-align: left;
 }
 
-#kkrhztpcnn .gt_center {
+#niqswgvlvl .gt_center {
   text-align: center;
 }
 
-#kkrhztpcnn .gt_right {
+#niqswgvlvl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kkrhztpcnn .gt_font_normal {
+#niqswgvlvl .gt_font_normal {
   font-weight: normal;
 }
 
-#kkrhztpcnn .gt_font_bold {
+#niqswgvlvl .gt_font_bold {
   font-weight: bold;
 }
 
-#kkrhztpcnn .gt_font_italic {
+#niqswgvlvl .gt_font_italic {
   font-style: italic;
 }
 
-#kkrhztpcnn .gt_super {
+#niqswgvlvl .gt_super {
   font-size: 65%;
 }
 
-#kkrhztpcnn .gt_footnote_marks {
+#niqswgvlvl .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kkrhztpcnn .gt_asterisk {
+#niqswgvlvl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kkrhztpcnn .gt_indent_1 {
+#niqswgvlvl .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kkrhztpcnn .gt_indent_2 {
+#niqswgvlvl .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kkrhztpcnn .gt_indent_3 {
+#niqswgvlvl .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kkrhztpcnn .gt_indent_4 {
+#niqswgvlvl .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kkrhztpcnn .gt_indent_5 {
+#niqswgvlvl .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1968,7 +1498,7 @@ Lars Schöbitz
 </ol>
 </div>
 
-<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-16-1.png" width="672" class="r-stretch"></section>
+<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-15-1.png" width="672" class="r-stretch"></section>
 <section id="task-5-6-make-a-plot-inspect-it-1" class="slide level2 smaller">
 <h2>Task 5 &amp; 6: Make a plot &amp; inspect it</h2>
 <div class="small">
@@ -1979,7 +1509,7 @@ Lars Schöbitz
 </ol>
 </div>
 
-<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-17-1.png" width="672" class="r-stretch"></section>
+<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-16-1.png" width="672" class="r-stretch"></section>
 <section id="task-5-6-make-a-plot-inspect-it-2" class="slide level2 smaller">
 <h2>Task 5 &amp; 6: Make a plot &amp; inspect it</h2>
 <div class="small">
@@ -1990,29 +1520,29 @@ Lars Schöbitz
 </ol>
 </div>
 
-<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-18-1.png" width="672" class="r-stretch"></section>
+<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-17-1.png" width="672" class="r-stretch"></section>
 <section id="sanitation-ladder" class="slide level2">
 <h2>Sanitation ladder?</h2>
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="hidqqohdtp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hidqqohdtp table {
+<div id="rmrveewjqb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rmrveewjqb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hidqqohdtp thead, #hidqqohdtp tbody, #hidqqohdtp tfoot, #hidqqohdtp tr, #hidqqohdtp td, #hidqqohdtp th {
+#rmrveewjqb thead, #rmrveewjqb tbody, #rmrveewjqb tfoot, #rmrveewjqb tr, #rmrveewjqb td, #rmrveewjqb th {
   border-style: none;
 }
 
-#hidqqohdtp p {
+#rmrveewjqb p {
   margin: 0;
   padding: 0;
 }
 
-#hidqqohdtp .gt_table {
+#rmrveewjqb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2038,12 +1568,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_caption {
+#rmrveewjqb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hidqqohdtp .gt_title {
+#rmrveewjqb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2055,7 +1585,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#hidqqohdtp .gt_subtitle {
+#rmrveewjqb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2067,7 +1597,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#hidqqohdtp .gt_heading {
+#rmrveewjqb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2079,13 +1609,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_bottom_border {
+#rmrveewjqb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_col_headings {
+#rmrveewjqb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2100,7 +1630,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_col_heading {
+#rmrveewjqb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2120,7 +1650,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#hidqqohdtp .gt_column_spanner_outer {
+#rmrveewjqb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2132,15 +1662,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#hidqqohdtp .gt_column_spanner_outer:first-child {
+#rmrveewjqb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hidqqohdtp .gt_column_spanner_outer:last-child {
+#rmrveewjqb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hidqqohdtp .gt_column_spanner {
+#rmrveewjqb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2152,11 +1682,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#hidqqohdtp .gt_spanner_row {
+#rmrveewjqb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hidqqohdtp .gt_group_heading {
+#rmrveewjqb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2182,7 +1712,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#hidqqohdtp .gt_empty_group_heading {
+#rmrveewjqb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2197,15 +1727,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#hidqqohdtp .gt_from_md > :first-child {
+#rmrveewjqb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hidqqohdtp .gt_from_md > :last-child {
+#rmrveewjqb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hidqqohdtp .gt_row {
+#rmrveewjqb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2224,7 +1754,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#hidqqohdtp .gt_stub {
+#rmrveewjqb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2237,7 +1767,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#hidqqohdtp .gt_stub_row_group {
+#rmrveewjqb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2251,15 +1781,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#hidqqohdtp .gt_row_group_first td {
+#rmrveewjqb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hidqqohdtp .gt_row_group_first th {
+#rmrveewjqb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hidqqohdtp .gt_summary_row {
+#rmrveewjqb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2269,16 +1799,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#hidqqohdtp .gt_first_summary_row {
+#rmrveewjqb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_first_summary_row.thick {
+#rmrveewjqb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hidqqohdtp .gt_last_summary_row {
+#rmrveewjqb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2288,7 +1818,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_grand_summary_row {
+#rmrveewjqb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2298,7 +1828,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#hidqqohdtp .gt_first_grand_summary_row {
+#rmrveewjqb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2308,7 +1838,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_last_grand_summary_row_top {
+#rmrveewjqb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2318,11 +1848,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_striped {
+#rmrveewjqb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hidqqohdtp .gt_table_body {
+#rmrveewjqb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2331,7 +1861,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_footnotes {
+#rmrveewjqb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2345,7 +1875,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_footnote {
+#rmrveewjqb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2354,7 +1884,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#hidqqohdtp .gt_sourcenotes {
+#rmrveewjqb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2368,7 +1898,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#hidqqohdtp .gt_sourcenote {
+#rmrveewjqb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2376,63 +1906,63 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#hidqqohdtp .gt_left {
+#rmrveewjqb .gt_left {
   text-align: left;
 }
 
-#hidqqohdtp .gt_center {
+#rmrveewjqb .gt_center {
   text-align: center;
 }
 
-#hidqqohdtp .gt_right {
+#rmrveewjqb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hidqqohdtp .gt_font_normal {
+#rmrveewjqb .gt_font_normal {
   font-weight: normal;
 }
 
-#hidqqohdtp .gt_font_bold {
+#rmrveewjqb .gt_font_bold {
   font-weight: bold;
 }
 
-#hidqqohdtp .gt_font_italic {
+#rmrveewjqb .gt_font_italic {
   font-style: italic;
 }
 
-#hidqqohdtp .gt_super {
+#rmrveewjqb .gt_super {
   font-size: 65%;
 }
 
-#hidqqohdtp .gt_footnote_marks {
+#rmrveewjqb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hidqqohdtp .gt_asterisk {
+#rmrveewjqb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hidqqohdtp .gt_indent_1 {
+#rmrveewjqb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hidqqohdtp .gt_indent_2 {
+#rmrveewjqb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hidqqohdtp .gt_indent_3 {
+#rmrveewjqb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hidqqohdtp .gt_indent_4 {
+#rmrveewjqb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hidqqohdtp .gt_indent_5 {
+#rmrveewjqb .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2479,7 +2009,7 @@ Lars Schöbitz
 </ol>
 </div>
 
-<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch"></section>
 <section id="task-5-6-make-a-plot-inspect-it-4" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Task 5 &amp; 6: Make a plot &amp; inspect it</h2>
 <div class="small">
@@ -2490,7 +2020,7 @@ Lars Schöbitz
 </ol>
 </div>
 
-<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
 <section id="task-5-6-make-a-plot-inspect-it-5" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Task 5 &amp; 6: Make a plot &amp; inspect it</h2>
 <div class="small">
@@ -2501,7 +2031,7 @@ Lars Schöbitz
 </ol>
 </div>
 
-<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"></section>
+<img data-src="lec-04-spreadsheets_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
 <section id="types-of-variables---remember" class="slide level2">
 <h2>Types of variables - Remember?</h2>
 <div class="columns">
@@ -2548,7 +2078,7 @@ Lars Schöbitz
 
 <img data-src="img/lec-04/pixel-art-tree.png" style="width:50.0%" alt="This is the prompt generated by DALL-E 3 by OpenAI: A pixel art scene representing the concept of taking a break. The scene shows a serene outdoor setting with a clear blue sky. In the center, a small pixelated character is sitting comfortably on a bright green grassy hill, under the shade of a large, leafy tree. The character is depicted in a relaxed pose, perhaps sipping a warm beverage from a small cup. Nearby, a gentle stream flows, and a few fluffy white clouds drift in the sky. The overall mood of the image is peaceful and calming, emphasizing the tranquility of taking a break in nature." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_c2dee9cc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_3a6ae8ab" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2570,7 +2100,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_f6212573" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_7f9775ae" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2735,23 +2265,23 @@ Lars Schöbitz
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="izgljqtqgm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#izgljqtqgm table {
+<div id="kacvoxcxil" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kacvoxcxil table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#izgljqtqgm thead, #izgljqtqgm tbody, #izgljqtqgm tfoot, #izgljqtqgm tr, #izgljqtqgm td, #izgljqtqgm th {
+#kacvoxcxil thead, #kacvoxcxil tbody, #kacvoxcxil tfoot, #kacvoxcxil tr, #kacvoxcxil td, #kacvoxcxil th {
   border-style: none;
 }
 
-#izgljqtqgm p {
+#kacvoxcxil p {
   margin: 0;
   padding: 0;
 }
 
-#izgljqtqgm .gt_table {
+#kacvoxcxil .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2777,12 +2307,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_caption {
+#kacvoxcxil .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#izgljqtqgm .gt_title {
+#kacvoxcxil .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2794,7 +2324,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#izgljqtqgm .gt_subtitle {
+#kacvoxcxil .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2806,7 +2336,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#izgljqtqgm .gt_heading {
+#kacvoxcxil .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2818,13 +2348,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_bottom_border {
+#kacvoxcxil .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_col_headings {
+#kacvoxcxil .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2839,7 +2369,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_col_heading {
+#kacvoxcxil .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2859,7 +2389,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#izgljqtqgm .gt_column_spanner_outer {
+#kacvoxcxil .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2871,15 +2401,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#izgljqtqgm .gt_column_spanner_outer:first-child {
+#kacvoxcxil .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#izgljqtqgm .gt_column_spanner_outer:last-child {
+#kacvoxcxil .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#izgljqtqgm .gt_column_spanner {
+#kacvoxcxil .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2891,11 +2421,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#izgljqtqgm .gt_spanner_row {
+#kacvoxcxil .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#izgljqtqgm .gt_group_heading {
+#kacvoxcxil .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2921,7 +2451,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#izgljqtqgm .gt_empty_group_heading {
+#kacvoxcxil .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2936,15 +2466,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#izgljqtqgm .gt_from_md > :first-child {
+#kacvoxcxil .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#izgljqtqgm .gt_from_md > :last-child {
+#kacvoxcxil .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#izgljqtqgm .gt_row {
+#kacvoxcxil .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2963,7 +2493,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#izgljqtqgm .gt_stub {
+#kacvoxcxil .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2976,7 +2506,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#izgljqtqgm .gt_stub_row_group {
+#kacvoxcxil .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2990,15 +2520,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#izgljqtqgm .gt_row_group_first td {
+#kacvoxcxil .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#izgljqtqgm .gt_row_group_first th {
+#kacvoxcxil .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#izgljqtqgm .gt_summary_row {
+#kacvoxcxil .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3008,16 +2538,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#izgljqtqgm .gt_first_summary_row {
+#kacvoxcxil .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_first_summary_row.thick {
+#kacvoxcxil .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#izgljqtqgm .gt_last_summary_row {
+#kacvoxcxil .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3027,7 +2557,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_grand_summary_row {
+#kacvoxcxil .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3037,7 +2567,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#izgljqtqgm .gt_first_grand_summary_row {
+#kacvoxcxil .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3047,7 +2577,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_last_grand_summary_row_top {
+#kacvoxcxil .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3057,11 +2587,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_striped {
+#kacvoxcxil .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#izgljqtqgm .gt_table_body {
+#kacvoxcxil .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3070,7 +2600,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_footnotes {
+#kacvoxcxil .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3084,7 +2614,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_footnote {
+#kacvoxcxil .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3093,7 +2623,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#izgljqtqgm .gt_sourcenotes {
+#kacvoxcxil .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3107,7 +2637,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#izgljqtqgm .gt_sourcenote {
+#kacvoxcxil .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3115,63 +2645,63 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#izgljqtqgm .gt_left {
+#kacvoxcxil .gt_left {
   text-align: left;
 }
 
-#izgljqtqgm .gt_center {
+#kacvoxcxil .gt_center {
   text-align: center;
 }
 
-#izgljqtqgm .gt_right {
+#kacvoxcxil .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#izgljqtqgm .gt_font_normal {
+#kacvoxcxil .gt_font_normal {
   font-weight: normal;
 }
 
-#izgljqtqgm .gt_font_bold {
+#kacvoxcxil .gt_font_bold {
   font-weight: bold;
 }
 
-#izgljqtqgm .gt_font_italic {
+#kacvoxcxil .gt_font_italic {
   font-style: italic;
 }
 
-#izgljqtqgm .gt_super {
+#kacvoxcxil .gt_super {
   font-size: 65%;
 }
 
-#izgljqtqgm .gt_footnote_marks {
+#kacvoxcxil .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#izgljqtqgm .gt_asterisk {
+#kacvoxcxil .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#izgljqtqgm .gt_indent_1 {
+#kacvoxcxil .gt_indent_1 {
   text-indent: 5px;
 }
 
-#izgljqtqgm .gt_indent_2 {
+#kacvoxcxil .gt_indent_2 {
   text-indent: 10px;
 }
 
-#izgljqtqgm .gt_indent_3 {
+#kacvoxcxil .gt_indent_3 {
   text-indent: 15px;
 }
 
-#izgljqtqgm .gt_indent_4 {
+#kacvoxcxil .gt_indent_4 {
   text-indent: 20px;
 }
 
-#izgljqtqgm .gt_indent_5 {
+#kacvoxcxil .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -3279,7 +2809,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_84437a6f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_eee61244" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3287,30 +2817,28 @@ Lars Schöbitz
 </div>
 </section></section>
 <section>
-<section id="data-organisation-in-spreadsheets" class="title-slide slide level1 center">
-<h1>Data Organisation in Spreadsheets</h1>
+<section id="data-organization-in-spreadsheets" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Data Organization in Spreadsheets</h1>
 
 </section>
-<section id="data-organisation-in-spreadsheets-1" class="slide level2">
-<h2>Data Organisation in Spreadsheets</h2>
-<p>[</p>
+<section id="data-organization-in-spreadsheets-1" class="slide level2">
+<h2>Data Organization in Spreadsheets</h2>
 
-<img data-src="img/lec-04/data-org-paper.png" width="665" class="r-stretch"><p>](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989?src=)</p>
-<div class="footer">
+<img data-src="img/lec-04/data-org-paper.png" width="665" class="r-stretch"><div class="footer">
 <p><a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989?src=">Screenshot taken on 2023-11-21</a></p>
 </div>
 </section>
-<section id="data-organisation-in-spreadsheets-2" class="slide level2">
-<h2>Data Organisation in Spreadsheets</h2>
+<section id="data-organization-in-spreadsheets-2" class="slide level2">
+<h2>Data Organization in Spreadsheets</h2>
 <p>Read the paper (it’s part of your homework), but you can also:</p>
 <ul>
-<li>Go through the annoated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf</li>
-<li>Watch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156</li>
-<li>Read the content on a website: https://kbroman.org/dataorg/</li>
+<li>Go through the annotated slides: <a href="https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf" class="uri">https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf</a></li>
+<li>Watch Karl Broman give the talk (02:36 to 45:00): <a href="https://youtu.be/t74E0a90gkA?t=156" class="uri">https://youtu.be/t74E0a90gkA?t=156</a></li>
+<li>Read the content on a website: <a href="https://kbroman.org/dataorg/" class="uri">https://kbroman.org/dataorg/</a></li>
 </ul>
 </section>
-<section id="data-organisation-in-spreadsheets-3" class="slide level2">
-<h2>Data Organisation in Spreadsheets</h2>
+<section id="data-organization-in-spreadsheets-3" class="slide level2">
+<h2>Data Organization in Spreadsheets</h2>
 <p>But, especially apply it to your data</p>
 <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
 <iframe src="https://giphy.com/embed/UEGwYCVTBFa9tJEf66" width="50%" height="50%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen="">
@@ -3320,24 +2848,33 @@ Lars Schöbitz
 <a href="https://giphy.com/gifs/rainbow-computer-data-UEGwYCVTBFa9tJEf66">via GIPHY</a>
 </p>
 </section>
-<section id="data-organisation-in-spreadsheets-4" class="slide level2">
-<h2>Data Organisation in Spreadsheets</h2>
-<p>Why?</p>
-<p>Because it will make your and other peoples lives a little bit easier.</p>
-<p>[</p>
-
-<img data-src="img/lec-04/data-org-views.png" style="width:75.0%" class="r-stretch"><p>](https://www.tandfonline.com/action/showMostReadArticles?journalCode=utas20)</p>
+<section id="data-organization-in-spreadsheets-4" class="slide level2">
+<h2>Data Organization in Spreadsheets</h2>
+<p>Why? Because following a set of rules for organizing data everyone’s live a little better.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="img/lec-04/data-org-views.png" style="width:100.0%"></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>3rd most viewed paper on The American Statistician</li>
+<li>310’000+ views</li>
+<li>widely accepted as minimal standards</li>
+</ul>
+</div>
+</div>
 <div class="footer">
-<p>Jorunal: The American Statistician, <a href="https://www.tandfonline.com/action/showMostReadArticles?journalCode=utas20">Screenshot taken on 2023-11-21</a></p>
+<p>Journal: The American Statistician, <a href="https://www.tandfonline.com/action/showMostReadArticles?journalCode=utas20">Screenshot taken on 2023-11-21</a></p>
 </div>
 </section>
-<section id="data-organisation-in-spreadsheets-5" class="slide level2">
-<h2>Data Organisation in Spreadsheets</h2>
+<section id="data-organization-in-spreadsheets-5" class="slide level2">
+<h2>Data Organization in Spreadsheets</h2>
 <p>License? CC0 (!)</p>
-<p>[</p>
 
-<img data-src="img/lec-04/data-org-license.png" style="width:75.0%" class="r-stretch"><p>](https://github.com/kbroman/Talk_DataOrg)</p>
-<div class="footer">
+<img data-src="img/lec-04/data-org-license.png" style="width:75.0%" class="r-stretch"><div class="footer">
 <p><a href="https://github.com/kbroman/Talk_DataOrg">Screenshot taken on 2022-03-23</a></p>
 </div>
 </section></section>
