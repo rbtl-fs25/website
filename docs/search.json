@@ -2489,7 +2489,7 @@
     "href": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files-1",
     "title": "?var:md-04.title",
     "section": "Writing data as CSV files",
-    "text": "Writing data as CSV files\n\ntransform data\nexport data underlying a publication data\n\n\n\n\n\n\n\n  \n    \n    \n      location\n      count\n      mean_ts\n      sd_ts\n      median_ts\n    \n  \n  \n    \n      pit latrine\n    \n    household\n9\n54.83444\n55.15577\n23.21\n    public toilet\n5\n37.83600\n31.25579\n22.65\n    \n      septic tank\n    \n    household\n5\n39.01400\n30.78450\n29.39"
+    "text": "Writing data as CSV files\n\ntransform data\nexport data underlying a publication\n\n\n# data transformation\ntbl_sludge_summary &lt;- sludge |&gt; \n  filter(!is.na(users)) |&gt; \n  group_by(system, location) |&gt; \n  summarise(\n    count = n(),\n    mean_ts = mean(ts),\n    sd_ts = sd(ts),\n    median_ts = median(ts)\n  ) \n\n# export data underlying a publication \nwrite_csv(tbl_sludge_summary, \"data/final/tbl-01-faecal-sludge-summary.csv\")\n\n\n\n\n\n\n\n  \n    \n    \n      system\n      location\n      count\n      mean_ts\n      sd_ts\n      median_ts\n    \n  \n  \n    pit latrine\nhousehold\n4\n90.7\n45.9\n99.9\n    pit latrine\npublic toilet\n5\n37.8\n31.3\n22.6\n    septic tank\nhousehold\n5\n39.0\n30.8\n29.4\n    septic tank\npublic toilet\n5\n20.4\n14.3\n15.6"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r-1",
@@ -2510,7 +2510,7 @@
     "href": "slides/lec-04-spreadsheets.html#reading-data-from-xlsx-files",
     "title": "?var:md-04.title",
     "section": "Reading data from XLSX files",
-    "text": "Reading data from XLSX files\n\nimport unprocessed raw data\n\n\nsludge &lt;- read_excel(\"data/raw/tbl-01-faecal-sludge-analysis.xlsx\",\n                     sheet = 1)\nsludge\n\n# A tibble: 20 × 6\n      id date_sample         system      location      users     ts\n   &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;       &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;\n 1     1 2023-11-01 00:00:00 pit latrine household         5 136.  \n 2     2 2023-11-01 00:00:00 pit latrine household         7 142.  \n 3     3 2023-11-01 00:00:00 pit latrine household        NA  98.3 \n 4     4 2023-11-01 00:00:00 pit latrine household         6  15.9 \n 5     5 2023-11-01 00:00:00 pit latrine household        12  97.3 \n 6     6 2023-11-02 00:00:00 septic tank household         7  78.2 \n 7     7 2023-11-02 00:00:00 septic tank household        14  15.2 \n 8     8 2023-11-02 00:00:00 septic tank household         4  29.4 \n 9     9 2023-11-02 00:00:00 septic tank household        10  64.2 \n10    10 2023-11-02 00:00:00 septic tank household        12   8.01\n11    11 2023-11-03 00:00:00 pit latrine public toilet    50  11.2 \n12    12 2023-11-03 00:00:00 pit latrine public toilet    32  84.0 \n13    13 2023-11-03 00:00:00 pit latrine public toilet    41  55.9 \n14    14 2023-11-03 00:00:00 pit latrine public toilet   160  15.3 \n15    15 2023-11-03 00:00:00 pit latrine public toilet    20  22.6 \n16    16 2023-11-04 00:00:00 pit latrine household        26   8.72\n17    17 2023-11-04 00:00:00 pit latrine household        91  43.9 \n18    18 2023-11-04 00:00:00 pit latrine household        68  10.4 \n19    19 2023-11-04 00:00:00 pit latrine household       112  23.2 \n20    20 2023-11-04 00:00:00 pit latrine household        59  15.6"
+    "text": "Reading data from XLSX files\n\nimport unprocessed raw data\n\n\nsludge &lt;- read_excel(\"data/raw/tbl-01-faecal-sludge-analysis.xlsx\",\n                     sheet = 1)\nsludge\n\n# A tibble: 20 × 6\n      id date_sample         system      location      users     ts\n   &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;       &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;\n 1     1 2023-11-01 00:00:00 pit latrine household         5 136.  \n 2     2 2023-11-01 00:00:00 pit latrine household         7 102.  \n 3     3 2023-11-01 00:00:00 pit latrine household        NA  57.0 \n 4     4 2023-11-01 00:00:00 pit latrine household         6  27.0 \n 5     5 2023-11-01 00:00:00 pit latrine household        12  97.3 \n 6     6 2023-11-02 00:00:00 septic tank household         7  78.2 \n 7     7 2023-11-02 00:00:00 septic tank household        14  15.2 \n 8     8 2023-11-02 00:00:00 septic tank household         4  29.4 \n 9     9 2023-11-02 00:00:00 septic tank household        10  64.2 \n10    10 2023-11-02 00:00:00 septic tank household        12   8.01\n11    11 2023-11-03 00:00:00 pit latrine public toilet    50  11.2 \n12    12 2023-11-03 00:00:00 pit latrine public toilet    32  84.0 \n13    13 2023-11-03 00:00:00 pit latrine public toilet    41  55.9 \n14    14 2023-11-03 00:00:00 pit latrine public toilet   160  15.3 \n15    15 2023-11-03 00:00:00 pit latrine public toilet    20  22.6 \n16    16 2023-11-04 00:00:00 septic tank public toilet    26   8.72\n17    17 2023-11-04 00:00:00 septic tank public toilet    91  43.9 \n18    18 2023-11-04 00:00:00 septic tank public toilet    68  10.4 \n19    19 2023-11-04 00:00:00 septic tank public toilet   112  23.2 \n20    20 2023-11-04 00:00:00 septic tank public toilet    59  15.6"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#my-turn-import-data-from-xlsx",
@@ -2518,5 +2518,68 @@
     "title": "?var:md-04.title",
     "section": "My turn: Import data from XLSX",
     "text": "My turn: Import data from XLSX\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#research-data-management",
+    "href": "slides/lec-04-spreadsheets.html#research-data-management",
+    "title": "?var:md-04.title",
+    "section": "(Research) Data Management",
+    "text": "(Research) Data Management\n\nExamples of terms used when managing data.\n\n\n\n\n\n\n\n\nterm\nfolder\nexplanation\nfile format\n\n\n\n\nunprocessed raw data\nraw\ndata that is not processed and remains in its original form and file\noften XLSX, also CSV and others\n\n\nprocessed analysis-ready data\nprocessed\ndata that is processed to prepare for an analysis and is exported in its new form as a new file\nCSV\n\n\nfinal data underlying a publication\nfinal\ndata that is the result of an analysis (e.g descriptive statistics or data visualization) and shown in a report, but then also exported in its new form as a new file\nCSV"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises-1",
+    "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises-1",
+    "title": "?var:md-04.title",
+    "section": "Your turn: md-04a-exercises",
+    "text": "Your turn: md-04a-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04a-factors-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---factors",
+    "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---factors",
+    "title": "?var:md-04.title",
+    "section": "Your turn: md-04a-exercises - factors",
+    "text": "Your turn: md-04a-exercises - factors\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04a-factors-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---import",
+    "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---import",
+    "title": "?var:md-04.title",
+    "section": "Your turn: md-04a-exercises - import",
+    "text": "Your turn: md-04a-exercises - import\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04b-import-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-1",
+    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-1",
+    "title": "?var:md-04.title",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\n[\n\n](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989?src=)\n\nScreenshot taken on 2023-11-21"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-2",
+    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-2",
+    "title": "?var:md-04.title",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annoated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-3",
+    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-3",
+    "title": "?var:md-04.title",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\nBut, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-4",
+    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-4",
+    "title": "?var:md-04.title",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\nWhy?\nBecause it will make your and other peoples lives a little bit easier.\n[\n\n](https://www.tandfonline.com/action/showMostReadArticles?journalCode=utas20)\n\nJorunal: The American Statistician, Screenshot taken on 2023-11-21"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-5",
+    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-5",
+    "title": "?var:md-04.title",
+    "section": "Data Organisation in Spreadsheets",
+    "text": "Data Organisation in Spreadsheets\nLicense? CC0 (!)\n[\n\n](https://github.com/kbroman/Talk_DataOrg)\n\nScreenshot taken on 2022-03-23"
   }
 ]
