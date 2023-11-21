@@ -2231,5 +2231,292 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-week",
+    "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-week",
+    "title": "?var:md-04.title",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between unprocessed data, analysis-ready data, and data underlying a publication."
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-square-check",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-square-check",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice ",
+    "text": "Task 3: Data for a country of your choice \n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year %in% c(2000, 2020), \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n    UGA\n2000\nsan_bas\n3\n    UGA\n2000\nsan_lim\n3\n    UGA\n2000\nsan_od\n3\n    UGA\n2000\nsan_unimp\n3\n    UGA\n2020\nsan_bas\n3\n    UGA\n2020\nsan_lim\n3\n    UGA\n2020\nsan_od\n3\n    UGA\n2020\nsan_unimp\n3"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-reactangle-xmark",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-reactangle-xmark",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice ",
+    "text": "Task 3: Data for a country of your choice \n\n for the country you live or work in,\n for the year 2000 and 2020,\n for all variables that are not “safely managed sanitation services”.\n\n\n\n# A tibble: 24 × 8\n   name   iso3   year region_sdg    varname_short varname_long residence percent\n   &lt;chr&gt;  &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;        &lt;chr&gt;       &lt;dbl&gt;\n 1 Uganda UGA    2000 Sub-Saharan … san_bas       basic sanit… national    16.7 \n 2 Uganda UGA    2000 Sub-Saharan … san_bas       basic sanit… rural       14.5 \n 3 Uganda UGA    2000 Sub-Saharan … san_bas       basic sanit… urban       28.9 \n 4 Uganda UGA    2000 Sub-Saharan … san_lim       limited san… national    11.9 \n 5 Uganda UGA    2000 Sub-Saharan … san_lim       limited san… rural        6.28\n 6 Uganda UGA    2000 Sub-Saharan … san_lim       limited san… urban       44.2 \n 7 Uganda UGA    2000 Sub-Saharan … san_unimp     unimproved … national    57.0 \n 8 Uganda UGA    2000 Sub-Saharan … san_unimp     unimproved … rural       62.6 \n 9 Uganda UGA    2000 Sub-Saharan … san_unimp     unimproved … urban       24.9 \n10 Uganda UGA    2000 Sub-Saharan … san_od        no sanitati… national    14.4 \n# ℹ 14 more rows"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year %in% c(2000, 2020), \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n    UGA\n2000\nsan_bas\n3\n    UGA\n2000\nsan_lim\n3\n    UGA\n2000\nsan_od\n3\n    UGA\n2000\nsan_unimp\n3\n    UGA\n2020\nsan_bas\n3\n    UGA\n2020\nsan_lim\n3\n    UGA\n2020\nsan_od\n3\n    UGA\n2020\nsan_unimp\n3"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#module-4-documentation",
+    "href": "slides/lec-04-spreadsheets.html#module-4-documentation",
+    "title": "?var:md-04.title",
+    "section": "Module 4 documentation",
+    "text": "Module 4 documentation\n\nds4owd-001.github.io/website/modules/md-03.html"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#homework-due-date",
+    "href": "slides/lec-04-spreadsheets.html#homework-due-date",
+    "title": "?var:md-04.title",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, November 20th\nCorrection & feedback phase up to: Thursday, November 23rd"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#thanks",
+    "href": "slides/lec-04-spreadsheets.html#thanks",
+    "title": "?var:md-04.title",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-rectangle-xmark",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-rectangle-xmark",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice ",
+    "text": "Task 3: Data for a country of your choice \n\n for the country you live or work in,\n for the year 2000 and 2020,\n for all variables that are not “safely managed sanitation services”.\n\n\n\n# A tibble: 24 × 8\n   name   iso3   year region_sdg    varname_short varname_long residence percent\n   &lt;chr&gt;  &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;        &lt;chr&gt;       &lt;dbl&gt;\n 1 Uganda UGA    2000 Sub-Saharan … san_bas       basic sanit… national    16.7 \n 2 Uganda UGA    2000 Sub-Saharan … san_bas       basic sanit… rural       14.5 \n 3 Uganda UGA    2000 Sub-Saharan … san_bas       basic sanit… urban       28.9 \n 4 Uganda UGA    2000 Sub-Saharan … san_lim       limited san… national    11.9 \n 5 Uganda UGA    2000 Sub-Saharan … san_lim       limited san… rural        6.28\n 6 Uganda UGA    2000 Sub-Saharan … san_lim       limited san… urban       44.2 \n 7 Uganda UGA    2000 Sub-Saharan … san_unimp     unimproved … national    57.0 \n 8 Uganda UGA    2000 Sub-Saharan … san_unimp     unimproved … rural       62.6 \n 9 Uganda UGA    2000 Sub-Saharan … san_unimp     unimproved … urban       24.9 \n10 Uganda UGA    2000 Sub-Saharan … san_od        no sanitati… national    14.4 \n# ℹ 14 more rows"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-1",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-1",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000 | year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n    UGA\n2000\nsan_bas\n3\n    UGA\n2000\nsan_lim\n3\n    UGA\n2000\nsan_od\n3\n    UGA\n2000\nsan_unimp\n3\n    UGA\n2020\nsan_bas\n3\n    UGA\n2020\nsan_lim\n3\n    UGA\n2020\nsan_od\n3\n    UGA\n2020\nsan_unimp\n3"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-square-check-smaller",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-fa-square-check-smaller",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice  {smaller}",
+    "text": "Task 3: Data for a country of your choice  {smaller}\n\n for the country you live or work in,\n for the year 2000 and 2020,\n for all variables that are not “safely managed sanitation services”.\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year %in% c(2000, 2020), \n         varname_short != \"san_sm\")\n\n\n\n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\niso3\nyear\nvarname_short\nn\n\n\n\n\nUGA\n2000\nsan_bas\n3\n\n\nUGA\n2000\nsan_lim\n3\n\n\nUGA\n2000\nsan_od\n3\n\n\nUGA\n2000\nsan_unimp\n3\n\n\nUGA\n2020\nsan_bas\n3\n\n\nUGA\n2020\nsan_lim\n3\n\n\nUGA\n2020\nsan_od\n3\n\n\nUGA\n2020\nsan_unimp\n3"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-2",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-2",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000, year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n  \n  \n\n\n\n\n\n\n\n# A tibble: 0 × 4\n# ℹ 4 variables: iso3 &lt;chr&gt;, year &lt;dbl&gt;, varname_short &lt;chr&gt;, n &lt;int&gt;\n\n\n\nOne row cannot have two values (2000 and 2020) for the same variable\nOne year cannot 2000 & 2020 at the same time\nOne year is either 2000 or 2020"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
+    "title": "?var:md-04.title",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n for the country you live or work in,\n for the year 2000 and 2020,\n for all variables that are not “safely managed sanitation services”.\n\n\nsanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000, year == 2020, \n         varname_short != \"san_sm\")"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-make-a-plot",
+    "href": "slides/lec-04-spreadsheets.html#task-5-make-a-plot",
+    "title": "?var:md-04.title",
+    "section": "Task 5: Make a plot",
+    "text": "Task 5: Make a plot"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect",
+    "title": "?var:md-04.title",
+    "section": "Task 5 & 6: Make a plot & inspect",
+    "text": "Task 5 & 6: Make a plot & inspect\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend?\nWhat would you want to change?\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it",
+    "title": "?var:md-04.title",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend?\nWhat would you want to change?\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-1",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-1",
+    "title": "?var:md-04.title",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#sanitation-ladder",
+    "href": "slides/lec-04-spreadsheets.html#sanitation-ladder",
+    "title": "?var:md-04.title",
+    "section": "Sanitation ladder?",
+    "text": "Sanitation ladder?\n\n\n\n\n\n\n  \n    \n    \n      varname_short\n      varname_long\n      simplified\n    \n  \n  \n    san_sm\nsafely managed sanitation services\na decent toilet that's not shared, and where pee & poo safely moved & treated\n    san_bas\nbasic sanitation services (improved sanitation facilities which are not shared)\na decent toilet that's not shared\n    san_lim\nlimited sanitation services (improved sanitation facilities which are shared)\na decent toilet that's shared\n    san_unimp\nunimproved sanitation facilities\nan inadequate toilet\n    san_od\nno sanitation facilities (open defecation)\nno toilet"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
+    "title": "?var:md-04.title",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-3",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-3",
+    "title": "?var:md-04.title",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-4",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-4",
+    "title": "?var:md-04.title",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3? because the total adds up to greater 100%, a fraction of people with basic services have safely managed services"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-5",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-5",
+    "title": "?var:md-04.title",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3? because the total adds up to greater 100%, a fraction of people with basic services have safely managed services"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r",
+    "href": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r",
+    "title": "?var:md-04.title",
+    "section": "My turn: Factors in R",
+    "text": "My turn: Factors in R\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#types-of-variables---remember",
+    "href": "slides/lec-04-spreadsheets.html#types-of-variables---remember",
+    "title": "?var:md-04.title",
+    "section": "Types of variables - Remember?",
+    "text": "Types of variables - Remember?\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises",
+    "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises",
+    "title": "?var:md-04.title",
+    "section": "Your turn: md-04a-exercises",
+    "text": "Your turn: md-04a-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04a-factors-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#take-a-break",
+    "href": "slides/lec-04-spreadsheets.html#take-a-break",
+    "title": "?var:md-04.title",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#reading-rectangular-data-into-r",
+    "href": "slides/lec-04-spreadsheets.html#reading-rectangular-data-into-r",
+    "title": "?var:md-04.title",
+    "section": "Reading rectangular data into R",
+    "text": "Reading rectangular data into R"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#read-csv-xlsx",
+    "href": "slides/lec-04-spreadsheets.html#read-csv-xlsx",
+    "title": "?var:md-04.title",
+    "section": "read CSV & XLSX",
+    "text": "read CSV & XLSX\n\n\nreadr\n\nread_csv() - comma delimited files\nread_csv2() - semicolon separated files (common in countries where , is used as the decimal place)\nread_tsv() - tab delimited files\nread_delim() - reads in files with any delimiter\n…\n\n\nreadxl\n\nread_excel() - read xls or xlsx files\n…"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#reading-data",
+    "href": "slides/lec-04-spreadsheets.html#reading-data",
+    "title": "?var:md-04.title",
+    "section": "Reading data",
+    "text": "Reading data\n\nimport unprocessed raw data\n\n\nwaste &lt;- read_csv(\"data/raw/waste-city-level.csv\")\n\nwaste\n\n# A tibble: 367 × 113\n   iso3c region_id country_name       income_id city_name additional_data_annu…¹\n   &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;              &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                 \n 1 AFG   SAS       Afghanistan        LIC       Jalalabad &lt;NA&gt;                  \n 2 AFG   SAS       Afghanistan        LIC       Kandahar  &lt;NA&gt;                  \n 3 AFG   SAS       Afghanistan        LIC       Mazar-E-… &lt;NA&gt;                  \n 4 AFG   SAS       Afghanistan        LIC       Kabul     &lt;NA&gt;                  \n 5 AFG   SAS       Afghanistan        LIC       HiratÂ    &lt;NA&gt;                  \n 6 AGO   SSF       Angola             LMC       Luanda    &lt;NA&gt;                  \n 7 ALB   ECS       Albania            UMC       Korca     &lt;NA&gt;                  \n 8 ALB   ECS       Albania            UMC       Vlora     &lt;NA&gt;                  \n 9 ARE   MEA       United Arab Emira… HIC       Abu Dhabi &lt;NA&gt;                  \n10 ARE   MEA       United Arab Emira… HIC       Dubai     &lt;NA&gt;                  \n# ℹ 357 more rows\n# ℹ abbreviated name: ¹​additional_data_annual_budget_for_waste_management_year\n# ℹ 107 more variables: additional_data_annual_solid_waste_budget_year &lt;chr&gt;,\n#   additional_data_annual_swm_budget_2017_year &lt;dbl&gt;,\n#   additional_data_annual_swm_budget_year &lt;dbl&gt;,\n#   additional_data_annual_waste_budget_year &lt;dbl&gt;,\n#   additional_data_collection_ton &lt;dbl&gt;, …"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#writing-data",
+    "href": "slides/lec-04-spreadsheets.html#writing-data",
+    "title": "?var:md-04.title",
+    "section": "Writing data",
+    "text": "Writing data\n\ntransform data\nexport processed analysis-ready data\n\n\n# data transformation\nwaste_sml &lt;- waste |&gt; \n  select(country_name, city_name, iso3c, income_id,\n         total_msw_total_msw_generated_tons_year, \n         population_population_number_of_people) |&gt; \n  rename(country = country_name,\n         city = city_name,\n         generation_tons_year = total_msw_total_msw_generated_tons_year,\n         population = population_population_number_of_people)\n\n# export processed analysis-ready data\nwrite_csv(waste_sml, \"data/processed/waste-city-level-sml.csv\")"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#import-a-csv-file",
+    "href": "slides/lec-04-spreadsheets.html#import-a-csv-file",
+    "title": "?var:md-04.title",
+    "section": "Import a CSV file",
+    "text": "Import a CSV file"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#csv-xlsx",
+    "href": "slides/lec-04-spreadsheets.html#csv-xlsx",
+    "title": "?var:md-04.title",
+    "section": "CSV & XLSX",
+    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - comma delimited files\nread_csv2() - semicolon separated files (common in countries where , is used as the decimal place)\nread_tsv() - tab delimited files\nread_delim() - reads in files with any delimiter\n…\n\n\nreadxl\n\nread_excel() - read xls or xlsx files\n…"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#import-an-xlsx-file",
+    "href": "slides/lec-04-spreadsheets.html#import-an-xlsx-file",
+    "title": "?var:md-04.title",
+    "section": "Import an XLSX file",
+    "text": "Import an XLSX file\n\nsludge &lt;- read_excel(\"data/raw/tbl-01-faecal-sludge-analysis.xlsx\")\nsludge\n\n# A tibble: 20 × 6\n      id date_sample         system      location      users     ts\n   &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;       &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;\n 1     1 2023-11-01 00:00:00 pit latrine household         5 136.  \n 2     2 2023-11-01 00:00:00 pit latrine household         7 142.  \n 3     3 2023-11-01 00:00:00 pit latrine household        NA  98.3 \n 4     4 2023-11-01 00:00:00 pit latrine household         6  15.9 \n 5     5 2023-11-01 00:00:00 pit latrine household        12  97.3 \n 6     6 2023-11-02 00:00:00 septic tank household         7  78.2 \n 7     7 2023-11-02 00:00:00 septic tank household        14  15.2 \n 8     8 2023-11-02 00:00:00 septic tank household         4  29.4 \n 9     9 2023-11-02 00:00:00 septic tank household        10  64.2 \n10    10 2023-11-02 00:00:00 septic tank household        12   8.01\n11    11 2023-11-03 00:00:00 pit latrine public toilet    50  11.2 \n12    12 2023-11-03 00:00:00 pit latrine public toilet    32  84.0 \n13    13 2023-11-03 00:00:00 pit latrine public toilet    41  55.9 \n14    14 2023-11-03 00:00:00 pit latrine public toilet   160  15.3 \n15    15 2023-11-03 00:00:00 pit latrine public toilet    20  22.6 \n16    16 2023-11-04 00:00:00 pit latrine household        26   8.72\n17    17 2023-11-04 00:00:00 pit latrine household        91  43.9 \n18    18 2023-11-04 00:00:00 pit latrine household        68  10.4 \n19    19 2023-11-04 00:00:00 pit latrine household       112  23.2 \n20    20 2023-11-04 00:00:00 pit latrine household        59  15.6"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#reading-data-in-csv-files",
+    "href": "slides/lec-04-spreadsheets.html#reading-data-in-csv-files",
+    "title": "?var:md-04.title",
+    "section": "Reading data in CSV files",
+    "text": "Reading data in CSV files\n\nimport unprocessed raw data\n\n\nwaste &lt;- read_csv(\"data/raw/waste-city-level.csv\")\n\nwaste\n\n# A tibble: 367 × 113\n   iso3c region_id country_name       income_id city_name additional_data_annu…¹\n   &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;              &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                 \n 1 AFG   SAS       Afghanistan        LIC       Jalalabad &lt;NA&gt;                  \n 2 AFG   SAS       Afghanistan        LIC       Kandahar  &lt;NA&gt;                  \n 3 AFG   SAS       Afghanistan        LIC       Mazar-E-… &lt;NA&gt;                  \n 4 AFG   SAS       Afghanistan        LIC       Kabul     &lt;NA&gt;                  \n 5 AFG   SAS       Afghanistan        LIC       HiratÂ    &lt;NA&gt;                  \n 6 AGO   SSF       Angola             LMC       Luanda    &lt;NA&gt;                  \n 7 ALB   ECS       Albania            UMC       Korca     &lt;NA&gt;                  \n 8 ALB   ECS       Albania            UMC       Vlora     &lt;NA&gt;                  \n 9 ARE   MEA       United Arab Emira… HIC       Abu Dhabi &lt;NA&gt;                  \n10 ARE   MEA       United Arab Emira… HIC       Dubai     &lt;NA&gt;                  \n# ℹ 357 more rows\n# ℹ abbreviated name: ¹​additional_data_annual_budget_for_waste_management_year\n# ℹ 107 more variables: additional_data_annual_solid_waste_budget_year &lt;chr&gt;,\n#   additional_data_annual_swm_budget_2017_year &lt;dbl&gt;,\n#   additional_data_annual_swm_budget_year &lt;dbl&gt;,\n#   additional_data_annual_waste_budget_year &lt;dbl&gt;,\n#   additional_data_collection_ton &lt;dbl&gt;, …"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files",
+    "href": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files",
+    "title": "?var:md-04.title",
+    "section": "Writing data as CSV files",
+    "text": "Writing data as CSV files\n\ntransform data\nexport processed analysis-ready data\n\n\n# data transformation\nwaste_sml &lt;- waste |&gt; \n  select(country_name, city_name, iso3c, income_id,\n         total_msw_total_msw_generated_tons_year, \n         population_population_number_of_people) |&gt; \n  rename(country = country_name,\n         city = city_name,\n         generation_tons_year = total_msw_total_msw_generated_tons_year,\n         population = population_population_number_of_people)\n\n# export processed analysis-ready data\nwrite_csv(waste_sml, \"data/processed/waste-city-level-sml.csv\")"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#reading-data-in-xlsx-files",
+    "href": "slides/lec-04-spreadsheets.html#reading-data-in-xlsx-files",
+    "title": "?var:md-04.title",
+    "section": "Reading data in XLSX files",
+    "text": "Reading data in XLSX files\n\nimport unprocessed raw data\n\n\nsludge &lt;- read_excel(\"data/raw/tbl-01-faecal-sludge-analysis.xlsx\",\n                     sheet = 1)\nsludge\n\n# A tibble: 20 × 6\n      id date_sample         system      location      users     ts\n   &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;       &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;\n 1     1 2023-11-01 00:00:00 pit latrine household         5 136.  \n 2     2 2023-11-01 00:00:00 pit latrine household         7 142.  \n 3     3 2023-11-01 00:00:00 pit latrine household        NA  98.3 \n 4     4 2023-11-01 00:00:00 pit latrine household         6  15.9 \n 5     5 2023-11-01 00:00:00 pit latrine household        12  97.3 \n 6     6 2023-11-02 00:00:00 septic tank household         7  78.2 \n 7     7 2023-11-02 00:00:00 septic tank household        14  15.2 \n 8     8 2023-11-02 00:00:00 septic tank household         4  29.4 \n 9     9 2023-11-02 00:00:00 septic tank household        10  64.2 \n10    10 2023-11-02 00:00:00 septic tank household        12   8.01\n11    11 2023-11-03 00:00:00 pit latrine public toilet    50  11.2 \n12    12 2023-11-03 00:00:00 pit latrine public toilet    32  84.0 \n13    13 2023-11-03 00:00:00 pit latrine public toilet    41  55.9 \n14    14 2023-11-03 00:00:00 pit latrine public toilet   160  15.3 \n15    15 2023-11-03 00:00:00 pit latrine public toilet    20  22.6 \n16    16 2023-11-04 00:00:00 pit latrine household        26   8.72\n17    17 2023-11-04 00:00:00 pit latrine household        91  43.9 \n18    18 2023-11-04 00:00:00 pit latrine household        68  10.4 \n19    19 2023-11-04 00:00:00 pit latrine household       112  23.2 \n20    20 2023-11-04 00:00:00 pit latrine household        59  15.6"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#write-as-csv",
+    "href": "slides/lec-04-spreadsheets.html#write-as-csv",
+    "title": "?var:md-04.title",
+    "section": "Write as CSV",
+    "text": "Write as CSV"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files-1",
+    "href": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files-1",
+    "title": "?var:md-04.title",
+    "section": "Writing data as CSV files",
+    "text": "Writing data as CSV files\n\ntransform data\nexport data underlying a publication data\n\n\n\n\n\n\n\n  \n    \n    \n      location\n      count\n      mean_ts\n      sd_ts\n      median_ts\n    \n  \n  \n    \n      pit latrine\n    \n    household\n9\n54.83444\n55.15577\n23.21\n    public toilet\n5\n37.83600\n31.25579\n22.65\n    \n      septic tank\n    \n    household\n5\n39.01400\n30.78450\n29.39"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r-1",
+    "href": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r-1",
+    "title": "?var:md-04.title",
+    "section": "My turn: Factors in R",
+    "text": "My turn: Factors in R\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#reading-data-from-csv-files",
+    "href": "slides/lec-04-spreadsheets.html#reading-data-from-csv-files",
+    "title": "?var:md-04.title",
+    "section": "Reading data from CSV files",
+    "text": "Reading data from CSV files\n\nimport unprocessed raw data\n\n\nwaste &lt;- read_csv(\"data/raw/waste-city-level.csv\")\n\nwaste\n\n# A tibble: 367 × 113\n   iso3c region_id country_name       income_id city_name additional_data_annu…¹\n   &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;              &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                 \n 1 AFG   SAS       Afghanistan        LIC       Jalalabad &lt;NA&gt;                  \n 2 AFG   SAS       Afghanistan        LIC       Kandahar  &lt;NA&gt;                  \n 3 AFG   SAS       Afghanistan        LIC       Mazar-E-… &lt;NA&gt;                  \n 4 AFG   SAS       Afghanistan        LIC       Kabul     &lt;NA&gt;                  \n 5 AFG   SAS       Afghanistan        LIC       HiratÂ    &lt;NA&gt;                  \n 6 AGO   SSF       Angola             LMC       Luanda    &lt;NA&gt;                  \n 7 ALB   ECS       Albania            UMC       Korca     &lt;NA&gt;                  \n 8 ALB   ECS       Albania            UMC       Vlora     &lt;NA&gt;                  \n 9 ARE   MEA       United Arab Emira… HIC       Abu Dhabi &lt;NA&gt;                  \n10 ARE   MEA       United Arab Emira… HIC       Dubai     &lt;NA&gt;                  \n# ℹ 357 more rows\n# ℹ abbreviated name: ¹​additional_data_annual_budget_for_waste_management_year\n# ℹ 107 more variables: additional_data_annual_solid_waste_budget_year &lt;chr&gt;,\n#   additional_data_annual_swm_budget_2017_year &lt;dbl&gt;,\n#   additional_data_annual_swm_budget_year &lt;dbl&gt;,\n#   additional_data_annual_waste_budget_year &lt;dbl&gt;,\n#   additional_data_collection_ton &lt;dbl&gt;, …"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#reading-data-from-xlsx-files",
+    "href": "slides/lec-04-spreadsheets.html#reading-data-from-xlsx-files",
+    "title": "?var:md-04.title",
+    "section": "Reading data from XLSX files",
+    "text": "Reading data from XLSX files\n\nimport unprocessed raw data\n\n\nsludge &lt;- read_excel(\"data/raw/tbl-01-faecal-sludge-analysis.xlsx\",\n                     sheet = 1)\nsludge\n\n# A tibble: 20 × 6\n      id date_sample         system      location      users     ts\n   &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;       &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;\n 1     1 2023-11-01 00:00:00 pit latrine household         5 136.  \n 2     2 2023-11-01 00:00:00 pit latrine household         7 142.  \n 3     3 2023-11-01 00:00:00 pit latrine household        NA  98.3 \n 4     4 2023-11-01 00:00:00 pit latrine household         6  15.9 \n 5     5 2023-11-01 00:00:00 pit latrine household        12  97.3 \n 6     6 2023-11-02 00:00:00 septic tank household         7  78.2 \n 7     7 2023-11-02 00:00:00 septic tank household        14  15.2 \n 8     8 2023-11-02 00:00:00 septic tank household         4  29.4 \n 9     9 2023-11-02 00:00:00 septic tank household        10  64.2 \n10    10 2023-11-02 00:00:00 septic tank household        12   8.01\n11    11 2023-11-03 00:00:00 pit latrine public toilet    50  11.2 \n12    12 2023-11-03 00:00:00 pit latrine public toilet    32  84.0 \n13    13 2023-11-03 00:00:00 pit latrine public toilet    41  55.9 \n14    14 2023-11-03 00:00:00 pit latrine public toilet   160  15.3 \n15    15 2023-11-03 00:00:00 pit latrine public toilet    20  22.6 \n16    16 2023-11-04 00:00:00 pit latrine household        26   8.72\n17    17 2023-11-04 00:00:00 pit latrine household        91  43.9 \n18    18 2023-11-04 00:00:00 pit latrine household        68  10.4 \n19    19 2023-11-04 00:00:00 pit latrine household       112  23.2 \n20    20 2023-11-04 00:00:00 pit latrine household        59  15.6"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#my-turn-import-data-from-xlsx",
+    "href": "slides/lec-04-spreadsheets.html#my-turn-import-data-from-xlsx",
+    "title": "?var:md-04.title",
+    "section": "My turn: Import data from XLSX",
+    "text": "My turn: Import data from XLSX\n\n\nSit back and enjoy!"
   }
 ]
