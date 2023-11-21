@@ -525,6 +525,20 @@
     "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year %in% c(2000, 2020), \n         varname_short != \"san_sm\")"
   },
   {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000 | year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n    UGA\n2000\nsan_bas\n3\n    UGA\n2000\nsan_lim\n3\n    UGA\n2000\nsan_od\n3\n    UGA\n2000\nsan_unimp\n3\n    UGA\n2020\nsan_bas\n3\n    UGA\n2020\nsan_lim\n3\n    UGA\n2020\nsan_od\n3\n    UGA\n2020\nsan_unimp\n3"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000, year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n  \n  \n\n\n\n\n\n\n\n# A tibble: 0 × 4\n# ℹ 4 variables: iso3 &lt;chr&gt;, year &lt;dbl&gt;, varname_short &lt;chr&gt;, n &lt;int&gt;\n\n\n\nOne row cannot have two values (2000 and 2020) for the same variable\nOne year cannot 2000 & 2020 at the same time\nOne year is either 2000 or 2020"
+  },
+  {
     "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it",
     "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it",
     "title": "Data import & Data organization in spreadsheets",
@@ -651,6 +665,13 @@
     "text": "(Research) Data Management\n\nExamples of terms used when managing data.\n\n\n\n\n\n\n\n\nterm\nfolder\nexplanation\nfile format\n\n\n\n\nunprocessed raw data\nraw\ndata that is not processed and remains in its original form and file\noften XLSX, also CSV and others\n\n\nprocessed analysis-ready data\nprocessed\ndata that is processed to prepare for an analysis and is exported in its new form as a new file\nCSV\n\n\nfinal data underlying a publication\nfinal\ndata that is the result of an analysis (e.g descriptive statistics or data visualization) and shown in a report, but then also exported in its new form as a new file\nCSV"
   },
   {
+    "objectID": "slides/lec-04-spreadsheets.html#take-a-break-1",
+    "href": "slides/lec-04-spreadsheets.html#take-a-break-1",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
     "objectID": "slides/lec-04-spreadsheets.html#my-turn-import-data-from-xlsx",
     "href": "slides/lec-04-spreadsheets.html#my-turn-import-data-from-xlsx",
     "title": "Data import & Data organization in spreadsheets",
@@ -662,49 +683,49 @@
     "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---import",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Your turn: md-04a-exercises - import",
-    "text": "Your turn: md-04a-exercises - import\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04b-import-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
+    "text": "Your turn: md-04a-exercises - import\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04b-import-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n20:00"
   },
   {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-1",
-    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-1",
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\n\n\nScreenshot taken on 2023-11-21"
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\n\n\nScreenshot taken on 2023-11-21"
   },
   {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-2",
-    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-2",
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annoated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
   },
   {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-3",
-    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-3",
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-3",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-3",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\nBut, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nBut, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
   },
   {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-4",
-    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-4",
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-4",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-4",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\nWhy? Because following a set of rules for organizing data everyone’s live a little better.\n\n\n\n\n\n\n\n\n\n3rd most viewed paper on The American Statistician\n310’000+ views\nwidely accepted as minimal standards\n\n\n\n\nJorunal: The American Statistician, Screenshot taken on 2023-11-21"
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nWhy? Because following a set of rules for organizing data everyone’s live a little better.\n\n\n\n\n\n\n\n\n\n3rd most viewed paper on The American Statistician\n310’000+ views\nwidely accepted as minimal standards\n\n\n\n\nJournal: The American Statistician, Screenshot taken on 2023-11-21"
   },
   {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-5",
-    "href": "slides/lec-04-spreadsheets.html#data-organisation-in-spreadsheets-5",
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organisation in Spreadsheets",
-    "text": "Data Organisation in Spreadsheets\nLicense? CC0 (!)\n\n\nScreenshot taken on 2022-03-23"
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nLicense? CC0 (!)\n\n\nScreenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#module-4-documentation",
     "href": "slides/lec-04-spreadsheets.html#module-4-documentation",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Module 4 documentation",
-    "text": "Module 4 documentation\n\nds4owd-001.github.io/website/modules/md-03.html"
+    "text": "Module 4 documentation\n\nds4owd-001.github.io/website/modules/md-04.html"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#homework-due-date",
@@ -1272,6 +1293,27 @@
     "title": "Create a spreadsheet",
     "section": "Step 4: Open an issue on GitHub",
     "text": "Step 4: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository samples- that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Create spreadsheet and upload to cloud”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html",
+    "href": "assignments/md-04/am-04-1-reading.html",
+    "title": "Module 4 - Assignment 1",
+    "section": "",
+    "text": "This course introduces learners to tools and workflows for data science with R. Learners are also introduced to the concept of collaborative writing and coding using git and GitHub within the context of reproducible documents (i.e. Quarto). So far we have used data that is well structured and ready to be used. However, in reality a lot of data entry and storage is still managed in spreadsheets. This is why we also touch on some (research) data management topics (Data Organization in Spreadsheet).\nThe reading for this assignment provides guidance for data entry and storage aspects. It offers practical recommendations for organizing spreadsheet data to reduce errors and ease later analyses."
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
+    "href": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 1: Read and prepare examples",
+    "text": "Task 1: Read and prepare examples\nFor this assignment, we ask you to:\n\nRead Broman and Woo (2018): “Data organization in spreadsheets”.\nChose two of the recommendations and come up with real-world examples or scenarios where the recommendations could be applied in your work.\nBe prepared to share these examples and explain how the recommendations would improve your workflows. This will be in a class setting as part of small discussion group (max 3 people)."
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
+    "href": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 2: Apply the recommendations to your samples data from Module 3",
+    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this first. https://ds4owd-001.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the ds4owd workspace on posit.cloud\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R.\nAdd library(tidyverse) to the top of the file.\nAdd library(readxl) to the top of the file.\nAdd library(janitor) to the top of the file.\nUse the read_excel() function to read in your the .xlsx file and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data.\n\n\n\n\n\n\n\nAsk questions on our Element Chat\n\n\n\nIf you would like support at different points of your data cleaning process, please ask questions on our Element Chat, we are happy to support.\n\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
   },
   {
     "objectID": "guide/index.html",
@@ -2455,54 +2497,5 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
-    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Task 3: Data for a country of your choice",
-    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000 | year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n    UGA\n2000\nsan_bas\n3\n    UGA\n2000\nsan_lim\n3\n    UGA\n2000\nsan_od\n3\n    UGA\n2000\nsan_unimp\n3\n    UGA\n2020\nsan_bas\n3\n    UGA\n2020\nsan_lim\n3\n    UGA\n2020\nsan_od\n3\n    UGA\n2020\nsan_unimp\n3"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
-    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Task 3: Data for a country of your choice",
-    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000, year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n  \n  \n\n\n\n\n\n\n\n# A tibble: 0 × 4\n# ℹ 4 variables: iso3 &lt;chr&gt;, year &lt;dbl&gt;, varname_short &lt;chr&gt;, n &lt;int&gt;\n\n\n\nOne row cannot have two values (2000 and 2020) for the same variable\nOne year cannot 2000 & 2020 at the same time\nOne year is either 2000 or 2020"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
-    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\n\n\nScreenshot taken on 2023-11-21"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
-    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-3",
-    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-3",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\nBut, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-4",
-    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-4",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\nWhy? Because following a set of rules for organizing data everyone’s live a little better.\n\n\n\n\n\n\n\n\n\n3rd most viewed paper on The American Statistician\n310’000+ views\nwidely accepted as minimal standards\n\n\n\n\nJournal: The American Statistician, Screenshot taken on 2023-11-21"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
-    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\nLicense? CC0 (!)\n\n\nScreenshot taken on 2022-03-23"
   }
 ]

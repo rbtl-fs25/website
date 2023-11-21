@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -66,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-04.html">Module 04</a></li><li class="breadcrumb-item"><a href="../../assignments/md-04/am-04-1-reading.html">am-01: Reading</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-04.html">Module 04</a></li><li class="breadcrumb-item"><a href="../../assignments/md-04/am-04-1-reading.html">am-01: Data organization</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -194,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/md-04/am-04-1-reading.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">am-01: Reading</span></a>
+ <span class="menu-text">am-01: Data organization</span></a>
   </div>
 </li>
       </ul>
@@ -241,7 +260,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#task-1-read-and-prepare-examples" id="toc-task-1-read-and-prepare-examples" class="nav-link active" data-scroll-target="#task-1-read-and-prepare-examples">Task 1: Read and prepare examples</a></li>
+  <li><a href="#task-2-apply-the-recommendations-to-your-samples-data-from-module-3" id="toc-task-2-apply-the-recommendations-to-your-samples-data-from-module-3" class="nav-link" data-scroll-target="#task-2-apply-the-recommendations-to-your-samples-data-from-module-3">Task 2: Apply the recommendations to your samples data from Module 3</a>
+  <ul class="collapse">
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -249,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Module 4 - Assignment 1</h1>
-<p class="subtitle lead">Data organisation in spreadsheets</p>
+<p class="subtitle lead">Data organization in spreadsheets</p>
 </div>
 
 
@@ -264,10 +293,248 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>This course introduces learners to tools and workflows for data science with R. Learners are also introduced to the concept of collaborative writing and coding using git and GitHub within the context of reproducible documents (i.e.&nbsp;Quarto). So far we have used data that is well structured and ready to be used. However, in reality a lot of data entry and storage is still managed in spreadsheets. This is why we also touch on some (research) data management topics (Data Organization in Spreadsheet).</p>
+<p>The reading for this assignment provides guidance for data entry and storage aspects. It offers practical recommendations for organizing spreadsheet data to reduce errors and ease later analyses.</p>
+<section id="task-1-read-and-prepare-examples" class="level2">
+<h2 class="anchored" data-anchor-id="task-1-read-and-prepare-examples">Task 1: Read and prepare examples</h2>
+<p>For this assignment, we ask you to:</p>
+<ol type="1">
+<li>Read <span class="citation" data-cites="broman2018data">Broman and Woo (<a href="#ref-broman2018data" role="doc-biblioref">2018</a>)</span>: <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989">“Data organization in spreadsheets”</a>.</li>
+<li>Chose two of the recommendations and come up with <span class="highlight-yellow">real-world examples</span> or scenarios where the recommendations could be applied in your work.</li>
+<li>Be prepared to share these examples and <span class="highlight-yellow">explain how the recommendations would improve your workflows</span>. This will be in a class setting as part of small discussion group (max 3 people).</li>
+</ol>
+</section>
+<section id="task-2-apply-the-recommendations-to-your-samples-data-from-module-3" class="level2">
+<h2 class="anchored" data-anchor-id="task-2-apply-the-recommendations-to-your-samples-data-from-module-3">Task 2: Apply the recommendations to your samples data from Module 3</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Have you completed the assignments for module 3?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this first. https://ds4owd-001.github.io/website/assignments/md-03/am-03-2-spreadsheet.html</p>
+</div>
+</div>
+<ol type="1">
+<li>Open the ds4owd workspace on <a href="https://posit.cloud/spaces/426916/content/all?sort=name_asc">posit.cloud</a></li>
+<li>Re-open your <code>samples-USERNAME</code> repository.</li>
+<li>Create a new .R file and save it as <code>data_cleaning.R</code>.</li>
+<li>Add <code>library(tidyverse)</code> to the top of the file.</li>
+<li>Add <code>library(readxl)</code> to the top of the file.</li>
+<li>Add <code>library(janitor)</code> to the top of the file.</li>
+<li>Use the <code>read_excel()</code> function to read in your the <code>.xlsx</code> file and store it in an object called <code>samples</code>.</li>
+<li>Use the <code>glimpse()</code> function to inspect the data.</li>
+<li>Try to use R functions to apply the recommendations from the reading to your data.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ask questions on our Element Chat
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you would like support at different points of your data cleaning process, please ask questions on our Element Chat, we are happy to support.</p>
+</div>
+</div>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<p>The following is an example of a dataset that follows the recommendations from the reading.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">id</th>
+<th style="text-align: left;">date_sample</th>
+<th style="text-align: left;">system</th>
+<th style="text-align: left;">location</th>
+<th style="text-align: right;">users</th>
+<th style="text-align: right;">ts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2023-11-01</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">136.24</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2023-11-01</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">102.45</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2023-11-01</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">57.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2023-11-01</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">27.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2023-11-01</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">97.27</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2023-11-02</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">78.21</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2023-11-02</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15.24</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2023-11-02</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">29.39</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2023-11-02</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">64.22</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2023-11-02</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">household</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">8.01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2023-11-03</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">11.24</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2023-11-03</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">84.05</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2023-11-03</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">55.92</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2023-11-03</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">15.32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2023-11-03</td>
+<td style="text-align: left;">pit latrine</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">22.65</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2023-11-04</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">8.72</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2023-11-04</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">43.92</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2023-11-04</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">10.37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2023-11-04</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">23.21</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2023-11-04</td>
+<td style="text-align: left;">septic tank</td>
+<td style="text-align: left;">public toilet</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">15.64</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
 
-</main> <!-- /main -->
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-broman2018data" class="csl-entry" role="listitem">
+Broman, Karl W., and Kara H. Woo. 2018. <span>“Data <span>Organization</span> in <span>Spreadsheets</span>.”</span> <em>The American Statistician</em> 72 (1): 2–10. <a href="https://doi.org/10.1080/00031305.2017.1375989">https://doi.org/10.1080/00031305.2017.1375989</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
