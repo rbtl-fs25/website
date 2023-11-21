@@ -3,14 +3,16 @@ date,week,title,learning_objectives
 2023-10-31T00:00:00Z,1,Welcome & get ready for the course,Learners can use the Element chat to introduce themselves.
 2023-10-31T00:00:00Z,1,Welcome & get ready for the course,Learners can open an issue on GitHub and tag the course instructor.
 2023-10-31T00:00:00Z,1,Welcome & get ready for the course,Learners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.
-NA,1,Welcome & get ready for the course,"Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
+2023-10-31T00:00:00Z,1,Welcome & get ready for the course,"Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown)."
 2023-11-07T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,Learners can list the six elements of the data science lifecycle.
 2023-11-07T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.
 2023-11-07T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping.
 2023-11-07T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,"Learners can compare three different geoms (bar/col, histogram, point) and their use case."
 2023-11-14T00:00:00Z,3,Data transformation with dplyr,Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.
+2023-11-21T00:00:00Z,4,Data organization in spreadsheets,Learners can explain the difference between a the vector class character and the vector class factor.
 2023-11-21T00:00:00Z,4,Data organization in spreadsheets,Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.
-2023-11-21T00:00:00Z,4,Data organization in spreadsheets,"Learners can discuss the difference between unprocessed data, analysis-ready data, and data underlying a publication."
+2023-11-21T00:00:00Z,4,Data organization in spreadsheets,"Learners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication."
+2023-11-21T00:00:00Z,4,Data organization in spreadsheets,Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.
 2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,"Learners can explain the differences between measures of centrality (mean, median, mode)."
 2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,Learners can define what a distribution is.
 2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,Learners can describe the characteristics of a normal distribution.
