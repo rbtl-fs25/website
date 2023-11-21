@@ -21,3 +21,7 @@ md-02:
 md-03:
   title: "Data transformation with dplyr"
   date: "2023-11-14"
+  
+md-04:
+  title: "Data import & Data organization in spreadsheets"
+  date: "2023-11-21"

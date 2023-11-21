@@ -81,35 +81,35 @@
     "href": "modules/md-04.html",
     "title": "Module 4",
     "section": "",
-    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure."
+    "text": "Learners can explain the difference between a the vector class character and the vector class factor.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory."
   },
   {
     "objectID": "modules/md-04.html#fa-bullseye-learning-objectives",
     "href": "modules/md-04.html#fa-bullseye-learning-objectives",
     "title": "Module 4",
     "section": "",
-    "text": "Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between data in an unprocessed structure and in a processed structure."
+    "text": "Learners can explain the difference between a the vector class character and the vector class factor.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory."
   },
   {
     "objectID": "modules/md-04.html#fa-display-slides",
     "href": "modules/md-04.html#fa-display-slides",
     "title": "Module 4",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation"
+    "text": "Slides\nView slides in full screen | Download slides as PDF"
   },
   {
     "objectID": "modules/md-04.html#fa-book-readings",
     "href": "modules/md-04.html#fa-book-readings",
     "title": "Module 4",
     "section": " Readings",
-    "text": "Readings\n\nRead (Broman and Woo 2018)"
+    "text": "Readings\n\nRead R for Data Science - Section 3 - Workflow: code style"
   },
   {
     "objectID": "modules/md-04.html#fa-code-assignments",
     "href": "modules/md-04.html#fa-code-assignments",
     "title": "Module 4",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation"
+    "text": "Assignments\nPlease complete the following assignment by Monday, 27th November 2023.\n\nAssignment 1: Data organisation in spreadsheets\n\nThank you for working through this assignment."
   },
   {
     "objectID": "modules/wk-00-template.html#slides",
@@ -497,242 +497,949 @@
     "text": "A large proportion of these slides are taken from Mine Çetinkaya Rundel’s “Hello Quarto” presentation & Thomas Mock’s “Quarto for the Curious” presentation\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\nhttps://cven5873-ss23.github.io/website/"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#exam-update",
-    "href": "slides/lec-04-tidy-data.html#exam-update",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Exam Update",
-    "text": "Exam Update\n\nNo exam anymore in Week 8\nDue date for Capstone Project will be extended (due on 28th July)\nCapstone Project contributes 40% to grade instead of 20%\n\n\n\n\ntype\npercent\n\n\n\n\nHomework assignments\n40\n\n\nLearning reflections\n20\n\n\nCapstone project\n40"
-  },
-  {
-    "objectID": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
-    "href": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-week",
+    "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-week",
+    "title": "Data import & Data organization in spreadsheets",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nLearners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can list the four main atomic vector types in R.\nLearners can explain the three characteristics of tidy data."
+    "text": "Learning Objectives (for this week)\n\n\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#why-care-about-data-types",
-    "href": "slides/lec-04-tidy-data.html#why-care-about-data-types",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Why care about data types?",
-    "text": "Why care about data types?\n\n\n\n\n\nvia GIPHY"
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\nfor the country you live or work in\nfor the year 2000 and 2020\nfor all variables that are not “safely managed sanitation services”"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#example-survey-data",
-    "href": "slides/lec-04-tidy-data.html#example-survey-data",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Example: survey data",
-    "text": "Example: survey data\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n05-Oct\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5 to 10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5\n\n\n\n\n\n\nData from: (Ben Aleya et al. 2022)"
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-1",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-1",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year %in% c(2000, 2020), \n         varname_short != \"san_sm\")"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#oh-why-wont-you-work",
-    "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-work",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Oh why won’t you work?!",
-    "text": "Oh why won’t you work?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-2",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-2",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year %in% c(2000, 2020), \n         varname_short != \"san_sm\")"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
-    "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Oh why won’t you still work??!!",
-    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000 | year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n    UGA\n2000\nsan_bas\n3\n    UGA\n2000\nsan_lim\n3\n    UGA\n2000\nsan_od\n3\n    UGA\n2000\nsan_unimp\n3\n    UGA\n2020\nsan_bas\n3\n    UGA\n2020\nsan_lim\n3\n    UGA\n2020\nsan_od\n3\n    UGA\n2020\nsan_unimp\n3"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#take-a-breath-and-look-at-your-data",
-    "href": "slides/lec-04-tidy-data.html#take-a-breath-and-look-at-your-data",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Take a breath and look at your data",
-    "text": "Take a breath and look at your data\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n05-Oct\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5 to 10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5"
+    "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
+    "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 3: Data for a country of your choice",
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000, year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n  \n    \n    \n      iso3\n      year\n      varname_short\n      n\n    \n  \n  \n  \n  \n\n\n\n\n\n\n\n# A tibble: 0 × 4\n# ℹ 4 variables: iso3 &lt;chr&gt;, year &lt;dbl&gt;, varname_short &lt;chr&gt;, n &lt;int&gt;\n\n\n\nOne row cannot have two values (2000 and 2020) for the same variable\nOne year cannot 2000 & 2020 at the same time\nOne year is either 2000 or 2020"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#very-common-data-tidying-step",
-    "href": "slides/lec-04-tidy-data.html#very-common-data-tidying-step",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Very common data tidying step!",
-    "text": "Very common data tidying step!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend?\nWhat would you want to change?\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#very-common-data-tidying-step-1",
-    "href": "slides/lec-04-tidy-data.html#very-common-data-tidying-step-1",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Very common data tidying step!",
-    "text": "Very common data tidying step!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n05-Oct\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n20\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5 to 10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-1",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-1",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#sumamrise-argh",
-    "href": "slides/lec-04-tidy-data.html#sumamrise-argh",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Sumamrise? Argh!!!!",
-    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#always-respect-your-data-types",
-    "href": "slides/lec-04-tidy-data.html#always-respect-your-data-types",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Always respect your data types!",
-    "text": "Always respect your data types!\n\n\n\n\n\n\nTaking the mean of vector with type “character” is not possible.\n\n\n\n\n\n# A tibble: 22 × 4\n      id job      price_glass price_glass_new\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;          \n 1     1 Student  0           0              \n 2     2 Retired  0           0              \n 3     3 Other    0           0              \n 4     4 Employed 10          10             \n 5     5 Employed See comment &lt;NA&gt;           \n 6     6 Student  05-Oct      7.5            \n 7     7 Student  0           0              \n 8     8 Retired  0           0              \n 9     9 Student  10          10             \n10    10 Employed 0           0              \n# ℹ 12 more rows"
+    "objectID": "slides/lec-04-spreadsheets.html#sanitation-ladder",
+    "href": "slides/lec-04-spreadsheets.html#sanitation-ladder",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Sanitation ladder?",
+    "text": "Sanitation ladder?\n\n\n\n\n\n\n  \n    \n    \n      varname_short\n      varname_long\n      simplified\n    \n  \n  \n    san_sm\nsafely managed sanitation services\na decent toilet that's not shared, and where pee & poo safely moved & treated\n    san_bas\nbasic sanitation services (improved sanitation facilities which are not shared)\na decent toilet that's not shared\n    san_lim\nlimited sanitation services (improved sanitation facilities which are shared)\na decent toilet that's shared\n    san_unimp\nunimproved sanitation facilities\nan inadequate toilet\n    san_od\nno sanitation facilities (open defecation)\nno toilet"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#always-respect-your-data-types-1",
-    "href": "slides/lec-04-tidy-data.html#always-respect-your-data-types-1",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Always respect your data types!",
-    "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-3",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-3",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#live-05a-vectors",
-    "href": "slides/lec-04-tidy-data.html#live-05a-vectors",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "live-05a-vectors",
-    "text": "live-05a-vectors\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-4",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-4",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3? because the total adds up to greater 100%, a fraction of people with basic services have safely managed services"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#section",
-    "href": "slides/lec-04-tidy-data.html#section",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": ".",
-    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-5",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-5",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3? because the total adds up to greater 100%, a fraction of people with basic services have safely managed services"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#section-1",
-    "href": "slides/lec-04-tidy-data.html#section-1",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": ".",
-    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+    "objectID": "slides/lec-04-spreadsheets.html#types-of-variables---remember",
+    "href": "slides/lec-04-spreadsheets.html#types-of-variables---remember",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Types of variables - Remember?",
+    "text": "Types of variables - Remember?\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#section-2",
-    "href": "slides/lec-04-tidy-data.html#section-2",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": ".",
-    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+    "objectID": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r",
+    "href": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "My turn: Factors in R",
+    "text": "My turn: Factors in R\n\n\nSit back and enjoy!"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#a-grammar-of-data-tidying",
-    "href": "slides/lec-04-tidy-data.html#a-grammar-of-data-tidying",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "A grammar of data tidying",
-    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\n\nSlide taken from Data Science in a Box"
+    "objectID": "slides/lec-04-spreadsheets.html#take-a-break",
+    "href": "slides/lec-04-spreadsheets.html#take-a-break",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#pivoting-data",
-    "href": "slides/lec-04-tidy-data.html#pivoting-data",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Pivoting data",
-    "text": "Pivoting data"
+    "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---factors",
+    "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---factors",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Your turn: md-04a-exercises - factors",
+    "text": "Your turn: md-04a-exercises - factors\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04a-factors-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#waste-characterisation-data",
-    "href": "slides/lec-04-tidy-data.html#waste-characterisation-data",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Waste characterisation data",
-    "text": "Waste characterisation data\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99\n4.07"
+    "objectID": "slides/lec-04-spreadsheets.html#reading-rectangular-data-into-r",
+    "href": "slides/lec-04-spreadsheets.html#reading-rectangular-data-into-r",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Reading rectangular data into R",
+    "text": "Reading rectangular data into R"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#how-would-you-plot-this",
-    "href": "slides/lec-04-tidy-data.html#how-would-you-plot-this",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "How would you plot this?",
-    "text": "How would you plot this?"
+    "objectID": "slides/lec-04-spreadsheets.html#csv-xlsx",
+    "href": "slides/lec-04-spreadsheets.html#csv-xlsx",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "CSV & XLSX",
+    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - comma delimited files\nread_csv2() - semicolon separated files (common in countries where , is used as the decimal place)\nread_tsv() - tab delimited files\nread_delim() - reads in files with any delimiter\n…\n\n\nreadxl\n\nread_excel() - read xls or xlsx files\n…"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#three-variables",
-    "href": "slides/lec-04-tidy-data.html#three-variables",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Three variables",
-    "text": "Three variables\n\n\n\n\n\nobjid\nlocation\ntotal\n\n\n\n\n900\neth\n2.05\n\n\n899\neth\n3.64\n\n\n921\nold_town\n1.99\n\n\n916\nold_town\n2.19\n\n\n900\neth\n1.12\n\n\n899\neth\n0.50\n\n\n921\nold_town\n2.33\n\n\n916\nold_town\n4.07"
+    "objectID": "slides/lec-04-spreadsheets.html#reading-data-from-csv-files",
+    "href": "slides/lec-04-spreadsheets.html#reading-data-from-csv-files",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Reading data from CSV files",
+    "text": "Reading data from CSV files\n\nimport unprocessed raw data\n\n\nwaste &lt;- read_csv(\"data/raw/waste-city-level.csv\")\n\nwaste\n\n# A tibble: 367 × 113\n   iso3c region_id country_name       income_id city_name additional_data_annu…¹\n   &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;              &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                 \n 1 AFG   SAS       Afghanistan        LIC       Jalalabad &lt;NA&gt;                  \n 2 AFG   SAS       Afghanistan        LIC       Kandahar  &lt;NA&gt;                  \n 3 AFG   SAS       Afghanistan        LIC       Mazar-E-… &lt;NA&gt;                  \n 4 AFG   SAS       Afghanistan        LIC       Kabul     &lt;NA&gt;                  \n 5 AFG   SAS       Afghanistan        LIC       HiratÂ    &lt;NA&gt;                  \n 6 AGO   SSF       Angola             LMC       Luanda    &lt;NA&gt;                  \n 7 ALB   ECS       Albania            UMC       Korca     &lt;NA&gt;                  \n 8 ALB   ECS       Albania            UMC       Vlora     &lt;NA&gt;                  \n 9 ARE   MEA       United Arab Emira… HIC       Abu Dhabi &lt;NA&gt;                  \n10 ARE   MEA       United Arab Emira… HIC       Dubai     &lt;NA&gt;                  \n# ℹ 357 more rows\n# ℹ abbreviated name: ¹​additional_data_annual_budget_for_waste_management_year\n# ℹ 107 more variables: additional_data_annual_solid_waste_budget_year &lt;chr&gt;,\n#   additional_data_annual_swm_budget_2017_year &lt;dbl&gt;,\n#   additional_data_annual_swm_budget_year &lt;dbl&gt;,\n#   additional_data_annual_waste_budget_year &lt;dbl&gt;,\n#   additional_data_collection_ton &lt;dbl&gt;, …"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics",
-    "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Three variables -> three aesthetics",
-    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_untidy,\n       mapping = aes(x = objid, \n                     y = total, \n                     fill = location)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+    "objectID": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files",
+    "href": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Writing data as CSV files",
+    "text": "Writing data as CSV files\n\ntransform data\nexport processed analysis-ready data\n\n\n# data transformation\nwaste_sml &lt;- waste |&gt; \n  select(country_name, city_name, iso3c, income_id,\n         total_msw_total_msw_generated_tons_year, \n         population_population_number_of_people) |&gt; \n  rename(country = country_name,\n         city = city_name,\n         generation_tons_year = total_msw_total_msw_generated_tons_year,\n         population = population_population_number_of_people)\n\n# export processed analysis-ready data\nwrite_csv(waste_sml, \"data/processed/waste-city-level-sml.csv\")"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#and-how-to-plot-this",
-    "href": "slides/lec-04-tidy-data.html#and-how-to-plot-this",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "And how to plot this?",
-    "text": "And how to plot this?"
+    "objectID": "slides/lec-04-spreadsheets.html#reading-data-from-xlsx-files",
+    "href": "slides/lec-04-spreadsheets.html#reading-data-from-xlsx-files",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Reading data from XLSX files",
+    "text": "Reading data from XLSX files\n\nimport unprocessed raw data\n\n\nsludge &lt;- read_excel(\"data/raw/tbl-01-faecal-sludge-analysis.xlsx\",\n                     sheet = 1)\nsludge\n\n# A tibble: 20 × 6\n      id date_sample         system      location      users     ts\n   &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;       &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;\n 1     1 2023-11-01 00:00:00 pit latrine household         5 136.  \n 2     2 2023-11-01 00:00:00 pit latrine household         7 102.  \n 3     3 2023-11-01 00:00:00 pit latrine household        NA  57.0 \n 4     4 2023-11-01 00:00:00 pit latrine household         6  27.0 \n 5     5 2023-11-01 00:00:00 pit latrine household        12  97.3 \n 6     6 2023-11-02 00:00:00 septic tank household         7  78.2 \n 7     7 2023-11-02 00:00:00 septic tank household        14  15.2 \n 8     8 2023-11-02 00:00:00 septic tank household         4  29.4 \n 9     9 2023-11-02 00:00:00 septic tank household        10  64.2 \n10    10 2023-11-02 00:00:00 septic tank household        12   8.01\n11    11 2023-11-03 00:00:00 pit latrine public toilet    50  11.2 \n12    12 2023-11-03 00:00:00 pit latrine public toilet    32  84.0 \n13    13 2023-11-03 00:00:00 pit latrine public toilet    41  55.9 \n14    14 2023-11-03 00:00:00 pit latrine public toilet   160  15.3 \n15    15 2023-11-03 00:00:00 pit latrine public toilet    20  22.6 \n16    16 2023-11-04 00:00:00 septic tank public toilet    26   8.72\n17    17 2023-11-04 00:00:00 septic tank public toilet    91  43.9 \n18    18 2023-11-04 00:00:00 septic tank public toilet    68  10.4 \n19    19 2023-11-04 00:00:00 septic tank public toilet   112  23.2 \n20    20 2023-11-04 00:00:00 septic tank public toilet    59  15.6"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#reminder-data-in-wide-format",
-    "href": "slides/lec-04-tidy-data.html#reminder-data-in-wide-format",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Reminder: Data (in wide format)",
-    "text": "Reminder: Data (in wide format)\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+    "objectID": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files-1",
+    "href": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files-1",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Writing data as CSV files",
+    "text": "Writing data as CSV files\n\ntransform data\nexport data underlying a publication\n\n\n# data transformation\ntbl_sludge_summary &lt;- sludge |&gt; \n  filter(!is.na(users)) |&gt; \n  group_by(system, location) |&gt; \n  summarise(\n    count = n(),\n    mean_ts = mean(ts),\n    sd_ts = sd(ts),\n    median_ts = median(ts)\n  ) \n\n# export data underlying a publication \nwrite_csv(tbl_sludge_summary, \"data/final/tbl-01-faecal-sludge-summary.csv\")\n\n\n\n\n\n\n\n  \n    \n    \n      system\n      location\n      count\n      mean_ts\n      sd_ts\n      median_ts\n    \n  \n  \n    pit latrine\nhousehold\n4\n90.7\n45.9\n99.9\n    pit latrine\npublic toilet\n5\n37.8\n31.3\n22.6\n    septic tank\nhousehold\n5\n39.0\n30.8\n29.4\n    septic tank\npublic toilet\n5\n20.4\n14.3\n15.6"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#you-need-a-long-format",
-    "href": "slides/lec-04-tidy-data.html#you-need-a-long-format",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "You need: A long format",
-    "text": "You need: A long format\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+    "objectID": "slides/lec-04-spreadsheets.html#research-data-management",
+    "href": "slides/lec-04-spreadsheets.html#research-data-management",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "(Research) Data Management",
+    "text": "(Research) Data Management\n\nExamples of terms used when managing data.\n\n\n\n\n\n\n\n\nterm\nfolder\nexplanation\nfile format\n\n\n\n\nunprocessed raw data\nraw\ndata that is not processed and remains in its original form and file\noften XLSX, also CSV and others\n\n\nprocessed analysis-ready data\nprocessed\ndata that is processed to prepare for an analysis and is exported in its new form as a new file\nCSV\n\n\nfinal data underlying a publication\nfinal\ndata that is the result of an analysis (e.g descriptive statistics or data visualization) and shown in a report, but then also exported in its new form as a new file\nCSV"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-1",
-    "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-1",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Three variables -> three aesthetics",
-    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+    "objectID": "slides/lec-04-spreadsheets.html#take-a-break-1",
+    "href": "slides/lec-04-spreadsheets.html#take-a-break-1",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#how-to",
-    "href": "slides/lec-04-tidy-data.html#how-to",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "How to",
-    "text": "How to\n\nwaste_data_untidy \n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+    "objectID": "slides/lec-04-spreadsheets.html#my-turn-import-data-from-xlsx",
+    "href": "slides/lec-04-spreadsheets.html#my-turn-import-data-from-xlsx",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "My turn: Import data from XLSX",
+    "text": "My turn: Import data from XLSX\n\n\nSit back and enjoy!"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#how-to-1",
-    "href": "slides/lec-04-tidy-data.html#how-to-1",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "How to",
-    "text": "How to\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+    "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---import",
+    "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---import",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Your turn: md-04a-exercises - import",
+    "text": "Your turn: md-04a-exercises - import\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04b-import-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n20:00"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#how-to-2",
-    "href": "slides/lec-04-tidy-data.html#how-to-2",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "How to",
-    "text": "How to\n\nwaste_category_levels &lt;- c(\"glass\", \"metal_alu\", \"paper\", \"pet\", \"other\")\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") |&gt; \n  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\n\n\nScreenshot taken on 2023-11-21"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-2",
-    "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-2",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Three variables -> three aesthetics",
-    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nRead the paper (it’s part of your homework), but you can also:\n\nGo through the annotated slides: https://kbroman.org/Talk_DataOrg/dataorg_notes.pdf\nWatch Karl Broman give the talk (02:36 to 45:00): https://youtu.be/t74E0a90gkA?t=156\nRead the content on a website: https://kbroman.org/dataorg/"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#live-05a-tidyr-pivoting",
-    "href": "slides/lec-04-tidy-data.html#live-05a-tidyr-pivoting",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "live-05a-tidyr-pivoting",
-    "text": "live-05a-tidyr-pivoting\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-3",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-3",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nBut, especially apply it to your data\n\n\n\n\n\nvia GIPHY"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#homework-due-dates",
-    "href": "slides/lec-04-tidy-data.html#homework-due-dates",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Homework due dates",
-    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, 7th July"
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-4",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-4",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nWhy? Because following a set of rules for organizing data everyone’s live a little better.\n\n\n\n\n\n\n\n\n\n3rd most viewed paper on The American Statistician\n310’000+ views\nwidely accepted as minimal standards\n\n\n\n\nJournal: The American Statistician, Screenshot taken on 2023-11-21"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#section-3",
-    "href": "slides/lec-04-tidy-data.html#section-3",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
+    "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Data Organization in Spreadsheets",
+    "text": "Data Organization in Spreadsheets\nLicense? CC0 (!)\n\n\nScreenshot taken on 2022-03-23"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#module-4-documentation",
+    "href": "slides/lec-04-spreadsheets.html#module-4-documentation",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Module 4 documentation",
+    "text": "Module 4 documentation\n\nds4owd-001.github.io/website/modules/md-04.html"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#homework-due-date",
+    "href": "slides/lec-04-spreadsheets.html#homework-due-date",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, November 20th\nCorrection & feedback phase up to: Thursday, November 23rd"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#thanks",
+    "href": "slides/lec-04-spreadsheets.html#thanks",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#email-from-github",
+    "href": "slides/lec-01-welcome.html#email-from-github",
+    "title": "Welcome & get ready for the course",
+    "section": "Email from GitHub?",
+    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#meet-the-team",
+    "href": "slides/lec-01-welcome.html#meet-the-team",
+    "title": "Welcome & get ready for the course",
+    "section": "Meet the team",
+    "text": "Meet the team\n\n\nLars Schöbitz\n\n\n\n\n\n\nEnv. Engineer\nretired WASH Researcher\nRStudio certified instructor\n\n\nMian Zhong\n\n\n\n\n\n\nData Scientist\nAdvocate for data for social good\n\n\nSophia Skorik\n\n\n\n\n\n\nComputer Scientist\nTechnical support for the course"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
+    "href": "slides/lec-01-welcome.html#learning-goals-for-the-course",
+    "title": "Welcome & get ready for the course",
+    "section": "Learning Goals (for the course)",
+    "text": "Learning Goals (for the course)\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce documents with citations, footnotes, cross-references, figures, and tables."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-about-you",
+    "href": "slides/lec-01-welcome.html#your-turn-about-you",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: About you",
+    "text": "Your turn: About you\n\nPick an item and take notes for 1 minute:\nWhat does the item you have picked have to do with the reason for you being here?\n\n\n\n\n\n−+\n01:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#in-break-out-rooms",
+    "href": "slides/lec-01-welcome.html#in-break-out-rooms",
+    "title": "Welcome & get ready for the course",
+    "section": "In break-out rooms",
+    "text": "In break-out rooms\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#course-calendar",
+    "href": "slides/lec-01-welcome.html#course-calendar",
+    "title": "Welcome & get ready for the course",
+    "section": "Course Calendar",
+    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Exploratory data analysis using visualization\nmodule 2\n\n\n14 November 2023\n3\nData transformation with dplyr\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nDescriptive statistics and tables with gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#course-structure",
+    "href": "slides/lec-01-welcome.html#course-structure",
+    "title": "Welcome & get ready for the course",
+    "section": "Course structure",
+    "text": "Course structure\n\nMy turn: Lecture segments + live coding\nOur turn: Live coding + follow along\nYour turn: Exercises in break-out rooms"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
+    "href": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
+    "title": "Welcome & get ready for the course",
+    "section": "My turn: Lecture segments + live coding",
+    "text": "My turn: Lecture segments + live coding\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
+    "href": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
+    "title": "Welcome & get ready for the course",
+    "section": "Our turn: Live coding + follow along",
+    "text": "Our turn: Live coding + follow along\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant\nCode is displayed on second screen / split screen\nLearners join by writing and executing the same code"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-exercises-in-break-out-rooms",
+    "href": "slides/lec-01-welcome.html#your-turn-exercises-in-break-out-rooms",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Exercises in break-out rooms",
+    "text": "Your turn: Exercises in break-out rooms\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#getting-help",
+    "href": "slides/lec-01-welcome.html#getting-help",
+    "title": "Welcome & get ready for the course",
+    "section": "Getting help",
+    "text": "Getting help\n\nDuring my turn and our turn segments: Please keep your microphone on mute. Send message to the Zoom chat Mian and Sophia will support you.\nDuring your turn segments: Due to the large number of participants, it will not be feasible to join individual break-out rooms, but you will always be working in pairs."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
+    "href": "slides/lec-01-welcome.html#platforms-and-tools",
+    "title": "Welcome & get ready for the course",
+    "section": "Platforms and Tools",
+    "text": "Platforms and Tools\n\nR\ntidyverse R Packages\nPosit Cloud\nRStudio IDE\nQuarto publishing system\nElement"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#bookmark",
+    "href": "slides/lec-01-welcome.html#bookmark",
+    "title": "Welcome & get ready for the course",
+    "section": "Bookmark",
+    "text": "Bookmark\nds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
+    "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
+    "title": "Welcome & get ready for the course",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section",
+    "href": "slides/lec-01-welcome.html#section",
+    "title": "Welcome & get ready for the course",
     "section": "",
-    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Artwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
   },
   {
-    "objectID": "slides/lec-04-tidy-data.html#references",
-    "href": "slides/lec-04-tidy-data.html#references",
-    "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "References",
-    "text": "References\n\n\n\nhttps://cven5873-ss23.github.io/website/\n\n\n\nBen Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. “Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.” Zenodo. https://doi.org/10.5281/ZENODO.7331119."
+    "objectID": "slides/lec-01-welcome.html#section-1",
+    "href": "slides/lec-01-welcome.html#section-1",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-2",
+    "href": "slides/lec-01-welcome.html#section-2",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-3",
+    "href": "slides/lec-01-welcome.html#section-3",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-4",
+    "href": "slides/lec-01-welcome.html#section-4",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-5",
+    "href": "slides/lec-01-welcome.html#section-5",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-6",
+    "href": "slides/lec-01-welcome.html#section-6",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-7",
+    "href": "slides/lec-01-welcome.html#section-7",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#screen-setup---poll",
+    "href": "slides/lec-01-welcome.html#screen-setup---poll",
+    "title": "Welcome & get ready for the course",
+    "section": "Screen setup - Poll",
+    "text": "Screen setup - Poll\n\n\nOne screen \n\nTwo screens or more"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#meeting-you-where-you-are",
+    "href": "slides/lec-01-welcome.html#meeting-you-where-you-are",
+    "title": "Welcome & get ready for the course",
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\ndo not have R or git experience\nhave not worked in an IDE before (e.g. RStudio IDE)\nwant to learn about R\nwant to learn about Quarto and publishing\nwant to learn about project management with GitHub\n\n\n\n\nI’ll teach you\n\nR\nQuarto syntax and formats\nMarkdown\nGit via RStudio GUI\nGitHub issues, project management, and publishing"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#quarto",
+    "href": "slides/lec-01-welcome.html#quarto",
+    "title": "Welcome & get ready for the course",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
+    "href": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
+    "title": "Welcome & get ready for the course",
+    "section": "My turn: A tour of Quarto",
+    "text": "My turn: A tour of Quarto\n\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
+    "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Log into Posit Cloud with GitHub account",
+    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the Sign Up with GitHub button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark the address of the open tab in your browser.\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#take-a-break",
+    "href": "slides/lec-01-welcome.html#take-a-break",
+    "title": "Welcome & get ready for the course",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
+    "href": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: md-01-exercises",
+    "text": "Your turn: md-01-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-01-exercises.\nIn the File Manager in the bottom right window, locate the hello-quarto.qmd file and click on it to open it in the top left window.\nRender the document.\nAdd author: to the YAML header and add your name\nRe-render the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
+    "href": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
+    "title": "Welcome & get ready for the course",
+    "section": "From the comfort of your own workspace",
+    "text": "From the comfort of your own workspace"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#one-install-batteries-included",
+    "href": "slides/lec-01-welcome.html#one-install-batteries-included",
+    "title": "Welcome & get ready for the course",
+    "section": "One install, “Batteries included”",
+    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n\n\n\nAny language, exact same approach and syntax"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#many-quarto-formats",
+    "href": "slides/lec-01-welcome.html#many-quarto-formats",
+    "title": "Welcome & get ready for the course",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nBasic Formats\nhtml_document\npdf_document\nword_document\nhtml\npdf\ndocx\n\n\nBeamer\nbeamer_presentation\nbeamer\n\n\nPowerPoint\npowerpoint_presentation\npptx\n\n\nHTML Slides\nxaringan\nioslides\nrevealjs\nrevealjs\n\n\nAdvanced Layout\ntufte\ndistill\nQuarto Article Layout"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#many-quarto-formats-1",
+    "href": "slides/lec-01-welcome.html#many-quarto-formats-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nCross References\nhtml_document2\npdf_document2\nword_document2\nQuarto Crossrefs\n\n\nWebsites & Blogs\nblogdown\ndistill\nQuarto Websites\nQuarto Blogs\n\n\nBooks\nbookdown\nQuarto Books\n\n\nInteractivity\nShiny Documents\nQuarto Interactive Documents\n\n\nJournal Articles\nrticles\nJournal Articles\n\n\nDashboards\nflexdashboard\nQuarto Dashboards"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
+    "href": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Create a new Quarto document",
+    "text": "Your turn: Create a new Quarto document\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output.\n\nRender the document, which will ask you to give it a name – you can use my-first-document.qmd.\n\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).\nStretch goal: Add a table of contents. Note: Watch out for the indentation.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#version-control-with-git-and-github",
+    "href": "slides/lec-01-welcome.html#version-control-with-git-and-github",
+    "title": "Welcome & get ready for the course",
+    "section": "Version Control with Git and GitHub",
+    "text": "Version Control with Git and GitHub\nA way to share files with others, so they can:\n\ndownload\nre-use\ncontribute\n\nYou can view the history of files, and jump back in time to any point."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#why-is-it-useful",
+    "href": "slides/lec-01-welcome.html#why-is-it-useful",
+    "title": "Welcome & get ready for the course",
+    "section": "Why is it useful?",
+    "text": "Why is it useful?"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#git-and-github",
+    "href": "slides/lec-01-welcome.html#git-and-github",
+    "title": "Welcome & get ready for the course",
+    "section": "Git and GitHub",
+    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nCreated in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n\n100 million Users (20.5 in 2022 alone) (October, 2023)\n\nSocial media for software developers"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-github",
+    "href": "slides/lec-01-welcome.html#my-turn-a-tour-of-github",
+    "title": "Welcome & get ready for the course",
+    "section": "My turn: A tour of GitHub",
+    "text": "My turn: A tour of GitHub\n\nSit back and enjoy!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
+    "href": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
+    "title": "Welcome & get ready for the course",
+    "section": "Our turn: Configure Notifications settings",
+    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
+    "href": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Create an issue on GitHub",
+    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#take-a-break-1",
+    "href": "slides/lec-01-welcome.html#take-a-break-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#components",
+    "href": "slides/lec-01-welcome.html#components",
+    "title": "Welcome & get ready for the course",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#literate-programming",
+    "href": "slides/lec-01-welcome.html#literate-programming",
+    "title": "Welcome & get ready for the course",
+    "section": "Literate programming",
+    "text": "Literate programming\nLiterate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.\n---\ntitle: \"ggplot2 demo\"\ndate: \"5/23/2023\"\nformat: html\n---\n\n## MPG\n\nThere is a relationship between city and highway mileage.\n\n```{r}\n#| label: fig-mpg\n\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = cty, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#yaml",
+    "href": "slides/lec-01-welcome.html#yaml",
+    "title": "Welcome & get ready for the course",
+    "section": "YAML",
+    "text": "YAML\n“Yet Another Markup Language” or “YAML Ain’t Markup Language” is used to provide document level metadata.\n---\nkey: value\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#output-options",
+    "href": "slides/lec-01-welcome.html#output-options",
+    "title": "Welcome & get ready for the course",
+    "section": "Output options",
+    "text": "Output options\n---\nformat: something\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#output-option-arguments",
+    "href": "slides/lec-01-welcome.html#output-option-arguments",
+    "title": "Welcome & get ready for the course",
+    "section": "Output option arguments",
+    "text": "Output option arguments\nIndentation matters!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#yaml-validation",
+    "href": "slides/lec-01-welcome.html#yaml-validation",
+    "title": "Welcome & get ready for the course",
+    "section": "YAML validation",
+    "text": "YAML validation\n\nInvalid: No space after :\n\n---\nformat:html\n---\n\nInvalid: Read as missing\n\n---\nformat:\nhtml\n---"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#yaml-validation-1",
+    "href": "slides/lec-01-welcome.html#yaml-validation-1",
+    "title": "Welcome & get ready for the course",
+    "section": "YAML validation",
+    "text": "YAML validation\nThere are multiple ways of formatting valid YAML:\n\nValid: There’s a space after :\n\nformat: html\n\nValid: format: html with selections made with proper indentation\n\nformat: \n  html:\n    toc: true"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#quarto-linting",
+    "href": "slides/lec-01-welcome.html#quarto-linting",
+    "title": "Welcome & get ready for the course",
+    "section": "Quarto linting",
+    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#quarto-yaml-intelligence",
+    "href": "slides/lec-01-welcome.html#quarto-yaml-intelligence",
+    "title": "Welcome & get ready for the course",
+    "section": "Quarto YAML Intelligence",
+    "text": "Quarto YAML Intelligence\nRStudio + VSCode provide rich tab-completion - start a word and tab to complete, or Ctrl + space to see all available options."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#packages",
+    "href": "slides/lec-01-welcome.html#packages",
+    "title": "Welcome & get ready for the course",
+    "section": "Packages",
+    "text": "Packages\n\n\n\nbase R\n\nsqrt(49)\nsum(1, 2)\n\n\nFunctions come with R\n\n\n\n\nR Packages\n\nlibrary(dplyr)\n\n\nInstalled once in the Console: install.packages(\"dplyr\")\nLoaded per script\n\n\n\n\n\nPackages\n\nMain way that reusable code is shared in R\nCombination of code, data, and documentation\nR has a rich ecosystem of packages for data manipulation & analysis"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#functions-arguments",
+    "href": "slides/lec-01-welcome.html#functions-arguments",
+    "title": "Welcome & get ready for the course",
+    "section": "Functions & Arguments",
+    "text": "Functions & Arguments\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#objects",
+    "href": "slides/lec-01-welcome.html#objects",
+    "title": "Welcome & get ready for the course",
+    "section": "Objects",
+    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#operators",
+    "href": "slides/lec-01-welcome.html#operators",
+    "title": "Welcome & get ready for the course",
+    "section": "Operators",
+    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: &lt;-\nPipe operator: |&gt;"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#rules",
+    "href": "slides/lec-01-welcome.html#rules",
+    "title": "Welcome & get ready for the course",
+    "section": "Rules",
+    "text": "Rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#weekly-structure",
+    "href": "slides/lec-01-welcome.html#weekly-structure",
+    "title": "Welcome & get ready for the course",
+    "section": "Weekly Structure",
+    "text": "Weekly Structure\n\n\n\n\n\n\n\nMonday\n\n\n\nTuesday\nModule from 2 pm to 4:30 pm CET\n\n\nWednesday\n\n\n\nThursday\nOffice hours on Zoom (2 pm to 3:30 pm CET)\n\n\nFriday"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#homework-assignments",
+    "href": "slides/lec-01-welcome.html#homework-assignments",
+    "title": "Welcome & get ready for the course",
+    "section": "Homework assignments",
+    "text": "Homework assignments\n\nWeekly assignments (module 1 homework is required for participation)\nSubmitted as rendered Quarto documents on GitHub\nReviewed by course instructors for errors\nManagement and support through GitHub issue tracker"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#capstone-project",
+    "href": "slides/lec-01-welcome.html#capstone-project",
+    "title": "Welcome & get ready for the course",
+    "section": "Capstone Project",
+    "text": "Capstone Project\n\nData analysis project report with a dataset of your choice\nSubmitted as rendered Quarto document on GitHub\nSubmission required for successful completion of the course"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#module-1-documentation",
+    "href": "slides/lec-01-welcome.html#module-1-documentation",
+    "title": "Welcome & get ready for the course",
+    "section": "Module 1 documentation",
+    "text": "Module 1 documentation\n\nds4owd-001.github.io/website/modules/md-01.html"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#homework-due-date",
+    "href": "slides/lec-01-welcome.html#homework-due-date",
+    "title": "Welcome & get ready for the course",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, November 6th"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#thanks",
+    "href": "slides/lec-01-welcome.html#thanks",
+    "title": "Welcome & get ready for the course",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong & Sophia Skorik are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks (see Course Calendar below) at the following times:\nWe will use Posit Cloud infrastructure, so you do not need to install any software. You will hear from us about a week before the course start.\nThe registration window for this course has closed, but you can fill out the following form to sign up for the next time we host thise course: https://forms.gle/AhhWpPfnbLwzp5Ai9"
+  },
+  {
+    "objectID": "index.html#who-can-participate",
+    "href": "index.html#who-can-participate",
+    "title": "Course Overview",
+    "section": "Who can participate?",
+    "text": "Who can participate?\nTo participate in this course, you need:\n\nto have a stable internet connection\nto somewhat be connected to the greater Water, Sanitation and Hygiene (WASH) sector (yes, public health, solid waste management, global health engineering, and related topics also count)\nto commit 10 * 2.5 hours to participate in Zoom calls\nto commit another 2 hours/week for readings and additional exercises for practice\nto identify a dataset of your own or your organisation that you are interested to share with the public\nan openess to new ideas and workflows that disrupt current practice"
+  },
+  {
+    "objectID": "index.html#what-do-we-offer",
+    "href": "index.html#what-do-we-offer",
+    "title": "Course Overview",
+    "section": "What do we offer?",
+    "text": "What do we offer?\nThis course is:\n\nfree\nprovides you with a certificate for successful completion\nusing exclusively tools that are free and open source\noffers 1:1 coding support between lectures and beyond the course"
+  },
+  {
+    "objectID": "index.html#course-information",
+    "href": "index.html#course-information",
+    "title": "Course Overview",
+    "section": "Course Information",
+    "text": "Course Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nUsing AI for software development in R\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system"
+  },
+  {
+    "objectID": "index.html#learning-goals",
+    "href": "index.html#learning-goals",
+    "title": "Course Overview",
+    "section": "Learning Goals",
+    "text": "Learning Goals\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables."
+  },
+  {
+    "objectID": "index.html#textbooks-and-materials",
+    "href": "index.html#textbooks-and-materials",
+    "title": "Course Overview",
+    "section": "Textbooks and Materials",
+    "text": "Textbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website."
+  },
+  {
+    "objectID": "index.html#course-calendar",
+    "href": "index.html#course-calendar",
+    "title": "Course Overview",
+    "section": "Course Calendar",
+    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-2-element.html",
+    "href": "assignments/md-01/am-01-2-element.html",
+    "title": "Communication in a chat",
+    "section": "",
+    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels.\nWe want to communicate through a chat client called Element, providing the open source, free-of-charge Slack-like experience.\nOn Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself.\nTo set it up, please follow the steps below:"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-2-element.html#step-1-join-the-chat",
+    "href": "assignments/md-01/am-01-2-element.html#step-1-join-the-chat",
+    "title": "Communication in a chat",
+    "section": "Step 1: Join the chat",
+    "text": "Step 1: Join the chat\n\nOpen the following link in your browser: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch\nClick on Continue\n\n\n\nClick on Sign Up\n\n\n\nClick on the GitHub icon\n\n\n\nClick on Continue\n\n\n\nClick on the X to close the dialogue\n\n\n\nClick on “I’ll verify later” to close the dialogue\n\n 8. Click on “Join the Discussion”\n 9. Leave a message\nYou are now in the lobby of the openwashdata community. Leave a message to introduce yourself. You will be added to the room ds4owd-001 that is specifically for this course."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-2-element.html#step-2-verify-element-session",
+    "href": "assignments/md-01/am-01-2-element.html#step-2-verify-element-session",
+    "title": "Communication in a chat",
+    "section": "Step 2: Verify element session",
+    "text": "Step 2: Verify element session\n\nClick on the icon in the top left corner\n\n\n\nClick on All settings\n\n\n\nSelect Sessions in the navigation pane on the left, click Verify session\n\n 4. Click Proceed with reset\n 5. Select Generate a Security Key and click Continue\n 6. Click Download and save downloaded security-key.txt securely\n 7. Click Continue\n\n\nYou have succesfully verified your session\n\nYou can download Element as an app for your computer and also your phone. If you proceed to do this, then use the stored security key to verify those additional sessions."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-2-element.html#step-3-download-element-optional",
+    "href": "assignments/md-01/am-01-2-element.html#step-3-download-element-optional",
+    "title": "Communication in a chat",
+    "section": "Step 3: Download Element (optional)",
+    "text": "Step 3: Download Element (optional)\n\nDownload and install Element: https://element.io/download\n\nIt’s available on Windows, Linux and Mac OS, as well as Android and iPhone.\n\nOpen the Element App on your device\nClick on Sign In\nSign in with GitHub\nClick on Verify with Security Key\n\n 6. Copy/paste the Security key from the downloaded security-key.txt you received when setting up the app in your browser. And hit Continue.\n\n\n\n\n\n\nI cannot click Continue\n\n\n\n\n\nIf a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.\n\n\n\n 7. You have successfully verified your device"
+  },
+  {
+    "objectID": "assignments/md-05/am-05-1-reading.html",
+    "href": "assignments/md-05/am-05-1-reading.html",
+    "title": "Module 2 - Assignment 1",
+    "section": "",
+    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html",
+    "title": "Create a spreadsheet",
+    "section": "",
+    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-1-make-a-spreadsheet-and-save-it",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-1-make-a-spreadsheet-and-save-it",
+    "title": "Create a spreadsheet",
+    "section": "Step 1: Make a spreadsheet and save it",
+    "text": "Step 1: Make a spreadsheet and save it\nLayout a spreadsheet for data collection using a spreadsheet-based software (Google Sheets or MS Excel).\nYou are taking 20 samples of 1 liter faecal sludge from pit latrines and septic tanks at households and public toilets (5 samples each). For each sample, you note the number of daily users of the sanitation system.\nYour sample collection starts on 1st November 2022. On day 5, you analyse the data in the laboratory for totals solids (TS) in g/L. In your spreadsheet, note the exact date of each collected sample.\nThis is you data collection plan:\n\nDay 1: 5 samples at households using pit latrines\nDay 2: 5 samples at households using septic tanks\nDay 3: 5 samples at public toilets that are pit latrines\nDay 4: 5 samples at public toilets that are septic tanks\nDay 5: Analyses of all 20 samples for total solids (TS) in g/L on a lab scale with accuracy of 0.01 g\n\nMake up the resultsfor the total solids (TS) analyses (e.g. 12.48 g/L).\nSave the spreadsheet as XLSX with a file name of your choice."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-2-create-a-new-repository-on-github-clone-to-posit-cloud",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-2-create-a-new-repository-on-github-clone-to-posit-cloud",
+    "title": "Create a spreadsheet",
+    "section": "Step 2: Create a new repository on GitHub & clone to Posit Cloud",
+    "text": "Step 2: Create a new repository on GitHub & clone to Posit Cloud\n\nOpen the GitHub Organisation for the course https://github.com/ds4owd-001\nTo right of the field “Find a repository”, click on the green “New” button.\n\n\n\n\n\n\n\nIn the “Repository name” field write samples-USERNAME. Replace USERNAME with your GitHub username. Avoid using spaces.\n\n\n\n\n\n\n\nScroll down on the same page, and click “Create repository”.\n\n\n\n\n\n\n\nIn the “Quick setup” field, click on the clipboard next to the HTTPs URL\n\n\n\n\n\n\n\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-3-upload-the-data",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-3-upload-the-data",
+    "title": "Create a spreadsheet",
+    "section": "Step 3: Upload the data",
+    "text": "Step 3: Upload the data\n\nUse the Files tab in the bottom right window to upload your spreadsheet from Task 1 into the folder"
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-3-commit-and-push-your-changes",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-3-commit-and-push-your-changes",
+    "title": "Create a spreadsheet",
+    "section": "Step 3: Commit and push your changes",
+    "text": "Step 3: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-4-open-an-issue-on-github",
+    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-4-open-an-issue-on-github",
+    "title": "Create a spreadsheet",
+    "section": "Step 4: Open an issue on GitHub",
+    "text": "Step 4: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository samples- that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Create spreadsheet and upload to cloud”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html",
+    "href": "assignments/md-04/am-04-1-reading.html",
+    "title": "Module 4 - Assignment 1",
+    "section": "",
+    "text": "This course introduces learners to tools and workflows for data science with R. Learners are also introduced to the concept of collaborative writing and coding using git and GitHub within the context of reproducible documents (i.e. Quarto). So far we have used data that is well structured and ready to be used. However, in reality a lot of data entry and storage is still managed in spreadsheets. This is why we also touch on some (research) data management topics (Data Organization in Spreadsheet).\nThe reading for this assignment provides guidance for data entry and storage aspects. It offers practical recommendations for organizing spreadsheet data to reduce errors and ease later analyses."
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
+    "href": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 1: Read and prepare examples",
+    "text": "Task 1: Read and prepare examples\nFor this assignment, we ask you to:\n\nRead Broman and Woo (2018): “Data organization in spreadsheets”.\nChose two of the recommendations and come up with real-world examples or scenarios where the recommendations could be applied in your work.\nBe prepared to share these examples and explain how the recommendations would improve your workflows. This will be in a class setting as part of small discussion group (max 3 people)."
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
+    "href": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 2: Apply the recommendations to your samples data from Module 3",
+    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this first. https://ds4owd-001.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the ds4owd workspace on posit.cloud\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R.\nAdd library(tidyverse) to the top of the file.\nAdd library(readxl) to the top of the file.\nAdd library(janitor) to the top of the file.\nUse the read_excel() function to read in your the .xlsx file and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data.\n\n\n\n\n\n\n\nAsk questions on our Element Chat\n\n\n\nIf you would like support at different points of your data cleaning process, please ask questions on our Element Chat, we are happy to support.\n\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
+  },
+  {
+    "objectID": "guide/index.html",
+    "href": "guide/index.html",
+    "title": "Guide",
+    "section": "",
+    "text": "This guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions.\nIf you have a request, let us know and we will add guidance here."
+  },
+  {
+    "objectID": "guide/index.html#switch-pipe-operator",
+    "href": "guide/index.html#switch-pipe-operator",
+    "title": "Guide",
+    "section": "1 Switch pipe operator",
+    "text": "1 Switch pipe operator\nBy default, R uses %&gt;% as the pipe operator from the magrittr package. Since R 4.1.0, the pipe operator is also available as |&gt; without loading any packages. The |&gt; operator is recommended to be used instead of %&gt;%.\nTo switch to the native pipe operator, follow these steps:\n\nOpen your project on Posit Cloud\nOn the menu bar of RStudio, click on Tools &gt; Global Options... (see Figure 1)\nOn the left panel, click on Code\nOn the right panel, select the 4th check-box from the top next to ’Use native pipe operator, |&gt; (requires R 4.1+) (see Figure 2)\nClick on Apply and OK\n\n\n\n\n\n\nFigure 1: RStudio Global Options\n\n\n\n\n\n\n\n\n\nFigure 2: RStudio Code Options"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "data science for openwashdata",
+    "section": "",
+    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-1-data-transformation.html",
+    "href": "assignments/md-03/am-03-1-data-transformation.html",
+    "title": "Data transformation with dplyr",
+    "section": "",
+    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-1-clone-your-module-3-assignments-repository",
+    "href": "assignments/md-03/am-03-1-data-transformation.html#step-1-clone-your-module-3-assignments-repository",
+    "title": "Data transformation with dplyr",
+    "section": "Step 1: Clone your module 3 assignments repository",
+    "text": "Step 1: Clone your module 3 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd and follow the instructions to work through the tasks."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-2-commit-and-push-your-changes",
+    "href": "assignments/md-03/am-03-1-data-transformation.html#step-2-commit-and-push-your-changes",
+    "title": "Data transformation with dplyr",
+    "section": "Step 2: Commit and push your changes",
+    "text": "Step 2: Commit and push your changes\nThe below is also described in md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-3-open-an-issue-on-github",
+    "href": "assignments/md-03/am-03-1-data-transformation.html#step-3-open-an-issue-on-github",
+    "title": "Data transformation with dplyr",
+    "section": "Step 3: Open an issue on GitHub",
+    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-03-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 3 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
+  },
+  {
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html",
+    "title": "Data visualisation with ggplot2",
+    "section": "",
+    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-1-clone-your-module-2-assignments-repository",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-1-clone-your-module-2-assignments-repository",
+    "title": "Data visualisation with ggplot2",
+    "section": "Step 1: Clone your module 2 assignments repository",
+    "text": "Step 1: Clone your module 2 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-02-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-02a-data-visualization.qmd and follow the instructions to work through the tasks."
+  },
+  {
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-2-commit-and-push-your-changes",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-2-commit-and-push-your-changes",
+    "title": "Data visualisation with ggplot2",
+    "section": "Step 2: Commit and push your changes",
+    "text": "Step 2: Commit and push your changes\nThe below is also described as Task 14 in md-02a-data-visualization.qmd\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage then it for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-3-open-an-issue-on-github",
+    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-3-open-an-issue-on-github",
+    "title": "Data visualisation with ggplot2",
+    "section": "Step 3: Open an issue on GitHub",
+    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-02-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-1-posit.html",
+    "href": "assignments/md-01/am-01-1-posit.html",
+    "title": "Working with R, RStudio on Posit Cloud",
+    "section": "",
+    "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-github.html",
+    "href": "assignments/md-01/am-01-3-github.html",
+    "title": "Interaction with GitHub",
+    "section": "",
+    "text": "Struggeling with the setup of GitHub?\n\n\n\n If we can support you to setup GitHub, get in touch with us via Email and we will schedule a call for a walk through."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-github.html#step-1-set-up-a-github-personal-access-token",
+    "href": "assignments/md-01/am-01-3-github.html#step-1-set-up-a-github-personal-access-token",
+    "title": "Interaction with GitHub",
+    "section": "Step 1: Set up a GitHub Personal Access Token",
+    "text": "Step 1: Set up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software)."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-github.html#step-2-clone-a-repository",
+    "href": "assignments/md-01/am-01-3-github.html#step-2-clone-a-repository",
+    "title": "Interaction with GitHub",
+    "section": "Step 2: Clone a repository",
+    "text": "Step 2: Clone a repository\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed\nContinue with the next step"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-github.html#step-3-introduce-yourself-to-git",
+    "href": "assignments/md-01/am-01-3-github.html#step-3-introduce-yourself-to-git",
+    "title": "Interaction with GitHub",
+    "section": "Step 3: Introduce yourself to git",
+    "text": "Step 3: Introduce yourself to git\n\nIn Posit Cloud, open the md-01-assignments-USERNAME project that ends with your GitHub username.\nOpen the git-configuration.qmd file from the bottom right window of RStudio.\nEdit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\nRender the document\nContinue with the next step\n\n\nlibrary(usethis)\n\n# Replace Your Name and Your Email with your details. Do not delete the quotes \"\".\nuse_git_config(user.name = \"Your Name\", user.email = \"Your Email\")"
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-github.html#step-4-commit-and-push-your-changes",
+    "href": "assignments/md-01/am-01-3-github.html#step-4-commit-and-push-your-changes",
+    "title": "Interaction with GitHub",
+    "section": "Step 4: Commit and push your changes",
+    "text": "Step 4: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to the git-configuration.qmd file to stage it for commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button$\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-01/am-01-3-github.html#step-5-open-an-issue-on-github",
+    "href": "assignments/md-01/am-01-3-github.html#step-5-open-an-issue-on-github",
+    "title": "Interaction with GitHub",
+    "section": "Step 5: Open an issue on GitHub",
+    "text": "Step 5: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#fa-circle-question",
@@ -1197,683 +1904,242 @@
     "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
   },
   {
-    "objectID": "assignments/md-01/am-01-3-github.html",
-    "href": "assignments/md-01/am-01-3-github.html",
-    "title": "Interaction with GitHub",
-    "section": "",
-    "text": "Struggeling with the setup of GitHub?\n\n\n\n If we can support you to setup GitHub, get in touch with us via Email and we will schedule a call for a walk through."
+    "objectID": "slides/lec-04-tidy-data.html#exam-update",
+    "href": "slides/lec-04-tidy-data.html#exam-update",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Exam Update",
+    "text": "Exam Update\n\nNo exam anymore in Week 8\nDue date for Capstone Project will be extended (due on 28th July)\nCapstone Project contributes 40% to grade instead of 20%\n\n\n\n\ntype\npercent\n\n\n\n\nHomework assignments\n40\n\n\nLearning reflections\n20\n\n\nCapstone project\n40"
   },
   {
-    "objectID": "assignments/md-01/am-01-3-github.html#step-1-set-up-a-github-personal-access-token",
-    "href": "assignments/md-01/am-01-3-github.html#step-1-set-up-a-github-personal-access-token",
-    "title": "Interaction with GitHub",
-    "section": "Step 1: Set up a GitHub Personal Access Token",
-    "text": "Step 1: Set up a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software)."
-  },
-  {
-    "objectID": "assignments/md-01/am-01-3-github.html#step-2-clone-a-repository",
-    "href": "assignments/md-01/am-01-3-github.html#step-2-clone-a-repository",
-    "title": "Interaction with GitHub",
-    "section": "Step 2: Clone a repository",
-    "text": "Step 2: Clone a repository\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed\nContinue with the next step"
-  },
-  {
-    "objectID": "assignments/md-01/am-01-3-github.html#step-3-introduce-yourself-to-git",
-    "href": "assignments/md-01/am-01-3-github.html#step-3-introduce-yourself-to-git",
-    "title": "Interaction with GitHub",
-    "section": "Step 3: Introduce yourself to git",
-    "text": "Step 3: Introduce yourself to git\n\nIn Posit Cloud, open the md-01-assignments-USERNAME project that ends with your GitHub username.\nOpen the git-configuration.qmd file from the bottom right window of RStudio.\nEdit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\nRender the document\nContinue with the next step\n\n\nlibrary(usethis)\n\n# Replace Your Name and Your Email with your details. Do not delete the quotes \"\".\nuse_git_config(user.name = \"Your Name\", user.email = \"Your Email\")"
-  },
-  {
-    "objectID": "assignments/md-01/am-01-3-github.html#step-4-commit-and-push-your-changes",
-    "href": "assignments/md-01/am-01-3-github.html#step-4-commit-and-push-your-changes",
-    "title": "Interaction with GitHub",
-    "section": "Step 4: Commit and push your changes",
-    "text": "Step 4: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to the git-configuration.qmd file to stage it for commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button$\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
-  },
-  {
-    "objectID": "assignments/md-01/am-01-3-github.html#step-5-open-an-issue-on-github",
-    "href": "assignments/md-01/am-01-3-github.html#step-5-open-an-issue-on-github",
-    "title": "Interaction with GitHub",
-    "section": "Step 5: Open an issue on GitHub",
-    "text": "Step 5: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
-  },
-  {
-    "objectID": "assignments/md-01/am-01-1-posit.html",
-    "href": "assignments/md-01/am-01-1-posit.html",
-    "title": "Working with R, RStudio on Posit Cloud",
-    "section": "",
-    "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3"
-  },
-  {
-    "objectID": "assignments/md-03/am-03-2-spreadsheet.html",
-    "href": "assignments/md-03/am-03-2-spreadsheet.html",
-    "title": "Create a spreadsheet",
-    "section": "",
-    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-1-make-a-spreadsheet-and-save-it",
-    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-1-make-a-spreadsheet-and-save-it",
-    "title": "Create a spreadsheet",
-    "section": "Step 1: Make a spreadsheet and save it",
-    "text": "Step 1: Make a spreadsheet and save it\nLayout a spreadsheet for data collection using a spreadsheet-based software (Google Sheets or MS Excel).\nYou are taking 20 samples of 1 liter faecal sludge from pit latrines and septic tanks at households and public toilets (5 samples each). For each sample, you note the number of daily users of the sanitation system.\nYour sample collection starts on 1st November 2022. On day 5, you analyse the data in the laboratory for totals solids (TS) in g/L. In your spreadsheet, note the exact date of each collected sample.\nThis is you data collection plan:\n\nDay 1: 5 samples at households using pit latrines\nDay 2: 5 samples at households using septic tanks\nDay 3: 5 samples at public toilets that are pit latrines\nDay 4: 5 samples at public toilets that are septic tanks\nDay 5: Analyses of all 20 samples for total solids (TS) in g/L on a lab scale with accuracy of 0.01 g\n\nMake up the resultsfor the total solids (TS) analyses (e.g. 12.48 g/L).\nSave the spreadsheet as XLSX with a file name of your choice."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-2-create-a-new-repository-on-github-clone-to-posit-cloud",
-    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-2-create-a-new-repository-on-github-clone-to-posit-cloud",
-    "title": "Create a spreadsheet",
-    "section": "Step 2: Create a new repository on GitHub & clone to Posit Cloud",
-    "text": "Step 2: Create a new repository on GitHub & clone to Posit Cloud\n\nOpen the GitHub Organisation for the course https://github.com/ds4owd-001\nTo right of the field “Find a repository”, click on the green “New” button.\n\n\n\n\n\n\n\nIn the “Repository name” field write samples-USERNAME. Replace USERNAME with your GitHub username. Avoid using spaces.\n\n\n\n\n\n\n\nScroll down on the same page, and click “Create repository”.\n\n\n\n\n\n\n\nIn the “Quick setup” field, click on the clipboard next to the HTTPs URL\n\n\n\n\n\n\n\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-3-upload-the-data",
-    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-3-upload-the-data",
-    "title": "Create a spreadsheet",
-    "section": "Step 3: Upload the data",
-    "text": "Step 3: Upload the data\n\nUse the Files tab in the bottom right window to upload your spreadsheet from Task 1 into the folder"
-  },
-  {
-    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-3-commit-and-push-your-changes",
-    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-3-commit-and-push-your-changes",
-    "title": "Create a spreadsheet",
-    "section": "Step 3: Commit and push your changes",
-    "text": "Step 3: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-2-spreadsheet.html#step-4-open-an-issue-on-github",
-    "href": "assignments/md-03/am-03-2-spreadsheet.html#step-4-open-an-issue-on-github",
-    "title": "Create a spreadsheet",
-    "section": "Step 4: Open an issue on GitHub",
-    "text": "Step 4: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository samples- that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Create spreadsheet and upload to cloud”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
-  },
-  {
-    "objectID": "assignments/md-04/am-04-1-reading.html",
-    "href": "assignments/md-04/am-04-1-reading.html",
-    "title": "Module 2 - Assignment 1",
-    "section": "",
-    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nCome up with a real-world example or scenario where the recommended practice could be applied in your work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
-  },
-  {
-    "objectID": "guide/index.html",
-    "href": "guide/index.html",
-    "title": "Guide",
-    "section": "",
-    "text": "This guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions.\nIf you have a request, let us know and we will add guidance here."
-  },
-  {
-    "objectID": "guide/index.html#switch-pipe-operator",
-    "href": "guide/index.html#switch-pipe-operator",
-    "title": "Guide",
-    "section": "1 Switch pipe operator",
-    "text": "1 Switch pipe operator\nBy default, R uses %&gt;% as the pipe operator from the magrittr package. Since R 4.1.0, the pipe operator is also available as |&gt; without loading any packages. The |&gt; operator is recommended to be used instead of %&gt;%.\nTo switch to the native pipe operator, follow these steps:\n\nOpen your project on Posit Cloud\nOn the menu bar of RStudio, click on Tools &gt; Global Options... (see Figure 1)\nOn the left panel, click on Code\nOn the right panel, select the 4th check-box from the top next to ’Use native pipe operator, |&gt; (requires R 4.1+) (see Figure 2)\nClick on Apply and OK\n\n\n\n\n\n\nFigure 1: RStudio Global Options\n\n\n\n\n\n\n\n\n\nFigure 2: RStudio Code Options"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "data science for openwashdata",
-    "section": "",
-    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-1-data-transformation.html",
-    "href": "assignments/md-03/am-03-1-data-transformation.html",
-    "title": "Data transformation with dplyr",
-    "section": "",
-    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-1-clone-your-module-3-assignments-repository",
-    "href": "assignments/md-03/am-03-1-data-transformation.html#step-1-clone-your-module-3-assignments-repository",
-    "title": "Data transformation with dplyr",
-    "section": "Step 1: Clone your module 3 assignments repository",
-    "text": "Step 1: Clone your module 3 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd and follow the instructions to work through the tasks."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-2-commit-and-push-your-changes",
-    "href": "assignments/md-03/am-03-1-data-transformation.html#step-2-commit-and-push-your-changes",
-    "title": "Data transformation with dplyr",
-    "section": "Step 2: Commit and push your changes",
-    "text": "Step 2: Commit and push your changes\nThe below is also described in md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
-  },
-  {
-    "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-3-open-an-issue-on-github",
-    "href": "assignments/md-03/am-03-1-data-transformation.html#step-3-open-an-issue-on-github",
-    "title": "Data transformation with dplyr",
-    "section": "Step 3: Open an issue on GitHub",
-    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-03-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 3 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
-  },
-  {
-    "objectID": "assignments/md-02/am-02-1-data-visualisation.html",
-    "href": "assignments/md-02/am-02-1-data-visualisation.html",
-    "title": "Data visualisation with ggplot2",
-    "section": "",
-    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
-  },
-  {
-    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-1-clone-your-module-2-assignments-repository",
-    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-1-clone-your-module-2-assignments-repository",
-    "title": "Data visualisation with ggplot2",
-    "section": "Step 1: Clone your module 2 assignments repository",
-    "text": "Step 1: Clone your module 2 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-02-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-02a-data-visualization.qmd and follow the instructions to work through the tasks."
-  },
-  {
-    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-2-commit-and-push-your-changes",
-    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-2-commit-and-push-your-changes",
-    "title": "Data visualisation with ggplot2",
-    "section": "Step 2: Commit and push your changes",
-    "text": "Step 2: Commit and push your changes\nThe below is also described as Task 14 in md-02a-data-visualization.qmd\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage then it for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
-  },
-  {
-    "objectID": "assignments/md-02/am-02-1-data-visualisation.html#step-3-open-an-issue-on-github",
-    "href": "assignments/md-02/am-02-1-data-visualisation.html#step-3-open-an-issue-on-github",
-    "title": "Data visualisation with ggplot2",
-    "section": "Step 3: Open an issue on GitHub",
-    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-02-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
-  },
-  {
-    "objectID": "assignments/md-01/am-01-2-element.html",
-    "href": "assignments/md-01/am-01-2-element.html",
-    "title": "Communication in a chat",
-    "section": "",
-    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels.\nWe want to communicate through a chat client called Element, providing the open source, free-of-charge Slack-like experience.\nOn Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself.\nTo set it up, please follow the steps below:"
-  },
-  {
-    "objectID": "assignments/md-01/am-01-2-element.html#step-1-join-the-chat",
-    "href": "assignments/md-01/am-01-2-element.html#step-1-join-the-chat",
-    "title": "Communication in a chat",
-    "section": "Step 1: Join the chat",
-    "text": "Step 1: Join the chat\n\nOpen the following link in your browser: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch\nClick on Continue\n\n\n\nClick on Sign Up\n\n\n\nClick on the GitHub icon\n\n\n\nClick on Continue\n\n\n\nClick on the X to close the dialogue\n\n\n\nClick on “I’ll verify later” to close the dialogue\n\n 8. Click on “Join the Discussion”\n 9. Leave a message\nYou are now in the lobby of the openwashdata community. Leave a message to introduce yourself. You will be added to the room ds4owd-001 that is specifically for this course."
-  },
-  {
-    "objectID": "assignments/md-01/am-01-2-element.html#step-2-verify-element-session",
-    "href": "assignments/md-01/am-01-2-element.html#step-2-verify-element-session",
-    "title": "Communication in a chat",
-    "section": "Step 2: Verify element session",
-    "text": "Step 2: Verify element session\n\nClick on the icon in the top left corner\n\n\n\nClick on All settings\n\n\n\nSelect Sessions in the navigation pane on the left, click Verify session\n\n 4. Click Proceed with reset\n 5. Select Generate a Security Key and click Continue\n 6. Click Download and save downloaded security-key.txt securely\n 7. Click Continue\n\n\nYou have succesfully verified your session\n\nYou can download Element as an app for your computer and also your phone. If you proceed to do this, then use the stored security key to verify those additional sessions."
-  },
-  {
-    "objectID": "assignments/md-01/am-01-2-element.html#step-3-download-element-optional",
-    "href": "assignments/md-01/am-01-2-element.html#step-3-download-element-optional",
-    "title": "Communication in a chat",
-    "section": "Step 3: Download Element (optional)",
-    "text": "Step 3: Download Element (optional)\n\nDownload and install Element: https://element.io/download\n\nIt’s available on Windows, Linux and Mac OS, as well as Android and iPhone.\n\nOpen the Element App on your device\nClick on Sign In\nSign in with GitHub\nClick on Verify with Security Key\n\n 6. Copy/paste the Security key from the downloaded security-key.txt you received when setting up the app in your browser. And hit Continue.\n\n\n\n\n\n\nI cannot click Continue\n\n\n\n\n\nIf a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.\n\n\n\n 7. You have successfully verified your device"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Course Overview",
-    "section": "",
-    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong & Sophia Skorik are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 15 weeks (see Course Calendar below) at the following times:\nWe will use Posit Cloud infrastructure, so you do not need to install any software. You will hear from us about a week before the course start.\nThe registration window for this course has closed, but you can fill out the following form to sign up for the next time we host thise course: https://forms.gle/AhhWpPfnbLwzp5Ai9"
-  },
-  {
-    "objectID": "index.html#who-can-participate",
-    "href": "index.html#who-can-participate",
-    "title": "Course Overview",
-    "section": "Who can participate?",
-    "text": "Who can participate?\nTo participate in this course, you need:\n\nto have a stable internet connection\nto somewhat be connected to the greater Water, Sanitation and Hygiene (WASH) sector (yes, public health, solid waste management, global health engineering, and related topics also count)\nto commit 10 * 2.5 hours to participate in Zoom calls\nto commit another 2 hours/week for readings and additional exercises for practice\nto identify a dataset of your own or your organisation that you are interested to share with the public\nan openess to new ideas and workflows that disrupt current practice"
-  },
-  {
-    "objectID": "index.html#what-do-we-offer",
-    "href": "index.html#what-do-we-offer",
-    "title": "Course Overview",
-    "section": "What do we offer?",
-    "text": "What do we offer?\nThis course is:\n\nfree\nprovides you with a certificate for successful completion\nusing exclusively tools that are free and open source\noffers 1:1 coding support between lectures and beyond the course"
-  },
-  {
-    "objectID": "index.html#course-information",
-    "href": "index.html#course-information",
-    "title": "Course Overview",
-    "section": "Course Information",
-    "text": "Course Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nUsing AI for software development in R\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system"
-  },
-  {
-    "objectID": "index.html#learning-goals",
-    "href": "index.html#learning-goals",
-    "title": "Course Overview",
-    "section": "Learning Goals",
-    "text": "Learning Goals\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables."
-  },
-  {
-    "objectID": "index.html#textbooks-and-materials",
-    "href": "index.html#textbooks-and-materials",
-    "title": "Course Overview",
-    "section": "Textbooks and Materials",
-    "text": "Textbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website."
-  },
-  {
-    "objectID": "index.html#course-calendar",
-    "href": "index.html#course-calendar",
-    "title": "Course Overview",
-    "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Quarto\nmodule 2\n\n\n14 November 2023\n3\nExploratory data analysis using visualization\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nData transformation, descriptive statistics and gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#email-from-github",
-    "href": "slides/lec-01-welcome.html#email-from-github",
-    "title": "Welcome & get ready for the course",
-    "section": "Email from GitHub?",
-    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#meet-the-team",
-    "href": "slides/lec-01-welcome.html#meet-the-team",
-    "title": "Welcome & get ready for the course",
-    "section": "Meet the team",
-    "text": "Meet the team\n\n\nLars Schöbitz\n\n\n\n\n\n\nEnv. Engineer\nretired WASH Researcher\nRStudio certified instructor\n\n\nMian Zhong\n\n\n\n\n\n\nData Scientist\nAdvocate for data for social good\n\n\nSophia Skorik\n\n\n\n\n\n\nComputer Scientist\nTechnical support for the course"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
-    "href": "slides/lec-01-welcome.html#learning-goals-for-the-course",
-    "title": "Welcome & get ready for the course",
-    "section": "Learning Goals (for the course)",
-    "text": "Learning Goals (for the course)\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce documents with citations, footnotes, cross-references, figures, and tables."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#your-turn-about-you",
-    "href": "slides/lec-01-welcome.html#your-turn-about-you",
-    "title": "Welcome & get ready for the course",
-    "section": "Your turn: About you",
-    "text": "Your turn: About you\n\nPick an item and take notes for 1 minute:\nWhat does the item you have picked have to do with the reason for you being here?\n\n\n\n\n\n−+\n01:00"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#in-break-out-rooms",
-    "href": "slides/lec-01-welcome.html#in-break-out-rooms",
-    "title": "Welcome & get ready for the course",
-    "section": "In break-out rooms",
-    "text": "In break-out rooms\n\nTake 2 minutes each to share with your room partner:\nWhat does the item you have picked have to do with the reason for you being here?\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#course-calendar",
-    "href": "slides/lec-01-welcome.html#course-calendar",
-    "title": "Welcome & get ready for the course",
-    "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Exploratory data analysis using visualization\nmodule 2\n\n\n14 November 2023\n3\nData transformation with dplyr\nmodule 3\n\n\n21 November 2023\n4\nData organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nDescriptive statistics and tables with gt\nmodule 5\n\n\n05 December 2023\n6\nConcept of tidy data & Vectors in R\nmodule 6\n\n\n12 December 2023\n7\nJoining data & wrting functions\nmodule 7\n\n\n19 December 2023\n8\nUsing AI for software development in R\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nBreak\nNA\n\n\n16 January 2024\n12\nPersonal website development with Quarto and publication of capstone project\nmodule 9\n\n\n23 January 2024\n13\nWork on Capstone project\nNA\n\n\n30 January 2024\n14\nFinal submission date of Capstone project\nmodule 10\n\n\n06 February 2024\n15\nGraduation party of openwashdata academy\nNA"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#course-structure",
-    "href": "slides/lec-01-welcome.html#course-structure",
-    "title": "Welcome & get ready for the course",
-    "section": "Course structure",
-    "text": "Course structure\n\nMy turn: Lecture segments + live coding\nOur turn: Live coding + follow along\nYour turn: Exercises in break-out rooms"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
-    "href": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
-    "title": "Welcome & get ready for the course",
-    "section": "My turn: Lecture segments + live coding",
-    "text": "My turn: Lecture segments + live coding\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
-    "href": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
-    "title": "Welcome & get ready for the course",
-    "section": "Our turn: Live coding + follow along",
-    "text": "Our turn: Live coding + follow along\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant\nCode is displayed on second screen / split screen\nLearners join by writing and executing the same code"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#your-turn-exercises-in-break-out-rooms",
-    "href": "slides/lec-01-welcome.html#your-turn-exercises-in-break-out-rooms",
-    "title": "Welcome & get ready for the course",
-    "section": "Your turn: Exercises in break-out rooms",
-    "text": "Your turn: Exercises in break-out rooms\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#getting-help",
-    "href": "slides/lec-01-welcome.html#getting-help",
-    "title": "Welcome & get ready for the course",
-    "section": "Getting help",
-    "text": "Getting help\n\nDuring my turn and our turn segments: Please keep your microphone on mute. Send message to the Zoom chat Mian and Sophia will support you.\nDuring your turn segments: Due to the large number of participants, it will not be feasible to join individual break-out rooms, but you will always be working in pairs."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
-    "href": "slides/lec-01-welcome.html#platforms-and-tools",
-    "title": "Welcome & get ready for the course",
-    "section": "Platforms and Tools",
-    "text": "Platforms and Tools\n\nR\ntidyverse R Packages\nPosit Cloud\nRStudio IDE\nQuarto publishing system\nElement"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#bookmark",
-    "href": "slides/lec-01-welcome.html#bookmark",
-    "title": "Welcome & get ready for the course",
-    "section": "Bookmark",
-    "text": "Bookmark\nds4owd-001.github.io/website/"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
-    "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
-    "title": "Welcome & get ready for the course",
+    "objectID": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
+    "href": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub."
+    "text": "Learning Objectives (for this week)\n\nLearners can apply functions from the dplyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can list the four main atomic vector types in R.\nLearners can explain the three characteristics of tidy data."
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section",
-    "href": "slides/lec-01-welcome.html#section",
-    "title": "Welcome & get ready for the course",
+    "objectID": "slides/lec-04-tidy-data.html#why-care-about-data-types",
+    "href": "slides/lec-04-tidy-data.html#why-care-about-data-types",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Why care about data types?",
+    "text": "Why care about data types?\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#example-survey-data",
+    "href": "slides/lec-04-tidy-data.html#example-survey-data",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Example: survey data",
+    "text": "Example: survey data\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n05-Oct\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5 to 10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5\n\n\n\n\n\n\nData from: (Ben Aleya et al. 2022)"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#oh-why-wont-you-work",
+    "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-work",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Oh why won’t you work?!",
+    "text": "Oh why won’t you work?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
+    "href": "slides/lec-04-tidy-data.html#oh-why-wont-you-still-work",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Oh why won’t you still work??!!",
+    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#take-a-breath-and-look-at-your-data",
+    "href": "slides/lec-04-tidy-data.html#take-a-breath-and-look-at-your-data",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Take a breath and look at your data",
+    "text": "Take a breath and look at your data\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n05-Oct\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5 to 10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#very-common-data-tidying-step",
+    "href": "slides/lec-04-tidy-data.html#very-common-data-tidying-step",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Very common data tidying step!",
+    "text": "Very common data tidying step!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#very-common-data-tidying-step-1",
+    "href": "slides/lec-04-tidy-data.html#very-common-data-tidying-step-1",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Very common data tidying step!",
+    "text": "Very common data tidying step!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n05-Oct\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n20\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5 to 10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#sumamrise-argh",
+    "href": "slides/lec-04-tidy-data.html#sumamrise-argh",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Sumamrise? Argh!!!!",
+    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#always-respect-your-data-types",
+    "href": "slides/lec-04-tidy-data.html#always-respect-your-data-types",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Always respect your data types!",
+    "text": "Always respect your data types!\n\n\n\n\n\n\nTaking the mean of vector with type “character” is not possible.\n\n\n\n\n\n# A tibble: 22 × 4\n      id job      price_glass price_glass_new\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;          \n 1     1 Student  0           0              \n 2     2 Retired  0           0              \n 3     3 Other    0           0              \n 4     4 Employed 10          10             \n 5     5 Employed See comment &lt;NA&gt;           \n 6     6 Student  05-Oct      7.5            \n 7     7 Student  0           0              \n 8     8 Retired  0           0              \n 9     9 Student  10          10             \n10    10 Employed 0           0              \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#always-respect-your-data-types-1",
+    "href": "slides/lec-04-tidy-data.html#always-respect-your-data-types-1",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Always respect your data types!",
+    "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5 to 10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#live-05a-vectors",
+    "href": "slides/lec-04-tidy-data.html#live-05a-vectors",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "live-05a-vectors",
+    "text": "live-05a-vectors\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#section",
+    "href": "slides/lec-04-tidy-data.html#section",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#section-1",
+    "href": "slides/lec-04-tidy-data.html#section-1",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#section-2",
+    "href": "slides/lec-04-tidy-data.html#section-2",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#a-grammar-of-data-tidying",
+    "href": "slides/lec-04-tidy-data.html#a-grammar-of-data-tidying",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "A grammar of data tidying",
+    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\n\nSlide taken from Data Science in a Box"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#pivoting-data",
+    "href": "slides/lec-04-tidy-data.html#pivoting-data",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Pivoting data",
+    "text": "Pivoting data"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#waste-characterisation-data",
+    "href": "slides/lec-04-tidy-data.html#waste-characterisation-data",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Waste characterisation data",
+    "text": "Waste characterisation data\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99\n4.07"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#how-would-you-plot-this",
+    "href": "slides/lec-04-tidy-data.html#how-would-you-plot-this",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "How would you plot this?",
+    "text": "How would you plot this?"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#three-variables",
+    "href": "slides/lec-04-tidy-data.html#three-variables",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Three variables",
+    "text": "Three variables\n\n\n\n\n\nobjid\nlocation\ntotal\n\n\n\n\n900\neth\n2.05\n\n\n899\neth\n3.64\n\n\n921\nold_town\n1.99\n\n\n916\nold_town\n2.19\n\n\n900\neth\n1.12\n\n\n899\neth\n0.50\n\n\n921\nold_town\n2.33\n\n\n916\nold_town\n4.07"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics",
+    "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_untidy,\n       mapping = aes(x = objid, \n                     y = total, \n                     fill = location)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#and-how-to-plot-this",
+    "href": "slides/lec-04-tidy-data.html#and-how-to-plot-this",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "And how to plot this?",
+    "text": "And how to plot this?"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#reminder-data-in-wide-format",
+    "href": "slides/lec-04-tidy-data.html#reminder-data-in-wide-format",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Reminder: Data (in wide format)",
+    "text": "Reminder: Data (in wide format)\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#you-need-a-long-format",
+    "href": "slides/lec-04-tidy-data.html#you-need-a-long-format",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "You need: A long format",
+    "text": "You need: A long format\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-1",
+    "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-1",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#how-to",
+    "href": "slides/lec-04-tidy-data.html#how-to",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "How to",
+    "text": "How to\n\nwaste_data_untidy \n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#how-to-1",
+    "href": "slides/lec-04-tidy-data.html#how-to-1",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "How to",
+    "text": "How to\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#how-to-2",
+    "href": "slides/lec-04-tidy-data.html#how-to-2",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "How to",
+    "text": "How to\n\nwaste_category_levels &lt;- c(\"glass\", \"metal_alu\", \"paper\", \"pet\", \"other\")\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") |&gt; \n  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-2",
+    "href": "slides/lec-04-tidy-data.html#three-variables---three-aesthetics-2",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#live-05a-tidyr-pivoting",
+    "href": "slides/lec-04-tidy-data.html#live-05a-tidyr-pivoting",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "live-05a-tidyr-pivoting",
+    "text": "live-05a-tidyr-pivoting\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#homework-due-dates",
+    "href": "slides/lec-04-tidy-data.html#homework-due-dates",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, 7th July"
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html#section-3",
+    "href": "slides/lec-04-tidy-data.html#section-3",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "",
-    "text": "Artwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
-    "objectID": "slides/lec-01-welcome.html#section-1",
-    "href": "slides/lec-01-welcome.html#section-1",
-    "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-2",
-    "href": "slides/lec-01-welcome.html#section-2",
-    "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-3",
-    "href": "slides/lec-01-welcome.html#section-3",
-    "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-4",
-    "href": "slides/lec-01-welcome.html#section-4",
-    "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-5",
-    "href": "slides/lec-01-welcome.html#section-5",
-    "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-6",
-    "href": "slides/lec-01-welcome.html#section-6",
-    "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#section-7",
-    "href": "slides/lec-01-welcome.html#section-7",
-    "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#screen-setup---poll",
-    "href": "slides/lec-01-welcome.html#screen-setup---poll",
-    "title": "Welcome & get ready for the course",
-    "section": "Screen setup - Poll",
-    "text": "Screen setup - Poll\n\n\nOne screen \n\nTwo screens or more"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#meeting-you-where-you-are",
-    "href": "slides/lec-01-welcome.html#meeting-you-where-you-are",
-    "title": "Welcome & get ready for the course",
-    "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\n\n\nI’ll assume you\n\ndo not have R or git experience\nhave not worked in an IDE before (e.g. RStudio IDE)\nwant to learn about R\nwant to learn about Quarto and publishing\nwant to learn about project management with GitHub\n\n\n\n\nI’ll teach you\n\nR\nQuarto syntax and formats\nMarkdown\nGit via RStudio GUI\nGitHub issues, project management, and publishing"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#quarto",
-    "href": "slides/lec-01-welcome.html#quarto",
-    "title": "Welcome & get ready for the course",
-    "section": "Quarto …",
-    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
-    "href": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
-    "title": "Welcome & get ready for the course",
-    "section": "My turn: A tour of Quarto",
-    "text": "My turn: A tour of Quarto\n\n\nSit back and enjoy!"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
-    "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
-    "title": "Welcome & get ready for the course",
-    "section": "Your turn: Log into Posit Cloud with GitHub account",
-    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nGo to the Posit Cloud Sign Up page: login.posit.cloud/register\nClick on the Sign Up with GitHub button.\nEnter your GitHub username and password when prompted.\nOpen and accept the workspace invitation (Link is in the Zoom chat now).\nBookmark the address of the open tab in your browser.\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\nhttps://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#take-a-break",
-    "href": "slides/lec-01-welcome.html#take-a-break",
-    "title": "Welcome & get ready for the course",
-    "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
-    "href": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
-    "title": "Welcome & get ready for the course",
-    "section": "Your turn: md-01-exercises",
-    "text": "Your turn: md-01-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-01-exercises.\nIn the File Manager in the bottom right window, locate the hello-quarto.qmd file and click on it to open it in the top left window.\nRender the document.\nAdd author: to the YAML header and add your name\nRe-render the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
-    "href": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
-    "title": "Welcome & get ready for the course",
-    "section": "From the comfort of your own workspace",
-    "text": "From the comfort of your own workspace"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#one-install-batteries-included",
-    "href": "slides/lec-01-welcome.html#one-install-batteries-included",
-    "title": "Welcome & get ready for the course",
-    "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n\n\n\nAny language, exact same approach and syntax"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#many-quarto-formats",
-    "href": "slides/lec-01-welcome.html#many-quarto-formats",
-    "title": "Welcome & get ready for the course",
-    "section": "Many Quarto formats",
-    "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nBasic Formats\nhtml_document\npdf_document\nword_document\nhtml\npdf\ndocx\n\n\nBeamer\nbeamer_presentation\nbeamer\n\n\nPowerPoint\npowerpoint_presentation\npptx\n\n\nHTML Slides\nxaringan\nioslides\nrevealjs\nrevealjs\n\n\nAdvanced Layout\ntufte\ndistill\nQuarto Article Layout"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#many-quarto-formats-1",
-    "href": "slides/lec-01-welcome.html#many-quarto-formats-1",
-    "title": "Welcome & get ready for the course",
-    "section": "Many Quarto formats",
-    "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nCross References\nhtml_document2\npdf_document2\nword_document2\nQuarto Crossrefs\n\n\nWebsites & Blogs\nblogdown\ndistill\nQuarto Websites\nQuarto Blogs\n\n\nBooks\nbookdown\nQuarto Books\n\n\nInteractivity\nShiny Documents\nQuarto Interactive Documents\n\n\nJournal Articles\nrticles\nJournal Articles\n\n\nDashboards\nflexdashboard\nQuarto Dashboards"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
-    "href": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
-    "title": "Welcome & get ready for the course",
-    "section": "Your turn: Create a new Quarto document",
-    "text": "Your turn: Create a new Quarto document\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output.\n\nRender the document, which will ask you to give it a name – you can use my-first-document.qmd.\n\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).\nStretch goal: Add a table of contents. Note: Watch out for the indentation.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#version-control-with-git-and-github",
-    "href": "slides/lec-01-welcome.html#version-control-with-git-and-github",
-    "title": "Welcome & get ready for the course",
-    "section": "Version Control with Git and GitHub",
-    "text": "Version Control with Git and GitHub\nA way to share files with others, so they can:\n\ndownload\nre-use\ncontribute\n\nYou can view the history of files, and jump back in time to any point."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#why-is-it-useful",
-    "href": "slides/lec-01-welcome.html#why-is-it-useful",
-    "title": "Welcome & get ready for the course",
-    "section": "Why is it useful?",
-    "text": "Why is it useful?"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#git-and-github",
-    "href": "slides/lec-01-welcome.html#git-and-github",
-    "title": "Welcome & get ready for the course",
-    "section": "Git and GitHub",
-    "text": "Git and GitHub\n\n\n\n\n\n\n\n\nGit is a software for version control\nCreated in 2005\nPopular among programmers collaboratively developing code\nTracks changes in a set of files (directory/folder/repository)\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n\n100 million Users (20.5 in 2022 alone) (October, 2023)\n\nSocial media for software developers"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-github",
-    "href": "slides/lec-01-welcome.html#my-turn-a-tour-of-github",
-    "title": "Welcome & get ready for the course",
-    "section": "My turn: A tour of GitHub",
-    "text": "My turn: A tour of GitHub\n\nSit back and enjoy!"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
-    "href": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
-    "title": "Welcome & get ready for the course",
-    "section": "Our turn: Configure Notifications settings",
-    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
-    "href": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
-    "title": "Welcome & get ready for the course",
-    "section": "Your turn: Create an issue on GitHub",
-    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#take-a-break-1",
-    "href": "slides/lec-01-welcome.html#take-a-break-1",
-    "title": "Welcome & get ready for the course",
-    "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#components",
-    "href": "slides/lec-01-welcome.html#components",
-    "title": "Welcome & get ready for the course",
-    "section": "Components",
-    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#literate-programming",
-    "href": "slides/lec-01-welcome.html#literate-programming",
-    "title": "Welcome & get ready for the course",
-    "section": "Literate programming",
-    "text": "Literate programming\nLiterate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.\n---\ntitle: \"ggplot2 demo\"\ndate: \"5/23/2023\"\nformat: html\n---\n\n## MPG\n\nThere is a relationship between city and highway mileage.\n\n```{r}\n#| label: fig-mpg\n\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = cty, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#yaml",
-    "href": "slides/lec-01-welcome.html#yaml",
-    "title": "Welcome & get ready for the course",
-    "section": "YAML",
-    "text": "YAML\n“Yet Another Markup Language” or “YAML Ain’t Markup Language” is used to provide document level metadata.\n---\nkey: value\n---"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#output-options",
-    "href": "slides/lec-01-welcome.html#output-options",
-    "title": "Welcome & get ready for the course",
-    "section": "Output options",
-    "text": "Output options\n---\nformat: something\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#output-option-arguments",
-    "href": "slides/lec-01-welcome.html#output-option-arguments",
-    "title": "Welcome & get ready for the course",
-    "section": "Output option arguments",
-    "text": "Output option arguments\nIndentation matters!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#yaml-validation",
-    "href": "slides/lec-01-welcome.html#yaml-validation",
-    "title": "Welcome & get ready for the course",
-    "section": "YAML validation",
-    "text": "YAML validation\n\nInvalid: No space after :\n\n---\nformat:html\n---\n\nInvalid: Read as missing\n\n---\nformat:\nhtml\n---"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#yaml-validation-1",
-    "href": "slides/lec-01-welcome.html#yaml-validation-1",
-    "title": "Welcome & get ready for the course",
-    "section": "YAML validation",
-    "text": "YAML validation\nThere are multiple ways of formatting valid YAML:\n\nValid: There’s a space after :\n\nformat: html\n\nValid: format: html with selections made with proper indentation\n\nformat: \n  html:\n    toc: true"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#quarto-linting",
-    "href": "slides/lec-01-welcome.html#quarto-linting",
-    "title": "Welcome & get ready for the course",
-    "section": "Quarto linting",
-    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#quarto-yaml-intelligence",
-    "href": "slides/lec-01-welcome.html#quarto-yaml-intelligence",
-    "title": "Welcome & get ready for the course",
-    "section": "Quarto YAML Intelligence",
-    "text": "Quarto YAML Intelligence\nRStudio + VSCode provide rich tab-completion - start a word and tab to complete, or Ctrl + space to see all available options."
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#packages",
-    "href": "slides/lec-01-welcome.html#packages",
-    "title": "Welcome & get ready for the course",
-    "section": "Packages",
-    "text": "Packages\n\n\n\nbase R\n\nsqrt(49)\nsum(1, 2)\n\n\nFunctions come with R\n\n\n\n\nR Packages\n\nlibrary(dplyr)\n\n\nInstalled once in the Console: install.packages(\"dplyr\")\nLoaded per script\n\n\n\n\n\nPackages\n\nMain way that reusable code is shared in R\nCombination of code, data, and documentation\nR has a rich ecosystem of packages for data manipulation & analysis"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#functions-arguments",
-    "href": "slides/lec-01-welcome.html#functions-arguments",
-    "title": "Welcome & get ready for the course",
-    "section": "Functions & Arguments",
-    "text": "Functions & Arguments\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#objects",
-    "href": "slides/lec-01-welcome.html#objects",
-    "title": "Welcome & get ready for the course",
-    "section": "Objects",
-    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#operators",
-    "href": "slides/lec-01-welcome.html#operators",
-    "title": "Welcome & get ready for the course",
-    "section": "Operators",
-    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_yr_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What do do with the data\nObject: gapminder_yr_2007\nAssignment operator: &lt;-\nPipe operator: |&gt;"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#rules",
-    "href": "slides/lec-01-welcome.html#rules",
-    "title": "Welcome & get ready for the course",
-    "section": "Rules",
-    "text": "Rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#weekly-structure",
-    "href": "slides/lec-01-welcome.html#weekly-structure",
-    "title": "Welcome & get ready for the course",
-    "section": "Weekly Structure",
-    "text": "Weekly Structure\n\n\n\n\n\n\n\nMonday\n\n\n\nTuesday\nModule from 2 pm to 4:30 pm CET\n\n\nWednesday\n\n\n\nThursday\nOffice hours on Zoom (2 pm to 3:30 pm CET)\n\n\nFriday"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#homework-assignments",
-    "href": "slides/lec-01-welcome.html#homework-assignments",
-    "title": "Welcome & get ready for the course",
-    "section": "Homework assignments",
-    "text": "Homework assignments\n\nWeekly assignments (module 1 homework is required for participation)\nSubmitted as rendered Quarto documents on GitHub\nReviewed by course instructors for errors\nManagement and support through GitHub issue tracker"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#capstone-project",
-    "href": "slides/lec-01-welcome.html#capstone-project",
-    "title": "Welcome & get ready for the course",
-    "section": "Capstone Project",
-    "text": "Capstone Project\n\nData analysis project report with a dataset of your choice\nSubmitted as rendered Quarto document on GitHub\nSubmission required for successful completion of the course"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#module-1-documentation",
-    "href": "slides/lec-01-welcome.html#module-1-documentation",
-    "title": "Welcome & get ready for the course",
-    "section": "Module 1 documentation",
-    "text": "Module 1 documentation\n\nds4owd-001.github.io/website/modules/md-01.html"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#homework-due-date",
-    "href": "slides/lec-01-welcome.html#homework-due-date",
-    "title": "Welcome & get ready for the course",
-    "section": "Homework due date",
-    "text": "Homework due date\n\nHomework assignment due: Monday, November 6th"
-  },
-  {
-    "objectID": "slides/lec-01-welcome.html#thanks",
-    "href": "slides/lec-01-welcome.html#thanks",
-    "title": "Welcome & get ready for the course",
-    "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n ds4owd-001.github.io/website/"
+    "objectID": "slides/lec-04-tidy-data.html#references",
+    "href": "slides/lec-04-tidy-data.html#references",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "References",
+    "text": "References\n\n\n\nhttps://cven5873-ss23.github.io/website/\n\n\n\nBen Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. “Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.” Zenodo. https://doi.org/10.5281/ZENODO.7331119."
   },
   {
     "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",

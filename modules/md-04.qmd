@@ -1,6 +1,6 @@
 ---
 title: "Module 4"
-subtitle: "Data organization in spreadsheets"
+subtitle: "{{< var md-04.title >}}"
 editor: source
 params:
     week: 4
@@ -33,12 +33,22 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa display >}} Slides
 
--   In preparation
+[View slides in full screen](../slides/lec-04-spreadsheets.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-04-spreadsheets.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-04-spreadsheets.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
 
 ## {{< fa book >}} Readings
 
-1.  Read [@broman2018data]
+1. Read [R for Data Science - Section 3 - Workflow: code style](https://r4ds.hadley.nz/workflow-style)  
 
 ## {{< fa code >}} Assignments
 
--   In preparation
+
+Please complete the following assignment by Monday, 27th November 2023. 
+
+-   [Assignment 1](../assignments/md-04/am-04-1-reading.qmd): Data organisation in spreadsheets
+
+Thank you for working through this assignment. 
+

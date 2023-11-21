@@ -1,0 +1,5 @@
+system,location,count,mean_ts,sd_ts,median_ts
+pit latrine,household,4,90.7475,45.858401175066426,99.86
+pit latrine,public toilet,5,37.836,31.2557871441434,22.65
+septic tank,household,5,39.013999999999996,30.784498209326067,29.39
+septic tank,public toilet,5,20.372,14.324484982015935,15.64

@@ -1,18 +1,51 @@
 ---
-title: "Module 2 - Assignment 1"
-subtitle: "Good enough practices in scientific computing"
+title: "Module 4 - Assignment 1"
+subtitle: "Data organization in spreadsheets"
 bibliography: "../../ds4owd-001.bib"
 ---
 
-This course introduces participants to tools and workflows for collaborative  writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management. 
+This course introduces learners to tools and workflows for data science with R. Learners are also introduced to the concept of collaborative writing and coding using git and GitHub within the context of reproducible documents (i.e. Quarto). So far we have used data that is well structured and ready to be used. However, in reality a lot of data entry and storage is still managed in spreadsheets. This is why we also touch on some (research) data management topics (Data Organization in Spreadsheet).
 
-The following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.
+The reading for this assignment provides guidance for data entry and storage aspects. It offers practical recommendations for organizing spreadsheet data to reduce errors and ease later analyses.
+
+## Task 1: Read and prepare examples
 
 For this assignment, we ask you to:
 
-1. Read @wilson2017good: "Good enough practices in scientific computing".
-2. Chose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:
-4.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
-4.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your work.
-5.  Be prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
+1. Read @broman2018data: ["Data organization in spreadsheets"](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989). 
+2. Chose two of the recommendations and come up with [real-world examples]{.highlight-yellow} or scenarios where the recommendations could be applied in your work.
+3. Be prepared to share these examples and [explain how the recommendations would improve your workflows]{.highlight-yellow}. This will be in a class setting as part of small discussion group (max 3 people).
+
+## Task 2: Apply the recommendations to your samples data from Module 3
+
+::: {.callout-important}
+## Have you completed the assignments for module 3?
+A pre-requisite for this homework is that you worked through the "Spreadsheet" assignment of module 3. If you have not done so, please do this first. https://ds4owd-001.github.io/website/assignments/md-03/am-03-2-spreadsheet.html
+:::
+
+1. Open the ds4owd workspace on [posit.cloud](https://posit.cloud/spaces/426916/content/all?sort=name_asc)
+2. Re-open your `samples-USERNAME` repository.
+3. Create a new .R file and save it as `data_cleaning.R`.
+4. Add `library(tidyverse)` to the top of the file.
+5. Add `library(readxl)` to the top of the file.
+6. Add `library(janitor)` to the top of the file.
+6. Use the `read_excel()` function to read in your the `.xlsx` file and store it in an object called `samples`.
+7. Use the `glimpse()` function to inspect the data.
+8. Try to use R functions to apply the recommendations from the reading to your data.
+
+::: {.callout-tip}
+## Ask questions on our Element Chat
+If you would like support at different points of your data cleaning process, please ask questions on our Element Chat, we are happy to support.
+:::
+
+### Example
+
+The following is an example of a dataset that follows the recommendations from the reading. 
+
+```{r}
+#| echo: false
+#| warning: false 
+readr::read_csv("data/tbl-01-faecal-sludge-analysis.csv") |> 
+  knitr::kable()
+```
 
