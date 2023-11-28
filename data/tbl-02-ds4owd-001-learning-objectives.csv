@@ -13,9 +13,9 @@ date,week,title,learning_objectives
 2023-11-21T00:00:00Z,4,Data import & Data organization in spreadsheets,Learners can explain the difference between the vector class character and the vector class factor.
 2023-11-21T00:00:00Z,4,Data import & Data organization in spreadsheets,"Learners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication."
 2023-11-21T00:00:00Z,4,Data import & Data organization in spreadsheets,Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.
-2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,"Learners can explain the differences between measures of centrality (mean, median, mode)."
-2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,Learners can define what a distribution is.
-2023-11-28T00:00:00Z,5,Descriptive statistics and tables with gt,Learners can describe the characteristics of a normal distribution.
+2023-11-28T00:00:00Z,5,Conditions & Dates & Tables,Learners can apply functions from dplyr to change specific values of a variable in a dataframe.
+2023-11-28T00:00:00Z,5,Conditions & Dates & Tables,Learners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.
+2023-11-28T00:00:00Z,5,Conditions & Dates & Tables,Learners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can explain the three characteristics of tidy data.
 2023-12-05T00:00:00Z,6,Concept of tidy data & Vectors in R,Learners can list the four main atomic vector types in R.
