@@ -2497,5 +2497,215 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#learning-objectives-for-this-week",
+    "href": "slides/lec-05-conditions.html#learning-objectives-for-this-week",
+    "title": "Conditions & Dates & Tables",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from dplyr to change specific values of a variable in a dataframe.\nLearners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\nLearners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports."
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#part-1-reading",
+    "href": "slides/lec-05-conditions.html#part-1-reading",
+    "title": "Conditions & Dates & Tables",
+    "section": "Part 1: Reading",
+    "text": "Part 1: Reading\n\nRead Broman and Woo (2018): “Data organization in spreadsheets”.\nChose two of the recommendations and come up with real-world examples or scenarios where the recommendations could be applied in your work.\nBe prepared to share these examples and explain how the recommendations would improve your workflows. This will be in a class setting as part of small discussion group (max 3 people)."
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#your-turn-reading",
+    "href": "slides/lec-05-conditions.html#your-turn-reading",
+    "title": "Conditions & Dates & Tables",
+    "section": "Your turn: Reading",
+    "text": "Your turn: Reading\n\nIn discussion groups of 3, share your examples and discuss how the recommendations would improve your workflows.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#variable-names",
+    "href": "slides/lec-05-conditions.html#variable-names",
+    "title": "Conditions & Dates & Tables",
+    "section": "Variable names",
+    "text": "Variable names\nTODO"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#dplyr-functions-mutate-case_when",
+    "href": "slides/lec-05-conditions.html#dplyr-functions-mutate-case_when",
+    "title": "Conditions & Dates & Tables",
+    "section": "dplyr functions mutate() & case_when()",
+    "text": "dplyr functions mutate() & case_when()\n\nmutate() adds new variables to a data frame\ncase_when() is another form of an if-else statement\ncombination of functions are used to create variables with new values or fix existing ones"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#my-turn-conditional-statements",
+    "href": "slides/lec-05-conditions.html#my-turn-conditional-statements",
+    "title": "Conditions & Dates & Tables",
+    "section": "My turn: Conditional statements",
+    "text": "My turn: Conditional statements\n\n\nSit back and enjoy!\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#take-a-break",
+    "href": "slides/lec-05-conditions.html#take-a-break",
+    "title": "Conditions & Dates & Tables",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#your-turn-md-05-exercises---conditions",
+    "href": "slides/lec-05-conditions.html#your-turn-md-05-exercises---conditions",
+    "title": "Conditions & Dates & Tables",
+    "section": "Your turn: md-05-exercises - conditions",
+    "text": "Your turn: md-05-exercises - conditions\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-05a-conditions-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#task-1",
+    "href": "slides/lec-05-conditions.html#task-1",
+    "title": "Conditions & Dates & Tables",
+    "section": "Task 1",
+    "text": "Task 1\n\nA mistake happened during data entry for sample id 16. Use mutate() and case_when() to change the ts value of 0.72 to 8.72.\n\n\nsludge |&gt; \n    mutate(ts = case_when(\n        ts ==  0.72 ~ 8.72,\n        .default = ts\n    ))\n\n\n\n\n\n\n\n  \n    \n    \n      id\n      date\n      system\n      location\n      users\n      ts\n    \n  \n  \n    1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n    2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n    3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n    4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n    5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n    6\n2023-11-02\npit latrine\nhousehold\n7\n78.21\n    7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n    8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n    9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n    10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n    11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n    12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n    13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n    14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n    15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n    16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n    17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n    18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n    19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n    20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#task-2",
+    "href": "slides/lec-05-conditions.html#task-2",
+    "title": "Conditions & Dates & Tables",
+    "section": "Task 2",
+    "text": "Task 2\n\nAnother mistake happened during data entry for sample id 6. Use mutate() and case_when() to change the system value of id 6 from “pit latrine” to “septic tank”.\n\n\nsludge |&gt; \n    mutate(system = case_when(\n        id ==  6 ~ \"septic tank\",\n        .default = system\n    ))\n\n\n\n\n\n\n\n  \n    \n    \n      id\n      date\n      system\n      location\n      users\n      ts\n    \n  \n  \n    1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n    2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n    3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n    4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n    5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n    6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n    7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n    8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n    9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n    10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n    11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n    12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n    13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n    14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n    15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n    16\n2023-11-04\nseptic tank\npublic toilet\n26\n0.72\n    17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n    18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n    19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n    20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#task-3-stretch-goal",
+    "href": "slides/lec-05-conditions.html#task-3-stretch-goal",
+    "title": "Conditions & Dates & Tables",
+    "section": "Task 3 (stretch goal)",
+    "text": "Task 3 (stretch goal)\n\nAdd a new variable with the name ts_cat to the dataframe. that categorises sludge samples into low, medium and high solids content.Use mutate() and case_when() to create the new variable.\n\n\nsamples with less than 15 g/L are categorised as low\nsamples with 15 g/L to 50 g/L are categorised as medium\nsamples with more than 50 g/L are categorised as high"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#dates-and-times-in-r",
+    "href": "slides/lec-05-conditions.html#dates-and-times-in-r",
+    "title": "Conditions & Dates & Tables",
+    "section": "Dates and times in R",
+    "text": "Dates and times in R\n\nDates and times are stored as numbers in R\nDates are stored as the number of days since 1970-01-01\nTimes are stored as the number of seconds since 1970-01-01 00:00:00\nDates and times are stored as numeric values, but can be formatted to look like dates and times"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#my-turn-dates",
+    "href": "slides/lec-05-conditions.html#my-turn-dates",
+    "title": "Conditions & Dates & Tables",
+    "section": "My turn: Dates",
+    "text": "My turn: Dates\n\n\nSit back and enjoy!\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#take-a-break-1",
+    "href": "slides/lec-05-conditions.html#take-a-break-1",
+    "title": "Conditions & Dates & Tables",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#r-packages-for-displaying-tables",
+    "href": "slides/lec-05-conditions.html#r-packages-for-displaying-tables",
+    "title": "Conditions & Dates & Tables",
+    "section": "R packages for displaying tables",
+    "text": "R packages for displaying tables\n\nMany packages for displaying tables in R\ngt package is one of the most popular and flexible\nkable() function of knitr package useful for simple tables"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#our-turn-md-05-exercises---tables",
+    "href": "slides/lec-05-conditions.html#our-turn-md-05-exercises---tables",
+    "title": "Conditions & Dates & Tables",
+    "section": "Our turn: md-05-exercises - tables",
+    "text": "Our turn: md-05-exercises - tables\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-05-exercises.\nIn the File Manager in the bottom right window, locate the md-03c-tables.qmd file and click on it to open it in the top left window.\n\n\n\n\n\n−+\n30:00"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#cross-references-1",
+    "href": "slides/lec-05-conditions.html#cross-references-1",
+    "title": "Conditions & Dates & Tables",
+    "section": "Cross references",
+    "text": "Cross references\n\nHelp readers to navigate your document with numbered references and hyperlinks to entities like figures and tables.\nCross referencing steps:\n\nAdd a caption to your figure or table.\nGive an ID to your figure or table, starting with fig- or tbl-.\nRefer to it with @fig-... or @tbl-...."
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#table-cross-references",
+    "href": "slides/lec-05-conditions.html#table-cross-references",
+    "title": "Conditions & Dates & Tables",
+    "section": "Table cross references",
+    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table referenceable:\nSee @tbl-penguins for data on a few penguins.\nbecomes:\nSee Table 1 for data on a few penguins.\n\n```{r}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\nhead(penguins) |&gt; \n  gt()\n```\n\n\n\n\n\nTable 1:  A few penguins \n  \n    \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n    Adelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n    Adelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#your-turn-discuss-the-reading",
+    "href": "slides/lec-05-conditions.html#your-turn-discuss-the-reading",
+    "title": "Conditions & Dates & Tables",
+    "section": "Your turn: Discuss the reading",
+    "text": "Your turn: Discuss the reading\n\nIn discussion groups of 3, share your examples and discuss how the recommendations would improve your workflows.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#rules-for-variable-names",
+    "href": "slides/lec-05-conditions.html#rules-for-variable-names",
+    "title": "Conditions & Dates & Tables",
+    "section": "Rules for variable names",
+    "text": "Rules for variable names\n\navoid spaces\navoid special characters\nuse consistent naming conventions (e.g. snake_case)\n\n\n\n\nuse\n\nts\nusers\nsystem\n\n\navoid\n\nTotal Solids (g/L)\nNumber of users\nSystem (pit latrine / septic tank)"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#data-dictionary-codebook",
+    "href": "slides/lec-05-conditions.html#data-dictionary-codebook",
+    "title": "Conditions & Dates & Tables",
+    "section": "Data dictionary / codebook",
+    "text": "Data dictionary / codebook\n\nvariable descriptions belong into a data dictionary / codebook (not into variable names)\ndata dictionaries / codebooks are separate files\n\n\n\n\n\n\n\n\n\nvariable_name\ndescription\n\n\n\n\nts\nTotal solids in g/L.\n\n\nusers\nNumber of users per system.\n\n\nsystem\nSanitation system in use at sample location (septic tank / pit latrine)."
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#task-3-stretch-goal-1",
+    "href": "slides/lec-05-conditions.html#task-3-stretch-goal-1",
+    "title": "Conditions & Dates & Tables",
+    "section": "Task 3 (stretch goal)",
+    "text": "Task 3 (stretch goal)\n\nsludge |&gt; \n    mutate(ts_cat = case_when(\n        ts &lt; 15 ~ \"low\",\n        ts &gt;= 15 & ts &lt;= 50 ~ \"medium\",\n        ts &gt; 50 ~ \"high\"\n    ))\n\n\n\n\n\n\n\n  \n    \n    \n      id\n      date\n      system\n      location\n      users\n      ts\n      ts_cat\n    \n  \n  \n    1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\nhigh\n    2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\nhigh\n    3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\nhigh\n    4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\nmedium\n    5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\nhigh\n    6\n2023-11-02\npit latrine\nhousehold\n7\n78.21\nhigh\n    7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\nmedium\n    8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\nmedium\n    9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\nhigh\n    10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\nlow\n    11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\nlow\n    12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\nhigh\n    13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\nhigh\n    14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\nmedium\n    15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\nmedium\n    16\n2023-11-04\nseptic tank\npublic toilet\n26\n0.72\nlow\n    17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\nmedium\n    18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\nlow\n    19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\nmedium\n    20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64\nmedium"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#task-3-stretch-goal-2",
+    "href": "slides/lec-05-conditions.html#task-3-stretch-goal-2",
+    "title": "Conditions & Dates & Tables",
+    "section": "Task 3 (stretch goal)",
+    "text": "Task 3 (stretch goal)\n\nsludge |&gt; \n    mutate(ts_cat = case_when(\n        ts &lt; 15 ~ \"low\",\n        ts &gt;= 15 & ts &lt;= 50 ~ \"medium\",\n        ts &gt; 50 ~ \"high\"\n    )) |&gt; \n  count(ts_cat)\n\n\n\n\n\n\n\n  \n    \n    \n      ts_cat\n      n\n    \n  \n  \n    high\n8\n    low\n4\n    medium\n8"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#module-4-documentation",
+    "href": "slides/lec-05-conditions.html#module-4-documentation",
+    "title": "Conditions & Dates & Tables",
+    "section": "Module 4 documentation",
+    "text": "Module 4 documentation\n\nds4owd-001.github.io/website/modules/md-04.html"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#homework-due-date",
+    "href": "slides/lec-05-conditions.html#homework-due-date",
+    "title": "Conditions & Dates & Tables",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, November 27th\nCorrection & feedback phase up to: Thursday, November 30th"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#thanks",
+    "href": "slides/lec-05-conditions.html#thanks",
+    "title": "Conditions & Dates & Tables",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#module-5-documentation",
+    "href": "slides/lec-05-conditions.html#module-5-documentation",
+    "title": "Conditions & Dates & Tables",
+    "section": "Module 5 documentation",
+    "text": "Module 5 documentation\n\nds4owd-001.github.io/website/modules/md-05.html"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#bring-your-own-data-for-the-capstone-project",
+    "href": "slides/lec-05-conditions.html#bring-your-own-data-for-the-capstone-project",
+    "title": "Conditions & Dates & Tables",
+    "section": "Bring your own data for the capstone project",
+    "text": "Bring your own data for the capstone project\n\nFind a dataset that you would like to work with.\nCreate a new repository on GitHub & clone to Posit Cloud.\nUpload your data.\nCreate a new Quarto document an describe why you have chose this data."
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#suitable-datasets",
+    "href": "slides/lec-05-conditions.html#suitable-datasets",
+    "title": "Conditions & Dates & Tables",
+    "section": "Suitable datasets",
+    "text": "Suitable datasets\n\nnon-sensitive data that can be shared openly\ndata that you have permission to use"
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html#references",
+    "href": "slides/lec-05-conditions.html#references",
+    "title": "Conditions & Dates & Tables",
+    "section": "References",
+    "text": "References\n\n\n\n ds4owd-001.github.io/website/\n\n\n\nBroman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician 72 (1): 2–10. https://doi.org/10.1080/00031305.2017.1375989."
   }
 ]
