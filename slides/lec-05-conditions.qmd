@@ -39,6 +39,7 @@ library(lubridate)
 ```
 
 ```{r}
+#| echo: false
 sludge <- read_excel(here::here("slides/data/raw/faecal-sludge-analysis.xlsx")) |> 
   mutate(date_sample = as_date(date_sample)) |> 
   rename(date = date_sample)
@@ -48,7 +49,7 @@ sludge <- read_excel(here::here("slides/data/raw/faecal-sludge-analysis.xlsx")) 
 
 ```{r}
 #| label: learning-objectives
-
+#| echo: false
 lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
@@ -389,8 +390,8 @@ head(penguins) |>
 
 ## Homework due date
 
--   Homework assignment due: [Monday, November 27th]{.highlight-yellow}
--   Correction & feedback phase up to: Thursday, November 30th
+-   Homework assignment due: [Monday, December 4th]{.highlight-yellow}
+-   Correction & feedback phase up to: Thursday, December 7th
 
 # Wrap-up {background-color="#4C326A"}
 

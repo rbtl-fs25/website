@@ -74,8 +74,11 @@ website:
         contents:
           - href: assignments/md-04/am-04-1-reading.qmd
             text: "am-01: Data organization"
-      - href: modules/md-05.qmd
-        text: Module 05
+      - section: "Module 05"
+        href: modules/md-05.qmd
+        contents:
+          - href: assignments/md-05/am-05-1-project-data.qmd
+            text: "am-01: Project data"
       - href: modules/md-06.qmd
         text: Module 06
       - href: modules/md-07.qmd

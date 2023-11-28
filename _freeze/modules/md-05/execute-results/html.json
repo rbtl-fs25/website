@@ -1,10 +1,8 @@
 {
-  "hash": "6e30cda6a1a02cfb85f33f6d106aa302",
+  "hash": "539f910c5af8de2fad9a53cdafeed91e",
   "result": {
-    "markdown": "---\ntitle: \"Module 5\"\nsubtitle: \"Data transformation, descriptive statistics and gt\"\neditor: source\nparams:\n    week: 5\nexecute: \n  echo: false\n  warning: false\nbibliography: references.bib\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.\n2. Learners can use functions of the gt R package to present summary tables in output formats.\n:::\n\n\n## {{< fa display >}} Slides\n\n-   In preparation\n\n## {{< fa book >}} Readings\n\n1.  Read [R for Data Science - Section 4 - Data transformation](https://r4ds.hadley.nz/data-transform)\\\n2.  Read [@bryan2018excuse]\n\n## {{< fa code >}} Assignments\n\n-   In preparation\n",
-    "supporting": [
-      "md-05_files"
-    ],
+    "markdown": "---\ntitle: \"Module 5\"\nsubtitle: \"{{< var md-05.title >}}\"\neditor: source\nparams:\n    week: 5\nexecute: \n  echo: false\n  warning: false\nbibliography: references.bib\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply functions from dplyr to change specific values of a variable in a dataframe.\n2. Learners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\n3. Learners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.\n:::\n\n\n## {{< fa display >}} Slides\n\n[View slides in full screen](../slides/lec-05-conditions.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-05-conditions.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../slides/lec-05-conditions.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n\n## {{< fa book >}} Readings\n\n1.  Read [R for Data Science - Section 16 - Factors](https://r4ds.hadley.nz/factors)\n2.  Read [R for Data Science - Section 6 - Workflow: Scripts and projects](https://r4ds.hadley.nz/workflow-scripts)\n\n## {{< fa code >}} Assignments\n\nPlease complete the following assignment by Monday, 27th November 2023. \n\n-   [Assignment 1](../assignments/md-05/am-05-1-project-data.qmd): Identify data for your capstone project\n\nThank you for working through this assignment. \n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

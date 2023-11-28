@@ -1,0 +1,192 @@
+---
+title: "Data for your capstone project"
+execute:
+  echo: false
+---
+
+## Step 1: Identify data for your capstone project
+
+Ideally, you or your organisation has a dataset that you can use for your capstone project. Note that we intend to publish the final capstone project reports as public websites and that the you chose can be shared publicly.
+
+Data that is **not** suitable:
+
+- household surveys with personal information about individuals
+- household surveys with GPS coordinates
+- sensitive data about individuals or organisations
+
+Data that is suitable
+
+- household surveys with aggregated data
+- household surveys with no personal information about individuals and no GPS coordinates
+- observational data
+- laboratory data
+- data from a public source
+
+Your data format should be one of:
+
+- CSV
+- Excel
+- JSON
+
+If you do not have a dataset, you can use the following resources for inspriation:
+
+- [World Bank DataBank](https://databank.worldbank.org/home.aspx)
+- [openwashdata long list of data resources](https://github.com/openwashdata/data/issues)
+- [UNICEF Data and Analytics](https://data.unicef.org/resources/resource-type/datasets//)
+
+## Step 2: Create a new repository on GitHub & clone to Posit Cloud
+
+1. Open the GitHub Organisation for the course <https://github.com/ds4owd-001>
+2. To right of the field ["Find a repository"]{.highlight-yellow}, click on the green ["New"]{.highlight-yellow} button.
+
+```{r}
+knitr::include_graphics("images/01-github-org.png")
+```
+
+3. In the ["Repository name"]{.highlight-yellow} field write `project-username`. [Replace username with your GitHub username]{.highlight-yellow}. Avoid using spaces. For example: `project-rainbow-train` for the user with the username `rainbow-train`
+
+```{r}
+knitr::include_graphics("images/02-repository-name.png")
+```
+
+4. Scroll down on the same page, and click ["Create repository"]{.highlight-yellow}.
+
+```{r}
+knitr::include_graphics("images/03-create-repository.png")
+```
+
+5. In the ["Quick setup"]{.highlight-yellow} field, click on the clipboard next to the HTTPs URL 
+
+```{r}
+knitr::include_graphics("images/04-copy-to-clipboard.png")
+```
+
+6. Open the ds4owd workspace on [posit.cloud](https://posit.cloud/spaces/426916/content/all?sort=name_asc)
+7. Click New Project > New Project from Git Repository
+8. Paste the HTTPS URL from GitHub into the ["URL of your Git Repository"]{.highlight-yellow} field.
+9. Wait until the project is deployed.
+
+## Step 3: Create new folders
+
+1. Navigate to the Files tab in the bottom right window of RStudio.
+2. Click on the "Folder" button.
+
+```{r}
+knitr::include_graphics("images/05-new-folder.png")
+```
+
+3. Enter the name "data" in field and click OK.
+
+```{r}
+knitr::include_graphics("images/06-name-folder-data.png")
+```
+
+4. Click on the new `data` folder in the bottom right window.
+
+```{r}
+knitr::include_graphics("images/07-click-folder-data.png")
+```
+
+5. Click on the "Folder" button.
+
+```{r}
+knitr::include_graphics("images/08-new-folder.png")
+```
+
+6. Enter the name "raw" in field and click OK.
+
+```{r}
+knitr::include_graphics("images/09-name-folder-raw.png")
+```
+
+7. Click on the new `raw` folder in the bottom right window.
+
+```{r}
+knitr::include_graphics("images/10-click-folder-raw.png")
+```
+
+## Step 3: Upload the data 
+
+1. Use the Files tab in the bottom right window to upload your identified data from Task 1 into the `raw` folder.
+
+```{r}
+knitr::include_graphics("images/11-upload-data.png")
+```
+
+2. Choose the file from the place you have saved it on your computer.
+
+```{r}
+knitr::include_graphics("images/12-choose-file.png")
+```
+
+
+## Step 4: Describe your data and goals
+
+1. Navigate back to the root of your project folder by a click on the blue R cube.
+
+```{r}
+knitr::include_graphics("images/13-folder-root.png")
+```
+
+2. Create a new folder "docs" in the root of your project folder.
+
+```{r}
+knitr::include_graphics("images/14-new-folder.png")
+```
+
+3. Click on the `docs` folder
+
+```{r}
+knitr::include_graphics("images/15-click-folder-docs.png")
+```
+
+4. Create a new Quarto document and save it as `index.qmd` inside the docs folder.
+
+```{r}
+knitr::include_graphics("images/16-new-quarto-document.png")
+```
+
+5. In the `index.qmd` file, write a short description of your analysis goals and the data you have uploaded.
+
+```{r}
+knitr::include_graphics("images/17-describe-project.png")
+```
+
+6. If you want to try and import your data write the following inside a code chunk (in this example we are using a CSV file):
+
+```{r}
+#| eval: false
+read_csv(here::here("data/raw/your-file-name.csv"))
+```
+
+::: callout-tip
+## The `here` R package
+We recommend using the `here` R package to refer to files in your project. The `here` R package helps with finding the correct file path to your data. We will discuss file paths and the package itself in another module. 
+:::
+
+## Step 5: Commit and push your changes 
+
+1. Navigate to the Git pane in the top-right window of RStudio
+2. Check the box next to all files to stage them for a commit
+3. Click on the "Commit" button
+4. Enter a commit message in the "Commit message" field
+5. Click on the "Commit" button
+6. Click on the "Push" button
+7. Enter your GitHub username and GitHub Personal Access Token (PAT) in the "Username" and "Password" fields
+
+::: callout-important
+## Do not use your GitHub password
+
+You need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub.
+:::
+
+## Step 6: Open an issue on GitHub
+
+1. Open [github.com](https://github.com/) in your browser.
+2. Navigate to the GitHub organisation for the course.
+3. Find the repository samples- that ends with your GitHub username.
+4. Click on the "Issues" tab.
+5. Click on the green "New issue" button.
+6. In the "Title" field write: "Identify project data and describe analysis goals.".
+7. In the "Leave a comment" field, tag the course instructors @larnsce @mianzg @sskorik01
+
