@@ -1,5 +1,5 @@
 ---
-title: "Module 2 - Assignment 1"
+title: "Module 6 - Assignment 1"
 subtitle: "Good enough practices in scientific computing"
 bibliography: "../../ds4owd-001.bib"
 ---
@@ -11,8 +11,10 @@ The following paper provides recommendations for some of the practices we use in
 For this assignment, we ask you to:
 
 1. Read @wilson2017good: "Good enough practices in scientific computing".
+
 2. Chose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:
-4.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
-4.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your work.
-5.  Be prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
+
+3.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
+
+4.  Be prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
 

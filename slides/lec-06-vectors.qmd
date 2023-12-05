@@ -1,0 +1,700 @@
+---
+title: "{{< var md-06.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "{{< var author >}}"
+date: "2023-12-05"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: ../img/OWD-logo-20.png
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 6
+bibliography: "../ds4owd-001.bib"
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(gt)
+library(epoxy)
+library(palmerpenguins)
+library(countdown)
+
+ggplot2::theme_set(ggplot2::theme_gray(base_size = 16))
+
+```
+
+```{r}
+
+waste_data_lord1 <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/lord-of-the-bins/04-05-2022_rbtl_data_sheet1.csv")
+
+waste_data_lord2 <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/lord-of-the-bins/04-05-2022_rbtl_data_sheet2.csv")
+
+survey_data <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/partners-in-grime/2022-05-04_survey-data.csv") |> 
+  mutate(id = seq(1:n()))
+
+survey_data_small <- survey_data |> 
+  select(id, job, price_glass)
+
+survey_data_tidy <- survey_data |> 
+  select(id, job, residence_situation, starts_with("price")) |> 
+  pivot_longer(cols = starts_with("price"),
+               names_to = "waste_category",
+               values_to = "price") |> 
+  mutate(waste_category = str_remove(waste_category, pattern = "price_")) |> 
+  mutate(price_new = case_when(
+    price == "5 to 10" ~ "7.5",
+    price == "05-Oct" ~ "7.5",
+    str_detect(price, pattern = "20") == TRUE ~ "20",
+    str_detect(price, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price
+  )) |> 
+  mutate(price = as.numeric(price_new)) |> 
+  select(-price_new)
+
+#survey_data_tidy |>
+#  count(job, residence_situation, waste_category, price) |>
+#  ggplot(aes(x = factor(price), y = n, fill = job)) +
+#  geom_col()
+# 
+```
+
+```{r}
+#| eval: true
+
+waste_data <- bind_rows(waste_data_lord1, waste_data_lord2)
+
+waste_data_untidy <- waste_data |> 
+  filter(!is.na(objid)) |> 
+  rename(non_recyclable_Kg = `non_recyclables_ Kg`,
+         recyclable_Kg = recyclables_Kg) |>
+  relocate(c(recyclable_Kg, non_recyclable_Kg), .before = weight_total_kg) |> 
+  select(objid, location, pet_Kg:weight_total_kg) |> 
+  mutate(objid = factor(objid)) |>
+  rename_with(~str_remove(.x, "_Kg|_kg")) |> 
+  rename_with(~str_remove(.x, "_content")) |> 
+  rename(total = weight_total)
+
+
+waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
+
+waste_data_tidy <- waste_data_untidy |> 
+  select(objid:paper, non_recyclable) |> 
+  rename(other = non_recyclable) |> 
+  mutate(objid = factor(objid)) |>
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |> 
+  mutate(type = case_when(
+    waste_category == "other" ~ "non_recyclable",
+    TRUE ~ "recyclable")) |> 
+  relocate(type, .before = weight) |> 
+  group_by(objid) |> 
+  mutate(percent = weight / sum(weight) * 100)
+
+waste_data_tidy |> 
+  write_rds(here::here("slides/data/intermediate_data/waste-characterisation-lord-of-the-bins-tidy.rds"))
+
+```
+
+```{r}
+#| eval: false
+
+waste_data_tidy |> 
+  group_by(location, waste_category) |> 
+  summarise(weight = mean(weight)) |> 
+  group_by(location) |> 
+  mutate(percent = weight / sum(weight) * 100) 
+
+waste_data_tidy |> 
+  
+  ggplot(mapping = aes(x = waste_category, y = weight, color = type)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2) +
+  facet_wrap(~location)
+
+waste_data_tidy |> 
+  ggplot(mapping = aes(x = objid, y = weight)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(mapping = aes(x = objid, y = weight, fill = waste_category)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(mapping = aes(x = waste_category, y = percent, color = type)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2) +
+  facet_wrap(~location)
+
+
+waste_data_tidy |> 
+  ggplot(aes(x = objid, y = percent, fill = waste_category)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(aes(x = objid, y = percent, fill = type)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(aes(x = objid, y = percent, fill = location)) +
+  geom_col() +
+  facet_wrap(~waste_category, ncol = 5)
+```
+
+## Course calendar {.smallest .scrollable}
+
+[Changes to the course calendar]{.highlight-yellow}
+
+- 19th December 2023: no class
+- 23rd January 2024: openwashdata webinar: a data sharing workflow that may please the publishers
+- 13th February 2024: submission of capstone project report
+
+```{r}
+readr::read_csv("../data/tbl-01-ds4owd-001-course-schedule.csv") |> 
+  dplyr::select(date, week, topic = title, module) |> 
+  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
+  knitr::kable()
+```
+
+## Learning Objectives (for this week)
+
+```{r}
+#| label: learning-objectives
+#| echo: false
+lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+```{epoxy}
+{1:length(lobj)}. {lobj[1:length(lobj)]}
+```
+
+# Part 1: Cross-references {background-color="#4C326A"}
+
+## Cross references
+
+-   Help readers to navigate your document with numbered references and hyperlinks to entities like figures and tables.
+
+-   Cross referencing steps:
+
+    -   Add a caption to your figure or table.
+    -   Give an ID to your figure or table, starting with `fig-` or `tbl-`.
+    -   Refer to it with `@fig-...` or `@tbl-...`.
+
+## Table cross references {.smaller}
+
+The presence of the caption (`A few penguins`) and label (`#tbl-penguins`) make this table reference-able:
+
+See `@tbl-penguins` for data on a few penguins.
+
+becomes:
+
+See @tbl-penguins for data on a few penguins.
+
+```{r}
+#| echo: fenced
+#| label: tbl-penguins
+#| tbl-cap: A few penguins
+
+head(penguins) |> 
+  gt()
+```
+
+## Figure cross references {.smaller}
+
+The presence of the caption (`A few penguins`) and label (`#fig-penguins`) make this figure reference-able:
+
+See `@fig-penguins` for data on a few penguins.
+
+becomes:
+
+See @fig-penguins for data on a few penguins.
+
+```{r}
+#| echo: fenced
+#| label: fig-penguins
+#| fig-cap: A few penguins
+#| fig-width: 6
+#| fig-asp: 0.618
+
+ggplot(penguins, aes(x = species, fill = species)) +
+  geom_bar(show.legend = FALSE)
+
+```
+
+## Your turn: md-06-exercises - cross-references
+
+::: task
+1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3.  In the File Manager in the bottom right window, locate the [`md-06a-cross-references.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4.  Follow instructions in the file
+:::
+
+```{r}
+countdown(10)
+```
+
+# Part 2: Data types and vectors {background-color="#4C326A"}
+
+## Why care about data types?
+
+::: {style="width:75%;height:0;padding-bottom:83%;position:relative;"}
+<iframe src="https://giphy.com/embed/SvRuvlSEa67wNNHuHy" width="75%" height="75%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+:::
+
+<p><a href="https://giphy.com/gifs/Friends-episode-20-friends-tv-the-one-with-baby-shower-SvRuvlSEa67wNNHuHy">via GIPHY</a></p>
+
+## Example: survey data {.smaller .scrollable}
+
+A survey about recycling behaviour in the city of Zurich:
+
+- `job`: What is your occupation?
+- `price_glass`: What monthly subscription would you be willing to pay for a metal/glass bin outside your home? 
+
+```{r}
+#| echo: false
+survey_data_small |> 
+  knitr::kable()
+```
+
+::: footer
+Data from: [@benaleya2022researcha]
+:::
+
+## Oh why won't you work?!
+
+```{r}
+#| echo: true
+survey_data_small |> 
+  summarise(mean_price_glass = mean(price_glass))
+```
+
+## Oh why won't you still work??!! 
+
+```{r}
+#| echo: true
+survey_data_small |> 
+  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))
+```
+
+## Take a breath and look at your data  {.smaller .scrollable}
+
+```{r}
+#| echo: false
+survey_data_small |> 
+  knitr::kable()
+```
+
+## Take a breath and look at your data  {.smaller .scrollable}
+
+```{r}
+#| echo: false
+survey_data_small 
+```
+
+## Very common data tidying step! {.small}
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "|2|3,4|5,6|7"
+
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) 
+```
+
+## Very common data tidying step! {.scrollable .small}
+
+```{r}
+#| echo: false
+#| eval: true
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) |> 
+  relocate(price_glass_new, .after = job) |> 
+  knitr::kable()
+```
+
+## Sumamrise? Argh!!!! {.small auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "9"
+
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) |> 
+  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))
+
+```
+
+## Always respect your data types!
+
+::: {.callout-important appearance="simple"}
+Taking the mean of vector with type **"character"** is not possible.
+:::
+
+```{r}
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) 
+```
+
+## Always respect your data types! {.smaller auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "9|10"
+
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) |> 
+  mutate(price_glass_new = as.numeric(price_glass_new)) |> 
+  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))
+
+```
+
+## My turn: Types of vectors & For loops
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
+:::
+
+```{r}
+countdown(25)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Your turn: md-06-exercises - types
+
+::: task
+1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3.  In the File Manager in the bottom right window, locate the [`md-06b-types-your-turn.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4.  Follow instructions in the file
+:::
+
+```{r}
+countdown(minutes = 35)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+# Part 3: tidyr - long and wide formats {background-color="#4C326A"}
+
+## . {background-image="img/lec-04/tidydata_1.jpg" background-size="contain"}
+
+::: aside
+Illustrations from the [Openscapes](https://www.openscapes.org/) blog [Tidy Data for reproducibility, efficiency, and collaboration](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by [Julia Lowndes](https://twitter.com/juliesquid) and [Allison Horst](https://twitter.com/allison_horst)
+:::
+
+## . {background-image="img/lec-04/tidydata_2.jpg" background-size="contain"}
+
+::: aside
+Illustrations from the [Openscapes](https://www.openscapes.org/) blog [Tidy Data for reproducibility, efficiency, and collaboration](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by [Julia Lowndes](https://twitter.com/juliesquid) and [Allison Horst](https://twitter.com/allison_horst)
+:::
+
+## . {background-image="img/lec-04/tidydata_3.jpg" background-size="contain"}
+
+::: aside
+Illustrations from the [Openscapes](https://www.openscapes.org/) blog [Tidy Data for reproducibility, efficiency, and collaboration](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by [Julia Lowndes](https://twitter.com/juliesquid) and [Allison Horst](https://twitter.com/allison_horst)
+:::
+
+## A grammar of data tidying {.smaller}
+
+::: columns
+::: {.column width="40%"}
+```{r dplyr-part-of-tidyverse, echo=FALSE, out.width="60%", caption = "tidyr is part of the tidyverse"}
+knitr::include_graphics("img/lec-04/tidyr-part-of-tidyverse.png")
+```
+:::
+
+::: {.column width="60%"}
+The goal of tidyr is to help you tidy your data via
+
+-   pivoting for going between wide and long data
+-   splitting and combining character columns
+-   nesting and unnesting columns
+-   clarifying how `NA`s should be treated
+:::
+:::
+
+::: aside
+Slide taken from [Data Science in a Box](https://datasciencebox.org/)
+:::
+
+## Pivoting data
+
+```{r}
+knitr::include_graphics("img/lec-04/tidyr-longer-wider.gif")
+```
+
+## Waste characterisation data {.smaller}
+
+```{r, out.width="90%"}
+
+waste_data_untidy |> 
+  select(-recyclable) |> 
+  rename(other = non_recyclable) |> 
+  knitr::kable(digits = 2)
+```
+
+## How would you plot this?
+
+```{r}
+
+ggplot(data = waste_data_untidy,
+       mapping = aes(x = objid, y = total, fill = location)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+
+```
+
+## Three variables
+
+```{r, out.width="90%"}
+
+waste_data_untidy |> 
+  select(objid, location, total) |> 
+  knitr::kable(digits = 2)
+
+```
+
+## Three variables -\> three aesthetics {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_untidy,
+       mapping = aes(x = objid, 
+                     y = total, 
+                     fill = location)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+```
+
+## And how to plot this?
+
+```{r}
+
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+
+```
+
+## Reminder: Data (in wide format) {.smaller .scrollable}
+
+```{r}
+waste_data_untidy |> 
+  select(-recyclable, -total) |> 
+  rename(other = non_recyclable) |> 
+  knitr::kable(digits = 2)
+```
+
+## You need: A long format {.smaller .scrollable}
+
+```{r}
+
+waste_data_tidy |> 
+  select(-percent, -type) |> 
+  knitr::kable(digits = 2)
+
+```
+
+## Three variables -\> three aesthetics {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+```
+
+## How to {.smaller .scrollable auto-animate="true"}
+
+```{r}
+waste_data_untidy <- waste_data_untidy |> 
+  select(-recyclable, -total) |> 
+  rename(other = non_recyclable)
+```
+
+```{r}
+#| echo: true
+#| eval: false
+waste_data_untidy 
+```
+
+```{r}
+#| echo: false
+waste_data_untidy |> 
+  knitr::kable(digits = 2)
+```
+
+## How to {.smaller .scrollable auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "2-4"
+waste_data_untidy |> 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") 
+
+```
+
+```{r}
+#| echo: false
+waste_data_untidy |> 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  knitr::kable(digits = 2)
+```
+
+## How to {.smaller .scrollable auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "1|7"
+waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
+
+waste_data_untidy |> 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) 
+```
+
+```{r}
+#| echo: false
+waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
+
+waste_data_untidy |> 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |> 
+  knitr::kable(digits = 2)
+
+
+```
+
+## Three variables -\> three aesthetics {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+```
+
+# Homework assignments module 6 {background-color="#4C326A"}
+
+## Module 6 documentation
+
+::: learn-more
+[ds4owd-001.github.io/website/modules/md-06.html](https://ds4owd-001.github.io/website/modules/md-06.html)
+
+```{=html}
+<iframe src="https://ds4owd-001.github.io/website/modules/md-06.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 6 documentation"></iframe>
+```
+:::
+
+## Homework due date
+
+- Homework assignment due: [Monday, December 11th]{.highlight-yellow}
+
+# Wrap-up {background-color="#4C326A"}
+
+## Thanks! `r emo::ji("sunflower")`
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-06-vectors.pdf)
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## References

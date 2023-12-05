@@ -79,8 +79,13 @@ website:
         contents:
           - href: assignments/md-05/am-05-1-project-data.qmd
             text: "am-01: Project data"
-      - href: modules/md-06.qmd
-        text: Module 06
+      - section: "Module 06"
+        href: modules/md-06.qmd
+        contents:
+          - href: assignments/md-06/am-06-1-reading.qmd
+            text: "am-01: Good enough practices"
+          - href: assignments/md-05/am-05-1-project-data.qmd
+            text: "am-02: Project data"
       - href: modules/md-07.qmd
         text: Module 07
       - href: modules/md-08.qmd
