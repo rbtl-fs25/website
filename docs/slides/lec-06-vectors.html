@@ -495,8 +495,8 @@ Lars Schöbitz
 <tr class="even">
 <td style="text-align: left;">19 December 2023</td>
 <td style="text-align: right;">8</td>
-<td style="text-align: left;"><a href="https://ds4owd-001.github.io/website/modules/md-08.html">Break</a></td>
-<td style="text-align: left;">module 8</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">26 December 2023</td>
@@ -519,8 +519,8 @@ Lars Schöbitz
 <tr class="even">
 <td style="text-align: left;">16 January 2024</td>
 <td style="text-align: right;">12</td>
-<td style="text-align: left;"><a href="https://ds4owd-001.github.io/website/modules/md-09.html">Writing functions &amp; Creating a website with Quarto and GitHub pages</a></td>
-<td style="text-align: left;">module 9</td>
+<td style="text-align: left;"><a href="https://ds4owd-001.github.io/website/modules/md-08.html">Writing functions &amp; Creating a website with Quarto and GitHub pages</a></td>
+<td style="text-align: left;">module 8</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">23 January 2024</td>
@@ -531,8 +531,8 @@ Lars Schöbitz
 <tr class="even">
 <td style="text-align: left;">30 January 2024</td>
 <td style="text-align: right;">14</td>
-<td style="text-align: left;"><a href="https://ds4owd-001.github.io/website/modules/md-10.html">Using AI for software development in R</a></td>
-<td style="text-align: left;">module 10</td>
+<td style="text-align: left;"><a href="https://ds4owd-001.github.io/website/modules/md-09.html">Using AI for software development in R</a></td>
+<td style="text-align: left;">module 9</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">06 February 2024</td>
@@ -549,8 +549,8 @@ Lars Schöbitz
 <tr class="odd">
 <td style="text-align: left;">20 February 2024</td>
 <td style="text-align: right;">17</td>
-<td style="text-align: left;">Graduation party of openwashdata academy</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"><a href="https://ds4owd-001.github.io/website/modules/md-10.html">Graduation party of openwashdata academy</a></td>
+<td style="text-align: left;">module 10</td>
 </tr>
 </tbody>
 </table>
@@ -561,9 +561,7 @@ Lars Schöbitz
 <h2>Learning Objectives (for this week)</h2>
 <div class="cell">
 <ol type="1">
-<li>Learners can identify different ways of idexing a vector</li>
-<li>Learners can identify a for loop</li>
-<li>Learners can list the four main atomic vector types in R.</li>
+<li>Learners can identify different ways of accessing a vector from a dataframe</li>
 </ol>
 </div>
 </section>
@@ -601,23 +599,23 @@ Lars Schöbitz
 <div class="cell-output-display">
 <div id="tbl-penguins">
 
-<div id="ygjsengflg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ygjsengflg table {
+<div id="bklzkexyck" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bklzkexyck table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ygjsengflg thead, #ygjsengflg tbody, #ygjsengflg tfoot, #ygjsengflg tr, #ygjsengflg td, #ygjsengflg th {
+#bklzkexyck thead, #bklzkexyck tbody, #bklzkexyck tfoot, #bklzkexyck tr, #bklzkexyck td, #bklzkexyck th {
   border-style: none;
 }
 
-#ygjsengflg p {
+#bklzkexyck p {
   margin: 0;
   padding: 0;
 }
 
-#ygjsengflg .gt_table {
+#bklzkexyck .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -643,12 +641,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_caption {
+#bklzkexyck .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ygjsengflg .gt_title {
+#bklzkexyck .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -660,7 +658,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#ygjsengflg .gt_subtitle {
+#bklzkexyck .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -672,7 +670,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#ygjsengflg .gt_heading {
+#bklzkexyck .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -684,13 +682,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_bottom_border {
+#bklzkexyck .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_col_headings {
+#bklzkexyck .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -705,7 +703,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_col_heading {
+#bklzkexyck .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -725,7 +723,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#ygjsengflg .gt_column_spanner_outer {
+#bklzkexyck .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -737,15 +735,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#ygjsengflg .gt_column_spanner_outer:first-child {
+#bklzkexyck .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ygjsengflg .gt_column_spanner_outer:last-child {
+#bklzkexyck .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ygjsengflg .gt_column_spanner {
+#bklzkexyck .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -757,11 +755,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#ygjsengflg .gt_spanner_row {
+#bklzkexyck .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ygjsengflg .gt_group_heading {
+#bklzkexyck .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -787,7 +785,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#ygjsengflg .gt_empty_group_heading {
+#bklzkexyck .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -802,15 +800,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#ygjsengflg .gt_from_md > :first-child {
+#bklzkexyck .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ygjsengflg .gt_from_md > :last-child {
+#bklzkexyck .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ygjsengflg .gt_row {
+#bklzkexyck .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -829,7 +827,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#ygjsengflg .gt_stub {
+#bklzkexyck .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -842,7 +840,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#ygjsengflg .gt_stub_row_group {
+#bklzkexyck .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -856,15 +854,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#ygjsengflg .gt_row_group_first td {
+#bklzkexyck .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ygjsengflg .gt_row_group_first th {
+#bklzkexyck .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ygjsengflg .gt_summary_row {
+#bklzkexyck .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -874,16 +872,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#ygjsengflg .gt_first_summary_row {
+#bklzkexyck .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_first_summary_row.thick {
+#bklzkexyck .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ygjsengflg .gt_last_summary_row {
+#bklzkexyck .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -893,7 +891,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_grand_summary_row {
+#bklzkexyck .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -903,7 +901,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#ygjsengflg .gt_first_grand_summary_row {
+#bklzkexyck .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -913,7 +911,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_last_grand_summary_row_top {
+#bklzkexyck .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -923,11 +921,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_striped {
+#bklzkexyck .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ygjsengflg .gt_table_body {
+#bklzkexyck .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -936,7 +934,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_footnotes {
+#bklzkexyck .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -950,7 +948,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_footnote {
+#bklzkexyck .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -959,7 +957,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#ygjsengflg .gt_sourcenotes {
+#bklzkexyck .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -973,7 +971,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#ygjsengflg .gt_sourcenote {
+#bklzkexyck .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -981,63 +979,63 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#ygjsengflg .gt_left {
+#bklzkexyck .gt_left {
   text-align: left;
 }
 
-#ygjsengflg .gt_center {
+#bklzkexyck .gt_center {
   text-align: center;
 }
 
-#ygjsengflg .gt_right {
+#bklzkexyck .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ygjsengflg .gt_font_normal {
+#bklzkexyck .gt_font_normal {
   font-weight: normal;
 }
 
-#ygjsengflg .gt_font_bold {
+#bklzkexyck .gt_font_bold {
   font-weight: bold;
 }
 
-#ygjsengflg .gt_font_italic {
+#bklzkexyck .gt_font_italic {
   font-style: italic;
 }
 
-#ygjsengflg .gt_super {
+#bklzkexyck .gt_super {
   font-size: 65%;
 }
 
-#ygjsengflg .gt_footnote_marks {
+#bklzkexyck .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ygjsengflg .gt_asterisk {
+#bklzkexyck .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ygjsengflg .gt_indent_1 {
+#bklzkexyck .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ygjsengflg .gt_indent_2 {
+#bklzkexyck .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ygjsengflg .gt_indent_3 {
+#bklzkexyck .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ygjsengflg .gt_indent_4 {
+#bklzkexyck .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ygjsengflg .gt_indent_5 {
+#bklzkexyck .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1144,7 +1142,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_fa472c2d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_aa33f504" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1727,7 +1725,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0b9da69b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_31f1b94c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1740,7 +1738,7 @@ Lars Schöbitz
 
 <img data-src="img/lec-05/pixel-art-beach.png" style="width:50.0%" alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_dd2c45c9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_877d7724" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1762,7 +1760,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_2678d60d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_55d264c7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">35</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1775,7 +1773,7 @@ Lars Schöbitz
 
 <img data-src="img/lec-05/pixel-art-beach.png" style="width:50.0%" alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_a53aab2c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_04b15645" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
