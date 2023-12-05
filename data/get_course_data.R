@@ -13,7 +13,7 @@ library(dplyr)
 
 # course-schedule
 
-gs4_auth()
+# gs4_auth()
 
 googlesheets4::read_sheet("18vF8LFHg3CBrcRqZZcE13G9UxgFXWmQwTnTUi_H8yGU") |> 
   mutate(title = case_when(

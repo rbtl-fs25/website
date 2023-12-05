@@ -2742,5 +2742,355 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#learning-objectives-for-this-week",
+    "href": "slides/lec-06-vectors.html#learning-objectives-for-this-week",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can identify different ways of idexing a vector\nLearners can identify a for loop\nLearners can list the four main atomic vector types in R."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#cross-references",
+    "href": "slides/lec-06-vectors.html#cross-references",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Cross references",
+    "text": "Cross references\n\nHelp readers to navigate your document with numbered references and hyperlinks to entities like figures and tables.\nCross referencing steps:\n\nAdd a caption to your figure or table.\nGive an ID to your figure or table, starting with fig- or tbl-.\nRefer to it with @fig-... or @tbl-...."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#table-cross-references",
+    "href": "slides/lec-06-vectors.html#table-cross-references",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Table cross references",
+    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table reference-able:\nSee @tbl-penguins for data on a few penguins.\nbecomes:\nSee Table 1 for data on a few penguins.\n\n```{r}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\nhead(penguins) |&gt; \n  gt()\n```\n\n\n\n\n\nTable 1:  A few penguins \n  \n    \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n    Adelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n    Adelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#figure-cross-references",
+    "href": "slides/lec-06-vectors.html#figure-cross-references",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Figure cross references",
+    "text": "Figure cross references\nThe presence of the caption (A few penguins) and label (#fig-penguins) make this figure reference-able:\nSee @fig-penguins for data on a few penguins.\nbecomes:\nSee Figure 1 for data on a few penguins.\n\n```{r}\n#| label: fig-penguins\n#| fig-cap: A few penguins\n#| fig-width: 6\n#| fig-asp: 0.618\n\nggplot(penguins, aes(x = species, fill = species)) +\n  geom_bar(show.legend = FALSE)\n```\n\n\nFigure 1: A few penguins"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#your-turn-md-06-exercises---cross-references",
+    "href": "slides/lec-06-vectors.html#your-turn-md-06-exercises---cross-references",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Your turn: md-06-exercises - cross-references",
+    "text": "Your turn: md-06-exercises - cross-references\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06a-cross-references.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#why-care-about-data-types",
+    "href": "slides/lec-06-vectors.html#why-care-about-data-types",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Why care about data types?",
+    "text": "Why care about data types?\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#example-survey-data",
+    "href": "slides/lec-06-vectors.html#example-survey-data",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Example: survey data",
+    "text": "Example: survey data\nA survey about recycling behaviour in the city of Zurich:\n\njob: What is your occupation?\nprice_glass: What monthly subscription would you be willing to pay for a metal/glass bin outside your home?\n\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5\n\n\n\n\n\n\nData from: (Ben Aleya et al. 2022)"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#oh-why-wont-you-work",
+    "href": "slides/lec-06-vectors.html#oh-why-wont-you-work",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Oh why won’t you work?!",
+    "text": "Oh why won’t you work?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#oh-why-wont-you-still-work",
+    "href": "slides/lec-06-vectors.html#oh-why-wont-you-still-work",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Oh why won’t you still work??!!",
+    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data",
+    "href": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Take a breath and look at your data",
+    "text": "Take a breath and look at your data\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#very-common-data-tidying-step",
+    "href": "slides/lec-06-vectors.html#very-common-data-tidying-step",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Very common data tidying step!",
+    "text": "Very common data tidying step!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#very-common-data-tidying-step-1",
+    "href": "slides/lec-06-vectors.html#very-common-data-tidying-step-1",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Very common data tidying step!",
+    "text": "Very common data tidying step!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n5-10\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n20\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5-10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#sumamrise-argh",
+    "href": "slides/lec-06-vectors.html#sumamrise-argh",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Sumamrise? Argh!!!!",
+    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#always-respect-your-data-types",
+    "href": "slides/lec-06-vectors.html#always-respect-your-data-types",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Always respect your data types!",
+    "text": "Always respect your data types!\n\n\n\n\n\n\nTaking the mean of vector with type “character” is not possible.\n\n\n\n\n\n# A tibble: 22 × 4\n      id job      price_glass price_glass_new\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;          \n 1     1 Student  0           0              \n 2     2 Retired  0           0              \n 3     3 Other    0           0              \n 4     4 Employed 10          10             \n 5     5 Employed See comment &lt;NA&gt;           \n 6     6 Student  5-10        7.5            \n 7     7 Student  0           0              \n 8     8 Retired  0           0              \n 9     9 Student  10          10             \n10    10 Employed 0           0              \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#always-respect-your-data-types-1",
+    "href": "slides/lec-06-vectors.html#always-respect-your-data-types-1",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Always respect your data types!",
+    "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#my-turn-vectors-for-loops",
+    "href": "slides/lec-06-vectors.html#my-turn-vectors-for-loops",
+    "title": "Data types & Vectors & For Loops",
+    "section": "My turn: Vectors & For loops",
+    "text": "My turn: Vectors & For loops\n\n\nSit back and enjoy!\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-break",
+    "href": "slides/lec-06-vectors.html#take-a-break",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#vectors",
+    "href": "slides/lec-06-vectors.html#vectors",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Vectors",
+    "text": "Vectors\nhttps://twitter.com/hadleywickham/status/643381054758363136?lang=en https://robust-tools.djnavarro.net/artistry/#3 https://rmd4medicine.netlify.app/slides/04-data-workflows.html#25"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#section",
+    "href": "slides/lec-06-vectors.html#section",
+    "title": "Data types & Vectors & For Loops",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#section-1",
+    "href": "slides/lec-06-vectors.html#section-1",
+    "title": "Data types & Vectors & For Loops",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#section-2",
+    "href": "slides/lec-06-vectors.html#section-2",
+    "title": "Data types & Vectors & For Loops",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#a-grammar-of-data-tidying",
+    "href": "slides/lec-06-vectors.html#a-grammar-of-data-tidying",
+    "title": "Data types & Vectors & For Loops",
+    "section": "A grammar of data tidying",
+    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\n\nSlide taken from Data Science in a Box"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#pivoting-data",
+    "href": "slides/lec-06-vectors.html#pivoting-data",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Pivoting data",
+    "text": "Pivoting data"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#waste-characterisation-data",
+    "href": "slides/lec-06-vectors.html#waste-characterisation-data",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Waste characterisation data",
+    "text": "Waste characterisation data\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99\n4.07"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#how-would-you-plot-this",
+    "href": "slides/lec-06-vectors.html#how-would-you-plot-this",
+    "title": "Data types & Vectors & For Loops",
+    "section": "How would you plot this?",
+    "text": "How would you plot this?"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables",
+    "href": "slides/lec-06-vectors.html#three-variables",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Three variables",
+    "text": "Three variables\n\n\n\n\n\nobjid\nlocation\ntotal\n\n\n\n\n900\neth\n2.05\n\n\n899\neth\n3.64\n\n\n921\nold_town\n1.99\n\n\n916\nold_town\n2.19\n\n\n900\neth\n1.12\n\n\n899\neth\n0.50\n\n\n921\nold_town\n2.33\n\n\n916\nold_town\n4.07"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables---three-aesthetics",
+    "href": "slides/lec-06-vectors.html#three-variables---three-aesthetics",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_untidy,\n       mapping = aes(x = objid, \n                     y = total, \n                     fill = location)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#and-how-to-plot-this",
+    "href": "slides/lec-06-vectors.html#and-how-to-plot-this",
+    "title": "Data types & Vectors & For Loops",
+    "section": "And how to plot this?",
+    "text": "And how to plot this?"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#reminder-data-in-wide-format",
+    "href": "slides/lec-06-vectors.html#reminder-data-in-wide-format",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Reminder: Data (in wide format)",
+    "text": "Reminder: Data (in wide format)\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#you-need-a-long-format",
+    "href": "slides/lec-06-vectors.html#you-need-a-long-format",
+    "title": "Data types & Vectors & For Loops",
+    "section": "You need: A long format",
+    "text": "You need: A long format\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables---three-aesthetics-1",
+    "href": "slides/lec-06-vectors.html#three-variables---three-aesthetics-1",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#how-to",
+    "href": "slides/lec-06-vectors.html#how-to",
+    "title": "Data types & Vectors & For Loops",
+    "section": "How to",
+    "text": "How to\n\nwaste_data_untidy \n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#how-to-1",
+    "href": "slides/lec-06-vectors.html#how-to-1",
+    "title": "Data types & Vectors & For Loops",
+    "section": "How to",
+    "text": "How to\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#how-to-2",
+    "href": "slides/lec-06-vectors.html#how-to-2",
+    "title": "Data types & Vectors & For Loops",
+    "section": "How to",
+    "text": "How to\n\nwaste_category_levels &lt;- c(\"glass\", \"metal_alu\", \"paper\", \"pet\", \"other\")\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") |&gt; \n  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables---three-aesthetics-2",
+    "href": "slides/lec-06-vectors.html#three-variables---three-aesthetics-2",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#live-05a-tidyr-pivoting",
+    "href": "slides/lec-06-vectors.html#live-05a-tidyr-pivoting",
+    "title": "Data types & Vectors & For Loops",
+    "section": "live-05a-tidyr-pivoting",
+    "text": "live-05a-tidyr-pivoting\n\nHead over to posit.cloud\nOpen the workspace for the course (cven5837-ss23)\nOpen your “course-materials” project\nFollow along with me"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#homework-due-dates",
+    "href": "slides/lec-06-vectors.html#homework-due-dates",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Homework due dates",
+    "text": "Homework due dates\n\nAll material on course website\nHomework assignment & learning reflection due: Friday, 7th July"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#section-3",
+    "href": "slides/lec-06-vectors.html#section-3",
+    "title": "Data types & Vectors & For Loops",
+    "section": "",
+    "text": "Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#references",
+    "href": "slides/lec-06-vectors.html#references",
+    "title": "Data types & Vectors & For Loops",
+    "section": "References",
+    "text": "References\n\n\n\n ds4owd-001.github.io/website/\n\n\n\nBen Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. “Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.” Zenodo. https://doi.org/10.5281/ZENODO.7331120."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#course-calendar",
+    "href": "slides/lec-06-vectors.html#course-calendar",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Course calendar",
+    "text": "Course calendar\nChanges to the course calendar\n\n19th December 2023: no class\n23rd January 2024: openwashdata webinar: a data sharing workflow that may please the publishers\n13th February 2024: submission of capstone project report\n\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Exploratory data analysis using visualization\nmodule 2\n\n\n14 November 2023\n3\nData transformation with dplyr\nmodule 3\n\n\n21 November 2023\n4\nData import & Data organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nConditions & Dates & Tables\nmodule 5\n\n\n05 December 2023\n6\nData types & Vectors & For Loops\nmodule 6\n\n\n12 December 2023\n7\nPivoting & joining data\nmodule 7\n\n\n19 December 2023\n8\nBreak\nmodule 8\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nWork on Capstone project\nNA\n\n\n16 January 2024\n12\nWriting functions & Creating a website with Quarto and GitHub pages\nmodule 9\n\n\n23 January 2024\n13\nopenwashdata webinar: a data sharing workflow that may please the publishers\nNA\n\n\n30 January 2024\n14\nUsing AI for software development in R\nmodule 10\n\n\n06 February 2024\n15\nWork on Capstone project\nNA\n\n\n13 February 2024\n16\nFinal submission date of Capstone project\nNA\n\n\n20 February 2024\n17\nGraduation party of openwashdata academy\nNA"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data-1",
+    "href": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data-1",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Take a breath and look at your data",
+    "text": "Take a breath and look at your data\n\n\n# A tibble: 22 × 3\n      id job      price_glass\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;      \n 1     1 Student  0          \n 2     2 Retired  0          \n 3     3 Other    0          \n 4     4 Employed 10         \n 5     5 Employed See comment\n 6     6 Student  5-10       \n 7     7 Student  0          \n 8     8 Retired  0          \n 9     9 Student  10         \n10    10 Employed 0          \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#your-turn-md-06-exercises---vectors",
+    "href": "slides/lec-06-vectors.html#your-turn-md-06-exercises---vectors",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Your turn: md-06-exercises - vectors",
+    "text": "Your turn: md-06-exercises - vectors\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-05a-conditions-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#your-turn-md-06-exercises---types",
+    "href": "slides/lec-06-vectors.html#your-turn-md-06-exercises---types",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Your turn: md-06-exercises - types",
+    "text": "Your turn: md-06-exercises - types\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06b-types-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n35:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#my-turn-types-of-ectors-for-loops",
+    "href": "slides/lec-06-vectors.html#my-turn-types-of-ectors-for-loops",
+    "title": "Data types & Vectors & For Loops",
+    "section": "My turn: Types of ectors & For loops",
+    "text": "My turn: Types of ectors & For loops\n\n\nSit back and enjoy!\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#my-turn-types-of-vectors-for-loops",
+    "href": "slides/lec-06-vectors.html#my-turn-types-of-vectors-for-loops",
+    "title": "Data types & Vectors & For Loops",
+    "section": "My turn: Types of vectors & For loops",
+    "text": "My turn: Types of vectors & For loops\n\n\nSit back and enjoy!\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-break-1",
+    "href": "slides/lec-06-vectors.html#take-a-break-1",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#thanks",
+    "href": "slides/lec-06-vectors.html#thanks",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#module-1-documentation",
+    "href": "slides/lec-06-vectors.html#module-1-documentation",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Module 1 documentation",
+    "text": "Module 1 documentation\n\nds4owd-001.github.io/website/modules/md-01.html"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#homework-due-date",
+    "href": "slides/lec-06-vectors.html#homework-due-date",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Monday, December 11th"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#module-6-documentation",
+    "href": "slides/lec-06-vectors.html#module-6-documentation",
+    "title": "Data types & Vectors & For Loops",
+    "section": "Module 6 documentation",
+    "text": "Module 6 documentation\n\nds4owd-001.github.io/website/modules/md-06.html"
   }
 ]

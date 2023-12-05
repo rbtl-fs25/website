@@ -29,3 +29,7 @@ md-04:
 md-05:
   title: "Conditions & Dates & Tables"
   date: "2023-11-28"
+  
+md-06:
+  title: "Data types & Vectors & For Loops"
+  date: "2023-12-05"
