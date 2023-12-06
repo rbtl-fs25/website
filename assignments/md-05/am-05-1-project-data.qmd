@@ -152,10 +152,11 @@ knitr::include_graphics("images/16-new-quarto-document.png")
 knitr::include_graphics("images/17-describe-project.png")
 ```
 
-6. If you want to try and import your data write the following inside a code chunk (in this example we are using a CSV file):
+6. Import your data by writing the following inside a code chunk (in this example we are using a CSV file):
 
 ```{r}
 #| eval: false
+#| echo: true
 read_csv(here::here("data/raw/your-file-name.csv"))
 ```
 
