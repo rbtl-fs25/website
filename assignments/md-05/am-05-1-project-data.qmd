@@ -1,7 +1,8 @@
 ---
 title: "Data for your capstone project"
 execute:
-  echo: false
+  echo: true
+  warning: false
 ---
 
 ## Step 1: Identify data for your capstone project
@@ -40,24 +41,28 @@ If you do not have a dataset, you can use the following resources for inspriatio
 2. To right of the field ["Find a repository"]{.highlight-yellow}, click on the green ["New"]{.highlight-yellow} button.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/01-github-org.png")
 ```
 
 3. In the ["Repository name"]{.highlight-yellow} field write `project-username`. [Replace username with your GitHub username]{.highlight-yellow}. Avoid using spaces. For example: `project-rainbow-train` for the user with the username `rainbow-train`
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/02-repository-name.png")
 ```
 
 4. Scroll down on the same page, and click ["Create repository"]{.highlight-yellow}.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/03-create-repository.png")
 ```
 
 5. In the ["Quick setup"]{.highlight-yellow} field, click on the clipboard next to the HTTPs URL 
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/04-copy-to-clipboard.png")
 ```
 
@@ -72,36 +77,42 @@ knitr::include_graphics("images/04-copy-to-clipboard.png")
 2. Click on the "Folder" button.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/05-new-folder.png")
 ```
 
 3. Enter the name "data" in field and click OK.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/06-name-folder-data.png")
 ```
 
 4. Click on the new `data` folder in the bottom right window.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/07-click-folder-data.png")
 ```
 
 5. Click on the "Folder" button.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/08-new-folder.png")
 ```
 
 6. Enter the name "raw" in field and click OK.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/09-name-folder-raw.png")
 ```
 
 7. Click on the new `raw` folder in the bottom right window.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/10-click-folder-raw.png")
 ```
 
@@ -110,12 +121,14 @@ knitr::include_graphics("images/10-click-folder-raw.png")
 1. Use the Files tab in the bottom right window to upload your identified data from Task 1 into the `raw` folder.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/11-upload-data.png")
 ```
 
 2. Choose the file from the place you have saved it on your computer.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/12-choose-file.png")
 ```
 
@@ -125,38 +138,49 @@ knitr::include_graphics("images/12-choose-file.png")
 1. Navigate back to the root of your project folder by a click on the blue R cube.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/13-folder-root.png")
 ```
 
 2. Create a new folder "docs" in the root of your project folder.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/14-new-folder.png")
 ```
 
 3. Click on the `docs` folder
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/15-click-folder-docs.png")
 ```
 
 4. Create a new Quarto document and save it as `index.qmd` inside the docs folder.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/16-new-quarto-document.png")
 ```
 
 5. In the `index.qmd` file, write a short description of your analysis goals and the data you have uploaded.
 
 ```{r}
+#| echo: false
 knitr::include_graphics("images/17-describe-project.png")
 ```
 
-6. Import your data by writing the following inside a code chunk (in this example we are using a CSV file):
+5. Add a code chunk and write `library(tidyverse)` to load the R packages you have learned to work with.
+
+```{r}
+#| echo: fenced
+library(tidyverse)
+```
+
+6. Import your data by writing the following inside another code chunk (in this example we are using a CSV file):
 
 ```{r}
 #| eval: false
-#| echo: true
 read_csv(here::here("data/raw/your-file-name.csv"))
 ```
 
