@@ -1,6 +1,6 @@
 ---
 title: "Module 6"
-subtitle: "Concept of tidy data & Vectors in R"
+subtitle: "{{< var md-06.title >}}"
 editor: source
 params:
     week: 6

@@ -36,6 +36,7 @@ library(stringr)
 library(readxl)
 library(palmerpenguins)
 library(lubridate)
+library(knitr)
 ```
 
 ```{r}
@@ -105,26 +106,26 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 # Homework module 6 {background-color="#4C326A"}
 
-## Part 1: Reading
-
-1. Read @wilson2017good: "Good enough practices in scientific computing".
-
-2. Chose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:
-
-3.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
-
-4.  Be prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
 ## Your turn: Discuss the reading
 
 ::: task
 In discussion groups of 3, share your examples and discuss how the recommendations would improve your workflows.
 :::
 
+1. In your homework you have read @wilson2017good: "Good enough practices in scientific computing".
+
+2. You [chose one of the recommended practices]{.highlight-yellow} (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:
+
+3. You came up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
+
+4. You are prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
+
+
 ```{r}
 countdown(10)
 ```
 
-# Pivoting data
+# Part 1: Pivoting data {background-color="#4C326A"}
 
 ## Pivoting data
 
@@ -309,9 +310,7 @@ countdown(minutes = 10)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# Joining data
-
-# Part 1: Joining data {background-color="#0F4C81"}
+# Part 2: Joining data {background-color="#4C326A"}
 
 ##  We... {.smaller}
 
@@ -373,7 +372,7 @@ works |> kable()
 
 :::
 
-## Desired output {.smaller}
+## Desired output {.smallest .scrollable}
 
 ```{r}
 professions %>%
@@ -409,8 +408,6 @@ nrow(works)
 :::
 
 ::::
-
-# Joining data frames {background-color="#0F4C81"}
 
 ## Joining data frames
 
@@ -567,7 +564,7 @@ full_join(x, y)
 
 ::::
 
-## `full_join()` {.smaller}
+## `full_join()` {.smallest}
 
 
 ```{r}
@@ -584,15 +581,14 @@ dates %>%
   kable()
 ```
 
-## Putting it altogether {.smaller}
+## Putting it altogether {.smallest}
 
 ```{r}
 #| echo: true
 #| eval: false
 professions %>%
   left_join(dates) %>%
-  left_join(works) |> 
-  kable()
+  left_join(works) 
 ```
 
 ```{r}
@@ -603,15 +599,21 @@ professions %>%
   kable()
 ```
 
-# Metadata {background-color="#4C326A"}
+# Part 3: Metadata {background-color="#4C326A"}
 
-## Data about data
+## Metadata: data about data
 
 WHAT!?
 
 ## Faecal sludge samples
 
-Imagine you are new to WASH research and you have never heard of feacal sludge management. You are interested in learning more about the topic and you want to find some data to play with. You find a publication with a dataset on faecal sludge characteristics. 
+Imagine:
+
+- you are new to WASH research and you have never heard of feacal sludge management. 
+- you are interested in learning more about the topic and you want to find some data to play with. 
+- you find a publication with a dataset on faecal sludge characteristics. 
+
+## Faecal sludge samples
 
 You download the XLSX file that contains the data and you open it in Excel. You see the following:
 
@@ -619,8 +621,11 @@ You download the XLSX file that contains the data and you open it in Excel. You 
 knitr::include_graphics("img/lec-07/sludge-xlsx.png")
 ```
 
-## Faecal sludge samples
+## Faecal sludge samples {.smaller}
 
+:::: {.columns}
+
+::: {.column width="40%"}
 Open questions:
 
 - What unit does `users` refer to?
@@ -628,26 +633,38 @@ Open questions:
 - The `date` of what?
 - Where was this data collected?
 - Which method was used to collect the samples?
+:::
 
-**Questions that the author knows the answer to and needs to document alongsinde the data**
 
+::: {.column width="60%"}
 ```{r}
 knitr::include_graphics("img/lec-07/sludge-xlsx.png")
 ```
+:::
 
-## Documentation
+::::
+
+. . .
+
+[Questions that only the original author may have the answers to.]{.highlight-yellow}
+
+## You as an author {.center-align}
+
+have the chance to document your data properly [once]{.highlight-yellow} to make it easier for [everyone else]{.highlight-yellow} to know what it contains.
+
+## Documentation {.smaller}
 
 Goes into a separate README file
 
-- General information (authors, title, date, geographic location, etc.)
-- Sharing / access information (license, links to publications, citation)
-- Methodological information (sampling, analysis, etc.)
+- [General information]{.highlight-yellow} (authors, title, date, geographic location, etc.)
+- [Sharing / access information]{.highlight-yellow} (license, links to publications, citation)
+- [Methodological information]{.highlight-yellow} (sampling, analysis, etc.)
 
 ## Data dictionary
 
 Goes into a separate file (`dictionary.csv`).
 
-Minimal information
+Minimum required information
 
 - Variable name
 - Variable description
@@ -669,7 +686,7 @@ knitr::include_graphics("img/lec-07/dictionary-xlsx.png")
 knitr::include_graphics("img/lec-07/dictionary-csv.png")
 ```
 
-## Directory tree of a project
+## Directory tree of a project {.smaller}
 
 Capstone project of Rainbow Train:
 <https://github.com/ds4owd-001/project-rainbow-train>
@@ -700,12 +717,12 @@ Capstone project of Rainbow Train:
 - `docs` folder: the actual report that imports the processed data 
 - `project.Rproj`: RStudio project file
 
-## Inside the data folder
+## Inside the `data` folder
 
 - `raw`: data as it was downloaded / as you received it (e.g. Excel file)
 - `processed`: data that is ready to be used in the report
 
-## Inside the processed folder
+## Inside the `processed` folder
 
 - `README.md`: general information about the data
 - `dictionary.csv`: data dictionary
@@ -744,27 +761,29 @@ countdown(10)
 
 ## Final student hours of 2023
 
-- [Thursday, December 14th]{.highlight-yellow}
+- [Thursday, December 14th]{.highlight-yellow} at 2 pm CET
 
 ## First student hours of 2024
 
-- [Thursday, January 11th]{.highlight-yellow}
+- [Thursday, January 11th]{.highlight-yellow} at 2 pm CET
 
-## Christmas break 
+## Christmas break {.smaller}
 
 - Lars will be on vacation from [December 22nd]{.highlight-yellow} until [January 15th]{.highlight-yellow}
 - Mian and Sophia will be on vacation from [December 22nd]{.highlight-yellow} until [January 8th]{.highlight-yellow}
 
 ![](img/lec-07/christmas-break.png){width="50%" fig-alt="A pixel art image of a small person taking a break from coding for Christmas. The scene includes a cozy room with a computer displaying code on the screen, and the person is relaxing with a cup of hot chocolate. Decorations like a small Christmas tree, lights, and stockings are present, adding a festive atmosphere. The person is wearing casual clothes and a Santa hat, and there's a sense of warmth and holiday cheer in the room."}
+
 ::: footer
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-## First lecture of 2024
+## First lecture of 2024 {.smaller}
 
-- [Tuesday, January 16th]{.highlight-yellow}
+[Tuesday, January 16th]{.highlight-yellow} at 2 pm CET
 
 ![](img/lec-07/new-year-coding.png){width="50%" fig-alt="A pixel art scene depicting a group of little people, both female and male, enthusiastically returning to their coding tasks after celebrating New Year's. They are sitting in front of computers with festive decorations around, like streamers and a 'Happy New Year' banner. The characters exhibit diversity in their appearances and attire, reflecting a joyful and inclusive environment. Each individual is engaged in typing or looking at their computer screens, with visible lines of code. The setting is a cozy office space with hints of the recent celebration still present."}
+
 ::: footer
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
@@ -781,6 +800,8 @@ readr::read_csv("../data/tbl-01-ds4owd-001-course-schedule.csv") |>
 ## Thanks! `r emo::ji("sunflower")`
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-07-pivoting-joining.pdf)
+
+# References
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
