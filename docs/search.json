@@ -46,14 +46,14 @@
     "href": "modules/md-07.html",
     "title": "Module 7",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences."
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
   },
   {
     "objectID": "modules/md-07.html#fa-bullseye-learning-objectives",
     "href": "modules/md-07.html#fa-bullseye-learning-objectives",
     "title": "Module 7",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can write functions that reduce repition in dplyr and ggplot2 code sequences."
+    "text": "Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
   },
   {
     "objectID": "modules/md-07.html#fa-display-slides",
