@@ -1,0 +1,7 @@
+variable_name,description
+id,A running unique id for each sample.
+date_sample,The date on which the sample was collected.
+system,The sanitation system from which the sample was collected.
+location,The location of the sanitation system.
+users,The average number of people (users) of each sanitation sytems per day.
+ts,Total solids in mg/L.

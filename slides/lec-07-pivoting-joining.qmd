@@ -1,0 +1,808 @@
+---
+title: "{{< var md-07.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "{{< var author >}}"
+date: "2023-12-12"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: ../img/OWD-logo-20.png
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+editor: source
+execute:
+  freeze: auto
+params:
+    week: 7
+bibliography: "../ds4owd-001.bib"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+library(countdown)
+library(ggplot2)
+library(readr)
+library(dplyr)
+library(gapminder)
+library(epoxy)
+library(ggthemes)
+library(gt)
+library(tidyr)
+library(stringr)
+library(readxl)
+library(palmerpenguins)
+library(lubridate)
+library(knitr)
+```
+
+```{r}
+#| echo: false
+sludge <- read_excel(here::here("slides/data/raw/faecal-sludge-analysis.xlsx")) |> 
+  mutate(date_sample = as_date(date_sample)) |> 
+  rename(date = date_sample)
+```
+
+```{r}
+#| eval: true
+#| 
+waste_data_lord1 <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/lord-of-the-bins/04-05-2022_rbtl_data_sheet1.csv")
+
+waste_data_lord2 <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/lord-of-the-bins/04-05-2022_rbtl_data_sheet2.csv")
+
+waste_data <- bind_rows(waste_data_lord1, waste_data_lord2)
+
+waste_data_untidy <- waste_data |> 
+  filter(!is.na(objid)) |> 
+  rename(non_recyclable_Kg = `non_recyclables_ Kg`,
+         recyclable_Kg = recyclables_Kg) |>
+  relocate(c(recyclable_Kg, non_recyclable_Kg), .before = weight_total_kg) |> 
+  select(objid, location, pet_Kg:weight_total_kg) |> 
+  mutate(objid = factor(objid)) |>
+  rename_with(~str_remove(.x, "_Kg|_kg")) |> 
+  rename_with(~str_remove(.x, "_content")) |> 
+  rename(total = weight_total)
+
+
+waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
+
+waste_data_tidy <- waste_data_untidy |> 
+  select(objid:paper, non_recyclable) |> 
+  rename(other = non_recyclable) |> 
+  mutate(objid = factor(objid)) |>
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |> 
+  mutate(type = case_when(
+    waste_category == "other" ~ "non_recyclable",
+    TRUE ~ "recyclable")) |> 
+  relocate(type, .before = weight) |> 
+  group_by(objid) |> 
+  mutate(percent = weight / sum(weight) * 100)
+
+waste_data_tidy |> 
+  write_rds(here::here("slides/data/intermediate_data/waste-characterisation-lord-of-the-bins-tidy.rds"))
+
+```
+
+## Learning Objectives (for this week)
+
+```{r}
+#| label: learning-objectives
+#| echo: false
+lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+  dplyr::filter(week == params$week) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+```{epoxy}
+{1:length(lobj)}. {lobj[1:length(lobj)]}
+```
+
+# Homework module 6 {background-color="#4C326A"}
+
+## Your turn: Discuss the reading
+
+::: task
+In discussion groups of 3, share your examples and discuss how the recommendations would improve your workflows.
+:::
+
+1. In your homework you have read @wilson2017good: "Good enough practices in scientific computing".
+
+2. You [chose one of the recommended practices]{.highlight-yellow} (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:
+
+3. You came up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
+
+4. You are prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
+
+
+```{r}
+countdown(10)
+```
+
+# Part 1: Pivoting data {background-color="#4C326A"}
+
+## Pivoting data
+
+```{r}
+knitr::include_graphics("img/lec-04/tidyr-longer-wider.gif")
+```
+
+## Waste characterisation data {.smaller}
+
+```{r, out.width="90%"}
+
+waste_data_untidy |> 
+  select(-recyclable) |> 
+  rename(other = non_recyclable) |> 
+  knitr::kable(digits = 2)
+```
+
+## How would you plot this?
+
+```{r}
+
+ggplot(data = waste_data_untidy,
+       mapping = aes(x = objid, y = total, fill = location)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+
+```
+
+## Three variables
+
+```{r, out.width="90%"}
+
+waste_data_untidy |> 
+  select(objid, location, total) |> 
+  knitr::kable(digits = 2)
+
+```
+
+## Three variables -\> three aesthetics {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_untidy,
+       mapping = aes(x = objid, 
+                     y = total, 
+                     fill = location)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+```
+
+## And how to plot this?
+
+```{r}
+
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+
+```
+
+## Reminder: Data (in wide format) {.smaller .scrollable}
+
+```{r}
+waste_data_untidy |> 
+  select(-recyclable, -total) |> 
+  rename(other = non_recyclable) |> 
+  knitr::kable(digits = 2)
+```
+
+## You need: A long format {.smaller .scrollable}
+
+```{r}
+
+waste_data_tidy |> 
+  select(-percent, -type) |> 
+  knitr::kable(digits = 2)
+
+```
+
+## Three variables -\> three aesthetics {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+```
+
+
+## How to {.smaller .scrollable auto-animate="true"}
+
+```{r}
+waste_data_untidy <- waste_data_untidy |> 
+  select(-recyclable, -total) |> 
+  rename(other = non_recyclable)
+```
+
+```{r}
+#| echo: true
+#| eval: false
+waste_data_untidy 
+```
+
+```{r}
+#| echo: false
+waste_data_untidy |> 
+  knitr::kable(digits = 2)
+```
+
+## How to {.smaller .scrollable auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "2-4"
+waste_data_untidy |> 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") 
+
+```
+
+```{r}
+#| echo: false
+waste_data_untidy |> 
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  knitr::kable(digits = 2)
+```
+
+
+## Three variables -\> three aesthetics {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = waste_data_tidy,
+       mapping = aes(x = objid, 
+                     y = weight, 
+                     fill = waste_category)) +
+  geom_col() + 
+  scale_fill_brewer(type = "qual")
+```
+
+
+## Your turn: md-07-exercises - pivoting data
+
+::: task
+1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3.  In the File Manager in the bottom right window, locate the [`md-07a-pirvoting.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4.  Follow instructions in the file
+:::
+
+```{r}
+countdown(30)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Part 2: Joining data {background-color="#4C326A"}
+
+##  We... {.smaller}
+
+...have multiple data frames
+
+...want to bring them together
+
+```{r}
+#| echo: false 
+
+professions <- read_csv(here::here("slides/data/scientists/professions.csv")) 
+
+dates <- read_csv(here::here("slides/data/scientists/dates.csv")) 
+
+works <- read_csv(here::here("slides/data/scientists/works.csv")) 
+```
+
+```{r}
+#| echo: true
+#| eval: false
+professions <- read_csv(here::here("data/scientists/professions.csv")) 
+dates <- read_csv(here::here("data/scientists/dates.csv")) 
+works <- read_csv(here::here("scientists/works.csv")) 
+```
+
+## Data: Women in science {.smaller}
+
+Information on 10 women in science who changed the world
+
+```{r echo=FALSE}
+professions %>% select(name) %>% kable()
+```
+
+::: aside
+Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-10-women-in-science-who-changed-the-world)
+:::
+
+## Inputs {.smaller}
+
+::: {.panel-tabset}
+
+### professions
+
+```{r}
+professions |> kable()
+```
+
+### dates
+
+```{r}
+dates |> kable()
+```
+
+### works
+
+```{r}
+works |> kable()
+```
+
+:::
+
+## Desired output {.smallest .scrollable}
+
+```{r}
+professions %>%
+  left_join(dates) %>%
+  left_join(works) |> 
+  kable()
+```
+
+## Inputs, reminder {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+names(professions)
+names(dates)
+names(works)
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+nrow(professions)
+nrow(dates)
+nrow(works)
+```
+:::
+
+::::
+
+## Joining data frames
+
+```{r}
+#| echo: true
+#| eval: false
+something_join(x, y)
+```
+
+- `left_join()`: all rows from x
+- `right_join()`: all rows from y
+- `full_join()`: all rows from both x and y
+- ...
+
+## Setup {.smaller}
+
+For the next few slides...
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+x <- tibble(
+  id = c(1, 2, 3),
+  value_x = c("x1", "x2", "x3")
+  )
+```
+
+```{r}
+#| echo: true
+x
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+y <- tibble(
+  id = c(1, 2, 4),
+  value_y = c("y1", "y2", "y4")
+  )
+```
+```{r}
+#| echo: true
+y
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/left-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+left_join(x, y)
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+  left_join(dates) 
+```
+
+```{r}
+#| echo: false
+professions %>%
+  left_join(dates) |> 
+  kable()
+```
+
+## `right_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/right-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+right_join(x, y)
+```
+:::
+
+::::
+
+## `right_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+  right_join(dates)
+```
+
+```{r}
+#| echo: false
+professions %>%
+  right_join(dates) |> 
+  kable()
+```
+
+## `full_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/full-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+full_join(x, y)
+```
+:::
+
+::::
+
+## `full_join()` {.smallest}
+
+
+```{r}
+#| echo: true
+#| eval: false
+dates %>%
+  full_join(works) 
+```
+
+```{r}
+#| echo: false
+dates %>%
+  full_join(works) |> 
+  kable()
+```
+
+## Putting it altogether {.smallest}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+  left_join(dates) %>%
+  left_join(works) 
+```
+
+```{r}
+#| echo: false
+professions %>%
+  left_join(dates) %>%
+  left_join(works) |> 
+  kable()
+```
+
+# Part 3: Metadata {background-color="#4C326A"}
+
+## Metadata: data about data
+
+WHAT!?
+
+## Faecal sludge samples
+
+Imagine:
+
+- you are new to WASH research and you have never heard of feacal sludge management. 
+- you are interested in learning more about the topic and you want to find some data to play with. 
+- you find a publication with a dataset on faecal sludge characteristics. 
+
+## Faecal sludge samples
+
+You download the XLSX file that contains the data and you open it in Excel. You see the following:
+
+```{r}
+knitr::include_graphics("img/lec-07/sludge-xlsx.png")
+```
+
+## Faecal sludge samples {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Open questions:
+
+- What unit does `users` refer to?
+- What does `ts` stand for?
+- The `date` of what?
+- Where was this data collected?
+- Which method was used to collect the samples?
+:::
+
+
+::: {.column width="60%"}
+```{r}
+knitr::include_graphics("img/lec-07/sludge-xlsx.png")
+```
+:::
+
+::::
+
+. . .
+
+[Questions that only the original author may have the answers to.]{.highlight-yellow}
+
+## You as an author {.center-align}
+
+have the chance to document your data properly [once]{.highlight-yellow} to make it easier for [everyone else]{.highlight-yellow} to know what it contains.
+
+## Documentation {.smaller}
+
+Goes into a separate README file
+
+- [General information]{.highlight-yellow} (authors, title, date, geographic location, etc.)
+- [Sharing / access information]{.highlight-yellow} (license, links to publications, citation)
+- [Methodological information]{.highlight-yellow} (sampling, analysis, etc.)
+
+## Data dictionary
+
+Goes into a separate file (`dictionary.csv`).
+
+Minimum required information
+
+- Variable name
+- Variable description
+
+## Data dictionary for faecal sludge samples
+
+- Edit in spreadsheet software (e.g. MS Excel)
+
+```{r}
+knitr::include_graphics("img/lec-07/dictionary-xlsx.png")
+```
+
+
+## Data dictionary for faecal sludge samples
+
+- Save as CSV file
+
+```{r}
+knitr::include_graphics("img/lec-07/dictionary-csv.png")
+```
+
+## Directory tree of a project {.smaller}
+
+Capstone project of Rainbow Train:
+<https://github.com/ds4owd-001/project-rainbow-train>
+
+```
+.
+├── R
+│   └── 01-data-preparation.R
+├── data
+│   ├── processed
+│   │   ├── README.md
+│   │   ├── dictionary.csv
+│   │   └── faecal-sludge-analysis.csv
+│   └── raw
+│       └── Faecal sludge Analysis_05112023.xlsx
+├── docs
+│   ├── index.html
+│   ├── index.qmd
+│   └── index_files
+│       └── libs
+└── project.Rproj
+```
+
+## Directory tree of a project
+
+- `R` folder: R scripts for data cleaning
+- `data` folder: raw and processed data
+- `docs` folder: the actual report that imports the processed data 
+- `project.Rproj`: RStudio project file
+
+## Inside the `data` folder
+
+- `raw`: data as it was downloaded / as you received it (e.g. Excel file)
+- `processed`: data that is ready to be used in the report
+
+## Inside the `processed` folder
+
+- `README.md`: general information about the data
+- `dictionary.csv`: data dictionary
+- `faecal-sludge-analysis.csv`: cleaned data for which `dictionary.csv` applies
+
+## My turn: A tour of Rainbow Train's project
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
+:::
+
+```{r}
+countdown(10)
+```
+
+# Homework assignments module 7 {background-color="#4C326A"}
+
+## Module 7 documentation
+
+::: learn-more
+[ds4owd-001.github.io/website/modules/md-07.html](https://ds4owd-001.github.io/website/modules/md-07.html)
+
+```{=html}
+<iframe src="https://ds4owd-001.github.io/website/modules/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 7 documentation"></iframe>
+```
+:::
+
+## Homework due date
+
+- Homework assignment due: [Monday, December 18th]{.highlight-yellow}
+- Feedback until: [Thursday, December 21st]{.highlight-yellow}
+
+# Wrap-up {background-color="#4C326A"}
+
+## Final student hours of 2023
+
+- [Thursday, December 14th]{.highlight-yellow} at 2 pm CET
+
+## First student hours of 2024
+
+- [Thursday, January 11th]{.highlight-yellow} at 2 pm CET
+
+## Christmas break {.smaller}
+
+- Lars will be on vacation from [December 22nd]{.highlight-yellow} until [January 15th]{.highlight-yellow}
+- Mian and Sophia will be on vacation from [December 22nd]{.highlight-yellow} until [January 8th]{.highlight-yellow}
+
+![](img/lec-07/christmas-break.png){width="50%" fig-alt="A pixel art image of a small person taking a break from coding for Christmas. The scene includes a cozy room with a computer displaying code on the screen, and the person is relaxing with a cup of hot chocolate. Decorations like a small Christmas tree, lights, and stockings are present, adding a festive atmosphere. The person is wearing casual clothes and a Santa hat, and there's a sense of warmth and holiday cheer in the room."}
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## First lecture of 2024 {.smaller}
+
+[Tuesday, January 16th]{.highlight-yellow} at 2 pm CET
+
+![](img/lec-07/new-year-coding.png){width="50%" fig-alt="A pixel art scene depicting a group of little people, both female and male, enthusiastically returning to their coding tasks after celebrating New Year's. They are sitting in front of computers with festive decorations around, like streamers and a 'Happy New Year' banner. The characters exhibit diversity in their appearances and attire, reflecting a joyful and inclusive environment. Each individual is engaged in typing or looking at their computer screens, with visible lines of code. The setting is a cozy office space with hints of the recent celebration still present."}
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Course calendar {.smallest .scrollable}
+
+```{r}
+readr::read_csv("../data/tbl-01-ds4owd-001-course-schedule.csv") |> 
+  dplyr::select(date, week, topic = title, module) |> 
+  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
+  knitr::kable()
+```
+
+## Thanks! `r emo::ji("sunflower")`
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-07-pivoting-joining.pdf)
+
+# References
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+

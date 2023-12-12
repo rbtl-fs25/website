@@ -630,35 +630,6 @@ waste_data_untidy |>
   knitr::kable(digits = 2)
 ```
 
-## How to {.smaller .scrollable auto-animate="true"}
-
-```{r}
-#| echo: true
-#| eval: false
-#| code-line-numbers: "1|7"
-waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
-
-waste_data_untidy |> 
-  pivot_longer(cols = pet:other,
-               names_to = "waste_category",
-               values_to = "weight") |> 
-  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) 
-```
-
-```{r}
-#| echo: false
-waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
-
-waste_data_untidy |> 
-  pivot_longer(cols = pet:other,
-               names_to = "waste_category",
-               values_to = "weight") |> 
-  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |> 
-  knitr::kable(digits = 2)
-
-
-```
-
 ## Three variables -\> three aesthetics {.smaller}
 
 ```{r}
