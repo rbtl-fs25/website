@@ -27,4 +27,9 @@ googlesheets4::read_sheet("18vF8LFHg3CBrcRqZZcE13G9UxgFXWmQwTnTUi_H8yGU") |>
 googlesheets4::read_sheet("10LvSpaCo1Hdyx0MDZKrmNXAPL-xlDyu7yMp5vroQw9Y") |> 
   write_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv"))
 
+# capstone project
+
+googlesheets4::read_sheet("18-onMxZi0sBf-fEMR7bR5RuT4Qy4t7D-bZ12gdoNYXI") |> 
+  write_csv(here::here("data/tbl-08-ds4owd-001-capstone-project-elements"))
+
 

@@ -54,9 +54,9 @@ A pre-requisite for this homework is that you worked created a repository for yo
 
 1. Open your capstone project on posit.cloud.
 
-2. Use the Files tab in the bottom right window to upload the data dictionary to the `data/processed` folder.
+2. Use the Files tab in the bottom right window to upload the data dictionary in CSV format to the `data/processed` folder.
 
-## Step 5: Prepare your analysis-read (processed) data
+## Step 5: Prepare your analysis-ready (processed) data
 
 ::: callout-important
 ## We will re-iterate on this step several times.

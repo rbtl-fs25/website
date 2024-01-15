@@ -1,6 +1,6 @@
 ---
 title: "Module 8"
-subtitle: "Using AI for software development in R "
+subtitle: "{{< var md-08.title >}}"
 editor: source
 params:
     week: 8
