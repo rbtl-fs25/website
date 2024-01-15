@@ -11,7 +11,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.541">
 
   <meta name="author" content="Lars Schöbitz">
   <meta name="dcterms.date" content="2023-11-14">
@@ -35,7 +35,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -227,7 +227,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -431,7 +432,11 @@ Lars Schöbitz
 <div class="column" style="width:40%;">
 <div class="cell" data-caption="dplyr is part of the tidyverse">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="img/lec-03/dplyr-part-of-tidyverse.png" style="width:70.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </div><div class="column" style="width:60%;">
@@ -467,10 +472,10 @@ Lars Schöbitz
 <section id="functions-arguments" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Functions &amp; Arguments</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb1-1" class="hljs-ln-code"><a href="#cb1-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-2" class="hljs-ln-code"><a href="#cb1-2"></a></span>
-<span id="cb1-3" class="hljs-ln-code"><a href="#cb1-3"></a><span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
-<span id="cb1-4" class="hljs-ln-code"><a href="#cb1-4"></a>       year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb1-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-2" class="hljs-ln-code"><a></a></span>
+<span id="cb1-3" class="hljs-ln-code"><a></a><span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
+<span id="cb1-4" class="hljs-ln-code"><a></a>       year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Function: <code>filter()</code></li>
@@ -481,10 +486,10 @@ Lars Schöbitz
 <section id="objects" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Objects</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb2-2" class="hljs-ln-code"><a href="#cb2-2"></a></span>
-<span id="cb2-3" class="hljs-ln-code"><a href="#cb2-3"></a>gapminder_2007 <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
-<span id="cb2-4" class="hljs-ln-code"><a href="#cb2-4"></a>                            year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-2" class="hljs-ln-code"><a></a></span>
+<span id="cb2-3" class="hljs-ln-code"><a></a>gapminder_2007 <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data =</span> gapminder, </span>
+<span id="cb2-4" class="hljs-ln-code"><a></a>                            year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Function: <code>filter()</code></li>
@@ -496,10 +501,10 @@ Lars Schöbitz
 <section id="operators" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Operators</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-2" class="hljs-ln-code"><a href="#cb3-2"></a></span>
-<span id="cb3-3" class="hljs-ln-code"><a href="#cb3-3"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
-<span id="cb3-4" class="hljs-ln-code"><a href="#cb3-4"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-2" class="hljs-ln-code"><a></a></span>
+<span id="cb3-3" class="hljs-ln-code"><a></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
+<span id="cb3-4" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Function: <code>filter()</code></li>
@@ -513,16 +518,16 @@ Lars Schöbitz
 <section id="plot" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Plot</h2>
 <div class="cell" data-fig.asp="0.618">
-<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4,6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a></span>
-<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3"></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
-<span id="cb4-4" class="hljs-ln-code"><a href="#cb4-4"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span>
-<span id="cb4-5" class="hljs-ln-code"><a href="#cb4-5"></a></span>
-<span id="cb4-6" class="hljs-ln-code"><a href="#cb4-6"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
-<span id="cb4-7" class="hljs-ln-code"><a href="#cb4-7"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb4-8" class="hljs-ln-code"><a href="#cb4-8"></a>                     <span class="at">y =</span> lifeExp,</span>
-<span id="cb4-9" class="hljs-ln-code"><a href="#cb4-9"></a>                     <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
-<span id="cb4-10" class="hljs-ln-code"><a href="#cb4-10"></a>  <span class="fu">geom_boxplot</span>(<span class="at">outlier.shape =</span> <span class="cn">NA</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="3-4,6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-2" class="hljs-ln-code"><a></a></span>
+<span id="cb4-3" class="hljs-ln-code"><a></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
+<span id="cb4-4" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>) </span>
+<span id="cb4-5" class="hljs-ln-code"><a></a></span>
+<span id="cb4-6" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
+<span id="cb4-7" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb4-8" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp,</span>
+<span id="cb4-9" class="hljs-ln-code"><a></a>                     <span class="at">fill =</span> continent)) <span class="sc">+</span></span>
+<span id="cb4-10" class="hljs-ln-code"><a></a>  <span class="fu">geom_boxplot</span>(<span class="at">outlier.shape =</span> <span class="cn">NA</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-03-transformation_files/figure-revealjs/unnamed-chunk-7-1.png" width="384" class="r-stretch"></section></section>
@@ -534,7 +539,7 @@ Lars Schöbitz
 <section id="data" class="slide level2 smallest">
 <h2>Data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">head</span>(sanitation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">head</span>(sanitation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
@@ -630,7 +635,7 @@ Lars Schöbitz
 <p><br></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">ncol</span>(sanitation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ncol</span>(sanitation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
@@ -639,7 +644,7 @@ Lars Schöbitz
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">nrow</span>(sanitation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">nrow</span>(sanitation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 73710</code></pre>
 </div>
@@ -649,8 +654,8 @@ Lars Schöbitz
 <section id="data-1" class="slide level2 smaller">
 <h2>Data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>sanitation <span class="sc">|&gt;</span> </span>
-<span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">count</span>(varname_short, varname_long)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a></a>  <span class="fu">count</span>(varname_short, varname_long)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -750,12 +755,12 @@ Lars Schöbitz
 <section id="r-terminology" class="slide level2">
 <h2>R Terminology</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb11-2"><a href="#cb11-2"></a></span>
-<span id="cb11-3"><a href="#cb11-3"></a>sanitation_national_2020_sm <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
-<span id="cb11-4"><a href="#cb11-4"></a>  <span class="fu">filter</span>(residence <span class="sc">==</span> <span class="st">"national"</span>,</span>
-<span id="cb11-5"><a href="#cb11-5"></a>         year <span class="sc">==</span> <span class="dv">2020</span>,</span>
-<span id="cb11-6"><a href="#cb11-6"></a>         varname_short <span class="sc">==</span> <span class="st">"san_sm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb11-2"><a></a></span>
+<span id="cb11-3"><a></a>sanitation_national_2020_sm <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb11-4"><a></a>  <span class="fu">filter</span>(residence <span class="sc">==</span> <span class="st">"national"</span>,</span>
+<span id="cb11-5"><a></a>         year <span class="sc">==</span> <span class="dv">2020</span>,</span>
+<span id="cb11-6"><a></a>         varname_short <span class="sc">==</span> <span class="st">"san_sm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Function: <code>filter()</code></li>
@@ -772,8 +777,8 @@ Lars Schöbitz
 <li>Store the result as a new object in your environment with the name <code>sanitation_nigeria_urban_rural</code></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>sanitation_nigeria_urban_rural <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
-<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">filter</span>(name <span class="sc">==</span> <span class="st">"Nigeria"</span>, residence <span class="sc">!=</span> <span class="st">"national"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>sanitation_nigeria_urban_rural <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb12-2"><a></a>  <span class="fu">filter</span>(name <span class="sc">==</span> <span class="st">"Nigeria"</span>, residence <span class="sc">!=</span> <span class="st">"national"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="task-1.3---connected-scatterplot" class="slide level2">
@@ -788,21 +793,25 @@ Lars Schöbitz
 </ol>
 </div>
 <div class="cell" data-fig.asp="0.618">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> sanitation_nigeria_urban_rural,</span>
-<span id="cb13-2"><a href="#cb13-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> year, </span>
-<span id="cb13-3"><a href="#cb13-3"></a>                     <span class="at">y =</span> percent, </span>
-<span id="cb13-4"><a href="#cb13-4"></a>                     <span class="at">group =</span> varname_short, </span>
-<span id="cb13-5"><a href="#cb13-5"></a>                     <span class="at">color =</span> varname_short)) <span class="sc">+</span></span>
-<span id="cb13-6"><a href="#cb13-6"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb13-7"><a href="#cb13-7"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb13-8"><a href="#cb13-8"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>residence) <span class="sc">+</span></span>
-<span id="cb13-9"><a href="#cb13-9"></a>  <span class="fu">scale_color_colorblind</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> sanitation_nigeria_urban_rural,</span>
+<span id="cb13-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> year, </span>
+<span id="cb13-3"><a></a>                     <span class="at">y =</span> percent, </span>
+<span id="cb13-4"><a></a>                     <span class="at">group =</span> varname_short, </span>
+<span id="cb13-5"><a></a>                     <span class="at">color =</span> varname_short)) <span class="sc">+</span></span>
+<span id="cb13-6"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb13-7"><a></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb13-8"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>residence) <span class="sc">+</span></span>
+<span id="cb13-9"><a></a>  <span class="fu">scale_color_colorblind</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
 <section id="task-1.3---connected-scatterplot-output" class="slide level2 output-location-slide"><h2>Task 1.3 - Connected scatterplot</h2><div class="cell output-location-slide" data-fig.asp="0.618">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="lec-03-transformation_files/figure-revealjs/unnamed-chunk-20-1.png" style="width:100.0%"></p>
+</figure>
+</div>
 </div>
 </div></section><section id="our-turn-back-to-md-03a-data-transformation.qmd" class="slide level2">
 <h2>Our turn: back to md-03a-data-transformation.qmd</h2>
@@ -887,9 +896,11 @@ Lars Schöbitz
 <p>Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/ds4owd-001/website/raw/main/slides/lec-03-transformation.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
-
-<img src="../img/OWD-logo-20.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="../img/OWD-logo-20.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><a href="https://ds4owd-001.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> ds4owd-001.github.io/website/</a></p>
+</div>
 </div>
 </section></section>
     </div>
@@ -919,7 +930,6 @@ Lars Schöbitz
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1219,10 +1229,9 @@ Lars Schöbitz
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1232,8 +1241,17 @@ Lars Schöbitz
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

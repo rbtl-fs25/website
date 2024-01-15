@@ -11,7 +11,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.541">
 
   <meta name="author" content="Lars Schöbitz">
   <meta name="dcterms.date" content="2023-12-05">
@@ -35,7 +35,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -102,6 +102,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -246,7 +247,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -589,18 +591,22 @@ Lars Schöbitz
 <p>The presence of the caption (<code>A few penguins</code>) and label (<code>#tbl-penguins</code>) make this table reference-able:</p>
 <p>See <code>@tbl-penguins</code> for data on a few penguins.</p>
 <p>becomes:</p>
-<p>See <a href="#/table-cross-references">Table&nbsp;1</a> for data on a few penguins.</p>
+<p>See <a href="#/table-cross-references" class="quarto-xref">Table&nbsp;1</a> for data on a few penguins.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#| label: tbl-penguins</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co">#| tbl-cap: A few penguins</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">head</span>(penguins) <span class="sc">|&gt;</span> </span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="fu">gt</span>()</span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a></a><span class="in">#| label: tbl-penguins</span></span>
+<span id="cb1-3"><a></a><span class="in">#| tbl-cap: A few penguins</span></span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="in">head(penguins) |&gt; </span></span>
+<span id="cb1-6"><a></a><span class="in">  gt()</span></span>
+<span id="cb1-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-penguins" class="cell quarto-float">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: A few penguins
+</figcaption>
+<div aria-describedby="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-penguins">
-
 <div id="sjahexoull" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#sjahexoull table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -1041,75 +1047,88 @@ Lars Schöbitz
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;1:  <p>A few penguins</p> </caption>
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="species">species</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="island">island</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_length_mm">bill_length_mm</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_depth_mm">bill_depth_mm</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="flipper_length_mm">flipper_length_mm</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="body_mass_g">body_mass_g</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="sex">sex</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="year">year</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
-<td headers="island" class="gt_row gt_center">Torgersen</td>
-<td headers="bill_length_mm" class="gt_row gt_right">39.1</td>
-<td headers="bill_depth_mm" class="gt_row gt_right">18.7</td>
-<td headers="flipper_length_mm" class="gt_row gt_right">181</td>
-<td headers="body_mass_g" class="gt_row gt_right">3750</td>
-<td headers="sex" class="gt_row gt_center">male</td>
-<td headers="year" class="gt_row gt_right">2007</td></tr>
-    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
-<td headers="island" class="gt_row gt_center">Torgersen</td>
-<td headers="bill_length_mm" class="gt_row gt_right">39.5</td>
-<td headers="bill_depth_mm" class="gt_row gt_right">17.4</td>
-<td headers="flipper_length_mm" class="gt_row gt_right">186</td>
-<td headers="body_mass_g" class="gt_row gt_right">3800</td>
-<td headers="sex" class="gt_row gt_center">female</td>
-<td headers="year" class="gt_row gt_right">2007</td></tr>
-    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
-<td headers="island" class="gt_row gt_center">Torgersen</td>
-<td headers="bill_length_mm" class="gt_row gt_right">40.3</td>
-<td headers="bill_depth_mm" class="gt_row gt_right">18.0</td>
-<td headers="flipper_length_mm" class="gt_row gt_right">195</td>
-<td headers="body_mass_g" class="gt_row gt_right">3250</td>
-<td headers="sex" class="gt_row gt_center">female</td>
-<td headers="year" class="gt_row gt_right">2007</td></tr>
-    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
-<td headers="island" class="gt_row gt_center">Torgersen</td>
-<td headers="bill_length_mm" class="gt_row gt_right">NA</td>
-<td headers="bill_depth_mm" class="gt_row gt_right">NA</td>
-<td headers="flipper_length_mm" class="gt_row gt_right">NA</td>
-<td headers="body_mass_g" class="gt_row gt_right">NA</td>
-<td headers="sex" class="gt_row gt_center">NA</td>
-<td headers="year" class="gt_row gt_right">2007</td></tr>
-    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
-<td headers="island" class="gt_row gt_center">Torgersen</td>
-<td headers="bill_length_mm" class="gt_row gt_right">36.7</td>
-<td headers="bill_depth_mm" class="gt_row gt_right">19.3</td>
-<td headers="flipper_length_mm" class="gt_row gt_right">193</td>
-<td headers="body_mass_g" class="gt_row gt_right">3450</td>
-<td headers="sex" class="gt_row gt_center">female</td>
-<td headers="year" class="gt_row gt_right">2007</td></tr>
-    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
-<td headers="island" class="gt_row gt_center">Torgersen</td>
-<td headers="bill_length_mm" class="gt_row gt_right">39.3</td>
-<td headers="bill_depth_mm" class="gt_row gt_right">20.6</td>
-<td headers="flipper_length_mm" class="gt_row gt_right">190</td>
-<td headers="body_mass_g" class="gt_row gt_right">3650</td>
-<td headers="sex" class="gt_row gt_center">male</td>
-<td headers="year" class="gt_row gt_right">2007</td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table do-not-create-environment cell" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="species" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">species</th>
+<th id="island" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">island</th>
+<th id="bill_length_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_length_mm</th>
+<th id="bill_depth_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_depth_mm</th>
+<th id="flipper_length_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">flipper_length_mm</th>
+<th id="body_mass_g" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">body_mass_g</th>
+<th id="sex" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">sex</th>
+<th id="year" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">year</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.1</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">18.7</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">181</td>
+<td class="gt_row gt_right" headers="body_mass_g">3750</td>
+<td class="gt_row gt_center" headers="sex">male</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.5</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">17.4</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">186</td>
+<td class="gt_row gt_right" headers="body_mass_g">3800</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">40.3</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">18.0</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">195</td>
+<td class="gt_row gt_right" headers="body_mass_g">3250</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">NA</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">NA</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">NA</td>
+<td class="gt_row gt_right" headers="body_mass_g">NA</td>
+<td class="gt_row gt_center" headers="sex">NA</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">36.7</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">19.3</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">193</td>
+<td class="gt_row gt_right" headers="body_mass_g">3450</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.3</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">20.6</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">190</td>
+<td class="gt_row gt_right" headers="body_mass_g">3650</td>
+<td class="gt_row gt_center" headers="sex">male</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
+</div>
+</figure>
 </div>
 </div>
 </section>
@@ -1118,20 +1137,22 @@ Lars Schöbitz
 <p>The presence of the caption (<code>A few penguins</code>) and label (<code>#fig-penguins</code>) make this figure reference-able:</p>
 <p>See <code>@fig-penguins</code> for data on a few penguins.</p>
 <p>becomes:</p>
-<p>See <a href="#/fig-penguins">Figure&nbsp;1</a> for data on a few penguins.</p>
+<p>See <a href="#/fig-penguins" class="quarto-xref">Figure&nbsp;1</a> for data on a few penguins.</p>
 <div class="cell" data-fig.asp="0.618">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="co">#| label: fig-penguins</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#| fig-cap: A few penguins</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#| fig-width: 6</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#| fig-asp: 0.618</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a>  <span class="fu">geom_bar</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a></a><span class="in">#| label: fig-penguins</span></span>
+<span id="cb2-3"><a></a><span class="in">#| fig-cap: A few penguins</span></span>
+<span id="cb2-4"><a></a><span class="in">#| fig-width: 6</span></span>
+<span id="cb2-5"><a></a><span class="in">#| fig-asp: 0.618</span></span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a><span class="in">ggplot(penguins, aes(x = species, fill = species)) +</span></span>
+<span id="cb2-8"><a></a><span class="in">  geom_bar(show.legend = FALSE)</span></span>
+<span id="cb2-9"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="lec-06-vectors_files/figure-revealjs/fig-penguins-1.png" width="576" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: A few penguins</p></section>
+<img data-src="lec-06-vectors_files/figure-revealjs/fig-penguins-1.png" width="576" class="r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;1: A few penguins
+</p></section>
 <section id="your-turn-md-06-exercises---cross-references" class="slide level2">
 <h2>Your turn: md-06-exercises - cross-references</h2>
 <div class="task">
@@ -1305,8 +1326,8 @@ Lars Schöbitz
 <section id="oh-why-wont-you-work" class="slide level2">
 <h2>Oh why won’t you work?!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -1318,8 +1339,8 @@ Lars Schöbitz
 <section id="oh-why-wont-you-still-work" class="slide level2">
 <h2>Oh why won’t you still work??!!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb5-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -1480,14 +1501,14 @@ Lars Schöbitz
 <section id="very-common-data-tidying-step" class="slide level2 small">
 <h2>Very common data tidying step!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb8-3"><a href="#cb8-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb8-4"><a href="#cb8-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb8-5"><a href="#cb8-5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
-<span id="cb8-6"><a href="#cb8-6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb8-7"><a href="#cb8-7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb8-8"><a href="#cb8-8"></a>  )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb8-3"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb8-4"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb8-5"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
+<span id="cb8-6"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb8-7"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb8-8"><a></a>  )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="very-common-data-tidying-step-1" class="slide level2 scrollable small">
@@ -1650,15 +1671,15 @@ Lars Schöbitz
 <section id="sumamrise-argh" class="slide level2 small" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Sumamrise? Argh!!!!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb9-3" class="hljs-ln-code"><a href="#cb9-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb9-4" class="hljs-ln-code"><a href="#cb9-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
-<span id="cb9-6" class="hljs-ln-code"><a href="#cb9-6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb9-7" class="hljs-ln-code"><a href="#cb9-7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb9-8" class="hljs-ln-code"><a href="#cb9-8"></a>  )) <span class="sc">|&gt;</span> </span>
-<span id="cb9-9" class="hljs-ln-code"><a href="#cb9-9"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb9-2" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb9-3" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb9-4" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb9-5" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
+<span id="cb9-6" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb9-7" class="hljs-ln-code"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb9-8" class="hljs-ln-code"><a></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb9-9" class="hljs-ln-code"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -1701,16 +1722,16 @@ Lars Schöbitz
 <section id="always-respect-your-data-types-1" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Always respect your data types!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb12-3" class="hljs-ln-code"><a href="#cb12-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb12-4" class="hljs-ln-code"><a href="#cb12-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb12-5" class="hljs-ln-code"><a href="#cb12-5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
-<span id="cb12-6" class="hljs-ln-code"><a href="#cb12-6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb12-7" class="hljs-ln-code"><a href="#cb12-7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb12-8" class="hljs-ln-code"><a href="#cb12-8"></a>  )) <span class="sc">|&gt;</span> </span>
-<span id="cb12-9" class="hljs-ln-code"><a href="#cb12-9"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">as.numeric</span>(price_glass_new)) <span class="sc">|&gt;</span> </span>
-<span id="cb12-10" class="hljs-ln-code"><a href="#cb12-10"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb12-2" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb12-3" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5-10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb12-4" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb12-5" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
+<span id="cb12-6" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb12-7" class="hljs-ln-code"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb12-8" class="hljs-ln-code"><a></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb12-9" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">as.numeric</span>(price_glass_new)) <span class="sc">|&gt;</span> </span>
+<span id="cb12-10" class="hljs-ln-code"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -1811,7 +1832,11 @@ Lars Schöbitz
 <div class="column" style="width:40%;">
 <div class="cell" data-caption="tidyr is part of the tidyverse">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="img/lec-04/tidyr-part-of-tidyverse.png" style="width:60.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </div><div class="column" style="width:60%;">
@@ -2000,12 +2025,12 @@ Lars Schöbitz
 <section id="three-variables---three-aesthetics" class="slide level2 smaller">
 <h2>Three variables -&gt; three aesthetics</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_untidy,</span>
-<span id="cb14-2"><a href="#cb14-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
-<span id="cb14-3"><a href="#cb14-3"></a>                     <span class="at">y =</span> total, </span>
-<span id="cb14-4"><a href="#cb14-4"></a>                     <span class="at">fill =</span> location)) <span class="sc">+</span></span>
-<span id="cb14-5"><a href="#cb14-5"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb14-6"><a href="#cb14-6"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_untidy,</span>
+<span id="cb14-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
+<span id="cb14-3"><a></a>                     <span class="at">y =</span> total, </span>
+<span id="cb14-4"><a></a>                     <span class="at">fill =</span> location)) <span class="sc">+</span></span>
+<span id="cb14-5"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb14-6"><a></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-06-vectors_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section>
@@ -2369,19 +2394,19 @@ Lars Schöbitz
 <section id="three-variables---three-aesthetics-1" class="slide level2 smaller">
 <h2>Three variables -&gt; three aesthetics</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
-<span id="cb15-2"><a href="#cb15-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
-<span id="cb15-3"><a href="#cb15-3"></a>                     <span class="at">y =</span> weight, </span>
-<span id="cb15-4"><a href="#cb15-4"></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
-<span id="cb15-5"><a href="#cb15-5"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb15-6"><a href="#cb15-6"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
+<span id="cb15-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
+<span id="cb15-3"><a></a>                     <span class="at">y =</span> weight, </span>
+<span id="cb15-4"><a></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
+<span id="cb15-5"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb15-6"><a></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-06-vectors_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"></section>
 <section id="how-to" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb16-1" class="hljs-ln-code"><a href="#cb16-1"></a>waste_data_untidy </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb16-1" class="hljs-ln-code"><a></a>waste_data_untidy </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -2478,10 +2503,10 @@ Lars Schöbitz
 <section id="how-to-1" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb17-1" class="hljs-ln-code"><a href="#cb17-1"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
-<span id="cb17-2" class="hljs-ln-code"><a href="#cb17-2"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> pet<span class="sc">:</span>other,</span>
-<span id="cb17-3" class="hljs-ln-code"><a href="#cb17-3"></a>               <span class="at">names_to =</span> <span class="st">"waste_category"</span>,</span>
-<span id="cb17-4" class="hljs-ln-code"><a href="#cb17-4"></a>               <span class="at">values_to =</span> <span class="st">"weight"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb17-1" class="hljs-ln-code"><a></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
+<span id="cb17-2" class="hljs-ln-code"><a></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> pet<span class="sc">:</span>other,</span>
+<span id="cb17-3" class="hljs-ln-code"><a></a>               <span class="at">names_to =</span> <span class="st">"waste_category"</span>,</span>
+<span id="cb17-4" class="hljs-ln-code"><a></a>               <span class="at">values_to =</span> <span class="st">"weight"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -2743,12 +2768,12 @@ Lars Schöbitz
 <section id="three-variables---three-aesthetics-2" class="slide level2 smaller">
 <h2>Three variables -&gt; three aesthetics</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
-<span id="cb18-2"><a href="#cb18-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
-<span id="cb18-3"><a href="#cb18-3"></a>                     <span class="at">y =</span> weight, </span>
-<span id="cb18-4"><a href="#cb18-4"></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
-<span id="cb18-5"><a href="#cb18-5"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb18-6"><a href="#cb18-6"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
+<span id="cb18-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
+<span id="cb18-3"><a></a>                     <span class="at">y =</span> weight, </span>
+<span id="cb18-4"><a></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
+<span id="cb18-5"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb18-6"><a></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-06-vectors_files/figure-revealjs/unnamed-chunk-39-1.png" width="960" class="r-stretch"></section></section>
@@ -2783,11 +2808,13 @@ Lars Schöbitz
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
-
-<img src="../img/OWD-logo-20.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="../img/OWD-logo-20.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><a href="https://ds4owd-001.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> ds4owd-001.github.io/website/</a></p>
 </div>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-benaleya2022researcha" class="csl-entry" role="listitem">
 Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. <span>“Research <span>Beyond</span> the <span>Lab</span>, <span>Spring Term</span> 2022, <span>Global Health Engineering</span>, <span>ETH Zurich</span>. <span>Raw</span> Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in <span>Zurich</span>, <span>Switzerland</span>.”</span> <span>Zenodo</span>. <a href="https://doi.org/10.5281/ZENODO.7331120">https://doi.org/10.5281/ZENODO.7331120</a>.
 </div>
@@ -2820,7 +2847,6 @@ Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, C
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -3120,10 +3146,9 @@ Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, C
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -3133,8 +3158,17 @@ Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, C
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

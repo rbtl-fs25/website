@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.541">
 
   <meta name="author" content="Lars Schöbitz">
   <title>data science for openwashdata - Concept of Tidy Data, Vectors &amp; Pivoting</title>
@@ -32,7 +32,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -99,6 +99,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -241,7 +242,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -615,8 +617,8 @@ Lars Schöbitz
 <section id="oh-why-wont-you-work" class="slide level2 smaller">
 <h2>Oh why won’t you work?!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -628,8 +630,8 @@ Lars Schöbitz
 <section id="oh-why-wont-you-still-work" class="slide level2 smaller">
 <h2>Oh why won’t you still work??!!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -769,14 +771,14 @@ Lars Schöbitz
 <section id="very-common-data-tidying-step" class="slide level2 smaller">
 <h2>Very common data tidying step!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb5-3"><a href="#cb5-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb5-4"><a href="#cb5-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb5-5"><a href="#cb5-5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
-<span id="cb5-6"><a href="#cb5-6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb5-7"><a href="#cb5-7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb5-8"><a href="#cb5-8"></a>  )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="|2|3,4|5,6|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb5-2"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb5-3"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb5-4"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb5-5"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"2chf"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
+<span id="cb5-6"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb5-7"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb5-8"><a></a>  )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="very-common-data-tidying-step-1" class="slide level2 scrollable smaller">
@@ -939,15 +941,15 @@ Lars Schöbitz
 <section id="sumamrise-argh" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Sumamrise? Argh!!!!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
-<span id="cb6-6" class="hljs-ln-code"><a href="#cb6-6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb6-7" class="hljs-ln-code"><a href="#cb6-7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb6-8" class="hljs-ln-code"><a href="#cb6-8"></a>  )) <span class="sc">|&gt;</span> </span>
-<span id="cb6-9" class="hljs-ln-code"><a href="#cb6-9"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb6-2" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb6-3" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb6-4" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb6-5" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
+<span id="cb6-6" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb6-7" class="hljs-ln-code"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb6-8" class="hljs-ln-code"><a></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb6-9" class="hljs-ln-code"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -990,16 +992,16 @@ Lars Schöbitz
 <section id="always-respect-your-data-types-1" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Always respect your data types!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a>survey_data_small <span class="sc">|&gt;</span> </span>
-<span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
-<span id="cb9-3" class="hljs-ln-code"><a href="#cb9-3"></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb9-4" class="hljs-ln-code"><a href="#cb9-4"></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
-<span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
-<span id="cb9-6" class="hljs-ln-code"><a href="#cb9-6"></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
-<span id="cb9-7" class="hljs-ln-code"><a href="#cb9-7"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
-<span id="cb9-8" class="hljs-ln-code"><a href="#cb9-8"></a>  )) <span class="sc">|&gt;</span> </span>
-<span id="cb9-9" class="hljs-ln-code"><a href="#cb9-9"></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">as.numeric</span>(price_glass_new)) <span class="sc">|&gt;</span> </span>
-<span id="cb9-10" class="hljs-ln-code"><a href="#cb9-10"></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="9|10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a></a>survey_data_small <span class="sc">|&gt;</span> </span>
+<span id="cb9-2" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">case_when</span>(</span>
+<span id="cb9-3" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"5 to 10"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb9-4" class="hljs-ln-code"><a></a>    price_glass <span class="sc">==</span> <span class="st">"05-Oct"</span> <span class="sc">~</span> <span class="st">"7.5"</span>,</span>
+<span id="cb9-5" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"20"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"20"</span>,</span>
+<span id="cb9-6" class="hljs-ln-code"><a></a>    <span class="fu">str_detect</span>(price_glass, <span class="at">pattern =</span> <span class="st">"See comment"</span>) <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>,</span>
+<span id="cb9-7" class="hljs-ln-code"><a></a>    <span class="cn">TRUE</span> <span class="sc">~</span> price_glass</span>
+<span id="cb9-8" class="hljs-ln-code"><a></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb9-9" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">price_glass_new =</span> <span class="fu">as.numeric</span>(price_glass_new)) <span class="sc">|&gt;</span> </span>
+<span id="cb9-10" class="hljs-ln-code"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_price_glass =</span> <span class="fu">mean</span>(price_glass_new, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   mean_price_glass
@@ -1067,7 +1069,11 @@ Lars Schöbitz
 <div class="column" style="width:40%;">
 <div class="cell" data-caption="tidyr is part of the tidyverse">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="img/lec-04/tidyr-part-of-tidyverse.png" style="width:60.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </div><div class="column" style="width:60%;">
@@ -1256,12 +1262,12 @@ Lars Schöbitz
 <section id="three-variables---three-aesthetics" class="slide level2 smaller">
 <h2>Three variables -&gt; three aesthetics</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_untidy,</span>
-<span id="cb11-2"><a href="#cb11-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
-<span id="cb11-3"><a href="#cb11-3"></a>                     <span class="at">y =</span> total, </span>
-<span id="cb11-4"><a href="#cb11-4"></a>                     <span class="at">fill =</span> location)) <span class="sc">+</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_untidy,</span>
+<span id="cb11-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
+<span id="cb11-3"><a></a>                     <span class="at">y =</span> total, </span>
+<span id="cb11-4"><a></a>                     <span class="at">fill =</span> location)) <span class="sc">+</span></span>
+<span id="cb11-5"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb11-6"><a></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
@@ -1625,19 +1631,19 @@ Lars Schöbitz
 <section id="three-variables---three-aesthetics-1" class="slide level2 smaller">
 <h2>Three variables -&gt; three aesthetics</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
-<span id="cb12-2"><a href="#cb12-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
-<span id="cb12-3"><a href="#cb12-3"></a>                     <span class="at">y =</span> weight, </span>
-<span id="cb12-4"><a href="#cb12-4"></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb12-6"><a href="#cb12-6"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
+<span id="cb12-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
+<span id="cb12-3"><a></a>                     <span class="at">y =</span> weight, </span>
+<span id="cb12-4"><a></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
+<span id="cb12-5"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb12-6"><a></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section>
 <section id="how-to" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a>waste_data_untidy </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a></a>waste_data_untidy </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1734,10 +1740,10 @@ Lars Schöbitz
 <section id="how-to-1" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
-<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> pet<span class="sc">:</span>other,</span>
-<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a>               <span class="at">names_to =</span> <span class="st">"waste_category"</span>,</span>
-<span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a>               <span class="at">values_to =</span> <span class="st">"weight"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
+<span id="cb14-2" class="hljs-ln-code"><a></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> pet<span class="sc">:</span>other,</span>
+<span id="cb14-3" class="hljs-ln-code"><a></a>               <span class="at">names_to =</span> <span class="st">"waste_category"</span>,</span>
+<span id="cb14-4" class="hljs-ln-code"><a></a>               <span class="at">values_to =</span> <span class="st">"weight"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1999,13 +2005,13 @@ Lars Schöbitz
 <section id="how-to-2" class="slide level2 smaller scrollable" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">How to</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="1|7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
-<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a></span>
-<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
-<span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> pet<span class="sc">:</span>other,</span>
-<span id="cb15-5" class="hljs-ln-code"><a href="#cb15-5"></a>               <span class="at">names_to =</span> <span class="st">"waste_category"</span>,</span>
-<span id="cb15-6" class="hljs-ln-code"><a href="#cb15-6"></a>               <span class="at">values_to =</span> <span class="st">"weight"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb15-7" class="hljs-ln-code"><a href="#cb15-7"></a>  <span class="fu">mutate</span>(<span class="at">waste_category =</span> <span class="fu">factor</span>(waste_category, <span class="at">levels =</span> waste_category_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="1|7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a></a>waste_category_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"metal_alu"</span>, <span class="st">"paper"</span>, <span class="st">"pet"</span>, <span class="st">"other"</span>)</span>
+<span id="cb15-2" class="hljs-ln-code"><a></a></span>
+<span id="cb15-3" class="hljs-ln-code"><a></a>waste_data_untidy <span class="sc">|&gt;</span> </span>
+<span id="cb15-4" class="hljs-ln-code"><a></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> pet<span class="sc">:</span>other,</span>
+<span id="cb15-5" class="hljs-ln-code"><a></a>               <span class="at">names_to =</span> <span class="st">"waste_category"</span>,</span>
+<span id="cb15-6" class="hljs-ln-code"><a></a>               <span class="at">values_to =</span> <span class="st">"weight"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb15-7" class="hljs-ln-code"><a></a>  <span class="fu">mutate</span>(<span class="at">waste_category =</span> <span class="fu">factor</span>(waste_category, <span class="at">levels =</span> waste_category_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -2267,12 +2273,12 @@ Lars Schöbitz
 <section id="three-variables---three-aesthetics-2" class="slide level2 smaller">
 <h2>Three variables -&gt; three aesthetics</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
-<span id="cb16-2"><a href="#cb16-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
-<span id="cb16-3"><a href="#cb16-3"></a>                     <span class="at">y =</span> weight, </span>
-<span id="cb16-4"><a href="#cb16-4"></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
-<span id="cb16-5"><a href="#cb16-5"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb16-6"><a href="#cb16-6"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="2-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> waste_data_tidy,</span>
+<span id="cb16-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> objid, </span>
+<span id="cb16-3"><a></a>                     <span class="at">y =</span> weight, </span>
+<span id="cb16-4"><a></a>                     <span class="at">fill =</span> waste_category)) <span class="sc">+</span></span>
+<span id="cb16-5"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb16-6"><a></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="lec-04-tidy-data_files/figure-revealjs/unnamed-chunk-32-1.png" width="960" class="r-stretch"></section></section>
@@ -2315,11 +2321,13 @@ Lars Schöbitz
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
-
-<img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="img/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p>https://cven5873-ss23.github.io/website/</p>
 </div>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-benaleya2022" class="csl-entry" role="listitem">
 Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. <span>“Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.”</span> Zenodo. <a href="https://doi.org/10.5281/ZENODO.7331119">https://doi.org/10.5281/ZENODO.7331119</a>.
 </div>
@@ -2351,7 +2359,6 @@ Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, C
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -2650,10 +2657,9 @@ Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, C
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -2663,8 +2669,17 @@ Ben Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, C
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

@@ -288,7 +288,7 @@ ggplot(data = waste_data_tidy,
 ::: task
 1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
 2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
-3.  In the File Manager in the bottom right window, locate the [`md-07a-pirvoting.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+3.  In the File Manager in the bottom right window, locate the [`md-07a-pivoting-your-turn.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4.  Follow instructions in the file
 :::
 
