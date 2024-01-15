@@ -397,8 +397,6 @@ Ordered list:
 @knuth1984literate
 :::
 
-
-
 ## Your turn: md-08-exercises
 
 ::: task
@@ -641,15 +639,40 @@ Quarto provides a rich set of YAML metadata keys to describe the details require
 :::
 :::
 
-## Our turn
+## Our turn: md-08-exercises 
 
 ::: task
--   Open `scholarly-writing.qmd` in RStudio.
--   Use the [visual editor]{.highlight-yellow} mode
--   Follow the instructions in the document
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3. Open [md-08-exercises]{.highlight-yellow}.
+4. In the File Manager in the bottom right window, locate the [`markdown-syntax.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+5. Follow along on the screen using the instructions in the document.
 :::
+```{r}
+countdown(20)
+```
 
 # Publishing
+
+## Our turn: md-08-publish-USERNAME
+
+[Clone the repository from GitHub]{.highlight-yellow}
+
+1. Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).
+2. Find the repository md-08-publish-USERNAME that ends with your GitHub username, and open it.
+3. Click on the green "Code" button.
+4. Copy the HTTPS URL to your clipboard.
+5. Open the ds4owd workspace on [posit.cloud](https://posit.cloud/spaces/426916/content/all?sort=name_asc)
+6. Click New Project > New Project from Git Repository
+7. Paste the HTTPS URL from GitHub into the "URL of your Git Repository" field.
+8. Wait until the project is deployed.
+9. From the Files Manager in the bottom right window, open `docs` folder, then click on `index.qmd`.
+10. Let me know on the Poll that you are ready to go.
+
+```{r}
+#| echo: false
+countdown::countdown(30)
+```
 
 ## GitHub Pages
 
@@ -660,27 +683,11 @@ Quarto provides a rich set of YAML metadata keys to describe the details require
 knitr::include_graphics("img/lec-08/screenshot-gh-pages.png")
 ```
 
-## Other venues
+## Minimal Example - Requirements
 
-- Quarto Pub
--   Posit Connect
--   Netlify
--   Confluence
--   [More venues](https://quarto.org/docs/publishing/other.html)
-
-## Our turn
-
-::: task
-Let's now publish our website to GitHub Pages.
-
--   Open your repository on GitHub and publish your website to GitHub Pages. 
-:::
-
-```{r}
-#| echo: false
-countdown::countdown(5)
-```
-
+- Landing site needs to be stored as `index.qmd`
+- The `index.qmd` needs to be stored in `docs` folder
+- Quarto provides a framework and examples for more complex websites: <https://quarto.org/docs/websites/>
 
 
 
