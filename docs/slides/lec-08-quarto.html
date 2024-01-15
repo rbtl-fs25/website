@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.541">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lars Schöbitz">
+<meta name="dcterms.date" content="2024-01-16">
+
+<title>data science for openwashdata - Creating and publishing scholarly articles with Quarto and GitHub pages</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../img/OWD-logo-18.png" rel="icon" type="image/png">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+<script src="../site_libs/countdown-0.4.0/countdown.js"></script>
+<script defer="" data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Creating and publishing scholarly articles with Quarto and GitHub pages</li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/OWD-logo-20.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/ds4owd-001" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../calendar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Calendar</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../guide/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 01</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-01/am-01-1-posit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Posit Cloud</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-01/am-01-2-element.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-02: Element</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-01/am-01-3-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-03: GitHub</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 02</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-02/am-02-1-data-visualisation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Data visualization</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 03</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-03/am-03-1-data-transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Data transformation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-03/am-03-2-spreadsheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-02: Spreadsheet</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 04</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-04/am-04-1-reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Data organization</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 05</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-05/am-05-1-project-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Project data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 06</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-06/am-06-1-reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Good enough practices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-05/am-05-1-project-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-02: Project data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../modules/md-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 07</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-07/am-07-1-pivoting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: Pivot data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments/md-07/am-07-2-project-metadata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-02: Capstone project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 08</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 09</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/md-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 10</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capstone project</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i></a></li>
+  <li><a href="#learning-objectives-for-this-week" id="toc-learning-objectives-for-this-week" class="nav-link" data-scroll-target="#learning-objectives-for-this-week">Learning Objectives (for this week)</a></li>
+  <li><a href="#anatomy-of-a-quarto-document" id="toc-anatomy-of-a-quarto-document" class="nav-link" data-scroll-target="#anatomy-of-a-quarto-document">Anatomy of a Quarto document</a>
+  <ul class="collapse">
+  <li><a href="#components" id="toc-components" class="nav-link" data-scroll-target="#components">Components</a></li>
+  <li><a href="#literate-programming" id="toc-literate-programming" class="nav-link" data-scroll-target="#literate-programming">Literate programming</a></li>
+  </ul></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">Metadata</a>
+  <ul class="collapse">
+  <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml">YAML</a></li>
+  <li><a href="#output-options" id="toc-output-options" class="nav-link" data-scroll-target="#output-options">Output options</a></li>
+  <li><a href="#output-option-arguments" id="toc-output-option-arguments" class="nav-link" data-scroll-target="#output-option-arguments">Output option arguments</a></li>
+  <li><a href="#yaml-validation" id="toc-yaml-validation" class="nav-link" data-scroll-target="#yaml-validation">YAML validation</a></li>
+  <li><a href="#yaml-validation-1" id="toc-yaml-validation-1" class="nav-link" data-scroll-target="#yaml-validation-1">YAML validation</a></li>
+  <li><a href="#quarto-linting" id="toc-quarto-linting" class="nav-link" data-scroll-target="#quarto-linting">Quarto linting</a></li>
+  <li><a href="#quarto-yaml-intelligence" id="toc-quarto-yaml-intelligence" class="nav-link" data-scroll-target="#quarto-yaml-intelligence">Quarto YAML Intelligence</a></li>
+  <li><a href="#my-turn-md-08-exercises---quarto-documents" id="toc-my-turn-md-08-exercises---quarto-documents" class="nav-link" data-scroll-target="#my-turn-md-08-exercises---quarto-documents">My turn: md-08-exercises - Quarto documents</a></li>
+  <li><a href="#list-of-valid-yaml-fields" id="toc-list-of-valid-yaml-fields" class="nav-link" data-scroll-target="#list-of-valid-yaml-fields">List of valid YAML fields</a></li>
+  </ul></li>
+  <li><a href="#text" id="toc-text" class="nav-link" data-scroll-target="#text">Text</a>
+  <ul class="collapse">
+  <li><a href="#text-formatting" id="toc-text-formatting" class="nav-link" data-scroll-target="#text-formatting">Text Formatting</a></li>
+  <li><a href="#headings" id="toc-headings" class="nav-link" data-scroll-target="#headings">Headings</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a></li>
+  <li><a href="#quotes" id="toc-quotes" class="nav-link" data-scroll-target="#quotes">Quotes</a></li>
+  <li><a href="#your-turn-md-08-exercises" id="toc-your-turn-md-08-exercises" class="nav-link" data-scroll-target="#your-turn-md-08-exercises">Your turn: md-08-exercises</a></li>
+  <li><a href="#take-a-break" id="toc-take-a-break" class="nav-link" data-scroll-target="#take-a-break">Take a break</a></li>
+  </ul></li>
+  <li><a href="#anatomy-of-a-quarto-scholarly-article" id="toc-anatomy-of-a-quarto-scholarly-article" class="nav-link" data-scroll-target="#anatomy-of-a-quarto-scholarly-article">Anatomy of a Quarto scholarly article</a>
+  <ul class="collapse">
+  <li><a href="#components-1" id="toc-components-1" class="nav-link" data-scroll-target="#components-1">Components</a></li>
+  </ul></li>
+  <li><a href="#four-terms" id="toc-four-terms" class="nav-link" data-scroll-target="#four-terms">Four terms</a>
+  <ul class="collapse">
+  <li><a href="#whats-a-citation" id="toc-whats-a-citation" class="nav-link" data-scroll-target="#whats-a-citation">What’s a Citation?</a></li>
+  <li><a href="#whats-a-citation-1" id="toc-whats-a-citation-1" class="nav-link" data-scroll-target="#whats-a-citation-1">What’s a Citation?</a></li>
+  <li><a href="#whats-a-reference" id="toc-whats-a-reference" class="nav-link" data-scroll-target="#whats-a-reference">What’s a Reference?</a></li>
+  <li><a href="#whats-a-bibliography" id="toc-whats-a-bibliography" class="nav-link" data-scroll-target="#whats-a-bibliography">What’s a Bibliography?</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  <li><a href="#whats-the-citation-style-language-csl" id="toc-whats-the-citation-style-language-csl" class="nav-link" data-scroll-target="#whats-the-citation-style-language-csl">What’s the Citation Style Language (CSL)?</a></li>
+  <li><a href="#whats-the-citation-style-language-csl-1" id="toc-whats-the-citation-style-language-csl-1" class="nav-link" data-scroll-target="#whats-the-citation-style-language-csl-1">What’s the Citation Style Language (CSL)?</a></li>
+  <li><a href="#why-use-a-reference-management-tool" id="toc-why-use-a-reference-management-tool" class="nav-link" data-scroll-target="#why-use-a-reference-management-tool">Why use a reference management tool?</a></li>
+  <li><a href="#why-use-zotero" id="toc-why-use-zotero" class="nav-link" data-scroll-target="#why-use-zotero">Why use Zotero?</a></li>
+  <li><a href="#scholarly-articles-in-quarto" id="toc-scholarly-articles-in-quarto" class="nav-link" data-scroll-target="#scholarly-articles-in-quarto">Scholarly Articles in Quarto</a></li>
+  <li><a href="#front-matter" id="toc-front-matter" class="nav-link" data-scroll-target="#front-matter">Front matter</a></li>
+  <li><a href="#our-turn" id="toc-our-turn" class="nav-link" data-scroll-target="#our-turn">Our turn</a></li>
+  </ul></li>
+  <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a>
+  <ul class="collapse">
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages">GitHub Pages</a></li>
+  <li><a href="#other-venues" id="toc-other-venues" class="nav-link" data-scroll-target="#other-venues">Other venues</a></li>
+  <li><a href="#our-turn-1" id="toc-our-turn-1" class="nav-link" data-scroll-target="#our-turn-1">Our turn</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lec-08-quarto.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Creating and publishing scholarly articles with Quarto and GitHub pages</h1>
+<p class="subtitle lead">ds4owd - data science for openwashdata</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Schöbitz </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 16, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="section" class="level2 center-align">
+<h2 class="center-align anchored" data-anchor-id="section"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i></h2>
+<div style="margin-top: 50px; font-size: 1.5em">
+<p>Q: How do I successfully complete the course?</p>
+</div>
+<p>You successfully complete the course and you will receive a certificate of completion if you:</p>
+<p><span class="highlight-yellow">hand in a complete capstone project report that uses a dataset of your choice by 13th February 2024</span></p>
+<p>Required items: <a href="https://ds4owd-001.github.io/website/project/" class="uri">https://ds4owd-001.github.io/website/project/</a></p>
+<p>This is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed.</p>
+</section>
+<section id="learning-objectives-for-this-week" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives-for-this-week">Learning Objectives (for this week)</h2>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 37 Columns: 4
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): title, learning_objectives
+dbl  (1): week
+dttm (1): date
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+<div class="cell">
+<ol type="1">
+<li>Learners can use Quarto and GitHub Pages to publish an HTML file.</li>
+<li>Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.</li>
+<li>Learners can cross-reference figures and tables within an Quarto file.</li>
+<li>Learners can use the GitHub pages service to publish a repository as a standalone website</li>
+</ol>
+</div>
+</section>
+<section id="anatomy-of-a-quarto-document" class="level1 page-columns page-full">
+<h1>Anatomy of a Quarto document</h1>
+<section id="components" class="level2">
+<h2 class="anchored" data-anchor-id="components">Components</h2>
+<ol type="1">
+<li><p>Metadata: YAML</p></li>
+<li><p>Text: Markdown</p></li>
+<li><p>Code: Executed via <code>knitr</code> or <code>jupyter</code></p></li>
+</ol>
+<p>. . .</p>
+<p><strong>Weave it all together</strong>, and you have beautiful, powerful, and useful outputs!</p>
+</section>
+<section id="literate-programming" class="level2 smaller page-columns page-full">
+<h2 class="smaller anchored" data-anchor-id="literate-programming">Literate programming</h2>
+<p>Literate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "ggplot2 demo"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "5/23/2023"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## MPG</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>There is a relationship between city and highway mileage.</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-mpg</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(mpg, aes(x = cty, y = hwy)) + </span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point() + </span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_smooth(method = "loess")</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Source: <a href="https://en.wikipedia.org/wiki/Literate_programming" class="uri">https://en.wikipedia.org/wiki/Literate_programming</a></p>
+</div></div></section>
+</section>
+<section id="metadata" class="level1 page-columns page-full">
+<h1>Metadata</h1>
+<section id="yaml" class="level2">
+<h2 class="anchored" data-anchor-id="yaml">YAML</h2>
+<p>“Yet Another Markup Language” or “YAML Ain’t Markup Language” is used to provide document level metadata.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">key</span><span class="kw">:</span><span class="at"> value</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="output-options" class="level2">
+<h2 class="anchored" data-anchor-id="output-options">Output options</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> something</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>. . .</p>
+<p><br></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> pdf</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="output-option-arguments" class="level2">
+<h2 class="anchored" data-anchor-id="output-option-arguments">Output option arguments</h2>
+<p>Indentation matters!</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="yaml-validation" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="yaml-validation">YAML validation</h2>
+<ul>
+<li>Invalid: No space after <code>:</code></li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="at">format:html</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Invalid: Read as missing</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="at">html</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="yaml-validation-1" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="yaml-validation-1">YAML validation</h2>
+<p>There are multiple ways of formatting valid YAML:</p>
+<ul>
+<li>Valid: There’s a space after <code>:</code></li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Valid: <code>format: html</code> with selections made with proper indentation</li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="quarto-linting" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="quarto-linting">Quarto linting</h2>
+<p>Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.</p>
+<p><br></p>
+<p><img src="img/lec-08/lint-rstudio.png" class="img-fluid" alt="Linter showing message for badly formatted YAML."></p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Source: <a href="https://en.wikipedia.org/wiki/Lint_(software)" class="uri">https://en.wikipedia.org/wiki/Lint_(software)</a></p>
+</div></div></section>
+<section id="quarto-yaml-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-yaml-intelligence">Quarto YAML Intelligence</h2>
+<p>RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd><code>Ctrl + space</code></kbd> to see all available options.</p>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/lec-08/quarto-tab-complete.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+</section>
+<section id="my-turn-md-08-exercises---quarto-documents" class="level2">
+<h2 class="anchored" data-anchor-id="my-turn-md-08-exercises---quarto-documents">My turn: md-08-exercises - Quarto documents</h2>
+<div class="task">
+<ol type="1">
+<li>Open <a href="https://posit.cloud">posit.cloud</a> in your browser (use your bookmark).</li>
+<li>Open the <span class="highlight-yellow">ds4owd workspace</span> for the course.</li>
+<li>In the File Manager in the bottom right window, locate the <span class="highlight-yellow"><code>md-08-hello-penguins.qmd</code></span> file and click on it to open it in the top left window.</li>
+<li>Follow along on the screen</li>
+</ol>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_b16abf26" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="list-of-valid-yaml-fields" class="level2">
+<h2 class="anchored" data-anchor-id="list-of-valid-yaml-fields">List of valid YAML fields</h2>
+<ul>
+<li><p>Many YAML fields are common across various outputs</p></li>
+<li><p>But also each output type has its own set of valid YAML fields and options</p></li>
+<li><p>Definitive list: <a href="https://quarto.org/docs/reference/formats/html.html">quarto.org/docs/reference/formats/html</a></p></li>
+</ul>
+</section>
+</section>
+<section id="text" class="level1 page-columns page-full">
+<h1>Text</h1>
+<section id="text-formatting" class="level2">
+<h2 class="anchored" data-anchor-id="text-formatting">Text Formatting</h2>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><pre><code>*italics* and **bold**</code></pre></td>
+<td><em>italics</em> and <strong>bold</strong></td>
+</tr>
+<tr class="even">
+<td><pre><code>superscript^2^ / subscript~2~</code></pre></td>
+<td>superscript<sup>2</sup> / subscript<sub>2</sub></td>
+</tr>
+<tr class="odd">
+<td><pre><code>~~strikethrough~~</code></pre></td>
+<td><del>strikethrough</del></td>
+</tr>
+<tr class="even">
+<td><pre><code>`verbatim code`</code></pre></td>
+<td><code>verbatim code</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="headings" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="headings">Headings</h2>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><pre><code># Header 1</code></pre></td>
+<td><h1 id="header-1">Header 1</h1></td>
+</tr>
+<tr class="even">
+<td><pre><code>## Header 2</code></pre></td>
+<td><h2 id="header-2" class="anchored">Header 2</h2></td>
+</tr>
+<tr class="odd">
+<td><pre><code>### Header 3</code></pre></td>
+<td><h3 id="header-3" class="anchored">Header 3</h3></td>
+</tr>
+<tr class="even">
+<td><pre><code>#### Header 4</code></pre></td>
+<td><h4 id="header-4" class="anchored">Header 4</h4></td>
+</tr>
+<tr class="odd">
+<td><pre><code>##### Header 5</code></pre></td>
+<td><h5 id="header-5" class="anchored">Header 5</h5></td>
+</tr>
+<tr class="even">
+<td><pre><code>###### Header 6</code></pre></td>
+<td><h6 id="header-6" class="anchored">Header 6</h6></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="links" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="links">Links</h2>
+<p>There are several types of “links” or hyperlinks.</p>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><strong>Markdown</strong></p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>You can embed <span class="co">[</span><span class="ot">named hyperlinks</span><span class="co">](https://quarto.org/)</span>,</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>direct urls like <span class="ot">&lt;https://quarto.org/&gt;</span>. The syntax is similar for embedding an</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>inline image: </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="al">![Penguins playing with ball](img/lec-08/penguins-quarto-ball.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:20%;">
+<p><strong>Output</strong></p>
+<p>You can embed <a href="https://quarto.org/">named hyperlinks</a>, direct urls like <a href="https://quarto.org/" class="uri">https://quarto.org/</a>. The syntax is similar for embedding an inline image: <img src="img/lec-08/penguins-quarto-ball.png" class="img-fluid" style="width:250px;" alt="Penguins playing with ball">.</p>
+</div>
+</div>
+</section>
+<section id="lists" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="lists">Lists</h2>
+<p>Unordered list:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Markdown:</strong></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>unordered list         </span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>sub-item 1         </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>sub-item 1         </span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="ss">        -   </span>sub-sub-item 1 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" data-fragment-index="1" style="width:50%;">
+<p><strong>Output</strong></p>
+<ul>
+<li>unordered list
+<ul>
+<li>sub-item 1<br>
+</li>
+<li>sub-item 1
+<ul>
+<li>sub-sub-item 1</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Ordered list:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Markdown:</strong></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>ordered list            </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>item 2                  </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    i. sub-item 1          </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>         A.  sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" data-fragment-index="2" style="width:50%;">
+<p><strong>Output</strong></p>
+<ol type="1">
+<li>ordered list<br>
+</li>
+<li>item 2
+<ol type="i">
+<li>sub-item 1
+<ol type="A">
+<li>sub-sub-item 1</li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="quotes" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="quotes">Quotes</h2>
+<p><strong>Markdown:</strong></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. </span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; - Donald Knuth, Literate Programming</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>. . .</p>
+<p><strong>Output:</strong></p>
+<blockquote class="blockquote">
+<p>Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming</p>
+</blockquote>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><span class="citation" data-cites="knuth1984literate">Knuth (<a href="#ref-knuth1984literate" role="doc-biblioref">1984</a>)</span></p>
+</div></div></section>
+<section id="your-turn-md-08-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn-md-08-exercises">Your turn: md-08-exercises</h2>
+<div class="task">
+<ol type="1">
+<li>Open <a href="https://posit.cloud">posit.cloud</a> in your browser (use your bookmark).</li>
+<li>Open the <span class="highlight-yellow">ds4owd workspace</span> for the course.</li>
+<li>Click <span class="highlight-yellow">Start</span> next to <span class="highlight-yellow">md-08-exercises</span>.</li>
+<li>In the File Manager in the bottom right window, locate the <span class="highlight-yellow"><code>md-08-markdown-syntax.qmd</code></span> file and click on it to open it in the top left window.</li>
+<li>Use the <span class="highlight-yellow">source editor</span> mode</li>
+<li>Follow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_6082dd63" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="take-a-break" class="level2">
+<h2 class="anchored" data-anchor-id="take-a-break">Take a break</h2>
+<p><span class="highlight-yellow">Please get up and move!</span> Let your emails rest in peace.</p>
+<p><img src="img/lec-05/pixel-art-beach.png" class="img-fluid" style="width:50.0%" alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_f7134b13" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Image generated with <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
+</div>
+</section>
+</section>
+<section id="anatomy-of-a-quarto-scholarly-article" class="level1">
+<h1>Anatomy of a Quarto scholarly article</h1>
+<section id="components-1" class="level2">
+<h2 class="anchored" data-anchor-id="components-1">Components</h2>
+<ol type="1">
+<li><p>Metadata: YAML</p></li>
+<li><p>Text: Markdown</p></li>
+<li><p>Code: Executed via <code>knitr</code> or <code>jupyter</code></p></li>
+</ol>
+<p>. . .</p>
+<p><strong>Weave it all together</strong>, and you have a beautiful, reproducible journal article!</p>
+</section>
+</section>
+<section id="four-terms" class="level1">
+<h1>Four terms</h1>
+<ul>
+<li>Citation</li>
+<li>Reference</li>
+<li>Bibliography</li>
+<li>Citation Style Language (CSL)</li>
+</ul>
+<section id="whats-a-citation" class="level2">
+<h2 class="anchored" data-anchor-id="whats-a-citation">What’s a Citation?</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Inequality underpins waste management systems, structuring who can or cannot access services <span class="citation" data-cites="kalina2023rich">(<a href="#ref-kalina2023rich" role="doc-biblioref">Kalina et al., 2023</a>)</span>.</li>
+<li>Many visitors still expect a personal pick-up, despite the availability of taxi services <span class="citation" data-cites="tilley2021my">(<a href="#ref-tilley2021my" role="doc-biblioref">Tilley &amp; Kalina, 2021</a>)</span>.</li>
+<li>In <span class="citation" data-cites="tilley2021my">Tilley &amp; Kalina (<a href="#ref-tilley2021my" role="doc-biblioref">2021</a>)</span>, the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.</li>
+</ul>
+</div>
+<div class="notes">
+<p><strong>Explanation</strong> A citation is a reference to the source of information used in your research. Any time you directly quote, paraphrase, or summarize the essential elements of someone else’s idea in your work, an in-text citation should follow. For example, in APA style, a citation might look like this: (Tilley and Kalina, 2021).</p>
+<p><strong>Analogy</strong> Think of a citation as a signpost on a road trip. It tells you where the information came from and points you in the direction of the full details (the destination), which can be found in the reference list.</p>
+</div>
+</section>
+<section id="whats-a-citation-1" class="level2">
+<h2 class="anchored" data-anchor-id="whats-a-citation-1">What’s a Citation?</h2>
+<ul>
+<li>Inequality underpins waste management systems, structuring who can or cannot access services <span class="highlight-yellow"><span class="citation" data-cites="kalina2023rich">(<a href="#ref-kalina2023rich" role="doc-biblioref">Kalina et al., 2023</a>)</span>.</span></li>
+<li>Many visitors still expect a personal pick-up, despite the availability of taxi services <span class="highlight-yellow"><span class="citation" data-cites="tilley2021my">(<a href="#ref-tilley2021my" role="doc-biblioref">Tilley &amp; Kalina, 2021</a>)</span>.</span></li>
+<li>In <span class="citation" data-cites="tilley2021my">Tilley &amp; Kalina (<a href="#ref-tilley2021my" role="doc-biblioref">2021</a>)</span>, the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important: The period is <strong>after</strong> the citation.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="whats-a-reference" class="level2">
+<h2 class="anchored" data-anchor-id="whats-a-reference">What’s a Reference?</h2>
+<ul>
+<li>detailed description of the source of information</li>
+<li>author’s name, title, year of publication, publisher, DOI, etc.</li>
+</ul>
+<p>Tilley, E., &amp; Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. <em>Journal of African Cultural Studies, 33</em>(4), 538–548. <a href="https://doi.org/10.3929/ethz-b-000493677">https://doi.org/10.3929/ethz-b-000493677</a></p>
+<div class="notes">
+<p><strong>Explanation</strong></p>
+<p>A reference is a detailed description of the source of information that you want to give credit to via a citation. In APA style, a reference provides comprehensive details about a source, including the author’s name, the title of the source, the year of publication, and the publisher or URL.</p>
+<p><strong>Analogy</strong></p>
+<p>A reference is like a detailed map at the end of your road trip (paper). It provides all the details about the source (destination) that the citation (signpost) pointed to.</p>
+</div>
+</section>
+<section id="whats-a-bibliography" class="level2">
+<h2 class="anchored" data-anchor-id="whats-a-bibliography">What’s a Bibliography?</h2>
+<div class="large">
+<ul>
+<li>list of references in a research paper or project</li>
+<li>includes all sources used, whether they were directly quoted or not</li>
+<li>listed alphabetically by the author’s last name in the reference list</li>
+</ul>
+</div>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-kalina2023rich" class="csl-entry" role="listitem">
+Kalina, M., Makwetu, N., &amp; Tilley, E. (2023). <span>“<span>The</span> rich will always be able to dispose of their waste”</span>: A view from the frontlines of municipal failure in <span>Makhanda</span>, <span>South Africa</span>. <em>Environment, Development and Sustainability</em>. <a href="https://doi.org/10.1007/s10668-023-03363-1">https://doi.org/10.1007/s10668-023-03363-1</a>
+</div>
+<div id="ref-knuth1984literate" class="csl-entry" role="listitem">
+Knuth, D. E. (1984). Literate <span>Programming</span>. <em>The Computer Journal</em>, <em>27</em>(2), 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>
+</div>
+<div id="ref-tilley2021my" class="csl-entry" role="listitem">
+Tilley, E., &amp; Kalina, M. (2021). <span>“<span>My</span> flight arrives at 5 am, can you pick me up?”</span>: <span>The</span> gatekeeping burden of the african academic. <em>Journal of African Cultural Studies</em>, <em>33</em>(4), 538–548. <a href="https://doi.org/10.3929/ethz-b-000493677">https://doi.org/10.3929/ethz-b-000493677</a>
+</div>
+</div>
+</section>
+</section>
+<section id="whats-the-citation-style-language-csl" class="level2">
+<h2 class="anchored" data-anchor-id="whats-the-citation-style-language-csl">What’s the Citation Style Language (CSL)?</h2>
+<ul>
+<li>It’s what your citation and generated bibliography look like</li>
+<li>APA (American Psychological Association) Style, Chicago Style, IEEE Style, Vancouver Style, etc. (over 10,000 styles in <a href="https://www.zotero.org/styles">Zotero Style Repository</a>)</li>
+</ul>
+<div class="notes">
+<p>The Citation Style Language (CSL) describes the formatting of citations, notes, and bibliographies. It was created to provide an open format that can be used by any application</p>
+</div>
+</section>
+<section id="whats-the-citation-style-language-csl-1" class="level2">
+<h2 class="anchored" data-anchor-id="whats-the-citation-style-language-csl-1">What’s the Citation Style Language (CSL)?</h2>
+<p><span class="highlight-yellow">author-date:</span> Many visitors still expect a personal pick-up, despite the availability of taxi services <span class="citation" data-cites="tilley2021my">(<a href="#ref-tilley2021my" role="doc-biblioref">Tilley &amp; Kalina, 2021</a>)</span>.</p>
+<p><span class="highlight-yellow">numeric</span> Many visitors still expect a personal pick-up, despite the availability of taxi services <a href="">[1]</a>.</p>
+</section>
+<section id="why-use-a-reference-management-tool" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-a-reference-management-tool">Why use a reference management tool?</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Managing references manually:</p>
+<ul>
+<li>is a lot of work</li>
+<li>is prone to mistakes</li>
+<li>makes you lose track</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><a href="https://unsplash.com/photos/sxQz2VfoFBE"><img src="https://images.unsplash.com/photo-1541199249251-f713e6145474?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=3174&amp;q=80" class="img-fluid" style="width:100.0%" alt="Alt text"></a></p>
+</div>
+</div>
+<div class="footer">
+<p>Photo by <a href="https://unsplash.com/@christnerfurt">Christian Erfurt</a> on <a href="https://unsplash.com/photos/sxQz2VfoFBE">unsplash.com</a></p>
+</div>
+</section>
+<section id="why-use-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-zotero">Why use Zotero?</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>free</li>
+<li>open source: developed in public</li>
+<li>transparent about access to your own data</li>
+<li>cross-platform (Windows, Mac, Linux)</li>
+<li>collaboration in groups</li>
+<li>integration with word processors</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><a href="https://unsplash.com/photos/_uuRwSS1hxQ"><img src="https://images.unsplash.com/photo-1585237017125-24baf8d7406f?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=3087&amp;q=80" class="img-fluid" style="width:100.0%" alt="Alt text"></a></p>
+</div>
+</div>
+<div class="footer">
+<p>Photo by <a href="https://unsplash.com/@sincerelymedia">Sincerely Media</a> on <a href="https://unsplash.com/photos/_uuRwSS1hxQ">unsplash.com</a></p>
+</div>
+<div class="notes">
+<p><strong>Mendeley</strong></p>
+<ol type="1">
+<li>Mendeley is owned by Elsevier.</li>
+<li>It encrypts your database and makes money with your data</li>
+<li>You can only collaborate with 3 people on one project.</li>
+</ol>
+<p><strong>EndNote</strong></p>
+<ol type="1">
+<li>EndNote doesn’t come free, you need to buy a license.</li>
+<li>They also used a prioprietary citation style files that could only be opened by EndNote.</li>
+</ol>
+</div>
+</section>
+<section id="scholarly-articles-in-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="scholarly-articles-in-quarto">Scholarly Articles in Quarto</h2>
+<p>Quarto supports</p>
+<div class="incremental">
+<ul class="incremental">
+<li><p>a standardized schema for authors and affiliations that can be expressed once int the source document,</p></li>
+<li><p>the use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and</p></li>
+<li><p>outputting to <code>pdf</code>, <code>html</code>, and <code>docx</code> with custom formatting,</p></li>
+</ul>
+</div>
+<p>. . .</p>
+<p>according to the styles required for various journals,</p>
+<p>. . .</p>
+<p>and creating the LaTeX required for submission to multiple journals.</p>
+</section>
+<section id="front-matter" class="level2">
+<h2 class="anchored" data-anchor-id="front-matter">Front matter</h2>
+<p>Quarto provides a rich set of YAML metadata keys to describe the details required in the front matter of scholarly articles.</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li>title</li>
+<li>author</li>
+<li>affiliation</li>
+<li>abstract</li>
+<li>keywords</li>
+<li>citation</li>
+<li>licensing</li>
+<li>etc.</li>
+</ul>
+</div><div class="column fragment" style="width:70%;">
+<p><img src="img/lec-08/yaml-front-matter-rendered.png" class="img-fluid"></p>
+<p><img src="img/lec-08/yaml-front-matter.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="our-turn" class="level2">
+<h2 class="anchored" data-anchor-id="our-turn">Our turn</h2>
+<div class="task">
+<ul>
+<li>Open <code>scholarly-writing.qmd</code> in RStudio.</li>
+<li>Use the <span class="highlight-yellow">visual editor</span> mode</li>
+<li>Follow the instructions in the document</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="publishing" class="level1">
+<h1>Publishing</h1>
+<section id="github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="github-pages">GitHub Pages</h2>
+<ul>
+<li><a href="https://pages.github.com/">GitHub Pages</a> is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="img/lec-08/screenshot-gh-pages.png" class="img-fluid figure-img" width="1137"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="other-venues" class="level2">
+<h2 class="anchored" data-anchor-id="other-venues">Other venues</h2>
+<ul>
+<li>Quarto Pub</li>
+<li>Posit Connect</li>
+<li>Netlify</li>
+<li>Confluence</li>
+<li><a href="https://quarto.org/docs/publishing/other.html">More venues</a></li>
+</ul>
+</section>
+<section id="our-turn-1" class="level2">
+<h2 class="anchored" data-anchor-id="our-turn-1">Our turn</h2>
+<div class="task">
+<p>Let’s now publish our website to GitHub Pages.</p>
+<ul>
+<li>Open your repository on GitHub and publish your website to GitHub Pages.</li>
+</ul>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_f182809d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This course is part of the <a href="https://openwashdata.org/">openwashdata project</a> supported by the <a href="https://ethrat.ch/en/eth-domain/open-research-data/">Open Research Data Program of the ETH Board</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../code_of_conduct.html">
+<p>Code of Conduct</p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support">
+      <i class="bi bi-envelope-at" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link active" href="https://github.com/ds4owd-001" aria-current="page">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch">
+      <i class="bi bi-chat-left-dots" role="img" aria-label="Matrix">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

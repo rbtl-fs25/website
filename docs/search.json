@@ -3841,5 +3841,281 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#section",
+    "href": "slides/lec-08-quarto.html#section",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "",
+    "text": "Q: How do I successfully complete the course?\n\nYou successfully complete the course and you will receive a certificate of completion if you:\nhand in a complete capstone project report that uses a dataset of your choice by 13th February 2024\nRequired items: https://ds4owd-001.github.io/website/project/\nThis is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#learning-objectives-for-this-week",
+    "href": "slides/lec-08-quarto.html#learning-objectives-for-this-week",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nRows: 37 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): title, learning_objectives\ndbl  (1): week\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nLearners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#components",
+    "href": "slides/lec-08-quarto.html#components",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n. . .\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#literate-programming",
+    "href": "slides/lec-08-quarto.html#literate-programming",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Literate programming",
+    "text": "Literate programming\nLiterate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.\n---\ntitle: \"ggplot2 demo\"\ndate: \"5/23/2023\"\nformat: html\n---\n\n## MPG\n\nThere is a relationship between city and highway mileage.\n\n```{r}\n#| label: fig-mpg\n\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = cty, y = hwy)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#yaml",
+    "href": "slides/lec-08-quarto.html#yaml",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "YAML",
+    "text": "YAML\n“Yet Another Markup Language” or “YAML Ain’t Markup Language” is used to provide document level metadata.\n---\nkey: value\n---"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#output-options",
+    "href": "slides/lec-08-quarto.html#output-options",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Output options",
+    "text": "Output options\n---\nformat: something\n---\n. . .\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#output-option-arguments",
+    "href": "slides/lec-08-quarto.html#output-option-arguments",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Output option arguments",
+    "text": "Output option arguments\nIndentation matters!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#yaml-validation",
+    "href": "slides/lec-08-quarto.html#yaml-validation",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "YAML validation",
+    "text": "YAML validation\n\nInvalid: No space after :\n\n---\nformat:html\n---\n\nInvalid: Read as missing\n\n---\nformat:\nhtml\n---"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#yaml-validation-1",
+    "href": "slides/lec-08-quarto.html#yaml-validation-1",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "YAML validation",
+    "text": "YAML validation\nThere are multiple ways of formatting valid YAML:\n\nValid: There’s a space after :\n\nformat: html\n\nValid: format: html with selections made with proper indentation\n\nformat: \n  html:\n    toc: true"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#quarto-linting",
+    "href": "slides/lec-08-quarto.html#quarto-linting",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Quarto linting",
+    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#quarto-yaml-intelligence",
+    "href": "slides/lec-08-quarto.html#quarto-yaml-intelligence",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Quarto YAML Intelligence",
+    "text": "Quarto YAML Intelligence\nRStudio + VSCode provide rich tab-completion - start a word and tab to complete, or Ctrl + space to see all available options."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#your-turn",
+    "href": "slides/lec-08-quarto.html#your-turn",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen hello-penguins.qmd in your exercises project in RStudio on Posit Cloud.\nIn the YAML header, try Ctrl + space to see the available YAML options.\nTry out the tab-completion of any options you remember.\nYou can use the HTML reference as needed.\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#list-of-valid-yaml-fields",
+    "href": "slides/lec-08-quarto.html#list-of-valid-yaml-fields",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "List of valid YAML fields",
+    "text": "List of valid YAML fields\n\nMany YAML fields are common across various outputs\nBut also each output type has its own set of valid YAML fields and options\nDefinitive list: quarto.org/docs/reference/formats/html"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#text-formatting",
+    "href": "slides/lec-08-quarto.html#text-formatting",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Text Formatting",
+    "text": "Text Formatting\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#headings",
+    "href": "slides/lec-08-quarto.html#headings",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#links",
+    "href": "slides/lec-08-quarto.html#links",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Links",
+    "text": "Links\nThere are several types of “links” or hyperlinks.\n\n\nMarkdown\nYou can embed [named hyperlinks](https://quarto.org/),\ndirect urls like &lt;https://quarto.org/&gt;. The syntax is similar for embedding an\ninline image: \n![Penguins playing with ball](img/lec-08/penguins-quarto-ball.png).\n\nOutput\nYou can embed named hyperlinks, direct urls like https://quarto.org/. The syntax is similar for embedding an inline image: ."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#lists",
+    "href": "slides/lec-08-quarto.html#lists",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Lists",
+    "text": "Lists\nUnordered list:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nOutput\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\nOrdered list:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#quotes",
+    "href": "slides/lec-08-quarto.html#quotes",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Quotes",
+    "text": "Quotes\nMarkdown:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt; - Donald Knuth, Literate Programming\n. . .\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming\n\n\n\nKnuth (1984)"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#your-turn-1",
+    "href": "slides/lec-08-quarto.html#your-turn-1",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen markdown-syntax.qmd in RStudio.\nUse the source editor mode\nFollow the instructions in the document, then exchange one new thing you’ve learned with your neighbor."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#components-1",
+    "href": "slides/lec-08-quarto.html#components-1",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n. . .\nWeave it all together, and you have a beautiful, reproducible journal article!"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#whats-a-citation",
+    "href": "slides/lec-08-quarto.html#whats-a-citation",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Citation?",
+    "text": "What’s a Citation?\n\n\nInequality underpins waste management systems, structuring who can or cannot access services (Kalina et al., 2023).\nMany visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nIn Tilley & Kalina (2021), the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\n\n\nExplanation A citation is a reference to the source of information used in your research. Any time you directly quote, paraphrase, or summarize the essential elements of someone else’s idea in your work, an in-text citation should follow. For example, in APA style, a citation might look like this: (Tilley and Kalina, 2021).\nAnalogy Think of a citation as a signpost on a road trip. It tells you where the information came from and points you in the direction of the full details (the destination), which can be found in the reference list."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#whats-a-citation-1",
+    "href": "slides/lec-08-quarto.html#whats-a-citation-1",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Citation?",
+    "text": "What’s a Citation?\n\nInequality underpins waste management systems, structuring who can or cannot access services (Kalina et al., 2023).\nMany visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nIn Tilley & Kalina (2021), the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\n\n\n\n\n\n\nImportant: The period is after the citation."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#whats-a-reference",
+    "href": "slides/lec-08-quarto.html#whats-a-reference",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Reference?",
+    "text": "What’s a Reference?\n\ndetailed description of the source of information\nauthor’s name, title, year of publication, publisher, DOI, etc.\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677\n\nExplanation\nA reference is a detailed description of the source of information that you want to give credit to via a citation. In APA style, a reference provides comprehensive details about a source, including the author’s name, the title of the source, the year of publication, and the publisher or URL.\nAnalogy\nA reference is like a detailed map at the end of your road trip (paper). It provides all the details about the source (destination) that the citation (signpost) pointed to."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#whats-a-bibliography",
+    "href": "slides/lec-08-quarto.html#whats-a-bibliography",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Bibliography?",
+    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nKnuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#whats-the-citation-style-language-csl",
+    "href": "slides/lec-08-quarto.html#whats-the-citation-style-language-csl",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s the Citation Style Language (CSL)?",
+    "text": "What’s the Citation Style Language (CSL)?\n\nIt’s what your citation and generated bibliography look like\nAPA (American Psychological Association) Style, Chicago Style, IEEE Style, Vancouver Style, etc. (over 10,000 styles in Zotero Style Repository)\n\n\nThe Citation Style Language (CSL) describes the formatting of citations, notes, and bibliographies. It was created to provide an open format that can be used by any application"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#whats-the-citation-style-language-csl-1",
+    "href": "slides/lec-08-quarto.html#whats-the-citation-style-language-csl-1",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s the Citation Style Language (CSL)?",
+    "text": "What’s the Citation Style Language (CSL)?\nauthor-date: Many visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nnumeric Many visitors still expect a personal pick-up, despite the availability of taxi services [1]."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#why-use-a-reference-management-tool",
+    "href": "slides/lec-08-quarto.html#why-use-a-reference-management-tool",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Why use a reference management tool?",
+    "text": "Why use a reference management tool?\n\n\nManaging references manually:\n\nis a lot of work\nis prone to mistakes\nmakes you lose track\n\n\n\n\n\n\nPhoto by Christian Erfurt on unsplash.com"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#why-use-zotero",
+    "href": "slides/lec-08-quarto.html#why-use-zotero",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Why use Zotero?",
+    "text": "Why use Zotero?\n\n\n\nfree\nopen source: developed in public\ntransparent about access to your own data\ncross-platform (Windows, Mac, Linux)\ncollaboration in groups\nintegration with word processors\n\n\n\n\n\n\nPhoto by Sincerely Media on unsplash.com\n\n\nMendeley\n\nMendeley is owned by Elsevier.\nIt encrypts your database and makes money with your data\nYou can only collaborate with 3 people on one project.\n\nEndNote\n\nEndNote doesn’t come free, you need to buy a license.\nThey also used a prioprietary citation style files that could only be opened by EndNote."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#scholarly-articles-in-quarto",
+    "href": "slides/lec-08-quarto.html#scholarly-articles-in-quarto",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Scholarly Articles in Quarto",
+    "text": "Scholarly Articles in Quarto\nQuarto supports\n\n\na standardized schema for authors and affiliations that can be expressed once int the source document,\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and\noutputting to pdf, html, and docx with custom formatting,\n\n\n. . .\naccording to the styles required for various journals,\n. . .\nand creating the LaTeX required for submission to multiple journals."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#front-matter",
+    "href": "slides/lec-08-quarto.html#front-matter",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Front matter",
+    "text": "Front matter\nQuarto provides a rich set of YAML metadata keys to describe the details required in the front matter of scholarly articles.\n\n\n\ntitle\nauthor\naffiliation\nabstract\nkeywords\ncitation\nlicensing\netc."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#our-turn",
+    "href": "slides/lec-08-quarto.html#our-turn",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn",
+    "text": "Our turn\n\n\nOpen scholarly-writing.qmd in RStudio.\nUse the visual editor mode\nFollow the instructions in the document"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#github-pages",
+    "href": "slides/lec-08-quarto.html#github-pages",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nGitHub Pages is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#other-venues",
+    "href": "slides/lec-08-quarto.html#other-venues",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Other venues",
+    "text": "Other venues\n\nQuarto Pub\nPosit Connect\nNetlify\nConfluence\nMore venues"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#our-turn-1",
+    "href": "slides/lec-08-quarto.html#our-turn-1",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn",
+    "text": "Our turn\n\nLet’s now publish our website to GitHub Pages.\n\nOpen your repository on GitHub and publish your website to GitHub Pages.\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "guide/index.html#zotero-reference-management",
+    "href": "guide/index.html#zotero-reference-management",
+    "title": "Guide",
+    "section": "2 Zotero reference management",
+    "text": "2 Zotero reference management\nWe recommend using Zotero as a tool for reference management, but do not teach how to use it in this course. The guidance below will support you in setting up Zotero.\n\n2.1 Get Zotero account\n\nOpen https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n2.2 Install Zotero desktop client\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n2.3 Install the Zotero Connector for your browser\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n2.4 Setup Add-ons and the citation key format\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n2.5 Change the setting for the citekey autopin delay\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows",
+    "crumbs": [
+      "Guide"
+    ]
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html",
+    "href": "slides/lec-08-quarto.html",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "",
+    "text": "Q: How do I successfully complete the course?\n\nYou successfully complete the course and you will receive a certificate of completion if you:\nhand in a complete capstone project report that uses a dataset of your choice by 13th February 2024\nRequired items: https://ds4owd-001.github.io/website/project/\nThis is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed."
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#my-turn-md-08-exercises---quarto-documents",
+    "href": "slides/lec-08-quarto.html#my-turn-md-08-exercises---quarto-documents",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "My turn: md-08-exercises - Quarto documents",
+    "text": "My turn: md-08-exercises - Quarto documents\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-08-hello-penguins.qmd file and click on it to open it in the top left window.\nFollow along on the screen\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#your-turn-md-08-exercises",
+    "href": "slides/lec-08-quarto.html#your-turn-md-08-exercises",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn: md-08-exercises",
+    "text": "Your turn: md-08-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-08-exercises.\nIn the File Manager in the bottom right window, locate the md-08-markdown-syntax.qmd file and click on it to open it in the top left window.\nUse the source editor mode\nFollow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#take-a-break",
+    "href": "slides/lec-08-quarto.html#take-a-break",
+    "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   }
 ]

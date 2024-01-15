@@ -16,7 +16,8 @@ execute:
   freeze: auto
 params:
     week: 12
-bibliography: "../ds4owd-001.bib"
+bibliography: references.bib
+csl: apa.csl
 editor_options: 
   chunk_output_type: console
 ---
@@ -49,7 +50,7 @@ You successfully complete the course and you  will receive a certificate of comp
 
 [hand in a complete capstone project report that uses a dataset of your choice by 13th February 2024]{.highlight-yellow}
 
-Required items: https://ds4owd-001.github.io/website/project/
+Required items: <https://ds4owd-001.github.io/website/project/>
 
 This is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed.
 
@@ -67,7 +68,6 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 ```{epoxy}
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
-
 
 # Anatomy of a Quarto document
 
@@ -211,7 +211,7 @@ Lint, or a linter, is a static code analysis tool used to flag programming error
 
 <br>
 
-![](images/lint-rstudio.png){fig-alt="Linter showing message for badly formatted YAML."}
+![](img/lec-08/lint-rstudio.png){fig-alt="Linter showing message for badly formatted YAML."}
 
 ::: aside
 Source: <https://en.wikipedia.org/wiki/Lint_(software)>
@@ -223,22 +223,21 @@ RStudio + VSCode provide rich tab-completion - start a word and tab to complete,
 
 <br>
 
-![](images/quarto-tab-complete.png){fig-align="center" width="600"}
+![](img/lec-08/quarto-tab-complete.png){fig-align="center" width="600"}
 
-## Your turn
+## My turn: md-08-exercises - Quarto documents
 
 ::: task
--   Open `hello-penguins.qmd` in your exercises project in RStudio on Posit Cloud.
--   In the YAML header, try <kbd>`Ctrl + space`</kbd> to see the available YAML options.
--   Try out the tab-completion of any options you remember.
--   You can use the [HTML reference](https://quarto.org/docs/reference/formats/html.html) as needed.
+1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3.  In the File Manager in the bottom right window, locate the [`md-08-hello-penguins.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4.  Follow along on the screen
 :::
 
 ```{r}
-#| echo: false
-
-countdown(minutes = 5)
+countdown(15)
 ```
+
 
 ## List of valid YAML fields
 
@@ -316,18 +315,16 @@ There are several types of "links" or hyperlinks.
 
 ``` markdown
 You can embed [named hyperlinks](https://quarto.org/),
-direct urls like <https://quarto.org/>, and links to 
-[other places](#quarto-anatomy) in 
-the document. The syntax is similar for embedding an
+direct urls like <https://quarto.org/>. The syntax is similar for embedding an
 inline image: 
-![Penguins playing with ball](images/penguins-quarto-ball.png).
+![Penguins playing with ball](img/lec-08/penguins-quarto-ball.png).
 ```
 :::
 
 ::: {.column .fragment width="20%"}
 **Output**
 
-You can embed [named hyperlinks](https://quarto.org/), direct urls like <https://quarto.org/>, and links to [other places](#quarto-anatomy) in the document. The syntax is similar for embedding an inline image: ![Penguins playing with ball](images/penguins-quarto-ball.png){style="width:250px;"}.
+You can embed [named hyperlinks](https://quarto.org/), direct urls like <https://quarto.org/>. The syntax is similar for embedding an inline image: ![Penguins playing with ball](img/lec-08/penguins-quarto-ball.png){style="width:250px;"}.
 :::
 :::
 
@@ -400,13 +397,37 @@ Ordered list:
 @knuth1984literate
 :::
 
-## Your turn
+
+
+## Your turn: md-08-exercises
 
 ::: task
--   Open `markdown-syntax.qmd` in RStudio.
--   Use the [source editor]{.highlight-yellow} mode
--   Follow the instructions in the document, then exchange one new thing you've learned with your neighbor.
+1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3. Click [Start]{.highlight-yellow} next to [md-08-exercises]{.highlight-yellow}.
+4. In the File Manager in the bottom right window, locate the [`md-08-markdown-syntax.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+5. Use the [source editor]{.highlight-yellow} mode
+6. Follow the instructions in the document, then exchange one new thing you've learned with your neighbor.
+
 :::
+```{r}
+countdown(15)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
 
 # Anatomy of a Quarto scholarly article
 
@@ -478,8 +499,6 @@ A reference is a detailed description of the source of information that you want
 A reference is like a detailed map at the end of your road trip (paper). It provides all the details about the source (destination) that the citation (signpost) pointed to.
 
 ::: 
-
-
 
 ## What's a Bibliography?
 
@@ -616,9 +635,9 @@ Quarto provides a rich set of YAML metadata keys to describe the details require
 :::
 
 ::: {.column .fragment width="70%"}
-![](images/yaml-front-matter-rendered.png)
+![](img/lec-08/yaml-front-matter-rendered.png)
 
-![](images/yaml-front-matter.png)
+![](img/lec-08/yaml-front-matter.png)
 :::
 :::
 
@@ -638,7 +657,7 @@ Quarto provides a rich set of YAML metadata keys to describe the details require
 
 ```{r}
 #| echo: false
-knitr::include_graphics("images/screenshot-gh-pages.png")
+knitr::include_graphics("img/lec-08/screenshot-gh-pages.png")
 ```
 
 ## Other venues

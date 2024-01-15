@@ -298,6 +298,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#switch-pipe-operator" id="toc-switch-pipe-operator" class="nav-link active" data-scroll-target="#switch-pipe-operator"><span class="header-section-number">1</span> Switch pipe operator</a></li>
+  <li><a href="#zotero-reference-management" id="toc-zotero-reference-management" class="nav-link" data-scroll-target="#zotero-reference-management"><span class="header-section-number">2</span> Zotero reference management</a>
+  <ul class="collapse">
+  <li><a href="#get-zotero-account" id="toc-get-zotero-account" class="nav-link" data-scroll-target="#get-zotero-account"><span class="header-section-number">2.1</span> Get Zotero account</a></li>
+  <li><a href="#install-zotero-desktop-client" id="toc-install-zotero-desktop-client" class="nav-link" data-scroll-target="#install-zotero-desktop-client"><span class="header-section-number">2.2</span> Install Zotero desktop client</a></li>
+  <li><a href="#install-the-zotero-connector-for-your-browser" id="toc-install-the-zotero-connector-for-your-browser" class="nav-link" data-scroll-target="#install-the-zotero-connector-for-your-browser"><span class="header-section-number">2.3</span> Install the Zotero Connector for your browser</a></li>
+  <li><a href="#setup-add-ons-and-the-citation-key-format" id="toc-setup-add-ons-and-the-citation-key-format" class="nav-link" data-scroll-target="#setup-add-ons-and-the-citation-key-format"><span class="header-section-number">2.4</span> Setup Add-ons and the citation key format</a></li>
+  <li><a href="#change-the-setting-for-the-citekey-autopin-delay" id="toc-change-the-setting-for-the-citekey-autopin-delay" class="nav-link" data-scroll-target="#change-the-setting-for-the-citekey-autopin-delay"><span class="header-section-number">2.5</span> Change the setting for the citekey autopin delay</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -364,8 +372,193 @@ Figure&nbsp;2: RStudio Code Options
 </div>
 </div>
 </div>
+</section>
+<section id="zotero-reference-management" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="zotero-reference-management"><span class="header-section-number">2</span> Zotero reference management</h2>
+<p>We recommend using Zotero as a tool for reference management, but do not teach how to use it in this course. The guidance below will support you in setting up Zotero.</p>
+<section id="get-zotero-account" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="get-zotero-account"><span class="header-section-number">2.1</span> Get Zotero account</h3>
+<ol type="1">
+<li>Open <a href="https://www.zotero.org/user/login/" class="uri">https://www.zotero.org/user/login/</a></li>
+<li>Click on Register for a free account</li>
+<li>Chose username, email, and password</li>
+<li>Click Register</li>
+<li>Open your email and verify your account</li>
+</ol>
+</section>
+<section id="install-zotero-desktop-client" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="install-zotero-desktop-client"><span class="header-section-number">2.2</span> Install Zotero desktop client</h3>
+<ol type="1">
+<li>Open <a href="https://www.zotero.org/download/" class="uri">https://www.zotero.org/download/</a></li>
+<li>Download Zotero for your operating system</li>
+<li>Install Zotero</li>
+<li>Log in to your Zotero account by opening <strong>Settings -&gt; Sync</strong> and typing the Username and Password you have previously set up</li>
+<li>Click on the green refresh button in the top-right corner of the Zotero window</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-zotero-desktop-client-refresh.png" class="img-fluid figure-img" width="962"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="install-the-zotero-connector-for-your-browser" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="install-the-zotero-connector-for-your-browser"><span class="header-section-number">2.3</span> Install the Zotero Connector for your browser</h3>
+<ol type="1">
+<li>Open <a href="https://www.zotero.org/download/" class="uri">https://www.zotero.org/download/</a></li>
+<li>Download the Zotero Connector for your browser</li>
+<li>Install the Zotero Connector</li>
+<li>Log in to your Zotero account</li>
+</ol>
+</section>
+<section id="setup-add-ons-and-the-citation-key-format" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="setup-add-ons-and-the-citation-key-format"><span class="header-section-number">2.4</span> Setup Add-ons and the citation key format</h3>
+<ol type="1">
+<li>Go to <a href="https://retorque.re/zotero-better-bibtex/installation/" class="uri">https://retorque.re/zotero-better-bibtex/installation/</a></li>
+<li>Click on the latest release so you are redirected to github</li>
+<li>Find the .xpi file and right-click it. Click on <strong>Save Link As…</strong> and choose your location for saving the file.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-zotero-better-bibtex-addon.png" class="img-fluid figure-img" width="640"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Open <strong>Zotero</strong> -&gt; <strong>Tools</strong> -&gt; <strong>Add-ons</strong> -&gt; (Gear icon) -&gt; <strong>Install Add-on From File…</strong> -&gt; choose the .xpi file you have just saved</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-install-betterbibtex-addon.png" class="img-fluid figure-img" width="510"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Restart Zotero</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-restart-now.png" class="img-fluid figure-img" width="510"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li><p>Wait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.</p></li>
+<li><p>You may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.</p></li>
+<li><p>Go to <strong>Zotero</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Export</strong> -&gt; <strong>Default Format</strong> and change the default format to <strong>Better BibTeX Quick Copy: </strong></p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-install-betterbibtex-addon.png" class="img-fluid figure-img" width="510"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="9" type="1">
+<li>In the same setting window, go to <strong>Better BibTeX</strong> -&gt; <strong>Open Better BibTeX preferences…</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-betterbibtex-preferences.png" class="img-fluid figure-img" width="311"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="10" type="1">
+<li>In the <strong>Citation keys</strong> tab, use the following Citation key formula for Better BibTeX: <code>[auth:lower][year][veryshorttitle1_0:lower]</code></li>
+</ol>
+<p>The line above means that the citation key will be build from:</p>
+<ul>
+<li>First author’s last name in lowercase</li>
+<li>publication year</li>
+<li>The first word from the title in lowercase, not including the connectors such as “the” or “a”</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-citation-keys.png" class="img-fluid figure-img" width="353"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="11" type="1">
+<li>Go to <strong>Export</strong> -&gt; <strong>Quick-Copy</strong> in the Better BibTeX preferences. Select <strong>Pandoc citation</strong>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-pandoc-citation.png" class="img-fluid figure-img" width="963"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="change-the-setting-for-the-citekey-autopin-delay" class="level3" data-number="2.5">
+<h3 data-number="2.5" class="anchored" data-anchor-id="change-the-setting-for-the-citekey-autopin-delay"><span class="header-section-number">2.5</span> Change the setting for the citekey autopin delay</h3>
+<ol type="1">
+<li>Open Zotero advanced preferences (<strong>Zotero</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Advanced</strong>)</li>
+<li>Open the <strong>Config Editor</strong> under the <strong>Advanced Configuration</strong> section</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-advanced-config.png" class="img-fluid figure-img" width="308"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Click <strong>I accept the risk!</strong></li>
+<li>In the search bar, search for <strong>autopin</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-autopin.png" class="img-fluid figure-img" width="508"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Double-click into the field under <strong>Value</strong></li>
+<li>In the new window called <strong>Enter integer value</strong>, change the existing <strong>0</strong> to <strong>2</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-autopin-value-2.png" class="img-fluid figure-img" width="508"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Click <strong>OK</strong></li>
+<li>Close all setting windows</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
