@@ -2,7 +2,7 @@
 title: "Capstone Project"
 editor: source
 params:
-    week: 7
+    week: 15
 execute: 
   echo: false
   warning: false
@@ -14,81 +14,61 @@ editor_options:
 ```{r}
 library(tidyverse)
 
-grading <- read_csv(here::here("data/tbl-05-capstone-project-grading.csv")) 
+grading <- read_csv(here::here("data/tbl-08-ds4owd-001-capstone-project-elements")) 
 ```
 
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
-
-The Capstone Project report is the last assignment of the course and contributes 40% to the total grade (see [Course Overview](../index.qmd)). The final two weeks are reserved for working on the report. 
+The Capstone Project report is the final assignment for this course and a completion is required to receive a course certificate about successful participation.
 
 
 ## {{< fa bullseye >}} Learning Objectives
 
 ```{r}
+#| label: setup
 
-lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |> 
+library(epoxy)
+```
+
+```{r}
+#| label: learning-objectives
+
+lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
 ```
 
-1. `r lobj1[1]`
-
+```{epoxy}
+{1:length(lobj)}. {lobj[1:length(lobj)]}
+```
 
 ## {{< fa code >}} GitHub repository
 
-A repository for each student is established. This repository contains self-identified data that was shared in week 3 of the course. Some data cleaning steps are performed by the course instructor, so that each student has a tidy dataset to work with.
+Establishing the GitHub repository with self-identified data was part of the homework assignment of module 5, 6, and 7. 
 
-The repository further contains an empty Quarto file (report.qmd), which students must use to write their report. A list of graded items was prepared to guide students in writing the report.
+- [Module 5 - Assignment 1](../assignments/md-05/am-05-1-project-data.qmd): Identify data for your capstone project
+- [Module 7 - Assignment 2](../assignments/md-07/am-07-2-project-metadata.qmd): Get going with your capstone project
+
+It is important that these two assignments are completed before continuing with the write up of the report as outlined on this page. 
 
 ## {{< fa pen-clip >}} GitHub issue tracker
 
-The GitHub issue tracker of each student's capstone project repository is used to communicate and ask questions about the Capstone Project report.
+The GitHub issue tracker of each student's capstone project repository is used to communicate and ask questions about the Capstone Project report. Each course participant is assigned to one of the course instructors. 
 
 ## {{< fa calendar-check >}} Submission due date
 
-The due date for submission of the report is **Friday, 28th July**. Any commits after the due date will not be counted against the graded items. 
+The due date for submission of the report is **Tuesday, 13th February 2024**.
 
-## {{< fa list-check >}} Graded items
+## {{< fa list-check >}} Required items
 
-@tbl-grading-items is a detailed list of items for grading of the capstone project report are presented. The sum of points is 100 and spread over technical and intellectual items as presented in @tbl-grading-categories.
+@tbl-required-items is a detailed list of items that need to be included for a complete submission of the capstone project report. Items are categorized into technical, data, and intellectual tasks. If any item is unclear, please reach out to the course instructors.
 
 ```{r}
-#| label: tbl-grading-items
-#| tbl-cap: "List of items and points for grading of the capstone project report."
+#| label: tbl-required-items
+#| tbl-cap: "List of items to be completed for the capstone project report."
 
 grading %>% 
-  select(category, items, points) %>% 
+  select(category, items) %>% 
   knitr::kable()
 
 ```
-
-```{r}
-#| label: tbl-grading-categories
-#| tbl-cap: "Sum of points for technical and intellectual part of report."
-
-grading |> 
-  group_by(category, description) |> 
-  summarise(points = sum(points)) |> 
-  knitr::kable()
-
-```
-
-## {{< fa terminal >}} Get started
-
-1. Open the GitHub Organisation for the course: <https://github.com/cven5873-ss23/>
-2. Locate the capstone-project repository with your username `capstone-project-GITHUB-USERNAME`
-3. Open your capstone-project repository
-4. Click on the green button titled "Code" (**see screenshot below**)
-5. Click on the link in the pop-up window to your clipboard (**see screenshot below**)
- 
-![](img/clone-repo.png)
-
-6. Open the Posit Cloud workspace for the course: [(cven5837-ss23)](https://posit.cloud/spaces/381404/content/all?sort=name_asc)
-7. Open the **Content** page
-8. Click on **New Project -> New Project from Git Repository**
-9. Paste the link to your capstone-project repository from your clipboard
-10. Keep the **tick** next to **Add packages from the base project**
-11. Click the **OK** button
-12. Respond to the **Questions & Answer for the Capstone Project report** issue on the GitHub issue tracker of the repository and tag the course instructor with using the `@` sign in combination with larnsce as the username
 
