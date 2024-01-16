@@ -3,7 +3,7 @@ title: "Module 8"
 subtitle: "{{< var md-08.title >}}"
 editor: source
 params:
-    week: 8
+    week: 12
 execute: 
   echo: false
   warning: false
@@ -32,13 +32,17 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa display >}} Slides
 
-- In preparation
+[View slides in full screen](../slides/lec-08-quarto.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-08-quarto.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-08-quarto.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
 
 ## {{< fa book >}} Readings
 
-- In preparation
+1. Read [R for Data Science - Section 28 - Quarto](https://r4ds.hadley.nz/quarto)
 
 ## {{< fa code >}} Assignments
 
-- In preparation
-
+- No assignments
+- You can work on your [capstone project report](../project/)

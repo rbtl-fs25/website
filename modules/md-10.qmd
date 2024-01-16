@@ -1,9 +1,9 @@
 ---
 title: "Module 10"
-subtitle: "Final submission date of Capstone project"
+subtitle: "{{< var md-10.title >}}"
 editor: source
 params:
-    week: 14
+    week: 17
 execute: 
   echo: false
   warning: false

@@ -1,9 +1,9 @@
 ---
 title: "Module 9"
-subtitle: "Personal website development with Quarto and publication of capstone project"
+subtitle: "{{< var md-09.title >}}"
 editor: source
 params:
-    week: 12
+    week: 14
 execute: 
   echo: false
   warning: false
