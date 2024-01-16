@@ -618,7 +618,7 @@
     "href": "slides/lec-08-quarto.html#zotero-setup-guide",
     "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Zotero setup guide",
-    "text": "Zotero setup guide\n\nNot teaching how to use Zotero, but encourage you to learn and use it.\nPrepared a setup guide: https://ds4owd-001.github.io/website/guide/"
+    "text": "Zotero setup guide\n\nNot teaching how to use Zotero, but encourage you to learn and use it.\nPrepared a setup guide: https://ds4owd-001.github.io/website/guide/#zotero-reference-management"
   },
   {
     "objectID": "slides/lec-08-quarto.html#scholarly-articles-in-quarto",
@@ -667,7 +667,7 @@
     "href": "slides/lec-08-quarto.html#course-guide",
     "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Course Guide",
-    "text": "Course Guide\n\nSteps for publishing the capstone project report are described in course guide\nhttps://ds4owd-001.github.io/website/guide/"
+    "text": "Course Guide\n\nSteps for publishing the capstone project report are described in course guide\nhttps://ds4owd-001.github.io/website/guide/#publish-to-github-pages"
   },
   {
     "objectID": "slides/lec-08-quarto.html#take-a-break-1",
