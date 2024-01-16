@@ -69,7 +69,7 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
 
-# Anatomy of a Quarto document
+# Anatomy of a Quarto document {background-color="#4C326A"}
 
 ## Components
 
@@ -113,7 +113,7 @@ ggplot(mpg, aes(x = cty, y = hwy)) +
 Source: <https://en.wikipedia.org/wiki/Literate_programming>
 :::
 
-# Metadata
+# Metadata {background-color="#4C326A"}
 
 ## YAML
 
@@ -225,19 +225,17 @@ RStudio + VSCode provide rich tab-completion - start a word and tab to complete,
 
 ![](img/lec-08/quarto-tab-complete.png){fig-align="center" width="600"}
 
-## My turn: md-08-exercises - Quarto documents
+## My turn: A tour of Quarto (once again)
 
-::: task
-1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
-3.  In the File Manager in the bottom right window, locate the [`md-08-hello-penguins.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
-4.  Follow along on the screen
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
 :::
 
 ```{r}
-countdown(15)
+countdown(10)
 ```
-
 
 ## List of valid YAML fields
 
@@ -247,7 +245,7 @@ countdown(15)
 
 -   Definitive list: [quarto.org/docs/reference/formats/html](https://quarto.org/docs/reference/formats/html.html)
 
-# Text
+# Text (in Markdown) {background-color="#4C326A"}
 
 ## Text Formatting
 
@@ -416,7 +414,7 @@ countdown(15)
 
 [Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
 
-![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+![](img/lec-08/pixel-art-forest.png){width="50%" fig-alt="A pixel art representation of a tropical forest covering rolling hills. Include an ocean in the background with the sun rising on the horizon for a beautiful sunrise scene. The forest should be lush with various shades of green, dense foliage, and characteristic features of a tropical forest such as tall broadleaf trees, ferns, and flowering plants. Add some playful monkeys among the trees to enhance the vibrancy and life of the scene. The gentle slopes of the hills should lead to the ocean, creating a harmonious blend of forest and seaside scenery in pixel art style."}
 
 ```{r}
 countdown(minutes = 10)
@@ -427,7 +425,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
 
-# Anatomy of a Quarto scholarly article
+# Anatomy of a Quarto scholarly article {background-color="#4C326A"}
 
 ## Components
 
@@ -441,8 +439,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 **Weave it all together**, and you have a beautiful, reproducible journal article!
 
-
-# Four terms
+## Scholarly writing - four terms
 
 - Citation
 - Reference
@@ -594,6 +591,12 @@ Photo by [Sincerely Media](https://unsplash.com/@sincerelymedia) on [unsplash.co
 
 :::
 
+
+## Zotero setup guide
+
+- Not teaching how to use Zotero, but encourage you to learn and use it.
+- Prepared a setup guide: <https://ds4owd-001.github.io/website/guide/>
+
 ## Scholarly Articles in Quarto
 
 Quarto supports
@@ -645,34 +648,34 @@ Quarto provides a rich set of YAML metadata keys to describe the details require
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
 2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
 3. Open [md-08-exercises]{.highlight-yellow}.
-4. In the File Manager in the bottom right window, locate the [`markdown-syntax.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4. In the File Manager in the bottom right window, locate the [`scholarly-writing.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 5. Follow along on the screen using the instructions in the document.
 :::
 ```{r}
-countdown(20)
+countdown(15)
 ```
 
-# Publishing
+# Publishing {background-color="#4C326A"}
 
-## Our turn: md-08-publish-USERNAME
+## Our turn: md-08-publish-USERNAME {.smaller}
 
 [Clone the repository from GitHub]{.highlight-yellow}
 
-1. Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).
-2. Find the repository md-08-publish-USERNAME that ends with your GitHub username, and open it.
+1. Open github.com in your browser and navigate to the [GitHub organisation for the course](https://github.com/ds4owd-001/): <https://github.com/ds4owd-001/>.
+2. Find the repository md-08-publish-USERNAME that [ends with your GitHub username]{.highlight-yellow}, and open it.
 3. Click on the green "Code" button.
 4. Copy the HTTPS URL to your clipboard.
 5. Open the ds4owd workspace on [posit.cloud](https://posit.cloud/spaces/426916/content/all?sort=name_asc)
 6. Click New Project > New Project from Git Repository
 7. Paste the HTTPS URL from GitHub into the "URL of your Git Repository" field.
 8. Wait until the project is deployed.
-9. From the Files Manager in the bottom right window, open `docs` folder, then click on `index.qmd`.
-10. Let me know on the Poll that you are ready to go.
+9. From the Files Manager in the bottom right window, open [`docs`]{.highlight-yellow} folder, then click on [`index.qmd`]{.highlight-yellow}.
+10. Indicate the open Poll with ["ready to go"]{.highlight-yellow} when you are ready.
 
 ```{r}
-#| echo: false
-countdown::countdown(30)
+countdown::countdown(20)
 ```
+
 
 ## GitHub Pages
 
@@ -687,8 +690,130 @@ knitr::include_graphics("img/lec-08/screenshot-gh-pages.png")
 
 - Landing site needs to be stored as `index.qmd`
 - The `index.qmd` needs to be stored in `docs` folder
+- Example works well for a report/article as a stand-alone page
 - Quarto provides a framework and examples for more complex websites: <https://quarto.org/docs/websites/>
 
+## Course Guide
+
+- Steps for publishing the capstone project report are described in course guide
+- <https://ds4owd-001.github.io/website/guide/>
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-08/pixel-art-forest.png){width="50%" fig-alt="A pixel art representation of a tropical forest covering rolling hills. Include an ocean in the background with the sun rising on the horizon for a beautiful sunrise scene. The forest should be lush with various shades of green, dense foliage, and characteristic features of a tropical forest such as tall broadleaf trees, ferns, and flowering plants. Add some playful monkeys among the trees to enhance the vibrancy and life of the scene. The gentle slopes of the hills should lead to the ocean, creating a harmonious blend of forest and seaside scenery in pixel art style."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Capstone project {background-color="#4C326A"}
+
+## Course certificate
+
+- You will receive a course certificate if you complete the capstone project.
+- The course certificate will be issued by the openwashdata academy.
+- The certificate will highlight the time you have invested and the tools you learned to navigate.
+- The certificate can include a link to your public capstone project report (voluntary).
+- We would like to add a graduates section to <https://openwashdata.org/> and highlight course graduates (e.g. link to report, GitHub profile, LinkedIn profile, ORCID profile)
 
 
+## Submission
 
+- The submission due date is: [Tuesday, 13th February]{.highlight-yellow}.
+- You will need to work through Module 5 & Module 7 homework assignments to get started.
+- We will use the GitHub issue tracker to communicate and ask questions about the capstone project.
+- A list of required items for submission is covered on the course website: <https://ds4owd-001.github.io/website/project/>
+- If you require an extension, please reach to us via email: <ghe@mavt.ethz.ch>
+
+## Your turn: Capstone project - Read and take notes
+
+::: task
+1. Open: <https://ds4owd-001.github.io/website/project/>.
+2. Read through the page.
+3. For the list in "Required items" note down the numbers of those that are unclear to you and why.
+4. After the time is up, you will join a break-out room and discuss the unclear items with your peers.
+
+:::
+```{r}
+countdown(10)
+```
+
+## Your turn: Capstone project - Discuss unclear items
+
+::: task
+
+1. Join the break-out room
+2. Discuss with your peers the unclear items you noted down.
+
+:::
+
+```{r}
+countdown(10)
+```
+
+## Your turn: Capstone project - Share remaining unclear items
+
+::: task
+
+1. Open this repository: <https://github.com/ds4owd-001/project>
+2. Add your questions for unclear items to the issue tracker as described.
+
+:::
+
+```{r}
+countdown(10)
+```
+
+# Wrap-up {background-color="#4C326A"}
+
+## Homework assignment
+
+- No more homework assignments
+- Use the time to work on your capstone project
+
+## Student hours
+
+- Every Thursday, 2:00 to 3:30 PM (CET)
+- Final student hours: Thursday, February 08, 2:00 to 3:30 PM (CET)
+
+## Next week: openwashdata webinar {.smaller}
+
+-   **Date:** Tuesday, January 23, 2:00 - 3:00 PM (CET)
+-   **Zoom Registration**: <https://ethz.zoom.us/meeting/register/u50lce-vrD0iGN06ywPHr2gPU84Ljr_zmNAf>
+- More info: <https://openwashdata.org/pages/events/2023-01-24-webinar-data-publishing>
+
+
+```{r}
+#| tbl-colwidths: [15, 35, 15, 45]
+#| column: page
+
+agenda <- readr::read_csv("https://raw.githubusercontent.com/openwashdata/website/main/pages/events/2023-01-24-webinar-data-publishing/data/tbl-07-webinar-data-sharing-agenda.csv")
+
+agenda  |> 
+    dplyr::select(-start_time, -end_time, -speaker_link, -affiliation_link) |>
+    dplyr::relocate(time) |> 
+    dplyr::rename_with(~stringr::str_to_title(.x), everything()) |> 
+    knitr::kable()
+```
+
+## Module 09: Using AI for software development in R
+
+- **Date:** Tuesday, January 30, 2:00 - 4:30 PM (CET)
+
+## Module 10: Graduation party
+
+- **Date:** Tuesday, February 20, 2:00 - 3:00 PM (CET)
+
+## Attribution
+
+Content was re-used from a workshop hosted by [Mine Çetinkaya-Rundel](https://mine-cr.com/) at the 2023 Symposium on Data Science and Statistics and stored at <https://github.com/mine-cetinkaya-rundel/quarto-sdss>. The original content is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+## Thanks! `r emo::ji("sunflower")`
+
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-08-quarto.pdf)

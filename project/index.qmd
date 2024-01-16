@@ -67,7 +67,7 @@ The due date for submission of the report is **Tuesday, 13th February 2024**.
 #| tbl-cap: "List of items to be completed for the capstone project report."
 
 grading %>% 
-  select(category, items) %>% 
+  select(no, category, items) %>% 
   knitr::kable()
 
 ```
