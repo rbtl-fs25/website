@@ -748,7 +748,7 @@ countdown(10)
 
 ::: task
 
-1. Join the break-out room
+1. Join the break-out room.
 2. Discuss with your peers the unclear items you noted down.
 
 :::
@@ -761,7 +761,7 @@ countdown(10)
 
 ::: task
 
-1. Open this repository: <https://github.com/ds4owd-001/project>
+1. Open this repository: <https://github.com/ds4owd-001/project>.
 2. Add your questions for unclear items to the issue tracker as described.
 
 :::
