@@ -14,7 +14,7 @@
     "href": "modules/md-08.html#slides",
     "title": "Module 8",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Module 08"
     ]
@@ -24,7 +24,7 @@
     "href": "modules/md-08.html#readings",
     "title": "Module 8",
     "section": " Readings",
-    "text": "Readings\n\nIn preparation",
+    "text": "Readings\n\nRead R for Data Science - Section 28 - Quarto",
     "crumbs": [
       "Module 08"
     ]
@@ -34,7 +34,7 @@
     "href": "modules/md-08.html#assignments",
     "title": "Module 8",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
+    "text": "Assignments\n\nNo assignments\nYou can work on your capstone project report",
     "crumbs": [
       "Module 08"
     ]
@@ -4285,5 +4285,25 @@
     "title": "Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Course Guide",
     "text": "Course Guide\n\nSteps for publishing the capstone project report are described in course guide\nhttps://ds4owd-001.github.io/website/guide/"
+  },
+  {
+    "objectID": "modules/md-08.html",
+    "href": "modules/md-08.html",
+    "title": "Module 8",
+    "section": "",
+    "text": "Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website",
+    "crumbs": [
+      "Module 08"
+    ]
+  },
+  {
+    "objectID": "modules/md-08.html#learning-objectives",
+    "href": "modules/md-08.html#learning-objectives",
+    "title": "Module 8",
+    "section": "",
+    "text": "Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website",
+    "crumbs": [
+      "Module 08"
+    ]
   }
 ]

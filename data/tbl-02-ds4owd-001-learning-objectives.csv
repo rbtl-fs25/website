@@ -25,7 +25,6 @@ date,week,title,learning_objectives
 2023-12-19T00:00:00Z,8,Break,NA
 2023-12-19T00:00:00Z,8,Break,NA
 2023-12-19T00:00:00Z,8,Break,NA
-2024-01-16T00:00:00Z,12,Creating and publishing scholarly articles with Quarto and GitHub pages,Learners can use Quarto and GitHub Pages to publish an HTML file.
 2024-01-16T00:00:00Z,12,Creating and publishing scholarly articles with Quarto and GitHub pages,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor.
 2024-01-16T00:00:00Z,12,Creating and publishing scholarly articles with Quarto and GitHub pages,Learners can cross-reference figures and tables within an Quarto file.
 2024-01-16T00:00:00Z,12,Creating and publishing scholarly articles with Quarto and GitHub pages,Learners can use the GitHub pages service to publish a repository as a standalone website
