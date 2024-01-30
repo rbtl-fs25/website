@@ -1,9 +1,11 @@
 {
-  "hash": "4aea7455f7ca6e41796f6a8061a52a4c",
+  "hash": "e768759c2c148092e82197e7dd569473",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 9\"\nsubtitle: \"{{< var md-09.title >}}\"\neditor: source\nparams:\n    week: 14\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners are aware of the responsibility for using AI and critically and evaluating all its output.\n2. Learners can explain the basics of AI and its potential for improving software development workflows.\n3. Learners can explain the basics of AI and its potential for improving software development workflows.\n:::\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"{{< var md-09.title >}}\"\neditor: source\nparams:\n    week: 17\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can find resources to continue their data science journey.\n2. Learners can identify where and how to contact the openwashdata team for support with data sharing.\n3. Learners can describe the skills and compentencies they have obtained in this course.\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n",
+    "supporting": [
+      "md-09_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
