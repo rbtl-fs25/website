@@ -97,8 +97,6 @@ website:
         text: Module 08
       - href: modules/md-09.qmd
         text: Module 09
-      - href: modules/md-10.qmd
-        text: Module 10
       - text: "---"
       - href: project/index.qmd
         text: "Capstone project"

@@ -1,9 +1,9 @@
 ---
-title: "Module 9"
+title: "Module 09"
 subtitle: "{{< var md-09.title >}}"
 editor: source
 params:
-    week: 14
+    week: 17
 execute: 
   echo: false
   warning: false
@@ -30,15 +30,7 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
 
+
 ## {{< fa display >}} Slides
 
 - In preparation
-
-## {{< fa book >}} Readings
-
-- In preparation
-
-## {{< fa code >}} Assignments
-
-- In preparation
-
