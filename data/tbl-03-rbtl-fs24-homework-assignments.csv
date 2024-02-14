@@ -1,4 +1,4 @@
-date,week,title,assignment_title_short,assignment_title_long,date_due
+date,module,title,assignment_title_short,assignment_title_long,date_due
 ,1,Welcome!,Syllabus,Read the Syllabus carefully,NA
 ,1,Welcome!,GitHub,Get an account on GitHub,NA
 ,1,Welcome!,GitHub,Setup a GitHub Personal Access Token (PAT),NA
@@ -24,27 +24,27 @@ date,week,title,assignment_title_short,assignment_title_long,date_due
 ,5,Conditions & Dates & Tables,TODO,TODO: Set of exercises for practicing coding,NA
 ,6,Data types & Vectors & Pivoting,TODO,TODO: Set of exercises for practicing coding,NA
 ,6,Data types & Vectors & Pivoting,Data pivoting,NA,NA
-,7,Easter Break,NA,NA,NA
-,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA
-,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA
-,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,NA,NA
-,9,Waste Research,NA,NA,NA
-,9,Waste Research,NA,NA,NA
-,9,Waste Research,NA,NA,NA
-,10,Research Design,NA,NA,NA
-,10,Research Design,NA,NA,NA
-,10,Research Design,NA,NA,NA
-,11,Survey Design,NA,NA,NA
-,11,Survey Design,NA,NA,NA
-,11,Survey Design,NA,NA,NA
-,12,Auffahrt Break,NA,NA,NA
-,12,Auffahrt Break,NA,NA,NA
-,12,Auffahrt Break,NA,NA,NA
-,13,Pre-test and logistics,NA,NA,NA
-,14,Data collection,NA,NA,NA
-,13,Data analysis & report writing,NA,NA,NA
-,14,Project Submission Deadline,NA,NA,NA
-,15,Exam,NA,NA,NA
+,NA,Easter Break,NA,NA,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,NA,NA
+,8,Waste Research,NA,NA,NA
+,8,Waste Research,NA,NA,NA
+,8,Waste Research,NA,NA,NA
+,9,Research Design,NA,NA,NA
+,9,Research Design,NA,NA,NA
+,9,Research Design,NA,NA,NA
+,10,Survey Design,NA,NA,NA
+,10,Survey Design,NA,NA,NA
+,10,Survey Design,NA,NA,NA
+,NA,Auffahrt Break,NA,NA,NA
+,NA,Auffahrt Break,NA,NA,NA
+,NA,Auffahrt Break,NA,NA,NA
+,11,Pre-test and logistics,NA,NA,NA
+,NA,Data collection,NA,NA,NA
+,11,Data analysis & report writing,NA,NA,NA
+,NA,Project Submission Deadline,NA,NA,NA
+,12,Exam,NA,NA,NA
 ,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA

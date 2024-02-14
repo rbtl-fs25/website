@@ -1,4 +1,4 @@
-date,week,title,teaser,lecturer,learning_objectives...6,learning_objectives...7
+date,module,title,teaser,lecturer,learning_objectives...6,learning_objectives...7
 ,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can access the Posit Cloud workspace for the course.,NA
 ,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can use the Element chat to introduce themselves.,NA
 ,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can open an issue on GitHub and tag the course instructor.,NA
@@ -21,26 +21,26 @@ date,week,title,teaser,lecturer,learning_objectives...6,learning_objectives...7
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can identify different ways of accessing a vector from a dataframe,NA
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can list the four main atomic vector types in R.,NA
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.,NA
-,7,Easter Break,NA,NA,NA,NA
-,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can apply functions from the dplyr R Package to join multiple data sets.,NA
-,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software,NA
-,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can cross-reference figures and tables within an Quarto file.,NA
-,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can use the GitHub pages service to publish a repository as a standalone website.,NA
-,9,Waste Research,NA,E. Tilley,NA,NA
-,9,Waste Research,NA,E. Tilley,NA,NA
-,9,Waste Research,NA,E. Tilley,NA,NA
-,10,Research Design,NA,E. Tilley,NA,NA
-,10,Research Design,NA,E. Tilley,NA,NA
-,10,Research Design,NA,E. Tilley,NA,NA
-,11,Survey Design,NA,E. Tilley,NA,NA
-,11,Survey Design,NA,E. Tilley,NA,NA
-,11,Survey Design,NA,E. Tilley,NA,NA
-,12,Auffahrt Break,NA,NA,NA,NA
-,13,Pre-test and logistics,NA,NA,NA,NA
-,14,Data collection,NA,E. Tilley,NA,NA
-,13,Data analysis & report writing,NA,E. Tilley,NA,NA
-,14,Project Submission Deadline,NA,E. Tilley and L. Schöbitz,NA,NA
-,15,Exam,NA,All,NA,NA
+,NA,Easter Break,NA,NA,NA,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can apply functions from the dplyr R Package to join multiple data sets.,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can cross-reference figures and tables within an Quarto file.,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can use the GitHub pages service to publish a repository as a standalone website.,NA
+,8,Waste Research,NA,E. Tilley,NA,NA
+,8,Waste Research,NA,E. Tilley,NA,NA
+,8,Waste Research,NA,E. Tilley,NA,NA
+,9,Research Design,NA,E. Tilley,NA,NA
+,9,Research Design,NA,E. Tilley,NA,NA
+,9,Research Design,NA,E. Tilley,NA,NA
+,10,Survey Design,NA,E. Tilley,NA,NA
+,10,Survey Design,NA,E. Tilley,NA,NA
+,10,Survey Design,NA,E. Tilley,NA,NA
+,NA,Auffahrt Break,NA,NA,NA,NA
+,11,Pre-test and logistics,NA,NA,NA,NA
+,NA,Data collection,NA,E. Tilley,NA,NA
+,11,Data analysis & report writing,NA,E. Tilley,NA,NA
+,NA,Project Submission Deadline,NA,E. Tilley and L. Schöbitz,NA,NA
+,12,Exam,NA,All,NA,NA
 ,NA,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA,NA

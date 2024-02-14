@@ -27,7 +27,6 @@ read_sheet("1JwAXgXbzm8kgJ3YtV3tN7DHVtA4aAgQ1YofyU0wCbXA") |>
 read_sheet("1gYGtfgyMnzb6RzoN1qEWAXu6eMi688Na4492cQumxP0") |> 
   write_csv(here::here("data/tbl-03-rbtl-fs24-homework-assignments.csv"))
 
-
 ## grading conversion
 
 read_sheet("1YED8fEJxlFkU0Zth5mUFnVQ8mfwcG5AVq9MLCS2Zqr4") |> 

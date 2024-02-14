@@ -1,18 +1,18 @@
-date,week,title,lecturer,summary,location,page_link
+date,module,title,lecturer,summary,location,page_link
 2024-02-22T00:00:00Z,1,Welcome!,E. Tilley and L. Schöbitz,NA,classroom,NA
 2024-02-29T00:00:00Z,2,Data science lifecycle & Exploratory data analysis using visualization,L. Schöbitz,NA,classroom,NA
 2024-03-07T00:00:00Z,3,Data transformation with dplyr,L. Schöbitz,NA,classroom,NA
 2024-03-14T00:00:00Z,4,Data import & Data organization in spreadsheets (Google Forms and Google Sheets for survey analysis),L. Schöbitz,NA,classroom,NA
 2024-03-21T00:00:00Z,5,Conditions & Dates & Tables,L. Schöbitz,NA,classroom,NA
 2024-03-28T00:00:00Z,6,Data types & Vectors & Pivoting,L. Schöbitz,NA,classroom,NA
-2024-04-04T00:00:00Z,7,Easter Break,NA,NA,NA,NA
-2024-04-11T00:00:00Z,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,L. Schöbitz,NA,classroom,NA
-2024-04-18T00:00:00Z,9,Waste Research,E. Tilley,NA,classroom,NA
-2024-04-25T00:00:00Z,10,Research Design,E. Tilley,NA,classroom,NA
-2024-05-02T00:00:00Z,11,Survey Design,E. Tilley,NA,classroom,NA
-2024-05-09T00:00:00Z,12,Auffahrt Break,NA,NA,classroom,NA
-2024-05-16T00:00:00Z,13,Pre-test and logistics,E. Tilley,NA,classroom,NA
-2024-05-23T00:00:00Z,14,Data collection,E. Tilley,NA,city,NA
-2024-05-30T00:00:00Z,15,Data analysis & report writing,E. Tilley and L. Schöbitz,NA,classroom,NA
-2024-06-06T00:00:00Z,16,Project Submission Deadline,All,NA,NA,NA
-2024-06-13T00:00:00Z,17,Exam,All,NA,NA,NA
+2024-04-04T00:00:00Z,NA,Easter Break,NA,NA,NA,NA
+2024-04-11T00:00:00Z,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,L. Schöbitz,NA,classroom,NA
+2024-04-18T00:00:00Z,8,Waste Research,E. Tilley,NA,classroom,NA
+2024-04-25T00:00:00Z,9,Research Design,E. Tilley,NA,classroom,NA
+2024-05-02T00:00:00Z,10,Survey Design,E. Tilley,NA,classroom,NA
+2024-05-09T00:00:00Z,NA,Auffahrt Break,NA,NA,classroom,NA
+2024-05-16T00:00:00Z,11,Pre-test and logistics,E. Tilley,NA,classroom,NA
+2024-05-23T00:00:00Z,NA,Data collection,E. Tilley,NA,city,NA
+2024-05-30T00:00:00Z,12,Data analysis & report writing,E. Tilley and L. Schöbitz,NA,classroom,NA
+2024-06-06T00:00:00Z,NA,Project Submission Deadline,All,NA,NA,NA
+2024-06-13T00:00:00Z,NA,Exam,All,NA,NA,NA
