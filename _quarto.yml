@@ -8,7 +8,6 @@ website:
   description: "Website for rbtl spring term 2024"
   site-url: "https://rbtl-fs24.github.io/website/"
   repo-url: "https://github.com/rbtl-fs24/website"
-  favicon: "img/OWD-logo-18.png"
   search: false
   page-footer: 
     left: | 
@@ -40,8 +39,6 @@ website:
         text: Course Overview
       - href: calendar.qmd
         text: Course Calendar
-      - href: guide/index.qmd
-        text: Guide
       - text: "---"
       - section: "Module 01"
         href: modules/md-01.qmd
