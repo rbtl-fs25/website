@@ -1,0 +1,49 @@
+date,week,title,teaser,lecturer,learning_objectives...6,learning_objectives...7
+,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can access the Posit Cloud workspace for the course.,NA
+,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can use the Element chat to introduce themselves.,NA
+,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can open an issue on GitHub and tag the course instructor.,NA
+,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.,NA
+,1,Welcome!,NA,E. Tilley and L. Schöbitz,Learners can navigate the course website and understand the learning objectives of the course.,NA
+,2,Data science lifecycle & Exploratory data analysis using visualization,NA,L. Schöbitz,"Learners can identify four components of a Quarto file (YAML, code chunk, R code, markdown).",NA
+,2,Data science lifecycle & Exploratory data analysis using visualization,NA,L. Schöbitz,Learners can list the six elements of the data science lifecycle.,NA
+,2,Data science lifecycle & Exploratory data analysis using visualization,NA,L. Schöbitz,Learners can describe the four main aesthetic mappings that can be used to visualise data using the ggplot2 R Package.,NA
+,2,Data science lifecycle & Exploratory data analysis using visualization,NA,L. Schöbitz,Learners can control the colour scaling applied to a plot using colour as an aesthetic mapping.,NA
+,2,Data science lifecycle & Exploratory data analysis using visualization,NA,L. Schöbitz,"Learners can compare three different geoms (bar/col, histogram, point) and their use case.",NA
+,3,Data transformation with dplyr,NA,L. Schöbitz,Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot.,NA
+,4,Data import & Data organization in spreadsheets (Google Forms and Google Sheets for survey analysis),NA,L. Schöbitz,Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.,NA
+,4,Data import & Data organization in spreadsheets (Google Forms and Google Sheets for survey analysis),NA,L. Schöbitz,Learners can explain the difference between the vector class character and the vector class factor.,NA
+,4,Data import & Data organization in spreadsheets (Google Forms and Google Sheets for survey analysis),NA,L. Schöbitz,"Learners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.",NA
+,4,Data import & Data organization in spreadsheets (Google Forms and Google Sheets for survey analysis),NA,L. Schöbitz,Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.,NA
+,5,Conditions & Dates & Tables,NA,L. Schöbitz,Learners can apply functions from dplyr to change specific values of a variable in a dataframe.,NA
+,5,Conditions & Dates & Tables,NA,L. Schöbitz,Learners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.,NA
+,5,Conditions & Dates & Tables,NA,L. Schöbitz,Learners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.,NA
+,5,Conditions & Dates & Tables,NA,NA,Learners can understand the relevance a data dictionary to describe variable names in a data set.,NA
+,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can identify different ways of accessing a vector from a dataframe,NA
+,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can list the four main atomic vector types in R.,NA
+,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.,NA
+,7,Easter Break,NA,NA,NA,NA
+,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can apply functions from the dplyr R Package to join multiple data sets.,NA
+,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software,NA
+,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can cross-reference figures and tables within an Quarto file.,NA
+,8,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can use the GitHub pages service to publish a repository as a standalone website.,NA
+,9,Waste Research,NA,E. Tilley,NA,NA
+,9,Waste Research,NA,E. Tilley,NA,NA
+,9,Waste Research,NA,E. Tilley,NA,NA
+,10,Research Design,NA,E. Tilley,NA,NA
+,10,Research Design,NA,E. Tilley,NA,NA
+,10,Research Design,NA,E. Tilley,NA,NA
+,11,Survey Design,NA,E. Tilley,NA,NA
+,11,Survey Design,NA,E. Tilley,NA,NA
+,11,Survey Design,NA,E. Tilley,NA,NA
+,12,Auffahrt Break,NA,NA,NA,NA
+,13,Pre-test and logistics,NA,NA,NA,NA
+,14,Data collection,NA,E. Tilley,NA,NA
+,13,Data analysis & report writing,NA,E. Tilley,NA,NA
+,14,Project Submission Deadline,NA,E. Tilley and L. Schöbitz,NA,NA
+,15,Exam,NA,All,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA

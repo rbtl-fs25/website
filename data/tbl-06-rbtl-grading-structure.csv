@@ -1,0 +1,18 @@
+type,category,description,items,percent
+homework,homework,,10 homework submisions,20
+project,technical,,"YAML header has title, authors, table of contents that are correctly displayed in the derived output",1
+project,technical,,The report has two data visualisations,1
+project,technical,,"Data visualisations display at least two variables, and are readible in a standalone format with formatted labels (axis labels, title, legend title)",5
+project,technical,,"The report includes a table with summary statistics, and is formatted using a function taught during the course",1
+project,technical,,The two data visualisations and the table have a cross-reference in the report,1
+project,technical,,"Messages and warnings are hidden from the output, but code is shown in the output",1
+project,technical,,"A bibliography was exported from Zotero, is included in the report in APA format and referenced throughout the report",1
+project,technical,,The report contains at least three locations where inline code is used to show single number results,1
+project,technical,,The GitHub repo for the research project contains the raw data and derived data that is shown in tables and figures,2
+project,technical,,"The GitHub repo for the research project contains the following four files: README, License, Code of Conduct and Citation",1
+project,technical,,Project has at least three commits by each team member with an informative written commit message,5
+project,intellectual,,Introduction with minimum 5 references clearly frames the research question and provides justification for the work,2.5
+project,intellectual,,Methods are clearly documented and replicable,2.5
+project,intellectual,,Meaning of results are interpreted; how each Figure/Table contributes to answering the main Research Question is explained; Limitations of the data are honest and discussed,2.5
+project,intellectual,,Conclusions concisely summarize findings; Recommendations for future work are provided,2.5
+exam,technical,,All technical parts that are taught during the course,50

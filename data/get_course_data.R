@@ -1,7 +1,8 @@
 # header ------------------------------------------------------------------
 
-# This script accesses the tables stored as Google Sheets which contain
-# the course data. Each table is read and stored locally as a CSV.
+# This script accesses the tables stored as Google Sheets which contain data
+# for the proposal. Google Sheets are edited manually and data is then read
+# from here and stored locally as CSVs.
 
 # library -------------------------------------------------------------------
 
@@ -11,25 +12,34 @@ library(dplyr)
 
 # script ------------------------------------------------------------------
 
-# course-schedule
+## course schedule  --------------------------------------------------
 
-# gs4_auth()
+read_sheet("1ryvEUBH8ZRfHTfJoQOEGgOVNXdzeyVbAsvHXIZB9eZU") |> 
+  write_csv(here::here("data/tbl-00-rbtl-fs24-course-schedule-main.csv"))
 
-googlesheets4::read_sheet("18vF8LFHg3CBrcRqZZcE13G9UxgFXWmQwTnTUi_H8yGU") |> 
-  mutate(title = case_when(
-    is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),
-    TRUE ~ title
-  )) |>
-  write_csv(here::here("data/tbl-01-ds4owd-001-course-schedule.csv"))
+## learning objectives  ------------------------------
 
-# learning-objectives
+read_sheet("1JwAXgXbzm8kgJ3YtV3tN7DHVtA4aAgQ1YofyU0wCbXA") |> 
+  write_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv"))
 
-googlesheets4::read_sheet("10LvSpaCo1Hdyx0MDZKrmNXAPL-xlDyu7yMp5vroQw9Y") |> 
-  write_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv"))
+## homework assignments -----------------------------------------------
 
-# capstone project
+read_sheet("1gYGtfgyMnzb6RzoN1qEWAXu6eMi688Na4492cQumxP0") |> 
+  write_csv(here::here("data/tbl-03-rbtl-fs24-homework-assignments.csv"))
 
-googlesheets4::read_sheet("18-onMxZi0sBf-fEMR7bR5RuT4Qy4t7D-bZ12gdoNYXI") |> 
-  write_csv(here::here("data/tbl-08-ds4owd-001-capstone-project-elements"))
+
+## grading conversion
+
+read_sheet("1YED8fEJxlFkU0Zth5mUFnVQ8mfwcG5AVq9MLCS2Zqr4") |> 
+  write_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv"))
+
+## grading structure
+
+read_sheet("1cOYwKwomBUmzN5JZDtuk7rtuZ_NlWDpk30aG5iCngxg") |> 
+  write_csv(here::here("data/tbl-06-rbtl-grading-structure.csv"))
+
+
+
+
 
 
