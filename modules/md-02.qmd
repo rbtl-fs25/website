@@ -3,7 +3,7 @@ title: "Module 2"
 subtitle: "{{< var md-02.title >}}"
 editor: source
 params:
-    week: 2
+    module: 2
 execute: 
   echo: false
   warning: false
@@ -23,8 +23,8 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -35,12 +35,7 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa display >}} Slides
 
-[View slides in full screen](../slides/lec-02-visualisation.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-02-visualisation.pdf)
-
-```{=html}
-<iframe class="slide-deck" src="../slides/lec-02-visualisation.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
-```
-
+- In preparation
 
 ## {{< fa book >}} Readings
 
@@ -50,10 +45,5 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignment by Monday, 13th November 2023. 
-
--   [Assignment 1](../assignments/md-02/am-02-1-data-visualisation.qmd): Data visualisation
-
-Thank you for working through this assignment. 
-
+- In preparation
 

@@ -11,7 +11,7 @@ options(knitr.kable.NA = '')
 ```
 
 
-Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley]() and [Lars Schöbitz](https://openwashdata.org/about/lars/) are looking forward to meet you.
+Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley](https://ghe.ethz.ch/about/people/person-detail.MTc2MjI5.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) and [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) are looking forward to meet you.
 
 We will meet Thursdays at LFW C 4 from 12:15 to 15:00. 
 

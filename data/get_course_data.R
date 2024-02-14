@@ -15,6 +15,10 @@ library(dplyr)
 ## course schedule  --------------------------------------------------
 
 read_sheet("1ryvEUBH8ZRfHTfJoQOEGgOVNXdzeyVbAsvHXIZB9eZU") |> 
+  mutate(title = case_when(
+    is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),
+    TRUE ~ title
+  )) |>
   write_csv(here::here("data/tbl-00-rbtl-fs24-course-schedule-main.csv"))
 
 ## learning objectives  ------------------------------

@@ -3,7 +3,7 @@ title: "Module 1"
 subtitle: "{{< var md-01.title >}}"
 editor: source
 params:
-    week: 1
+    module: 1
 execute: 
   echo: false
   warning: false
@@ -25,8 +25,8 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -34,7 +34,6 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 ```{epoxy}
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
-
 
 ## {{< fa display >}} Slides
 

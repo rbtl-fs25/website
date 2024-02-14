@@ -12,39 +12,49 @@ course:
 
 md-01:
   title: "Welcome & get ready for the course"
-  date: "2023-10-31"
+  date: "2024-02-22"
 
 md-02:
   title: "Data science lifecycle & Exploratory data analysis using visualization"
-  date: "2023-11-07"
+  date: "2024-02-29"
   
 md-03:
   title: "Data transformation with dplyr"
-  date: "2023-11-14"
+  date: "2024-03-07"
   
 md-04:
   title: "Data import & Data organization in spreadsheets"
-  date: "2023-11-21"
+  date: "2024-03-14"
   
 md-05:
   title: "Conditions & Dates & Tables"
-  date: "2023-11-28"
+  date: "2024-03-21"
   
 md-06:
-  title: "Data types & Vectors & For Loops"
-  date: "2023-12-05"
+  title: "Data types & Vectors & Pivoting"
+  date: "2024-03-28"
   
 md-07:
-  title: "Pivoting & Joining & Metadata"
-  date: "2023-12-12"
+  title: "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages"
+  date: "2024-04-11"
   
 md-08:
-  title: "Creating and publishing scholarly articles with Quarto and GitHub pages"
-  date: "2024-01-16"
+  title: "Waste Research"
+  date: "2024-04-18"
 
 md-09:
-  title: "Graduation party of openwashdata academy"
-  date: "2024-02-20"
+  title: "Research Design"
+  date: "2024-04-25"
   
+md-10:
+  title: "Survey Design"
+  date: "2024-05-02"
   
+md-11:
+  title: "Pre-test and logistics"
+  date: "2024-05-16"
+  
+md-12:
+  title: "Data analysis & report writing"
+  date: "2024-05-30"
   

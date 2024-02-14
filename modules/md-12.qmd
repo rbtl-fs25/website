@@ -1,9 +1,9 @@
 ---
-title: "Module 09"
-subtitle: "{{< var md-09.title >}}"
+title: "Module 12"
+subtitle: "{{< var md-12.title >}}"
 editor: source
 params:
-    module: 9
+    module: 12
 execute: 
   echo: false
   warning: false
@@ -29,7 +29,6 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 ```{epoxy}
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
-
 
 ## {{< fa display >}} Slides
 

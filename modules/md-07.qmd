@@ -3,7 +3,7 @@ title: "Module 7"
 subtitle: "{{< var md-07.title >}}"
 editor: source
 params:
-    week: 7
+    module: 7
 execute: 
   echo: false
   warning: false
@@ -22,8 +22,8 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -35,11 +35,7 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa display >}} Slides
 
-[View slides in full screen](../slides/lec-07-pivoting-joining.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-07-pivoting-joining.pdf)
-
-```{=html}
-<iframe class="slide-deck" src="../slides/lec-07-pivoting-joining.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
-```
+- In preparation
 
 ## {{< fa book >}} Readings
 
@@ -47,11 +43,5 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignment by Monday, 18th December 2023. 
-
--   [Assignment 1](../assignments/md-07/am-07-1-pivoting.qmd): Pivot your data 
--   [Assignment 2](../assignments/md-07/am-07-2-project-metadata.qmd): Get going with your capstone project
-
-Thank you for working through this assignment. 
-s
+- In preparation
  

@@ -4,24 +4,21 @@ project:
 
 website:
   page-navigation: true
-  title: "data science for openwashdata"
-  description: "Website for data science for openwashdata course 001"
-  site-url: "https://ds4owd-001.github.io/website/"
-  repo-url: "https://github.com/ds4owd-001"
+  title: "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer"
+  description: "Website for rbtl spring term 2024"
+  site-url: "https://rbtl-fs24.github.io/website/"
+  repo-url: "https://github.com/rbtl-fs24/website"
   favicon: "img/OWD-logo-18.png"
   search: false
   page-footer: 
     left: | 
-        This course is part of the [openwashdata project](https://openwashdata.org/) supported by the 
-        [Open Research Data Program of the ETH Board](https://ethrat.ch/en/eth-domain/open-research-data/)
+        This course is offerd by the [Global Health Engineering group at ETH Zurich](https://ghe.ethz.ch/)
     right:
-      - text: Code of Conduct
-        href: code_of_conduct.qmd
       - icon: "envelope-at"
-        href: "mailto:ghe@mavt.ethz.ch?subject=ds4owd support"
+        href: "mailto:ghe@mavt.ethz.ch"
         aria-label: Email
       - icon: github
-        href: https://github.com/ds4owd-001
+        href: https://github.com/rbtl-fs24/website
         aria-label: GitHub
       - icon: chat-left-dots
         href: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch
@@ -29,8 +26,6 @@ website:
   
   sidebar:
     background: "#C8CEF3"
-    logo: "img/OWD-logo-20.png"
-    logo-alt: "openwashdata logo."
     pinned: true
     align: center
     style: "docked"
@@ -38,7 +33,7 @@ website:
     collapse-level: 1
     tools:
       - icon: github
-        href: https://github.com/ds4owd-001
+        href: https://github.com/rbtl-fs24/
         text: "GitHub organization"
     contents: 
       - href: index.qmd
@@ -59,47 +54,27 @@ website:
             text: "am-03: GitHub"
       - section: "Module 02"
         href: modules/md-02.qmd
-        contents:
-          - href: assignments/md-02/am-02-1-data-visualisation.qmd
-            text: "am-01: Data visualization"
       - section: "Module 03"
         href: modules/md-03.qmd
-        contents:
-          - href: assignments/md-03/am-03-1-data-transformation.qmd
-            text: "am-01: Data transformation"
-          - href: assignments/md-03/am-03-2-spreadsheet.qmd
-            text: "am-02: Spreadsheet"
       - section: "Module 04"
         href: modules/md-04.qmd
-        contents:
-          - href: assignments/md-04/am-04-1-reading.qmd
-            text: "am-01: Data organization"
       - section: "Module 05"
         href: modules/md-05.qmd
-        contents:
-          - href: assignments/md-05/am-05-1-project-data.qmd
-            text: "am-01: Project data"
       - section: "Module 06"
         href: modules/md-06.qmd
-        contents:
-          - href: assignments/md-06/am-06-1-reading.qmd
-            text: "am-01: Good enough practices"
-          - href: assignments/md-05/am-05-1-project-data.qmd
-            text: "am-02: Project data"
       - section: "Module 07"
         href: modules/md-07.qmd
-        contents:
-          - href: assignments/md-07/am-07-1-pivoting.qmd
-            text: "am-01: Pivot data"
-          - href: assignments/md-07/am-07-2-project-metadata.qmd
-            text: "am-02: Capstone project"
-      - href: modules/md-08.qmd
-        text: Module 08
-      - href: modules/md-09.qmd
-        text: Module 09
-      - text: "---"
-      - href: project/index.qmd
-        text: "Capstone project"
+      - section: "Module 08"
+        href: modules/md-08.qmd
+      - section: "Module 09"
+        href: modules/md-09.qmd
+      - section: "Module 10"
+        href: modules/md-10.qmd
+      - section: "Module 11"
+        href: modules/md-11.qmd
+      - section: "Module 12"
+        href: modules/md-12.qmd
+        
 format:
   html:
     theme:
@@ -115,7 +90,7 @@ format:
       margin-width: 300px
     include-in-header: 
         - text: |
-            <script defer data-domain="ds4owd-001.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="rbtl-fs24.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 execute: 
   freeze: auto

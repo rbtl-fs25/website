@@ -1,8 +1,8 @@
 {
-  "hash": "e768759c2c148092e82197e7dd569473",
+  "hash": "c9e45414bb3fe3bc570290e6bedbae43",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"{{< var md-09.title >}}\"\neditor: source\nparams:\n    week: 17\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can find resources to continue their data science journey.\n2. Learners can identify where and how to contact the openwashdata team for support with data sharing.\n3. Learners can describe the skills and compentencies they have obtained in this course.\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n",
+    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"{{< var md-09.title >}}\"\neditor: source\nparams:\n    module: 9\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
     "supporting": [
       "md-09_files"
     ],

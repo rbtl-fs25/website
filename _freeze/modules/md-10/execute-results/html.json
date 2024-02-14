@@ -1,9 +1,11 @@
 {
-  "hash": "111cdac821c92d9e91959fb764952a10",
+  "hash": "8bd9098d43b367cccc44c7f403bededa",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 10\"\nsubtitle: \"{{< var md-10.title >}}\"\neditor: source\nparams:\n    week: 17\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can find resources to continue their data science journey.\n2. Learners can identify where and how to contact the openwashdata team for support with data sharing.\n3. Learners can describe the skills and compentencies they have obtained in this course.\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Module 10\"\nsubtitle: \"{{< var md-10.title >}}\"\neditor: source\nparams:\n    module: 10\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "supporting": [
+      "md-10_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
