@@ -6,50 +6,24 @@ execute:
   warning: false
 ---
 
-Thank you for your interest in this course. Your course instructors: [Lars Schöbitz](https://openwashdata.org/about/lars/) & [Mian Zhong](https://openwashdata.org/about/mian/) & [Sophia Skorik](https://openwashdata.org/about/sophia/) are looking forward to meet you.
+Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley]() [Lars Schöbitz](https://openwashdata.org/about/lars/) are looking forward to meet you.
 
-We will meet on Zoom for 10 modules over 17 weeks (see Course Calendar below) at the following times:
-
--   **Start:** 31st October 2023 - 2 pm to 4:30 pm CET
--   **End:** 20th February 2024 - 2 pm to 4:30 pm CET
-
-We will use Posit Cloud infrastructure, so you do not need to install any software. You will hear from us about a week before the course start.
-
-The registration window for this course has closed, but you can fill out the following form to sign up for the next time we host this course: <https://forms.gle/AhhWpPfnbLwzp5Ai9>
-
-## Who can participate?
-
-To participate in this course, you need:
-
--   to have a stable internet connection
--   to somewhat be connected to the greater Water, Sanitation and Hygiene (WASH) sector (yes, public health, solid waste management, global health engineering, and related topics also count)
--   to commit 10 \* 2.5 hours to participate in Zoom calls
--   to commit another 2 hours/week for readings and additional exercises for practice
--   to identify a dataset of your own or your organisation that you are interested to share with the public
--   an openess to new ideas and workflows that disrupt current practice
-
-## What do we offer?
-
-This course is:
-
--   free
--   provides you with a certificate for successful completion
--   using exclusively tools that are free and open source
--   offers 1:1 coding support between lectures and beyond the course
+We will meet Thursdays at LFW C 4 from 12:15 to 15:00. 
 
 ## Course Information
 
-This course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.
+This course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves to build upon the obtained skills to apply them to their data analysis projects.
 
 Topics include:
 
 -   The data science life-cycle
 -   Data organization in spreadsheets
 -   Exploratory data analysis using visualization
--   Using AI for software development in R
 -   Concept of tidy data and data tidying
 -   Data transformation and descriptive statistics
 -   Data communication using the Quarto open-source scientific and technical publishing system
+- Theory and foundations of field-based research
+- Research Design and implications for analysis
 
 ## Learning Goals
 
@@ -57,9 +31,11 @@ Topics include:
 
 2.  Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.
 
+3. 
+
 ## Textbooks and Materials
 
-We will rely entirely on open source and open access material for this course. We will use "R for Data Science" by Hadley Wickham, and "Tidyverse Skills for Data Science" by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.
+We will rely entirely on open source and open access material for this course. We will use "R for Data Science" by Hadley Wickham as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.
 
 ## Course Calendar
 
@@ -71,28 +47,69 @@ readr::read_csv("data/tbl-01-ds4owd-001-course-schedule.csv") |>
   
 ```
 
-# Weekly Structure
+## Weekly Structure
+
+Assignment submission: Tuesdays, latest by 23:59 (late submission 24 hours later, Wednesdays, by 23:59)
 
 |               |                                            |
 |---------------|--------------------------------------------|
 | **Monday**    |                                            |
-| **Tuesday**   | Module from 2 pm to 4:30 pm CET            |
-| **Wednesday** |                                            |
-| **Thursday**  | Office hours on Zoom (2 pm to 3:30 pm CET) |
+| **Tuesday**   | Student hours from 14:00 to 16:00 (CET) |
+| **Wednesday** | Assignment submission, latest by 23:59 (CET)   |
+| **Thursday**  | Lecture from 12:15 to 15:00 (CET) |
 | **Friday**    |                                            |
 
-# Assignments
 
-**Homework assignments**: Each week will have at least one homework assignment. All assignments, but those for Week 1 are delivered as Quarto documents with instructions and some sample code. Students are required to submit their work through GitHub.
+## Performance assessment
 
-**Readings**: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class.
+The performance assessment and resulting grading scheme are shown below.
 
-**Capstone Project**: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Detailed instructions for the capstone project will be provided. The project will be delivered as Quarto documents and students are asked to submit their work through GitHub.
+-   End-of-semester exam: 50 points
+-   Compulsory continuous performance assessment: 50 points, of which
+    -   Homework assignments: 20 points (n = 10)
+    -   Capstone project: 30 points, of which 
+        - Technical parts of submitted report: 20 points (we will communicate what we expect) 
+        - Intellectual framing ofs results: 10 points (we will communicate what we expect)
+  
+Table \@ref(tab:tab-grading-conversion) shows the conversion from points to grades. Grades follow the [ETHZ's Grading System](https://ethz.ch/content/dam/ethz/main/education/rechtliches-abschluesse/grading.pdf). Points are rounded to the nearest grade, for example:
 
-# Attendance
+- 97 points = 5.75
+- 65 points = 4.50
+- 64 points = 4.25
+- 45 points = 4.00
+- 44 points = 3.50
 
-We hope you can participate in all classes. Class participation is an important component for successful completion of this course.
+```{r tab-grading-conversion, echo=FALSE}
 
-# Code of Conduct
+readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |> 
+  knitr::kable(caption = "Conversion from points to grades.") |> 
+  kableExtra::kable_styling(full_width = F)
 
-This course and the openwashdata community follows a [code of conduct](code_of_conduct.html). Please ensure that you have read it.
+```
+
+### End-of-semester exam
+
+There is a 2-hour final written exam, which assesses the technical skills taught during the course. It contains programming exercises using the R programming language. The success of the exam depends on the effort put into the compulsory continuous performance assessment. The exam receives 50 points.
+
+### Compulsory continuous performance assessment
+
+**Homework assignments**: Each week will have at least one homework assignment. Homework assignments are delivered as Quarto documents with instructions and sample code. Students are required to submit their work through GitHub. A total of ten assignments receive a pass/fail with 2 points for each assignment and 20 points in total.
+
+**Capstone Project**: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets). 
+
+Detailed instructions for the completion of the capstone project will be provided. The project report will be delivered as a Quarto documens and students are asked to submit their work through GitHub. The capstone project receives 30 points.
+
+**Readings**: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class. Readings are not graded.
+
+# Policies
+
+## Class attendance
+
+We hope that you can attend class in person. If you cannot attend a class, we expect you to contact us and inform us about it. There will be a live streaming recording that you can watch from home, however we will not accomodate for two way communication. 
+
+If you miss a class, we expect you to work through the material of the class using the recording of the live streaming.
+
+## Code of Conduct
+
+This course follows the [ETH Respect Code of Conduct](https://respekt.ethz.ch/en/code-of-conduct.html). If you have not yet read this Code of Conduct, please familiarize yourself with it. If you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: https://respekt.ethz.ch/en/contact-and-advice-services.html
+
