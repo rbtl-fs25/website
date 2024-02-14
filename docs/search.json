@@ -4,7 +4,7 @@
     "href": "calendar.html",
     "title": "Course Calendar",
     "section": "",
-    "text": "date\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Exploratory data analysis using visualization\nmodule 2\n\n\n14 November 2023\n3\nData transformation with dplyr\nmodule 3\n\n\n21 November 2023\n4\nData import & Data organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nConditions & Dates & Tables\nmodule 5\n\n\n05 December 2023\n6\nData types & Vectors & For Loops\nmodule 6\n\n\n12 December 2023\n7\nPivoting & joining data\nmodule 7\n\n\n19 December 2023\n8\nBreak\nNA\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nWork on Capstone project\nNA\n\n\n16 January 2024\n12\nCreating and publishing scholarly articles with Quarto and GitHub pages\nmodule 8\n\n\n23 January 2024\n13\nopenwashdata webinar: a data sharing workflow that may please the publishers\nNA\n\n\n30 January 2024\n14\nWork on Capstone project\nNA\n\n\n06 February 2024\n15\nWork on Capstone project\nNA\n\n\n13 February 2024\n16\nFinal submission date of Capstone project\nNA\n\n\n20 February 2024\n17\nGraduation party of openwashdata academy\nmodule 9",
+    "text": "module\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome!\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets (Google Forms and Google Sheets for survey analysis)\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\n\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\n\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\n\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\n\n06 June 2024\nProject Submission Deadline\n\n\n\n13 June 2024\nExam",
     "crumbs": [
       "Course Calendar"
     ]
@@ -2390,7 +2390,7 @@
     "href": "index.html",
     "title": "Course Overview",
     "section": "",
-    "text": "Thank you for your interest in this course. Your course instructors: Lars Schöbitz & Mian Zhong & Sophia Skorik are looking forward to meet you.\nWe will meet on Zoom for 10 modules over 17 weeks (see Course Calendar below) at the following times:\nWe will use Posit Cloud infrastructure, so you do not need to install any software. You will hear from us about a week before the course start.\nThe registration window for this course has closed, but you can fill out the following form to sign up for the next time we host this course: https://forms.gle/AhhWpPfnbLwzp5Ai9",
+    "text": "Thank you for your interest in this course. Your course instructors: Elizabeth Tilley and Lars Schöbitz are looking forward to meet you.\nWe will meet Thursdays at LFW C 4 from 12:15 to 15:00.",
     "crumbs": [
       "Course Overview"
     ]
@@ -2420,7 +2420,7 @@
     "href": "index.html#course-information",
     "title": "Course Overview",
     "section": "Course Information",
-    "text": "Course Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves using large language models (LLMs) and AI tools Perplexity and build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nUsing AI for software development in R\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system",
+    "text": "Course Information\nThis course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves to build upon the obtained skills to apply them to their data analysis projects.\nTopics include:\n\nThe data science life-cycle\nData organization in spreadsheets\nExploratory data analysis using visualization\nConcept of tidy data and data tidying\nData transformation and descriptive statistics\nData communication using the Quarto open-source scientific and technical publishing system\nTheory and foundations of field-based research\nResearch Design and implications for analysis",
     "crumbs": [
       "Course Overview"
     ]
@@ -2440,7 +2440,7 @@
     "href": "index.html#textbooks-and-materials",
     "title": "Course Overview",
     "section": "Textbooks and Materials",
-    "text": "Textbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham, and “Tidyverse Skills for Data Science” by Carrie Wright, Shannon E. Ellis, Stephanie C. Hicks and Roger D. Peng, as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.",
+    "text": "Textbooks and Materials\nWe will rely entirely on open source and open access material for this course. We will use “R for Data Science” by Hadley Wickham as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.",
     "crumbs": [
       "Course Overview"
     ]
@@ -2450,7 +2450,7 @@
     "href": "index.html#course-calendar",
     "title": "Course Overview",
     "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\ndate\nweek\ntopic\nmodule\n\n\n\n\n31 October 2023\n1\nWelcome & get ready for the course\nmodule 1\n\n\n07 November 2023\n2\nData science lifecycle & Exploratory data analysis using visualization\nmodule 2\n\n\n14 November 2023\n3\nData transformation with dplyr\nmodule 3\n\n\n21 November 2023\n4\nData import & Data organization in spreadsheets\nmodule 4\n\n\n28 November 2023\n5\nConditions & Dates & Tables\nmodule 5\n\n\n05 December 2023\n6\nData types & Vectors & For Loops\nmodule 6\n\n\n12 December 2023\n7\nPivoting & joining data\nmodule 7\n\n\n19 December 2023\n8\nBreak\nNA\n\n\n26 December 2023\n9\nBreak\nNA\n\n\n02 January 2024\n10\nBreak\nNA\n\n\n09 January 2024\n11\nWork on Capstone project\nNA\n\n\n16 January 2024\n12\nCreating and publishing scholarly articles with Quarto and GitHub pages\nmodule 8\n\n\n23 January 2024\n13\nopenwashdata webinar: a data sharing workflow that may please the publishers\nNA\n\n\n30 January 2024\n14\nUsing AI for software development in R\nmodule 9\n\n\n06 February 2024\n15\nWork on Capstone project\nNA\n\n\n13 February 2024\n16\nFinal submission date of Capstone project\nNA\n\n\n20 February 2024\n17\nGraduation party of openwashdata academy\nmodule 10",
+    "text": "Course Calendar\n\n\n\n\n\n\n\n\n\n\ndate\nmodule\ntopic\n\n\n\n\n22 February 2024\n1\nWelcome!\n\n\n29 February 2024\n2\nData science lifecycle & Exploratory data analysis using visualization\n\n\n07 March 2024\n3\nData transformation with dplyr\n\n\n14 March 2024\n4\nData import & Data organization in spreadsheets (Google Forms and Google Sheets for survey analysis)\n\n\n21 March 2024\n5\nConditions & Dates & Tables\n\n\n28 March 2024\n6\nData types & Vectors & Pivoting\n\n\n04 April 2024\n\nEaster Break\n\n\n11 April 2024\n7\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n18 April 2024\n8\nWaste Research\n\n\n25 April 2024\n9\nResearch Design\n\n\n02 May 2024\n10\nSurvey Design\n\n\n09 May 2024\n\nAuffahrt Break\n\n\n16 May 2024\n11\nPre-test and logistics\n\n\n23 May 2024\n\nData collection\n\n\n30 May 2024\n12\nData analysis & report writing\n\n\n06 June 2024\n\nProject Submission Deadline\n\n\n13 June 2024\n\nExam",
     "crumbs": [
       "Course Overview"
     ]
@@ -4178,5 +4178,45 @@
     "title": "data science for openwashdata",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "index.html#weekly-structure",
+    "href": "index.html#weekly-structure",
+    "title": "Course Overview",
+    "section": "Weekly Structure",
+    "text": "Weekly Structure\nAssignment submission: Tuesdays, latest by 23:59 (late submission 24 hours later, Wednesdays, by 23:59)\n\n\n\nMonday\n\n\n\nTuesday\nStudent hours from 14:00 to 16:00 (CET)\n\n\nWednesday\nAssignment submission, latest by 23:59 (CET)\n\n\nThursday\nLecture from 12:15 to 15:00 (CET)\n\n\nFriday",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#performance-assessment",
+    "href": "index.html#performance-assessment",
+    "title": "Course Overview",
+    "section": "Performance assessment",
+    "text": "Performance assessment\nThe performance assessment and resulting grading scheme are shown below.\n\nEnd-of-semester exam: 50 points\nCompulsory continuous performance assessment: 50 points, of which\n\nHomework assignments: 20 points (n = 10)\nCapstone project: 30 points, of which\n\nTechnical parts of submitted report: 20 points (we will communicate what we expect)\nIntellectual framing ofs results: 10 points (we will communicate what we expect)\n\n\n\nTable @ref(tab:tab-grading-conversion) shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n65 points = 4.50\n64 points = 4.25\n45 points = 4.00\n44 points = 3.50\n\n\n\n\nConversion from points to grades.\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0\n\n\n\n\n\n\n\n\nEnd-of-semester exam\nThere is a 2-hour final written exam, which assesses the technical skills taught during the course. It contains programming exercises using the R programming language. The success of the exam depends on the effort put into the compulsory continuous performance assessment. The exam receives 50 points.\n\n\nCompulsory continuous performance assessment\nHomework assignments: Each week will have at least one homework assignment. Homework assignments are delivered as Quarto documents with instructions and sample code. Students are required to submit their work through GitHub. A total of ten assignments receive a pass/fail with 2 points for each assignment and 20 points in total.\nCapstone Project: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets).\nDetailed instructions for the completion of the capstone project will be provided. The project report will be delivered as a Quarto documens and students are asked to submit their work through GitHub. The capstone project receives 30 points.\nReadings: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class. Readings are not graded.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#class-attendance",
+    "href": "index.html#class-attendance",
+    "title": "Course Overview",
+    "section": "Class attendance",
+    "text": "Class attendance\nWe hope that you can attend class in person. If you cannot attend a class, we expect you to contact us and inform us about it. There will be a live streaming recording that you can watch from home, however we will not accomodate for two way communication.\nIf you miss a class, we expect you to work through the material of the class using the recording of the live streaming.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#code-of-conduct",
+    "href": "index.html#code-of-conduct",
+    "title": "Course Overview",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nThis course follows the ETH Respect Code of Conduct. If you have not yet read this Code of Conduct, please familiarize yourself with it. If you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: https://respekt.ethz.ch/en/contact-and-advice-services.html",
+    "crumbs": [
+      "Course Overview"
+    ]
   }
 ]

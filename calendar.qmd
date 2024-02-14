@@ -8,8 +8,12 @@ toc: false
 ---
 
 ```{r}
-readr::read_csv("data/tbl-01-ds4owd-001-course-schedule.csv") |> 
-  dplyr::select(date, week, topic = title, module) |> 
+options(knitr.kable.NA = '')
+```
+
+```{r}
+readr::read_csv("data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+  dplyr::select(module, date, topic = title) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
 ```

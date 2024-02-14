@@ -6,7 +6,12 @@ execute:
   warning: false
 ---
 
-Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley]() [Lars Schöbitz](https://openwashdata.org/about/lars/) are looking forward to meet you.
+```{r}
+options(knitr.kable.NA = '')
+```
+
+
+Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley]() and [Lars Schöbitz](https://openwashdata.org/about/lars/) are looking forward to meet you.
 
 We will meet Thursdays at LFW C 4 from 12:15 to 15:00. 
 
@@ -40,8 +45,8 @@ We will rely entirely on open source and open access material for this course. W
 ## Course Calendar
 
 ```{r}
-readr::read_csv("data/tbl-01-ds4owd-001-course-schedule.csv") |> 
-  dplyr::select(date, week, topic = title, module) |> 
+readr::read_csv("data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+  dplyr::select(date, module, topic = title) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
   
