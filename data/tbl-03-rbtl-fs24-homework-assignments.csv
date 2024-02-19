@@ -1,53 +1,53 @@
-date,module,title,assignment_title_short,assignment_title_long,date_due
-,1,Welcome & get ready for the course,Syllabus,Read the Syllabus carefully,NA
-,1,Welcome & get ready for the course,GitHub,Get an account on GitHub,NA
-,1,Welcome & get ready for the course,GitHub,Setup a GitHub Personal Access Token (PAT),NA
-,1,Welcome & get ready for the course,GitHub,Clone a repository from GitHub to Posit Cloud,NA
-,1,Welcome & get ready for the course,GitHub,Introduce yourself to git,NA
-,1,Welcome & get ready for the course,GitHub,"Add, commit, push changes to a file in RStudio project on Posit Cloud",NA
-,1,Welcome & get ready for the course,GitHub,Open an issue on a repository on GitHub,NA
-,1,Welcome & get ready for the course,Posit Cloud,Log into Posit Cloud with GitHub account,NA
-,1,Welcome & get ready for the course,Posit Cloud,Join the course workspace on Posit Cloud,NA
-,1,Welcome & get ready for the course,Element,Setup Element Chat,NA
-,1,Welcome & get ready for the course,ORCID,Create your ORCID iD,NA
-,1,Welcome & get ready for the course,Zotero,Sign-up for Zotero and setup Zotero reference management software,NA
-,1,Welcome & get ready for the course,Google Workspace,Active your ETH Google workspace,NA
-,1,Welcome & get ready for the course,Pre-course survey,Complete the pre-course survey,NA
-,2,Data science lifecycle & Exploratory data analysis using visualization,Data visualisation,Prepare different plots for the gapminder dataset,NA
-,3,Data transformation with dplyr,Data transformation,Apply functions of the dplyr R package,NA
-,3,Data transformation with dplyr,Google Forms,Use Google Forms to prepare a survey with 5 questions,NA
-,4,Data import & Data organization in spreadsheets,Data import,Use googlesheets4 R package to import data from Google Form survey,NA
-,4,Data import & Data organization in spreadsheets,Data management,Setup a folder structure for raw and processed data,NA
-,4,Data import & Data organization in spreadsheets,Data cleaning,Write R code to clean imported raw data and write processed data to folder,NA
-,5,Conditions & Dates & Tables,Data management,Complete dictionary.csv,NA
-,5,Conditions & Dates & Tables,Data management,Complete README.md,NA
-,5,Conditions & Dates & Tables,TODO,TODO: Set of exercises for practicing coding,NA
-,6,Data types & Vectors & Pivoting,TODO,TODO: Set of exercises for practicing coding,NA
-,6,Data types & Vectors & Pivoting,Data pivoting,NA,NA
-,NA,Easter Break,NA,NA,NA
-,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA
-,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA
-,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,NA,NA
-,8,Waste Research,NA,NA,NA
-,8,Waste Research,NA,NA,NA
-,8,Waste Research,NA,NA,NA
-,9,Research Design,NA,NA,NA
-,9,Research Design,NA,NA,NA
-,9,Research Design,NA,NA,NA
-,10,Survey Design,NA,NA,NA
-,10,Survey Design,NA,NA,NA
-,10,Survey Design,NA,NA,NA
-,NA,Auffahrt Break,NA,NA,NA
-,NA,Auffahrt Break,NA,NA,NA
-,NA,Auffahrt Break,NA,NA,NA
-,11,Pre-test and logistics,NA,NA,NA
-,NA,Data collection,NA,NA,NA
-,11,Data analysis & report writing,NA,NA,NA
-,NA,Project Submission Deadline,NA,NA,NA
-,12,Exam,NA,NA,NA
-,NA,NA,NA,NA,NA
-,NA,NA,NA,NA,NA
-,NA,NA,NA,NA,NA
-,NA,NA,NA,NA,NA
-,NA,NA,NA,NA,NA
-,NA,NA,NA,NA,NA
+date,module,title,assignment_title_short,assignment_title_long,assignment_description,date_due
+,1,Welcome & get ready for the course,Syllabus,Read the Syllabus carefully,NA,NA
+,1,Welcome & get ready for the course,GitHub,Get an account on GitHub,NA,NA
+,1,Welcome & get ready for the course,GitHub,Setup a GitHub Personal Access Token (PAT),NA,NA
+,1,Welcome & get ready for the course,GitHub,Clone a repository from GitHub to Posit Cloud,NA,NA
+,1,Welcome & get ready for the course,GitHub,Introduce yourself to git,NA,NA
+,1,Welcome & get ready for the course,GitHub,"Add, commit, push changes to a file in RStudio project on Posit Cloud",NA,NA
+,1,Welcome & get ready for the course,GitHub,Open an issue on a repository on GitHub,NA,NA
+,1,Welcome & get ready for the course,Posit Cloud,Log into Posit Cloud with GitHub account,NA,NA
+,1,Welcome & get ready for the course,Posit Cloud,Join the course workspace on Posit Cloud,NA,NA
+,1,Welcome & get ready for the course,Element,Setup Element Chat,NA,NA
+,1,Welcome & get ready for the course,ORCID,Create your ORCID iD,NA,NA
+,1,Welcome & get ready for the course,Zotero,Sign-up for Zotero and setup Zotero reference management software,NA,NA
+,1,Welcome & get ready for the course,Google Workspace,Active your ETH Google workspace,NA,NA
+,1,Welcome & get ready for the course,Pre-course survey,Complete the pre-course survey,NA,NA
+,2,Data science lifecycle & Exploratory data analysis using visualization,Data visualisation,Prepare different plots for the gapminder dataset,NA,NA
+,3,Data transformation with dplyr,Data transformation,Apply functions of the dplyr R package,NA,NA
+,3,Data transformation with dplyr,Google Forms,Use Google Forms to prepare a survey with 5 questions,NA,NA
+,4,Data import & Data organization in spreadsheets,Data import,Use googlesheets4 R package to import data from Google Form survey,NA,NA
+,4,Data import & Data organization in spreadsheets,Data management,Setup a folder structure for raw and processed data,NA,NA
+,4,Data import & Data organization in spreadsheets,Data cleaning,Write R code to clean imported raw data and write processed data to folder,NA,NA
+,5,Conditions & Dates & Tables,Data management,Complete dictionary.csv,NA,NA
+,5,Conditions & Dates & Tables,Data management,Complete README.md,NA,NA
+,5,Conditions & Dates & Tables,TODO,TODO: Set of exercises for practicing coding,NA,NA
+,6,Data types & Vectors & Pivoting,TODO,TODO: Set of exercises for practicing coding,NA,NA
+,6,Data types & Vectors & Pivoting,Data pivoting,NA,NA,NA
+,NA,Easter Break,NA,NA,NA,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,TODO,TODO: Set of exercises for practicing coding,NA,NA
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,NA,NA,NA
+,8,Research Design,NA,NA,NA,NA
+,8,Research Design,NA,NA,NA,NA
+,8,Research Design,Manuscript selection,Select one of the 7 manuscripts provided,"With your partner, choose a paper to work with.  Ideally, we will need 2 pairs (i.e. 4 people) per paper.  One pair will be responsible for presenting the paper as if they are the ""authors"":  the highlight the key findings, the importance, and the relevance of the work.  The other pair will act as ""reviewers"" and will present what they feel are the biggest shortcomings, limitations and oversights, along with recommendations for how to improve the work.",NA
+,9,Waste Research,Manuscript presentation,"Present your defence or critique of the manuscript selected, in partners",in class,NA
+,9,Waste Research,NA,NA,NA,NA
+,9,Waste Research,NA,NA,NA,NA
+,10,Survey Design,NA,NA,NA,NA
+,10,Survey Design,NA,NA,NA,NA
+,10,Survey Design,NA,NA,NA,NA
+,NA,Auffahrt Break,NA,NA,NA,NA
+,NA,Auffahrt Break,NA,NA,NA,NA
+,NA,Auffahrt Break,NA,NA,NA,NA
+,11,Pre-test and logistics,NA,NA,NA,NA
+,NA,Data collection,NA,NA,NA,NA
+,11,Data analysis & report writing,NA,NA,NA,NA
+,NA,Project Submission Deadline,NA,NA,NA,NA
+,12,Exam,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA
+,NA,NA,NA,NA,NA,NA

@@ -2,10 +2,8 @@
   "hash": "8bd9098d43b367cccc44c7f403bededa",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 10\"\nsubtitle: \"{{< var md-10.title >}}\"\neditor: source\nparams:\n    module: 10\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
-    "supporting": [
-      "md-10_files"
-    ],
+    "markdown": "---\ntitle: \"Module 10\"\nsubtitle: \"{{< var md-10.title >}}\"\neditor: source\nparams:\n    module: 10\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can explain the differences between and limitations of each data type\n2. Learners can devise a feasible research question that can be answered using the skills they have developed\n3. Learners can create a survey tool with a variety of variable types to answer their reserach question\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

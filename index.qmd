@@ -13,7 +13,7 @@ options(knitr.kable.NA = '')
 
 Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley](https://ghe.ethz.ch/about/people/person-detail.MTc2MjI5.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) and [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) are looking forward to meet you.
 
-We will meet Thursdays at LFW C 4 from 12:15 to 15:00. 
+[We will meet Thursdays at LFW C 4 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-peach}
 
 ## Course Information
 
@@ -30,13 +30,16 @@ Topics include:
 - Theory and foundations of field-based research
 - Research Design and implications for analysis
 
+
 ## Learning Goals
 
 1.  Be able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.
 
 2.  Learn to use the Quarto file format and the RStudio IDE visual editing mode to produce scholarly documents with citations, footnotes, cross-references, figures, and tables.
 
-3. 
+3. Be able to design a questionnaire to collect information that can be analysed to answer a waste-related research question that is relevant for Zurich.
+
+4. Understand the main challenges associated with managing different types of waste, and how they differ between Europe and Africa.
 
 ## Textbooks and Materials
 

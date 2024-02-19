@@ -2,7 +2,7 @@
   "hash": "3cc9de49ed482c2b8c9eb3e475575441",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 11\"\nsubtitle: \"{{< var md-11.title >}}\"\neditor: source\nparams:\n    module: 11\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "markdown": "---\ntitle: \"Module 11\"\nsubtitle: \"{{< var md-11.title >}}\"\neditor: source\nparams:\n    module: 11\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback\n2. Learners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations\n3. Learners can produce an attractive report using Quarto\n4. Learners can manipulate and analyse their data to answer their stated research questions\n5. Learners can critically assess their success in answering their stated research questions\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

@@ -59,7 +59,9 @@ library(epoxy)
 
 2.  Learn to use the [Quarto file format]{.highlight-yellow} and the RStudio IDE visual editing mode to produce [documents]{.highlight-yellow} with citations, footnotes, cross-references, figures, and tables.
 
-3.
+3. Be able to design a questionnaire to collect information that can be analysed to answer a waste-related research question that is relevant for Zurich.
+
+4. Understand the main challenges associated with managing different types of waste, and how they differ between Europe and Africa.
 
 ## Your turn: About you
 

@@ -3,9 +3,7 @@
   "result": {
     "engine": "knitr",
     "markdown": "---\ntitle: \"Module 4\"\nsubtitle: \"{{< var md-04.title >}}\"\neditor: source\nparams:\n    module: 4\nexecute: \n  echo: false\n  warning: false\nbibliography: references.bib\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\n2. Learners can explain the difference between the vector class character and the vector class factor.\n3. Learners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\n4. Learners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\n:::\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 3 - Workflow: code style](https://r4ds.hadley.nz/workflow-style)  \n\n## {{< fa code >}} Assignments\n\n\n- In preparation\n",
-    "supporting": [
-      "md-04_files"
-    ],
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

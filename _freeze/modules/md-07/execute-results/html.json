@@ -1,11 +1,9 @@
 {
-  "hash": "a3506f1bafafa3fea468ec2480331239",
+  "hash": "06843829f4186734bc41e2546ee60fb6",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 7\"\nsubtitle: \"{{< var md-07.title >}}\"\neditor: source\nparams:\n    module: 7\nexecute: \n  echo: false\n  warning: false\nbibliography: ../ds4owd-001.bib\n---\n\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply functions from the dplyr R Package to join multiple data sets.\n2. Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\n3. Learners can cross-reference figures and tables within an Quarto file.\n4. Learners can use the GitHub pages service to publish a repository as a standalone website.\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 20 - Joins](https://r4ds.hadley.nz/joins)\n\n## {{< fa code >}} Assignments\n\n- In preparation\n \n",
-    "supporting": [
-      "md-07_files"
-    ],
+    "markdown": "---\ntitle: \"Module 7\"\nsubtitle: \"{{< var md-07.title >}}\"\neditor: source\nparams:\n    module: 7\nexecute: \n  echo: false\n  warning: false\nbibliography: ../ds4owd-001.bib\n---\n\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can apply functions from the dplyr R Package to join multiple data sets.\n2. Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\n3. Learners can cross-reference figures and tables within an Quarto file.\n4. Learners can use the GitHub pages service to publish a repository as a standalone website.\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n \n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

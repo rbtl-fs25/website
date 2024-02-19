@@ -39,7 +39,7 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa book >}} Readings
 
-1. Read [R for Data Science - Section 20 - Joins](https://r4ds.hadley.nz/joins)
+- In preparation
 
 ## {{< fa code >}} Assignments
 

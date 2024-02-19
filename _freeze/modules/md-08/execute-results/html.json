@@ -1,11 +1,9 @@
 {
-  "hash": "7611a0d6e516aafedcbba7da8c9a5425",
+  "hash": "3f00d6b287eea2674a9dd0a7ba8279e5",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 8\"\nsubtitle: \"{{< var md-08.title >}}\"\neditor: source\nparams:\n    module: 8\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n1. Read [R for Data Science - Section 28 - Quarto](https://r4ds.hadley.nz/quarto)\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
-    "supporting": [
-      "md-08_files"
-    ],
+    "markdown": "---\ntitle: \"Module 8\"\nsubtitle: \"{{< var md-08.title >}}\"\neditor: source\nparams:\n    module: 8\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can explain the 3 main types of research designs used in RBTL\n2. Learners can explain the pros and cons of each research design type as they relate to answering a research question\n3. Learners understand the methods used to read a scientific manuscript and are prepared to put their knowledge into practice\n:::\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

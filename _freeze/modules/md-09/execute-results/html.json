@@ -2,10 +2,8 @@
   "hash": "c9e45414bb3fe3bc570290e6bedbae43",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"{{< var md-09.title >}}\"\neditor: source\nparams:\n    module: 9\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
-    "supporting": [
-      "md-09_files"
-    ],
+    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"{{< var md-09.title >}}\"\neditor: source\nparams:\n    module: 9\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can succinctly summarize the research gap, research questions, methods and results of a scientific manuscript\n2. Learners can identify and debate limitations and shortcomings in published manuscripts\n3. Learners can compare and contrast challenges with waste management between the minority and majority worlds\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

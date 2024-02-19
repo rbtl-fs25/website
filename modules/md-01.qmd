@@ -39,22 +39,12 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 - In preparation
 
-[View slides in full screen](../slides/lec-01-welcome.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-01-welcome.pdf)
-
-```{=html}
-<iframe class="slide-deck" src="../slides/lec-01-welcome.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
-```
-
 ## {{< fa book >}} Readings
 
 - Read the [Course Overview](../overview.html).
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignments by Wednesday, 28th February 2024. They are a pre-requisite for the second module.
-
--   [Assignment 1](../assignments/md-01/am-01-1-posit.qmd): In class: Working with R, RStudio on Posit Cloud
--   [Assignment 2](../assignments/md-01/am-01-2-element.qmd): Homework: Communication in a chat
--   [Assignment 3](../assignments/md-01/am-01-3-github.qmd): Homework: Interaction with GitHub
+- In preparation
 
 Thank you for working through these assignments. 
