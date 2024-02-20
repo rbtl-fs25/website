@@ -13,7 +13,7 @@ options(knitr.kable.NA = '')
 
 Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley](https://ghe.ethz.ch/about/people/person-detail.MTc2MjI5.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) and [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) are looking forward to meet you.
 
-[We will meet Thursdays at 	CAB G 59 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-yellow}
+[We will meet Thursdays at CAB G 59 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-peach}
 
 ## Course Information
 
