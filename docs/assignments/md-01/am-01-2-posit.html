@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research Beyond the Lab: Open Science and Research Methods for a Global Engineer - Communication in a chat</title>
+<title>Research Beyond the Lab: Open Science and Research Methods for a Global Engineer - Working with R, RStudio on Posit Cloud</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../../assignments/md-01/am-01-4-github.html" rel="next">
+<link href="../../assignments/md-01/am-01-1-github.html" rel="prev">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -34,8 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -66,9 +66,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Research Beyond the Lab: Open Science and Research Methods for a Global Engineer
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-01.html">Module 01</a></li><li class="breadcrumb-item"><a href="../../assignments/md-01/am-01-2-posit.html">am-02: Posit Cloud</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -110,8 +108,33 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Module 01</span></span>
+      <div class="sidebar-item-container"> 
+            <a href="../../modules/md-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 01</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-01/am-01-1-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: GitHub Account</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-01/am-01-2-posit.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">am-02: Posit Cloud</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-01/am-01-4-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-03: GitHub PAT</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
@@ -167,18 +190,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-join-the-chat" id="toc-step-1-join-the-chat" class="nav-link active" data-scroll-target="#step-1-join-the-chat">Step 1: Join the chat</a></li>
-  <li><a href="#step-2-verify-element-session" id="toc-step-2-verify-element-session" class="nav-link" data-scroll-target="#step-2-verify-element-session">Step 2: Verify element session</a></li>
-  <li><a href="#step-3-download-element-optional" id="toc-step-3-download-element-optional" class="nav-link" data-scroll-target="#step-3-download-element-optional">Step 3: Download Element (optional)</a></li>
+  <li><a href="#log-into-posit-cloud-with-github-account" id="toc-log-into-posit-cloud-with-github-account" class="nav-link active" data-scroll-target="#log-into-posit-cloud-with-github-account">Log into Posit Cloud with GitHub account</a></li>
+  <li><a href="#join-the-course-workspace-on-posit-cloud" id="toc-join-the-course-workspace-on-posit-cloud" class="nav-link" data-scroll-target="#join-the-course-workspace-on-posit-cloud">Join the course workspace on Posit Cloud</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-01.html">Module 01</a></li><li class="breadcrumb-item"><a href="../../assignments/md-01/am-01-2-posit.html">am-02: Posit Cloud</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Communication in a chat</h1>
+<h1 class="title">Working with R, RStudio on Posit Cloud</h1>
 </div>
 
 
@@ -195,109 +217,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels.</p>
-<p>We want to communicate through a chat client called Element, providing the open source, free-of-charge Slack-like experience.</p>
-<p>On Element, you can reach out to the course instructors and other students any time, and we have a way to stay in touch beyond the course itself.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Struggeling to setup Element?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><i class="fa-solid fa-envelope-circle-check" aria-label="envelope-circle-check"></i> If we can support you to setup the chat, get in touch with us via <a href="mailto:ghe@mavt.ethz.ch?subject=ds4owd support: element" target="_blank">Email</a> and we will schedule a call for a walk through.</p>
-</div>
-</div>
-<p>To set it up, please follow the steps below:</p>
-<section id="step-1-join-the-chat" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-join-the-chat">Step 1: Join the chat</h2>
+<section id="log-into-posit-cloud-with-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="log-into-posit-cloud-with-github-account">Log into Posit Cloud with GitHub account</h3>
+<p>Here are the instructions to login to Posit Cloud using a GitHub account:</p>
 <ol type="1">
-<li><p>Open the following link in your browser: <a href="https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch" class="uri">https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch</a></p></li>
-<li><p>Click on <span class="highlight-peach">Continue</span></p></li>
+<li>Go to the Posit Cloud Sign Up page: <a href="https://login.posit.cloud/register" class="uri">https://login.posit.cloud/register</a></li>
+<li>Click on the <strong>“Sign Up with GitHub”</strong> button.</li>
+<li>Enter your GitHub username and password when prompted.</li>
+<li>If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.</li>
+<li>Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.</li>
 </ol>
-<p><img src="images/setup-element-01.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Click on <span class="highlight-peach">Sign Up</span></li>
-</ol>
-<p><img src="images/setup-element-02.png" class="img-fluid"></p>
-<ol start="4" type="1">
-<li>Click on the <span class="highlight-peach">GitHub icon</span></li>
-</ol>
-<p><img src="images/setup-element-03.png" class="img-fluid"></p>
-<ol start="5" type="1">
-<li>Click on <span class="highlight-peach">Continue</span></li>
-</ol>
-<p><img src="images/setup-element-04.png" class="img-fluid"></p>
-<ol start="6" type="1">
-<li>Click on the <span class="highlight-peach">X</span> to close the dialogue</li>
-</ol>
-<p><img src="images/setup-element-05.png" class="img-fluid"></p>
-<ol start="7" type="1">
-<li>Click on <span class="highlight-peach">“I’ll verify later”</span> to close the dialogue</li>
-</ol>
-<p><img src="images/setup-element-06.png" class="img-fluid"> 8. Click on <span class="highlight-peach">“Join the Discussion”</span></p>
-<p><img src="images/setup-element-07.png" class="img-fluid"> 9. Leave a message</p>
-<p>You are now in the lobby of the openwashdata community. <span class="highlight-peach">Leave a message</span> to introduce yourself. You will be added to the room ds4owd-001 that is specifically for this course.</p>
-<p><img src="images/setup-element-08.png" class="img-fluid"></p>
+<p>Note that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.</p>
 </section>
-<section id="step-2-verify-element-session" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-verify-element-session">Step 2: Verify element session</h2>
-<ol type="1">
-<li>Click on the icon in the <span class="highlight-peach">top left corner</span></li>
-</ol>
-<p><img src="images/verify-element-session-01.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>Click on <span class="highlight-peach">All settings</span></li>
-</ol>
-<p><img src="images/verify-element-session-02.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li>Select Sessions in the navigation pane on the left, click Verify session</li>
-</ol>
-<p><img src="images/verify-element-session-03.png" class="img-fluid"> 4. Click <span class="highlight-peach">Proceed with reset</span></p>
-<p><img src="images/verify-element-session-04.png" class="img-fluid"> 5. Select Generate a Security Key and click <span class="highlight-peach">Continue</span></p>
-<p><img src="images/verify-element-session-05.png" class="img-fluid"> 6. Click <span class="highlight-peach">Download</span> and save downloaded security-key.txt securely</p>
-<p><img src="images/verify-element-session-06.png" class="img-fluid"> 7. Click <span class="highlight-peach">Continue</span></p>
-<p><img src="images/verify-element-session-07.png" class="img-fluid"></p>
-<ol start="8" type="1">
-<li>You have succesfully verified your session</li>
-</ol>
-<p>You can download Element as an app for your computer and also your phone. If you proceed to do this, then use the stored security key to verify those additional sessions.</p>
-<p><img src="images/verify-element-session-08.png" class="img-fluid"></p>
-</section>
-<section id="step-3-download-element-optional" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-download-element-optional">Step 3: Download Element (optional)</h2>
-<ol type="1">
-<li>Download and install Element: https://element.io/download</li>
-</ol>
-<p>It’s available on Windows, Linux and Mac OS, as well as Android and iPhone.</p>
-<ol start="2" type="1">
-<li><p>Open the Element App on your device</p></li>
-<li><p>Click on Sign In</p></li>
-<li><p>Sign in with GitHub</p></li>
-<li><p>Click on <span class="highlight-peach">Verify with Security Key</span></p></li>
-</ol>
-<p><img src="images/verify-element-app-session-01.png" class="img-fluid"> 6. Copy/paste the Security key from the downloaded <code>security-key.txt</code> you received when setting up the app in your browser. And hit Continue.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-I cannot click Continue
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>If a click on Continue does now work with your mouse, then hit the Return (Enter) key on your keyboard.</p>
-</div>
-</div>
-</div>
-<p><img src="images/verify-element-app-session-02.png" class="img-fluid"> 7. You have successfully verified your device</p>
-<p><img src="images/verify-element-app-session-03.png" class="img-fluid"></p>
+<section id="join-the-course-workspace-on-posit-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="join-the-course-workspace-on-posit-cloud">Join the course workspace on Posit Cloud</h3>
+<ul>
+<li>Open this link: &lt;&gt;</li>
+</ul>
 
 
 </section>
@@ -690,6 +626,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../assignments/md-01/am-01-1-github.html" class="pagination-link  aria-label=" am-01:="" github="" account"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">am-01: GitHub Account</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../assignments/md-01/am-01-4-github.html" class="pagination-link" aria-label="am-03: GitHub PAT">
+        <span class="nav-page-text">am-03: GitHub PAT</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -37,7 +37,12 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa display >}} Slides
 
-- In preparation
+[View slides in full screen](../slides/lec-01-welcome.html) | [Download slides as PDF](https://github.com/rbtl-fs24/website/raw/main/slides/lec-01-welcome.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-01-welcome.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
 
 ## {{< fa book >}} Readings
 
@@ -45,6 +50,12 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa code >}} Assignments
 
-- In preparation
+Please complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.
+
+
+-   [Assignment 1](../assignments/md-01/am-01-1-github.qmd): In class: Get an account for GitHub
+-   [Assignment 2](../assignments/md-01/am-01-2-posit.qmd): In class: Working with R, RStudio on Posit Cloud
+-   [Assignment 3](../assignments/md-01/am-01-4-github.qmd): Homework: Interaction with GitHub
+-   Assignment 4: Complete the pre-course survey: TODO
 
 Thank you for working through these assignments. 

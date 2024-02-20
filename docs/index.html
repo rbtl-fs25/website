@@ -109,8 +109,33 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Module 01</span></span>
+      <div class="sidebar-item-container"> 
+            <a href="./modules/md-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 01</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./assignments/md-01/am-01-1-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-01: GitHub Account</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./assignments/md-01/am-01-2-posit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-02: Posit Cloud</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./assignments/md-01/am-01-4-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-03: GitHub PAT</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
@@ -179,6 +204,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#policies" id="toc-policies" class="nav-link" data-scroll-target="#policies">Policies</a>
   <ul class="collapse">
   <li><a href="#class-attendance" id="toc-class-attendance" class="nav-link" data-scroll-target="#class-attendance">Class attendance</a></li>
+  <li><a href="#ai-policy" id="toc-ai-policy" class="nav-link" data-scroll-target="#ai-policy">AI Policy</a></li>
   <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
   </ul></li>
   </ul>
@@ -207,7 +233,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Thank you for your interest in this course. Your course instructors: <a href="https://ghe.ethz.ch/about/people/person-detail.MTc2MjI5.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html">Elizabeth Tilley</a> and <a href="https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html">Lars Schöbitz</a> are looking forward to meet you.</p>
-<p><span class="highlight-peach">We will meet Thursdays at LFW C 4 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.</span></p>
+<p><span class="highlight-yellow">We will meet Thursdays at CAB G 59 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.</span></p>
 <section id="course-information" class="level2">
 <h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
 <p>This course provides learners with skills in using the collection of R tidyverse packages as a tool for data analysis, reproducible research and communication. Lectures will be delivered through participatory live coding for students to learn how to write code in code-along exercises. We will use publicly available data related to waste management, air quality, and sanitation. Students will learn how to help themselves to build upon the obtained skills to apply them to their data analysis projects.</p>
@@ -341,7 +367,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="weekly-structure" class="level2">
 <h2 class="anchored" data-anchor-id="weekly-structure">Weekly Structure</h2>
-<p>Assignment submission: Tuesdays, latest by 23:59 (late submission 24 hours later, Wednesdays, by 23:59)</p>
+<p>Assignment submission: Wednesdays, latest by 23:59.</p>
 <table class="table">
 <tbody>
 <tr class="odd">
@@ -378,22 +404,27 @@ ul.task-list li input[type="checkbox"] {
 <li>Capstone project: 30 points, of which
 <ul>
 <li>Technical parts of submitted report: 20 points (we will communicate what we expect)</li>
-<li>Intellectual framing ofs results: 10 points (we will communicate what we expect)</li>
+<li>Intellectual framing of results: 10 points (we will communicate what we expect)</li>
 </ul></li>
 </ul></li>
 </ul>
-<p>Table @ref(tab:tab-grading-conversion) shows the conversion from points to grades. Grades follow the <a href="https://ethz.ch/content/dam/ethz/main/education/rechtliches-abschluesse/grading.pdf">ETHZ’s Grading System</a>. Points are rounded to the nearest grade, for example:</p>
+<p>Table <a href="#tbl-grading-conversion" class="quarto-xref">Table&nbsp;1</a> shows the conversion from points to grades. Grades follow the <a href="https://ethz.ch/content/dam/ethz/main/education/rechtliches-abschluesse/grading.pdf">ETHZ’s Grading System</a>. Points are rounded to the nearest grade, for example:</p>
 <ul>
 <li>97 points = 5.75</li>
-<li>65 points = 4.50</li>
-<li>64 points = 4.25</li>
+<li>93 points = 5.75</li>
+<li>92 points = 5.50</li>
 <li>45 points = 4.00</li>
 <li>44 points = 3.50</li>
 </ul>
 <div class="cell">
+<div id="tbl-grading-conversion" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grading-conversion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Conversion from points to grades.
+</figcaption>
+<div aria-describedby="tbl-grading-conversion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Conversion from points to grades.</caption>
+<table class="table do-not-create-environment cell table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">grade</th>
@@ -463,6 +494,9 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
+</figure>
+</div>
+</div>
 <section id="end-of-semester-exam" class="level3">
 <h3 class="anchored" data-anchor-id="end-of-semester-exam">End-of-semester exam</h3>
 <p>There is a 2-hour final written exam, which assesses the technical skills taught during the course. It contains programming exercises using the R programming language. The success of the exam depends on the effort put into the compulsory continuous performance assessment. The exam receives 50 points.</p>
@@ -482,9 +516,21 @@ ul.task-list li input[type="checkbox"] {
 <p>We hope that you can attend class in person. If you cannot attend a class, we expect you to contact us and inform us about it. There will be a live streaming recording that you can watch from home, however we will not accomodate for two way communication.</p>
 <p>If you miss a class, we expect you to work through the material of the class using the recording of the live streaming.</p>
 </section>
+<section id="ai-policy" class="level2">
+<h2 class="anchored" data-anchor-id="ai-policy">AI Policy</h2>
+<p>We expect you to use AI tools in this class (e.g.&nbsp;perplexity.ai, ChatGPT, etc.). Some assignments may require it. Learning to us AI is an emerging skill that we want you to embrace.</p>
+<p>Be aware of the limits of these tools:</p>
+<ul>
+<li><p>Minimum effort prompts will yield low quality results. Refine your prompts to get good outcomes. This will take work.</p></li>
+<li><p>Don’t trust anything it says. Unless you know the answer or know how to check it, assume it is wrong. You will be responsible for any errors or omissions provided by the tool. It works best for topics you understand.</p></li>
+<li><p>AI is a tool that you need to acknowledge using. Include links to your prompts and explain how you used AI to complete an assignment. Failure to do so is in violation of academic integrity policies.</p></li>
+<li><p>Be thoughtful about when this tool is useful. Don’t use it if it isn’t appropriate for the case of circumstance.</p></li>
+</ul>
+<p><a href="https://www.oneusefulthing.org/p/my-class-required-ai-heres-what-ive?utm_source=profile&amp;utm_medium=reader2">This AI Policy was adapted from Ethan Mollick</a></p>
+</section>
 <section id="code-of-conduct" class="level2">
 <h2 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h2>
-<p>This course follows the <a href="https://respekt.ethz.ch/en/code-of-conduct.html">ETH Respect Code of Conduct</a>. If you have not yet read this Code of Conduct, please familiarize yourself with it. If you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: https://respekt.ethz.ch/en/contact-and-advice-services.html</p>
+<p>This course follows the <a href="https://respekt.ethz.ch/en/code-of-conduct.html">ETH Respect Code of Conduct</a>. If you have not yet read this Code of Conduct, please familiarize yourself with it. If you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: <a href="https://respekt.ethz.ch/en/contact-and-advice-services.html" class="uri">https://respekt.ethz.ch/en/contact-and-advice-services.html</a></p>
 
 
 </section>

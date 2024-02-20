@@ -58,5 +58,6 @@ If you have missed Module 01 and you are completing this assignment as part of y
 :::
 
 ```{r}
+#| echo: false
 knitr::include_graphics(here::here("slides/img/lec-01/github-notifications-inbox.png"))
 ```

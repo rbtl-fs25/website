@@ -47,8 +47,8 @@ website:
             text: "am-01: GitHub Account"
           - href: assignments/md-01/am-01-2-posit.qmd
             text: "am-02: Posit Cloud"
-            
-            
+          - href: assignments/md-01/am-01-4-github.qmd
+            text: "am-03: GitHub PAT"
       - section: "Module 02"
         href: modules/md-02.qmd
       - section: "Module 03"

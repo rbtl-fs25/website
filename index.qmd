@@ -137,5 +137,5 @@ Be aware of the limits of these tools:
 
 ## Code of Conduct
 
-This course follows the [ETH Respect Code of Conduct](https://respekt.ethz.ch/en/code-of-conduct.html). If you have not yet read this Code of Conduct, please familiarize yourself with it. If you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: https://respekt.ethz.ch/en/contact-and-advice-services.html
+This course follows the [ETH Respect Code of Conduct](https://respekt.ethz.ch/en/code-of-conduct.html). If you have not yet read this Code of Conduct, please familiarize yourself with it. If you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: <https://respekt.ethz.ch/en/contact-and-advice-services.html>
 
