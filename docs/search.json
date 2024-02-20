@@ -1098,14 +1098,14 @@
     "href": "slides/lec-01-welcome.html#meet-the-lecturers",
     "title": "Welcome & get ready for the course",
     "section": "Meet the lecturers",
-    "text": "Meet the lecturers\n\n\nProf. Elizabeth Tilley\n - 1 - 2 - 3\n\nLars Schöbitz\n\n\n\n\n\n\nEnvironmental Engineer\nretired researcher\nRStudio certified instructor"
+    "text": "Meet the lecturers\n\n\nProf. Elizabeth Tilley\n\n\n\n\n\n\nEnvironmental Engineer\nEconomist\n…\n\n\nLars Schöbitz\n\n\n\n\n\n\nEnvironmental Engineer\nRetired researcher\nRStudio certified instructor\nData steward at ETHZ"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
     "href": "slides/lec-01-welcome.html#learning-goals-for-the-course",
     "title": "Welcome & get ready for the course",
     "section": "Learning Goals (for the course)",
-    "text": "Learning Goals (for the course)\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce documents with citations, footnotes, cross-references, figures, and tables.\nBe able to design a questionnaire to collect information that can be analysed to answer a waste-related research question that is relevant for Zurich.\nUnderstand the main challenges associated with managing different types of waste, and how they differ between Europe and Africa."
+    "text": "Learning Goals (for the course)\n\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce documents with citations, footnotes, cross-references, figures, and tables.\nBe able to design a questionnaire to collect information that can be analysed to answer a waste-related research question that is relevant for Zurich.\nUnderstand the main challenges associated with managing different types of waste, and how they differ between Europe and Africa."
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-about-you",
@@ -1126,49 +1126,49 @@
     "href": "slides/lec-01-welcome.html#course-calendar",
     "title": "Welcome & get ready for the course",
     "section": "Course Calendar",
-    "text": "Course Calendar\n\noptions(knitr.kable.NA = '')\n\n\nreadr::read_csv(\"../data/tbl-00-rbtl-fs24-course-schedule-main.csv\") |&gt; \n  dplyr::select(module, date, topic = title) |&gt; \n  dplyr::mutate(date = format(date, format = \"%d %B %Y\")) |&gt; \n  knitr::kable()\n\nRows: 17 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (3): title, lecturer, page_link\ndbl  (1): module\nlgl  (1): summary\ndttm (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\n\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\n\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\n\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\n\n06 June 2024\nProject Submission Deadline\n\n\n\n13 June 2024\nExam"
+    "text": "Course Calendar\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\n\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\n\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\n\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\n\n06 June 2024\nProject Submission Deadline\n\n\n\n13 June 2024\nExam"
   },
   {
     "objectID": "slides/lec-01-welcome.html#course-structure",
     "href": "slides/lec-01-welcome.html#course-structure",
     "title": "Welcome & get ready for the course",
     "section": "Course structure",
-    "text": "Course structure\n\nMy turn: Lecture segments + live coding\nOur turn: Live coding + follow along\nYour turn: Exercises in break-out rooms"
+    "text": "Course structure\n\nMy turn: Lecture segments + live coding\nOur turn: Live coding + follow along\nYour turn: Exercises in pairs"
   },
   {
     "objectID": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
     "href": "slides/lec-01-welcome.html#my-turn-lecture-segments-live-coding",
     "title": "Welcome & get ready for the course",
     "section": "My turn: Lecture segments + live coding",
-    "text": "My turn: Lecture segments + live coding\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant"
+    "text": "My turn: Lecture segments + live coding\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant\nCode is displayed on screen"
   },
   {
     "objectID": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
     "href": "slides/lec-01-welcome.html#our-turn-live-coding-follow-along",
     "title": "Welcome & get ready for the course",
     "section": "Our turn: Live coding + follow along",
-    "text": "Our turn: Live coding + follow along\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant\nCode is displayed on second screen / split screen\nLearners join by writing and executing the same code"
+    "text": "Our turn: Live coding + follow along\n\nInstructor writes and narrates code out loud\nInstructor explains concepts and principles that are relevant\nCode is displayed on screen\nLearners join by writing and executing the same code"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-exercises-in-pairs",
     "href": "slides/lec-01-welcome.html#your-turn-exercises-in-pairs",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Exercises in pairs",
-    "text": "Your turn: Exercises in pairs\n\nTwo learners work together in a break out session\nOne person (the driver) shares the screen and does the typing\nThe other person (the navigator) offers comments and suggestions\nRoles get switched"
+    "text": "Your turn: Exercises in pairs\n\nTwo learners work together in pairs\nOne person does the typing (the driver)\nOne person offers comments and suggestions (the navigator)"
   },
   {
     "objectID": "slides/lec-01-welcome.html#getting-help",
     "href": "slides/lec-01-welcome.html#getting-help",
     "title": "Welcome & get ready for the course",
     "section": "Getting help",
-    "text": "Getting help\n\nDuring my turn and our turn segments: Please keep your microphone on mute. Send message to the Zoom chat Mian and Sophia will support you.\nDuring your turn segments: Due to the large number of participants, it will not be feasible to join individual break-out rooms, but you will always be working in pairs."
+    "text": "Getting help\n\n(from next week), please use a pink sticky note to indicate that you have a problem. I will try to address your issue if time permits.\n(from next week), during your turn exercises, please use a yellow sticky note to indicate when you have completed an exercise."
   },
   {
     "objectID": "slides/lec-01-welcome.html#platforms-and-tools",
     "href": "slides/lec-01-welcome.html#platforms-and-tools",
     "title": "Welcome & get ready for the course",
     "section": "Platforms and Tools",
-    "text": "Platforms and Tools\n\nR\ntidyverse R Packages\nPosit Cloud\nRStudio IDE\nQuarto publishing system\nElement"
+    "text": "Platforms and Tools\n\nR\ntidyverse R Packages\nPosit Cloud\nRStudio IDE\nQuarto publishing system\nZotero reference management\nGoogle Workspace (Sheets & Forms)"
   },
   {
     "objectID": "slides/lec-01-welcome.html#bookmark",
@@ -1182,21 +1182,21 @@
     "href": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
     "title": "Welcome & get ready for the course",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\nlobj &lt;- readr::read_csv(here::here(\"data/tbl-01-rbtl-fs24-learning-objectives.csv\")) |&gt; \n  dplyr::filter(module == params$module) |&gt;\n  dplyr::pull(learning_objectives)\n\nRows: 51 Columns: 7\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): title, lecturer, learning_objectives, ...7\ndbl (1): module\nlgl (2): date, teaser\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.\nLearners can navigate the course website and understand the learning objectives of the course."
+    "text": "Learning Objectives (for this week)\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.\nLearners can navigate the course website and understand the learning objectives of the course."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
     "href": "slides/lec-01-welcome.html#section",
     "title": "Welcome & get ready for the course",
     "section": "",
-    "text": "Artwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
+    "text": "This class is being recorded. Access to the recording is restricted to ETH members."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-1",
     "href": "slides/lec-01-welcome.html#section-1",
     "title": "Welcome & get ready for the course",
-    "section": "-",
-    "text": "-"
+    "section": "",
+    "text": "Artwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-2",
@@ -1273,14 +1273,14 @@
     "href": "slides/lec-01-welcome.html#take-a-break",
     "title": "Welcome & get ready for the course",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
     "href": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: md-01-exercises",
-    "text": "Your turn: md-01-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nClick Start next to md-01-exercises.\nIn the File Manager in the bottom right window, locate the hello-quarto.qmd file and click on it to open it in the top left window.\nRender the document.\nAdd author: to the YAML header and add your name\nRe-render the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: md-01-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbt-fs24 workspace for the course.\nClick Start next to md-01-exercises.\nIn the File Manager in the bottom right window, locate the hello-quarto.qmd file and click on it to open it in the top left window.\nRender the document.\nAdd author: to the YAML header and add your name\nRe-render the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",
@@ -1350,21 +1350,21 @@
     "href": "slides/lec-01-welcome.html#our-turn-configure-notifications-settings",
     "title": "Welcome & get ready for the course",
     "section": "Our turn: Configure Notifications settings",
-    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-settings.png\"))\n\n\n\ncountdown(5)\n\n\n−+\n05:00"
+    "text": "Our turn: Configure Notifications settings\n\nCurrently, you receive emails when someone mentions you in a comment on GitHub. Let’s change the settings to receive notifications On GitHub.\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
     "href": "slides/lec-01-welcome.html#your-turn-create-an-issue-on-github",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Create an issue on GitHub",
-    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\nknitr::include_graphics(here::here(\"slides/img/lec-01/github-notifications-inbox.png\"))\n\n\n\ncountdown(10)\n\n\n−+\n10:00"
+    "text": "Your turn: Create an issue on GitHub\n\n\nOpen github.com in your browser and login with your credentials\nExchange your GitHub username with your room partner\nFind and open the md-01-assignments-USERNAME repository that ends with your GitHub username\nFind the issue tracker\nOpen an issue with the title “Support for module 1 homework”\nAdd your room partner to the list of Assignees on the right panel\nAdd a comment to the issue and tag Mian with @mianzg, Sophia with @sskorik01, and your room partner to ask for support during the homework assignments\nClick submit new issue\nCheck if you have received a notification on GitHub, and open the inbox.\nOpen the issue and respond to the comment of your room partner.\n\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#take-a-break-1",
     "href": "slides/lec-01-welcome.html#take-a-break-1",
     "title": "Welcome & get ready for the course",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#components",
@@ -1469,7 +1469,7 @@
     "href": "slides/lec-01-welcome.html#weekly-structure",
     "title": "Welcome & get ready for the course",
     "section": "Weekly Structure",
-    "text": "Weekly Structure\n\n\n\n\n\n\n\nMonday\n\n\n\nTuesday\nModule from 2 pm to 4:30 pm CET\n\n\nWednesday\n\n\n\nThursday\nOffice hours on Zoom (2 pm to 3:30 pm CET)\n\n\nFriday"
+    "text": "Weekly Structure\n\n\n\nMonday\n\n\n\nTuesday\nStudent hours from 14:00 to 16:00 (CET)\n\n\nWednesday\nAssignment submission, latest by 23:59 (CET)\n\n\nThursday\nLecture from 12:15 to 15:00 (CET)\n\n\nFriday"
   },
   {
     "objectID": "slides/lec-01-welcome.html#homework-assignments",
@@ -1490,14 +1490,14 @@
     "href": "slides/lec-01-welcome.html#module-1-documentation",
     "title": "Welcome & get ready for the course",
     "section": "Module 1 documentation",
-    "text": "Module 1 documentation\n\nds4owd-001.github.io/website/modules/md-01.html"
+    "text": "Module 1 documentation\n\nrbt-fs24.github.io/website/modules/md-01.html"
   },
   {
     "objectID": "slides/lec-01-welcome.html#homework-due-date",
     "href": "slides/lec-01-welcome.html#homework-due-date",
     "title": "Welcome & get ready for the course",
     "section": "Homework due date",
-    "text": "Homework due date\n\nHomework assignment due: Monday, November 6th"
+    "text": "Homework due date\n\nHomework is a pre-requsite for active participation in Module 2\nHomework assignment due: Wednesday, 28th February"
   },
   {
     "objectID": "slides/lec-01-welcome.html#thanks",
@@ -4012,5 +4012,152 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-get-a-github-account",
+    "href": "slides/lec-01-welcome.html#your-turn-get-a-github-account",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Get a GitHub account",
+    "text": "Your turn: Get a GitHub account\n\nOpen a web browser on your laptop.\nNavigate to the course website: rbtl-fs24.github.io/website/\nIf you haven’t yet, bookmark the course website\nIn the left-hand menu, clock on Module 1, then select am-01: GitHub\nFollow the instructions\nPlace a yellow sticky note on your laptop when you have completed the assignment"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
+    "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
+    "title": "Welcome & get ready for the course",
+    "section": "Your turn: Log into Posit Cloud with GitHub account",
+    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nOpen a web browser on your laptop.\nNavigate to the course website: rbtl-fs24.github.io/website/\nIf you haven’t yet, bookmark the course website\nIn the left-hand menu, clock on Module 1, then select am-02: Posit Cloud\nFollow the instructions\nPlace a yellow sticky note on your laptop when you have completed the assignment\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#performance-assessment",
+    "href": "slides/lec-01-welcome.html#performance-assessment",
+    "title": "Welcome & get ready for the course",
+    "section": "Performance assessment",
+    "text": "Performance assessment\n\nEnd-of-semester exam: 50 points\nCompulsory continuous performance assessment: 50 points, of which\n\nHomework assignments: 20 points (n = 10)\nCapstone project: 30 points, of which\n\nTechnical parts of submitted report: 20 points (we will communicate what we expect)\nIntellectual framing of results: 10 points (we will communicate what we expect)"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#grading-scheme",
+    "href": "slides/lec-01-welcome.html#grading-scheme",
+    "title": "Welcome & get ready for the course",
+    "section": "Grading scheme",
+    "text": "Grading scheme\nTable Table 1 shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n93 points = 5.75\n92 points = 5.50\n45 points = 4.00\n44 points = 3.50\n\n\n\n\n\nTable 1: Conversion from points to grades.\n\n\n\n\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#end-of-semester-exam",
+    "href": "slides/lec-01-welcome.html#end-of-semester-exam",
+    "title": "Welcome & get ready for the course",
+    "section": "End-of semester exam",
+    "text": "End-of semester exam\n\n2-hour final written exam\n50 points\nall material allowed (incl. internet)\nfor the use of AI tools we expect you to add a link to the prompt\nprogramming exercises using the R programming language\nsuccess depends on the effort put into the compulsory continuous performance assessment"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#compulsory-continuous-performance-assessment",
+    "href": "slides/lec-01-welcome.html#compulsory-continuous-performance-assessment",
+    "title": "Welcome & get ready for the course",
+    "section": "Compulsory continuous performance assessment",
+    "text": "Compulsory continuous performance assessment\nHomework assignments:\n\n10 assignments\nassessed as pass/fail\n2 points each\n20 points in total\nsubmitted as rendered Quarto documents on GitHub"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#compulsory-continuous-performance-assessment-1",
+    "href": "slides/lec-01-welcome.html#compulsory-continuous-performance-assessment-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Compulsory continuous performance assessment",
+    "text": "Compulsory continuous performance assessment\nCapstone Project\n\nData analysis project report with a dataset generated by you\nMethod: Survey or Observational Study using Google Forms and Sheets\n1 project per student, submitted as rendered Quarto document on GitHub\n30 points in total\n\n20 points for the technical parts of the submitted report\n10 points for the intellectual framing of results"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#readings",
+    "href": "slides/lec-01-welcome.html#readings",
+    "title": "Welcome & get ready for the course",
+    "section": "Readings",
+    "text": "Readings\n\nSome required for homework assignments\nAdditional readings provided to support learning\nNot graded"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#policies",
+    "href": "slides/lec-01-welcome.html#policies",
+    "title": "Welcome & get ready for the course",
+    "section": "Policies",
+    "text": "Policies\nClass attendance\n\nCan’t attend in person? Inform us before the lecture\nLive streaming recording available\nMissed classes: work through the material using the recording"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#policies-1",
+    "href": "slides/lec-01-welcome.html#policies-1",
+    "title": "Welcome & get ready for the course",
+    "section": "Policies",
+    "text": "Policies\nUse of AI tools\n\nUse it! (e.g. perplexity.ai has useful free features)\nRefine your prompts to get good outcomes\nDon’t trust anything it says\nInclude links to your prompts\nBe thoughtful about when this tool is useful\n\n\nAI Policy adapted from Ethan Mollick"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-8",
+    "href": "slides/lec-01-welcome.html#section-8",
+    "title": "Welcome & get ready for the course",
+    "section": "",
+    "text": "Artwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course-incremental",
+    "href": "slides/lec-01-welcome.html#learning-goals-for-the-course-incremental",
+    "title": "Welcome & get ready for the course",
+    "section": "Learning Goals (for the course) {incremental}",
+    "text": "Learning Goals (for the course) {incremental}\n\nBe able to use a common set of data science tools (R, RStudio IDE, Git, GitHub, tidyverse, Quarto) to illustrate and communicate the results of data analysis projects.\nLearn to use the Quarto file format and the RStudio IDE visual editing mode to produce documents with citations, footnotes, cross-references, figures, and tables.\nBe able to design a questionnaire to collect information that can be analysed to answer a waste-related research question that is relevant for Zurich.\nUnderstand the main challenges associated with managing different types of waste, and how they differ between Europe and Africa."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#why-all-of-this",
+    "href": "slides/lec-01-welcome.html#why-all-of-this",
+    "title": "Welcome & get ready for the course",
+    "section": "Why all of this?",
+    "text": "Why all of this?"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-9",
+    "href": "slides/lec-01-welcome.html#section-9",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-10",
+    "href": "slides/lec-01-welcome.html#section-10",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-11",
+    "href": "slides/lec-01-welcome.html#section-11",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-12",
+    "href": "slides/lec-01-welcome.html#section-12",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-13",
+    "href": "slides/lec-01-welcome.html#section-13",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-14",
+    "href": "slides/lec-01-welcome.html#section-14",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#section-15",
+    "href": "slides/lec-01-welcome.html#section-15",
+    "title": "Welcome & get ready for the course",
+    "section": "-",
+    "text": "-"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#policies-2",
+    "href": "slides/lec-01-welcome.html#policies-2",
+    "title": "Welcome & get ready for the course",
+    "section": "Policies",
+    "text": "Policies\nCode of Conduct\n\nFollow the ETH Respect Code of Conduct\nIf you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: respekt.ethz.ch/en/contact-and-advice-services.html"
   }
 ]

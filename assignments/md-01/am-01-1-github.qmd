@@ -1,0 +1,62 @@
+---
+title: "Get an account on GitHub"
+---
+
+## {{< fa brands github >}} Step 1: Get an account on GitHub
+
+To set up an account on GitHub, follow these general steps:
+
+1.  Go to the GitHub website at <https://github.com/>.
+2.  Click on the "Sign up" button on the top right corner of the page.
+3.  Enter your preferred username, email address, and password in the provided fields.
+4.  Choose whether you want to receive updates and announcements via email.
+5.  Complete the verification process by solving a puzzle and entering a verification code sent to your email.
+
+::: {.callout-tip collapse="true"}
+## Username advice from: [Happy Git and GitHub for the useR](https://happygitwithr.com/github-acct.html#github-acct)
+
+You will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don't fret about any of that now. **Except your username. You might want to give that some thought.**
+
+A few tips, which sadly tend to contradict each other:
+
+-   Incorporate your actual name! People like to know who they're dealing with. Also makes your username easier for people to guess or remember.
+-   Reuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.
+-   Pick a username you will be comfortable revealing to your future boss.
+-   Shorter is better than longer.
+-   Be as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.
+-   Make it timeless. Don't highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.
+-   Avoid words laden with special meaning in programming.
+-   Avoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen `-`.
+
+You can change your username later, but better to get this right the first time.
+
+-   <https://help.github.com/articles/changing-your-github-username/>
+-   <https://help.github.com/articles/what-happens-when-i-change-my-username/>
+:::
+
+## {{< fa brands github >}} Step 2: Open an issue on GitHub
+
+::: {.callout-note collapse="true"}
+## If you have missed Module 01
+
+If you have missed Module 01 and you are completing this assignment as part of your homeowkr, work through Step 2 without tagging your neighbor. You can tag Lars with @larnsce instead.
+
+:::
+
+::: task
+
+1. Open [github.com](https://github.com/) in your browser and login with your credentials
+2. Exchange your GitHub username with your neighbor
+3. Find and open the `website` repository in the rbtl-fs24 GitHub organisation
+4. Find the issue tracker
+5. Open an issue with the title "Open first issue on GitHub" 
+6. Add your neighbor to the list of Assignees on the right panel
+7. Add a comment to the issue and tag Lars with [@larnsce]{.highlight-yellow} and your [room partner]{.highlight-yellow}. Add some text.
+8. Click submit new issue
+9. Check if you have received a notification on GitHub, and open the inbox.
+10. Open the issue and respond to the comment of your room partner.
+:::
+
+```{r}
+knitr::include_graphics(here::here("slides/img/lec-01/github-notifications-inbox.png"))
+```

@@ -1,7 +1,7 @@
 ---
 title: "{{< var md-01.title >}}"
 subtitle: "{{< var course.long-title >}}"
-author: "{{< var author >}}"
+author: "Prof. Elizabeth Tilley and Lars Schöbitz"
 date: "2024-02-22"
 date-format: "MMM D, YYYY"
 format: 
@@ -27,6 +27,12 @@ library(magrittr)
 library(epoxy)
 ```
 
+## {{< fa flag >}} {.center-align auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 1.5em"}
+This class is being recorded. Access to the recording is restricted to ETH members.
+:::
+
 # Welcome! `r emo::ji("wave")` {background-color="#4C326A"}
 
 ## Meet the lecturers
@@ -35,33 +41,69 @@ library(epoxy)
 ::: {.column width="50%"}
 **Prof. Elizabeth Tilley**
 
-![](img/lec-01/profile-liz.png){fig-alt="Headshot of Elizabeth Tilley" fig-align="center"}
-- 1
-- 2
-- 3
+![](img/lec-01/profile-liz.png){fig-alt="Headshot of Elizabeth Tilley" fig-align="left" width=70%}
+
+- Environmental Engineer 
+- Economist
+- ...
 
 :::
 ::: {.column width="50%"}
 **Lars Schöbitz**
 
-![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="center"}
+![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width=70%}
 
 -   Environmental Engineer
--   retired researcher
+-   Retired researcher
 -   [RStudio certified instructor](https://education.rstudio.com/trainers/)
+-   [Data steward at ETHZ](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
 
 :::
 :::
 
 ## Learning Goals (for the course)
 
+::: incremental
+
 1.  Be able to use a common set of data science tools [(R, RStudio IDE, Git, GitHub, tidyverse, Quarto)]{.highlight-yellow} to illustrate and communicate the results of data analysis projects.
 
 2.  Learn to use the [Quarto file format]{.highlight-yellow} and the RStudio IDE visual editing mode to produce [documents]{.highlight-yellow} with citations, footnotes, cross-references, figures, and tables.
 
-3. Be able to design a questionnaire to collect information that can be analysed to answer a waste-related research question that is relevant for Zurich.
+3. Be able to design a [questionnaire]{.highlight-yellow} to collect information that can be analysed to answer a [waste-related research question]{.highlight-yellow} that is relevant for Zurich.
 
-4. Understand the main challenges associated with managing different types of waste, and how they differ between Europe and Africa.
+4. Understand the main [challenges]{.highlight-yellow} associated with managing different types of [waste]{.highlight-yellow}, and how they differ between [Europe and Africa]{.highlight-yellow}.
+
+:::
+
+## Why all of this? {.center-align background-color="#461a52"}
+
+## 
+
+![](img/lec-01/publisher-policies-01.drawio.svg)
+
+## 
+
+![](img/lec-01/publisher-policies-02.drawio.svg)
+
+## 
+
+![](img/lec-01/publisher-policies-03.drawio.svg)
+
+## 
+
+![](img/lec-01/publisher-policies-04.drawio.svg)
+
+## 
+
+![](img/lec-01/publisher-policies-05.drawio.svg)
+
+## 
+
+![](img/lec-01/publisher-policies-06.drawio.svg)
+
+## 
+
+![](img/lec-01/publisher-policies-07.drawio.svg)
 
 ## Your turn: About you
 
@@ -112,32 +154,32 @@ readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |>
 
 -   [My turn]{.highlight-yellow}: Lecture segments + live coding
 -   [Our turn]{.highlight-yellow}: Live coding + follow along
--   [Your turn]{.highlight-yellow}: Exercises in break-out rooms
+-   [Your turn]{.highlight-yellow}: Exercises in pairs
 
 ## My turn: Lecture segments + live coding
 
 -   Instructor writes and narrates code out loud
 -   Instructor explains concepts and principles that are relevant
+-   Code is displayed on screen 
 
 ## Our turn: Live coding + follow along
 
 -   Instructor writes and narrates code out loud
 -   Instructor explains concepts and principles that are relevant
--   Code is displayed on second screen / split screen
+-   Code is displayed on screen 
 -   Learners join by writing and executing the same code
 
 ## Your turn: Exercises in pairs
 
--   Two learners work together in a break out session
--   One person (the driver) shares the screen and does the typing
--   The other person (the navigator) offers comments and suggestions
--   Roles get switched
+-   Two learners work together in pairs
+-   One person does the typing (the driver)
+-   One person offers comments and suggestions (the navigator)
 
 ## Getting help
 
--   During [my turn]{.highlight-yellow} and [our turn]{.highlight-yellow} segments: Please keep your microphone on mute. Send message to the [Zoom chat]{.highlight-yellow} Mian and Sophia will support you.
+-  (from next week), please use a [pink sticky note]{.highlight-pink} to indicate that you have a [problem]{.highlight-pink}. I will try to address your issue if time permits. 
 
--   During [your turn]{.highlight-yellow} segments: Due to the large number of participants, it will not be feasible to join individual break-out rooms, but you will always be working in pairs. 
+-  (from next week), during [your turn]{.highlight-yellow} exercises, please use a [yellow sticky note]{.highlight-yellow} to indicate when you have completed an exercise.
 
 
 ## Platforms and Tools
@@ -147,7 +189,8 @@ readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |>
 -   Posit Cloud
 -   RStudio IDE
 -   Quarto publishing system
--   Element
+-   Zotero reference management
+-   Google Workspace (Sheets & Forms)
 
 ## Bookmark {.center-align .large}
 
@@ -176,6 +219,70 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 Artwork from [\@juliesquid](https://twitter.com/juliesquid) for [\@openscapes](https://twitter.com/openscapes) (illustrated by [\@allison_horst](https://twitter.com/allison_horst))
 :::
 
+# Version Control {background-color="#4C326A"}
+
+## Version Control with Git and GitHub
+
+A way to share files with others, so they can:
+
+-   download
+-   re-use
+-   contribute
+
+You can view the history of files, and jump back in time to any point.
+
+## Why is it useful?
+
+```{r echo=FALSE, fig.align = "center", out.width="40%"}
+knitr::include_graphics("img/lec-01/phd_comics_vc.gif")
+```
+
+## Git and GitHub
+
+::: columns
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="25%"}
+knitr::include_graphics("img/lec-01/git-logo.png")
+```
+
+-   Git is a software for version control
+-   Created in 2005
+-   Popular among programmers collaboratively developing code
+-   Tracks changes in a set of files (directory/folder/repository)
+:::
+
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="25%"}
+knitr::include_graphics("img/lec-01/github-logo.png")
+```
+
+-   GitHub is a hosting platform for version control using Git
+
+-   Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US\$ 7.5 billion
+
+-   
+
+    > 100 million Users (20.5 in 2022 alone) ([October, 2023](https://octoverse.github.com/2022/global-tech-talent))
+
+-   Social media for software developers
+:::
+:::
+
+## My turn: A tour of GitHub
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
+:::
+
+## Your turn: Get a GitHub account
+
+1. Open a web browser on your laptop.
+2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+3. If you haven't yet, bookmark the course website
+4. In the left-hand menu, clock on Module 1, then select am-01: GitHub
+5. Follow the instructions
+6. Place a yellow sticky note on your laptop when you have completed the assignment
+
 # Posit Cloud {background-color="#4C326A"}
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.001.png"}
@@ -191,6 +298,29 @@ Artwork from [\@juliesquid](https://twitter.com/juliesquid) for [\@openscapes](h
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.006.png"}
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
+
+## Your turn: Log into Posit Cloud with GitHub account
+
+1. Open a web browser on your laptop.
+2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+3. If you haven't yet, bookmark the course website
+4. In the left-hand menu, clock on Module 1, then select [am-02: Posit Cloud]{.highlight-yellow}
+5. Follow the instructions
+6. Place a yellow sticky note on your laptop when you have completed the assignment
+
+::: callout-warning
+
+# GitHub Authorisation
+-   If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.
+-   Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.
+:::
+
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
 
 # Hello Quarto {background-color="#4C326A"}
 
@@ -247,32 +377,6 @@ I'll **teach** you
 Sit back and enjoy!
 :::
 
-## Your turn: Get a GitHub account (TODO)
-
-Log into Posit Cloud with GitHub account {.smaller}
-
--   Go to the Posit Cloud Sign Up page: [login.posit.cloud/register](https://login.posit.cloud/register)
--   Click on the [Sign Up with GitHub]{.highlight-yellow} button.
--   Enter your GitHub username and password when prompted.
--   Open and accept the workspace invitation ([Link is in the Zoom chat now]{.highlight-yellow}).
--   Bookmark the address of the open tab in your browser.
-
-::: callout-warning
-
-# GitHub Authorisation
--   If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.
--   Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.
-:::
-
-::: speaker-notes
-https://posit.cloud/spaces/426916/join?access_code=BcLC_jGc-2UB6QDLuV09M8zCyaT6xvY2HjM6CNs3
-:::
-
-```{r}
-#| echo: false
-
-countdown(minutes = 5)
-```
 
 ## Take a break
 
@@ -292,7 +396,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the ds4owd workspace for the course.
+2. Open the rbt-fs24 workspace for the course.
 3. Click [Start]{.highlight-yellow} next to [md-01-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the `hello-quarto.qmd` file and click on it to open it in the top left window.
 4. Render the document.
@@ -317,7 +421,6 @@ countdown(minutes = 10)
 
 ![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="1200"}
 :::
-
 # Quarto formats {background-color="#4C326A"}
 
 ## One install, "Batteries included"
@@ -412,101 +515,6 @@ Use the visual editor for the next steps.
 countdown(minutes = 10)
 ```
 
-# Version Control {background-color="#4C326A"}
-
-## Version Control with Git and GitHub
-
-A way to share files with others, so they can:
-
--   download
--   re-use
--   contribute
-
-You can view the history of files, and jump back in time to any point.
-
-## Why is it useful?
-
-```{r echo=FALSE, fig.align = "center", out.width="40%"}
-knitr::include_graphics("img/lec-01/phd_comics_vc.gif")
-```
-
-## Git and GitHub
-
-::: columns
-::: {.column width="50%"}
-```{r echo=FALSE, out.width="25%"}
-knitr::include_graphics("img/lec-01/git-logo.png")
-```
-
--   Git is a software for version control
--   Created in 2005
--   Popular among programmers collaboratively developing code
--   Tracks changes in a set of files (directory/folder/repository)
-:::
-
-::: {.column width="50%"}
-```{r echo=FALSE, out.width="25%"}
-knitr::include_graphics("img/lec-01/github-logo.png")
-```
-
--   GitHub is a hosting platform for version control using Git
-
--   Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US\$ 7.5 billion
-
--   
-
-    > 100 million Users (20.5 in 2022 alone) ([October, 2023](https://octoverse.github.com/2022/global-tech-talent))
-
--   Social media for software developers
-:::
-:::
-
-## My turn: A tour of GitHub
-
-::: {.hand-purple-large style="text-align: center;"}
-Sit back and enjoy!
-:::
-
-## Our turn: Configure Notifications settings
-
-::: task
-Currently, you receive emails when someone mentions you in a comment on GitHub. Let's change the settings to receive [notifications On GitHub]{.hightlight-yellow}. 
-:::
-
-```{r}
-knitr::include_graphics(here::here("slides/img/lec-01/github-notifications-settings.png"))
-```
-
-
-```{r}
-countdown(5)
-```
-
-## Your turn: Create an issue on GitHub {.smaller}
-
-::: task
-
-1. Open [github.com](https://github.com/) in your browser and login with your credentials
-2. Exchange your GitHub username with your room partner
-3. Find and open the md-01-assignments-USERNAME repository that ends with your GitHub username
-4. Find the issue tracker
-5. Open an issue with the title "Support for module 1 homework" 
-6. Add your room partner to the list of Assignees on the right panel
-7. Add a comment to the issue and tag Mian with [@mianzg]{.highlight-yellow}, Sophia with [@sskorik01]{.highlight-yellow}, and your [room partner]{.highlight-yellow} to ask for support during the homework assignments
-8. Click submit new issue
-9. Check if you have received a notification on GitHub, and open the inbox.
-10. Open the issue and respond to the comment of your room partner.
-:::
-
-```{r}
-knitr::include_graphics(here::here("slides/img/lec-01/github-notifications-inbox.png"))
-```
-
-
-```{r}
-countdown(10)
-```
-
 ## Take a break
 
 [Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
@@ -521,317 +529,137 @@ countdown(minutes = 10)
 Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
 
-# Anatomy of a Quarto document {background-color="#4C326A"}
-
-## Components
-
-1.  Metadata: YAML
-
-2.  Text: Markdown
-
-3.  Code: Executed via `knitr` or `jupyter`
-
-. . .
-
-**Weave it all together**, and you have beautiful, powerful, and useful outputs!
-
-## Literate programming {.smaller}
-
-Literate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.
-
-````         
----
-title: "ggplot2 demo"
-date: "5/23/2023"
-format: html
----
-
-## MPG
-
-There is a relationship between city and highway mileage.
-
-```{{r}}
-#| label: fig-mpg
-
-library(ggplot2)
-
-ggplot(mpg, aes(x = cty, y = hwy)) + 
-  geom_point() + 
-  geom_smooth(method = "loess")
-```
-````
-
-::: aside
-Source: <https://en.wikipedia.org/wiki/Literate_programming>
-:::
-
-# Metadata {background-color="#4C326A"}
-
-## YAML
-
-"Yet Another Markup Language" or "YAML Ain't Markup Language" is used to provide document level metadata.
-
-``` yaml
----
-key: value
----
-```
-
-## Output options
-
-``` yaml
----
-format: something
----
-```
-
-. . .
-
-<br>
-
-``` yaml
----
-format: html
----
-```
-
-``` yaml
----
-format: pdf
----
-```
-
-``` yaml
----
-format: revealjs
----
-```
-
-## Output option arguments
-
-Indentation matters!
-
-``` yaml
----
-format: 
-  html:
-    toc: true
-    code-fold: true
----
-```
-
-## YAML validation {.smaller}
-
--   Invalid: No space after `:`
-
-``` yaml
----
-format:html
----
-```
-
--   Invalid: Read as missing
-
-``` yaml
----
-format:
-html
----
-```
-
-## YAML validation {.smaller}
-
-There are multiple ways of formatting valid YAML:
-
--   Valid: There's a space after `:`
-
-``` yaml
-format: html
-```
-
--   Valid: `format: html` with selections made with proper indentation
-
-``` yaml
-format: 
-  html:
-    toc: true
-```
-
-## Quarto linting
-
-Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.
-
-<br>
-
-![](img/lec-01/lint-rstudio.png){fig-alt="Linter showing message for badly formatted YAML."}
-
-::: aside
-Source: <https://en.wikipedia.org/wiki/Lint_(software)>
-:::
-
-## Quarto YAML Intelligence
-
-RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd>`Ctrl + space`</kbd> to see all available options.
-
-<br>
-
-![](img/lec-01/quarto-tab-complete.png){fig-align="center" width="600"}
-
-# R fundamentals {background-color="#4C326A"}
-
-## Packages {auto-animate="true"}
-
-::: incremental
-::: columns
-::: {.column width="40%"}
-**base R**
-
-```{r}
-#| eval: false
-#| echo: true
-sqrt(49)
-sum(1, 2)
-```
-
--   Functions come with R
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="55%"}
-**R Packages**
-
-```{r}
-#| eval: false
-#| echo: true
-library(dplyr)
-
-```
-
--   Installed once in the Console: `install.packages("dplyr")`
--   Loaded per script
-:::
-:::
-:::
-
-::: notes
-Packages
-
--   Main way that reusable code is shared in R
--   Combination of code, data, and documentation
--   R has a rich ecosystem of packages for data manipulation & analysis
-:::
-
-## Functions & Arguments {auto-animate="true"}
-
-```{r}
-#| code-line-numbers: "3-4"
-#| eval: false
-#| echo: true
-library(dplyr)
-
-filter(.data = gapminder, 
-       year == 2007)
-```
-
--   Function: `filter()`
--   Argument: `.data =`
--   Arguments following: `year == 2007` **What do do with the data**
-
-## Objects {auto-animate="true"}
-
-```{r}
-#| eval: false
-#| code-line-numbers: "3-4"
-#| echo: true
-library(dplyr)
-
-gapminder_yr_2007 <- filter(.data = gapminder, 
-                            year == 2007)
-```
-
--   Function: `filter()`
--   Argument: `.data =`
--   Arguments following: `year == 2007` **What do do with the data**
--   Object: `gapminder_yr_2007`
-
-## Operators {auto-animate="true"}
-
-```{r}
-#| eval: false
-#| code-line-numbers: "3-4"
-#| echo: true
-library(dplyr)
-
-gapminder_yr_2007 <- gapminder |> 
-  filter(year == 2007) 
-```
-
--   Function: `filter()`
--   Argument: `.data =`
--   Arguments following: `year == 2007` **What do do with the data**
--   Object: `gapminder_yr_2007`
--   Assignment operator: `<-`
--   Pipe operator: `|>`
-
-## Rules
-
-Rules of `dplyr` functions:
-
-::: incremental
--   First argument is always a data frame
--   Subsequent arguments say what to do with that data frame
--   Always return a data frame\
--   Don't modify in place
-:::
-
 # Course information {background-color="#4C326A"}
 
 ## Weekly Structure
 
-|          |                                           |
-|----------|-------------------------------------------|
-| **Monday**   |                |
-| **Tuesday**  |  Module from 2 pm to 4:30 pm CET                              |
-| **Wednesday** | |
-| **Thursday** | Office hours on Zoom (2 pm to 3:30 pm CET) |
-| **Friday**   |              |
+|               |                                            |
+|---------------|--------------------------------------------|
+| **Monday**    |                                            |
+| **Tuesday**   | Student hours from 14:00 to 16:00 (CET) |
+| **Wednesday** | Assignment submission, latest by 23:59 (CET)   |
+| **Thursday**  | Lecture from 12:15 to 15:00 (CET) |
+| **Friday**    |                                            |
 
 
-## Homework assignments
+## Performance assessment
 
--   Weekly assignments ([module 1 homework is required for participation]{.highlight-yellow})
--   Submitted as rendered Quarto documents on GitHub
--   Reviewed by course instructors for errors
--   Management and support through GitHub issue tracker
+-   End-of-semester exam: [50 points]{.highlight-yellow}
+-   Compulsory continuous performance assessment: [50 points]{.highlight-yellow}, of which
+    -   Homework assignments: [20 points]{.highlight-yellow} (n = 10)
+    -   Capstone project: [30 points]{.highlight-yellow}, of which 
+        - Technical parts of submitted report: [20 points]{.highlight-yellow} (we will communicate what we expect) 
+        - Intellectual framing of results: [10 points]{.highlight-yellow} (we will communicate what we expect)
+        
+## Grading scheme {.scrollable}
 
-## Capstone Project
+Table @tbl-grading-conversion shows the conversion from points to grades. Grades follow the [ETHZ's Grading System](https://ethz.ch/content/dam/ethz/main/education/rechtliches-abschluesse/grading.pdf). Points are rounded to the nearest grade, for example:
 
--   Data analysis project report with a dataset of your choice
--   Submitted as rendered Quarto document on GitHub
--   Submission [required for successful completion]{.highlight-yellow} of the course
+- 97 points = 5.75
+- 93 points = 5.75
+- 92 points = 5.50
+- 45 points = 4.00
+- 44 points = 3.50
+
+```{r tab-grading-conversion, echo=FALSE}
+#| tbl-cap: "Conversion from points to grades."
+#| label: tbl-grading-conversion
+
+readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |>
+  knitr::kable() |> 
+  kableExtra::kable_styling(full_width = F)
+
+```
+
+## End-of semester exam
+
+- 2-hour final written exam 
+- 50 points
+- all material allowed (incl. internet)
+- for the use of AI tools we expect you to add a link to the prompt
+- programming exercises using the R programming language
+- success depends on the effort put into the compulsory continuous performance assessment
+
+## Compulsory continuous performance assessment
+
+**Homework assignments**: 
+
+- 10 assignments
+- assessed as pass/fail
+- 2 points each 
+- 20 points in total
+- submitted as rendered Quarto documents on GitHub
+
+## Compulsory continuous performance assessment
+
+**Capstone Project**
+
+- Data analysis project report with a dataset generated by you
+- Method: Survey or Observational Study using Google Forms and Sheets
+- 1 project per student, submitted as rendered Quarto document on GitHub
+- 30 points in total
+  - 20 points for the technical parts of the submitted report
+  - 10 points for the intellectual framing of results
+
+## Readings
+
+- Some required for homework assignments
+- Additional readings provided to support learning
+- Not graded
+
+## Policies
+
+**Class attendance**
+
+- Can't attend in person? Inform us before the lecture
+- Live streaming recording available
+- Missed classes: work through the material using the recording
+
+## Policies
+
+**Use of AI tools**
+
+- Use it! (e.g. perplexity.ai has useful free features)
+- Refine your prompts to get good outcomes
+- Don't trust anything it says
+- Include links to your prompts
+- Be thoughtful about when this tool is useful
+
+::: footer
+
+[AI Policy adapted from Ethan Mollick](https://www.oneusefulthing.org/p/my-class-required-ai-heres-what-ive?utm_source=profile&utm_medium=reader2)
+
+:::
+
+
+## Policies
+
+**Code of Conduct**
+
+- Follow the [ETH Respect Code of Conduct](https://respekt.ethz.ch/en/code-of-conduct.html)
+- If you experience inappropriate behaviour from us or any of your classmates, you will find contact and advice services here: [respekt.ethz.ch/en/contact-and-advice-services.html](https://respekt.ethz.ch/en/contact-and-advice-services.html)
 
 # Homework assignments module 1 {background-color="#4C326A"}
 
 ## Module 1 documentation
 
 ::: learn-more
-[ds4owd-001.github.io/website/modules/md-01.html](https://ds4owd-001.github.io/website/modules/md-01.html)
+[rbt-fs24.github.io/website/modules/md-01.html](https://rbt-fs24.github.io/website/modules/md-01.html)
 
 ```{=html}
-<iframe src="https://ds4owd-001.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+<iframe src="https://rbt-fs24.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
--   Homework assignment due: [Monday, November 6th]{.highlight-yellow}
+- Homework is a pre-requsite for active participation in Module 2
+- Homework assignment due: [Wednesday, 28th February]{.highlight-yellow}
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-01-welcome.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbt-fs24/website/raw/main/slides/lec-01-welcome.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

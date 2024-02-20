@@ -13,7 +13,7 @@ options(knitr.kable.NA = '')
 
 Thank you for your interest in this course. Your course instructors: [Elizabeth Tilley](https://ghe.ethz.ch/about/people/person-detail.MTc2MjI5.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) and [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) are looking forward to meet you.
 
-[We will meet Thursdays at LFW C 4 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-peach}
+[We will meet Thursdays at 	CAB G 59 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-yellow}
 
 ## Course Information
 
@@ -57,7 +57,7 @@ readr::read_csv("data/tbl-00-rbtl-fs24-course-schedule-main.csv") |>
 
 ## Weekly Structure
 
-Assignment submission: Tuesdays, latest by 23:59 (late submission 24 hours later, Wednesdays, by 23:59)
+Assignment submission: Wednesdays, latest by 23:59.
 
 |               |                                            |
 |---------------|--------------------------------------------|
@@ -77,20 +77,22 @@ The performance assessment and resulting grading scheme are shown below.
     -   Homework assignments: 20 points (n = 10)
     -   Capstone project: 30 points, of which 
         - Technical parts of submitted report: 20 points (we will communicate what we expect) 
-        - Intellectual framing ofs results: 10 points (we will communicate what we expect)
+        - Intellectual framing of results: 10 points (we will communicate what we expect)
   
-Table \@ref(tab:tab-grading-conversion) shows the conversion from points to grades. Grades follow the [ETHZ's Grading System](https://ethz.ch/content/dam/ethz/main/education/rechtliches-abschluesse/grading.pdf). Points are rounded to the nearest grade, for example:
+Table @tbl-grading-conversion shows the conversion from points to grades. Grades follow the [ETHZ's Grading System](https://ethz.ch/content/dam/ethz/main/education/rechtliches-abschluesse/grading.pdf). Points are rounded to the nearest grade, for example:
 
 - 97 points = 5.75
-- 65 points = 4.50
-- 64 points = 4.25
+- 93 points = 5.75
+- 92 points = 5.50
 - 45 points = 4.00
 - 44 points = 3.50
 
 ```{r tab-grading-conversion, echo=FALSE}
+#| tbl-cap: "Conversion from points to grades."
+#| label: tbl-grading-conversion
 
-readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |> 
-  knitr::kable(caption = "Conversion from points to grades.") |> 
+readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |>
+  knitr::kable() |> 
   kableExtra::kable_styling(full_width = F)
 
 ```
@@ -116,6 +118,22 @@ Detailed instructions for the completion of the capstone project will be provide
 We hope that you can attend class in person. If you cannot attend a class, we expect you to contact us and inform us about it. There will be a live streaming recording that you can watch from home, however we will not accomodate for two way communication. 
 
 If you miss a class, we expect you to work through the material of the class using the recording of the live streaming.
+
+## AI Policy
+
+We expect you to use AI tools in this class (e.g. perplexity.ai, ChatGPT, etc.). Some assignments may require it. Learning to us AI is an emerging skill that we want you to embrace. 
+
+Be aware of the limits of these tools:
+
+- Minimum effort prompts will yield low quality results. Refine your prompts to get good outcomes. This will take work. 
+
+- Don't trust anything it says. Unless you know the answer or know how to check it, assume it is wrong. You will be responsible for any errors or omissions provided by the tool. It works best for topics you understand.
+
+- AI is a tool that you need to acknowledge using. Include links to your prompts and explain how you used AI to complete an assignment. Failure to do so is in violation of academic integrity policies.
+
+- Be thoughtful about when this tool is useful. Don't use it if it isn't appropriate for the case of circumstance.
+
+[This AI Policy was adapted from Ethan Mollick](https://www.oneusefulthing.org/p/my-class-required-ai-heres-what-ive?utm_source=profile&utm_medium=reader2)
 
 ## Code of Conduct
 
