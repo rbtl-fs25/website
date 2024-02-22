@@ -2206,7 +2206,7 @@
     "href": "assignments/md-01/am-01-4-github.html",
     "title": "Interaction with GitHub",
     "section": "",
-    "text": "Here are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).",
+    "text": "Here are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).\nWe will use this GitHub PAT in class next week.",
     "crumbs": [
       "Module 01",
       "am-03: GitHub PAT"
@@ -2217,51 +2217,7 @@
     "href": "assignments/md-01/am-01-4-github.html#step-1-set-up-a-github-personal-access-token",
     "title": "Interaction with GitHub",
     "section": "",
-    "text": "Here are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub PAT"
-    ]
-  },
-  {
-    "objectID": "assignments/md-01/am-01-4-github.html#step-2-clone-a-repository",
-    "href": "assignments/md-01/am-01-4-github.html#step-2-clone-a-repository",
-    "title": "Interaction with GitHub",
-    "section": "Step 2: Clone a repository",
-    "text": "Step 2: Clone a repository\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed\nContinue with the next step",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub PAT"
-    ]
-  },
-  {
-    "objectID": "assignments/md-01/am-01-4-github.html#step-3-introduce-yourself-to-git",
-    "href": "assignments/md-01/am-01-4-github.html#step-3-introduce-yourself-to-git",
-    "title": "Interaction with GitHub",
-    "section": "Step 3: Introduce yourself to git",
-    "text": "Step 3: Introduce yourself to git\n\nIn Posit Cloud, open the md-01-assignments-USERNAME project that ends with your GitHub username.\nOpen the git-configuration.qmd file from the bottom right window of RStudio.\nEdit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\nRender the document\nContinue with the next step\n\n\nlibrary(usethis)\n\n# Replace Your Name and Your Email with your details. Do not delete the quotes \"\".\nuse_git_config(user.name = \"Your Name\", user.email = \"Your Email\")",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub PAT"
-    ]
-  },
-  {
-    "objectID": "assignments/md-01/am-01-4-github.html#step-4-commit-and-push-your-changes",
-    "href": "assignments/md-01/am-01-4-github.html#step-4-commit-and-push-your-changes",
-    "title": "Interaction with GitHub",
-    "section": "Step 4: Commit and push your changes",
-    "text": "Step 4: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to the git-configuration.qmd file to stage it for commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button$\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub.",
-    "crumbs": [
-      "Module 01",
-      "am-03: GitHub PAT"
-    ]
-  },
-  {
-    "objectID": "assignments/md-01/am-01-4-github.html#step-5-open-an-issue-on-github",
-    "href": "assignments/md-01/am-01-4-github.html#step-5-open-an-issue-on-github",
-    "title": "Interaction with GitHub",
-    "section": "Step 5: Open an issue on GitHub",
-    "text": "Step 5: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-01-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 1 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce",
+    "text": "Here are the step-by-step instructions to set up a GitHub personal access token:\n\n\n\n\n\n\nImportant\n\n\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\nRemember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).\nWe will use this GitHub PAT in class next week.",
     "crumbs": [
       "Module 01",
       "am-03: GitHub PAT"
