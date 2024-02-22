@@ -35,26 +35,27 @@ This class is being recorded. Access to the recording is restricted to ETH membe
 
 # Welcome! `r emo::ji("wave")` {background-color="#4C326A"}
 
-## Meet the lecturers
+## Meet the lecturers {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
 **Prof. Elizabeth Tilley**
 
-![](img/lec-01/profile-liz.png){fig-alt="Headshot of Elizabeth Tilley" fig-align="left" width=70%}
+![](img/lec-01/profile-liz.png){fig-alt="Headshot of Elizabeth Tilley" fig-align="left" width=50%}
 
-- Environmental Engineer 
-- Economist
-- ...
+- Environmental Engineer `r emo::ji("hammer")`
+- Economist `r emo::ji("chart_with_upwards_trend")`
+- Turkey Lover `r emo::ji("turkey")`
+- Canadian `r emo::ji("Canada")`
 
 :::
 ::: {.column width="50%"}
 **Lars Schöbitz**
 
-![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width=70%}
+![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width=50%}
 
--   Environmental Engineer
--   Retired researcher
+-   Environmental Engineer `r emo::ji("hammer")`
+-   Retired researcher `r emo::ji("bed")`
 -   [RStudio certified instructor](https://education.rstudio.com/trainers/)
 -   [Data steward at ETHZ](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
 
@@ -314,7 +315,6 @@ Sit back and enjoy!
 -   If this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.
 -   Once you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.
 :::
-
 
 ```{r}
 #| echo: false

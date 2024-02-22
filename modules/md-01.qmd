@@ -50,12 +50,12 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.
-
+Please complete the following assignments by Wednesday, 28th February 2024. They are a pre-requisite for active participation in the second module.
 
 -   [Assignment 1](../assignments/md-01/am-01-1-github.qmd): In class: Get an account for GitHub
 -   [Assignment 2](../assignments/md-01/am-01-2-posit.qmd): In class: Working with R, RStudio on Posit Cloud
 -   [Assignment 3](../assignments/md-01/am-01-4-github.qmd): Homework: Interaction with GitHub
--   Assignment 4: Complete the pre-course survey: TODO
+-   Assignment 4: Create your ORCID iD at: <https://orcid.org/register> ([Learn more about ORCID and why you should get one](https://the-turing-way.netlify.app/communication/citable/citable-orcid.html?highlight=orcid))
+-   Assignment 5: Complete the pre-course survey: https://forms.gle/jcKFqiB2DHmSSbck6
 
 Thank you for working through these assignments. 

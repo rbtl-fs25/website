@@ -254,7 +254,7 @@
     "href": "modules/md-01.html#assignments",
     "title": "Module 1",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignments by Monday, 6th November 2023. They are a pre-requisite for the second module.\n\nAssignment 1: In class: Get an account for GitHub\nAssignment 2: In class: Working with R, RStudio on Posit Cloud\nAssignment 3: Homework: Interaction with GitHub\nAssignment 4: Complete the pre-course survey: TODO\n\nThank you for working through these assignments.",
+    "text": "Assignments\nPlease complete the following assignments by Wednesday, 28th February 2024. They are a pre-requisite for active participation in the second module.\n\nAssignment 1: In class: Get an account for GitHub\nAssignment 2: In class: Working with R, RStudio on Posit Cloud\nAssignment 3: Homework: Interaction with GitHub\nAssignment 4: Create your ORCID iD at: https://orcid.org/register (Learn more about ORCID and why you should get one)\nAssignment 5: Complete the pre-course survey: https://forms.gle/jcKFqiB2DHmSSbck6\n\nThank you for working through these assignments.",
     "crumbs": [
       "Module 01"
     ]
@@ -1105,7 +1105,7 @@
     "href": "slides/lec-01-welcome.html#meet-the-lecturers",
     "title": "Welcome & get ready for the course",
     "section": "Meet the lecturers",
-    "text": "Meet the lecturers\n\n\nProf. Elizabeth Tilley\n\n\n\n\n\n\nEnvironmental Engineer\nEconomist\n…\n\n\nLars Schöbitz\n\n\n\n\n\n\nEnvironmental Engineer\nRetired researcher\nRStudio certified instructor\nData steward at ETHZ"
+    "text": "Meet the lecturers\n\n\nProf. Elizabeth Tilley\n\n\n\n\n\n\nEnvironmental Engineer 🔨\nEconomist 📈\nTurkey Lover 🦃\nCanadian 🇨🇦\n\n\nLars Schöbitz\n\n\n\n\n\n\nEnvironmental Engineer 🔨\nRetired researcher 🛏\nRStudio certified instructor\nData steward at ETHZ"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-goals-for-the-course",
@@ -2195,7 +2195,7 @@
     "href": "assignments/md-01/am-01-2-posit.html",
     "title": "Working with R, RStudio on Posit Cloud",
     "section": "",
-    "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: &lt;&gt;",
+    "text": "Log into Posit Cloud with GitHub account\nHere are the instructions to login to Posit Cloud using a GitHub account:\n\nGo to the Posit Cloud Sign Up page: https://login.posit.cloud/register\nClick on the “Sign Up with GitHub” button.\nEnter your GitHub username and password when prompted.\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\nNote that you will need to have a GitHub account in order to use this login method. If you do not have a GitHub account, you will need to create one before you can log in to Posit Cloud.\n\n\nJoin the course workspace on Posit Cloud\n\nOpen this link: https://posit.cloud/spaces/484002/join?access_code=VQqBWZMZpA364I1KAvJfoepjZ8Ek0h_TOfNEkq-o",
     "crumbs": [
       "Module 01",
       "am-02: Posit Cloud"

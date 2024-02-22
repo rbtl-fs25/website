@@ -16,4 +16,4 @@ Note that you will need to have a GitHub account in order to use this login meth
 
 ### Join the course workspace on Posit Cloud
 
--   Open this link: <>
+-   Open this link: <https://posit.cloud/spaces/484002/join?access_code=VQqBWZMZpA364I1KAvJfoepjZ8Ek0h_TOfNEkq-o>
