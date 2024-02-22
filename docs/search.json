@@ -1336,7 +1336,7 @@
     "href": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: md-01-exercises",
-    "text": "Your turn: md-01-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbt-fs24 workspace for the course.\nClick Start next to md-01-exercises.\nIn the File Manager in the bottom right window, locate the hello-quarto.qmd file and click on it to open it in the top left window.\nRender the document.\nAdd your name to the author: key in the YAML header\nRender the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: md-01-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbt-fs24 workspace for the course.\nClick Start next to md-01-exercises.\nIn the File Manager in the bottom right window, locate the hello-quarto.qmd file and click on it to open it in the top left window.\nRender the document.\nAdd your name to the author: key in the YAML header\nRender the document\nInspect components of the document and make one more update and re-render.\nDiscuss notes about updates you’ve made with your neighbor. Note any aspects of the document that are not clear after the tour and your first interaction with it.\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#from-the-comfort-of-your-own-workspace",

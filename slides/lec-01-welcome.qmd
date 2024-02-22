@@ -430,7 +430,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ```{r}
 #| echo: false
 
-countdown(minutes = 10)
+countdown(minutes = 5)
 ```
 
 ## From the comfort of your own workspace
