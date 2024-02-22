@@ -1367,13 +1367,6 @@
     "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nCross References\nhtml_document2\npdf_document2\nword_document2\nQuarto Crossrefs\n\n\nWebsites & Blogs\nblogdown\ndistill\nQuarto Websites\nQuarto Blogs\n\n\nBooks\nbookdown\nQuarto Books\n\n\nInteractivity\nShiny Documents\nQuarto Interactive Documents\n\n\nJournal Articles\nrticles\nJournal Articles\n\n\nDashboards\nflexdashboard\nQuarto Dashboards"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
-    "href": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
-    "title": "Welcome & get ready for the course",
-    "section": "Your turn: Create a new Quarto document",
-    "text": "Your turn: Create a new Quarto document\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output.\n\nRender the document, which will ask you to give it a name – you can use my-first-document.qmd.\n\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).\nStretch goal: Add a table of contents. Note: Watch out for the indentation.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n05:00"
-  },
-  {
     "objectID": "slides/lec-01-welcome.html#take-a-break-1",
     "href": "slides/lec-01-welcome.html#take-a-break-1",
     "title": "Welcome & get ready for the course",
@@ -1455,7 +1448,7 @@
     "href": "slides/lec-01-welcome.html#module-1-documentation",
     "title": "Welcome & get ready for the course",
     "section": "Module 1 documentation",
-    "text": "Module 1 documentation\n\nrbt-fs24.github.io/website/modules/md-01.html"
+    "text": "Module 1 documentation\n\nrbtl-fs24.github.io/website/modules/md-01.html"
   },
   {
     "objectID": "slides/lec-01-welcome.html#homework-due-date",

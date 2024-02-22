@@ -512,30 +512,6 @@ countdown(minutes = 10)
 | Dashboards       | [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)                     | [Quarto Dashboards](https://quarto.org/docs/dashboards/index.html)          |
 +------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 
-## Your turn: Create a new Quarto document
-
-::: task
-In your exercises project in RStudio on Posit Cloud, go to [File \> New File \> Quarto document]{.highlight-yellow} to create a Quarto document with HTML output. 
-
-- Render the document, which will ask you to give it a name -- you can use `my-first-document.qmd`.
-
-Use the visual editor for the next steps.
-
--   Add a title and your name as the author.
-
--   Create four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).
-
--   [**Stretch goal**]{.highlight-yellow}: Add a table of contents. Note: Watch out for the indentation.
-
--   [**Stretch goal**]{.highlight-yellow}: Change the html theme to `sketchy`. Tipp: Check [quarto.org](https://quarto.org/) and use search function {{< fa magnifying-glass >}} with "HTML theming"
-:::
-
-```{r}
-#| echo: false
-
-countdown(minutes = 5)
-```
-
 ## Take a break
 
 [Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
@@ -665,10 +641,10 @@ readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |>
 ## Module 1 documentation
 
 ::: learn-more
-[rbt-fs24.github.io/website/modules/md-01.html](https://rbt-fs24.github.io/website/modules/md-01.html)
+[rbtl-fs24.github.io/website/modules/md-01.html](https://rbtl-fs24.github.io/website/modules/md-01.html)
 
 ```{=html}
-<iframe src="https://rbt-fs24.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+<iframe src="https://rbtl-fs24.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
 ```
 :::
 
