@@ -1182,14 +1182,21 @@
     "href": "slides/lec-01-welcome.html#platforms-and-tools",
     "title": "Welcome & get ready for the course",
     "section": "Platforms and Tools",
-    "text": "Platforms and Tools\n\nR\ntidyverse R Packages\nPosit Cloud\nRStudio IDE\nQuarto publishing system\nZotero reference management\nGoogle Workspace (Sheets & Forms)"
+    "text": "Platforms and Tools\n\nCourse website\nR\ntidyverse R Packages\nPosit Cloud\nRStudio IDE\nQuarto publishing system\nZotero reference management\nGoogle Workspace (Sheets & Forms)"
   },
   {
-    "objectID": "slides/lec-01-welcome.html#bookmark",
-    "href": "slides/lec-01-welcome.html#bookmark",
+    "objectID": "slides/lec-01-welcome.html#course-website",
+    "href": "slides/lec-01-welcome.html#course-website",
     "title": "Welcome & get ready for the course",
-    "section": "Bookmark",
-    "text": "Bookmark\nrbtl-fs24.github.io/website/"
+    "section": "Course website",
+    "text": "Course website\nrbtl-fs24.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html#our-turn-open-and-bookmark-the-course-webiste",
+    "href": "slides/lec-01-welcome.html#our-turn-open-and-bookmark-the-course-webiste",
+    "title": "Welcome & get ready for the course",
+    "section": "Our turn: Open and bookmark the course webiste",
+    "text": "Our turn: Open and bookmark the course webiste\n\nOpen a web browser on your laptop.\nNavigate to the course website: rbtl-fs24.github.io/website/\nCreate a bookmarks folder named rbtl-fs24 in your bookmarks toolbar\nAdd a bookmark of the course website to the folder rbtl-fs24\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#learning-objectives-for-this-week",
@@ -1238,7 +1245,7 @@
     "href": "slides/lec-01-welcome.html#your-turn-get-a-github-account",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Get a GitHub account",
-    "text": "Your turn: Get a GitHub account\n\nOpen a web browser on your laptop.\nNavigate to the course website: rbtl-fs24.github.io/website/\nIf you haven’t yet, bookmark the course website\nIn the left-hand menu, clock on Module 1, then select am-01: GitHub\nFollow the instructions\nPlace a yellow sticky note on your laptop when you have completed the assignment"
+    "text": "Your turn: Get a GitHub account\n\nOpen a web browser on your laptop.\nNavigate to the course website: rbtl-fs24.github.io/website/\nIf you haven’t yet, bookmark the course website\nIn the left-hand menu, clock on Module 1, then select am-01: GitHub\nFollow the instructions\nPlace a yellow sticky note on your laptop when you have completed the assignment\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section-9",
@@ -1322,7 +1329,7 @@
     "href": "slides/lec-01-welcome.html#take-a-break",
     "title": "Welcome & get ready for the course",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n15:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#your-turn-md-01-exercises",
@@ -1364,14 +1371,14 @@
     "href": "slides/lec-01-welcome.html#your-turn-create-a-new-quarto-document",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Create a new Quarto document",
-    "text": "Your turn: Create a new Quarto document\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output.\n\nRender the document, which will ask you to give it a name – you can use my-first-document.qmd.\n\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).\nStretch goal: Add a table of contents. Note: Watch out for the indentation.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: Create a new Quarto document\n\nIn your exercises project in RStudio on Posit Cloud, go to File &gt; New File &gt; Quarto document to create a Quarto document with HTML output.\n\nRender the document, which will ask you to give it a name – you can use my-first-document.qmd.\n\nUse the visual editor for the next steps.\n\nAdd a title and your name as the author.\nCreate four sections with headings of level 2 (Introduction, Methods, Results, Conclusions).\nStretch goal: Add a table of contents. Note: Watch out for the indentation.\nStretch goal: Change the html theme to sketchy. Tipp: Check quarto.org and use search function  with “HTML theming”\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#take-a-break-1",
     "href": "slides/lec-01-welcome.html#take-a-break-1",
     "title": "Welcome & get ready for the course",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n15:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "slides/lec-01-welcome.html#weekly-structure",

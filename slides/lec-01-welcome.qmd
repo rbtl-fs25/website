@@ -185,6 +185,7 @@ readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |>
 
 ## Platforms and Tools
 
+-   Course website
 -   R
 -   tidyverse R Packages
 -   Posit Cloud
@@ -193,9 +194,23 @@ readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |>
 -   Zotero reference management
 -   Google Workspace (Sheets & Forms)
 
-## Bookmark {.center-align .large}
+## Course website {.center-align .large}
 
 [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+
+## Our turn: Open and bookmark the course webiste
+
+1. Open a web browser on your laptop.
+2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+3. Create a bookmarks folder named rbtl-fs24 in your bookmarks toolbar
+4. Add a bookmark of the course website to the folder rbtl-fs24
+
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
 
 ## Learning Objectives (for this week)
 
@@ -280,9 +295,15 @@ Sit back and enjoy!
 1. Open a web browser on your laptop.
 2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
 3. If you haven't yet, bookmark the course website
-4. In the left-hand menu, clock on Module 1, then select am-01: GitHub
+4. In the left-hand menu, clock on [Module 1, then select am-01: GitHub]{.highlight-yellow}
 5. Follow the instructions
 6. Place a yellow sticky note on your laptop when you have completed the assignment
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
 
 # Posit Cloud {background-color="#4C326A"}
 
@@ -385,7 +406,7 @@ Sit back and enjoy!
 ![](img/lec-01/coffee-break.jpg){width="25%"}
 
 ```{r}
-countdown(minutes = 10)
+countdown(minutes = 15)
 ```
 
 ::: aside
@@ -512,7 +533,7 @@ Use the visual editor for the next steps.
 ```{r}
 #| echo: false
 
-countdown(minutes = 10)
+countdown(minutes = 5)
 ```
 
 ## Take a break
@@ -522,7 +543,7 @@ countdown(minutes = 10)
 ![](img/lec-01/coffee-break.jpg){width="25%"}
 
 ```{r}
-countdown(minutes = 10)
+countdown(minutes = 15)
 ```
 
 ::: aside
