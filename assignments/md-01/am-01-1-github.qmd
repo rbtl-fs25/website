@@ -36,13 +36,6 @@ You can change your username later, but better to get this right the first time.
 
 ## {{< fa brands github >}} Step 2: Open an issue on GitHub
 
-::: {.callout-note collapse="true"}
-## If you have missed Module 01
-
-If you have missed Module 01 and you are completing this assignment as part of your homeowkr, work through Step 2 without tagging your neighbor. You can tag Lars with @larnsce instead.
-
-:::
-
 ::: task
 
 1. Open [github.com](https://github.com/) in your browser and login with your credentials
@@ -53,8 +46,3 @@ If you have missed Module 01 and you are completing this assignment as part of y
 7. Add a comment to the issue and tag Lars with [@larnsce]{.highlight-yellow}. Add some text.
 8. Click submit new issue
 :::
-
-```{r}
-#| echo: false
-knitr::include_graphics(here::here("slides/img/lec-01/github-notifications-inbox.png"))
-```
