@@ -2,20 +2,20 @@
 title: "{{< var md-02.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
-date: "2023-11-07"
+date: "2024-02-29"
+date-format: "MMM D, YYYY"
 format: 
   revealjs: 
     theme: slides.scss
     transition: fade
     slide-number: true
-    logo: ../img/OWD-logo-20.png
     chalkboard: true
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
 execute:
   freeze: auto
 params:
-    week: 2
+    module: 2
 editor_options: 
   chunk_output_type: console
 ---
@@ -40,17 +40,11 @@ gapminder_2007 <- gapminder |>
 
 ```
 
-## {{< fa circle-question >}} {.center-align}
+## Email from GitHub? {.center-align}
 
-::: {style="margin-top: 50px; font-size: 1.5em"}
-Q: How do I successfully complete the course?
-:::
+While we are getting ready, please check for this email from GitHub and [accept the invitation]{.highlight-yellow} to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren't your primary inbox (e.g Updates).
 
-You successfully complete the course and you  will receive a certificate of completion if you:
-
-[hand in a complete capstone project report that uses a dataset of your choice by 30 January 2024 (instructions will follow)]{.highlight-yellow}
-
-This is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed.
+![](img/lec-02/github-invitation.png)
 
 ## {background-image="img/lec-02/r_rollercoaster.png" background-size="contain"} 
 
@@ -144,14 +138,18 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 Artwork by [@allison_horst](https://www.allisonhorst.com/)
 :::
 
-# Homework assignment module 1 {background-color="#4C326A"}
+# Git configuration {background-color="#4C326A"}
+
+## Your turn
+
+1. 
 
 ## on GitHub Organisation
 
 [Bookmark this link in your browser!]{.highlight-yellow}
 
 ::: learn-more
-[github.com/ds4owd-001](https://github.com/ds4owd-001)
+[github.com/ds4owd-001](https://github.com/rbtl-fs24)
 
 ![](img/lec-02/github-search-repo.png)
 
@@ -166,7 +164,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 [Bookmark this link in your browser!]{.highlight-yellow}
 
 ::: learn-more
-[posit.cloud/spaces/426916/content/](https://posit.cloud/spaces/426916/content/)
+[posit.cloud/spaces/484002/content/](https://posit.cloud/spaces/484002/content/)
 
 ![](img/lec-02/posit-cloud-new-project.png)
 
@@ -248,7 +246,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 #| label: learning-objectives
 
 lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```

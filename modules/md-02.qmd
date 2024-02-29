@@ -45,5 +45,10 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa code >}} Assignments
 
-- In preparation
+Please complete the following assignment by Wednesday, 6th March 2024. 
+
+-   [Assignment 1](../assignments/md-02/am-02-1-github.qmd): Git configuration
+-   [Assignment 2](../assignments/md-02/am-02-2-data-visualisation.qmd): Data visualisation
+
+Thank you for working through this assignment
 

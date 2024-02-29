@@ -51,6 +51,11 @@ website:
             text: "am-03: GitHub PAT"
       - section: "Module 02"
         href: modules/md-02.qmd
+        contents:
+          - href: assignments/md-02/am-02-1-github.qmd
+            text: "am-01: Git configuration"
+          - href: assignments/md-02/am-02-2-data-visualisation.qmd
+            text: "am-02: Data visualisation"
       - section: "Module 03"
         href: modules/md-03.qmd
       - section: "Module 04"
