@@ -20,12 +20,46 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="../../modules/md-02.html" rel="next">
-<link href="../../assignments/md-01/am-01-2-posit.html" rel="prev">
+<link href="../../assignments/md-02/am-02-2-data-visualisation.html" rel="next">
+<link href="../../modules/md-02.html" rel="prev">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -66,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-01.html">Module 01</a></li><li class="breadcrumb-item"><a href="../../assignments/md-01/am-01-4-github.html">am-03: GitHub PAT</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-02.html">Module 02</a></li><li class="breadcrumb-item"><a href="../../assignments/md-02/am-02-1-github.html">am-01: Git configuration</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -111,11 +145,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../modules/md-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 01</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/md-01/am-01-1-github.html" class="sidebar-item-text sidebar-link">
@@ -130,15 +164,34 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/md-01/am-01-4-github.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../assignments/md-01/am-01-3-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">am-03: GitHub PAT</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Module 02</span></span>
+      <div class="sidebar-item-container"> 
+            <a href="../../modules/md-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Module 02</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-02/am-02-1-github.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">am-01: Git configuration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../assignments/md-02/am-02-2-data-visualisation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">am-02: Data visualisation</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
@@ -190,14 +243,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-set-up-a-github-personal-access-token" id="toc-step-1-set-up-a-github-personal-access-token" class="nav-link active" data-scroll-target="#step-1-set-up-a-github-personal-access-token">Step 1: Set up a GitHub Personal Access Token</a></li>
+  <li><a href="#step-1-clone-a-repository" id="toc-step-1-clone-a-repository" class="nav-link active" data-scroll-target="#step-1-clone-a-repository">Step 1: Clone a repository</a></li>
+  <li><a href="#step-2-introduce-yourself-to-git" id="toc-step-2-introduce-yourself-to-git" class="nav-link" data-scroll-target="#step-2-introduce-yourself-to-git">Step 2: Introduce yourself to git</a></li>
+  <li><a href="#step-3-commit-and-push-your-changes" id="toc-step-3-commit-and-push-your-changes" class="nav-link" data-scroll-target="#step-3-commit-and-push-your-changes">Step 3: Commit and push your changes</a></li>
+  <li><a href="#step-4-open-an-issue-on-github" id="toc-step-4-open-an-issue-on-github" class="nav-link" data-scroll-target="#step-4-open-an-issue-on-github">Step 4: Open an issue on GitHub</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-01.html">Module 01</a></li><li class="breadcrumb-item"><a href="../../assignments/md-01/am-01-4-github.html">am-03: GitHub PAT</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-02.html">Module 02</a></li><li class="breadcrumb-item"><a href="../../assignments/md-02/am-02-1-github.html">am-01: Git configuration</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Interaction with GitHub</h1>
 </div>
@@ -216,41 +272,73 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="step-1-set-up-a-github-personal-access-token" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-set-up-a-github-personal-access-token">Step 1: Set up a GitHub Personal Access Token</h2>
-<p>Here are the step-by-step instructions to set up a GitHub personal access token:</p>
+<section id="step-1-clone-a-repository" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-clone-a-repository">Step 1: Clone a repository</h2>
+<ol type="1">
+<li>Open github.com in your browser.</li>
+<li>Navigate to the GitHub organisation for the course.</li>
+<li>Find the repository git-configuration-USERNAME that ends with your GitHub username, and open it.</li>
+<li>Click on the green “Code” button.</li>
+<li>Copy the HTTPS URL to your clipboard.</li>
+<li>Open the rbtl-fs24 workspace on <a href="https://posit.cloud/spaces/484002/content/all?sort=name_asc">posit.cloud</a></li>
+<li>Click New Project &gt; New Project from Git Repository</li>
+<li>Paste the HTTPS URL from GitHub into the “URL of your Git Repository” field.</li>
+<li>Wait until the project is deployed</li>
+<li>Continue with the next step</li>
+</ol>
+</section>
+<section id="step-2-introduce-yourself-to-git" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-introduce-yourself-to-git">Step 2: Introduce yourself to git</h2>
+<ol type="1">
+<li>In Posit Cloud, open the git-configuration-USERNAME project that ends with your GitHub username.</li>
+<li>Open the git-configuration.qmd file from the bottom right window of RStudio.</li>
+<li>Edit the code chunk under “Git configuration details” and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)</li>
+<li>Render the document</li>
+<li>Continue with the next step</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace Your Name and Your Email with your details. Do not delete the quotes "".</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Your Name"</span>, <span class="at">user.email =</span> <span class="st">"Your Email"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-3-commit-and-push-your-changes" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-commit-and-push-your-changes">Step 3: Commit and push your changes</h2>
+<ol type="1">
+<li>Navigate to the Git pane in the top-right window of RStudio</li>
+<li>Check the box next to the git-configuration.qmd file to stage it for commit</li>
+<li>Click on the “Commit” button</li>
+<li>Enter a commit message in the “Commit message” field</li>
+<li>Click on the “Commit” button</li>
+<li>Click on the “Push” button</li>
+<li>Enter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields</li>
+</ol>
 <div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Do not use your GitHub password
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Treat your access tokens like passwords and keep them secure (e.g.&nbsp;a password managing software).</p>
+<p>You need to enter the GitHub Personal Access Token (PAT) you created in your homework assignment from Module 1 to push your changes back to GitHub.</p>
 </div>
 </div>
-</div>
+</section>
+<section id="step-4-open-an-issue-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-open-an-issue-on-github">Step 4: Open an issue on GitHub</h2>
 <ol type="1">
-<li>Log in to your GitHub account.</li>
-<li>Click on your profile picture in the top-right corner of the page.</li>
-<li>Select “Settings” from the dropdown menu.</li>
-<li>In the left sidebar, click on “Developer settings”.</li>
-<li>Click on “Personal access tokens”.</li>
-<li>Click on <strong>“Tokens (classic)”</strong>.</li>
-<li>Click on “Generate new token” and from the dropdown menu select <strong>“Generate new token (classic)”.</strong></li>
-<li>In the “Note” field, give your token the name: GITHUB_PAT</li>
-<li>Under Expiration, select “No expiration”</li>
-<li>Under “Select scopes”, select: <strong>repo, workflow, user</strong></li>
-<li>Click on “Generate token”.</li>
-<li>Your personal access token will be displayed on the screen. Copy it and store it in a safe place.</li>
+<li>Open <a href="https://github.com/">github.com</a> in your browser.</li>
+<li>Navigate to the GitHub organisation for the course.</li>
+<li>Find the repository git-configuration that ends with your GitHub username.</li>
+<li>Click on the “Issues” tab.</li>
+<li>Click on the green “New issue” button.</li>
+<li>In the “Title” field write: “Completed git configuration assignments”.</li>
+<li>In the “Leave a comment” field, tag the course instructor <span class="citation" data-cites="larnsce">@larnsce</span>.</li>
 </ol>
-<p>Remember to treat your access tokens like passwords and keep them secure (e.g.&nbsp;a password manager software).</p>
-<p>We will use this GitHub PAT in class next week.</p>
 
 
 </section>
@@ -645,13 +733,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../assignments/md-01/am-01-2-posit.html" class="pagination-link  aria-label=" am-02:="" posit="" cloud"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">am-02: Posit Cloud</span>
+      <a href="../../modules/md-02.html" class="pagination-link  aria-label=" module="" 02"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 02</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../modules/md-02.html" class="pagination-link" aria-label="Module 02">
-        <span class="nav-page-text">Module 02</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../assignments/md-02/am-02-2-data-visualisation.html" class="pagination-link" aria-label="am-02: Data visualisation">
+        <span class="nav-page-text">am-02: Data visualisation</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

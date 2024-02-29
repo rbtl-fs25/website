@@ -515,11 +515,10 @@ ggplot(data = gapminder,
 ::: columns
 ::: {.column width="30%"}
 
-1. the mean of the observations
-2. the middle of the box
-3. the median of the observations
-4. none of the above
-5. I don't know
+1. I don't know
+2. the mean of the observations
+3. the middle of the box
+4. the median of the observations
 
 :::
 
@@ -543,11 +542,10 @@ ggplot(data = gapminder,
 ::: columns
 ::: {.column width="30%"}
 
-1. 25%
-2. depends on the median
-3. 50%
-4. none of the above
-5. I don't know
+1. I don't know
+2. 25%
+3. depends on the median
+4. 50%
 
 :::
 
@@ -568,19 +566,17 @@ ggplot(data = gapminder,
 
 ## Poll 3: What is the median of a set of observations? {.smaller}
 
-1. The median is the most frequently occurring value in a dataset.
-2. The median is the sum of all values in a dataset divided by the number of observations.
-3. The median is the point above and below which half (50%) of the observations falls.
-4. The median is the square root of the sum of the squares of each value in a dataset.
-5. I don't know
+1. I don't know
+2. The median is the most frequently occurring value in a dataset.
+3. The median is the sum of all values in a dataset divided by the number of observations.
+4. The median is the point above and below which half (50%) of the observations falls.
 
 ## Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the "true" value? {.smaller}
 
-1. The mean
-2. The standard deviation
-3. The median
-4. The interquartile range
-5. I don't know
+1. I don't know
+2. The maximum
+3. The standard deviation
+4. The median
 
 ## Boxplot, explained
 

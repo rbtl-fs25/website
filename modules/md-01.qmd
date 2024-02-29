@@ -54,7 +54,7 @@ Please complete the following assignments by Wednesday, 28th February 2024. They
 
 -   [Assignment 1](../assignments/md-01/am-01-1-github.qmd): In class: Get an account for GitHub
 -   [Assignment 2](../assignments/md-01/am-01-2-posit.qmd): In class: Working with R, RStudio on Posit Cloud
--   [Assignment 3](../assignments/md-01/am-01-4-github.qmd): Homework: Interaction with GitHub
+-   [Assignment 3](../assignments/md-01/am-01-3-github.qmd): Homework: Interaction with GitHub
 -   Assignment 4: Create your ORCID iD at: <https://orcid.org/register> ([Learn more about ORCID and why you should get one](https://the-turing-way.netlify.app/communication/citable/citable-orcid.html?highlight=orcid))
 -   Assignment 5: Complete the pre-course survey (this is also your assignment submission completed): <https://forms.gle/jcKFqiB2DHmSSbck6>
 

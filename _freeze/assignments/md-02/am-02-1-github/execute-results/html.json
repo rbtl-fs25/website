@@ -1,0 +1,17 @@
+{
+  "hash": "be178617ba3ad8b826d9e56b3a1912f5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Interaction with GitHub\"\n---\n\n\n## Step 1: Clone a repository\n\n1. Open github.com in your browser.\n2. Navigate to the GitHub organisation for the course.\n3. Find the repository git-configuration-USERNAME that ends with your GitHub username, and open it.\n4. Click on the green \"Code\" button.\n5. Copy the HTTPS URL to your clipboard.\n6. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=name_asc)\n7. Click New Project > New Project from Git Repository\n8. Paste the HTTPS URL from GitHub into the \"URL of your Git Repository\" field.\n9. Wait until the project is deployed\n10. Continue with the next step\n\n## Step 2: Introduce yourself to git\n\n1. In Posit Cloud, open the git-configuration-USERNAME project that ends with your GitHub username.\n2. Open the git-configuration.qmd file from the bottom right window of RStudio.\n3. Edit the code chunk under \"Git configuration details\" and replace the placeholders with your name and email address (these will be the details that git will use to identify you when you commit changes to the repository)\n4. Render the document\n5. Continue with the next step\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(usethis)\n\n# Replace Your Name and Your Email with your details. Do not delete the quotes \"\".\nuse_git_config(user.name = \"Your Name\", user.email = \"Your Email\")\n```\n:::\n\n\n## Step 3: Commit and push your changes\n\n1. Navigate to the Git pane in the top-right window of RStudio\n2. Check the box next to the git-configuration.qmd file to stage it for commit\n3. Click on the \"Commit\" button\n4. Enter a commit message in the \"Commit message\" field\n5. Click on the \"Commit\" button\n6. Click on the \"Push\" button\n7. Enter your GitHub username and GitHub Personal Access Token (PAT) in the \"Username\" and \"Password\" fields\n\n::: callout-important\n## Do not use your GitHub password\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in your homework assignment from Module 1 to push your changes back to GitHub.\n:::\n\n## Step 4: Open an issue on GitHub\n\n1. Open [github.com](https://github.com/) in your browser.\n2. Navigate to the GitHub organisation for the course.\n3. Find the repository git-configuration that ends with your GitHub username.\n4. Click on the \"Issues\" tab.\n5. Click on the green \"New issue\" button.\n6. In the \"Title\" field write: \"Completed git configuration assignments\".\n7. In the \"Leave a comment\" field, tag the course instructor @larnsce.",
+    "supporting": [
+      "am-02-1-github_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
