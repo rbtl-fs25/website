@@ -138,18 +138,19 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 Artwork by [@allison_horst](https://www.allisonhorst.com/)
 :::
 
-# Git configuration {background-color="#4C326A"}
+# Interaction with GitHub {background-color="#4C326A"}
 
-## Your turn
-
-1. 
-
-## on GitHub Organisation
+## open GitHub organisation
 
 [Bookmark this link in your browser!]{.highlight-yellow}
 
 ::: learn-more
-[github.com/ds4owd-001](https://github.com/rbtl-fs24)
+[github.com/rbtl-fs24](https://github.com/rbtl-fs24)
+
+![](img/lec-02/github-org.png)
+## on GitHub Organisation
+
+- Search for your username in search bar under [Repositories]{.highlight-yellow}
 
 ![](img/lec-02/github-search-repo.png)
 
@@ -176,6 +177,21 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 ![](img/lec-02/posit-cloud-project-link.png)
 
 :::
+
+## Your turn: Introduce yourself to git
+
+1. Open a web browser on your laptop.
+2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+3. If you haven't yet, bookmark the course website
+4. In the left-hand menu, click on Module 2, then select [am-01: Git configuration]{.highlight-yellow}
+5. Follow the instructions
+6. Place a yellow sticky note on your laptop when you have completed the assignment
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
 
 # Version Control - Terminology {background-color="#4C326A"}
 
@@ -235,7 +251,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 
 ![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.009.png)
 
-## new: `git pull`
+## get updates: `git pull`
 
 ![](img/lec-02/illustration-slides-git-pull/illustration-slides-git-pull.010.png)
 
@@ -245,7 +261,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
@@ -503,6 +519,7 @@ ggplot(data = gapminder,
 2. the middle of the box
 3. the median of the observations
 4. none of the above
+5. I don't know
 
 :::
 
@@ -530,6 +547,7 @@ ggplot(data = gapminder,
 2. depends on the median
 3. 50%
 4. none of the above
+5. I don't know
 
 :::
 
@@ -554,6 +572,7 @@ ggplot(data = gapminder,
 2. The median is the sum of all values in a dataset divided by the number of observations.
 3. The median is the point above and below which half (50%) of the observations falls.
 4. The median is the square root of the sum of the squares of each value in a dataset.
+5. I don't know
 
 ## Poll 4: If you have the values: 1, 2, 3, and 10: which statistical measure best represents the "true" value? {.smaller}
 
@@ -561,6 +580,7 @@ ggplot(data = gapminder,
 2. The standard deviation
 3. The median
 4. The interquartile range
+5. I don't know
 
 ## Boxplot, explained
 
@@ -598,13 +618,13 @@ Image taken from: <https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot>
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
 3. Click [Start]{.highlight-yellow} next to [md-02-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`md-02b-data-visualization.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
 
 ```{r}
-countdown(30)
+countdown(20)
 ```
 
 ## Take a break
@@ -717,7 +737,7 @@ ggplot(data = gapminder_2007,
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
 3. In the File Manager in the bottom right window, locate the [`md-02c-make-a-plot.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4. Follow instructions in the file
 :::
@@ -730,22 +750,22 @@ countdown(15)
 ## Module 2 documentation
 
 ::: learn-more
-[ds4owd-001.github.io/website/modules/md-02.html](https://ds4owd-001.github.io/website/modules/md-02.html)
+[rbtl-fs24.github.io/website/modules/md-02.html](https://rbtl-fs24.github.io/website/modules/md-02.html)
 
 ```{=html}
-<iframe src="https://ds4owd-001.github.io/website/modules/md-02.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 2 documentation"></iframe>
+<iframe src="https://rbtl-fs24.github.io/website/modules/md-02.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 2 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
--   Homework assignment due: [Monday, November 13th]{.highlight-yellow}
--   Correction & feedback phase up to: Thursday, November 16th 
+-   Homework assignment due: [Wednesday, March 6th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, March 12th 
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-03-visualisation.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-02-visualisation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
