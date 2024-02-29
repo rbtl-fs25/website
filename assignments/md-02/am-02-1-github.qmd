@@ -39,7 +39,7 @@ use_git_config(user.name = "Your Name", user.email = "Your Email")
 2. Check the box next to the git-configuration.qmd file to stage it for commit
 3. Click on the "Commit" button
 4. Enter a commit message in the "Commit message" field
-5. Click on the "Commit" button$
+5. Click on the "Commit" button
 6. Click on the "Push" button
 7. Enter your GitHub username and GitHub Personal Access Token (PAT) in the "Username" and "Password" fields
 
@@ -57,4 +57,4 @@ You need to enter the GitHub Personal Access Token (PAT) you created in your hom
 4. Click on the "Issues" tab.
 5. Click on the green "New issue" button.
 6. In the "Title" field write: "Completed git configuration assignments".
-7. In the "Leave a comment" field, tag the course instructor @larnsce
+7. In the "Leave a comment" field, tag the course instructor @larnsce.

@@ -7,7 +7,7 @@ params:
 execute: 
   echo: false
   warning: false
-bibliography: ../ds4owd-001.bib
+bibliography: ../rbtl-fs24.bib
 ---
 
 

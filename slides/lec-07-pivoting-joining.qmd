@@ -15,8 +15,8 @@ editor: source
 execute:
   freeze: auto
 params:
-    week: 7
-bibliography: "../ds4owd-001.bib"
+    module: 7
+bibliography: "../rbtl-fs24.bib"
 editor_options: 
   chunk_output_type: console
 ---
@@ -94,8 +94,8 @@ waste_data_tidy |>
 ```{r}
 #| label: learning-objectives
 #| echo: false
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -689,7 +689,7 @@ knitr::include_graphics("img/lec-07/dictionary-csv.png")
 ## Directory tree of a project {.smaller}
 
 Capstone project of Rainbow Train:
-<https://github.com/ds4owd-001/project-rainbow-train>
+<https://github.com/rbtl-fs24/project-rainbow-train>
 
 ```
 .
@@ -745,10 +745,10 @@ countdown(10)
 ## Module 7 documentation
 
 ::: learn-more
-[ds4owd-001.github.io/website/modules/md-07.html](https://ds4owd-001.github.io/website/modules/md-07.html)
+[rbtl-fs24.github.io/website/modules/md-07.html](https://rbtl-fs24.github.io/website/modules/md-07.html)
 
 ```{=html}
-<iframe src="https://ds4owd-001.github.io/website/modules/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 7 documentation"></iframe>
+<iframe src="https://rbtl-fs24.github.io/website/modules/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 7 documentation"></iframe>
 ```
 :::
 
@@ -791,15 +791,15 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 ## Course calendar {.smallest .scrollable}
 
 ```{r}
-readr::read_csv("../data/tbl-01-ds4owd-001-course-schedule.csv") |> 
-  dplyr::select(date, week, topic = title, module) |> 
+readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+  dplyr::select(module, date, topic = title) |>
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
 ```
 
 ## Thanks! `r emo::ji("sunflower")`
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-07-pivoting-joining.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-07-pivoting-joining.pdf)
 
 # References
 

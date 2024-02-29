@@ -1,0 +1,29 @@
+---
+title: "Interaction with GitHub"
+---
+
+## Step 1: Set up a GitHub Personal Access Token
+
+Here are the step-by-step instructions to set up a GitHub personal access token:
+
+::: {.callout-important collapse="false"}
+Treat your access tokens like passwords and keep them secure (e.g. a password managing software).
+:::
+
+1.  Log in to your GitHub account.
+2.  Click on your profile picture in the top-right corner of the page.
+3.  Select "Settings" from the dropdown menu.
+4.  In the left sidebar, click on "Developer settings".
+5.  Click on "Personal access tokens".
+6.  Click on **"Tokens (classic)"**.
+7.  Click on "Generate new token" and from the dropdown menu select **"Generate new token (classic)".**
+8.  In the "Note" field, give your token the name: GITHUB_PAT
+9.  Under Expiration, select "No expiration"
+10. Under "Select scopes", select: **repo, workflow, user**
+11. Click on "Generate token".
+12. Your personal access token will be displayed on the screen. Copy it and store it in a safe place.
+
+Remember to treat your access tokens like passwords and keep them secure (e.g. a password manager software).
+
+We will use this GitHub PAT in class next week. 
+
