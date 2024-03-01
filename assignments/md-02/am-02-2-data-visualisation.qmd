@@ -44,5 +44,5 @@ You need to enter the GitHub Personal Access Token (PAT) you created in assignme
 3. Find the repository md-02-assignments that ends with your GitHub username.
 4. Click on the "Issues" tab.
 5. Click on the green "New issue" button.
-6. In the "Title" field write: "Completed module 1 assignments".
+6. In the "Title" field write: "Completed module 2 assignments".
 7. In the "Leave a comment" field, tag the course instructor @larnsce, and ask a question.
