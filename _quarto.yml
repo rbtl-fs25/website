@@ -58,6 +58,13 @@ website:
             text: "am-02: Data visualisation"
       - section: "Module 03"
         href: modules/md-03.qmd
+        contents:
+          - href: assignments/md-03/am-03-1-data-transformation.qmd
+            text: "am-01: Data transformation"
+          - href: assignments/md-03/am-03-2-google-workspace.qmd
+            text: "am-02: Google Workspace"
+          - href: assignments/md-03/am-03-3-spreadsheet.qmd
+            text: "am-03: Spreadsheet"
       - section: "Module 04"
         href: modules/md-04.qmd
       - section: "Module 05"
