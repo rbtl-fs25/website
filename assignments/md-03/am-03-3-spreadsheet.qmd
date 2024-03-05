@@ -19,9 +19,9 @@ You are collecting the content of 20 bins from two public spaces in Zurich (Bäc
 
 ### Layout the spreadsheet
 
-1. Layout the spreadsheet for your experiment
-2. Make up the results for the waste composition (e.g. 3.2 kg paper, 4.5 kg plastic, etc.)
-. 
+1. Layout the spreadsheet for the described experiment.
+2. Make up the results for the waste composition (e.g. 3.2 kg paper, 4.5 kg plastic, etc.).
+
 ## Step 2: Create a new repository on GitHub & clone to Posit Cloud
 
 1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs24>
@@ -61,7 +61,7 @@ In your samples-USERNAME project in RStudio on Posit Cloud, go to the menu bar a
 1. Add a title and your name as the author to the YAML metadata at the top of the document.
 2. Delete the text and code-chunks below the YAML metadata.
 3. Add a section formatted as Heading 2 and title: "Import data".
-4. Make a commit and use the commit message "Create Quarto document for data import" (see also Step 6 for more detailed guidance).
+4. Make a commit for all files and use the commit message "Create Quarto document for data import" (see also Step 6 for more detailed guidance).
 
 ## Step 4: Google authentication and data import
 
@@ -82,11 +82,21 @@ read_sheet("https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqc
 In your Console, you will see the following prompt:
 
 ```
-The googlesheets4 package is requesting access to your Google account.
-Enter '1' to start a new auth process or select a pre-authorized account.
-1: Send me to the browser for a new auth process.
+Is it OK to cache OAuth access credentials in the folder
+~/.cache/gargle between R sessions?
+1: Yes
+2: No
 ```
-Write: 1 and press Enter. This will open a new tab in your browser, where you will be asked to log in to your Google account and grant access to the `googlesheets4` package. After you have granted access, you will see a message in your Console that the authentication was successful.
+
+Write: 1 and press Enter. This will cache your access credentials for the `googlesheets4` package and a new tab in your browser will open, where you will be asked to log in to your Google account and grant access to the `googlesheets4` package. At the end of the process [copy the authorization code to clipboard]{.highlight-yellow}. Open your Posit Cloud tab again and look at the Console in RStudio. 
+
+You will see the following prompt:
+
+```
+Enter authorization code: 
+```
+
+Paste the authorization code from your clipboard and press Enter. This will complete the authentication process.
 
 :::
 
@@ -99,7 +109,7 @@ Write: 1 and press Enter. This will open a new tab in your browser, where you wi
 ## Step 6: Commit and push your changes 
 
 1. Navigate to the Git pane in the top-right window of RStudio
-2. Check the box next to all files to stage them for a commit
+2. Check the box next to all files to stage them for a commit (select one and then Crtl + A on keyborad to select all)
 3. Click on the "Commit" button
 4. Enter a commit message in the "Commit message" field
 5. Click on the "Commit" button

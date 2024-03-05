@@ -248,6 +248,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#your-experiment" id="toc-your-experiment" class="nav-link" data-scroll-target="#your-experiment">Your experiment</a></li>
   <li><a href="#layout-the-spreadsheet" id="toc-layout-the-spreadsheet" class="nav-link" data-scroll-target="#layout-the-spreadsheet">Layout the spreadsheet</a></li>
   </ul></li>
+  <li><a href="#step-2-create-a-new-repository-on-github-clone-to-posit-cloud" id="toc-step-2-create-a-new-repository-on-github-clone-to-posit-cloud" class="nav-link" data-scroll-target="#step-2-create-a-new-repository-on-github-clone-to-posit-cloud">Step 2: Create a new repository on GitHub &amp; clone to Posit Cloud</a></li>
   <li><a href="#step-3-create-a-new-quarto-document" id="toc-step-3-create-a-new-quarto-document" class="nav-link" data-scroll-target="#step-3-create-a-new-quarto-document">Step 3: Create a new Quarto document</a></li>
   <li><a href="#step-4-google-authentication-and-data-import" id="toc-step-4-google-authentication-and-data-import" class="nav-link" data-scroll-target="#step-4-google-authentication-and-data-import">Step 4: Google authentication and data import</a></li>
   <li><a href="#step-5-import-your-spreadsheet" id="toc-step-5-import-your-spreadsheet" class="nav-link" data-scroll-target="#step-5-import-your-spreadsheet">Step 5: Import your spreadsheet</a></li>
@@ -301,16 +302,22 @@ Have you completed the assignments for module 1?
 <section id="layout-the-spreadsheet" class="level3">
 <h3 class="anchored" data-anchor-id="layout-the-spreadsheet">Layout the spreadsheet</h3>
 <ol type="1">
-<li><p>Layout the spreadsheet for your experiment</p></li>
-<li><p>Make up the results for the waste composition (e.g.&nbsp;3.2 kg paper, 4.5 kg plastic, etc.) . ## Step 2: Create a new repository on GitHub &amp; clone to Posit Cloud</p></li>
-<li><p>Open the GitHub Organisation for the course <a href="https://github.com/rbtl-fs24" class="uri">https://github.com/rbtl-fs24</a></p></li>
-<li><p>To right of the field <span class="highlight-yellow">“Find a repository”</span>, click on the green <span class="highlight-yellow">“New”</span> button.</p></li>
+<li>Layout the spreadsheet for the described experiment.</li>
+<li>Make up the results for the waste composition (e.g.&nbsp;3.2 kg paper, 4.5 kg plastic, etc.).</li>
+</ol>
+</section>
+</section>
+<section id="step-2-create-a-new-repository-on-github-clone-to-posit-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-create-a-new-repository-on-github-clone-to-posit-cloud">Step 2: Create a new repository on GitHub &amp; clone to Posit Cloud</h2>
+<ol type="1">
+<li>Open the GitHub Organisation for the course <a href="https://github.com/rbtl-fs24" class="uri">https://github.com/rbtl-fs24</a></li>
+<li>To right of the field <span class="highlight-yellow">“Find a repository”</span>, click on the green <span class="highlight-yellow">“New”</span> button.</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/01-github-org.png" class="img-fluid figure-img" width="706"></p>
+<p><img src="images/01-github-org.png" class="img-fluid figure-img" width="1129"></p>
 </figure>
 </div>
 </div>
@@ -322,7 +329,7 @@ Have you completed the assignments for module 1?
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/02-repository-name.png" class="img-fluid figure-img" width="706"></p>
+<p><img src="images/02-repository-name.png" class="img-fluid figure-img" width="1129"></p>
 </figure>
 </div>
 </div>
@@ -334,7 +341,7 @@ Have you completed the assignments for module 1?
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/03-create-repository.png" class="img-fluid figure-img" width="706"></p>
+<p><img src="images/03-create-repository.png" class="img-fluid figure-img" width="1129"></p>
 </figure>
 </div>
 </div>
@@ -346,7 +353,7 @@ Have you completed the assignments for module 1?
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="images/04-copy-to-clipboard.png" class="img-fluid figure-img" width="614"></p>
+<p><img src="images/04-copy-to-clipboard.png" class="img-fluid figure-img" width="1129"></p>
 </figure>
 </div>
 </div>
@@ -358,7 +365,6 @@ Have you completed the assignments for module 1?
 <li>Wait until the project is deployed.</li>
 </ol>
 </section>
-</section>
 <section id="step-3-create-a-new-quarto-document" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-create-a-new-quarto-document">Step 3: Create a new Quarto document</h2>
 <p>In your samples-USERNAME project in RStudio on Posit Cloud, go to the menu bar and select [File &gt; New File &gt; Quarto document] to create a Quarto document with HTML output. Render the document, which will ask you to give it a name – you can use import-data.qmd.</p>
@@ -366,7 +372,7 @@ Have you completed the assignments for module 1?
 <li>Add a title and your name as the author to the YAML metadata at the top of the document.</li>
 <li>Delete the text and code-chunks below the YAML metadata.</li>
 <li>Add a section formatted as Heading 2 and title: “Import data”.</li>
-<li>Make a commit and use the commit message “Create Quarto document for data import” (see also Step 6 for more detailed guidance).</li>
+<li>Make a commit for all files and use the commit message “Create Quarto document for data import” (see also Step 6 for more detailed guidance).</li>
 </ol>
 </section>
 <section id="step-4-google-authentication-and-data-import" class="level2">
@@ -393,10 +399,14 @@ Access for googlesheets4 package
 </div>
 <div class="callout-body-container callout-body">
 <p>In your Console, you will see the following prompt:</p>
-<pre><code>The googlesheets4 package is requesting access to your Google account.
-Enter '1' to start a new auth process or select a pre-authorized account.
-1: Send me to the browser for a new auth process.</code></pre>
-<p>Write: 1 and press Enter. This will open a new tab in your browser, where you will be asked to log in to your Google account and grant access to the <code>googlesheets4</code> package. After you have granted access, you will see a message in your Console that the authentication was successful.</p>
+<pre><code>Is it OK to cache OAuth access credentials in the folder
+~/.cache/gargle between R sessions?
+1: Yes
+2: No</code></pre>
+<p>Write: 1 and press Enter. This will cache your access credentials for the <code>googlesheets4</code> package and a new tab in your browser will open, where you will be asked to log in to your Google account and grant access to the <code>googlesheets4</code> package. At the end of the process <span class="highlight-yellow">copy the authorization code to clipboard</span>. Open your Posit Cloud tab again and look at the Console in RStudio.</p>
+<p>You will see the following prompt:</p>
+<pre><code>Enter authorization code: </code></pre>
+<p>Paste the authorization code from your clipboard and press Enter. This will complete the authentication process.</p>
 </div>
 </div>
 </section>
@@ -404,15 +414,15 @@ Enter '1' to start a new auth process or select a pre-authorized account.
 <h2 class="anchored" data-anchor-id="step-5-import-your-spreadsheet">Step 5: Import your spreadsheet</h2>
 <ol type="1">
 <li>Replace the hyperlink inside the <code>read_sheet()</code> function with the hyperlink to your spreadsheet.</li>
-<li>Use the assignment operator <code>&lt;-</code> to assign the data to an object, e.g.&nbsp;<code>waste_data &lt;- read_sheet("https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqcwRFmidttsGI3PYI/edit#gid=0")</code>.</li>
-<li>Use the <code>glimpse()</code> function from the dplyr package to inspect the data.</li>
+<li>Use the assignment operator <code>&lt;-</code> to assign the data to an object named <code>waste_data</code>.</li>
+<li>Use the <code>glimpse()</code> function from the dplyr package to inspect the <code>waste_data</code> object.</li>
 </ol>
 </section>
 <section id="step-6-commit-and-push-your-changes" class="level2">
 <h2 class="anchored" data-anchor-id="step-6-commit-and-push-your-changes">Step 6: Commit and push your changes</h2>
 <ol type="1">
 <li>Navigate to the Git pane in the top-right window of RStudio</li>
-<li>Check the box next to all files to stage them for a commit</li>
+<li>Check the box next to all files to stage them for a commit (select one and then Crtl + A on keyborad to select all)</li>
 <li>Click on the “Commit” button</li>
 <li>Enter a commit message in the “Commit message” field</li>
 <li>Click on the “Commit” button</li>
