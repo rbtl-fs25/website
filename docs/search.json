@@ -284,7 +284,7 @@
     "href": "modules/md-03.html#slides",
     "title": "Module 3",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Module 03"
     ]
@@ -304,7 +304,7 @@
     "href": "modules/md-03.html#assignments",
     "title": "Module 3",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, March 13th.\n\nAssignment 1: Data transformation\nAssignment 2: Setup ETH Google Workspace\nAssignment 3: Create a spreadsheet\n\nThank you for working through this assignment.",
     "crumbs": [
       "Module 03"
     ]
@@ -2012,7 +2012,7 @@
     "href": "assignments/md-03/am-03-1-data-transformation.html#step-1-clone-your-module-3-assignments-repository",
     "title": "Data transformation with dplyr",
     "section": "Step 1: Clone your module 3 assignments repository",
-    "text": "Step 1: Clone your module 3 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd and follow the instructions to work through the tasks."
+    "text": "Step 1: Clone your module 3 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd and follow the instructions to work through the tasks."
   },
   {
     "objectID": "assignments/md-03/am-03-1-data-transformation.html#step-2-commit-and-push-your-changes",
@@ -2026,7 +2026,7 @@
     "href": "assignments/md-03/am-03-1-data-transformation.html#step-3-open-an-issue-on-github",
     "title": "Data transformation with dplyr",
     "section": "Step 3: Open an issue on GitHub",
-    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-03-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 3 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
+    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-03-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 3 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce and ask a question."
   },
   {
     "objectID": "LICENSE.html",
@@ -4047,5 +4047,75 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "assignments/md-03/am-03-3-spreadsheet.html",
+    "href": "assignments/md-03/am-03-3-spreadsheet.html",
+    "title": "Create a spreadsheet",
+    "section": "",
+    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-3-spreadsheet.html#step-1-layout-a-spreadsheet-for-data-collection",
+    "href": "assignments/md-03/am-03-3-spreadsheet.html#step-1-layout-a-spreadsheet-for-data-collection",
+    "title": "Create a spreadsheet",
+    "section": "Step 1: Layout a spreadsheet for data collection",
+    "text": "Step 1: Layout a spreadsheet for data collection\nYour task is to a spreadsheet for data collection. Use the spreadsheet that you created in assignment 2 of this module. In this exercise, you will make up the results without any real data, but imagine you would use this spreadsheet to actually collect data. This is a so-called observational / experimental study where you collect data samples, make observations and record the results in a spreadsheet.\n\nYour experiment\nYou are collecting the content of 20 bins from two public spaces in Zurich (Bäckeranlage, Landiwiese), ten bins from each location. Each bin contains 30 kilograms of mixed solid waste. You are interested in the composition of the waste, so you separate the waste into 6 categories: paper, plastic, glass, metal, organic, other. You are also interested how waste composition varies between weekends and weekdays, so you collect 5 bins on a Sunday morning and 5 bins on a Thursday morning at the two locations. Your sample collection and analysis is planned for Sunday, 31st March 2024 and Thursday, 4th April 2024. For documenting the waste composition, you use a digital scale with an accuracy of 0.1 kg.\n\n\nLayout the spreadsheet\n\nLayout the spreadsheet for your experiment\nMake up the results for the waste composition (e.g. 3.2 kg paper, 4.5 kg plastic, etc.) . ## Step 2: Create a new repository on GitHub & clone to Posit Cloud\nOpen the GitHub Organisation for the course https://github.com/rbtl-fs24\nTo right of the field “Find a repository”, click on the green “New” button.\n\n\n\n\n\n\n\n\n\n\n\nIn the “Repository name” field write samples-USERNAME. Replace USERNAME with your GitHub username. Avoid using spaces.\n\n\n\n\n\n\n\n\n\n\n\nScroll down on the same page, and click “Create repository”.\n\n\n\n\n\n\n\n\n\n\n\nIn the “Quick setup” field, click on the clipboard next to the HTTPs URL\n\n\n\n\n\n\n\n\n\n\n\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-3-spreadsheet.html#step-3-create-a-new-quarto-document",
+    "href": "assignments/md-03/am-03-3-spreadsheet.html#step-3-create-a-new-quarto-document",
+    "title": "Create a spreadsheet",
+    "section": "Step 3: Create a new Quarto document",
+    "text": "Step 3: Create a new Quarto document\nIn your samples-USERNAME project in RStudio on Posit Cloud, go to the menu bar and select [File &gt; New File &gt; Quarto document] to create a Quarto document with HTML output. Render the document, which will ask you to give it a name – you can use import-data.qmd.\n\nAdd a title and your name as the author to the YAML metadata at the top of the document.\nDelete the text and code-chunks below the YAML metadata.\nAdd a section formatted as Heading 2 and title: “Import data”.\nMake a commit and use the commit message “Create Quarto document for data import” (see also Step 6 for more detailed guidance)."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import",
+    "href": "assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import",
+    "title": "Create a spreadsheet",
+    "section": "Step 4: Google authentication and data import",
+    "text": "Step 4: Google authentication and data import\n\nAdd a code-chunk to your Quarto document.\nAdd the following code to your code-chunk.\n\n\nlibrary(googlesheets4)\nread_sheet(\"https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqcwRFmidttsGI3PYI/edit#gid=0\")\n\n\nRun the code inside the code-chunk and look at the prompt in your Console (see note below for instructions).\n\n\n\n\n\n\n\nAccess for googlesheets4 package\n\n\n\nIn your Console, you will see the following prompt:\nThe googlesheets4 package is requesting access to your Google account.\nEnter '1' to start a new auth process or select a pre-authorized account.\n1: Send me to the browser for a new auth process.\nWrite: 1 and press Enter. This will open a new tab in your browser, where you will be asked to log in to your Google account and grant access to the googlesheets4 package. After you have granted access, you will see a message in your Console that the authentication was successful."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-3-spreadsheet.html#step-5-import-your-spreadsheet",
+    "href": "assignments/md-03/am-03-3-spreadsheet.html#step-5-import-your-spreadsheet",
+    "title": "Create a spreadsheet",
+    "section": "Step 5: Import your spreadsheet",
+    "text": "Step 5: Import your spreadsheet\n\nReplace the hyperlink inside the read_sheet() function with the hyperlink to your spreadsheet.\nUse the assignment operator &lt;- to assign the data to an object, e.g. waste_data &lt;- read_sheet(\"https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqcwRFmidttsGI3PYI/edit#gid=0\").\nUse the glimpse() function from the dplyr package to inspect the data."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-3-spreadsheet.html#step-6-commit-and-push-your-changes",
+    "href": "assignments/md-03/am-03-3-spreadsheet.html#step-6-commit-and-push-your-changes",
+    "title": "Create a spreadsheet",
+    "section": "Step 6: Commit and push your changes",
+    "text": "Step 6: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-3-spreadsheet.html#step-7-open-an-issue-on-github",
+    "href": "assignments/md-03/am-03-3-spreadsheet.html#step-7-open-an-issue-on-github",
+    "title": "Create a spreadsheet",
+    "section": "Step 7: Open an issue on GitHub",
+    "text": "Step 7: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository samples- that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Create spreadsheet and import data”.\nIn the “Leave a comment” field, tag the course instructors @larnsce"
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-google-workspace.html",
+    "href": "assignments/md-03/am-03-2-google-workspace.html",
+    "title": "Setup Google Workspace",
+    "section": "",
+    "text": "Open the ETH IT Knowledge Base: https://unlimited.ethz.ch/display/itkb\nSearch for “Google Workspace” on the landing page and open the documentation: https://unlimited.ethz.ch/display/itkb/Google+Workspace\nUnder “Registration”, click on the image of the slideshow PDF to open it.\nFollow the steps in the slideshow to setup your ETH Google Workspace account."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-google-workspace.html#step-1-make-a-spreadsheet-and-save-it",
+    "href": "assignments/md-03/am-03-2-google-workspace.html#step-1-make-a-spreadsheet-and-save-it",
+    "title": "Setup Google Workspace",
+    "section": "",
+    "text": "Open the ETH IT Knowledge Base: https://unlimited.ethz.ch/display/itkb\nSearch for “Google Workspace” on the landing page and open the documentation: https://unlimited.ethz.ch/display/itkb/Google+Workspace\nUnder “Registration”, click on the image of the slideshow PDF to open it.\nFollow the steps in the slideshow to setup your ETH Google Workspace account."
+  },
+  {
+    "objectID": "assignments/md-03/am-03-2-google-workspace.html#step-2-create-a-folder-in-shared-drive",
+    "href": "assignments/md-03/am-03-2-google-workspace.html#step-2-create-a-folder-in-shared-drive",
+    "title": "Setup Google Workspace",
+    "section": "Step 2: Create a folder in shared drive",
+    "text": "Step 2: Create a folder in shared drive\n\nOpen the following link to a Google Drive folder: https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68\nCreate a bookmark for this folder in your bookmarks folder of your browser.\nOpen the md-03 folder.\nCreate a new folder and use your GitHub username as the name of the folder.\nEnter your folder.\nCreate a new spreadsheet and name it rbtl-fs24-waste-characterisation."
   }
 ]

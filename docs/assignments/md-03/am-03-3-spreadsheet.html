@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research Beyond the Lab: Open Science and Research Methods for a Global Engineer - Data transformation with dplyr</title>
+<title>Research Beyond the Lab: Open Science and Research Methods for a Global Engineer - Create a spreadsheet</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -209,9 +243,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-clone-your-module-3-assignments-repository" id="toc-step-1-clone-your-module-3-assignments-repository" class="nav-link active" data-scroll-target="#step-1-clone-your-module-3-assignments-repository">Step 1: Clone your module 3 assignments repository</a></li>
-  <li><a href="#step-2-commit-and-push-your-changes" id="toc-step-2-commit-and-push-your-changes" class="nav-link" data-scroll-target="#step-2-commit-and-push-your-changes">Step 2: Commit and push your changes</a></li>
-  <li><a href="#step-3-open-an-issue-on-github" id="toc-step-3-open-an-issue-on-github" class="nav-link" data-scroll-target="#step-3-open-an-issue-on-github">Step 3: Open an issue on GitHub</a></li>
+  <li><a href="#step-1-layout-a-spreadsheet-for-data-collection" id="toc-step-1-layout-a-spreadsheet-for-data-collection" class="nav-link active" data-scroll-target="#step-1-layout-a-spreadsheet-for-data-collection">Step 1: Layout a spreadsheet for data collection</a>
+  <ul class="collapse">
+  <li><a href="#your-experiment" id="toc-your-experiment" class="nav-link" data-scroll-target="#your-experiment">Your experiment</a></li>
+  <li><a href="#layout-the-spreadsheet" id="toc-layout-the-spreadsheet" class="nav-link" data-scroll-target="#layout-the-spreadsheet">Layout the spreadsheet</a></li>
+  </ul></li>
+  <li><a href="#step-3-create-a-new-quarto-document" id="toc-step-3-create-a-new-quarto-document" class="nav-link" data-scroll-target="#step-3-create-a-new-quarto-document">Step 3: Create a new Quarto document</a></li>
+  <li><a href="#step-4-google-authentication-and-data-import" id="toc-step-4-google-authentication-and-data-import" class="nav-link" data-scroll-target="#step-4-google-authentication-and-data-import">Step 4: Google authentication and data import</a></li>
+  <li><a href="#step-5-import-your-spreadsheet" id="toc-step-5-import-your-spreadsheet" class="nav-link" data-scroll-target="#step-5-import-your-spreadsheet">Step 5: Import your spreadsheet</a></li>
+  <li><a href="#step-6-commit-and-push-your-changes" id="toc-step-6-commit-and-push-your-changes" class="nav-link" data-scroll-target="#step-6-commit-and-push-your-changes">Step 6: Commit and push your changes</a></li>
+  <li><a href="#step-7-open-an-issue-on-github" id="toc-step-7-open-an-issue-on-github" class="nav-link" data-scroll-target="#step-7-open-an-issue-on-github">Step 7: Open an issue on GitHub</a></li>
   </ul>
 </nav>
     </div>
@@ -220,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data transformation with dplyr</h1>
+<h1 class="title">Create a spreadsheet</h1>
 </div>
 
 
@@ -250,23 +291,125 @@ Have you completed the assignments for module 1?
 <p>A pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub.</p>
 </div>
 </div>
-<section id="step-1-clone-your-module-3-assignments-repository" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-clone-your-module-3-assignments-repository">Step 1: Clone your module 3 assignments repository</h2>
+<section id="step-1-layout-a-spreadsheet-for-data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-layout-a-spreadsheet-for-data-collection">Step 1: Layout a spreadsheet for data collection</h2>
+<p>Your task is to a spreadsheet for data collection. Use the spreadsheet that you created in assignment 2 of this module. In this exercise, you will make up the results without any real data, but imagine you would use this spreadsheet to actually collect data. This is a so-called observational / experimental study where you collect data samples, make observations and record the results in a spreadsheet.</p>
+<section id="your-experiment" class="level3">
+<h3 class="anchored" data-anchor-id="your-experiment">Your experiment</h3>
+<p>You are collecting the content of 20 bins from two public spaces in Zurich (Bäckeranlage, Landiwiese), ten bins from each location. Each bin contains 30 kilograms of mixed solid waste. You are interested in the composition of the waste, so you separate the waste into 6 categories: paper, plastic, glass, metal, organic, other. You are also interested how waste composition varies between weekends and weekdays, so you collect 5 bins on a Sunday morning and 5 bins on a Thursday morning at the two locations. Your sample collection and analysis is planned for Sunday, 31st March 2024 and Thursday, 4th April 2024. For documenting the waste composition, you use a digital scale with an accuracy of 0.1 kg.</p>
+</section>
+<section id="layout-the-spreadsheet" class="level3">
+<h3 class="anchored" data-anchor-id="layout-the-spreadsheet">Layout the spreadsheet</h3>
 <ol type="1">
-<li>Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).</li>
-<li>Find the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.</li>
-<li>Click on the green “Code” button.</li>
-<li>Copy the HTTPS URL to your clipboard.</li>
+<li><p>Layout the spreadsheet for your experiment</p></li>
+<li><p>Make up the results for the waste composition (e.g.&nbsp;3.2 kg paper, 4.5 kg plastic, etc.) . ## Step 2: Create a new repository on GitHub &amp; clone to Posit Cloud</p></li>
+<li><p>Open the GitHub Organisation for the course <a href="https://github.com/rbtl-fs24" class="uri">https://github.com/rbtl-fs24</a></p></li>
+<li><p>To right of the field <span class="highlight-yellow">“Find a repository”</span>, click on the green <span class="highlight-yellow">“New”</span> button.</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/01-github-org.png" class="img-fluid figure-img" width="706"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>In the <span class="highlight-yellow">“Repository name”</span> field write <code>samples-USERNAME</code>. <span class="highlight-yellow">Replace USERNAME with your GitHub username</span>. Avoid using spaces.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/02-repository-name.png" class="img-fluid figure-img" width="706"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Scroll down on the same page, and click <span class="highlight-yellow">“Create repository”</span>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/03-create-repository.png" class="img-fluid figure-img" width="706"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>In the <span class="highlight-yellow">“Quick setup”</span> field, click on the clipboard next to the HTTPs URL</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/04-copy-to-clipboard.png" class="img-fluid figure-img" width="614"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
 <li>Open the rbtl-fs24 workspace on <a href="https://posit.cloud/spaces/484002/content/all?sort=name_asc">posit.cloud</a></li>
 <li>Click New Project &gt; New Project from Git Repository</li>
-<li>Paste the HTTPS URL from GitHub into the “URL of your Git Repository” field.</li>
+<li>Paste the HTTPS URL from GitHub into the <span class="highlight-yellow">“URL of your Git Repository”</span> field.</li>
 <li>Wait until the project is deployed.</li>
-<li>Open <code>md-03a-penguins-practice.qmd</code> &amp; <code>md-03b-sanitation-visualise.qmd</code> and follow the instructions to work through the tasks.</li>
 </ol>
 </section>
-<section id="step-2-commit-and-push-your-changes" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-commit-and-push-your-changes">Step 2: Commit and push your changes</h2>
-<p>The below is also described in <code>md-03a-penguins-practice.qmd</code> &amp; <code>md-03b-sanitation-visualise.qmd</code></p>
+</section>
+<section id="step-3-create-a-new-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-create-a-new-quarto-document">Step 3: Create a new Quarto document</h2>
+<p>In your samples-USERNAME project in RStudio on Posit Cloud, go to the menu bar and select [File &gt; New File &gt; Quarto document] to create a Quarto document with HTML output. Render the document, which will ask you to give it a name – you can use import-data.qmd.</p>
+<ol type="1">
+<li>Add a title and your name as the author to the YAML metadata at the top of the document.</li>
+<li>Delete the text and code-chunks below the YAML metadata.</li>
+<li>Add a section formatted as Heading 2 and title: “Import data”.</li>
+<li>Make a commit and use the commit message “Create Quarto document for data import” (see also Step 6 for more detailed guidance).</li>
+</ol>
+</section>
+<section id="step-4-google-authentication-and-data-import" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-google-authentication-and-data-import">Step 4: Google authentication and data import</h2>
+<ol type="1">
+<li>Add a code-chunk to your Quarto document.</li>
+<li>Add the following code to your code-chunk.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googlesheets4)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">read_sheet</span>(<span class="st">"https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqcwRFmidttsGI3PYI/edit#gid=0"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li>Run the code inside the code-chunk and look at the prompt in your Console (see note below for instructions).</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Access for googlesheets4 package
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In your Console, you will see the following prompt:</p>
+<pre><code>The googlesheets4 package is requesting access to your Google account.
+Enter '1' to start a new auth process or select a pre-authorized account.
+1: Send me to the browser for a new auth process.</code></pre>
+<p>Write: 1 and press Enter. This will open a new tab in your browser, where you will be asked to log in to your Google account and grant access to the <code>googlesheets4</code> package. After you have granted access, you will see a message in your Console that the authentication was successful.</p>
+</div>
+</div>
+</section>
+<section id="step-5-import-your-spreadsheet" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-import-your-spreadsheet">Step 5: Import your spreadsheet</h2>
+<ol type="1">
+<li>Replace the hyperlink inside the <code>read_sheet()</code> function with the hyperlink to your spreadsheet.</li>
+<li>Use the assignment operator <code>&lt;-</code> to assign the data to an object, e.g.&nbsp;<code>waste_data &lt;- read_sheet("https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqcwRFmidttsGI3PYI/edit#gid=0")</code>.</li>
+<li>Use the <code>glimpse()</code> function from the dplyr package to inspect the data.</li>
+</ol>
+</section>
+<section id="step-6-commit-and-push-your-changes" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-commit-and-push-your-changes">Step 6: Commit and push your changes</h2>
 <ol type="1">
 <li>Navigate to the Git pane in the top-right window of RStudio</li>
 <li>Check the box next to all files to stage them for a commit</li>
@@ -290,16 +433,16 @@ Do not use your GitHub password
 </div>
 </div>
 </section>
-<section id="step-3-open-an-issue-on-github" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-open-an-issue-on-github">Step 3: Open an issue on GitHub</h2>
+<section id="step-7-open-an-issue-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-open-an-issue-on-github">Step 7: Open an issue on GitHub</h2>
 <ol type="1">
 <li>Open <a href="https://github.com/">github.com</a> in your browser.</li>
 <li>Navigate to the GitHub organisation for the course.</li>
-<li>Find the repository md-03-assignments that ends with your GitHub username.</li>
+<li>Find the repository samples- that ends with your GitHub username.</li>
 <li>Click on the “Issues” tab.</li>
 <li>Click on the green “New issue” button.</li>
-<li>In the “Title” field write: “Completed module 3 assignments”.</li>
-<li>In the “Leave a comment” field, tag the course instructors <span class="citation" data-cites="larnsce">@larnsce</span> and ask a question.</li>
+<li>In the “Title” field write: “Create spreadsheet and import data”.</li>
+<li>In the “Leave a comment” field, tag the course instructors <span class="citation" data-cites="larnsce">@larnsce</span></li>
 </ol>
 
 
