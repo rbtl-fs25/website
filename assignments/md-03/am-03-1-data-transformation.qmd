@@ -13,7 +13,7 @@ A pre-requisite for this homework is that you worked through the "Interaction wi
 2. Find the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.
 3. Click on the green "Code" button.
 4. Copy the HTTPS URL to your clipboard.
-5. Open the ds4owd workspace on [posit.cloud](https://posit.cloud/spaces/426916/content/all?sort=name_asc)
+5. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=name_asc)
 6. Click New Project > New Project from Git Repository
 7. Paste the HTTPS URL from GitHub into the "URL of your Git Repository" field.
 8. Wait until the project is deployed.
@@ -45,5 +45,5 @@ You need to enter the GitHub Personal Access Token (PAT) you created in Step 1 t
 4. Click on the "Issues" tab.
 5. Click on the green "New issue" button.
 6. In the "Title" field write: "Completed module 3 assignments".
-7. In the "Leave a comment" field, tag the course instructors @larnsce @mianzg @sskorik01
+7. In the "Leave a comment" field, tag the course instructors @larnsce and ask a question.
 

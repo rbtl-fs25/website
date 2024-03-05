@@ -2,20 +2,19 @@
 title: "{{< var md-03.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
-date: "2023-11-14"
+date: "2024-03-07"
 format: 
   revealjs: 
     theme: slides.scss
     transition: fade
     slide-number: true
-    logo: ../img/OWD-logo-20.png
     chalkboard: true
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
 execute:
   freeze: auto
 params:
-    week: 3
+    module: 3
 editor_options: 
   chunk_output_type: console
 ---
@@ -36,8 +35,8 @@ library(ggthemes)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -45,7 +44,6 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 ```{epoxy}
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
-
 
 # Data wrangling with dplyr  {background-color="#4C326A"}
 
@@ -173,7 +171,7 @@ ggplot(data = gapminder_2007,
 
 ```{r}
 
-sanitation <- read_csv("https://raw.githubusercontent.com/ds4owd/md-03-exercises/master/data/jmp_wld_sanitation_long.csv")
+sanitation <- read_csv("https://raw.githubusercontent.com/rbtl-fs24/md-03-exercises/master/data/jmp_wld_sanitation_long.csv")
 
 ```
 
@@ -232,25 +230,13 @@ sanitation |>
 ## Our turn: md-03-exercises
 
 ::: task
-1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+1. Open [posit.cloud](https://posit.cloud) in your browser.
+2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
 3. Click [Start]{.highlight-yellow} next to [md-03-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`md-03a-data-transformation.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
 ```{r}
 countdown(15)
-```
-
-## Your turn: md-03b-your-turn-filter.qmd
-
-::: task
-1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
-3. In the File Manager in the bottom right window, locate the [`md-03b-your-turn-filter.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
-4. Follow instructions in the file
-:::
-```{r}
-countdown(20)
 ```
 
 ## Take a break
@@ -266,6 +252,18 @@ countdown(minutes = 10)
 ::: footer
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
+
+## Your turn: md-03b-your-turn-filter.qmd
+
+::: task
+1. Open [posit.cloud](https://posit.cloud) in your browser.
+2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+3. In the File Manager in the bottom right window, locate the [`md-03b-your-turn-filter.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4. Follow instructions in the file
+:::
+```{r}
+countdown(15)
+```
 
 ## R Terminology
 
@@ -334,13 +332,13 @@ ggplot(data = sanitation_nigeria_urban_rural,
 ## Our turn: back to md-03a-data-transformation.qmd
 
 ::: task
-1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+1. Open [posit.cloud](https://posit.cloud) in your browser.
+2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
 3. Click [Start]{.highlight-yellow} next to [md-03-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`md-03a-data-transformation.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
 ```{r}
-countdown(30)
+countdown(25)
 ```
 
 ## Take a break
@@ -350,7 +348,7 @@ countdown(30)
 ![](img/lec-03/get-up-and-move.png){width="50%"}
 
 ```{r}
-countdown(minutes = 10)
+countdown(minutes = 15)
 ```
 
 ::: footer
@@ -360,13 +358,13 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 ## Your turn: md-03c-your-turn-summarise.qmd
 
 ::: task
-1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
+1. Open [posit.cloud](https://posit.cloud) in your browser.
+2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
 3. In the File Manager in the bottom right window, locate the [`md-03c-your-turn-summarise.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4. Follow instructions in the file
 :::
 ```{r}
-countdown(40)
+countdown(30)
 ```
 
 # Homework assignments module 3 {background-color="#4C326A"}
@@ -374,22 +372,22 @@ countdown(40)
 ## Module 3 documentation
 
 ::: learn-more
-[ds4owd-001.github.io/website/modules/md-03.html](https://ds4owd-001.github.io/website/modules/md-03.html)
+[rbtl-fs24.github.io/website/modules/md-03.html](https://rbtl-fs24.github.io/website/modules/md-03.html)
 
 ```{=html}
-<iframe src="https://ds4owd-001.github.io/website/modules/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 documentation"></iframe>
+<iframe src="https://rbtl-fs24.github.io/website/modules/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
--   Homework assignment due: [Monday, November 20th]{.highlight-yellow}
--   Correction & feedback phase up to: Thursday, November 23rd 
+-   Homework assignment due: [Wednesday, March 13th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, March 19th 
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/ds4owd-001/website/raw/main/slides/lec-03-transformation.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-03-transformation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
