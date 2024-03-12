@@ -965,7 +965,7 @@
     "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---factors",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Your turn: md-04a-exercises - factors",
-    "text": "Your turn: md-04a-exercises - factors\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04a-factors-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
+    "text": "Your turn: md-04a-exercises - factors\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs24 workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04a-factors-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#reading-rectangular-data-into-r",
@@ -1035,7 +1035,7 @@
     "href": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---import",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Your turn: md-04a-exercises - import",
-    "text": "Your turn: md-04a-exercises - import\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04b-import-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n20:00"
+    "text": "Your turn: md-04a-exercises - import\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs24 workspace for the course.\nIn the File Manager in the bottom right window, locate the md-04b-import-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
@@ -1077,7 +1077,7 @@
     "href": "slides/lec-04-spreadsheets.html#module-4-documentation",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Module 4 documentation",
-    "text": "Module 4 documentation\n\nds4owd-001.github.io/website/modules/md-04.html"
+    "text": "Module 4 documentation\n\nrbtl-fs24.github.io/website/modules/md-04.html"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#homework-due-date",
@@ -1091,7 +1091,7 @@
     "href": "slides/lec-04-spreadsheets.html#thanks",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
@@ -2052,7 +2052,7 @@
     "href": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
     "title": "Module 4 - Assignment 1",
     "section": "Task 2: Apply the recommendations to your samples data from Module 3",
-    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this first. https://rbtl-fs24.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the ds4owd workspace on posit.cloud\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R.\nAdd library(tidyverse) to the top of the file.\nAdd library(readxl) to the top of the file.\nAdd library(janitor) to the top of the file.\nUse the read_excel() function to read in your the .xlsx file and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data.\n\n\n\n\n\n\n\nAsk questions on our Element Chat\n\n\n\nIf you would like support at different points of your data cleaning process, please ask questions on our Element Chat, we are happy to support.\n\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
+    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this first. https://rbtl-fs24.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the rbtl-fs24 workspace on posit.cloud\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R.\nAdd library(tidyverse) to the top of the file.\nAdd library(googlesheets4) to the top of the file.\nUse the read_sheet() function to read in your Google Sheets spreadsheet and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data. Note down recommendations that you struggled to achieve.\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
   },
   {
     "objectID": "guide/index.html",
@@ -4142,5 +4142,19 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
+    "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Learning Objectives (for this module)",
+    "text": "Learning Objectives (for this module)\n\n\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-3-create-new-folders",
+    "href": "assignments/md-04/am-04-1-reading.html#task-3-create-new-folders",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 3: Create new folders",
+    "text": "Task 3: Create new folders\n\nNavigate to the Files tab in the bottom right window of RStudio.\nClick on the “Folder” button.\n\n\n\n\n\n\n\n\n\n\n\nEnter the name “data” in field and click OK.\n\n\n\n\n\n\n\n\n\n\n\nClick on the new data folder in the bottom right window.\n\n\n\n\n\n\n\n\n\n\n\nClick on the “Folder” button.\n\n\n\n\n\n\n\n\n\n\n\nEnter the name “processed” in field and click OK.\nClick on the new processed folder in the bottom right window.\nUse the\nOnce you have completed the data cleaning process, use the write_csv() function"
   }
 ]
