@@ -20,17 +20,24 @@ For this assignment, we ask you to:
 
 ::: {.callout-important}
 ## Have you completed the assignments for module 3?
-A pre-requisite for this homework is that you worked through the "Spreadsheet" assignment of module 3. If you have not done so, please do this first. https://rbtl-fs24.github.io/website/assignments/md-03/am-03-2-spreadsheet.html
+A pre-requisite for this homework is that you worked through the "Spreadsheet" assignment of module 3. If you have not done so, please do this firss: <https://rbtl-fs24.github.io/website/assignments/md-03/am-03-2-spreadsheet.html>
 :::
 
 1. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=name_asc)
 2. Re-open your `samples-USERNAME` repository.
-3. Create a new .R file and save it as `data_cleaning.R`.
+3. Create a new .R file and save it as `data_cleaning.R` in the folder.
 4. Add `library(tidyverse)` to the top of the file.
 5. Add `library(googlesheets4)` to the top of the file.
 6. Use the `read_sheet()` function to read in your Google Sheets spreadsheet and store it in an object called `samples`.
 7. Use the `glimpse()` function to inspect the data.
 8. Try to use R functions to apply the recommendations from the reading to your data. Note down recommendations that you struggled to achieve.
+
+::: {.callout-note}
+## Writing code in .R scripts
+An .R script is a file containing R code that can be executed in the R environment, primarily used for defining functions, data manipulation, and running analyses. A .qmd file, associated with Quarto, is a more advanced document format that integrates R code with narrative text, allowing for the creation of dynamic, formatted reports or presentations that can include both the code and its output.
+
+Imagine it as one single code-chunk without narrative text. Comments can be added using the `#` symbol.
+:::
 
 ### Example
 
@@ -55,6 +62,21 @@ readr::read_csv("data/tbl-01-faecal-sludge-analysis.csv") |>
 
 ## Task 4: Write processed data
 
-Once you comp...
+Once you completed the data cleaning tasks from Task 2, write your processed data into the new `data/processed` folder:
 
+1. In your `data_cleaning.R` file, write R code to apply the recommendations from the reading to your data.
+2. Use the assignment operator `<-` to store the processed data in a new object named `data_out`.
+3. Use the `write_csv()` function to write the `data_out` object to the `data/processed` folder.
+
+```{r}
+#| eval: false
+
+write_csv(data_out, "data/processed/waste-characterisation-processed.csv")
+
+```
+
+## Task 5: Submit homework assignment
+
+1. Add all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.
+2. Open an issue on GitHub on your samples-USERNAME repo and tag the course instructor @larnsce.
 
