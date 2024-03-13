@@ -31,6 +31,13 @@ The task is to create a survey using Google Forms to gather information on waste
 
 - Use skip logic for a question with two alternatives, directing respondents to different sections based on their answer (this feature is only available for multiple choice and dropdown question types.)
 
+::: {.callout-tip}
+## Question: How to use skip logic in Google Forms survey?
+
+Answer from perplexity.ai: <https://www.perplexity.ai/search/How-to-use-787pv.4nRo6omKzCpHK6Xg>
+
+:::
+
 4. Some example questions: 
 
 - **Multiple choice (with skip logic):** "Do you currently separate your waste for recycling?"
@@ -40,7 +47,7 @@ The task is to create a survey using Google Forms to gather information on waste
   - Options: Paper, Plastic, Glass, Metal, Electronics, Organic Waste.
 - **Short answer:** "What challenges do you face in managing waste effectively?"
 
-::: {.callout-note}
+::: {.callout-tip}
 ## Tips for creating a survey
 - Keep questions clear and concise.
 - Ensure skip logic enhances the survey experience and does not confuse respondents.
@@ -49,7 +56,7 @@ The task is to create a survey using Google Forms to gather information on waste
 
 5. Advice on sections and flow:
 
-- Create distinct sections in your form for different topics, such as recycling habits, general waste disposal, and suggestions for improvement
+- Create distinct sections in your form for different topics, such as recycling habits, general waste disposal.
 - Ensure the flow of the survey is logical and that skip logic is correctly implemented.
 
 6. Finalizing and testing:
