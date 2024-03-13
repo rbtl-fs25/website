@@ -849,11 +849,11 @@
     "text": "References\n\n\n\n\n rbtl-fs24.github.io/website/\n\n\n\n\nBroman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician 72 (1): 2–10. https://doi.org/10.1080/00031305.2017.1375989."
   },
   {
-    "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-week",
-    "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-week",
+    "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
+    "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
+    "section": "Learning Objectives (for this module)",
+    "text": "Learning Objectives (for this module)\n\n\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
@@ -2034,25 +2034,66 @@
     ]
   },
   {
-    "objectID": "assignments/md-04/am-04-1-reading.html",
-    "href": "assignments/md-04/am-04-1-reading.html",
-    "title": "Module 4 - Assignment 1",
+    "objectID": "assignments/md-04/am-04-2-survey.html",
+    "href": "assignments/md-04/am-04-2-survey.html",
+    "title": "Module 4 - Assignment 2",
     "section": "",
-    "text": "This course introduces learners to tools and workflows for data science with R. Learners are also introduced to the concept of collaborative writing and coding using git and GitHub within the context of reproducible documents (i.e. Quarto). So far we have used data that is well structured and ready to be used. However, in reality a lot of data entry and storage is still managed in spreadsheets. This is why we also touch on some (research) data management topics (Data Organization in Spreadsheet).\nThe reading for this assignment provides guidance for data entry and storage aspects. It offers practical recommendations for organizing spreadsheet data to reduce errors and ease later analyses."
+    "text": "Open the following link to a Google Drive folder: https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68\nOpen the md-04 folder.\nCreate a new folder and use your GitHub username as the name of the folder.\nEnter your folder.\nCreate a Google Form and name it rbtl-fs24-waste-survey.",
+    "crumbs": [
+      "Module 04",
+      "am-02: Survey"
+    ]
   },
   {
-    "objectID": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
-    "href": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
-    "title": "Module 4 - Assignment 1",
-    "section": "Task 1: Read and prepare examples",
-    "text": "Task 1: Read and prepare examples\nFor this assignment, we ask you to:\n\nRead Broman and Woo (2018): “Data organization in spreadsheets”.\nChose two of the recommendations and come up with real-world examples or scenarios where the recommendations could be applied in your work.\nBe prepared to share these examples and explain how the recommendations would improve your workflows. This will be in a class setting as part of small discussion group (max 3 people)."
+    "objectID": "assignments/md-04/am-04-2-survey.html#step-1-create-a-folder-in-shared-drive",
+    "href": "assignments/md-04/am-04-2-survey.html#step-1-create-a-folder-in-shared-drive",
+    "title": "Module 4 - Assignment 2",
+    "section": "",
+    "text": "Open the following link to a Google Drive folder: https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68\nOpen the md-04 folder.\nCreate a new folder and use your GitHub username as the name of the folder.\nEnter your folder.\nCreate a Google Form and name it rbtl-fs24-waste-survey.",
+    "crumbs": [
+      "Module 04",
+      "am-02: Survey"
+    ]
   },
   {
-    "objectID": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
-    "href": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
-    "title": "Module 4 - Assignment 1",
-    "section": "Task 2: Apply the recommendations to your samples data from Module 3",
-    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this firss: https://rbtl-fs24.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the rbtl-fs24 workspace on posit.cloud\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nAdd library(tidyverse) to the top of the file.\nAdd library(googlesheets4) to the top of the file.\nUse the read_sheet() function to read in your Google Sheets spreadsheet and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data. Note down recommendations that you struggled to achieve.\n\n\n\n\n\n\n\nWriting code in .R scripts\n\n\n\nAn .R script is a file containing R code that can be executed in the R environment, primarily used for defining functions, data manipulation, and running analyses. A .qmd file, associated with Quarto, is a more advanced document format that integrates R code with narrative text, allowing for the creation of dynamic, formatted reports or presentations that can include both the code and its output.\nImagine it as one single code-chunk without narrative text. Comments can be added using the # symbol.\n\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
+    "objectID": "assignments/md-04/am-04-2-survey.html#step-2-create-a-waste-management-survey",
+    "href": "assignments/md-04/am-04-2-survey.html#step-2-create-a-waste-management-survey",
+    "title": "Module 4 - Assignment 2",
+    "section": "Step 2: Create a waste management survey",
+    "text": "Step 2: Create a waste management survey\nObjective\nThe task is to create a survey using Google Forms to gather information on waste management practices among university students. The survey should include a variety of question types and incorporate skip logic to direct respondents based on their answers.\nInstructions\n\nOpen the form you created in Step 1 of this assignment.\nDesign the survey:\n\n\nThe survey should contain 5 to 10 questions.\nInclude at least three different types of questions (e.g., multiple choice, linear scale, checkboxes, short answer).\n\n\nImplement skip logic for one question:\n\n\nUse skip logic for a question with two alternatives, directing respondents to different sections based on their answer (this feature is only available for multiple choice and dropdown question types.)\n\n\n\n\n\n\n\nQuestion: How to use skip logic in Google Forms survey?\n\n\n\nAnswer from perplexity.ai: https://www.perplexity.ai/search/How-to-use-787pv.4nRo6omKzCpHK6Xg\n\n\n\nSome example questions:\n\n\nMultiple choice (with skip logic): “Do you currently separate your waste for recycling?”\n\nIf “Yes,” skip to questions about recycling habits.\nIf “No,” skip to questions about barriers to recycling.\n\nCheckboxes: “Which of the following materials do you recycle? (Select all that apply)”\n\nOptions: Paper, Plastic, Glass, Metal, Electronics, Organic Waste.\n\nShort answer: “What challenges do you face in managing waste effectively?”\n\n\n\n\n\n\n\nTips for creating a survey\n\n\n\n\nKeep questions clear and concise.\nEnsure skip logic enhances the survey experience and does not confuse respondents.\nConsider privacy and anonymity when collecting responses.\n\n\n\n\nAdvice on sections and flow:\n\n\nCreate distinct sections in your form for different topics, such as recycling habits, general waste disposal.\nEnsure the flow of the survey is logical and that skip logic is correctly implemented.\n\n\nFinalizing and testing:\n\n\nReview your survey to ensure all questions are clear and the skip logic functions as intended.\nTest the survey by filling it out yourself and making adjustments as needed.\n\n\nPrepare description\n\n\nWrite up a brief (2 to 3 sentence) description at the top of the form about your survey’s purpose and the insights you hope to gain from the responses.",
+    "crumbs": [
+      "Module 04",
+      "am-02: Survey"
+    ]
+  },
+  {
+    "objectID": "assignments/md-04/am-04-2-survey.html#step-3-create-a-new-repository-on-github",
+    "href": "assignments/md-04/am-04-2-survey.html#step-3-create-a-new-repository-on-github",
+    "title": "Module 4 - Assignment 2",
+    "section": "Step 3: Create a new repository on GitHub",
+    "text": "Step 3: Create a new repository on GitHub\n\nOpen the GitHub Organisation for the course https://github.com/rbtl-fs24\nCreate a new repository and name it: survey-USERNAME`. Replace USERNAME with your GitHub username. Avoid using spaces.",
+    "crumbs": [
+      "Module 04",
+      "am-02: Survey"
+    ]
+  },
+  {
+    "objectID": "assignments/md-04/am-04-2-survey.html#step-4-open-an-issue-on-github",
+    "href": "assignments/md-04/am-04-2-survey.html#step-4-open-an-issue-on-github",
+    "title": "Module 4 - Assignment 2",
+    "section": "Step 4: Open an issue on GitHub",
+    "text": "Step 4: Open an issue on GitHub\n\nOpen an issue on GitHub on your survey-USERNAME repo\nPaste the link to your survey in the body of the issue and tag the course instructor @larnsce.",
+    "crumbs": [
+      "Module 04",
+      "am-02: Survey"
+    ]
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
+    "section": "",
+    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
   },
   {
     "objectID": "guide/index.html",
@@ -2083,11 +2124,70 @@
     "text": "3 Publish to GitHub Pages\n\n3.1 Navigate to your repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/ds4owd-001.\n\n\n\n\n\n\n\n\n\n\n\nUse the search field under “Repositories” to find your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\n\n3.2 Make repo public\nIf your repository’s visibility is set to “private” (indicated by a small padlock next to the repositories name), you first need to switch it to “public” by following these steps:\n\nClick on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nStay on “General” and scroll down to the bottom of the page “Danger Zone”.\n\n\n\n\n\n\n\n\n\n\n\nOn the first sub-heading “Change repository visibility”, click “Change visibility”, then “Change to public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I want to make this repository public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I have read and understand these effects”.\nClick “Make this repository public”.\nProvide the requested credentials.\nDone.\n\n\n\n3.3 Publish with GitHub Pages\n\nOpen your capstone project repository, and click on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nIn the left navigation pane, click on “Pages” under “Code and automation”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Build and deployment”, then under Branch, click the dropdown titled “None”.\n\n\n\n\n\n\n\n\n\n\n\nIn the dropdown, select “main”.\n\n\n\n\n\n\n\n\n\n\n\nClick on the dropdown titled “/ (root)”. In the dropdown, select “/docs”.\n\n\n\n\n\n\n\n\n\n\n\nClick “Save”.\n\n\n\n\n\n\n\n\n\n\n\n\n3.4 Edit “About” of repository\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOn right side, next to “About”, click on the gear icon.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Description” you can add “This project report was prepared for the data science for openwashdata course.” or anything else that you would like to highlight.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Website”, click “User your GitHub Pages website”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Include in the home page”, you can remove the checked boxes.\nClick “Save changes”.\nThe public URL of your repository will now be shown under “About” on the right side.\n\n\n\n\n\n\n\n\n\n\n\nOpen your published website and enjoy."
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
+    "objectID": "assignments/md-04/am-04-1-reading.html",
+    "href": "assignments/md-04/am-04-1-reading.html",
+    "title": "Module 4 - Assignment 1",
     "section": "",
-    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+    "text": "This course introduces learners to tools and workflows for data science with R. Learners are also introduced to the concept of collaborative writing and coding using git and GitHub within the context of reproducible documents (i.e. Quarto). So far we have used data that is well structured and ready to be used. However, in reality a lot of data entry and storage is still managed in spreadsheets. This is why we also touch on some (research) data management topics (Data Organization in Spreadsheet).\nThe reading for this assignment provides guidance for data entry and storage aspects. It offers practical recommendations for organizing spreadsheet data to reduce errors and ease later analyses.",
+    "crumbs": [
+      "Module 04",
+      "am-01: Reading"
+    ]
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
+    "href": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 1: Read and prepare examples",
+    "text": "Task 1: Read and prepare examples\nFor this assignment, we ask you to:\n\nRead Broman and Woo (2018): “Data organization in spreadsheets”.\nChose two of the recommendations and come up with real-world examples or scenarios where the recommendations could be applied in your work.\nBe prepared to share these examples and explain how the recommendations would improve your workflows. This will be in a class setting as part of small discussion group (max 3 people).",
+    "crumbs": [
+      "Module 04",
+      "am-01: Reading"
+    ]
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
+    "href": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 2: Apply the recommendations to your samples data from Module 3",
+    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this firss: https://rbtl-fs24.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the rbtl-fs24 workspace on posit.cloud\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nAdd library(tidyverse) to the top of the file.\nAdd library(googlesheets4) to the top of the file.\nUse the read_sheet() function to read in your Google Sheets spreadsheet and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data. Note down recommendations that you struggled to achieve.\n\n\n\n\n\n\n\nWriting code in .R scripts\n\n\n\nAn .R script is a file containing R code that can be executed in the R environment, primarily used for defining functions, data manipulation, and running analyses. A .qmd file, associated with Quarto, is a more advanced document format that integrates R code with narrative text, allowing for the creation of dynamic, formatted reports or presentations that can include both the code and its output.\nImagine it as one single code-chunk without narrative text. Comments can be added using the # symbol.\n\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64",
+    "crumbs": [
+      "Module 04",
+      "am-01: Reading"
+    ]
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-3-create-new-folders",
+    "href": "assignments/md-04/am-04-1-reading.html#task-3-create-new-folders",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 3: Create new folders",
+    "text": "Task 3: Create new folders\n\nNavigate to the Files tab in the bottom right window of RStudio.\nClick on the “Folder” button.\nEnter the name “data” in field and click OK.\nClick on the new data folder in the bottom right window.\nClick on the “Folder” button.\nEnter the name “processed” in field and click OK.\nClick on the new processed folder in the bottom right window.",
+    "crumbs": [
+      "Module 04",
+      "am-01: Reading"
+    ]
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-4-write-processed-data",
+    "href": "assignments/md-04/am-04-1-reading.html#task-4-write-processed-data",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 4: Write processed data",
+    "text": "Task 4: Write processed data\nOnce you completed the data cleaning tasks from Task 2, write your processed data into the new data/processed folder:\n\nIn your data_cleaning.R file, write R code to apply the recommendations from the reading to your data.\nUse the assignment operator &lt;- to store the processed data in a new object named data_out.\nUse the write_csv() function to write the data_out object to the data/processed folder.\n\n\nwrite_csv(data_out, \"data/processed/waste-characterisation-processed.csv\")",
+    "crumbs": [
+      "Module 04",
+      "am-01: Reading"
+    ]
+  },
+  {
+    "objectID": "assignments/md-04/am-04-1-reading.html#task-5-submit-homework-assignment",
+    "href": "assignments/md-04/am-04-1-reading.html#task-5-submit-homework-assignment",
+    "title": "Module 4 - Assignment 1",
+    "section": "Task 5: Submit homework assignment",
+    "text": "Task 5: Submit homework assignment\n\nAdd all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\nOpen an issue on GitHub on your samples-USERNAME repo and tag the course instructor @larnsce.",
+    "crumbs": [
+      "Module 04",
+      "am-01: Reading"
+    ]
   },
   {
     "objectID": "assignments/md-03/am-03-1-data-transformation.html",
@@ -4021,7 +4121,7 @@
     "href": "modules/md-04.html#slides",
     "title": "Module 4",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Module 04"
     ]
@@ -4041,7 +4141,7 @@
     "href": "modules/md-04.html#assignments",
     "title": "Module 4",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 20th March 2024.\n\nAssignment 1: Data organisation in spreadsheets\nAssignment 2: Create a survey with Google Forms\n\nThank you for working through these assignments.",
     "crumbs": [
       "Module 04"
     ]
@@ -4142,68 +4242,5 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
-    "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Learning Objectives (for this module)",
-    "text": "Learning Objectives (for this module)\n\n\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
-  },
-  {
-    "objectID": "assignments/md-04/am-04-1-reading.html#task-3-create-new-folders",
-    "href": "assignments/md-04/am-04-1-reading.html#task-3-create-new-folders",
-    "title": "Module 4 - Assignment 1",
-    "section": "Task 3: Create new folders",
-    "text": "Task 3: Create new folders\n\nNavigate to the Files tab in the bottom right window of RStudio.\nClick on the “Folder” button.\nEnter the name “data” in field and click OK.\nClick on the new data folder in the bottom right window.\nClick on the “Folder” button.\nEnter the name “processed” in field and click OK.\nClick on the new processed folder in the bottom right window."
-  },
-  {
-    "objectID": "assignments/md-04/am-04-1-reading.html#task-4-write-processed-data",
-    "href": "assignments/md-04/am-04-1-reading.html#task-4-write-processed-data",
-    "title": "Module 4 - Assignment 1",
-    "section": "Task 4: Write processed data",
-    "text": "Task 4: Write processed data\nOnce you completed the data cleaning tasks from Task 2, write your processed data into the new data/processed folder:\n\nIn your data_cleaning.R file, write R code to apply the recommendations from the reading to your data.\nUse the assignment operator &lt;- to store the processed data in a new object named data_out.\nUse the write_csv() function to write the data_out object to the data/processed folder.\n\n\nwrite_csv(data_out, \"data/processed/waste-characterisation-processed.csv\")"
-  },
-  {
-    "objectID": "assignments/md-04/am-04-1-reading.html#task-5-submit-homework-assignment",
-    "href": "assignments/md-04/am-04-1-reading.html#task-5-submit-homework-assignment",
-    "title": "Module 4 - Assignment 1",
-    "section": "Task 5: Submit homework assignment",
-    "text": "Task 5: Submit homework assignment\n\nAdd all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\nOpen an issue on GitHub on your samples-USERNAME repo and tag the course instructor (larnsce?)."
-  },
-  {
-    "objectID": "assignments/md-04/am-04-2-survey.html",
-    "href": "assignments/md-04/am-04-2-survey.html",
-    "title": "Module 4 - Assignment 2",
-    "section": "",
-    "text": "Open the following link to a Google Drive folder: https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68\nOpen the md-04 folder.\nCreate a new folder and use your GitHub username as the name of the folder.\nEnter your folder.\nCreate a Google Form and name it rbtl-fs24-waste-survey."
-  },
-  {
-    "objectID": "assignments/md-04/am-04-2-survey.html#step-1-create-a-folder-in-shared-drive",
-    "href": "assignments/md-04/am-04-2-survey.html#step-1-create-a-folder-in-shared-drive",
-    "title": "Module 4 - Assignment 2",
-    "section": "",
-    "text": "Open the following link to a Google Drive folder: https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68\nOpen the md-04 folder.\nCreate a new folder and use your GitHub username as the name of the folder.\nEnter your folder.\nCreate a Google Form and name it rbtl-fs24-waste-survey."
-  },
-  {
-    "objectID": "assignments/md-04/am-04-2-survey.html#step-2-create-a-waste-management-survey",
-    "href": "assignments/md-04/am-04-2-survey.html#step-2-create-a-waste-management-survey",
-    "title": "Module 4 - Assignment 2",
-    "section": "Step 2: Create a waste management survey",
-    "text": "Step 2: Create a waste management survey\nObjective\nThe task is to create a survey using Google Forms to gather information on waste management practices among university students. The survey should include a variety of question types and incorporate skip logic to direct respondents based on their answers.\nInstructions\n\nOpen the form you created in Step 1 of this assignment.\nDesign the survey:\n\n\nThe survey should contain 5 to 10 questions.\nInclude at least three different types of questions (e.g., multiple choice, linear scale, checkboxes, short answer).\n\n\nImplement skip logic for one question:\n\n\nUse skip logic for a question with two alternatives, directing respondents to different sections based on their answer (this feature is only available for multiple choice and dropdown question types.)\n\n\n\n\n\n\n\nQuestion: How to use skip logic in Google Forms survey?\n\n\n\nAnswer from perplexity.ai: https://www.perplexity.ai/search/How-to-use-787pv.4nRo6omKzCpHK6Xg\n\n\n\nSome example questions:\n\n\nMultiple choice (with skip logic): “Do you currently separate your waste for recycling?”\n\nIf “Yes,” skip to questions about recycling habits.\nIf “No,” skip to questions about barriers to recycling.\n\nCheckboxes: “Which of the following materials do you recycle? (Select all that apply)”\n\nOptions: Paper, Plastic, Glass, Metal, Electronics, Organic Waste.\n\nShort answer: “What challenges do you face in managing waste effectively?”\n\n\n\n\n\n\n\nTips for creating a survey\n\n\n\n\nKeep questions clear and concise.\nEnsure skip logic enhances the survey experience and does not confuse respondents.\nConsider privacy and anonymity when collecting responses.\n\n\n\n\nAdvice on sections and flow:\n\n\nCreate distinct sections in your form for different topics, such as recycling habits, general waste disposal.\nEnsure the flow of the survey is logical and that skip logic is correctly implemented.\n\n\nFinalizing and testing:\n\n\nReview your survey to ensure all questions are clear and the skip logic functions as intended.\nTest the survey by filling it out yourself and making adjustments as needed.\n\n\nPrepare description\n\n\nWrite up a brief (2 to 3 sentence) description at the top of the form about your survey’s purpose and the insights you hope to gain from the responses."
-  },
-  {
-    "objectID": "assignments/md-04/am-04-2-survey.html#step-3-create-a-new-repository-on-github",
-    "href": "assignments/md-04/am-04-2-survey.html#step-3-create-a-new-repository-on-github",
-    "title": "Module 4 - Assignment 2",
-    "section": "Step 3: Create a new repository on GitHub",
-    "text": "Step 3: Create a new repository on GitHub\n\nOpen the GitHub Organisation for the course https://github.com/rbtl-fs24\nCreate a new repository and name it: survey-USERNAME`. Replace USERNAME with your GitHub username. Avoid using spaces."
-  },
-  {
-    "objectID": "assignments/md-04/am-04-2-survey.html#step-4-open-an-issue-on-github",
-    "href": "assignments/md-04/am-04-2-survey.html#step-4-open-an-issue-on-github",
-    "title": "Module 4 - Assignment 2",
-    "section": "Step 4: Open an issue on GitHub",
-    "text": "Step 4: Open an issue on GitHub\n\nOpen an issue on GitHub on your survey-USERNAME repo\nPaste the link to your survey in the body of the issue and tag the course instructor (larnsce?)."
   }
 ]

@@ -68,8 +68,6 @@ Answer from perplexity.ai: <https://www.perplexity.ai/search/How-to-use-787pv.4n
 
 - Write up a brief (2 to 3 sentence) description at the top of the form about your survey's purpose and the insights you hope to gain from the responses.
 
-
-
 ## Step 3: Create a new repository on GitHub
 
 1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs24>
@@ -78,7 +76,7 @@ Answer from perplexity.ai: <https://www.perplexity.ai/search/How-to-use-787pv.4n
 ## Step 4: Open an issue on GitHub
 
 1. Open an issue on GitHub on your survey-USERNAME repo 
-2. Paste the link to your survey in the body of the issue and tag the course instructor @larnsce.
+2. Paste the link to your survey in the body of the issue and tag the course instructor `@larnsce`.
 
 
 

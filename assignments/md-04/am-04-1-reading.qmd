@@ -78,5 +78,5 @@ write_csv(data_out, "data/processed/waste-characterisation-processed.csv")
 ## Task 5: Submit homework assignment
 
 1. Add all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.
-2. Open an issue on GitHub on your samples-USERNAME repo and tag the course instructor @larnsce.
+2. Open an issue on GitHub on your samples-USERNAME repo and tag the course instructor `@larnsce`.
 

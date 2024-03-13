@@ -67,6 +67,11 @@ website:
             text: "am-03: Spreadsheet"
       - section: "Module 04"
         href: modules/md-04.qmd
+        contents:
+          - href: assignments/md-04/am-04-1-reading.qmd
+            text: "am-01: Reading"
+          - href: assignments/md-04/am-04-2-survey.qmd
+            text: "am-02: Survey"
       - section: "Module 05"
         href: modules/md-05.qmd
       - section: "Module 06"
