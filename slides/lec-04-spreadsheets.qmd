@@ -644,13 +644,6 @@ countdown(minutes = 10)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-## My turn: Import data from XLSX
-
-<br><br>
-
-::: {.hand-purple-large style="text-align: center;"}
-Sit back and enjoy!
-:::
 
 ## Your turn: md-04a-exercises - import 
 
