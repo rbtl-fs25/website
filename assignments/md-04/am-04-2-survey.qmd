@@ -1,0 +1,82 @@
+---
+title: "Module 4 - Assignment 2"
+subtitle: "Surveys with Google Forms"
+bibliography: "../../rbtl-fs24.bib"
+---
+
+## Step 1: Create a folder in shared drive
+
+1. Open the following link to a Google Drive folder: <https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68>
+2. Open the md-04 folder.
+3. Create a new folder and use your GitHub username as the name of the folder.
+4. Enter your folder.
+5. Create a Google Form and name it `rbtl-fs24-waste-survey`.
+
+## Step 2: Create a waste management survey
+
+**Objective**
+
+The task is to create a survey using Google Forms to gather information on waste management practices among university students. The survey should include a variety of question types and incorporate skip logic to direct respondents based on their answers.
+
+**Instructions**
+
+1. Open the form you created in Step 1 of this assignment.
+
+2. Design the survey:
+   
+- The survey should contain 5 to 10 questions.
+- Include at least three different types of questions (e.g., multiple choice, linear scale, checkboxes, short answer).
+
+3. Implement skip logic for one question:
+
+- Use skip logic for a question with two alternatives, directing respondents to different sections based on their answer (this feature is only available for multiple choice and dropdown question types.)
+
+::: {.callout-tip}
+## Question: How to use skip logic in Google Forms survey?
+
+Answer from perplexity.ai: <https://www.perplexity.ai/search/How-to-use-787pv.4nRo6omKzCpHK6Xg>
+
+:::
+
+4. Some example questions: 
+
+- **Multiple choice (with skip logic):** "Do you currently separate your waste for recycling?"
+  - If "Yes," skip to questions about recycling habits.
+  - If "No," skip to questions about barriers to recycling.
+- **Checkboxes:** "Which of the following materials do you recycle? (Select all that apply)"
+  - Options: Paper, Plastic, Glass, Metal, Electronics, Organic Waste.
+- **Short answer:** "What challenges do you face in managing waste effectively?"
+
+::: {.callout-tip}
+## Tips for creating a survey
+- Keep questions clear and concise.
+- Ensure skip logic enhances the survey experience and does not confuse respondents.
+- Consider privacy and anonymity when collecting responses.
+:::
+
+5. Advice on sections and flow:
+
+- Create distinct sections in your form for different topics, such as recycling habits, general waste disposal.
+- Ensure the flow of the survey is logical and that skip logic is correctly implemented.
+
+6. Finalizing and testing:
+   
+- Review your survey to ensure all questions are clear and the skip logic functions as intended.
+- Test the survey by filling it out yourself and making adjustments as needed.
+
+7. Prepare description
+
+- Write up a brief (2 to 3 sentence) description at the top of the form about your survey's purpose and the insights you hope to gain from the responses.
+
+## Step 3: Create a new repository on GitHub
+
+1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs24>
+2. Create a new repository and name it: survey-USERNAME`. [Replace USERNAME with your GitHub username]{.highlight-yellow}. Avoid using spaces.
+
+## Step 4: Open an issue on GitHub
+
+1. Open an issue on GitHub on your survey-USERNAME repo 
+2. Paste the link to your survey in the body of the issue and tag the course instructor `@larnsce`.
+
+
+
