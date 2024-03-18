@@ -4248,7 +4248,7 @@
     "href": "assignments/md-05/am-05-01-survey-data.html#step-1-collect-data-for-your-survey",
     "title": "Data for your capstone project",
     "section": "Step 1: Collect data for your survey",
-    "text": "Step 1: Collect data for your survey\n\nThe following spreadsheet contains the five people that were randomly assigned to answer your survey. Open an issue on your GitHub repository and ask the five people to answer your survey."
+    "text": "Step 1: Collect data for your survey\n\nThe following spreadsheet contains a list of assigned GitHub usernames to five people that were randomly assigned to answer your survey: https://docs.google.com/spreadsheets/d/165-x1_FLE8hjgFZYuNEMSiyprwabmvFw4CLKK8xddB4/edit#gid=0\nOpen an issue on your GitHub repository and ask these five people to answer your survey by tagging their username with the @ symbol in the issue description."
   },
   {
     "objectID": "assignments/md-05/am-05-01-survey-data.html#step-2-import-your-unprocessed-raw-data-and-tidy-it-up",
