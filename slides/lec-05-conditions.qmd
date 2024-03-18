@@ -2,13 +2,12 @@
 title: "{{< var md-05.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
-date: "2023-11-28"
+date: "2024-03-21"
 format: 
   revealjs: 
     theme: slides.scss
     transition: fade
     slide-number: true
-    logo: ../img/OWD-logo-20.png
     chalkboard: true
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
@@ -325,7 +324,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
 2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
 3.  Click [Start]{.highlight-yellow} next to [md-05-exercises]{.highlight-yellow}.
-4.  In the File Manager in the bottom right window, locate the [`md-03c-tables.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4.  In the File Manager in the bottom right window, locate the [`md-05c-tables.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
 
 ```{r}
@@ -376,22 +375,10 @@ head(penguins) |>
 ```
 :::
 
-## Bring your own data for the capstone project
-
-1. Find a dataset that you would like to work with.
-2. Create a new repository on GitHub & clone to Posit Cloud.
-3. Upload your data. 
-4. Create a new Quarto document an describe why you have chose this data.
-
-## Suitable datasets
-
-- non-sensitive data that can be shared openly
-- data that you have permission to use
-
 ## Homework due date
 
--   Homework assignment due: [Monday, December 4th]{.highlight-yellow}
--   Correction & feedback phase up to: Thursday, December 7th
+-   Homework assignment due: [Wednesday, March 27th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, April 2nd
 
 # Wrap-up {background-color="#4C326A"}
 
