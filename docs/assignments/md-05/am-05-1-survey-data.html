@@ -301,11 +301,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#step-1-collect-data-for-your-survey" id="toc-step-1-collect-data-for-your-survey" class="nav-link active" data-scroll-target="#step-1-collect-data-for-your-survey">Step 1: Collect data for your survey</a></li>
-  <li><a href="#step-2-import-your-unprocessed-raw-data-and-tidy-it-up" id="toc-step-2-import-your-unprocessed-raw-data-and-tidy-it-up" class="nav-link" data-scroll-target="#step-2-import-your-unprocessed-raw-data-and-tidy-it-up">Step 2: Import your unprocessed raw data and tidy it up</a></li>
-  <li><a href="#step-3-create-a-new-quarto-document" id="toc-step-3-create-a-new-quarto-document" class="nav-link" data-scroll-target="#step-3-create-a-new-quarto-document">Step 3: Create a new Quarto document</a></li>
-  <li><a href="#step-4-import-.rds-file" id="toc-step-4-import-.rds-file" class="nav-link" data-scroll-target="#step-4-import-.rds-file">Step 4: Import .rds file</a></li>
-  <li><a href="#step-5-create-a-data-visualization-and-a-table-to-explore-your-data" id="toc-step-5-create-a-data-visualization-and-a-table-to-explore-your-data" class="nav-link" data-scroll-target="#step-5-create-a-data-visualization-and-a-table-to-explore-your-data">Step 5: Create a data visualization and a table to explore your data</a></li>
-  <li><a href="#step-6-submit-homework-assignment" id="toc-step-6-submit-homework-assignment" class="nav-link" data-scroll-target="#step-6-submit-homework-assignment">Step 6: Submit homework assignment</a></li>
+  <li><a href="#step-2-create-google-sheet" id="toc-step-2-create-google-sheet" class="nav-link" data-scroll-target="#step-2-create-google-sheet">Step 2: Create Google Sheet</a></li>
+  <li><a href="#step-3-import-your-unprocessed-raw-data-and-tidy-it-up" id="toc-step-3-import-your-unprocessed-raw-data-and-tidy-it-up" class="nav-link" data-scroll-target="#step-3-import-your-unprocessed-raw-data-and-tidy-it-up">Step 3: Import your unprocessed raw data and tidy it up</a></li>
+  <li><a href="#step-4-create-a-new-quarto-document" id="toc-step-4-create-a-new-quarto-document" class="nav-link" data-scroll-target="#step-4-create-a-new-quarto-document">Step 4: Create a new Quarto document</a></li>
+  <li><a href="#step-5-import-.rds-file" id="toc-step-5-import-.rds-file" class="nav-link" data-scroll-target="#step-5-import-.rds-file">Step 5: Import .rds file</a></li>
+  <li><a href="#step-6-create-a-data-visualization-and-a-table-to-explore-your-data" id="toc-step-6-create-a-data-visualization-and-a-table-to-explore-your-data" class="nav-link" data-scroll-target="#step-6-create-a-data-visualization-and-a-table-to-explore-your-data">Step 6: Create a data visualization and a table to explore your data</a></li>
+  <li><a href="#step-7-submit-homework-assignment" id="toc-step-7-submit-homework-assignment" class="nav-link" data-scroll-target="#step-7-submit-homework-assignment">Step 7: Submit homework assignment</a></li>
   </ul>
 </nav>
     </div>
@@ -340,8 +341,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>You yourself will be tagged in five GitHub issues of other people. After completing the survey, provide a comment on the issue with two bullet points with suggestions for improvements of the survey you have completed. Tag the course instructor <code>@larnsce</code> in your comment.</li>
 </ol>
 </section>
-<section id="step-2-import-your-unprocessed-raw-data-and-tidy-it-up" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-import-your-unprocessed-raw-data-and-tidy-it-up">Step 2: Import your unprocessed raw data and tidy it up</h2>
+<section id="step-2-create-google-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-create-google-sheet">Step 2: Create Google Sheet</h2>
+<p>Once you received one response to your survey, you need to create a Google Sheet from the responses. See the following screenshot for how to do that.</p>
+<p>The spreadsheet will open as a new tab in your browser and you can then copy the URL from the address bar for Step 3.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning: Do not edit the unprocessed raw data manually!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The goal is to keep the raw data untouched and use R to prepare the processed, analysis-ready data.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/01-create-sheet.png" class="img-fluid figure-img" width="624"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="step-3-import-your-unprocessed-raw-data-and-tidy-it-up" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-import-your-unprocessed-raw-data-and-tidy-it-up">Step 3: Import your unprocessed raw data and tidy it up</h2>
 <ol type="1">
 <li>Clone the survey-USERNAME repository you created in module 4 to Posit Cloud.</li>
 <li>Open your survey-USERNAME repository on Posit Cloud.</li>
@@ -350,16 +378,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Write R code to prepare a processed analysis-ready data set (e.g.&nbsp;rename columns, fix dates, coerce data types, etc.) and save it as a <code>.csv</code> and <code>.rds</code> file in a newly created <code>data/processed</code> folder in your repository.</li>
 </ol>
 </section>
-<section id="step-3-create-a-new-quarto-document" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-create-a-new-quarto-document">Step 3: Create a new Quarto document</h2>
+<section id="step-4-create-a-new-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-create-a-new-quarto-document">Step 4: Create a new Quarto document</h2>
 <ol type="1">
 <li>Open your survey-USERNAME repository on Posit Cloud.</li>
 <li>Navigate to the Files tab in the bottom right window of RStudio, and create a new folder called <code>docs</code>.</li>
 <li>Create a new Quarto document and save it as <code>index.qmd</code> in the <code>docs</code> folder.</li>
 </ol>
 </section>
-<section id="step-4-import-.rds-file" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-import-.rds-file">Step 4: Import .rds file</h2>
+<section id="step-5-import-.rds-file" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-import-.rds-file">Step 5: Import .rds file</h2>
 <ol type="1">
 <li>Open the <code>index.qmd</code> file from Step 3 and import your data in <code>.rds</code> format by using the suggested <code>here::here()</code> function below:</li>
 </ol>
@@ -369,7 +397,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>survey <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/processed/your-file-name.rds"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -378,7 +406,7 @@ File paths &amp; project-oriented workflows. The very short version: use <code>h
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p><strong>The short version</strong></p>
 <p>When you use RStudio projects (we do &amp; I highly recomment it), the working directory will be set to the root of the project folder.</p>
@@ -397,8 +425,8 @@ File paths &amp; project-oriented workflows. The very short version: use <code>h
 </div>
 </div>
 </section>
-<section id="step-5-create-a-data-visualization-and-a-table-to-explore-your-data" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-create-a-data-visualization-and-a-table-to-explore-your-data">Step 5: Create a data visualization and a table to explore your data</h2>
+<section id="step-6-create-a-data-visualization-and-a-table-to-explore-your-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-create-a-data-visualization-and-a-table-to-explore-your-data">Step 6: Create a data visualization and a table to explore your data</h2>
 <ol type="1">
 <li>Use the <code>ggplot2</code> R package to create a data visualization from your survey data.</li>
 <li>Use the <code>kable</code> function from the <code>knitr</code> R package to create a table from your survey data.</li>
@@ -406,8 +434,8 @@ File paths &amp; project-oriented workflows. The very short version: use <code>h
 <li>(stretch goal): Use the <code>@</code> symbol in your text to cross-reference your data visualization in your Quarto document.</li>
 </ol>
 </section>
-<section id="step-6-submit-homework-assignment" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-submit-homework-assignment">Step 6: Submit homework assignment</h2>
+<section id="step-7-submit-homework-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-submit-homework-assignment">Step 7: Submit homework assignment</h2>
 <ol type="1">
 <li>Add all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.</li>
 <li>Open an issue on GitHub on your survey-USERNAME repo and tag the course instructor <code>@larnsce</code>.</li>

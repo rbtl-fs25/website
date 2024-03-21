@@ -13,7 +13,24 @@ In module 4, you designed a waste management survey. Part of this homework is to
 2. Open an issue on your GitHub repository and ask these five people to answer your survey by tagging their username with the `@` symbol in the issue description.
 3. You yourself will be tagged in five GitHub issues of other people. After completing the survey, provide a comment on the issue with two bullet points with suggestions for improvements of the survey you have completed. Tag the course instructor `@larnsce` in your comment.
 
-## Step 2: Import your unprocessed raw data and tidy it up 
+## Step 2: Create Google Sheet
+
+Once you received one response to your survey, you need to create a Google Sheet from the responses. See the following screenshot for how to do that. 
+
+The spreadsheet will open as a new tab in your browser and you can then copy the URL from the address bar for Step 3.
+
+::: {.callout-warning}
+## Warning: Do not edit the unprocessed raw data manually!
+
+The goal is to keep the raw data untouched and use R to prepare the processed, analysis-ready data.
+:::
+ 
+```{r}
+#| echo: false 
+knitr::include_graphics("images/01-create-sheet.png")
+```
+
+## Step 3: Import your unprocessed raw data and tidy it up 
 
 1. Clone the survey-USERNAME repository you created in module 4 to Posit Cloud.
 2. Open your survey-USERNAME repository on Posit Cloud.
@@ -21,13 +38,13 @@ In module 4, you designed a waste management survey. Part of this homework is to
 4. Use the skills you have learned in assignment 3 of module 3 to import your data using the `googlsheets4` R package: <https://rbtl-fs24.github.io/website/assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import>
 5. Write R code to prepare a processed analysis-ready data set (e.g. rename columns, fix dates, coerce data types, etc.) and save it as a `.csv` and `.rds` file in a newly created `data/processed` folder in your repository.
 
-## Step 3: Create a new Quarto document
+## Step 4: Create a new Quarto document
 
 1. Open your survey-USERNAME repository on Posit Cloud.
 3. Navigate to the Files tab in the bottom right window of RStudio, and create a new folder called `docs`.
 4. Create a new Quarto document and save it as `index.qmd` in the `docs` folder.
 
-## Step 4: Import .rds file
+## Step 5: Import .rds file
 
 1. Open the `index.qmd` file from Step 3 and import your data in `.rds` format by using the suggested `here::here()` function below:
 
@@ -64,14 +81,14 @@ That’s the short version, the extended version needs a more detailed explanati
 
 :::
 
-## Step 5: Create a data visualization and a table to explore your data
+## Step 6: Create a data visualization and a table to explore your data
 
 1. Use the `ggplot2` R package to create a data visualization from your survey data.
 2. Use the `kable` function from the `knitr` R package to create a table from your survey data.
 3. Use the `@` symbol in your text to cross-reference your table in your Quarto document (tipp: review the class exercises from module 5).
 4. (stretch goal): Use the `@` symbol in your text to cross-reference your data visualization in your Quarto document.
 
-## Step 6: Submit homework assignment
+## Step 7: Submit homework assignment
 
 1. Add all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.
 2. Open an issue on GitHub on your survey-USERNAME repo and tag the course instructor `@larnsce`.
