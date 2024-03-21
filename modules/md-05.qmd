@@ -33,7 +33,11 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa display >}} Slides
 
-- In preparation
+[View slides in full screen](../slides/lec-05-conditions.html) | [Download slides as PDF](https://github.com/rbtl-fs24/website/raw/main/slides/lec-05-conditions.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-05-conditions.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
 
 ## {{< fa book >}} Readings
 
@@ -42,4 +46,8 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa code >}} Assignments
 
-- In preparation
+Please complete the following assignment by Wednesday, 27th March 2024. 
+
+-   [Assignment 1](../assignments/md-05/am-05-1-survey-data.qmd): Complete survey of five peers and analyse data
+
+Thank you for working through this assignment. 

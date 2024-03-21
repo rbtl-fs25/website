@@ -74,6 +74,9 @@ website:
             text: "am-02: Survey"
       - section: "Module 05"
         href: modules/md-05.qmd
+        contents:
+          - href: assignments/md-05/am-05-1-survey-data.qmd
+            text: "am-01: Survey data"
       - section: "Module 06"
         href: modules/md-06.qmd
       - section: "Module 07"
