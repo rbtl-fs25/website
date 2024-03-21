@@ -737,8 +737,8 @@ knitr::include_graphics("img/lec-04/data-org-license.png")
 
 ## Homework due date
 
--   Homework assignment due: [Monday, November 20th]{.highlight-yellow}
--   Correction & feedback phase up to: Thursday, November 23rd
+-   Homework assignment due: [Wednesday, March 20th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, March 26th
 
 # Wrap-up {background-color="#4C326A"}
 
