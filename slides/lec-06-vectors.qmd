@@ -2,13 +2,12 @@
 title: "{{< var md-06.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
-date: "2023-12-05"
+date: "2024-03-28"
 format: 
   revealjs: 
     theme: slides.scss
     transition: fade
     slide-number: true
-    logo: ../img/OWD-logo-20.png
     chalkboard: true
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 editor: source
@@ -155,11 +154,7 @@ waste_data_tidy |>
 
 ## Course calendar {.smallest .scrollable}
 
-[Changes to the course calendar]{.highlight-yellow}
-
-- 19th December 2023: no class
-- 23rd January 2024: openwashdata webinar: a data sharing workflow that may please the publishers
-- 13th February 2024: submission of capstone project report
+- 04th April 2024: no class, Easter Break
 
 ```{r}
 readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
@@ -658,7 +653,7 @@ ggplot(data = waste_data_tidy,
 
 ## Homework due date
 
-- Homework assignment due: [Monday, December 11th]{.highlight-yellow}
+- Homework assignment due: [Wednesday, April 10th]{.highlight-yellow}
 
 # Wrap-up {background-color="#4C326A"}
 
