@@ -1,0 +1,123 @@
+---
+title: "Setup your capstone project repository"
+execute:
+  eval: false
+---
+
+## Step 1: Create a new repository on GitHub
+
+1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs24>
+
+2. Create a new repository and name it: project-USERNAME`. [Replace USERNAME with your GitHub username]{.highlight-yellow}. Avoid using spaces.
+
+## Step 2: Setup folder structure
+
+1. Clone the project-USERNAME repository to Posit Cloud.
+
+2. Open your project-USERNAME repository on Posit Cloud.
+
+3. Create an `R` folder and inside the folder create a new file and save it as `01-data_download.R`.
+
+4. Create another file inside `R` and save it as `02-data_cleaning.R`.
+
+5. Create a `data` folder, and inside the folder create three sub-folders titled `raw`, `processed`, and `final`.
+
+6. Create a `docs` folder inside the root folder.
+
+7. Create a Quarto document inside `docs` and name it `index.qmd`.
+
+8. Add all files to a commit, commit the changes with a meaningful commit message, and push the changes to GitHub.
+
+::: {.callout-note}
+## Data download, cleaning, and analysis
+
+You will use the `data_download.R` file to download your data from the Google Sheet that you have established for your capstone project. Use the `googlesheets4` package to access the data. Do not clean the data, but save it in the `data/raw` folder using the `write_csv()` function. Give the the a meaningful name that describes your project.
+
+You will use the `data_cleaning.R` file to process your data into a state that is ready for analysis. Do not access the data from Google Drive, but rather use the `read_csv()` function to access your data from the `data/raw` folder. Save the processed, analysis-ready data in the `data/processed` folder using the `write_csv()` function. Again, give the file a meaningful name that describes your project.
+
+You will use the `index.qmd` file to write your final report. This will be a Quarto document that will contain your analysis and visualizations. You will need to access the processed data from the `data/processed` folder using the `read_csv()` function. 
+
+You will save the data underlying each displayed summary table and visualization in the `data/final` folder. This requires that each visualization and table is generated from an object that is not further transformed before the code for the visualization or table is written. Use the `write_csv()` function to save the data underlying each visualization and table in the `data/final` folder. Give the files the name of the label you have chosen inside the code-chunk. See example below.
+
+:::
+
+```{r}
+#| label: tbl-gapminder-mean
+#| tbl-cap: "Mean values of life expectancy, GDP per capita, and population by continent"
+#| echo: fenced
+
+# load libraries -------------------------------------
+
+library(gapminder)
+library(tidyverse)
+
+# data analysis --------------------------------------
+
+gapminder_mean <- gapminder |> 
+  pivot_longer(cols = c(lifeExp, gdpPercap, pop), 
+               names_to = "variable",
+               values_to = "value") |> 
+  group_by(continent, variable) |> 
+  summarise(mean = mean(value),
+            n = n()) |> 
+  pivot_wider(names_from = variable, 
+              values_from = mean) 
+
+# results display as table ---------------------------
+  
+gapminder_mean |> 
+  knitr::kable(digits = 0)
+
+# save data underlying the table ----------------------
+
+write_csv(here::here("data/final/tbl-gapminder-mean.csv"))
+
+```
+
+## Step 3: Create a `README.md` 
+
+1. Navigate to the Files tab in the bottom right window of RStudio.
+
+2. Open the `data/processed` folder.
+
+3. Click on the "Blank File" button to create a new file.
+
+4. Select the option "Text file".
+
+5. Enter the name "README.md" in field and click OK.
+
+6. Go to: <https://raw.githubusercontent.com/rbtl-dev/metadata-readme-template/main/README.md>
+
+7. Copy the content that's displayed in your browser and paste it into the `README.md` file you have just created.
+
+8. Add all files to a commit, commit the changes with a meaningful commit message, and push the changes to GitHub.
+
+
+## Step 4: Create a data dictionary
+
+1. Open the following link to a Google Drive folder: <https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68>
+
+2. Open the `capstone-project` folder.
+
+3. Create a new folder and use your GitHub username as the name of the folder.
+
+4. Enter your folder.
+
+5. Create a new spreadsheet and name it `dictionary`.
+
+6. Add two column names to the spreadsheet: `variable_name` and `description`.
+
+::: {.callout-note}
+## Data dictionary
+This data dictionary will be used for your processed, analysis-ready data in `data/processed`. You will need to describe each variable in your dataset. The `variable_name` column should contain the name of the variable in your dataset, and the `description` column should contain a description of the variable. One sentence per variable without a comma `,`. 
+
+Once you completed your dictionary, you will need to download it as a `.csv` file and add it to your `data/processed` folder in your project-USERNAME repository. You can do that by:
+
+- Using the upload button in the Files tab in RStudio on Posit Cloud.
+- Opening the `data/processed` folder on your project-USERNAME repository on GitHub and uploading the file there. If you do this, then you need to pull the changes to your local repository on Posit Cloud.
+:::
+
+## Step 5: Submit homework assignment
+
+1. Add all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.
+2. Open an issue on GitHub on your project-USERNAME repo and tag the course instructor `@larnsce`.
