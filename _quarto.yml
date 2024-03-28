@@ -84,6 +84,8 @@ website:
             text: "am-01: Good enough practices"
           - href: assignments/md-06/am-06-2-pivoting.qmd
             text: "am-02: Pivot data"
+          - href: assignments/md-06/am-06-3-project.qmd
+            text: "am-03: Project repository"
       - section: "Module 07"
         href: modules/md-07.qmd
       - section: "Module 08"
