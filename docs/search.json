@@ -663,8 +663,8 @@
     "objectID": "slides/lec-05-conditions.html#learning-objectives-for-this-week",
     "href": "slides/lec-05-conditions.html#learning-objectives-for-this-week",
     "title": "Conditions & Dates & Tables",
-    "section": "",
-    "text": "Learners can apply functions from dplyr to change specific values of a variable in a dataframe.\nLearners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\nLearners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from dplyr to change specific values of a variable in a dataframe.\nLearners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\nLearners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
   },
   {
     "objectID": "slides/lec-05-conditions.html#part-1-reading",
@@ -685,14 +685,14 @@
     "href": "slides/lec-05-conditions.html#rules-for-variable-names",
     "title": "Conditions & Dates & Tables",
     "section": "Rules for variable names",
-    "text": "Rules for variable names\n\navoid spaces\navoid special characters\nuse consistent naming conventions (e.g. snake_case)\n\n. . .\n\n\nuse\n\nts\nusers\nsystem\n\n\navoid\n\nTotal Solids (g/L)\nNumber of users\nSystem (pit latrine / septic tank)"
+    "text": "Rules for variable names\n\navoid spaces\navoid special characters\nuse consistent naming conventions (e.g. snake_case)\n\n\n\n\nuse\n\nts\nusers\nsystem\n\n\navoid\n\nTotal Solids (g/L)\nNumber of users\nSystem (pit latrine / septic tank)"
   },
   {
     "objectID": "slides/lec-05-conditions.html#data-dictionary-codebook",
     "href": "slides/lec-05-conditions.html#data-dictionary-codebook",
     "title": "Conditions & Dates & Tables",
     "section": "Data dictionary / codebook",
-    "text": "Data dictionary / codebook\n\nvariable descriptions belong into a data dictionary / codebook (not into variable names)\ndata dictionaries / codebooks are separate files\n\n. . .\n\n\n\n\n\n\n\nvariable_name\ndescription\n\n\n\n\nts\nTotal solids in g/L.\n\n\nusers\nNumber of users per system.\n\n\nsystem\nSanitation system in use at sample location (septic tank / pit latrine)."
+    "text": "Data dictionary / codebook\n\nvariable descriptions belong into a data dictionary / codebook (not into variable names)\ndata dictionaries / codebooks are separate files\n\n\n\n\n\n\n\n\n\nvariable_name\ndescription\n\n\n\n\nts\nTotal solids in g/L.\n\n\nusers\nNumber of users per system.\n\n\nsystem\nSanitation system in use at sample location (septic tank / pit latrine)."
   },
   {
     "objectID": "slides/lec-05-conditions.html#dplyr-functions-mutate-case_when",
@@ -838,8 +838,8 @@
     "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
     "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "",
-    "text": "Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
+    "section": "Learning Objectives (for this module)",
+    "text": "Learning Objectives (for this module)\n\n\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
@@ -930,7 +930,7 @@
     "href": "slides/lec-04-spreadsheets.html#types-of-variables---remember",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Types of variables - Remember?",
-    "text": "Types of variables - Remember?\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
+    "text": "Types of variables - Remember?\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r",
@@ -965,7 +965,7 @@
     "href": "slides/lec-04-spreadsheets.html#csv-xlsx",
     "title": "Data import & Data organization in spreadsheets",
     "section": "CSV & XLSX",
-    "text": "CSV & XLSX\n\n\n\nreadr\n\nread_csv() - comma delimited files\nread_csv2() - semicolon separated files (common in countries where , is used as the decimal place)\nread_tsv() - tab delimited files\nread_delim() - reads in files with any delimiter\n…\n\n\n\n\nreadxl\n\nread_excel() - read xls or xlsx files\n…"
+    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - comma delimited files\nread_csv2() - semicolon separated files (common in countries where , is used as the decimal place)\nread_tsv() - tab delimited files\nread_delim() - reads in files with any delimiter\n…\n\n\nreadxl\n\nread_excel() - read xls or xlsx files\n…"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#reading-data-from-csv-files",
@@ -1021,7 +1021,7 @@
     "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\n\n\n\n\n\n\n\n\n\n\nScreenshot taken on 2023-11-21"
+    "text": "Data Organization in Spreadsheets\n\n\nScreenshot taken on 2023-11-21"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
@@ -1049,7 +1049,7 @@
     "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\nLicense? CC0 (!)\n\n\n\n\n\n\n\n\n\n\nScreenshot taken on 2022-03-23"
+    "text": "Data Organization in Spreadsheets\nLicense? CC0 (!)\n\n\nScreenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#module-4-documentation",
@@ -1070,7 +1070,7 @@
     "href": "slides/lec-04-spreadsheets.html#thanks",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
@@ -1841,32 +1841,48 @@
     ]
   },
   {
-    "objectID": "assignments/md-07/am-07-1-pivoting.html",
-    "href": "assignments/md-07/am-07-1-pivoting.html",
+    "objectID": "assignments/md-06/am-06-2-pivoting.html",
+    "href": "assignments/md-06/am-06-2-pivoting.html",
     "title": "Data pivoting",
     "section": "",
-    "text": "Have you completed the assignments for module 1?\n\n\n\nA pre-requisite for this homework is that you worked through the “Interaction with GitHub” assignment of module 1. You will need your GitHub Personal Access Token to push your committed changes back to GitHub."
+    "text": "Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-06-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-06a-pivoting.qmd and follow the instructions to work through the tasks.",
+    "crumbs": [
+      "Module 06",
+      "am-02: Pivot data"
+    ]
   },
   {
-    "objectID": "assignments/md-07/am-07-1-pivoting.html#step-1-clone-your-module-7-assignments-repository",
-    "href": "assignments/md-07/am-07-1-pivoting.html#step-1-clone-your-module-7-assignments-repository",
+    "objectID": "assignments/md-06/am-06-2-pivoting.html#step-1-clone-your-module-6-assignments-repository",
+    "href": "assignments/md-06/am-06-2-pivoting.html#step-1-clone-your-module-6-assignments-repository",
     "title": "Data pivoting",
-    "section": "Step 1: Clone your module 7 assignments repository",
-    "text": "Step 1: Clone your module 7 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-07-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-07a-pivoting.qmd and follow the instructions to work through the tasks."
+    "section": "",
+    "text": "Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-06-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-06a-pivoting.qmd and follow the instructions to work through the tasks.",
+    "crumbs": [
+      "Module 06",
+      "am-02: Pivot data"
+    ]
   },
   {
-    "objectID": "assignments/md-07/am-07-1-pivoting.html#step-2-commit-and-push-your-changes",
-    "href": "assignments/md-07/am-07-1-pivoting.html#step-2-commit-and-push-your-changes",
+    "objectID": "assignments/md-06/am-06-2-pivoting.html#step-2-commit-and-push-your-changes",
+    "href": "assignments/md-06/am-06-2-pivoting.html#step-2-commit-and-push-your-changes",
     "title": "Data pivoting",
     "section": "Step 2: Commit and push your changes",
-    "text": "Step 2: Commit and push your changes\nThe below is also described in md-07a-pivoting.qmd.\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub."
+    "text": "Step 2: Commit and push your changes\nThe below is also described in md-06a-pivoting.qmd.\n\nNavigate to the Git pane in the top-right window of RStudio\nCheck the box next to all files to stage them for a commit\nClick on the “Commit” button\nEnter a commit message in the “Commit message” field\nClick on the “Commit” button\nClick on the “Push” button\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields\n\n\n\n\n\n\n\nDo not use your GitHub password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) you created in Step 1 to push your changes back to GitHub.",
+    "crumbs": [
+      "Module 06",
+      "am-02: Pivot data"
+    ]
   },
   {
-    "objectID": "assignments/md-07/am-07-1-pivoting.html#step-3-open-an-issue-on-github",
-    "href": "assignments/md-07/am-07-1-pivoting.html#step-3-open-an-issue-on-github",
+    "objectID": "assignments/md-06/am-06-2-pivoting.html#step-3-open-an-issue-on-github",
+    "href": "assignments/md-06/am-06-2-pivoting.html#step-3-open-an-issue-on-github",
     "title": "Data pivoting",
     "section": "Step 3: Open an issue on GitHub",
-    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-07-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 7 assignments”.\nIn the “Leave a comment” field, tag the course instructors @larnsce @mianzg @sskorik01"
+    "text": "Step 3: Open an issue on GitHub\n\nOpen github.com in your browser.\nNavigate to the GitHub organisation for the course.\nFind the repository md-06-assignments that ends with your GitHub username.\nClick on the “Issues” tab.\nClick on the green “New issue” button.\nIn the “Title” field write: “Completed module 6 assignments”.\nIn the “Leave a comment” field, tag the course instructor @larnsce",
+    "crumbs": [
+      "Module 06",
+      "am-02: Pivot data"
+    ]
   },
   {
     "objectID": "assignments/md-05/am-05-1-project-data.html",
@@ -2367,55 +2383,66 @@
     ]
   },
   {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-2-import-your-unprocessed-raw-data-and-tidy-it-up",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-2-import-your-unprocessed-raw-data-and-tidy-it-up",
+    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-2-create-google-sheet",
+    "href": "assignments/md-05/am-05-1-survey-data.html#step-2-create-google-sheet",
     "title": "Data for your capstone project",
-    "section": "Step 2: Import your unprocessed raw data and tidy it up",
-    "text": "Step 2: Import your unprocessed raw data and tidy it up\n\nClone the survey-USERNAME repository you created in module 4 to Posit Cloud.\nOpen your survey-USERNAME repository on Posit Cloud.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nUse the skills you have learned in assignment 3 of module 3 to import your data using the googlsheets4 R package: https://rbtl-fs24.github.io/website/assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import\nWrite R code to prepare a processed analysis-ready data set (e.g. rename columns, fix dates, coerce data types, etc.) and save it as a .csv and .rds file in a newly created data/processed folder in your repository.",
+    "section": "Step 2: Create Google Sheet",
+    "text": "Step 2: Create Google Sheet\nOnce you received one response to your survey, you need to create a Google Sheet from the responses. See the following screenshot for how to do that.\nThe spreadsheet will open as a new tab in your browser and you can then copy the URL from the address bar for Step 3.\n\n\n\n\n\n\nWarning: Do not edit the unprocessed raw data manually!\n\n\n\nThe goal is to keep the raw data untouched and use R to prepare the processed, analysis-ready data.",
     "crumbs": [
       "Module 05",
       "am-01: Survey data"
     ]
   },
   {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-3-create-a-new-quarto-document",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-3-create-a-new-quarto-document",
+    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-3-import-your-unprocessed-raw-data-and-tidy-it-up",
+    "href": "assignments/md-05/am-05-1-survey-data.html#step-3-import-your-unprocessed-raw-data-and-tidy-it-up",
     "title": "Data for your capstone project",
-    "section": "Step 3: Create a new Quarto document",
-    "text": "Step 3: Create a new Quarto document\n\nOpen your survey-USERNAME repository on Posit Cloud.\nNavigate to the Files tab in the bottom right window of RStudio, and create a new folder called docs.\nCreate a new Quarto document and save it as index.qmd in the docs folder.",
+    "section": "Step 3: Import your unprocessed raw data and tidy it up",
+    "text": "Step 3: Import your unprocessed raw data and tidy it up\n\nClone the survey-USERNAME repository you created in module 4 to Posit Cloud.\nOpen your survey-USERNAME repository on Posit Cloud.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nUse the skills you have learned in assignment 3 of module 3 to import your data using the googlsheets4 R package: https://rbtl-fs24.github.io/website/assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import\nWrite R code to prepare a processed analysis-ready data set (e.g. rename columns, fix dates, coerce data types, etc.) and save it as a .csv and .rds file in a newly created data/processed folder in your repository.",
     "crumbs": [
       "Module 05",
       "am-01: Survey data"
     ]
   },
   {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-4-import-.rds-file",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-4-import-.rds-file",
+    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-4-create-a-new-quarto-document",
+    "href": "assignments/md-05/am-05-1-survey-data.html#step-4-create-a-new-quarto-document",
     "title": "Data for your capstone project",
-    "section": "Step 4: Import .rds file",
-    "text": "Step 4: Import .rds file\n\nOpen the index.qmd file from Step 3 and import your data in .rds format by using the suggested here::here() function below:\n\n\nlibrary(readr)\n\nsurvey &lt;- read_rds(here::here(\"data/processed/your-file-name.rds\"))\n\n\n\n\n\n\n\nFile paths & project-oriented workflows. The very short version: use here::here()!\n\n\n\n\n\nThe short version\nWhen you use RStudio projects (we do & I highly recomment it), the working directory will be set to the root of the project folder.\nWhen you are working in a Quarto document (.qmd), the beginning of your file path will be the location of your Quarto document.\nIf your Quarto document sits in the root directory, you can access any file using relative file paths.\nHowever, when your Quarto document is in a subdirectory (e.g., docs), you cannot easily access files in the root directory using relative file paths.\nThat is why it is best practice to use the here::here() function to create file paths in Quarto documents. The here::here() function is a best practice for creating file paths in R scripts and Quarto documents. It is beneficial when working with RStudio Projects because it allows you to write file paths relative to your RStudio Project’s root directory.\nThe details\nThat’s the short version, the extended version needs a more detailed explanation of how file paths work in .R scripts, Quarto documents and RStudio Projects (.Rproj). If you are interested in learning more, then refer to the following resources:\n\nBook: What They Forgot to Teach You About R - Chapter 3 - Project-oriented workflows\nBook: What They Forgot to Teach You About R - Chapter 4 - Practice safe paths\nBlog post - Jenny Richmond",
+    "section": "Step 4: Create a new Quarto document",
+    "text": "Step 4: Create a new Quarto document\n\nOpen your survey-USERNAME repository on Posit Cloud.\nNavigate to the Files tab in the bottom right window of RStudio, and create a new folder called docs.\nCreate a new Quarto document and save it as index.qmd in the docs folder.",
     "crumbs": [
       "Module 05",
       "am-01: Survey data"
     ]
   },
   {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-5-create-a-data-visualization-and-a-table-to-explore-your-data",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-5-create-a-data-visualization-and-a-table-to-explore-your-data",
+    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-5-import-.rds-file",
+    "href": "assignments/md-05/am-05-1-survey-data.html#step-5-import-.rds-file",
     "title": "Data for your capstone project",
-    "section": "Step 5: Create a data visualization and a table to explore your data",
-    "text": "Step 5: Create a data visualization and a table to explore your data\n\nUse the ggplot2 R package to create a data visualization from your survey data.\nUse the kable function from the knitr R package to create a table from your survey data.\nUse the @ symbol in your text to cross-reference your table in your Quarto document (tipp: review the class exercises from module 5).\n(stretch goal): Use the @ symbol in your text to cross-reference your data visualization in your Quarto document.",
+    "section": "Step 5: Import .rds file",
+    "text": "Step 5: Import .rds file\n\nOpen the index.qmd file from Step 3 and import your data in .rds format by using the suggested here::here() function below:\n\n\nlibrary(readr)\n\nsurvey &lt;- read_rds(here::here(\"data/processed/your-file-name.rds\"))\n\n\n\n\n\n\n\nFile paths & project-oriented workflows. The very short version: use here::here()!\n\n\n\n\n\nThe short version\nWhen you use RStudio projects (we do & I highly recomment it), the working directory will be set to the root of the project folder.\nWhen you are working in a Quarto document (.qmd), the beginning of your file path will be the location of your Quarto document.\nIf your Quarto document sits in the root directory, you can access any file using relative file paths.\nHowever, when your Quarto document is in a subdirectory (e.g., docs), you cannot easily access files in the root directory using relative file paths.\nThat is why it is best practice to use the here::here() function to create file paths in Quarto documents. The here::here() function is a best practice for creating file paths in R scripts and Quarto documents. It is beneficial when working with RStudio Projects because it allows you to write file paths relative to your RStudio Project’s root directory.\nThe details\nThat’s the short version, the extended version needs a more detailed explanation of how file paths work in .R scripts, Quarto documents and RStudio Projects (.Rproj). If you are interested in learning more, then refer to the following resources:\n\nBook: What They Forgot to Teach You About R - Chapter 3 - Project-oriented workflows\nBook: What They Forgot to Teach You About R - Chapter 4 - Practice safe paths\nBlog post - Jenny Richmond",
     "crumbs": [
       "Module 05",
       "am-01: Survey data"
     ]
   },
   {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-6-submit-homework-assignment",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-6-submit-homework-assignment",
+    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-6-create-a-data-visualization-and-a-table-to-explore-your-data",
+    "href": "assignments/md-05/am-05-1-survey-data.html#step-6-create-a-data-visualization-and-a-table-to-explore-your-data",
     "title": "Data for your capstone project",
-    "section": "Step 6: Submit homework assignment",
-    "text": "Step 6: Submit homework assignment\n\nAdd all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\nOpen an issue on GitHub on your survey-USERNAME repo and tag the course instructor @larnsce.",
+    "section": "Step 6: Create a data visualization and a table to explore your data",
+    "text": "Step 6: Create a data visualization and a table to explore your data\n\nUse the ggplot2 R package to create a data visualization from your survey data.\nUse the kable function from the knitr R package to create a table from your survey data.\nUse the @ symbol in your text to cross-reference your table in your Quarto document (tipp: review the class exercises from module 5).\n(stretch goal): Use the @ symbol in your text to cross-reference your data visualization in your Quarto document.",
+    "crumbs": [
+      "Module 05",
+      "am-01: Survey data"
+    ]
+  },
+  {
+    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-7-submit-homework-assignment",
+    "href": "assignments/md-05/am-05-1-survey-data.html#step-7-submit-homework-assignment",
+    "title": "Data for your capstone project",
+    "section": "Step 7: Submit homework assignment",
+    "text": "Step 7: Submit homework assignment\n\nAdd all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\nOpen an issue on GitHub on your survey-USERNAME repo and tag the course instructor @larnsce.",
     "crumbs": [
       "Module 05",
       "am-01: Survey data"
@@ -2482,7 +2509,11 @@
     "href": "assignments/md-06/am-06-1-reading.html",
     "title": "Module 6 - Assignment 1",
     "section": "",
-    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also briefly touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
+    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management in general. As part of your final capstone project, you will practice active research data management by documenting your data with a data dictionary and completing a README template used to describe your data.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510.",
+    "crumbs": [
+      "Module 06",
+      "am-01: Good enough practices"
+    ]
   },
   {
     "objectID": "assignments/md-01/am-01-1-github.html",
@@ -4227,7 +4258,7 @@
     "href": "modules/md-06.html#slides",
     "title": "Module 6",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Module 06"
     ]
@@ -4247,7 +4278,7 @@
     "href": "modules/md-06.html#assignments",
     "title": "Module 6",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 10th April 2024.\n\nAssignment 1: Good enough practices in scientific computing\nAssignment 2: Pivot your data",
     "crumbs": [
       "Module 06"
     ]
@@ -4298,85 +4329,5 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
-  },
-  {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-2-create-google-sheet",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-2-create-google-sheet",
-    "title": "Data for your capstone project",
-    "section": "Step 2: Create Google Sheet",
-    "text": "Step 2: Create Google Sheet\nOnce you received one response to your survey, you need to create a Google Sheet from the responses. See the following screenshot for how to do that.\nThe spreadsheet will open as a new tab in your browser and you can then copy the URL from the address bar for Step 3.\n\n\n\n\n\n\nWarning: Do not edit the unprocessed raw data manually!\n\n\n\nThe goal is to keep the raw data untouched and use R to prepare the processed, analysis-ready data.",
-    "crumbs": [
-      "Module 05",
-      "am-01: Survey data"
-    ]
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html",
-    "href": "slides/lec-04-spreadsheets.html",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "",
-    "text": "Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
-  },
-  {
-    "objectID": "slides/lec-05-conditions.html",
-    "href": "slides/lec-05-conditions.html",
-    "title": "Conditions & Dates & Tables",
-    "section": "",
-    "text": "Learners can apply functions from dplyr to change specific values of a variable in a dataframe.\nLearners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\nLearners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
-  },
-  {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-3-import-your-unprocessed-raw-data-and-tidy-it-up",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-3-import-your-unprocessed-raw-data-and-tidy-it-up",
-    "title": "Data for your capstone project",
-    "section": "Step 3: Import your unprocessed raw data and tidy it up",
-    "text": "Step 3: Import your unprocessed raw data and tidy it up\n\nClone the survey-USERNAME repository you created in module 4 to Posit Cloud.\nOpen your survey-USERNAME repository on Posit Cloud.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nUse the skills you have learned in assignment 3 of module 3 to import your data using the googlsheets4 R package: https://rbtl-fs24.github.io/website/assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import\nWrite R code to prepare a processed analysis-ready data set (e.g. rename columns, fix dates, coerce data types, etc.) and save it as a .csv and .rds file in a newly created data/processed folder in your repository.",
-    "crumbs": [
-      "Module 05",
-      "am-01: Survey data"
-    ]
-  },
-  {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-4-create-a-new-quarto-document",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-4-create-a-new-quarto-document",
-    "title": "Data for your capstone project",
-    "section": "Step 4: Create a new Quarto document",
-    "text": "Step 4: Create a new Quarto document\n\nOpen your survey-USERNAME repository on Posit Cloud.\nNavigate to the Files tab in the bottom right window of RStudio, and create a new folder called docs.\nCreate a new Quarto document and save it as index.qmd in the docs folder.",
-    "crumbs": [
-      "Module 05",
-      "am-01: Survey data"
-    ]
-  },
-  {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-5-import-.rds-file",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-5-import-.rds-file",
-    "title": "Data for your capstone project",
-    "section": "Step 5: Import .rds file",
-    "text": "Step 5: Import .rds file\n\nOpen the index.qmd file from Step 3 and import your data in .rds format by using the suggested here::here() function below:\n\n\nlibrary(readr)\n\nsurvey &lt;- read_rds(here::here(\"data/processed/your-file-name.rds\"))\n\n\n\n\n\n\n\nFile paths & project-oriented workflows. The very short version: use here::here()!\n\n\n\n\n\nThe short version\nWhen you use RStudio projects (we do & I highly recomment it), the working directory will be set to the root of the project folder.\nWhen you are working in a Quarto document (.qmd), the beginning of your file path will be the location of your Quarto document.\nIf your Quarto document sits in the root directory, you can access any file using relative file paths.\nHowever, when your Quarto document is in a subdirectory (e.g., docs), you cannot easily access files in the root directory using relative file paths.\nThat is why it is best practice to use the here::here() function to create file paths in Quarto documents. The here::here() function is a best practice for creating file paths in R scripts and Quarto documents. It is beneficial when working with RStudio Projects because it allows you to write file paths relative to your RStudio Project’s root directory.\nThe details\nThat’s the short version, the extended version needs a more detailed explanation of how file paths work in .R scripts, Quarto documents and RStudio Projects (.Rproj). If you are interested in learning more, then refer to the following resources:\n\nBook: What They Forgot to Teach You About R - Chapter 3 - Project-oriented workflows\nBook: What They Forgot to Teach You About R - Chapter 4 - Practice safe paths\nBlog post - Jenny Richmond",
-    "crumbs": [
-      "Module 05",
-      "am-01: Survey data"
-    ]
-  },
-  {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-6-create-a-data-visualization-and-a-table-to-explore-your-data",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-6-create-a-data-visualization-and-a-table-to-explore-your-data",
-    "title": "Data for your capstone project",
-    "section": "Step 6: Create a data visualization and a table to explore your data",
-    "text": "Step 6: Create a data visualization and a table to explore your data\n\nUse the ggplot2 R package to create a data visualization from your survey data.\nUse the kable function from the knitr R package to create a table from your survey data.\nUse the @ symbol in your text to cross-reference your table in your Quarto document (tipp: review the class exercises from module 5).\n(stretch goal): Use the @ symbol in your text to cross-reference your data visualization in your Quarto document.",
-    "crumbs": [
-      "Module 05",
-      "am-01: Survey data"
-    ]
-  },
-  {
-    "objectID": "assignments/md-05/am-05-1-survey-data.html#step-7-submit-homework-assignment",
-    "href": "assignments/md-05/am-05-1-survey-data.html#step-7-submit-homework-assignment",
-    "title": "Data for your capstone project",
-    "section": "Step 7: Submit homework assignment",
-    "text": "Step 7: Submit homework assignment\n\nAdd all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\nOpen an issue on GitHub on your survey-USERNAME repo and tag the course instructor @larnsce.",
-    "crumbs": [
-      "Module 05",
-      "am-01: Survey data"
-    ]
   }
 ]

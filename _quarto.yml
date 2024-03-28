@@ -79,6 +79,11 @@ website:
             text: "am-01: Survey data"
       - section: "Module 06"
         href: modules/md-06.qmd
+        contents:
+          - href: assignments/md-06/am-06-1-reading.qmd
+            text: "am-01: Good enough practices"
+          - href: assignments/md-06/am-06-2-pivoting.qmd
+            text: "am-02: Pivot data"
       - section: "Module 07"
         href: modules/md-07.qmd
       - section: "Module 08"
