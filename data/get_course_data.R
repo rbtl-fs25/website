@@ -42,6 +42,10 @@ read_sheet("1cOYwKwomBUmzN5JZDtuk7rtuZ_NlWDpk30aG5iCngxg") |>
   write_csv(here::here("data/tbl-06-rbtl-grading-structure.csv"))
 
 
+## project report
+read_sheet("1M272noH72YKP_NNqakKrpBeAEypgd4qYyqjRuQRKfwY") |> 
+  write_csv(here::here("data/tbl-10-rbtl-fs24-capstone-project-elements.csv"))
+
 
 
 

@@ -2,7 +2,7 @@
 title: "Capstone Project"
 editor: source
 params:
-    week: 15
+    module: 11
 execute: 
   echo: false
   warning: false
@@ -14,11 +14,10 @@ editor_options:
 ```{r}
 library(tidyverse)
 
-grading <- read_csv(here::here("data/tbl-08-ds4owd-001-capstone-project-elements")) 
+grading <- read_csv(here::here("data/tbl-10-rbtl-fs24-capstone-project-elements.csv")) 
 ```
 
-The Capstone Project report is the final assignment for this course and a completion is required to receive a course certificate about successful participation.
-
+The final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets). A complete report receives 30 points.
 
 ## {{< fa bullseye >}} Learning Objectives
 
@@ -31,8 +30,8 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -43,20 +42,17 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa code >}} GitHub repository
 
-Establishing the GitHub repository with self-identified data was part of the homework assignment of module 5, 6, and 7. 
+The GitHub repository for this project was an assignment of Module 6. This repository will now be used to prepare the data and the final report:
 
-- [Module 5 - Assignment 1](../assignments/md-05/am-05-1-project-data.qmd): Identify data for your capstone project
-- [Module 7 - Assignment 2](../assignments/md-07/am-07-2-project-metadata.qmd): Get going with your capstone project
-
-It is important that these two assignments are completed before continuing with the write up of the report as outlined on this page. 
+- [Module 6 - Assignment 3](../assignments/md-06/am-06-3-project.qmd): Setup your capstone project repository
 
 ## {{< fa pen-clip >}} GitHub issue tracker
 
-The GitHub issue tracker of each student's capstone project repository is used to communicate and ask questions about the Capstone Project report. Each course participant is assigned to one of the course instructors. 
+The GitHub issue tracker of each student's capstone project repository is used to communicate and ask questions about the Capstone Project report. It is up to the course participants to use this tool to ask questions and get feedback from the course instructors. The following GitHub usernames can be tagged: `@larnsce`, `@elizabeth-tilley`, `@bonschorno`.
 
 ## {{< fa calendar-check >}} Submission due date
 
-The due date for submission of the report is **Tuesday, 13th February 2024**.
+The due date for submission of the report is **Tuesday, 06th June 2024**.
 
 ## {{< fa list-check >}} Required items
 
@@ -66,8 +62,8 @@ The due date for submission of the report is **Tuesday, 13th February 2024**.
 #| label: tbl-required-items
 #| tbl-cap: "List of items to be completed for the capstone project report."
 
-grading %>% 
-  select(no, category, items) %>% 
+grading |> 
+  select(no, category, items, points) |> 
   knitr::kable()
 
 ```

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research Beyond the Lab: Open Science and Research Methods for a Global Engineer - Setup your capstone project repository</title>
+<title>Research Beyond the Lab: Open Science and Research Methods for a Global Engineer - Zotero for reference management</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,46 +20,10 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="../../modules/md-07.html" rel="next">
-<link href="../../assignments/md-06/am-06-2-pivoting.html" rel="prev">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -100,7 +64,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-06.html">Module 06</a></li><li class="breadcrumb-item"><a href="../../assignments/md-06/am-06-3-project.html">am-03: Project repository</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Research Beyond the Lab: Open Science and Research Methods for a Global Engineer
+      </li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -266,11 +232,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../modules/md-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 06</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../assignments/md-06/am-06-1-reading.html" class="sidebar-item-text sidebar-link">
@@ -285,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../assignments/md-06/am-06-3-project.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../assignments/md-06/am-06-3-project.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">am-03: Project repository</span></a>
   </div>
 </li>
@@ -325,20 +291,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-create-a-new-repository-on-github" id="toc-step-1-create-a-new-repository-on-github" class="nav-link active" data-scroll-target="#step-1-create-a-new-repository-on-github">Step 1: Create a new repository on GitHub</a></li>
-  <li><a href="#step-2-setup-folder-structure" id="toc-step-2-setup-folder-structure" class="nav-link" data-scroll-target="#step-2-setup-folder-structure">Step 2: Setup folder structure</a></li>
-  <li><a href="#step-3-create-a-readme.md" id="toc-step-3-create-a-readme.md" class="nav-link" data-scroll-target="#step-3-create-a-readme.md">Step 3: Create a <code>README.md</code></a></li>
-  <li><a href="#step-4-create-a-data-dictionary" id="toc-step-4-create-a-data-dictionary" class="nav-link" data-scroll-target="#step-4-create-a-data-dictionary">Step 4: Create a data dictionary</a></li>
-  <li><a href="#step-5-submit-homework-assignment" id="toc-step-5-submit-homework-assignment" class="nav-link" data-scroll-target="#step-5-submit-homework-assignment">Step 5: Submit homework assignment</a></li>
+  <li><a href="#sign-up-for-zotero-and-setup-zotero-reference-management-software" id="toc-sign-up-for-zotero-and-setup-zotero-reference-management-software" class="nav-link active" data-scroll-target="#sign-up-for-zotero-and-setup-zotero-reference-management-software">Sign-up for Zotero and setup Zotero reference management software</a>
+  <ul class="collapse">
+  <li><a href="#get-zotero-account" id="toc-get-zotero-account" class="nav-link" data-scroll-target="#get-zotero-account">Get Zotero account</a></li>
+  <li><a href="#join-the-ghe-group-library" id="toc-join-the-ghe-group-library" class="nav-link" data-scroll-target="#join-the-ghe-group-library">Join the GHE group library</a></li>
+  <li><a href="#install-zotero-desktop-client" id="toc-install-zotero-desktop-client" class="nav-link" data-scroll-target="#install-zotero-desktop-client">Install Zotero desktop client</a></li>
+  <li><a href="#install-the-zotero-connector-for-your-browser" id="toc-install-the-zotero-connector-for-your-browser" class="nav-link" data-scroll-target="#install-the-zotero-connector-for-your-browser">Install the Zotero Connector for your browser</a></li>
+  <li><a href="#setup-add-ons-and-the-citation-key-format" id="toc-setup-add-ons-and-the-citation-key-format" class="nav-link" data-scroll-target="#setup-add-ons-and-the-citation-key-format">Setup Add-ons and the citation key format</a></li>
+  <li><a href="#change-the-setting-for-the-citekey-autopin-delay" id="toc-change-the-setting-for-the-citekey-autopin-delay" class="nav-link" data-scroll-target="#change-the-setting-for-the-citekey-autopin-delay">Change the setting for the citekey autopin delay</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/md-06.html">Module 06</a></li><li class="breadcrumb-item"><a href="../../assignments/md-06/am-06-3-project.html">am-03: Project repository</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Setup your capstone project repository</h1>
+<h1 class="title">Zotero for reference management</h1>
 </div>
 
 
@@ -355,131 +325,200 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="step-1-create-a-new-repository-on-github" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-create-a-new-repository-on-github">Step 1: Create a new repository on GitHub</h2>
+<section id="sign-up-for-zotero-and-setup-zotero-reference-management-software" class="level2">
+<h2 class="anchored" data-anchor-id="sign-up-for-zotero-and-setup-zotero-reference-management-software">Sign-up for Zotero and setup Zotero reference management software</h2>
+<section id="get-zotero-account" class="level3">
+<h3 class="anchored" data-anchor-id="get-zotero-account">Get Zotero account</h3>
 <ol type="1">
-<li><p>Open the GitHub Organisation for the course <a href="https://github.com/rbtl-fs24" class="uri">https://github.com/rbtl-fs24</a></p></li>
-<li><p>Create a new repository and name it: project-USERNAME`. <span class="highlight-yellow">Replace USERNAME with your GitHub username</span>. Avoid using spaces.</p></li>
+<li>Open <a href="https://www.zotero.org/user/login/" class="uri">https://www.zotero.org/user/login/</a></li>
+<li>Click on Register for a free account</li>
+<li>Chose username, email, and password</li>
+<li>Click Register</li>
+<li>Open your email and verify your account</li>
 </ol>
 </section>
-<section id="step-2-setup-folder-structure" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-setup-folder-structure">Step 2: Setup folder structure</h2>
+<section id="join-the-ghe-group-library" class="level3">
+<h3 class="anchored" data-anchor-id="join-the-ghe-group-library">Join the GHE group library</h3>
 <ol type="1">
-<li><p>Clone the project-USERNAME repository to Posit Cloud.</p></li>
-<li><p>Open your project-USERNAME repository on Posit Cloud.</p></li>
-<li><p>Create an <code>R</code> folder and inside the folder create a new file and save it as <code>01-data_download.R</code>.</p></li>
-<li><p>Create another file inside <code>R</code> and save it as <code>02-data_cleaning.R</code>.</p></li>
-<li><p>Create a <code>data</code> folder, and inside the folder create three sub-folders titled <code>raw</code>, <code>processed</code>, and <code>final</code>.</p></li>
-<li><p>Create a <code>docs</code> folder inside the root folder.</p></li>
-<li><p>Create a Quarto document inside <code>docs</code> and name it <code>index.qmd</code>.</p></li>
-<li><p>Add all files to a commit, commit the changes with a meaningful commit message, and push the changes to GitHub.</p></li>
+<li>Login into Zotero: <a href="https://www.zotero.org/user/login/" class="uri">https://www.zotero.org/user/login/</a></li>
+<li>Open GHE Group Library: <a href="https://www.zotero.org/groups/5228980/ost-hs23" class="uri">https://www.zotero.org/groups/5228980/ost-hs23</a></li>
+<li>Click on Join button</li>
+<li>Wait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Data download, cleaning, and analysis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You will use the <code>01-data_download.R</code> file to download your data from the Google Sheet that you have established for your capstone project. Use the <code>googlesheets4</code> package to access the data. Do not clean the data, but save it in the <code>data/raw</code> folder using the <code>write_csv()</code> function. Give the the a meaningful name that describes your project.</p>
-<p>You will use the <code>02-data_cleaning.R</code> file to process your data into a state that is ready for analysis. Do not access the data from Google Drive, but rather use the <code>read_csv()</code> function to access your data from the <code>data/raw</code> folder. Save the processed, analysis-ready data in the <code>data/processed</code> folder using the <code>write_csv()</code> function. Again, give the file a meaningful name that describes your project.</p>
-<p>You will use the <code>index.qmd</code> file to write your final report. This will be a Quarto document that will contain your analysis and visualizations. You will need to access the processed data from the <code>data/processed</code> folder using the <code>read_csv()</code> function.</p>
-<p>You will save the data underlying each displayed summary table and visualization in the <code>data/final</code> folder. This requires that each visualization and table is generated from an object that is not further transformed before the code for the visualization or table is written. Use the <code>write_csv()</code> function to save the data underlying each visualization and table in the <code>data/final</code> folder. Give the files the name of the label you have chosen inside the code-chunk. See example below.</p>
-</div>
-</div>
-<div id="tbl-gapminder-mean" class="cell quarto-float anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gapminder-mean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Mean values of life expectancy, GDP per capita, and population by continent
-</figcaption>
-<div aria-describedby="tbl-gapminder-mean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="sourceCode cell-code anchored" id="tbl-gapminder-mean"><pre class="sourceCode markdown cell code-with-copy"><code class="sourceCode markdown"><span id="tbl-gapminder-mean-1"><a href="#tbl-gapminder-mean-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="tbl-gapminder-mean-2"><a href="#tbl-gapminder-mean-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: tbl-gapminder-mean</span></span>
-<span id="tbl-gapminder-mean-3"><a href="#tbl-gapminder-mean-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| tbl-cap: "Mean values of life expectancy, GDP per capita, and population by continent"</span></span>
-<span id="tbl-gapminder-mean-4"><a href="#tbl-gapminder-mean-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="tbl-gapminder-mean-5"><a href="#tbl-gapminder-mean-5" aria-hidden="true" tabindex="-1"></a><span class="in"># load libraries -------------------------------------</span></span>
-<span id="tbl-gapminder-mean-6"><a href="#tbl-gapminder-mean-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="tbl-gapminder-mean-7"><a href="#tbl-gapminder-mean-7" aria-hidden="true" tabindex="-1"></a><span class="in">library(gapminder)</span></span>
-<span id="tbl-gapminder-mean-8"><a href="#tbl-gapminder-mean-8" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
-<span id="tbl-gapminder-mean-9"><a href="#tbl-gapminder-mean-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="tbl-gapminder-mean-10"><a href="#tbl-gapminder-mean-10" aria-hidden="true" tabindex="-1"></a><span class="in"># data analysis --------------------------------------</span></span>
-<span id="tbl-gapminder-mean-11"><a href="#tbl-gapminder-mean-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="tbl-gapminder-mean-12"><a href="#tbl-gapminder-mean-12" aria-hidden="true" tabindex="-1"></a><span class="in">gapminder_mean &lt;- gapminder |&gt; </span></span>
-<span id="tbl-gapminder-mean-13"><a href="#tbl-gapminder-mean-13" aria-hidden="true" tabindex="-1"></a><span class="in">  pivot_longer(cols = c(lifeExp, gdpPercap, pop), </span></span>
-<span id="tbl-gapminder-mean-14"><a href="#tbl-gapminder-mean-14" aria-hidden="true" tabindex="-1"></a><span class="in">               names_to = "variable",</span></span>
-<span id="tbl-gapminder-mean-15"><a href="#tbl-gapminder-mean-15" aria-hidden="true" tabindex="-1"></a><span class="in">               values_to = "value") |&gt; </span></span>
-<span id="tbl-gapminder-mean-16"><a href="#tbl-gapminder-mean-16" aria-hidden="true" tabindex="-1"></a><span class="in">  group_by(continent, variable) |&gt; </span></span>
-<span id="tbl-gapminder-mean-17"><a href="#tbl-gapminder-mean-17" aria-hidden="true" tabindex="-1"></a><span class="in">  summarise(mean = mean(value),</span></span>
-<span id="tbl-gapminder-mean-18"><a href="#tbl-gapminder-mean-18" aria-hidden="true" tabindex="-1"></a><span class="in">            n = n()) |&gt; </span></span>
-<span id="tbl-gapminder-mean-19"><a href="#tbl-gapminder-mean-19" aria-hidden="true" tabindex="-1"></a><span class="in">  pivot_wider(names_from = variable, </span></span>
-<span id="tbl-gapminder-mean-20"><a href="#tbl-gapminder-mean-20" aria-hidden="true" tabindex="-1"></a><span class="in">              values_from = mean) </span></span>
-<span id="tbl-gapminder-mean-21"><a href="#tbl-gapminder-mean-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="tbl-gapminder-mean-22"><a href="#tbl-gapminder-mean-22" aria-hidden="true" tabindex="-1"></a><span class="in"># results display as table ---------------------------</span></span>
-<span id="tbl-gapminder-mean-23"><a href="#tbl-gapminder-mean-23" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
-<span id="tbl-gapminder-mean-24"><a href="#tbl-gapminder-mean-24" aria-hidden="true" tabindex="-1"></a><span class="in">gapminder_mean |&gt; </span></span>
-<span id="tbl-gapminder-mean-25"><a href="#tbl-gapminder-mean-25" aria-hidden="true" tabindex="-1"></a><span class="in">  knitr::kable(digits = 0)</span></span>
-<span id="tbl-gapminder-mean-26"><a href="#tbl-gapminder-mean-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="tbl-gapminder-mean-27"><a href="#tbl-gapminder-mean-27" aria-hidden="true" tabindex="-1"></a><span class="in"># save data underlying the table ----------------------</span></span>
-<span id="tbl-gapminder-mean-28"><a href="#tbl-gapminder-mean-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="tbl-gapminder-mean-29"><a href="#tbl-gapminder-mean-29" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(here::here("data/final/tbl-gapminder-mean.csv"))</span></span>
-<span id="tbl-gapminder-mean-30"><a href="#tbl-gapminder-mean-30" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+</section>
+<section id="install-zotero-desktop-client" class="level3">
+<h3 class="anchored" data-anchor-id="install-zotero-desktop-client">Install Zotero desktop client</h3>
+<ol type="1">
+<li>Open <a href="https://www.zotero.org/download/" class="uri">https://www.zotero.org/download/</a></li>
+<li>Download Zotero for your operating system</li>
+<li>Install Zotero</li>
+<li>Log in to your Zotero account by opening <strong>Settings -&gt; Sync</strong> and typing the Username and Password you have previously set up</li>
+<li>Click on the green refresh button in the top-right corner of the Zotero window</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-zotero-desktop-client-refresh.png" class="img-fluid figure-img" width="962"></p>
 </figure>
 </div>
+</div>
+</div>
 </section>
-<section id="step-3-create-a-readme.md" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-create-a-readme.md">Step 3: Create a <code>README.md</code></h2>
+<section id="install-the-zotero-connector-for-your-browser" class="level3">
+<h3 class="anchored" data-anchor-id="install-the-zotero-connector-for-your-browser">Install the Zotero Connector for your browser</h3>
 <ol type="1">
-<li><p>Navigate to the Files tab in the bottom right window of RStudio.</p></li>
-<li><p>Open the <code>data/processed</code> folder.</p></li>
-<li><p>Click on the “Blank File” button to create a new file.</p></li>
-<li><p>Select the option “Text file”.</p></li>
-<li><p>Enter the name “README.md” in field and click OK.</p></li>
-<li><p>Go to: <a href="https://raw.githubusercontent.com/rbtl-dev/metadata-readme-template/main/README.md" class="uri">https://raw.githubusercontent.com/rbtl-dev/metadata-readme-template/main/README.md</a></p></li>
-<li><p>Copy the content that’s displayed in your browser and paste it into the <code>README.md</code> file you have just created.</p></li>
-<li><p>Add all files to a commit, commit the changes with a meaningful commit message, and push the changes to GitHub.</p></li>
+<li>Open <a href="https://www.zotero.org/download/" class="uri">https://www.zotero.org/download/</a></li>
+<li>Download the Zotero Connector for your browser</li>
+<li>Install the Zotero Connector</li>
+<li>Log in to your Zotero account</li>
 </ol>
 </section>
-<section id="step-4-create-a-data-dictionary" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-create-a-data-dictionary">Step 4: Create a data dictionary</h2>
+<section id="setup-add-ons-and-the-citation-key-format" class="level3">
+<h3 class="anchored" data-anchor-id="setup-add-ons-and-the-citation-key-format">Setup Add-ons and the citation key format</h3>
 <ol type="1">
-<li><p>Open the following link to a Google Drive folder: <a href="https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68" class="uri">https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68</a></p></li>
-<li><p>Open the <code>capstone-project</code> folder.</p></li>
-<li><p>Create a new folder and use your GitHub username as the name of the folder.</p></li>
-<li><p>Enter your folder.</p></li>
-<li><p>Create a new spreadsheet and name it <code>dictionary</code>.</p></li>
-<li><p>Add two column names to the spreadsheet: <code>variable_name</code> and <code>description</code>.</p></li>
+<li>Go to <a href="https://retorque.re/zotero-better-bibtex/installation/" class="uri">https://retorque.re/zotero-better-bibtex/installation/</a></li>
+<li>Click on the latest release so you are redirected to github</li>
+<li>Find the .xpi file and right-click it. Click on <strong>Save Link As…</strong> and choose your location for saving the file.</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-zotero-better-bibtex-addon.png" class="img-fluid figure-img" width="640"></p>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Data dictionary
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>This data dictionary will be used for your processed, analysis-ready data in <code>data/processed</code>. You will need to describe each variable in your dataset. The <code>variable_name</code> column should contain the name of the variable in your dataset, and the <code>description</code> column should contain a description of the variable. One sentence per variable without a comma <code>,</code>.</p>
-<p>Once you completed your dictionary, you will need to download it as a <code>.csv</code> file and add it to your <code>data/processed</code> folder in your project-USERNAME repository. You can do that by:</p>
+<ol start="4" type="1">
+<li>Open <strong>Zotero</strong> -&gt; <strong>Tools</strong> -&gt; <strong>Add-ons</strong> -&gt; (Gear icon) -&gt; <strong>Install Add-on From File…</strong> -&gt; choose the .xpi file you have just saved</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-install-betterbibtex-addon.png" class="img-fluid figure-img" width="510"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Restart Zotero</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-restart-now.png" class="img-fluid figure-img" width="510"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li><p>Wait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.</p></li>
+<li><p>You may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.</p></li>
+<li><p>Go to <strong>Zotero</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Export</strong> -&gt; <strong>Default Format</strong> and change the default format to <strong>Better BibTeX Quick Copy: </strong></p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-install-betterbibtex-addon.png" class="img-fluid figure-img" width="510"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="9" type="1">
+<li>In the same setting window, go to <strong>Better BibTeX</strong> -&gt; <strong>Open Better BibTeX preferences…</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-betterbibtex-preferences.png" class="img-fluid figure-img" width="311"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="10" type="1">
+<li>In the <strong>Citation keys</strong> tab, use the following Citation key formula for Better BibTeX: <code>[auth:lower][year][veryshorttitle1_0:lower]</code></li>
+</ol>
+<p>The line above means that the citation key will be build from:</p>
 <ul>
-<li>Using the upload button in the Files tab in RStudio on Posit Cloud.</li>
-<li>Opening the <code>data/processed</code> folder on your project-USERNAME repository on GitHub and uploading the file there. If you do this, then you need to pull the changes to your local repository on Posit Cloud.</li>
+<li>First author’s last name in lowercase</li>
+<li>publication year</li>
+<li>The first word from the title in lowercase, not including the connectors such as “the” or “a”</li>
 </ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-citation-keys.png" class="img-fluid figure-img" width="353"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="11" type="1">
+<li>Go to <strong>Export</strong> -&gt; <strong>Quick-Copy</strong> in the Better BibTeX preferences. Select <strong>Pandoc citation</strong>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-pandoc-citation.png" class="img-fluid figure-img" width="963"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="step-5-submit-homework-assignment" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-submit-homework-assignment">Step 5: Submit homework assignment</h2>
+<section id="change-the-setting-for-the-citekey-autopin-delay" class="level3">
+<h3 class="anchored" data-anchor-id="change-the-setting-for-the-citekey-autopin-delay">Change the setting for the citekey autopin delay</h3>
 <ol type="1">
-<li>Add all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.</li>
-<li>Open an issue on GitHub on your project-USERNAME repo and tag the course instructor <code>@larnsce</code>.</li>
+<li>Open Zotero advanced preferences (<strong>Zotero</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Advanced</strong>)</li>
+<li>Open the <strong>Config Editor</strong> under the <strong>Advanced Configuration</strong> section</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-advanced-config.png" class="img-fluid figure-img" width="308"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Click <strong>I accept the risk!</strong></li>
+<li>In the search bar, search for <strong>autopin</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-autopin.png" class="img-fluid figure-img" width="508"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Double-click into the field under <strong>Value</strong></li>
+<li>In the new window called <strong>Enter integer value</strong>, change the existing <strong>0</strong> to <strong>2</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/screenshot-autopin-value-2.png" class="img-fluid figure-img" width="508"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Click <strong>OK</strong></li>
+<li>Close all setting windows</li>
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -870,18 +909,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../assignments/md-06/am-06-2-pivoting.html" class="pagination-link  aria-label=" am-02:="" pivot="" data"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">am-02: Pivot data</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../modules/md-07.html" class="pagination-link" aria-label="Module 07">
-        <span class="nav-page-text">Module 07</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

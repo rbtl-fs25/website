@@ -1,0 +1,124 @@
+---
+title: "Zotero for reference management"
+execute: 
+  echo: false
+---
+
+## Sign-up for Zotero and setup Zotero reference management software
+
+### Get Zotero account
+
+1. Open <https://www.zotero.org/user/login/>
+2. Click on Register for a free account
+3. Chose username, email, and password
+4. Click Register
+5. Open your email and verify your account
+
+### Join the GHE group library
+
+1. Login into Zotero: <https://www.zotero.org/user/login/>
+2. Open GHE Group Library: <https://www.zotero.org/groups/5228980/ost-hs23>
+3. Click on Join button
+4. Wait for group admin to confirm your membership (note: you won't receive an automated confirmation after access is enabled)
+
+### Install Zotero desktop client
+
+1. Open <https://www.zotero.org/download/>
+2. Download Zotero for your operating system
+3. Install Zotero
+4. Log in to your Zotero account by opening **Settings -> Sync** and typing the Username and Password you have previously set up
+5. Click on the green refresh button in the top-right corner of the Zotero window
+
+```{r}
+knitr::include_graphics("images/screenshot-zotero-desktop-client-refresh.png")
+```
+
+### Install the Zotero Connector for your browser
+
+1. Open <https://www.zotero.org/download/>
+2. Download the Zotero Connector for your browser
+3. Install the Zotero Connector
+4. Log in to your Zotero account
+
+### Setup Add-ons and the citation key format
+
+1. Go to <https://retorque.re/zotero-better-bibtex/installation/>
+2. Click on the latest release so you are redirected to github
+3. Find the .xpi file and right-click it. Click on **Save Link As...** and choose your location for saving the file.
+
+```{r}
+knitr::include_graphics("images/screenshot-zotero-better-bibtex-addon.png")
+```
+
+4. Open **Zotero** -> **Tools** -> **Add-ons** -> (Gear icon) -> **Install Add-on From File...** -> choose the .xpi file you have just saved
+
+```{r}
+knitr::include_graphics("images/screenshot-install-betterbibtex-addon.png")
+```
+
+5. Restart Zotero
+
+```{r}
+knitr::include_graphics("images/screenshot-restart-now.png")
+```
+
+6. Wait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.
+
+7. You may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.
+
+8. Go to **Zotero** -> **Settings** -> **Export** -> **Default Format** and change the default format to **Better BibTeX Quick Copy: \cite{citation keys}**
+
+```{r}
+knitr::include_graphics("images/screenshot-install-betterbibtex-addon.png")
+```
+
+9. In the same setting window, go to **Better BibTeX** -> **Open Better BibTeX preferences...**
+
+```{r}
+knitr::include_graphics("images/screenshot-betterbibtex-preferences.png")
+```
+
+10. In the **Citation keys** tab, use the following Citation key formula for Better BibTeX: `[auth:lower][year][veryshorttitle1_0:lower]`
+
+The line above means that the citation key will be build from:
+
+- First author's last name in lowercase
+- publication year
+- The first word from the title in lowercase, not including the connectors such as "the" or "a"
+
+```{r}
+knitr::include_graphics("images/screenshot-citation-keys.png")
+```
+
+11. Go to **Export** -> **Quick-Copy** in the Better BibTeX preferences. Select **Pandoc citation**.
+
+```{r}
+knitr::include_graphics("images/screenshot-pandoc-citation.png")
+```
+
+
+### Change the setting for the citekey autopin delay
+
+1. Open Zotero advanced preferences (**Zotero** -> **Settings** -> **Advanced**)
+2. Open the **Config Editor** under the **Advanced Configuration** section
+
+```{r}
+knitr::include_graphics("images/screenshot-advanced-config.png")
+```
+
+3. Click **I accept the risk!**
+4. In the search bar, search for **autopin**
+
+```{r}
+knitr::include_graphics("images/screenshot-autopin.png")
+```
+
+5. Double-click into the field under **Value**
+6. In the new window called **Enter integer value**, change the existing **0** to **2**
+
+```{r}
+knitr::include_graphics("images/screenshot-autopin-value-2.png")
+```
+
+7. Click **OK**
+8. Close all setting windows

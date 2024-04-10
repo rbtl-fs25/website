@@ -15,7 +15,7 @@ editor: source
 execute:
   freeze: auto
 params:
-    week: 12
+    module: 7
 bibliography: references.bib
 csl: apa.csl
 editor_options: 
@@ -40,27 +40,13 @@ library(lubridate)
 library(knitr)
 ```
 
-## {{< fa circle-question >}} {.center-align}
-
-::: {style="margin-top: 50px; font-size: 1.5em"}
-Q: How do I successfully complete the course?
-:::
-
-You successfully complete the course and you  will receive a certificate of completion if you:
-
-[hand in a complete capstone project report that uses a dataset of your choice by 13th February 2024]{.highlight-yellow}
-
-Required items: <https://ds4owd-001.github.io/website/project/>
-
-This is the only requirement to successfully complete the course, independent of how many classes you attended or how many homework assignments you completed.
-
 ## Learning Objectives (for this week)
 
 ```{r}
 #| label: learning-objectives
 #| echo: false
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -69,377 +55,298 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
 
-# Anatomy of a Quarto document {background-color="#4C326A"}
+# Part 2: Joining data {background-color="#4C326A"}
 
-## Components
+##  We... {.smaller}
 
-1.  Metadata: YAML
+...have multiple data frames
 
-2.  Text: Markdown
-
-3.  Code: Executed via `knitr` or `jupyter`
-
-. . .
-
-**Weave it all together**, and you have beautiful, powerful, and useful outputs!
-
-## Literate programming {.smaller}
-
-Literate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.
-
-````         
----
-title: "ggplot2 demo"
-date: "5/23/2023"
-format: html
----
-
-## MPG
-
-There is a relationship between city and highway mileage.
-
-```{{r}}
-#| label: fig-mpg
-
-library(ggplot2)
-
-ggplot(mpg, aes(x = cty, y = hwy)) + 
-  geom_point() + 
-  geom_smooth(method = "loess")
-```
-````
-
-::: aside
-Source: <https://en.wikipedia.org/wiki/Literate_programming>
-:::
-
-# Metadata {background-color="#4C326A"}
-
-## YAML
-
-"Yet Another Markup Language" or "YAML Ain't Markup Language" is used to provide document level metadata.
-
-``` yaml
----
-key: value
----
-```
-
-## Output options
-
-``` yaml
----
-format: something
----
-```
-
-. . .
-
-<br>
-
-``` yaml
----
-format: html
----
-```
-
-``` yaml
----
-format: pdf
----
-```
-
-``` yaml
----
-format: revealjs
----
-```
-
-## Output option arguments
-
-Indentation matters!
-
-``` yaml
----
-format: 
-  html:
-    toc: true
-    code-fold: true
----
-```
-
-## YAML validation {.smaller}
-
--   Invalid: No space after `:`
-
-``` yaml
----
-format:html
----
-```
-
--   Invalid: Read as missing
-
-``` yaml
----
-format:
-html
----
-```
-
-## YAML validation {.smaller}
-
-There are multiple ways of formatting valid YAML:
-
--   Valid: There's a space after `:`
-
-``` yaml
-format: html
-```
-
--   Valid: `format: html` with selections made with proper indentation
-
-``` yaml
-format: 
-  html:
-    toc: true
-```
-
-## Quarto linting
-
-Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.
-
-<br>
-
-![](img/lec-08/lint-rstudio.png){fig-alt="Linter showing message for badly formatted YAML."}
-
-::: aside
-Source: <https://en.wikipedia.org/wiki/Lint_(software)>
-:::
-
-## Quarto YAML Intelligence
-
-RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd>`Ctrl + space`</kbd> to see all available options.
-
-<br>
-
-![](img/lec-08/quarto-tab-complete.png){fig-align="center" width="600"}
-
-## My turn: A tour of Quarto (once again)
-
-<br><br>
-
-::: {.hand-purple-large style="text-align: center;"}
-Sit back and enjoy!
-:::
+...want to bring them together
 
 ```{r}
-countdown(10)
+#| echo: false 
+
+professions <- read_csv(here::here("slides/data/scientists/professions.csv")) 
+
+dates <- read_csv(here::here("slides/data/scientists/dates.csv")) 
+
+works <- read_csv(here::here("slides/data/scientists/works.csv")) 
 ```
 
-## List of valid YAML fields
-
--   Many YAML fields are common across various outputs
-
--   But also each output type has its own set of valid YAML fields and options
-
--   Definitive list: [quarto.org/docs/reference/formats/html](https://quarto.org/docs/reference/formats/html.html)
-
-# Text (in Markdown) {background-color="#4C326A"}
-
-## Text Formatting
-
-+-------------------------------+-------------------------------+
-| Markdown Syntax               | Output                        |
-+===============================+===============================+
-| ```                           | *italics* and **bold**        |
-| *italics* and **bold**        |                               |
-| ```                           |                               |
-+-------------------------------+-------------------------------+
-| ```                           | superscript^2^ / subscript~2~ |
-| superscript^2^ / subscript~2~ |                               |
-| ```                           |                               |
-+-------------------------------+-------------------------------+
-| ```                           | ~~strikethrough~~             |
-| ~~strikethrough~~             |                               |
-| ```                           |                               |
-+-------------------------------+-------------------------------+
-| ```                           | `verbatim code`               |
-| `verbatim code`               |                               |
-| ```                           |                               |
-+-------------------------------+-------------------------------+
-
-: {tbl-colwidths="\[50,50\]"}
-
-## Headings {.smaller}
-
-+-----------------+-----------------+
-| Markdown Syntax | Output          |
-+=================+=================+
-| ```             | # Header 1      |
-| # Header 1      |                 |
-| ```             |                 |
-+-----------------+-----------------+
-| ```             | ## Header 2     |
-| ## Header 2     |                 |
-| ```             |                 |
-+-----------------+-----------------+
-| ```             | ### Header 3    |
-| ### Header 3    |                 |
-| ```             |                 |
-+-----------------+-----------------+
-| ```             | #### Header 4   |
-| #### Header 4   |                 |
-| ```             |                 |
-+-----------------+-----------------+
-| ```             | ##### Header 5  |
-| ##### Header 5  |                 |
-| ```             |                 |
-+-----------------+-----------------+
-| ```             | ###### Header 6 |
-| ###### Header 6 |                 |
-| ```             |                 |
-+-----------------+-----------------+
-
-: {tbl-colwidths="\[50,50\]"}
-
-## Links {.smaller}
-
-There are several types of "links" or hyperlinks.
-
-::: columns
-::: {.column width="80%"}
-**Markdown**
-
-``` markdown
-You can embed [named hyperlinks](https://quarto.org/),
-direct urls like <https://quarto.org/>. The syntax is similar for embedding an
-inline image: 
-![Penguins playing with ball](img/lec-08/penguins-quarto-ball.png).
-```
-:::
-
-::: {.column .fragment width="20%"}
-**Output**
-
-You can embed [named hyperlinks](https://quarto.org/), direct urls like <https://quarto.org/>. The syntax is similar for embedding an inline image: ![Penguins playing with ball](img/lec-08/penguins-quarto-ball.png){style="width:250px;"}.
-:::
-:::
-
-## Lists {.smaller}
-
-Unordered list:
-
-::: columns
-::: {.column width="50%"}
-**Markdown:**
-
-``` markdown
--   unordered list         
-    -   sub-item 1         
-    -   sub-item 1         
-        -   sub-sub-item 1 
-```
-:::
-
-::: {.column .fragment width="50%" fragment-index="1"}
-**Output**
-
--   unordered list
-    -   sub-item 1\
-    -   sub-item 1
-        -   sub-sub-item 1
-:::
-:::
-
-Ordered list:
-
-::: columns
-::: {.column width="50%"}
-**Markdown:**
-
-``` markdown
-1. ordered list            
-2. item 2                  
-    i. sub-item 1          
-         A.  sub-sub-item 1
-```
-:::
-
-::: {.column .fragment width="50%" fragment-index="2"}
-**Output**
-
-1.  ordered list\
-2.  item 2
-    i.  sub-item 1
-        A.  sub-sub-item 1
-:::
-:::
-
-## Quotes
-
-**Markdown:**
-
-``` markdown
-> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. 
-> - Donald Knuth, Literate Programming
+```{r}
+#| echo: true
+#| eval: false
+professions <- read_csv(here::here("data/scientists/professions.csv")) 
+dates <- read_csv(here::here("data/scientists/dates.csv")) 
+works <- read_csv(here::here("scientists/works.csv")) 
 ```
 
-. . .
+## Data: Women in science {.smaller}
 
-**Output:**
+Information on 10 women in science who changed the world
 
-> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming
+```{r echo=FALSE}
+professions %>% select(name) %>% kable()
+```
 
 ::: aside
-@knuth1984literate
+Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-10-women-in-science-who-changed-the-world)
 :::
 
-## Your turn: md-08-exercises
+## Inputs {.smaller}
 
-::: task
-1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [ds4owd workspace]{.highlight-yellow} for the course.
-3. Click [Start]{.highlight-yellow} next to [md-08-exercises]{.highlight-yellow}.
-4. In the File Manager in the bottom right window, locate the [`md-08-markdown-syntax.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
-5. Use the [source editor]{.highlight-yellow} mode
-6. Follow the instructions in the document, then exchange one new thing you've learned with your neighbor.
+::: {.panel-tabset}
 
-:::
-```{r}
-countdown(15)
-```
-
-## Take a break
-
-[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
-
-![](img/lec-08/pixel-art-forest.png){width="50%" fig-alt="A pixel art representation of a tropical forest covering rolling hills. Include an ocean in the background with the sun rising on the horizon for a beautiful sunrise scene. The forest should be lush with various shades of green, dense foliage, and characteristic features of a tropical forest such as tall broadleaf trees, ferns, and flowering plants. Add some playful monkeys among the trees to enhance the vibrancy and life of the scene. The gentle slopes of the hills should lead to the ocean, creating a harmonious blend of forest and seaside scenery in pixel art style."}
+### professions
 
 ```{r}
-countdown(minutes = 10)
+professions |> kable()
 ```
 
-::: footer
-Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+### dates
+
+```{r}
+dates |> kable()
+```
+
+### works
+
+```{r}
+works |> kable()
+```
+
 :::
 
+## Desired output {.smallest .scrollable}
 
-# Anatomy of a Quarto scholarly article {background-color="#4C326A"}
+```{r}
+professions %>%
+  left_join(dates) %>%
+  left_join(works) |> 
+  kable()
+```
 
-## Components
+## Inputs, reminder {.smaller}
 
-1.  Metadata: YAML
+:::: {.columns}
 
-2.  Text: Markdown
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+names(professions)
+names(dates)
+names(works)
+```
+:::
 
-3.  Code: Executed via `knitr` or `jupyter`
+::: {.column width="5%"}
 
-. . .
+:::
 
-**Weave it all together**, and you have a beautiful, reproducible journal article!
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+nrow(professions)
+nrow(dates)
+nrow(works)
+```
+:::
 
-## Scholarly writing - four terms
+::::
+
+## Joining data frames
+
+```{r}
+#| echo: true
+#| eval: false
+something_join(x, y)
+```
+
+- `left_join()`: all rows from x
+- `right_join()`: all rows from y
+- `full_join()`: all rows from both x and y
+- ...
+
+## Setup {.smaller}
+
+For the next few slides...
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+x <- tibble(
+  id = c(1, 2, 3),
+  value_x = c("x1", "x2", "x3")
+  )
+```
+
+```{r}
+#| echo: true
+x
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+y <- tibble(
+  id = c(1, 2, 4),
+  value_y = c("y1", "y2", "y4")
+  )
+```
+```{r}
+#| echo: true
+y
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/left-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+left_join(x, y)
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+  left_join(dates) 
+```
+
+```{r}
+#| echo: false
+professions %>%
+  left_join(dates) |> 
+  kable()
+```
+
+## `right_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/right-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+right_join(x, y)
+```
+:::
+
+::::
+
+## `right_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+  right_join(dates)
+```
+
+```{r}
+#| echo: false
+professions %>%
+  right_join(dates) |> 
+  kable()
+```
+
+## `full_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/full-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+full_join(x, y)
+```
+:::
+
+::::
+
+## `full_join()` {.smallest}
+
+
+```{r}
+#| echo: true
+#| eval: false
+dates %>%
+  full_join(works) 
+```
+
+```{r}
+#| echo: false
+dates %>%
+  full_join(works) |> 
+  kable()
+```
+
+## Putting it altogether {.smallest}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+  left_join(dates) %>%
+  left_join(works) 
+```
+
+```{r}
+#| echo: false
+professions %>%
+  left_join(dates) %>%
+  left_join(works) |> 
+  kable()
+```
+
+# Part 2: Reference Management
+
+## Four terms
 
 - Citation
 - Reference
