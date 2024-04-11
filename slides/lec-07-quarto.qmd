@@ -756,22 +756,12 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 # Capstone project {background-color="#4C326A"}
 
-## Course certificate
-
-- You will receive a course certificate if you complete the capstone project.
-- The course certificate will be issued by the openwashdata academy.
-- The certificate will highlight the time you have invested and the tools you learned to navigate.
-- The certificate can include a link to your public capstone project report (voluntary).
-- We would like to add a graduates section to <https://openwashdata.org/> and highlight course graduates (e.g. link to report, GitHub profile, LinkedIn profile, ORCID profile)
-
-
 ## Submission
 
-- The submission due date is: [Tuesday, 13th February]{.highlight-yellow}.
-- You will need to work through Module 5 & Module 7 homework assignments to get started.
+- The submission due date is: [Tuesday, 06th June]{.highlight-yellow}.
+- A complete report receives 30 points.
 - We will use the GitHub issue tracker to communicate and ask questions about the capstone project.
 - A list of required items for submission is covered on the course website: <https://rbtl-fs24.github.io/website/project/>
-- If you require an extension, please reach to us via email: <ghe@mavt.ethz.ch>
 
 ## Your turn: Capstone project - Read and take notes
 
@@ -779,19 +769,18 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 1. Open: <https://rbtl-fs24.github.io/website/project/>.
 2. Read through the page.
 3. For the list in "Required items" note down the numbers of those that are unclear to you and why.
-4. After the time is up, you will join a break-out room and discuss the unclear items with your peers.
+4. After the time is up, we will discuss unclear items in class.
 
 :::
 ```{r}
 countdown(10)
 ```
 
-## Your turn: Capstone project - Discuss unclear items
+## Our turn: Capstone project - Discuss unclear items
 
 ::: task
 
-1. Join the break-out room.
-2. Discuss with your peers the unclear items you noted down.
+1. Share which unclear items you noted down.
 
 :::
 
@@ -799,17 +788,17 @@ countdown(10)
 countdown(10)
 ```
 
-## Your turn: Capstone project - Share remaining unclear items
+## Your turn: Capstone project - Share remaining unclear items on GitHub
 
 ::: task
 
-1. Open this repository: <https://github.com/rbtl-fs24/project>.
-2. Add your questions for unclear items to the issue tracker as described.
+1. Open your Capstone project repository (`project-USERNAME`) <https://github.com/rbtl-fs24>.
+2. Add your questions for unclear items to the issue tracker.
 
 :::
 
 ```{r}
-countdown(10)
+countdown(5)
 ```
 
 ## Module 6 documentation
