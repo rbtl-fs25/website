@@ -55,6 +55,136 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
 
+# Part 1: Homework module 6 {background-color="#4C326A"}
+
+## Metadata: data about data
+
+WHAT!?
+
+## Faecal sludge samples
+
+Imagine:
+
+- you are new to WASH research and you have never heard of feacal sludge management. 
+- you are interested in learning more about the topic and you want to find some data to play with. 
+- you find a publication with a dataset on faecal sludge characteristics. 
+
+## Faecal sludge samples
+
+You download the XLSX file that contains the data and you open it in Excel. You see the following:
+
+```{r}
+knitr::include_graphics("img/lec-07/sludge-xlsx.png")
+```
+
+## Faecal sludge samples {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Open questions:
+
+- What unit does `users` refer to?
+- What does `ts` stand for?
+- The `date` of what?
+- Where was this data collected?
+- Which method was used to collect the samples?
+:::
+
+
+::: {.column width="60%"}
+```{r}
+knitr::include_graphics("img/lec-07/sludge-xlsx.png")
+```
+:::
+
+::::
+
+. . .
+
+[Questions that only the original author may have the answers to.]{.highlight-yellow}
+
+## You as an author {.center-align}
+
+have the chance to document your data properly [once]{.highlight-yellow} to make it easier for [everyone else]{.highlight-yellow} to know what it contains.
+
+## Documentation {.smaller}
+
+Goes into a separate README file
+
+- [General information]{.highlight-yellow} (authors, title, date, geographic location, etc.)
+- [Sharing / access information]{.highlight-yellow} (license, links to publications, citation)
+- [Methodological information]{.highlight-yellow} (sampling, analysis, etc.)
+
+## Data dictionary
+
+Goes into a separate file (`dictionary.csv`).
+
+Minimum required information
+
+- Variable name
+- Variable description
+
+## Data dictionary for faecal sludge samples
+
+- Edit in spreadsheet software (e.g. MS Excel)
+
+```{r}
+knitr::include_graphics("img/lec-07/dictionary-xlsx.png")
+```
+
+
+## Data dictionary for faecal sludge samples
+
+- Save as CSV file
+
+```{r}
+knitr::include_graphics("img/lec-07/dictionary-csv.png")
+```
+
+## Directory tree of a project {.smaller}
+
+Capstone project of Rainbow Train:
+<https://github.com/rbtl-fs24/project-rainbow-train>
+
+```
+.
+├── R
+│   └── 01-data-preparation.R
+├── data
+│   ├── processed
+│   │   ├── README.md
+│   │   ├── dictionary.csv
+│   │   └── faecal-sludge-analysis.csv
+│   └── raw
+│       └── Faecal sludge Analysis_05112023.xlsx
+├── docs
+│   ├── index.html
+│   ├── index.qmd
+│   └── index_files
+│       └── libs
+└── project.Rproj
+```
+
+## Directory tree of a project
+
+- `R` folder: R scripts for data cleaning
+- `data` folder: raw and processed data
+- `docs` folder: the actual report that imports the processed data 
+- `project.Rproj`: RStudio project file
+
+## Inside the `data` folder
+
+- `raw`: data as it was downloaded / as you received it (e.g. Excel file)
+- `processed`: data that is ready to be used in the report
+
+## Inside the `processed` folder
+
+- `README.md`: general information about the data
+- `dictionary.csv`: data dictionary
+- `faecal-sludge-analysis.csv`: cleaned data for which `dictionary.csv` applies
+
+
 # Part 2: Joining data {background-color="#4C326A"}
 
 ##  We... {.smaller}
@@ -344,6 +474,20 @@ professions %>%
   kable()
 ```
 
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
 # Part 2: Reference Management
 
 ## Four terms
@@ -498,7 +642,6 @@ Photo by [Sincerely Media](https://unsplash.com/@sincerelymedia) on [unsplash.co
 
 :::
 
-
 ## Scholarly Articles in Quarto
 
 Quarto supports
@@ -523,8 +666,6 @@ and creating the LaTeX required for submission to multiple journals.
 
 Quarto provides a rich set of YAML metadata keys to describe the details required in the front matter of scholarly articles. 
 
-
-
 ::: columns
 ::: {.column width="30%"}
 -  title
@@ -544,12 +685,12 @@ Quarto provides a rich set of YAML metadata keys to describe the details require
 :::
 :::
 
-## Our turn: md-08-exercises 
+## Our turn: md-07-exercises 
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
 2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
-3. Open [md-08-exercises]{.highlight-yellow}.
+3. Open [md-07-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`scholarly-writing.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 5. Follow along on the screen using the instructions in the document.
 :::
@@ -559,25 +700,24 @@ countdown(15)
 
 # Publishing {background-color="#4C326A"}
 
-## Our turn: md-08-publish-USERNAME {.smaller}
+## Our turn: md-07-publish-USERNAME {.smaller}
 
-[Clone the repository from GitHub]{.highlight-yellow}
+[Clone the repository from GitHub]{.highlight-yellow} & publish using GitHub Pages.
 
 1. Open github.com in your browser and navigate to the [GitHub organisation for the course](https://github.com/rbtl-fs24/): <https://github.com/rbtl-fs24/>.
-2. Find the repository md-08-publish-USERNAME that [ends with your GitHub username]{.highlight-yellow}, and open it.
+2. Find the repository md-07-publish-USERNAME that [ends with your GitHub username]{.highlight-yellow}, and open it.
 3. Click on the green "Code" button.
 4. Copy the HTTPS URL to your clipboard.
-5. Open the ds4owd workspace on [posit.cloud](https://posit.cloud/spaces/426916/content/all?sort=name_asc)
+5. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=created_time_desc)
 6. Click New Project > New Project from Git Repository
 7. Paste the HTTPS URL from GitHub into the "URL of your Git Repository" field.
 8. Wait until the project is deployed.
 9. From the Files Manager in the bottom right window, open [`docs`]{.highlight-yellow} folder, then click on [`index.qmd`]{.highlight-yellow}.
-10. Indicate the open Poll with ["ready to go"]{.highlight-yellow} when you are ready.
+10. Indicate when you are ready.
 
 ```{r}
-countdown::countdown(20)
+countdown::countdown(5)
 ```
-
 
 ## GitHub Pages
 
@@ -597,8 +737,8 @@ knitr::include_graphics("img/lec-08/screenshot-gh-pages.png")
 
 ## Course Guide
 
-- Steps for publishing the capstone project report are described in course guide
-- <https://rbtl-fs24.github.io/website/guide/#publish-to-github-pages>
+- Steps for publishing the capstone project report are described on the capstone project page
+- <https://rbtl-fs24.github.io/website/project>
 
 ## Take a break
 
@@ -672,45 +812,31 @@ countdown(10)
 countdown(10)
 ```
 
-# Wrap-up {background-color="#4C326A"}
+## Module 6 documentation
 
-## Homework assignment
+::: learn-more
+[rbtl-fs24.github.io/website/modules/md-07.html](https://rbtl-fs24.github.io/website/modules/md-07.html)
 
-- No more homework assignments
-- Use the time to work on your capstone project
+```{=html}
+<iframe src="https://rbtl-fs24.github.io/website/modules/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 7 documentation"></iframe>
+```
+:::
 
-## Student hours
+## Homework due date
 
-- Every Thursday, 2:00 to 3:30 PM (CET)
-- Final student hours: Thursday, February 08, 2:00 to 3:30 PM (CET)
+- Homework assignment due: [Wednesday, April 17th]{.highlight-yellow}
 
-## Next week: openwashdata webinar {.smaller}
+## Next few weeks {.smallest .scrollable}
 
--   **Date:** Tuesday, January 23, 2:00 - 3:00 PM (CET)
--   **Zoom Registration**: <https://ethz.zoom.us/meeting/register/u50lce-vrD0iGN06ywPHr2gPU84Ljr_zmNAf>
-- More info: <https://openwashdata.org/pages/events/2023-01-24-webinar-data-publishing>
-
+- Lars will be off work until 30th May
+- Elizabeth and Colin will support you during this time
 
 ```{r}
-#| tbl-colwidths: [15, 35, 15, 45]
-#| column: page
-
-agenda <- readr::read_csv("https://raw.githubusercontent.com/openwashdata/website/main/pages/events/2023-01-24-webinar-data-publishing/data/tbl-07-webinar-data-sharing-agenda.csv")
-
-agenda  |> 
-    dplyr::select(-start_time, -end_time, -speaker_link, -affiliation_link) |>
-    dplyr::relocate(time) |> 
-    dplyr::rename_with(~stringr::str_to_title(.x), everything()) |> 
-    knitr::kable()
+readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+  dplyr::select(module, date, topic = title) |> 
+  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
+  knitr::kable()
 ```
-
-## Module 09: Using AI for software development in R
-
-- **Date:** Tuesday, January 30, 2:00 - 4:30 PM (CET)
-
-## Module 10: Graduation party
-
-- **Date:** Tuesday, February 20, 2:00 - 3:00 PM (CET)
 
 ## Attribution
 

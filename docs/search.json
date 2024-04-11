@@ -4572,15 +4572,15 @@
     "objectID": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
     "href": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
-    "section": "",
-    "text": "Rows: 50 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (3): title, lecturer, learning_objectives\ndbl (1): module\nlgl (2): date, teaser\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
   },
   {
     "objectID": "slides/lec-07-quarto.html#we",
     "href": "slides/lec-07-quarto.html#we",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "We…",
-    "text": "We…\n…have multiple data frames\n…want to bring them together\n\n\nRows: 10 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): name, profession\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 8 Columns: 3\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): name\ndbl (2): birth_year, death_year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 9 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): name, known_for\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
   },
   {
     "objectID": "slides/lec-07-quarto.html#data-women-in-science",
@@ -4594,14 +4594,14 @@
     "href": "slides/lec-07-quarto.html#inputs",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Inputs",
-    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\nprofessions |&gt; kable()\n\n\n\n\nname\nprofession\n\n\n\n\nAda Lovelace\nMathematician\n\n\nMarie Curie\nPhysicist and Chemist\n\n\nJanaki Ammal\nBotanist\n\n\nChien-Shiung Wu\nPhysicist\n\n\nKatherine Johnson\nMathematician\n\n\nRosalind Franklin\nChemist\n\n\nVera Rubin\nAstronomer\n\n\nGladys West\nMathematician\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n\n\nJennifer Doudna\nBiochemist\n\n\n\n\n\n\n\n\ndates |&gt; kable()\n\n\n\n\nname\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\n1897\n1984\n\n\nChien-Shiung Wu\n1912\n1997\n\n\nKatherine Johnson\n1918\n2020\n\n\nRosalind Franklin\n1920\n1958\n\n\nVera Rubin\n1928\n2016\n\n\nGladys West\n1930\nNA\n\n\nFlossie Wong-Staal\n1947\nNA\n\n\nJennifer Doudna\n1964\nNA\n\n\n\n\n\n\n\n\nworks |&gt; kable()\n\n\n\n\n\n\n\n\nname\nknown_for\n\n\n\n\nAda Lovelace\nfirst computer algorithm\n\n\nMarie Curie\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nVera Rubin\nexistence of dark matter\n\n\nGladys West\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n\n\n\nname\nprofession\n\n\n\n\nAda Lovelace\nMathematician\n\n\nMarie Curie\nPhysicist and Chemist\n\n\nJanaki Ammal\nBotanist\n\n\nChien-Shiung Wu\nPhysicist\n\n\nKatherine Johnson\nMathematician\n\n\nRosalind Franklin\nChemist\n\n\nVera Rubin\nAstronomer\n\n\nGladys West\nMathematician\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n\n\nJennifer Doudna\nBiochemist\n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\n1897\n1984\n\n\nChien-Shiung Wu\n1912\n1997\n\n\nKatherine Johnson\n1918\n2020\n\n\nRosalind Franklin\n1920\n1958\n\n\nVera Rubin\n1928\n2016\n\n\nGladys West\n1930\nNA\n\n\nFlossie Wong-Staal\n1947\nNA\n\n\nJennifer Doudna\n1964\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nknown_for\n\n\n\n\nAda Lovelace\nfirst computer algorithm\n\n\nMarie Curie\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nVera Rubin\nexistence of dark matter\n\n\nGladys West\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
   },
   {
     "objectID": "slides/lec-07-quarto.html#desired-output",
     "href": "slides/lec-07-quarto.html#desired-output",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Desired output",
-    "text": "Desired output\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) |&gt; \n  kable()\n\nJoining with `by = join_by(name)`\nJoining with `by = join_by(name)`\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+    "text": "Desired output\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
   },
   {
     "objectID": "slides/lec-07-quarto.html#inputs-reminder",
@@ -4629,49 +4629,49 @@
     "href": "slides/lec-07-quarto.html#left_join",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "left_join()",
-    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
   },
   {
     "objectID": "slides/lec-07-quarto.html#left_join-1",
     "href": "slides/lec-07-quarto.html#left_join-1",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "left_join()",
-    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n\n\nJoining with `by = join_by(name)`\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
   },
   {
     "objectID": "slides/lec-07-quarto.html#right_join",
     "href": "slides/lec-07-quarto.html#right_join",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "right_join()",
-    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-07-quarto.html#right_join-1",
     "href": "slides/lec-07-quarto.html#right_join-1",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "right_join()",
-    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n\n\nJoining with `by = join_by(name)`\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
   },
   {
     "objectID": "slides/lec-07-quarto.html#full_join",
     "href": "slides/lec-07-quarto.html#full_join",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "full_join()",
-    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\nJoining with `by = join_by(id)`\n\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
   },
   {
     "objectID": "slides/lec-07-quarto.html#full_join-1",
     "href": "slides/lec-07-quarto.html#full_join-1",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "full_join()",
-    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n\n\nJoining with `by = join_by(name)`\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
+    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
   },
   {
     "objectID": "slides/lec-07-quarto.html#putting-it-altogether",
     "href": "slides/lec-07-quarto.html#putting-it-altogether",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Putting it altogether",
-    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) \n\n\n\nJoining with `by = join_by(name)`\nJoining with `by = join_by(name)`\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
   },
   {
     "objectID": "slides/lec-07-quarto.html#four-terms",
@@ -4706,7 +4706,7 @@
     "href": "slides/lec-07-quarto.html#whats-a-bibliography",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "What’s a Bibliography?",
-    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
+    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
   },
   {
     "objectID": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl",
@@ -4748,7 +4748,7 @@
     "href": "slides/lec-07-quarto.html#scholarly-articles-in-quarto",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Scholarly Articles in Quarto",
-    "text": "Scholarly Articles in Quarto\nQuarto supports\n\n\na standardized schema for authors and affiliations that can be expressed once int the source document,\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and\noutputting to pdf, html, and docx with custom formatting,\n\n\n. . .\naccording to the styles required for various journals,\n. . .\nand creating the LaTeX required for submission to multiple journals."
+    "text": "Scholarly Articles in Quarto\nQuarto supports\n\n\na standardized schema for authors and affiliations that can be expressed once int the source document,\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and\noutputting to pdf, html, and docx with custom formatting,\n\n\n\naccording to the styles required for various journals,\n\n\nand creating the LaTeX required for submission to multiple journals."
   },
   {
     "objectID": "slides/lec-07-quarto.html#front-matter",
@@ -4762,14 +4762,14 @@
     "href": "slides/lec-07-quarto.html#our-turn-md-08-exercises",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Our turn: md-08-exercises",
-    "text": "Our turn: md-08-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs24 workspace for the course.\nOpen md-08-exercises.\nIn the File Manager in the bottom right window, locate the scholarly-writing.qmd file and click on it to open it in the top left window.\nFollow along on the screen using the instructions in the document.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+    "text": "Our turn: md-08-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs24 workspace for the course.\nOpen md-08-exercises.\nIn the File Manager in the bottom right window, locate the scholarly-writing.qmd file and click on it to open it in the top left window.\nFollow along on the screen using the instructions in the document.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "slides/lec-07-quarto.html#our-turn-md-08-publish-username",
     "href": "slides/lec-07-quarto.html#our-turn-md-08-publish-username",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Our turn: md-08-publish-USERNAME",
-    "text": "Our turn: md-08-publish-USERNAME\nClone the repository from GitHub\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs24/.\nFind the repository md-08-publish-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nFrom the Files Manager in the bottom right window, open docs folder, then click on index.qmd.\nIndicate the open Poll with “ready to go” when you are ready.\n\n\ncountdown::countdown(20)\n\n\n−+\n20:00"
+    "text": "Our turn: md-08-publish-USERNAME\nClone the repository from GitHub\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs24/.\nFind the repository md-08-publish-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nFrom the Files Manager in the bottom right window, open docs folder, then click on index.qmd.\nIndicate the open Poll with “ready to go” when you are ready.\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "slides/lec-07-quarto.html#github-pages",
@@ -4790,14 +4790,14 @@
     "href": "slides/lec-07-quarto.html#course-guide",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Course Guide",
-    "text": "Course Guide\n\nSteps for publishing the capstone project report are described in course guide\nhttps://rbtl-fs24.github.io/website/guide/#publish-to-github-pages"
+    "text": "Course Guide\n\nSteps for publishing the capstone project report are described on the capstone project page\nhttps://rbtl-fs24.github.io/website/project"
   },
   {
     "objectID": "slides/lec-07-quarto.html#take-a-break",
     "href": "slides/lec-07-quarto.html#take-a-break",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "slides/lec-07-quarto.html#course-certificate",
@@ -4818,21 +4818,21 @@
     "href": "slides/lec-07-quarto.html#your-turn-capstone-project---read-and-take-notes",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Your turn: Capstone project - Read and take notes",
-    "text": "Your turn: Capstone project - Read and take notes\n\n\nOpen: https://rbtl-fs24.github.io/website/project/.\nRead through the page.\nFor the list in “Required items” note down the numbers of those that are unclear to you and why.\nAfter the time is up, you will join a break-out room and discuss the unclear items with your peers.\n\n\n\ncountdown(10)\n\n\n−+\n10:00"
+    "text": "Your turn: Capstone project - Read and take notes\n\n\nOpen: https://rbtl-fs24.github.io/website/project/.\nRead through the page.\nFor the list in “Required items” note down the numbers of those that are unclear to you and why.\nAfter the time is up, you will join a break-out room and discuss the unclear items with your peers.\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-07-quarto.html#your-turn-capstone-project---discuss-unclear-items",
     "href": "slides/lec-07-quarto.html#your-turn-capstone-project---discuss-unclear-items",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Your turn: Capstone project - Discuss unclear items",
-    "text": "Your turn: Capstone project - Discuss unclear items\n\n\nJoin the break-out room.\nDiscuss with your peers the unclear items you noted down.\n\n\n\ncountdown(10)\n\n\n−+\n10:00"
+    "text": "Your turn: Capstone project - Discuss unclear items\n\n\nJoin the break-out room.\nDiscuss with your peers the unclear items you noted down.\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-07-quarto.html#your-turn-capstone-project---share-remaining-unclear-items",
     "href": "slides/lec-07-quarto.html#your-turn-capstone-project---share-remaining-unclear-items",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Your turn: Capstone project - Share remaining unclear items",
-    "text": "Your turn: Capstone project - Share remaining unclear items\n\n\nOpen this repository: https://github.com/rbtl-fs24/project.\nAdd your questions for unclear items to the issue tracker as described.\n\n\n\ncountdown(10)\n\n\n−+\n10:00"
+    "text": "Your turn: Capstone project - Share remaining unclear items\n\n\nOpen this repository: https://github.com/rbtl-fs24/project.\nAdd your questions for unclear items to the issue tracker as described.\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-07-quarto.html#homework-assignment",
@@ -4853,7 +4853,7 @@
     "href": "slides/lec-07-quarto.html#next-week-openwashdata-webinar",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Next week: openwashdata webinar",
-    "text": "Next week: openwashdata webinar\n\nDate: Tuesday, January 23, 2:00 - 3:00 PM (CET)\nZoom Registration: https://ethz.zoom.us/meeting/register/u50lce-vrD0iGN06ywPHr2gPU84Ljr_zmNAf\nMore info: https://openwashdata.org/pages/events/2023-01-24-webinar-data-publishing\n\n\nagenda &lt;- readr::read_csv(\"https://raw.githubusercontent.com/openwashdata/website/main/pages/events/2023-01-24-webinar-data-publishing/data/tbl-07-webinar-data-sharing-agenda.csv\")\n\nRows: 4 Columns: 8\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (6): title, speaker, speaker_link, affiliation, affiliation_link, time\ntime (2): start_time, end_time\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nagenda  |&gt; \n    dplyr::select(-start_time, -end_time, -speaker_link, -affiliation_link) |&gt;\n    dplyr::relocate(time) |&gt; \n    dplyr::rename_with(~stringr::str_to_title(.x), everything()) |&gt; \n    knitr::kable()\n\n\n\n\nTime\nTitle\nSpeaker\nAffiliation\n\n\n\n\n02:00 - 02:05\nWelcome\nElizabeth Tilley\nProfessor at ETH Zurich, Global Health Engineering\n\n\n02:05 - 02:25\nopenwashdata community & workflow\nLars Schöbitz\nOpen Science Specialist at ETH Zurich, Global Health Engineering\n\n\n02:25 - 02:45\nOpen data: A publishers perspective\nLauren Cadwallader\nOpen Research Manager at Public Library of Science (PLOS)\n\n\n02:45 - 03:00\nDiscussion\nElizabeth Tilley\nProfessor at ETH Zurich, Global Health Engineering"
+    "text": "Next week: openwashdata webinar\n\nDate: Tuesday, January 23, 2:00 - 3:00 PM (CET)\nZoom Registration: https://ethz.zoom.us/meeting/register/u50lce-vrD0iGN06ywPHr2gPU84Ljr_zmNAf\nMore info: https://openwashdata.org/pages/events/2023-01-24-webinar-data-publishing\n\n\n\n\n\n\nTime\nTitle\nSpeaker\nAffiliation\n\n\n\n\n02:00 - 02:05\nWelcome\nElizabeth Tilley\nProfessor at ETH Zurich, Global Health Engineering\n\n\n02:05 - 02:25\nopenwashdata community & workflow\nLars Schöbitz\nOpen Science Specialist at ETH Zurich, Global Health Engineering\n\n\n02:25 - 02:45\nOpen data: A publishers perspective\nLauren Cadwallader\nOpen Research Manager at Public Library of Science (PLOS)\n\n\n02:45 - 03:00\nDiscussion\nElizabeth Tilley\nProfessor at ETH Zurich, Global Health Engineering"
   },
   {
     "objectID": "slides/lec-07-quarto.html#module-09-using-ai-for-software-development-in-r",
@@ -4881,7 +4881,7 @@
     "href": "slides/lec-07-quarto.html#thanks",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\n\n\n\n\n rbtl-fs24.github.io/website/"
   },
   {
     "objectID": "project/index.html#publish-report-to-github-pages",
@@ -4902,5 +4902,138 @@
     "crumbs": [
       "Capstone project"
     ]
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#metadata-data-about-data",
+    "href": "slides/lec-07-quarto.html#metadata-data-about-data",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Metadata: data about data",
+    "text": "Metadata: data about data\nWHAT!?"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\nImagine:\n\nyou are new to WASH research and you have never heard of feacal sludge management.\nyou are interested in learning more about the topic and you want to find some data to play with.\nyou find a publication with a dataset on faecal sludge characteristics."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples-1",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\nYou download the XLSX file that contains the data and you open it in Excel. You see the following:"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#you-as-an-author",
+    "href": "slides/lec-07-quarto.html#you-as-an-author",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "You as an author",
+    "text": "You as an author\nhave the chance to document your data properly once to make it easier for everyone else to know what it contains."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#documentation",
+    "href": "slides/lec-07-quarto.html#documentation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Documentation",
+    "text": "Documentation\nGoes into a separate README file\n\nGeneral information (authors, title, date, geographic location, etc.)\nSharing / access information (license, links to publications, citation)\nMethodological information (sampling, analysis, etc.)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary",
+    "href": "slides/lec-07-quarto.html#data-dictionary",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary",
+    "text": "Data dictionary\nGoes into a separate file (dictionary.csv).\nMinimum required information\n\nVariable name\nVariable description"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples",
+    "href": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary for faecal sludge samples",
+    "text": "Data dictionary for faecal sludge samples\n\nEdit in spreadsheet software (e.g. MS Excel)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples-1",
+    "href": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary for faecal sludge samples",
+    "text": "Data dictionary for faecal sludge samples\n\nSave as CSV file"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#directory-tree-of-a-project",
+    "href": "slides/lec-07-quarto.html#directory-tree-of-a-project",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Directory tree of a project",
+    "text": "Directory tree of a project\nCapstone project of Rainbow Train: https://github.com/rbtl-fs24/project-rainbow-train\n.\n├── R\n│   └── 01-data-preparation.R\n├── data\n│   ├── processed\n│   │   ├── README.md\n│   │   ├── dictionary.csv\n│   │   └── faecal-sludge-analysis.csv\n│   └── raw\n│       └── Faecal sludge Analysis_05112023.xlsx\n├── docs\n│   ├── index.html\n│   ├── index.qmd\n│   └── index_files\n│       └── libs\n└── project.Rproj"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#directory-tree-of-a-project-1",
+    "href": "slides/lec-07-quarto.html#directory-tree-of-a-project-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Directory tree of a project",
+    "text": "Directory tree of a project\n\nR folder: R scripts for data cleaning\ndata folder: raw and processed data\ndocs folder: the actual report that imports the processed data\nproject.Rproj: RStudio project file"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inside-the-data-folder",
+    "href": "slides/lec-07-quarto.html#inside-the-data-folder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inside the data folder",
+    "text": "Inside the data folder\n\nraw: data as it was downloaded / as you received it (e.g. Excel file)\nprocessed: data that is ready to be used in the report"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inside-the-processed-folder",
+    "href": "slides/lec-07-quarto.html#inside-the-processed-folder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inside the processed folder",
+    "text": "Inside the processed folder\n\nREADME.md: general information about the data\ndictionary.csv: data dictionary\nfaecal-sludge-analysis.csv: cleaned data for which dictionary.csv applies"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-07-exercises",
+    "href": "slides/lec-07-quarto.html#our-turn-md-07-exercises",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-07-exercises",
+    "text": "Our turn: md-07-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs24 workspace for the course.\nOpen md-07-exercises.\nIn the File Manager in the bottom right window, locate the scholarly-writing.qmd file and click on it to open it in the top left window.\nFollow along on the screen using the instructions in the document.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-07-publish-username",
+    "href": "slides/lec-07-quarto.html#our-turn-md-07-publish-username",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-07-publish-USERNAME",
+    "text": "Our turn: md-07-publish-USERNAME\nClone the repository from GitHub & publish using GitHub Pages.\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs24/.\nFind the repository md-07-publish-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nFrom the Files Manager in the bottom right window, open docs folder, then click on index.qmd.\nIndicate when you are ready.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#take-a-break-1",
+    "href": "slides/lec-07-quarto.html#take-a-break-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#module-6-documentation",
+    "href": "slides/lec-07-quarto.html#module-6-documentation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Module 6 documentation",
+    "text": "Module 6 documentation\n\nrbtl-fs24.github.io/website/modules/md-07.html"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#homework-due-date",
+    "href": "slides/lec-07-quarto.html#homework-due-date",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Wednesday, April 17th"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#next-few-weeks",
+    "href": "slides/lec-07-quarto.html#next-few-weeks",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Next few weeks",
+    "text": "Next few weeks\n\nLars will be off work until 30th May\nElizabeth and Colin will support you during this time\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\nNA\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\nNA\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\nNA\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\nNA\n06 June 2024\nProject Submission Deadline\n\n\nNA\n13 June 2024\nExam"
   }
 ]
