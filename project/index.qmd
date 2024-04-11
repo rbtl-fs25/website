@@ -2,7 +2,7 @@
 title: "Capstone Project"
 editor: source
 params:
-    week: 15
+    module: 11
 execute: 
   echo: false
   warning: false
@@ -14,11 +14,10 @@ editor_options:
 ```{r}
 library(tidyverse)
 
-grading <- read_csv(here::here("data/tbl-08-ds4owd-001-capstone-project-elements")) 
+grading <- read_csv(here::here("data/tbl-10-rbtl-fs24-capstone-project-elements.csv")) 
 ```
 
-The Capstone Project report is the final assignment for this course and a completion is required to receive a course certificate about successful participation.
-
+The final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets). A complete report receives 30 points.
 
 ## {{< fa bullseye >}} Learning Objectives
 
@@ -31,8 +30,8 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -43,32 +42,171 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa code >}} GitHub repository
 
-Establishing the GitHub repository with self-identified data was part of the homework assignment of module 5, 6, and 7. 
+The GitHub repository for this project was an assignment of Module 6. This repository will now be used to prepare the data and the final report:
 
-- [Module 5 - Assignment 1](../assignments/md-05/am-05-1-project-data.qmd): Identify data for your capstone project
-- [Module 7 - Assignment 2](../assignments/md-07/am-07-2-project-metadata.qmd): Get going with your capstone project
-
-It is important that these two assignments are completed before continuing with the write up of the report as outlined on this page. 
+- [Module 6 - Assignment 3](../assignments/md-06/am-06-3-project.qmd): Setup your capstone project repository
 
 ## {{< fa pen-clip >}} GitHub issue tracker
 
-The GitHub issue tracker of each student's capstone project repository is used to communicate and ask questions about the Capstone Project report. Each course participant is assigned to one of the course instructors. 
+The GitHub issue tracker of each student's capstone project repository is used to communicate and ask questions about the Capstone Project report. It is up to the course participants to use this tool to ask questions and get feedback from the course instructors. The following GitHub usernames can be tagged: `@larnsce`, `@elizabeth-tilley`, `@bonschorno`.
 
 ## {{< fa calendar-check >}} Submission due date
 
-The due date for submission of the report is **Tuesday, 13th February 2024**.
+The due date for submission of the report is **Tuesday, 06th June 2024**.
 
 ## {{< fa list-check >}} Required items
 
 @tbl-required-items is a detailed list of items that need to be included for a complete submission of the capstone project report. Items are categorized into technical, data, and intellectual tasks. If any item is unclear, please reach out to the course instructors.
 
+This list is also accessible as a Google Sheet from where you could make yourself a copy and track your progress as a checklist: <https://docs.google.com/spreadsheets/d/1M272noH72YKP_NNqakKrpBeAEypgd4qYyqjRuQRKfwY/edit?usp=sharing>
+
 ```{r}
 #| label: tbl-required-items
 #| tbl-cap: "List of items to be completed for the capstone project report."
 
-grading %>% 
-  select(no, category, items) %>% 
+grading |> 
+  select(no, category, items, points) |> 
   knitr::kable()
 
 ```
 
+## {{< fa upload >}} Publish report to GitHub Pages & Submit
+
+Your report is concluded by publishing it to GitHub Pages and submitting the link through a GitHub issue on your capstone project repository. Please tag the course instructors in the issue: `@larnsce`, `@elizabeth-tilley`, `@bonschorno`. We will review the report and provide feedback.
+
+::: callout-warning
+## Screenshots show different GitHub organization
+
+Please note that the screenshots in this section show the GitHub organization for a class titled "ds4owd-001". Your repositories are stored in the GitHub organization "rbtl-fs24". Please keep that in mind when working through the steps.
+:::
+
+### Navigate to your repository
+
+1.  Open github.com in your browser and navigate to the GitHub organisation for the course: <https://github.com/rbtl-fs24>.
+
+```{r}
+knitr::include_graphics("images/gh-pages-01-gh-org.png")
+```
+
+2.  Use the search field under "Repositories" to find your capstone project repository.
+
+```{r}
+knitr::include_graphics("images/gh-pages-02-search-repo.png")
+```
+
+3.  Open your capstone project repository.
+
+```{r}
+knitr::include_graphics("images/gh-pages-03-open-repo.png")
+```
+
+### Make repo public
+
+If your repository's visibility is set to "private" (indicated by a small padlock next to the repositories name), you first need to switch it to "public" by following these steps:
+
+1.  Click on "Settings".
+
+```{r}
+knitr::include_graphics("images/gh-pages-04-settings.png")
+```
+
+2.  Stay on "General" and scroll down to the bottom of the page "Danger Zone".
+
+```{r}
+knitr::include_graphics("images/gh-pages-05-general.png")
+```
+
+3.  On the first sub-heading "Change repository visibility", click "Change visibility", then "Change to public".
+
+```{r}
+knitr::include_graphics("images/gh-pages-06-danger-zone.png")
+```
+
+4.  Click "I want to make this repository public".
+
+```{r}
+knitr::include_graphics("images/gh-pages-07-public.png")
+```
+
+5.  Click "I have read and understand these effects".
+6.  Click "Make this repository public".
+7.  Provide the requested credentials.
+8.  Done.
+
+### Publish with GitHub Pages
+
+1.  Open your capstone project repository, and click on "Settings".
+
+```{r}
+knitr::include_graphics("images/gh-pages-04-settings.png")
+```
+
+2.  In the left navigation pane, click on "Pages" under "Code and automation".
+
+```{r}
+knitr::include_graphics("images/gh-pages-08-automation.png")
+```
+
+3.  Under "Build and deployment", then under Branch, click the dropdown titled "None".
+
+```{r}
+knitr::include_graphics("images/gh-pages-09-dropdown.png")
+```
+
+4.  In the dropdown, select "main".
+
+```{r}
+knitr::include_graphics("images/gh-pages-10-dropdown-main.png")
+```
+
+5.  Click on the dropdown titled "/ (root)". In the dropdown, select "/docs".
+
+```{r}
+knitr::include_graphics("images/gh-pages-11-root.png")
+```
+
+6.  Click "Save".
+
+```{r}
+knitr::include_graphics("images/gh-pages-12-save.png")
+```
+
+### Edit "About" of repository
+
+1.  Open your capstone project repository.
+
+```{r}
+knitr::include_graphics("images/gh-pages-13-gear.png")
+```
+
+2.  On right side, next to "About", click on the gear icon.
+
+```{r}
+knitr::include_graphics("images/gh-pages-13-gear-click.png")
+```
+
+3.  Under "Description" you can add "This project report was prepared for the data science for openwashdata course." or anything else that you would like to highlight.
+
+```{r}
+knitr::include_graphics("images/gh-pages-14-description.png")
+```
+
+4.  Under "Website", click "User your GitHub Pages website".
+
+```{r}
+knitr::include_graphics("images/gh-pages-15-website.png")
+```
+
+5.  Under "Include in the home page", you can remove the checked boxes.
+
+6.  Click "Save changes".
+
+7.  The public URL of your repository will now be shown under "About" on the right side.
+
+```{r}
+knitr::include_graphics("images/gh-pages-17-about.png")
+```
+
+8.  Open your published website and enjoy.
+
+9. Submit the link to your report in a GitHub issue on your capstone project repository. Tag the course instructors: `@larnsce`, `@elizabeth-tilley`, `@bonschorno`.

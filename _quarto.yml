@@ -98,6 +98,9 @@ website:
         href: modules/md-11.qmd
       - section: "Module 12"
         href: modules/md-12.qmd
+      - text: "---"
+      - href: project/index.qmd
+        text: "Capstone project"
         
 format:
   html:

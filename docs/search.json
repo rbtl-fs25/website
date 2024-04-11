@@ -64,7 +64,7 @@
     "href": "modules/md-07.html",
     "title": "Module 7",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website.",
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website.",
     "crumbs": [
       "Module 07"
     ]
@@ -74,7 +74,7 @@
     "href": "modules/md-07.html#learning-objectives",
     "title": "Module 7",
     "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website.",
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website.",
     "crumbs": [
       "Module 07"
     ]
@@ -84,7 +84,7 @@
     "href": "modules/md-07.html#slides",
     "title": "Module 7",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Module 07"
     ]
@@ -104,7 +104,7 @@
     "href": "modules/md-07.html#assignments",
     "title": "Module 7",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 17th April 2024.\n\nAssignment 1: Setup Zotero reference management software\nAssignment 2: Read the capstone project report page\nAssignment 1: Read the page for the Capstone Project report and ensure you understand the list of required elements.\nAssignment 2: Zotero",
     "crumbs": [
       "Module 07"
     ]
@@ -314,42 +314,60 @@
     "href": "project/index.html",
     "title": "Capstone Project",
     "section": "",
-    "text": "The Capstone Project report is the final assignment for this course and a completion is required to receive a course certificate about successful participation."
+    "text": "The final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets). A complete report receives 30 points.",
+    "crumbs": [
+      "Capstone project"
+    ]
   },
   {
     "objectID": "project/index.html#learning-objectives",
     "href": "project/index.html#learning-objectives",
     "title": "Capstone Project",
     "section": " Learning Objectives",
-    "text": "Learning Objectives\n\n\nLearners can apply the skills obtained during the course to write a short data analysis project report."
+    "text": "Learning Objectives\n\n\nLearners are able to critically assess the data collection tools of colleagues and provide constructive feedback\nLearners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations\nLearners can apply the skills obtained during the course to write a short data analysis project report.\nLearners can manipulate and analyse their data to answer their stated research questions\nLearners can critically assess their success in answering their stated research questions",
+    "crumbs": [
+      "Capstone project"
+    ]
   },
   {
     "objectID": "project/index.html#github-repository",
     "href": "project/index.html#github-repository",
     "title": "Capstone Project",
     "section": " GitHub repository",
-    "text": "GitHub repository\nEstablishing the GitHub repository with self-identified data was part of the homework assignment of module 5, 6, and 7.\n\nModule 5 - Assignment 1: Identify data for your capstone project\nModule 7 - Assignment 2: Get going with your capstone project\n\nIt is important that these two assignments are completed before continuing with the write up of the report as outlined on this page."
+    "text": "GitHub repository\nThe GitHub repository for this project was an assignment of Module 6. This repository will now be used to prepare the data and the final report:\n\nModule 6 - Assignment 3: Setup your capstone project repository",
+    "crumbs": [
+      "Capstone project"
+    ]
   },
   {
     "objectID": "project/index.html#github-issue-tracker",
     "href": "project/index.html#github-issue-tracker",
     "title": "Capstone Project",
     "section": " GitHub issue tracker",
-    "text": "GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report. Each course participant is assigned to one of the course instructors."
+    "text": "GitHub issue tracker\nThe GitHub issue tracker of each student’s capstone project repository is used to communicate and ask questions about the Capstone Project report. It is up to the course participants to use this tool to ask questions and get feedback from the course instructors. The following GitHub usernames can be tagged: @larnsce, @elizabeth-tilley, @bonschorno.",
+    "crumbs": [
+      "Capstone project"
+    ]
   },
   {
     "objectID": "project/index.html#submission-due-date",
     "href": "project/index.html#submission-due-date",
     "title": "Capstone Project",
     "section": " Submission due date",
-    "text": "Submission due date\nThe due date for submission of the report is Tuesday, 13th February 2024."
+    "text": "Submission due date\nThe due date for submission of the report is Tuesday, 06th June 2024.",
+    "crumbs": [
+      "Capstone project"
+    ]
   },
   {
     "objectID": "project/index.html#required-items",
     "href": "project/index.html#required-items",
     "title": "Capstone Project",
     "section": " Required items",
-    "text": "Required items\nTable 1 is a detailed list of items that need to be included for a complete submission of the capstone project report. Items are categorized into technical, data, and intellectual tasks. If any item is unclear, please reach out to the course instructors.\n\n\n\n\nTable 1: List of items to be completed for the capstone project report.\n\n\n\n\n\n\n\n\n\n\n\nno\ncategory\nitems\n\n\n\n\n1\ntechnical\nThe report renders without errors to HTML format and contains at least five chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions, References.\n\n\n2\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n\n\n3\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n\n\n4\ntechnical\nThe report has at least two data visualisations.\n\n\n5\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n\n\n6\ntechnical\nEach data visualisation applies at least of one scaling function (e.g. color/fill, axes).\n\n\n7\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n\n\n8\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n\n\n9\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n\n\n10\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.).\n\n\n11\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function).\n\n\n12\ntechnical\nEach table has a label defined in the code-chunk options.\n\n\n13\ntechnical\nEach table has a caption defined in the code-chunk options.\n\n\n14\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n\n\n15\ntechnical\nThe report includes at least 3 citations using a bibliography.bib file created via RStudio Visual Editor.\n\n\n16\ntechnical\nReferences are automatically listed in References section from YAML entry to bibliography.bib file.\n\n\n17\ndata\nData from data/raw folder was imported, cleaned, and stored as analysis-ready processed data in data/processed folder.\n\n\n18\ndata\nThe data/processed folder contains a data dictionary.csv file with two columns (variable_name, description) which document each variable of the data in the same folder.\n\n\n19\ndata\nThe data/processed folder contains a README.md file from a provided template and documentation is completed for the data in the same folder.\n\n\n20\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n\n\n21\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n\n\n22\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n\n\n23\nintellectual\nConclusions concisely summarize findings in a bullet point format."
+    "text": "Required items\nTable 1 is a detailed list of items that need to be included for a complete submission of the capstone project report. Items are categorized into technical, data, and intellectual tasks. If any item is unclear, please reach out to the course instructors.\nThis list is also accessible as a Google Sheet from where you could make yourself a copy and track your progress as a checklist: https://docs.google.com/spreadsheets/d/1M272noH72YKP_NNqakKrpBeAEypgd4qYyqjRuQRKfwY/edit?usp=sharing\n\n\n\n\nTable 1: List of items to be completed for the capstone project report.\n\n\n\n\n\n\n\n\n\n\n\n\nno\ncategory\nitems\npoints\n\n\n\n\n1\ntechnical\nThe report renders without errors to HTML format and contains at least five chapters of heading level 1 that are named: Introduction, Methods, Results, Conclusions, References.\n1.0\n\n\n2\ntechnical\nYAML header of report has title, author, date, and table of contents that are correctly displayed in the compiled HTML output.\n1.0\n\n\n3\ntechnical\nWarnings are hidden from the compiled output, but code is shown in the compiled output.\n1.0\n\n\n4\ntechnical\nThe report has at least two data visualisations.\n1.0\n\n\n5\ntechnical\nEach data visualisation has edited human-readable labels (e.g. axis labels, legend title).\n1.0\n\n\n6\ntechnical\nEach data visualisation applies at least of one scaling function (e.g. color/fill, axes).\n1.0\n\n\n7\ntechnical\nEach data visualisation has a label defined in the code-chunk options.\n0.5\n\n\n8\ntechnical\nEach data visualisation has a caption defined in the code-chunk options.\n0.5\n\n\n9\ntechnical\nEach data visualisation is cross-referenced in the narrative using the defined label from the code-chunk options.\n0.5\n\n\n10\ntechnical\nThe report has at least one table with summary statistics (e.g. count, mean, median, standard deviation, etc.).\n1.0\n\n\n11\ntechnical\nEach table is formatted in the rendered output using a function taught during the course (e.g. kable() function or gt() function).\n1.0\n\n\n12\ntechnical\nEach table has a label defined in the code-chunk options.\n0.5\n\n\n13\ntechnical\nEach table has a caption defined in the code-chunk options.\n0.5\n\n\n14\ntechnical\nEach table is cross-referenced in the narrative using the defined label from the code-chunk options.\n0.5\n\n\n15\ntechnical\nThe report includes at least 3 citations using a bibliography.bib file exported from a collection of references on Zotero.\n1.0\n\n\n16\ntechnical\nReferences are automatically listed in References section from YAML entry to bibliography.bib file.\n1.0\n\n\n17\ntechnical\nData from Google Sheet is stored in data/raw using a script in 01-data-download.R in project-USERNAME repository\n1.0\n\n\n18\ndata\nData from data/raw folder was imported, cleaned, and stored as analysis-ready processed data in data/processed folder using R code written in 02-data-cleaning.R\n1.0\n\n\n19\ndata\nThe data/processed folder contains a data dictionary.csv file with two columns (variable_name, description) which document each variable of the data in the same folder.\n1.0\n\n\n20\ndata\nThe data/processed folder contains a README.md file from a provided template and documentation is completed for the data in the same folder.\n1.0\n\n\n21\npublish\nThe capstone project report is published using GitHub Pages. See instructions below.\n1.0\n\n\n21\nintellectual\nIntroduction section with 3 to 5 sentences introduces the context within which the data was created.\n2.0\n\n\n22\nintellectual\nMethods section describes in 3 to 5 sentences how the data was obtained.\n4.0\n\n\n23\nintellectual\nFigures and tables in Results section are interpreted with 2 to 3 sentences each.\n4.0\n\n\n24\nintellectual\nConclusions concisely summarize findings in a bullet point format.\n2.0",
+    "crumbs": [
+      "Capstone project"
+    ]
   },
   {
     "objectID": "sign-up.html",
@@ -1867,7 +1885,7 @@
     "href": "assignments/md-06/am-06-3-project.html#step-2-setup-folder-structure",
     "title": "Setup your capstone project repository",
     "section": "Step 2: Setup folder structure",
-    "text": "Step 2: Setup folder structure\n\nClone the project-USERNAME repository to Posit Cloud.\nOpen your project-USERNAME repository on Posit Cloud.\nCreate an R folder and inside the folder create a new file and save it as 01-data_download.R.\nCreate another file inside R and save it as 02-data_cleaning.R.\nCreate a data folder, and inside the folder create three sub-folders titled raw, processed, and final.\nCreate a docs folder inside the root folder.\nCreate a Quarto document inside docs and name it index.qmd.\nAdd all files to a commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\n\n\n\n\n\n\n\nData download, cleaning, and analysis\n\n\n\nYou will use the data_download.R file to download your data from the Google Sheet that you have established for your capstone project. Use the googlesheets4 package to access the data. Do not clean the data, but save it in the data/raw folder using the write_csv() function. Give the the a meaningful name that describes your project.\nYou will use the data_cleaning.R file to process your data into a state that is ready for analysis. Do not access the data from Google Drive, but rather use the read_csv() function to access your data from the data/raw folder. Save the processed, analysis-ready data in the data/processed folder using the write_csv() function. Again, give the file a meaningful name that describes your project.\nYou will use the index.qmd file to write your final report. This will be a Quarto document that will contain your analysis and visualizations. You will need to access the processed data from the data/processed folder using the read_csv() function.\nYou will save the data underlying each displayed summary table and visualization in the data/final folder. This requires that each visualization and table is generated from an object that is not further transformed before the code for the visualization or table is written. Use the write_csv() function to save the data underlying each visualization and table in the data/final folder. Give the files the name of the label you have chosen inside the code-chunk. See example below.\n\n\n\n\n\nTable 1: Mean values of life expectancy, GDP per capita, and population by continent\n\n\n```{r}\n#| label: tbl-gapminder-mean\n#| tbl-cap: \"Mean values of life expectancy, GDP per capita, and population by continent\"\n\n# load libraries -------------------------------------\n\nlibrary(gapminder)\nlibrary(tidyverse)\n\n# data analysis --------------------------------------\n\ngapminder_mean &lt;- gapminder |&gt; \n  pivot_longer(cols = c(lifeExp, gdpPercap, pop), \n               names_to = \"variable\",\n               values_to = \"value\") |&gt; \n  group_by(continent, variable) |&gt; \n  summarise(mean = mean(value),\n            n = n()) |&gt; \n  pivot_wider(names_from = variable, \n              values_from = mean) \n\n# results display as table ---------------------------\n  \ngapminder_mean |&gt; \n  knitr::kable(digits = 0)\n\n# save data underlying the table ----------------------\n\nwrite_csv(here::here(\"data/final/tbl-gapminder-mean.csv\"))\n```",
+    "text": "Step 2: Setup folder structure\n\nClone the project-USERNAME repository to Posit Cloud.\nOpen your project-USERNAME repository on Posit Cloud.\nCreate an R folder and inside the folder create a new file and save it as 01-data_download.R.\nCreate another file inside R and save it as 02-data_cleaning.R.\nCreate a data folder, and inside the folder create three sub-folders titled raw, processed, and final.\nCreate a docs folder inside the root folder.\nCreate a Quarto document inside docs and name it index.qmd.\nAdd all files to a commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\n\n\n\n\n\n\n\nData download, cleaning, and analysis\n\n\n\nYou will use the 01-data_download.R file to download your data from the Google Sheet that you have established for your capstone project. Use the googlesheets4 package to access the data. Do not clean the data, but save it in the data/raw folder using the write_csv() function. Give the the a meaningful name that describes your project.\nYou will use the 02-data_cleaning.R file to process your data into a state that is ready for analysis. Do not access the data from Google Drive, but rather use the read_csv() function to access your data from the data/raw folder. Save the processed, analysis-ready data in the data/processed folder using the write_csv() function. Again, give the file a meaningful name that describes your project.\nYou will use the index.qmd file to write your final report. This will be a Quarto document that will contain your analysis and visualizations. You will need to access the processed data from the data/processed folder using the read_csv() function.\nYou will save the data underlying each displayed summary table and visualization in the data/final folder. This requires that each visualization and table is generated from an object that is not further transformed before the code for the visualization or table is written. Use the write_csv() function to save the data underlying each visualization and table in the data/final folder. Give the files the name of the label you have chosen inside the code-chunk. See example below.\n\n\n\n\n\nTable 1: Mean values of life expectancy, GDP per capita, and population by continent\n\n\n```{r}\n#| label: tbl-gapminder-mean\n#| tbl-cap: \"Mean values of life expectancy, GDP per capita, and population by continent\"\n\n# load libraries -------------------------------------\n\nlibrary(gapminder)\nlibrary(tidyverse)\n\n# data analysis --------------------------------------\n\ngapminder_mean &lt;- gapminder |&gt; \n  pivot_longer(cols = c(lifeExp, gdpPercap, pop), \n               names_to = \"variable\",\n               values_to = \"value\") |&gt; \n  group_by(continent, variable) |&gt; \n  summarise(mean = mean(value),\n            n = n()) |&gt; \n  pivot_wider(names_from = variable, \n              values_from = mean) \n\n# results display as table ---------------------------\n  \ngapminder_mean |&gt; \n  knitr::kable(digits = 0)\n\n# save data underlying the table ----------------------\n\nwrite_csv(here::here(\"data/final/tbl-gapminder-mean.csv\"))\n```",
     "crumbs": [
       "Module 06",
       "am-03: Project repository"
@@ -2211,8 +2229,8 @@
     "objectID": "guide/index.html#switch-pipe-operator",
     "href": "guide/index.html#switch-pipe-operator",
     "title": "Guide",
-    "section": "1 Switch pipe operator",
-    "text": "1 Switch pipe operator\nBy default, R uses %&gt;% as the pipe operator from the magrittr package. Since R 4.1.0, the pipe operator is also available as |&gt; without loading any packages. The |&gt; operator is recommended to be used instead of %&gt;%.\nTo switch to the native pipe operator, follow these steps:\n\nOpen your project on Posit Cloud\nOn the menu bar of RStudio, click on Tools &gt; Global Options... (see Figure 1)\nOn the left panel, click on Code\nOn the right panel, select the 4th check-box from the top next to ’Use native pipe operator, |&gt; (requires R 4.1+) (see Figure 2)\nClick on Apply and OK\n\n\n\n\n\n\n\n\n\nFigure 1: RStudio Global Options\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: RStudio Code Options"
+    "section": "2 Switch pipe operator",
+    "text": "2 Switch pipe operator\nBy default, R uses %&gt;% as the pipe operator from the magrittr package. Since R 4.1.0, the pipe operator is also available as |&gt; without loading any packages. The |&gt; operator is recommended to be used instead of %&gt;%.\nTo switch to the native pipe operator, follow these steps:\n\nOpen your project on Posit Cloud\nOn the menu bar of RStudio, click on Tools &gt; Global Options... (see Figure 1)\nOn the left panel, click on Code\nOn the right panel, select the 4th check-box from the top next to ’Use native pipe operator, |&gt; (requires R 4.1+) (see Figure 2)\nClick on Apply and OK\n\n\n\n\n\n\n\n\n\nFigure 1: RStudio Global Options\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: RStudio Code Options"
   },
   {
     "objectID": "guide/index.html#zotero-reference-management",
@@ -2225,8 +2243,8 @@
     "objectID": "guide/index.html#publish-to-github-pages",
     "href": "guide/index.html#publish-to-github-pages",
     "title": "Guide",
-    "section": "3 Publish to GitHub Pages",
-    "text": "3 Publish to GitHub Pages\n\n3.1 Navigate to your repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/ds4owd-001.\n\n\n\n\n\n\n\n\n\n\n\nUse the search field under “Repositories” to find your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\n\n3.2 Make repo public\nIf your repository’s visibility is set to “private” (indicated by a small padlock next to the repositories name), you first need to switch it to “public” by following these steps:\n\nClick on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nStay on “General” and scroll down to the bottom of the page “Danger Zone”.\n\n\n\n\n\n\n\n\n\n\n\nOn the first sub-heading “Change repository visibility”, click “Change visibility”, then “Change to public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I want to make this repository public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I have read and understand these effects”.\nClick “Make this repository public”.\nProvide the requested credentials.\nDone.\n\n\n\n3.3 Publish with GitHub Pages\n\nOpen your capstone project repository, and click on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nIn the left navigation pane, click on “Pages” under “Code and automation”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Build and deployment”, then under Branch, click the dropdown titled “None”.\n\n\n\n\n\n\n\n\n\n\n\nIn the dropdown, select “main”.\n\n\n\n\n\n\n\n\n\n\n\nClick on the dropdown titled “/ (root)”. In the dropdown, select “/docs”.\n\n\n\n\n\n\n\n\n\n\n\nClick “Save”.\n\n\n\n\n\n\n\n\n\n\n\n\n3.4 Edit “About” of repository\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOn right side, next to “About”, click on the gear icon.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Description” you can add “This project report was prepared for the data science for openwashdata course.” or anything else that you would like to highlight.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Website”, click “User your GitHub Pages website”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Include in the home page”, you can remove the checked boxes.\nClick “Save changes”.\nThe public URL of your repository will now be shown under “About” on the right side.\n\n\n\n\n\n\n\n\n\n\n\nOpen your published website and enjoy."
+    "section": "1 Publish to GitHub Pages",
+    "text": "1 Publish to GitHub Pages\n\n\n\n\n\n\nScreenshots show different GitHub organization\n\n\n\nPlease note that the screenshots in this section show the GitHub organization for a class titled “ds4owd-001”. Your repositories are stored in the GitHub organization “rbtl-fs24”. Please keep that in mind when working through the steps.\n\n\n\n1.1 Navigate to your repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs24.\n\n\n\n\n\n\n\n\n\n\n\nUse the search field under “Repositories” to find your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\n\n1.2 Make repo public\nIf your repository’s visibility is set to “private” (indicated by a small padlock next to the repositories name), you first need to switch it to “public” by following these steps:\n\nClick on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nStay on “General” and scroll down to the bottom of the page “Danger Zone”.\n\n\n\n\n\n\n\n\n\n\n\nOn the first sub-heading “Change repository visibility”, click “Change visibility”, then “Change to public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I want to make this repository public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I have read and understand these effects”.\nClick “Make this repository public”.\nProvide the requested credentials.\nDone.\n\n\n\n1.3 Publish with GitHub Pages\n\nOpen your capstone project repository, and click on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nIn the left navigation pane, click on “Pages” under “Code and automation”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Build and deployment”, then under Branch, click the dropdown titled “None”.\n\n\n\n\n\n\n\n\n\n\n\nIn the dropdown, select “main”.\n\n\n\n\n\n\n\n\n\n\n\nClick on the dropdown titled “/ (root)”. In the dropdown, select “/docs”.\n\n\n\n\n\n\n\n\n\n\n\nClick “Save”.\n\n\n\n\n\n\n\n\n\n\n\n\n1.4 Edit “About” of repository\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOn right side, next to “About”, click on the gear icon.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Description” you can add “This project report was prepared for the data science for openwashdata course.” or anything else that you would like to highlight.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Website”, click “User your GitHub Pages website”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Include in the home page”, you can remove the checked boxes.\nClick “Save changes”.\nThe public URL of your repository will now be shown under “About” on the right side.\n\n\n\n\n\n\n\n\n\n\n\nOpen your published website and enjoy."
   },
   {
     "objectID": "assignments/md-04/am-04-1-reading.html",
@@ -3769,7 +3787,7 @@
     "href": "slides/lec-08-quarto.html#learning-objectives-for-this-week",
     "title": "Research Design",
     "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website."
   },
   {
     "objectID": "slides/lec-08-quarto.html#components",
@@ -3937,7 +3955,7 @@
     "href": "slides/lec-08-quarto.html#whats-a-bibliography",
     "title": "Research Design",
     "section": "What’s a Bibliography?",
-    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nKnuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
+    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
   },
   {
     "objectID": "slides/lec-08-quarto.html#whats-the-citation-style-language-csl",
@@ -4395,5 +4413,627 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "assignments/md-07/03-zotero.html",
+    "href": "assignments/md-07/03-zotero.html",
+    "title": "Zotero for reference management",
+    "section": "",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen GHE Group Library: https://www.zotero.org/groups/5228980/ost-hs23\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows"
+  },
+  {
+    "objectID": "assignments/md-07/03-zotero.html#sign-up-for-zotero-and-setup-zotero-reference-management-software",
+    "href": "assignments/md-07/03-zotero.html#sign-up-for-zotero-and-setup-zotero-reference-management-software",
+    "title": "Zotero for reference management",
+    "section": "",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen GHE Group Library: https://www.zotero.org/groups/5228980/ost-hs23\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#we",
+    "href": "slides/lec-08-quarto.html#we",
+    "title": "Research Design",
+    "section": "We…",
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#data-women-in-science",
+    "href": "slides/lec-08-quarto.html#data-women-in-science",
+    "title": "Research Design",
+    "section": "Data: Women in science",
+    "text": "Data: Women in science\nInformation on 10 women in science who changed the world\n\n\n\n\n\nname\n\n\n\n\nAda Lovelace\n\n\nMarie Curie\n\n\nJanaki Ammal\n\n\nChien-Shiung Wu\n\n\nKatherine Johnson\n\n\nRosalind Franklin\n\n\nVera Rubin\n\n\nGladys West\n\n\nFlossie Wong-Staal\n\n\nJennifer Doudna\n\n\n\n\n\n\n\nSource: Discover Magazine"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#inputs",
+    "href": "slides/lec-08-quarto.html#inputs",
+    "title": "Research Design",
+    "section": "Inputs",
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n\n\n\nname\nprofession\n\n\n\n\nAda Lovelace\nMathematician\n\n\nMarie Curie\nPhysicist and Chemist\n\n\nJanaki Ammal\nBotanist\n\n\nChien-Shiung Wu\nPhysicist\n\n\nKatherine Johnson\nMathematician\n\n\nRosalind Franklin\nChemist\n\n\nVera Rubin\nAstronomer\n\n\nGladys West\nMathematician\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n\n\nJennifer Doudna\nBiochemist\n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\n1897\n1984\n\n\nChien-Shiung Wu\n1912\n1997\n\n\nKatherine Johnson\n1918\n2020\n\n\nRosalind Franklin\n1920\n1958\n\n\nVera Rubin\n1928\n2016\n\n\nGladys West\n1930\nNA\n\n\nFlossie Wong-Staal\n1947\nNA\n\n\nJennifer Doudna\n1964\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nknown_for\n\n\n\n\nAda Lovelace\nfirst computer algorithm\n\n\nMarie Curie\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nVera Rubin\nexistence of dark matter\n\n\nGladys West\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#desired-output",
+    "href": "slides/lec-08-quarto.html#desired-output",
+    "title": "Research Design",
+    "section": "Desired output",
+    "text": "Desired output\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#inputs-reminder",
+    "href": "slides/lec-08-quarto.html#inputs-reminder",
+    "title": "Research Design",
+    "section": "Inputs, reminder",
+    "text": "Inputs, reminder\n\n\n\nnames(professions)\n\n[1] \"name\"       \"profession\"\n\nnames(dates)\n\n[1] \"name\"       \"birth_year\" \"death_year\"\n\nnames(works)\n\n[1] \"name\"      \"known_for\"\n\n\n\n\n\n\nnrow(professions)\n\n[1] 10\n\nnrow(dates)\n\n[1] 8\n\nnrow(works)\n\n[1] 9"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#joining-data-frames",
+    "href": "slides/lec-08-quarto.html#joining-data-frames",
+    "title": "Research Design",
+    "section": "Joining data frames",
+    "text": "Joining data frames\n\nsomething_join(x, y)\n\n\nleft_join(): all rows from x\nright_join(): all rows from y\nfull_join(): all rows from both x and y\n…"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#setup",
+    "href": "slides/lec-08-quarto.html#setup",
+    "title": "Research Design",
+    "section": "Setup",
+    "text": "Setup\nFor the next few slides…\n\n\n\nx &lt;- tibble(\n  id = c(1, 2, 3),\n  value_x = c(\"x1\", \"x2\", \"x3\")\n  )\n\n\nx\n\n# A tibble: 3 × 2\n     id value_x\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 x1     \n2     2 x2     \n3     3 x3     \n\n\n\n\n\n\ny &lt;- tibble(\n  id = c(1, 2, 4),\n  value_y = c(\"y1\", \"y2\", \"y4\")\n  )\n\n\ny\n\n# A tibble: 3 × 2\n     id value_y\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 y1     \n2     2 y2     \n3     4 y4"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#left_join",
+    "href": "slides/lec-08-quarto.html#left_join",
+    "title": "Research Design",
+    "section": "left_join()",
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#left_join-1",
+    "href": "slides/lec-08-quarto.html#left_join-1",
+    "title": "Research Design",
+    "section": "left_join()",
+    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#right_join",
+    "href": "slides/lec-08-quarto.html#right_join",
+    "title": "Research Design",
+    "section": "right_join()",
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#right_join-1",
+    "href": "slides/lec-08-quarto.html#right_join-1",
+    "title": "Research Design",
+    "section": "right_join()",
+    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#full_join",
+    "href": "slides/lec-08-quarto.html#full_join",
+    "title": "Research Design",
+    "section": "full_join()",
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#full_join-1",
+    "href": "slides/lec-08-quarto.html#full_join-1",
+    "title": "Research Design",
+    "section": "full_join()",
+    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#putting-it-altogether",
+    "href": "slides/lec-08-quarto.html#putting-it-altogether",
+    "title": "Research Design",
+    "section": "Putting it altogether",
+    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-08-quarto.html#four-terms",
+    "href": "slides/lec-08-quarto.html#four-terms",
+    "title": "Research Design",
+    "section": "Four terms",
+    "text": "Four terms\n\nCitation\nReference\nBibliography\nCitation Style Language (CSL)"
+  },
+  {
+    "objectID": "assignments/md-07/am-07-01-zotero.html",
+    "href": "assignments/md-07/am-07-01-zotero.html",
+    "title": "Zotero for reference management",
+    "section": "",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen GHE Group Library: https://www.zotero.org/groups/5228980/ost-hs23\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows"
+  },
+  {
+    "objectID": "assignments/md-07/am-07-01-zotero.html#sign-up-for-zotero-and-setup-zotero-reference-management-software",
+    "href": "assignments/md-07/am-07-01-zotero.html#sign-up-for-zotero-and-setup-zotero-reference-management-software",
+    "title": "Zotero for reference management",
+    "section": "",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen GHE Group Library: https://www.zotero.org/groups/5228980/ost-hs23\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows"
+  },
+  {
+    "objectID": "assignments/md-07/am-07-1-zotero.html",
+    "href": "assignments/md-07/am-07-1-zotero.html",
+    "title": "Zotero for reference management",
+    "section": "",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen GHE Group Library: https://www.zotero.org/groups/5228980/ost-hs23\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows"
+  },
+  {
+    "objectID": "assignments/md-07/am-07-1-zotero.html#sign-up-for-zotero-and-setup-zotero-reference-management-software",
+    "href": "assignments/md-07/am-07-1-zotero.html#sign-up-for-zotero-and-setup-zotero-reference-management-software",
+    "title": "Zotero for reference management",
+    "section": "",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen GHE Group Library: https://www.zotero.org/groups/5228980/ost-hs23\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html",
+    "href": "slides/lec-07-quarto.html",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "",
+    "text": "Rows: 50 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (3): title, lecturer, learning_objectives\ndbl (1): module\nlgl (2): date, teaser\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
+    "href": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#we",
+    "href": "slides/lec-07-quarto.html#we",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "We…",
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-women-in-science",
+    "href": "slides/lec-07-quarto.html#data-women-in-science",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data: Women in science",
+    "text": "Data: Women in science\nInformation on 10 women in science who changed the world\n\n\n\n\n\nname\n\n\n\n\nAda Lovelace\n\n\nMarie Curie\n\n\nJanaki Ammal\n\n\nChien-Shiung Wu\n\n\nKatherine Johnson\n\n\nRosalind Franklin\n\n\nVera Rubin\n\n\nGladys West\n\n\nFlossie Wong-Staal\n\n\nJennifer Doudna\n\n\n\n\n\n\n\nSource: Discover Magazine"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inputs",
+    "href": "slides/lec-07-quarto.html#inputs",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inputs",
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n\n\n\nname\nprofession\n\n\n\n\nAda Lovelace\nMathematician\n\n\nMarie Curie\nPhysicist and Chemist\n\n\nJanaki Ammal\nBotanist\n\n\nChien-Shiung Wu\nPhysicist\n\n\nKatherine Johnson\nMathematician\n\n\nRosalind Franklin\nChemist\n\n\nVera Rubin\nAstronomer\n\n\nGladys West\nMathematician\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n\n\nJennifer Doudna\nBiochemist\n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\n1897\n1984\n\n\nChien-Shiung Wu\n1912\n1997\n\n\nKatherine Johnson\n1918\n2020\n\n\nRosalind Franklin\n1920\n1958\n\n\nVera Rubin\n1928\n2016\n\n\nGladys West\n1930\nNA\n\n\nFlossie Wong-Staal\n1947\nNA\n\n\nJennifer Doudna\n1964\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nknown_for\n\n\n\n\nAda Lovelace\nfirst computer algorithm\n\n\nMarie Curie\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nVera Rubin\nexistence of dark matter\n\n\nGladys West\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#desired-output",
+    "href": "slides/lec-07-quarto.html#desired-output",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Desired output",
+    "text": "Desired output\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inputs-reminder",
+    "href": "slides/lec-07-quarto.html#inputs-reminder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inputs, reminder",
+    "text": "Inputs, reminder\n\n\n\nnames(professions)\n\n[1] \"name\"       \"profession\"\n\nnames(dates)\n\n[1] \"name\"       \"birth_year\" \"death_year\"\n\nnames(works)\n\n[1] \"name\"      \"known_for\"\n\n\n\n\n\n\nnrow(professions)\n\n[1] 10\n\nnrow(dates)\n\n[1] 8\n\nnrow(works)\n\n[1] 9"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#joining-data-frames",
+    "href": "slides/lec-07-quarto.html#joining-data-frames",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Joining data frames",
+    "text": "Joining data frames\n\nsomething_join(x, y)\n\n\nleft_join(): all rows from x\nright_join(): all rows from y\nfull_join(): all rows from both x and y\n…"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#setup",
+    "href": "slides/lec-07-quarto.html#setup",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Setup",
+    "text": "Setup\nFor the next few slides…\n\n\n\nx &lt;- tibble(\n  id = c(1, 2, 3),\n  value_x = c(\"x1\", \"x2\", \"x3\")\n  )\n\n\nx\n\n# A tibble: 3 × 2\n     id value_x\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 x1     \n2     2 x2     \n3     3 x3     \n\n\n\n\n\n\ny &lt;- tibble(\n  id = c(1, 2, 4),\n  value_y = c(\"y1\", \"y2\", \"y4\")\n  )\n\n\ny\n\n# A tibble: 3 × 2\n     id value_y\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 y1     \n2     2 y2     \n3     4 y4"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#left_join",
+    "href": "slides/lec-07-quarto.html#left_join",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "left_join()",
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#left_join-1",
+    "href": "slides/lec-07-quarto.html#left_join-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "left_join()",
+    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#right_join",
+    "href": "slides/lec-07-quarto.html#right_join",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "right_join()",
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#right_join-1",
+    "href": "slides/lec-07-quarto.html#right_join-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "right_join()",
+    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#full_join",
+    "href": "slides/lec-07-quarto.html#full_join",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "full_join()",
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#full_join-1",
+    "href": "slides/lec-07-quarto.html#full_join-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "full_join()",
+    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#putting-it-altogether",
+    "href": "slides/lec-07-quarto.html#putting-it-altogether",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Putting it altogether",
+    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#four-terms",
+    "href": "slides/lec-07-quarto.html#four-terms",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Four terms",
+    "text": "Four terms\n\nCitation\nReference\nBibliography\nCitation Style Language (CSL)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-citation",
+    "href": "slides/lec-07-quarto.html#whats-a-citation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Citation?",
+    "text": "What’s a Citation?\n\n\nInequality underpins waste management systems, structuring who can or cannot access services (Kalina et al., 2023).\nMany visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nIn Tilley & Kalina (2021), the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\n\n\nExplanation A citation is a reference to the source of information used in your research. Any time you directly quote, paraphrase, or summarize the essential elements of someone else’s idea in your work, an in-text citation should follow. For example, in APA style, a citation might look like this: (Tilley and Kalina, 2021).\nAnalogy Think of a citation as a signpost on a road trip. It tells you where the information came from and points you in the direction of the full details (the destination), which can be found in the reference list."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-citation-1",
+    "href": "slides/lec-07-quarto.html#whats-a-citation-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Citation?",
+    "text": "What’s a Citation?\n\nInequality underpins waste management systems, structuring who can or cannot access services (Kalina et al., 2023).\nMany visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nIn Tilley & Kalina (2021), the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\n\n\n\n\n\n\nImportant: The period is after the citation."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-reference",
+    "href": "slides/lec-07-quarto.html#whats-a-reference",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Reference?",
+    "text": "What’s a Reference?\n\ndetailed description of the source of information\nauthor’s name, title, year of publication, publisher, DOI, etc.\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677\n\nExplanation\nA reference is a detailed description of the source of information that you want to give credit to via a citation. In APA style, a reference provides comprehensive details about a source, including the author’s name, the title of the source, the year of publication, and the publisher or URL.\nAnalogy\nA reference is like a detailed map at the end of your road trip (paper). It provides all the details about the source (destination) that the citation (signpost) pointed to."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-bibliography",
+    "href": "slides/lec-07-quarto.html#whats-a-bibliography",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Bibliography?",
+    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl",
+    "href": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s the Citation Style Language (CSL)?",
+    "text": "What’s the Citation Style Language (CSL)?\n\nIt’s what your citation and generated bibliography look like\nAPA (American Psychological Association) Style, Chicago Style, IEEE Style, Vancouver Style, etc. (over 10,000 styles in Zotero Style Repository)\n\n\nThe Citation Style Language (CSL) describes the formatting of citations, notes, and bibliographies. It was created to provide an open format that can be used by any application"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl-1",
+    "href": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s the Citation Style Language (CSL)?",
+    "text": "What’s the Citation Style Language (CSL)?\nauthor-date: Many visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nnumeric Many visitors still expect a personal pick-up, despite the availability of taxi services [1]."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#why-use-a-reference-management-tool",
+    "href": "slides/lec-07-quarto.html#why-use-a-reference-management-tool",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Why use a reference management tool?",
+    "text": "Why use a reference management tool?\n\n\nManaging references manually:\n\nis a lot of work\nis prone to mistakes\nmakes you lose track\n\n\n\n\n\n\nPhoto by Christian Erfurt on unsplash.com"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#why-use-zotero",
+    "href": "slides/lec-07-quarto.html#why-use-zotero",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Why use Zotero?",
+    "text": "Why use Zotero?\n\n\n\nfree\nopen source: developed in public\ntransparent about access to your own data\ncross-platform (Windows, Mac, Linux)\ncollaboration in groups\nintegration with word processors\n\n\n\n\n\n\nPhoto by Sincerely Media on unsplash.com\n\n\nMendeley\n\nMendeley is owned by Elsevier.\nIt encrypts your database and makes money with your data\nYou can only collaborate with 3 people on one project.\n\nEndNote\n\nEndNote doesn’t come free, you need to buy a license.\nThey also used a prioprietary citation style files that could only be opened by EndNote."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#zotero-setup-guide",
+    "href": "slides/lec-07-quarto.html#zotero-setup-guide",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Zotero setup guide",
+    "text": "Zotero setup guide\n\nNot teaching how to use Zotero, but encourage you to learn and use it.\nPrepared a setup guide: https://ds4owd-001.github.io/website/guide/#zotero-reference-management"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#scholarly-articles-in-quarto",
+    "href": "slides/lec-07-quarto.html#scholarly-articles-in-quarto",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Scholarly Articles in Quarto",
+    "text": "Scholarly Articles in Quarto\nQuarto supports\n\n\na standardized schema for authors and affiliations that can be expressed once int the source document,\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and\noutputting to pdf, html, and docx with custom formatting,\n\n\n\naccording to the styles required for various journals,\n\n\nand creating the LaTeX required for submission to multiple journals."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#front-matter",
+    "href": "slides/lec-07-quarto.html#front-matter",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Front matter",
+    "text": "Front matter\nQuarto provides a rich set of YAML metadata keys to describe the details required in the front matter of scholarly articles.\n\n\n\ntitle\nauthor\naffiliation\nabstract\nkeywords\ncitation\nlicensing\netc."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-08-exercises",
+    "href": "slides/lec-07-quarto.html#our-turn-md-08-exercises",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-08-exercises",
+    "text": "Our turn: md-08-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs24 workspace for the course.\nOpen md-08-exercises.\nIn the File Manager in the bottom right window, locate the scholarly-writing.qmd file and click on it to open it in the top left window.\nFollow along on the screen using the instructions in the document.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-08-publish-username",
+    "href": "slides/lec-07-quarto.html#our-turn-md-08-publish-username",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-08-publish-USERNAME",
+    "text": "Our turn: md-08-publish-USERNAME\nClone the repository from GitHub\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs24/.\nFind the repository md-08-publish-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the ds4owd workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nFrom the Files Manager in the bottom right window, open docs folder, then click on index.qmd.\nIndicate the open Poll with “ready to go” when you are ready.\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#github-pages",
+    "href": "slides/lec-07-quarto.html#github-pages",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nGitHub Pages is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#minimal-example---requirements",
+    "href": "slides/lec-07-quarto.html#minimal-example---requirements",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Minimal Example - Requirements",
+    "text": "Minimal Example - Requirements\n\nLanding site needs to be stored as index.qmd\nThe index.qmd needs to be stored in docs folder\nExample works well for a report/article as a stand-alone page\nQuarto provides a framework and examples for more complex websites: https://quarto.org/docs/websites/"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#course-guide",
+    "href": "slides/lec-07-quarto.html#course-guide",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Course Guide",
+    "text": "Course Guide\n\nSteps for publishing the capstone project report are described on the capstone project page\nhttps://rbtl-fs24.github.io/website/project"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#take-a-break",
+    "href": "slides/lec-07-quarto.html#take-a-break",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#course-certificate",
+    "href": "slides/lec-07-quarto.html#course-certificate",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Course certificate",
+    "text": "Course certificate\n\nYou will receive a course certificate if you complete the capstone project.\nThe course certificate will be issued by the openwashdata academy.\nThe certificate will highlight the time you have invested and the tools you learned to navigate.\nThe certificate can include a link to your public capstone project report (voluntary).\nWe would like to add a graduates section to https://openwashdata.org/ and highlight course graduates (e.g. link to report, GitHub profile, LinkedIn profile, ORCID profile)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#submission",
+    "href": "slides/lec-07-quarto.html#submission",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Submission",
+    "text": "Submission\n\nThe submission due date is: Tuesday, 13th February.\nYou will need to work through Module 5 & Module 7 homework assignments to get started.\nWe will use the GitHub issue tracker to communicate and ask questions about the capstone project.\nA list of required items for submission is covered on the course website: https://rbtl-fs24.github.io/website/project/\nIf you require an extension, please reach to us via email: ghe@mavt.ethz.ch"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#your-turn-capstone-project---read-and-take-notes",
+    "href": "slides/lec-07-quarto.html#your-turn-capstone-project---read-and-take-notes",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn: Capstone project - Read and take notes",
+    "text": "Your turn: Capstone project - Read and take notes\n\n\nOpen: https://rbtl-fs24.github.io/website/project/.\nRead through the page.\nFor the list in “Required items” note down the numbers of those that are unclear to you and why.\nAfter the time is up, you will join a break-out room and discuss the unclear items with your peers.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#your-turn-capstone-project---discuss-unclear-items",
+    "href": "slides/lec-07-quarto.html#your-turn-capstone-project---discuss-unclear-items",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn: Capstone project - Discuss unclear items",
+    "text": "Your turn: Capstone project - Discuss unclear items\n\n\nJoin the break-out room.\nDiscuss with your peers the unclear items you noted down.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#your-turn-capstone-project---share-remaining-unclear-items",
+    "href": "slides/lec-07-quarto.html#your-turn-capstone-project---share-remaining-unclear-items",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn: Capstone project - Share remaining unclear items",
+    "text": "Your turn: Capstone project - Share remaining unclear items\n\n\nOpen this repository: https://github.com/rbtl-fs24/project.\nAdd your questions for unclear items to the issue tracker as described.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#homework-assignment",
+    "href": "slides/lec-07-quarto.html#homework-assignment",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Homework assignment",
+    "text": "Homework assignment\n\nNo more homework assignments\nUse the time to work on your capstone project"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#student-hours",
+    "href": "slides/lec-07-quarto.html#student-hours",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Student hours",
+    "text": "Student hours\n\nEvery Thursday, 2:00 to 3:30 PM (CET)\nFinal student hours: Thursday, February 08, 2:00 to 3:30 PM (CET)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#next-week-openwashdata-webinar",
+    "href": "slides/lec-07-quarto.html#next-week-openwashdata-webinar",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Next week: openwashdata webinar",
+    "text": "Next week: openwashdata webinar\n\nDate: Tuesday, January 23, 2:00 - 3:00 PM (CET)\nZoom Registration: https://ethz.zoom.us/meeting/register/u50lce-vrD0iGN06ywPHr2gPU84Ljr_zmNAf\nMore info: https://openwashdata.org/pages/events/2023-01-24-webinar-data-publishing\n\n\n\n\n\n\nTime\nTitle\nSpeaker\nAffiliation\n\n\n\n\n02:00 - 02:05\nWelcome\nElizabeth Tilley\nProfessor at ETH Zurich, Global Health Engineering\n\n\n02:05 - 02:25\nopenwashdata community & workflow\nLars Schöbitz\nOpen Science Specialist at ETH Zurich, Global Health Engineering\n\n\n02:25 - 02:45\nOpen data: A publishers perspective\nLauren Cadwallader\nOpen Research Manager at Public Library of Science (PLOS)\n\n\n02:45 - 03:00\nDiscussion\nElizabeth Tilley\nProfessor at ETH Zurich, Global Health Engineering"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#module-09-using-ai-for-software-development-in-r",
+    "href": "slides/lec-07-quarto.html#module-09-using-ai-for-software-development-in-r",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Module 09: Using AI for software development in R",
+    "text": "Module 09: Using AI for software development in R\n\nDate: Tuesday, January 30, 2:00 - 4:30 PM (CET)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#module-10-graduation-party",
+    "href": "slides/lec-07-quarto.html#module-10-graduation-party",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Module 10: Graduation party",
+    "text": "Module 10: Graduation party\n\nDate: Tuesday, February 20, 2:00 - 3:00 PM (CET)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#attribution",
+    "href": "slides/lec-07-quarto.html#attribution",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Attribution",
+    "text": "Attribution\nContent was re-used from a workshop hosted by Mine Çetinkaya-Rundel at the 2023 Symposium on Data Science and Statistics and stored at https://github.com/mine-cetinkaya-rundel/quarto-sdss. The original content is licensed under a Creative Commons Attribution 4.0 International License."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#thanks",
+    "href": "slides/lec-07-quarto.html#thanks",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\n\n\n\n\n rbtl-fs24.github.io/website/"
+  },
+  {
+    "objectID": "project/index.html#publish-report-to-github-pages",
+    "href": "project/index.html#publish-report-to-github-pages",
+    "title": "Capstone Project",
+    "section": " Publish report to GitHub Pages",
+    "text": "Publish report to GitHub Pages\nThis step is not a part of the required items that final report should be published on GitHub Pages. The report should be a single HTML file that includes all the required items. The report should be named index.html and should be placed in the root directory of the repository. The report should be accessible via the URL: https://&lt;username&gt;.github.io/&lt;repository-name&gt;/index.html.",
+    "crumbs": [
+      "Capstone project"
+    ]
+  },
+  {
+    "objectID": "project/index.html#publish-report-to-github-pages-submit",
+    "href": "project/index.html#publish-report-to-github-pages-submit",
+    "title": "Capstone Project",
+    "section": " Publish report to GitHub Pages & Submit",
+    "text": "Publish report to GitHub Pages & Submit\nYour report is concluded by publishing it to GitHub Pages and submitting the link through a GitHub issue on your capstone project repository. Please tag the course instructors in the issue: @larnsce, @elizabeth-tilley, @bonschorno. We will review the report and provide feedback.\n\n\n\n\n\n\nScreenshots show different GitHub organization\n\n\n\nPlease note that the screenshots in this section show the GitHub organization for a class titled “ds4owd-001”. Your repositories are stored in the GitHub organization “rbtl-fs24”. Please keep that in mind when working through the steps.\n\n\n\nNavigate to your repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs24.\n\n\n\n\n\n\n\n\n\n\n\nUse the search field under “Repositories” to find your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\n\nMake repo public\nIf your repository’s visibility is set to “private” (indicated by a small padlock next to the repositories name), you first need to switch it to “public” by following these steps:\n\nClick on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nStay on “General” and scroll down to the bottom of the page “Danger Zone”.\n\n\n\n\n\n\n\n\n\n\n\nOn the first sub-heading “Change repository visibility”, click “Change visibility”, then “Change to public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I want to make this repository public”.\n\n\n\n\n\n\n\n\n\n\n\nClick “I have read and understand these effects”.\nClick “Make this repository public”.\nProvide the requested credentials.\nDone.\n\n\n\nPublish with GitHub Pages\n\nOpen your capstone project repository, and click on “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nIn the left navigation pane, click on “Pages” under “Code and automation”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Build and deployment”, then under Branch, click the dropdown titled “None”.\n\n\n\n\n\n\n\n\n\n\n\nIn the dropdown, select “main”.\n\n\n\n\n\n\n\n\n\n\n\nClick on the dropdown titled “/ (root)”. In the dropdown, select “/docs”.\n\n\n\n\n\n\n\n\n\n\n\nClick “Save”.\n\n\n\n\n\n\n\n\n\n\n\n\nEdit “About” of repository\n\nOpen your capstone project repository.\n\n\n\n\n\n\n\n\n\n\n\nOn right side, next to “About”, click on the gear icon.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Description” you can add “This project report was prepared for the data science for openwashdata course.” or anything else that you would like to highlight.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Website”, click “User your GitHub Pages website”.\n\n\n\n\n\n\n\n\n\n\n\nUnder “Include in the home page”, you can remove the checked boxes.\nClick “Save changes”.\nThe public URL of your repository will now be shown under “About” on the right side.\n\n\n\n\n\n\n\n\n\n\n\nOpen your published website and enjoy.\nSubmit the link to your report in a GitHub issue on your capstone project repository. Tag the course instructors: @larnsce, @elizabeth-tilley, @bonschorno.",
+    "crumbs": [
+      "Capstone project"
+    ]
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#metadata-data-about-data",
+    "href": "slides/lec-07-quarto.html#metadata-data-about-data",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Metadata: data about data",
+    "text": "Metadata: data about data\nWHAT!?"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\nImagine:\n\nyou are new to WASH research and you have never heard of feacal sludge management.\nyou are interested in learning more about the topic and you want to find some data to play with.\nyou find a publication with a dataset on faecal sludge characteristics."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples-1",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\nYou download the XLSX file that contains the data and you open it in Excel. You see the following:"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#you-as-an-author",
+    "href": "slides/lec-07-quarto.html#you-as-an-author",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "You as an author",
+    "text": "You as an author\nhave the chance to document your data properly once to make it easier for everyone else to know what it contains."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#documentation",
+    "href": "slides/lec-07-quarto.html#documentation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Documentation",
+    "text": "Documentation\nGoes into a separate README file\n\nGeneral information (authors, title, date, geographic location, etc.)\nSharing / access information (license, links to publications, citation)\nMethodological information (sampling, analysis, etc.)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary",
+    "href": "slides/lec-07-quarto.html#data-dictionary",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary",
+    "text": "Data dictionary\nGoes into a separate file (dictionary.csv).\nMinimum required information\n\nVariable name\nVariable description"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples",
+    "href": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary for faecal sludge samples",
+    "text": "Data dictionary for faecal sludge samples\n\nEdit in spreadsheet software (e.g. MS Excel)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples-1",
+    "href": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary for faecal sludge samples",
+    "text": "Data dictionary for faecal sludge samples\n\nSave as CSV file"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#directory-tree-of-a-project",
+    "href": "slides/lec-07-quarto.html#directory-tree-of-a-project",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Directory tree of a project",
+    "text": "Directory tree of a project\nCapstone project of Rainbow Train: https://github.com/rbtl-fs24/project-rainbow-train\n.\n├── R\n│   └── 01-data-preparation.R\n├── data\n│   ├── processed\n│   │   ├── README.md\n│   │   ├── dictionary.csv\n│   │   └── faecal-sludge-analysis.csv\n│   └── raw\n│       └── Faecal sludge Analysis_05112023.xlsx\n├── docs\n│   ├── index.html\n│   ├── index.qmd\n│   └── index_files\n│       └── libs\n└── project.Rproj"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#directory-tree-of-a-project-1",
+    "href": "slides/lec-07-quarto.html#directory-tree-of-a-project-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Directory tree of a project",
+    "text": "Directory tree of a project\n\nR folder: R scripts for data cleaning\ndata folder: raw and processed data\ndocs folder: the actual report that imports the processed data\nproject.Rproj: RStudio project file"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inside-the-data-folder",
+    "href": "slides/lec-07-quarto.html#inside-the-data-folder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inside the data folder",
+    "text": "Inside the data folder\n\nraw: data as it was downloaded / as you received it (e.g. Excel file)\nprocessed: data that is ready to be used in the report"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inside-the-processed-folder",
+    "href": "slides/lec-07-quarto.html#inside-the-processed-folder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inside the processed folder",
+    "text": "Inside the processed folder\n\nREADME.md: general information about the data\ndictionary.csv: data dictionary\nfaecal-sludge-analysis.csv: cleaned data for which dictionary.csv applies"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-07-exercises",
+    "href": "slides/lec-07-quarto.html#our-turn-md-07-exercises",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-07-exercises",
+    "text": "Our turn: md-07-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs24 workspace for the course.\nOpen md-07-exercises.\nIn the File Manager in the bottom right window, locate the scholarly-writing.qmd file and click on it to open it in the top left window.\nFollow along on the screen using the instructions in the document.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-07-publish-username",
+    "href": "slides/lec-07-quarto.html#our-turn-md-07-publish-username",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-07-publish-USERNAME",
+    "text": "Our turn: md-07-publish-USERNAME\nClone the repository from GitHub & publish using GitHub Pages.\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs24/.\nFind the repository md-07-publish-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nFrom the Files Manager in the bottom right window, open docs folder, then click on index.qmd.\nIndicate when you are ready.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#take-a-break-1",
+    "href": "slides/lec-07-quarto.html#take-a-break-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#module-6-documentation",
+    "href": "slides/lec-07-quarto.html#module-6-documentation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Module 6 documentation",
+    "text": "Module 6 documentation\n\nrbtl-fs24.github.io/website/modules/md-07.html"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#homework-due-date",
+    "href": "slides/lec-07-quarto.html#homework-due-date",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Wednesday, April 17th"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#next-few-weeks",
+    "href": "slides/lec-07-quarto.html#next-few-weeks",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Next few weeks",
+    "text": "Next few weeks\n\nLars will be off work until 30th May\nElizabeth and Colin will support you during this time\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\nNA\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\nNA\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\nNA\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\nNA\n06 June 2024\nProject Submission Deadline\n\n\nNA\n13 June 2024\nExam"
   }
 ]

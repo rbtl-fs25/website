@@ -7,9 +7,146 @@ execute:
   echo: false
 ---
 
-This guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions. 
+This guide documents features of R, RStudio, Posit Cloud, and Quarto, which are relevant throughout the course. These can settings that need to be made or tips that we communicate during the live sessions.
 
 If you have a request, let us know and we will add guidance here.
+
+## Publish to GitHub Pages
+
+::: callout-warning
+## Screenshots show different GitHub organization
+
+Please note that the screenshots in this section show the GitHub organization for a class titled "ds4owd-001". Your repositories are stored in the GitHub organization "rbtl-fs24". Please keep that in mind when working through the steps.
+:::
+
+### Navigate to your repository
+
+1.  Open github.com in your browser and navigate to the GitHub organisation for the course: <https://github.com/rbtl-fs24>.
+
+```{r}
+knitr::include_graphics("images/gh-pages-01-gh-org.png")
+```
+
+2.  Use the search field under "Repositories" to find your capstone project repository.
+
+```{r}
+knitr::include_graphics("images/gh-pages-02-search-repo.png")
+```
+
+3.  Open your capstone project repository.
+
+```{r}
+knitr::include_graphics("images/gh-pages-03-open-repo.png")
+```
+
+### Make repo public
+
+If your repository's visibility is set to "private" (indicated by a small padlock next to the repositories name), you first need to switch it to "public" by following these steps:
+
+1.  Click on "Settings".
+
+```{r}
+knitr::include_graphics("images/gh-pages-04-settings.png")
+```
+
+2.  Stay on "General" and scroll down to the bottom of the page "Danger Zone".
+
+```{r}
+knitr::include_graphics("images/gh-pages-05-general.png")
+```
+
+3.  On the first sub-heading "Change repository visibility", click "Change visibility", then "Change to public".
+
+```{r}
+knitr::include_graphics("images/gh-pages-06-danger-zone.png")
+```
+
+4.  Click "I want to make this repository public".
+
+```{r}
+knitr::include_graphics("images/gh-pages-07-public.png")
+```
+
+5.  Click "I have read and understand these effects".
+6.  Click "Make this repository public".
+7.  Provide the requested credentials.
+8.  Done.
+
+### Publish with GitHub Pages
+
+1.  Open your capstone project repository, and click on "Settings".
+
+```{r}
+knitr::include_graphics("images/gh-pages-04-settings.png")
+```
+
+2.  In the left navigation pane, click on "Pages" under "Code and automation".
+
+```{r}
+knitr::include_graphics("images/gh-pages-08-automation.png")
+```
+
+3.  Under "Build and deployment", then under Branch, click the dropdown titled "None".
+
+```{r}
+knitr::include_graphics("images/gh-pages-09-dropdown.png")
+```
+
+4.  In the dropdown, select "main".
+
+```{r}
+knitr::include_graphics("images/gh-pages-10-dropdown-main.png")
+```
+
+5.  Click on the dropdown titled "/ (root)". In the dropdown, select "/docs".
+
+```{r}
+knitr::include_graphics("images/gh-pages-11-root.png")
+```
+
+6.  Click "Save".
+
+```{r}
+knitr::include_graphics("images/gh-pages-12-save.png")
+```
+
+### Edit "About" of repository
+
+1.  Open your capstone project repository.
+
+```{r}
+knitr::include_graphics("images/gh-pages-13-gear.png")
+```
+
+2.  On right side, next to "About", click on the gear icon.
+
+```{r}
+knitr::include_graphics("images/gh-pages-13-gear-click.png")
+```
+
+3.  Under "Description" you can add "This project report was prepared for the data science for openwashdata course." or anything else that you would like to highlight.
+
+```{r}
+knitr::include_graphics("images/gh-pages-14-description.png")
+```
+
+4.  Under "Website", click "User your GitHub Pages website".
+
+```{r}
+knitr::include_graphics("images/gh-pages-15-website.png")
+```
+
+5.  Under "Include in the home page", you can remove the checked boxes.
+
+6.  Click "Save changes".
+
+7.  The public URL of your repository will now be shown under "About" on the right side.
+
+```{r}
+knitr::include_graphics("images/gh-pages-17-about.png")
+```
+
+8.  Open your published website and enjoy.
 
 ## Switch pipe operator
 
@@ -17,11 +154,11 @@ By default, R uses `%>%` as the pipe operator from the `magrittr` package. Since
 
 To switch to the native pipe operator, follow these steps:
 
-1. Open your project on Posit Cloud
-2. On the menu bar of RStudio, click on `Tools` > `Global Options...` (see @fig-global-options)
-3. On the left panel, click on `Code`
-4. On the right panel, select the 4th check-box from the top next to 'Use native pipe operator, |> (requires R 4.1+) (see @fig-native-pipe)
-5. Click on `Apply` and `OK`
+1.  Open your project on Posit Cloud
+2.  On the menu bar of RStudio, click on `Tools` \> `Global Options...` (see @fig-global-options)
+3.  On the left panel, click on `Code`
+4.  On the right panel, select the 4th check-box from the top next to 'Use native pipe operator, \|\> (requires R 4.1+) (see @fig-native-pipe)
+5.  Click on `Apply` and `OK`
 
 ```{r}
 #| label: fig-global-options
@@ -36,248 +173,3 @@ knitr::include_graphics("images/rstudio-tools-global-options.png")
 #| out-width: 75%
 knitr:::include_graphics("images/rstudio-code-native-pipe.png")
 ```
-
-## Zotero reference management
-
-We recommend using Zotero as a tool for reference management, but do not teach how to use it in this course. The guidance below will support you in setting up Zotero.
-
-### Get Zotero account
-
-1. Open <https://www.zotero.org/user/login/>
-2. Click on Register for a free account
-3. Chose username, email, and password
-4. Click Register
-5. Open your email and verify your account
-
-### Install Zotero desktop client
-
-1. Open <https://www.zotero.org/download/>
-2. Download Zotero for your operating system
-3. Install Zotero
-4. Log in to your Zotero account by opening **Settings -> Sync** and typing the Username and Password you have previously set up
-5. Click on the green refresh button in the top-right corner of the Zotero window
-
-```{r}
-knitr::include_graphics("images/screenshot-zotero-desktop-client-refresh.png")
-```
-
-### Install the Zotero Connector for your browser
-
-1. Open <https://www.zotero.org/download/>
-2. Download the Zotero Connector for your browser
-3. Install the Zotero Connector
-4. Log in to your Zotero account
-
-### Setup Add-ons and the citation key format
-
-1. Go to <https://retorque.re/zotero-better-bibtex/installation/>
-2. Click on the latest release so you are redirected to github
-3. Find the .xpi file and right-click it. Click on **Save Link As...** and choose your location for saving the file.
-
-```{r}
-knitr::include_graphics("images/screenshot-zotero-better-bibtex-addon.png")
-```
-
-4. Open **Zotero** -> **Tools** -> **Add-ons** -> (Gear icon) -> **Install Add-on From File...** -> choose the .xpi file you have just saved
-
-```{r}
-knitr::include_graphics("images/screenshot-install-betterbibtex-addon.png")
-```
-
-5. Restart Zotero
-
-```{r}
-knitr::include_graphics("images/screenshot-restart-now.png")
-```
-
-6. Wait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.
-
-7. You may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.
-
-8. Go to **Zotero** -> **Settings** -> **Export** -> **Default Format** and change the default format to **Better BibTeX Quick Copy: \cite{citation keys}**
-
-```{r}
-knitr::include_graphics("images/screenshot-install-betterbibtex-addon.png")
-```
-
-9. In the same setting window, go to **Better BibTeX** -> **Open Better BibTeX preferences...**
-
-```{r}
-knitr::include_graphics("images/screenshot-betterbibtex-preferences.png")
-```
-
-10. In the **Citation keys** tab, use the following Citation key formula for Better BibTeX: `[auth:lower][year][veryshorttitle1_0:lower]`
-
-The line above means that the citation key will be build from:
-
-- First author's last name in lowercase
-- publication year
-- The first word from the title in lowercase, not including the connectors such as "the" or "a"
-
-```{r}
-knitr::include_graphics("images/screenshot-citation-keys.png")
-```
-
-11. Go to **Export** -> **Quick-Copy** in the Better BibTeX preferences. Select **Pandoc citation**.
-
-```{r}
-knitr::include_graphics("images/screenshot-pandoc-citation.png")
-```
-
-
-### Change the setting for the citekey autopin delay
-
-1. Open Zotero advanced preferences (**Zotero** -> **Settings** -> **Advanced**)
-2. Open the **Config Editor** under the **Advanced Configuration** section
-
-```{r}
-knitr::include_graphics("images/screenshot-advanced-config.png")
-```
-
-3. Click **I accept the risk!**
-4. In the search bar, search for **autopin**
-
-```{r}
-knitr::include_graphics("images/screenshot-autopin.png")
-```
-
-5. Double-click into the field under **Value**
-6. In the new window called **Enter integer value**, change the existing **0** to **2**
-
-```{r}
-knitr::include_graphics("images/screenshot-autopin-value-2.png")
-```
-
-7. Click **OK**
-8. Close all setting windows
-
-## Publish to GitHub Pages
-
-### Navigate to your repository
-
-1. Open github.com in your browser and navigate to the GitHub organisation for the course: <https://github.com/ds4owd-001>.
-
-```{r}
-knitr::include_graphics("images/gh-pages-01-gh-org.png")
-```
-
-2. Use the search field under "Repositories" to find your capstone project repository.
-
-```{r}
-knitr::include_graphics("images/gh-pages-02-search-repo.png")
-```
-
-3. Open your capstone project repository.
-
-```{r}
-knitr::include_graphics("images/gh-pages-03-open-repo.png")
-```
-
-### Make repo public
-
-If your repository's visibility is set to "private" (indicated by a small padlock next to the repositories name), you first need to switch it to "public" by following these steps:
-
-1. Click on "Settings".
-
-```{r}
-knitr::include_graphics("images/gh-pages-04-settings.png")
-```
-
-2. Stay on "General" and scroll down to the bottom of the page "Danger Zone".
-
-```{r}
-knitr::include_graphics("images/gh-pages-05-general.png")
-```
-
-3. On the first sub-heading "Change repository visibility", click "Change visibility", then "Change to public".
-
-```{r}
-knitr::include_graphics("images/gh-pages-06-danger-zone.png")
-```
-
-4. Click "I want to make this repository public".
-
-```{r}
-knitr::include_graphics("images/gh-pages-07-public.png")
-```
-
-5. Click "I have read and understand these effects".
-6. Click "Make this repository public".
-7. Provide the requested credentials.
-8. Done.
-
-### Publish with GitHub Pages
-
-1. Open your capstone project repository, and click on "Settings".
-
-```{r}
-knitr::include_graphics("images/gh-pages-04-settings.png")
-```
-
-2. In the left navigation pane, click on "Pages" under "Code and automation".
-
-```{r}
-knitr::include_graphics("images/gh-pages-08-automation.png")
-```
-
-3. Under "Build and deployment", then under Branch, click the dropdown titled "None".
-
-```{r}
-knitr::include_graphics("images/gh-pages-09-dropdown.png")
-```
-
-4. In the dropdown, select "main".
-
-```{r}
-knitr::include_graphics("images/gh-pages-10-dropdown-main.png")
-```
-
-5. Click on the dropdown titled "/ (root)". In the dropdown, select "/docs".
-
-```{r}
-knitr::include_graphics("images/gh-pages-11-root.png")
-```
-
-6. Click "Save".
-
-```{r}
-knitr::include_graphics("images/gh-pages-12-save.png")
-```
-
-### Edit "About" of repository
-
-1. Open your capstone project repository.
-
-```{r}
-knitr::include_graphics("images/gh-pages-13-gear.png")
-```
-
-2. On right side, next to "About", click on the gear icon.
-
-```{r}
-knitr::include_graphics("images/gh-pages-13-gear-click.png")
-```
-
-3. Under "Description" you can add "This project report was prepared for the data science for openwashdata course." or anything else that you would like to highlight.
-
-```{r}
-knitr::include_graphics("images/gh-pages-14-description.png")
-```
-
-4. Under "Website", click "User your GitHub Pages website".
-
-```{r}
-knitr::include_graphics("images/gh-pages-15-website.png")
-```
-
-5. Under "Include in the home page", you can remove the checked boxes.
-
-6. Click "Save changes".
-
-7. The public URL of your repository will now be shown under "About" on the right side.
-
-```{r}
-knitr::include_graphics("images/gh-pages-17-about.png")
-```
-
-8. Open your published website and enjoy.

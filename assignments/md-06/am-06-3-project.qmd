@@ -31,9 +31,9 @@ execute:
 ::: {.callout-note}
 ## Data download, cleaning, and analysis
 
-You will use the `data_download.R` file to download your data from the Google Sheet that you have established for your capstone project. Use the `googlesheets4` package to access the data. Do not clean the data, but save it in the `data/raw` folder using the `write_csv()` function. Give the the a meaningful name that describes your project.
+You will use the `01-data_download.R` file to download your data from the Google Sheet that you have established for your capstone project. Use the `googlesheets4` package to access the data. Do not clean the data, but save it in the `data/raw` folder using the `write_csv()` function. Give the the a meaningful name that describes your project.
 
-You will use the `data_cleaning.R` file to process your data into a state that is ready for analysis. Do not access the data from Google Drive, but rather use the `read_csv()` function to access your data from the `data/raw` folder. Save the processed, analysis-ready data in the `data/processed` folder using the `write_csv()` function. Again, give the file a meaningful name that describes your project.
+You will use the `02-data_cleaning.R` file to process your data into a state that is ready for analysis. Do not access the data from Google Drive, but rather use the `read_csv()` function to access your data from the `data/raw` folder. Save the processed, analysis-ready data in the `data/processed` folder using the `write_csv()` function. Again, give the file a meaningful name that describes your project.
 
 You will use the `index.qmd` file to write your final report. This will be a Quarto document that will contain your analysis and visualizations. You will need to access the processed data from the `data/processed` folder using the `read_csv()` function. 
 
