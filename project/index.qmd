@@ -68,3 +68,6 @@ grading |>
 
 ```
 
+## {{< fa Upload >}} Publish report to GitHub Pages
+
+This step is not a part of the required items that final report should be published on GitHub Pages. The report should be a single HTML file that includes all the required items. The report should be named `index.html` and should be placed in the root directory of the repository. The report should be accessible via the URL: `https://<username>.github.io/<repository-name>/index.html`.
