@@ -303,6 +303,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#github-issue-tracker" id="toc-github-issue-tracker" class="nav-link" data-scroll-target="#github-issue-tracker"><i class="fa-solid fa-pen-clip" aria-label="pen-clip"></i> GitHub issue tracker</a></li>
   <li><a href="#submission-due-date" id="toc-submission-due-date" class="nav-link" data-scroll-target="#submission-due-date"><i class="fa-solid fa-calendar-check" aria-label="calendar-check"></i> Submission due date</a></li>
   <li><a href="#required-items" id="toc-required-items" class="nav-link" data-scroll-target="#required-items"><i class="fa-solid fa-list-check" aria-label="list-check"></i> Required items</a></li>
+  <li><a href="#publish-report-to-github-pages-submit" id="toc-publish-report-to-github-pages-submit" class="nav-link" data-scroll-target="#publish-report-to-github-pages-submit"><i class="fa-solid fa-upload" aria-label="upload"></i> Publish report to GitHub Pages &amp; Submit</a>
+  <ul class="collapse">
+  <li><a href="#navigate-to-your-repository" id="toc-navigate-to-your-repository" class="nav-link" data-scroll-target="#navigate-to-your-repository">Navigate to your repository</a></li>
+  <li><a href="#make-repo-public" id="toc-make-repo-public" class="nav-link" data-scroll-target="#make-repo-public">Make repo public</a></li>
+  <li><a href="#publish-with-github-pages" id="toc-publish-with-github-pages" class="nav-link" data-scroll-target="#publish-with-github-pages">Publish with GitHub Pages</a></li>
+  <li><a href="#edit-about-of-repository" id="toc-edit-about-of-repository" class="nav-link" data-scroll-target="#edit-about-of-repository">Edit “About” of repository</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +342,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li>Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback</li>
 <li>Learners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations</li>
-<li>Learners can produce an attractive report using Quarto</li>
+<li>Learners can apply the skills obtained during the course to write a short data analysis project report.</li>
 <li>Learners can manipulate and analyse their data to answer their stated research questions</li>
 <li>Learners can critically assess their success in answering their stated research questions</li>
 </ol>
@@ -359,6 +366,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="required-items" class="level2">
 <h2 class="anchored" data-anchor-id="required-items"><i class="fa-solid fa-list-check" aria-label="list-check"></i> Required items</h2>
 <p><a href="#tbl-required-items" class="quarto-xref">Table&nbsp;1</a> is a detailed list of items that need to be included for a complete submission of the capstone project report. Items are categorized into technical, data, and intellectual tasks. If any item is unclear, please reach out to the course instructors.</p>
+<p>This list is also accessible as a Google Sheet from where you could make yourself a copy and track your progress as a checklist: <a href="https://docs.google.com/spreadsheets/d/1M272noH72YKP_NNqakKrpBeAEypgd4qYyqjRuQRKfwY/edit?usp=sharing" class="uri">https://docs.google.com/spreadsheets/d/1M272noH72YKP_NNqakKrpBeAEypgd4qYyqjRuQRKfwY/edit?usp=sharing</a></p>
 <div class="cell">
 <div id="tbl-required-items" class="cell quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -411,13 +419,13 @@ Table&nbsp;1: List of items to be completed for the capstone project report.
 <td style="text-align: right;">5</td>
 <td style="text-align: left;">technical</td>
 <td style="text-align: left;">Each data visualisation has edited human-readable labels (e.g.&nbsp;axis labels, legend title).</td>
-<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1.0</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
 <td style="text-align: left;">technical</td>
 <td style="text-align: left;">Each data visualisation applies at least of one scaling function (e.g.&nbsp;color/fill, axes).</td>
-<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1.0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">7</td>
@@ -447,7 +455,7 @@ Table&nbsp;1: List of items to be completed for the capstone project report.
 <td style="text-align: right;">11</td>
 <td style="text-align: left;">technical</td>
 <td style="text-align: left;">Each table is formatted in the rendered output using a function taught during the course (e.g.&nbsp;kable() function or gt() function).</td>
-<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1.0</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">12</td>
@@ -477,52 +485,58 @@ Table&nbsp;1: List of items to be completed for the capstone project report.
 <td style="text-align: right;">16</td>
 <td style="text-align: left;">technical</td>
 <td style="text-align: left;">References are automatically listed in References section from YAML entry to bibliography.bib file.</td>
-<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1.0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">NA</td>
+<td style="text-align: right;">17</td>
 <td style="text-align: left;">technical</td>
 <td style="text-align: left;">Data from Google Sheet is stored in data/raw using a script in 01-data-download.R in project-USERNAME repository</td>
 <td style="text-align: right;">1.0</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
 <td style="text-align: left;">data</td>
 <td style="text-align: left;">Data from data/raw folder was imported, cleaned, and stored as analysis-ready processed data in data/processed folder using R code written in 02-data-cleaning.R</td>
 <td style="text-align: right;">1.0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
 <td style="text-align: left;">data</td>
 <td style="text-align: left;">The data/processed folder contains a data dictionary.csv file with two columns (variable_name, description) which document each variable of the data in the same folder.</td>
 <td style="text-align: right;">1.0</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
 <td style="text-align: left;">data</td>
 <td style="text-align: left;">The data/processed folder contains a README.md file from a provided template and documentation is completed for the data in the same folder.</td>
 <td style="text-align: right;">1.0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">20</td>
-<td style="text-align: left;">intellectual</td>
-<td style="text-align: left;">Introduction section with 3 to 5 sentences introduces the context within which the data was created.</td>
-<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">publish</td>
+<td style="text-align: left;">The capstone project report is published using GitHub Pages. See instructions below.</td>
+<td style="text-align: right;">1.0</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">21</td>
 <td style="text-align: left;">intellectual</td>
-<td style="text-align: left;">Methods section describes in 3 to 5 sentences how the data was obtained.</td>
-<td style="text-align: right;">5.0</td>
+<td style="text-align: left;">Introduction section with 3 to 5 sentences introduces the context within which the data was created.</td>
+<td style="text-align: right;">2.0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">22</td>
 <td style="text-align: left;">intellectual</td>
-<td style="text-align: left;">Figures and tables in Results section are interpreted with 2 to 3 sentences each.</td>
-<td style="text-align: right;">5.0</td>
+<td style="text-align: left;">Methods section describes in 3 to 5 sentences how the data was obtained.</td>
+<td style="text-align: right;">4.0</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">23</td>
+<td style="text-align: left;">intellectual</td>
+<td style="text-align: left;">Figures and tables in Results section are interpreted with 2 to 3 sentences each.</td>
+<td style="text-align: right;">4.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">24</td>
 <td style="text-align: left;">intellectual</td>
 <td style="text-align: left;">Conclusions concisely summarize findings in a bullet point format.</td>
 <td style="text-align: right;">2.0</td>
@@ -534,8 +548,266 @@ Table&nbsp;1: List of items to be completed for the capstone project report.
 </figure>
 </div>
 </div>
+</section>
+<section id="publish-report-to-github-pages-submit" class="level2">
+<h2 class="anchored" data-anchor-id="publish-report-to-github-pages-submit"><i class="fa-solid fa-upload" aria-label="upload"></i> Publish report to GitHub Pages &amp; Submit</h2>
+<p>Your report is concluded by publishing it to GitHub Pages and submitting the link through a GitHub issue on your capstone project repository. Please tag the course instructors in the issue: <code>@larnsce</code>, <code>@elizabeth-tilley</code>, <code>@bonschorno</code>. We will review the report and provide feedback.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Screenshots show different GitHub organization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please note that the screenshots in this section show the GitHub organization for a class titled “ds4owd-001”. Your repositories are stored in the GitHub organization “rbtl-fs24”. Please keep that in mind when working through the steps.</p>
+</div>
+</div>
+<section id="navigate-to-your-repository" class="level3">
+<h3 class="anchored" data-anchor-id="navigate-to-your-repository">Navigate to your repository</h3>
+<ol type="1">
+<li>Open github.com in your browser and navigate to the GitHub organisation for the course: <a href="https://github.com/rbtl-fs24" class="uri">https://github.com/rbtl-fs24</a>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-01-gh-org.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Use the search field under “Repositories” to find your capstone project repository.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-02-search-repo.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Open your capstone project repository.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-03-open-repo.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="make-repo-public" class="level3">
+<h3 class="anchored" data-anchor-id="make-repo-public">Make repo public</h3>
+<p>If your repository’s visibility is set to “private” (indicated by a small padlock next to the repositories name), you first need to switch it to “public” by following these steps:</p>
+<ol type="1">
+<li>Click on “Settings”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-04-settings.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Stay on “General” and scroll down to the bottom of the page “Danger Zone”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-05-general.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>On the first sub-heading “Change repository visibility”, click “Change visibility”, then “Change to public”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-06-danger-zone.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Click “I want to make this repository public”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-07-public.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Click “I have read and understand these effects”.</li>
+<li>Click “Make this repository public”.</li>
+<li>Provide the requested credentials.</li>
+<li>Done.</li>
+</ol>
+</section>
+<section id="publish-with-github-pages" class="level3">
+<h3 class="anchored" data-anchor-id="publish-with-github-pages">Publish with GitHub Pages</h3>
+<ol type="1">
+<li>Open your capstone project repository, and click on “Settings”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-04-settings.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>In the left navigation pane, click on “Pages” under “Code and automation”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-08-automation.png" class="img-fluid figure-img" width="514"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Under “Build and deployment”, then under Branch, click the dropdown titled “None”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-09-dropdown.png" class="img-fluid figure-img" width="506"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>In the dropdown, select “main”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-10-dropdown-main.png" class="img-fluid figure-img" width="506"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Click on the dropdown titled “/ (root)”. In the dropdown, select “/docs”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-11-root.png" class="img-fluid figure-img" width="506"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Click “Save”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-12-save.png" class="img-fluid figure-img" width="506"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="edit-about-of-repository" class="level3">
+<h3 class="anchored" data-anchor-id="edit-about-of-repository">Edit “About” of repository</h3>
+<ol type="1">
+<li>Open your capstone project repository.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-13-gear.png" class="img-fluid figure-img" width="506"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>On right side, next to “About”, click on the gear icon.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-13-gear-click.png" class="img-fluid figure-img" width="506"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Under “Description” you can add “This project report was prepared for the data science for openwashdata course.” or anything else that you would like to highlight.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-14-description.png" class="img-fluid figure-img" width="506"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Under “Website”, click “User your GitHub Pages website”.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-15-website.png" class="img-fluid figure-img" width="484"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li><p>Under “Include in the home page”, you can remove the checked boxes.</p></li>
+<li><p>Click “Save changes”.</p></li>
+<li><p>The public URL of your repository will now be shown under “About” on the right side.</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/gh-pages-17-about.png" class="img-fluid figure-img" width="502"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li><p>Open your published website and enjoy.</p></li>
+<li><p>Submit the link to your report in a GitHub issue on your capstone project repository. Tag the course instructors: <code>@larnsce</code>, <code>@elizabeth-tilley</code>, <code>@bonschorno</code>.</p></li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
