@@ -53,7 +53,7 @@ library(here)
 
 ![[Source](https://www.eea.europa.eu/data-and-maps/figures/urban-and-rural-population-in): European Environment Agency (EEA)](img/lec-08/20050_GMT2_Fig1_urban-switching.png)
 
-------------------------------------------------------------------------
+## Challenges of SWM
 
 -   Public health
 -   Environmental health – Local and Global

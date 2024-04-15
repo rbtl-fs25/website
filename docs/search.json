@@ -34,7 +34,7 @@
     "href": "modules/md-08.html#slides",
     "title": "Module 8",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
       "Module 08"
     ]
@@ -5336,5 +5336,12 @@
     "title": "Data types & Vectors & Pivoting",
     "section": "",
     "text": "04th April 2024: no class, Easter Break\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\nNA\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\nNA\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\nNA\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\nNA\n06 June 2024\nProject Submission Deadline\n\n\nNA\n13 June 2024\nExam"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#challenges-of-swm",
+    "href": "slides/lec-08-waste-research.html#challenges-of-swm",
+    "title": "Waste Research",
+    "section": "Challenges of SWM",
+    "text": "Challenges of SWM\n\nPublic health\nEnvironmental health – Local and Global\nResource value\n\nSpecial concern when ecological carrying capacity is overburdened\n\nPopulation density = risk of exposure\nWaste materials properties = severity of exposure"
   }
 ]

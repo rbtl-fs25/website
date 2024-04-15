@@ -1,8 +1,8 @@
 {
-  "hash": "3f00d6b287eea2674a9dd0a7ba8279e5",
+  "hash": "17f2693fb52bdace70e161bbfcab40fe",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 8\"\nsubtitle: \"{{< var md-08.title >}}\"\neditor: source\nparams:\n    module: 8\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can articulate the scale and drivers of the challenges in solid waste management\n2. Learners understand the flow of waste from Generation to Recovery\n3. Learners can identify waste management challenges at ETH and/or Zurich\n4. Learners can develop their own research questions using either the PICOT or FINER method\n:::\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "markdown": "---\ntitle: \"Module 8\"\nsubtitle: \"{{< var md-08.title >}}\"\neditor: source\nparams:\n    module: 8\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can articulate the scale and drivers of the challenges in solid waste management\n2. Learners understand the flow of waste from Generation to Recovery\n3. Learners can identify waste management challenges at ETH and/or Zurich\n4. Learners can develop their own research questions using either the PICOT or FINER method\n:::\n\n\n## {{< fa display >}} Slides\n\n[View slides in full screen](../slides/lec-08-quarto.html) | [Download slides as PDF](https://github.com/rbtl-fs24/website/raw/main/slides/lec-08-quarto.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../slides/lec-08-quarto.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
