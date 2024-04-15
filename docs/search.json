@@ -14,7 +14,7 @@
     "href": "modules/md-08.html",
     "title": "Module 8",
     "section": "",
-    "text": "Learners can explain the 3 main types of research designs used in RBTL\nLearners can explain the pros and cons of each research design type as they relate to answering a research question\nLearners understand the methods used to read a scientific manuscript and are prepared to put their knowledge into practice",
+    "text": "Learners can articulate the scale and drivers of the challenges in solid waste management\nLearners understand the flow of waste from Generation to Recovery\nLearners can identify waste management challenges at ETH and/or Zurich\nLearners can develop their own research questions using either the PICOT or FINER method",
     "crumbs": [
       "Module 08"
     ]
@@ -24,7 +24,7 @@
     "href": "modules/md-08.html#learning-objectives",
     "title": "Module 8",
     "section": "",
-    "text": "Learners can explain the 3 main types of research designs used in RBTL\nLearners can explain the pros and cons of each research design type as they relate to answering a research question\nLearners understand the methods used to read a scientific manuscript and are prepared to put their knowledge into practice",
+    "text": "Learners can articulate the scale and drivers of the challenges in solid waste management\nLearners understand the flow of waste from Generation to Recovery\nLearners can identify waste management challenges at ETH and/or Zurich\nLearners can develop their own research questions using either the PICOT or FINER method",
     "crumbs": [
       "Module 08"
     ]
@@ -394,8 +394,8 @@
     "objectID": "slides/lec-06-vectors.html#course-calendar",
     "href": "slides/lec-06-vectors.html#course-calendar",
     "title": "Data types & Vectors & Pivoting",
-    "section": "Course calendar",
-    "text": "Course calendar\n\n04th April 2024: no class, Easter Break\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\nNA\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\nNA\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\nNA\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\nNA\n06 June 2024\nProject Submission Deadline\n\n\nNA\n13 June 2024\nExam"
+    "section": "",
+    "text": "04th April 2024: no class, Easter Break\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\nNA\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\nNA\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\nNA\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\nNA\n06 June 2024\nProject Submission Deadline\n\n\nNA\n13 June 2024\nExam"
   },
   {
     "objectID": "slides/lec-06-vectors.html#learning-objectives-for-this-week",
@@ -416,14 +416,14 @@
     "href": "slides/lec-06-vectors.html#table-cross-references",
     "title": "Data types & Vectors & Pivoting",
     "section": "Table cross references",
-    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table reference-able:\nSee @tbl-penguins for data on a few penguins.\nbecomes:\nSee Table 1 for data on a few penguins.\n\n```{r}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\nhead(penguins) |&gt; \n  gt()\n```\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table reference-able:\nSee @tbl-penguins for data on a few penguins.\nbecomes:\nSee Table 1 for data on a few penguins.\n\n```{r}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\nhead(penguins) |&gt; \n  gt()\n```\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
   },
   {
     "objectID": "slides/lec-06-vectors.html#figure-cross-references",
     "href": "slides/lec-06-vectors.html#figure-cross-references",
     "title": "Data types & Vectors & Pivoting",
     "section": "Figure cross references",
-    "text": "Figure cross references\nThe presence of the caption (A few penguins) and label (#fig-penguins) make this figure reference-able:\nSee @fig-penguins for data on a few penguins.\nbecomes:\nSee Figure 1 for data on a few penguins.\n\n```{r}\n#| label: fig-penguins\n#| fig-cap: A few penguins\n#| fig-width: 6\n#| fig-asp: 0.618\n\nggplot(penguins, aes(x = species, fill = species)) +\n  geom_bar(show.legend = FALSE)\n```\n\n\n\nFigure 1: A few penguins"
+    "text": "Figure cross references\nThe presence of the caption (A few penguins) and label (#fig-penguins) make this figure reference-able:\nSee @fig-penguins for data on a few penguins.\nbecomes:\nSee Figure 1 for data on a few penguins.\n\n```{r}\n#| label: fig-penguins\n#| fig-cap: A few penguins\n#| fig-width: 6\n#| fig-asp: 0.618\n\nggplot(penguins, aes(x = species, fill = species)) +\n  geom_bar(show.legend = FALSE)\n```\n\n\n\n\n\n\n\nFigure 1: A few penguins"
   },
   {
     "objectID": "slides/lec-06-vectors.html#your-turn-md-06-exercises---cross-references",
@@ -681,8 +681,8 @@
     "objectID": "slides/lec-05-conditions.html#learning-objectives-for-this-week",
     "href": "slides/lec-05-conditions.html#learning-objectives-for-this-week",
     "title": "Conditions & Dates & Tables",
-    "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from dplyr to change specific values of a variable in a dataframe.\nLearners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\nLearners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
+    "section": "",
+    "text": "Learners can apply functions from dplyr to change specific values of a variable in a dataframe.\nLearners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\nLearners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
   },
   {
     "objectID": "slides/lec-05-conditions.html#part-1-reading",
@@ -703,14 +703,14 @@
     "href": "slides/lec-05-conditions.html#rules-for-variable-names",
     "title": "Conditions & Dates & Tables",
     "section": "Rules for variable names",
-    "text": "Rules for variable names\n\navoid spaces\navoid special characters\nuse consistent naming conventions (e.g. snake_case)\n\n\n\n\nuse\n\nts\nusers\nsystem\n\n\navoid\n\nTotal Solids (g/L)\nNumber of users\nSystem (pit latrine / septic tank)"
+    "text": "Rules for variable names\n\navoid spaces\navoid special characters\nuse consistent naming conventions (e.g. snake_case)\n\n. . .\n\n\nuse\n\nts\nusers\nsystem\n\n\navoid\n\nTotal Solids (g/L)\nNumber of users\nSystem (pit latrine / septic tank)"
   },
   {
     "objectID": "slides/lec-05-conditions.html#data-dictionary-codebook",
     "href": "slides/lec-05-conditions.html#data-dictionary-codebook",
     "title": "Conditions & Dates & Tables",
     "section": "Data dictionary / codebook",
-    "text": "Data dictionary / codebook\n\nvariable descriptions belong into a data dictionary / codebook (not into variable names)\ndata dictionaries / codebooks are separate files\n\n\n\n\n\n\n\n\n\nvariable_name\ndescription\n\n\n\n\nts\nTotal solids in g/L.\n\n\nusers\nNumber of users per system.\n\n\nsystem\nSanitation system in use at sample location (septic tank / pit latrine)."
+    "text": "Data dictionary / codebook\n\nvariable descriptions belong into a data dictionary / codebook (not into variable names)\ndata dictionaries / codebooks are separate files\n\n. . .\n\n\n\n\n\n\n\nvariable_name\ndescription\n\n\n\n\nts\nTotal solids in g/L.\n\n\nusers\nNumber of users per system.\n\n\nsystem\nSanitation system in use at sample location (septic tank / pit latrine)."
   },
   {
     "objectID": "slides/lec-05-conditions.html#dplyr-functions-mutate-case_when",
@@ -745,14 +745,14 @@
     "href": "slides/lec-05-conditions.html#task-1",
     "title": "Conditions & Dates & Tables",
     "section": "Task 1",
-    "text": "Task 1\n\nA mistake happened during data entry for sample id 16. Use mutate() and case_when() to change the ts value of 0.72 to 8.72.\n\n\nsludge |&gt; \n    mutate(ts = case_when(\n        ts ==  0.72 ~ 8.72,\n        .default = ts\n    ))\n\n\n\n\n\n\n\n\n\nid\ndate\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\npit latrine\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
+    "text": "Task 1\n\nA mistake happened during data entry for sample id 16. Use mutate() and case_when() to change the ts value of 0.72 to 8.72.\n\n\nsludge |&gt; \n    mutate(ts = case_when(\n        ts ==  0.72 ~ 8.72,\n        .default = ts\n    ))\n\n\n\n\n\n\n\n\n\n\nid\ndate\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\npit latrine\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
   },
   {
     "objectID": "slides/lec-05-conditions.html#task-2",
     "href": "slides/lec-05-conditions.html#task-2",
     "title": "Conditions & Dates & Tables",
     "section": "Task 2",
-    "text": "Task 2\n\nAnother mistake happened during data entry for sample id 6. Use mutate() and case_when() to change the system value of id 6 from “pit latrine” to “septic tank”.\n\n\nsludge |&gt; \n    mutate(system = case_when(\n        id ==  6 ~ \"septic tank\",\n        .default = system\n    ))\n\n\n\n\n\n\n\n\n\nid\ndate\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n0.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
+    "text": "Task 2\n\nAnother mistake happened during data entry for sample id 6. Use mutate() and case_when() to change the system value of id 6 from “pit latrine” to “septic tank”.\n\n\nsludge |&gt; \n    mutate(system = case_when(\n        id ==  6 ~ \"septic tank\",\n        .default = system\n    ))\n\n\n\n\n\n\n\n\n\n\nid\ndate\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n0.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64"
   },
   {
     "objectID": "slides/lec-05-conditions.html#task-3-stretch-goal",
@@ -766,14 +766,14 @@
     "href": "slides/lec-05-conditions.html#task-3-stretch-goal-1",
     "title": "Conditions & Dates & Tables",
     "section": "Task 3 (stretch goal)",
-    "text": "Task 3 (stretch goal)\n\nsludge |&gt; \n    mutate(ts_cat = case_when(\n        ts &lt; 15 ~ \"low\",\n        ts &gt;= 15 & ts &lt;= 50 ~ \"medium\",\n        ts &gt; 50 ~ \"high\"\n    ))\n\n\n\n\n\n\n\n\n\nid\ndate\nsystem\nlocation\nusers\nts\nts_cat\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\nhigh\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\nhigh\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\nhigh\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\nmedium\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\nhigh\n\n\n6\n2023-11-02\npit latrine\nhousehold\n7\n78.21\nhigh\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\nmedium\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\nmedium\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\nhigh\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\nlow\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\nlow\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\nhigh\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\nhigh\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\nmedium\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\nmedium\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n0.72\nlow\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\nmedium\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\nlow\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\nmedium\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64\nmedium"
+    "text": "Task 3 (stretch goal)\n\nsludge |&gt; \n    mutate(ts_cat = case_when(\n        ts &lt; 15 ~ \"low\",\n        ts &gt;= 15 & ts &lt;= 50 ~ \"medium\",\n        ts &gt; 50 ~ \"high\"\n    ))\n\n\n\n\n\n\n\n\n\n\nid\ndate\nsystem\nlocation\nusers\nts\nts_cat\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\nhigh\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\nhigh\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\nhigh\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\nmedium\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\nhigh\n\n\n6\n2023-11-02\npit latrine\nhousehold\n7\n78.21\nhigh\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\nmedium\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\nmedium\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\nhigh\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\nlow\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\nlow\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\nhigh\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\nhigh\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\nmedium\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\nmedium\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n0.72\nlow\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\nmedium\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\nlow\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\nmedium\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64\nmedium"
   },
   {
     "objectID": "slides/lec-05-conditions.html#task-3-stretch-goal-2",
     "href": "slides/lec-05-conditions.html#task-3-stretch-goal-2",
     "title": "Conditions & Dates & Tables",
     "section": "Task 3 (stretch goal)",
-    "text": "Task 3 (stretch goal)\n\nsludge |&gt; \n    mutate(ts_cat = case_when(\n        ts &lt; 15 ~ \"low\",\n        ts &gt;= 15 & ts &lt;= 50 ~ \"medium\",\n        ts &gt; 50 ~ \"high\"\n    )) |&gt; \n  count(ts_cat)\n\n\n\n\n\n\n\n\n\nts_cat\nn\n\n\n\n\nhigh\n8\n\n\nlow\n4\n\n\nmedium\n8"
+    "text": "Task 3 (stretch goal)\n\nsludge |&gt; \n    mutate(ts_cat = case_when(\n        ts &lt; 15 ~ \"low\",\n        ts &gt;= 15 & ts &lt;= 50 ~ \"medium\",\n        ts &gt; 50 ~ \"high\"\n    )) |&gt; \n  count(ts_cat)\n\n\n\n\n\n\n\n\n\n\nts_cat\nn\n\n\n\n\nhigh\n8\n\n\nlow\n4\n\n\nmedium\n8"
   },
   {
     "objectID": "slides/lec-05-conditions.html#dates-and-times-in-r",
@@ -822,7 +822,7 @@
     "href": "slides/lec-05-conditions.html#table-cross-references",
     "title": "Conditions & Dates & Tables",
     "section": "Table cross references",
-    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table referenceable:\nSee @tbl-penguins for data on a few penguins.\nbecomes:\nSee Table 1 for data on a few penguins.\n\n```{r}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\nhead(penguins) |&gt; \n  gt()\n```\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table referenceable:\nSee @tbl-penguins for data on a few penguins.\nbecomes:\nSee Table 1 for data on a few penguins.\n\n```{r}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\nhead(penguins) |&gt; \n  gt()\n```\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
   },
   {
     "objectID": "slides/lec-05-conditions.html#module-5-documentation",
@@ -856,8 +856,8 @@
     "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
     "href": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
     "title": "Data import & Data organization in spreadsheets",
-    "section": "Learning Objectives (for this module)",
-    "text": "Learning Objectives (for this module)\n\n\nLearners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
+    "section": "",
+    "text": "Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
@@ -885,14 +885,14 @@
     "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-3",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Task 3: Data for a country of your choice",
-    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000 | year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n\n\niso3\nyear\nvarname_short\nn\n\n\n\n\nUGA\n2000\nsan_bas\n3\n\n\nUGA\n2000\nsan_lim\n3\n\n\nUGA\n2000\nsan_od\n3\n\n\nUGA\n2000\nsan_unimp\n3\n\n\nUGA\n2020\nsan_bas\n3\n\n\nUGA\n2020\nsan_lim\n3\n\n\nUGA\n2020\nsan_od\n3\n\n\nUGA\n2020\nsan_unimp\n3"
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000 | year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n\n\n\niso3\nyear\nvarname_short\nn\n\n\n\n\nUGA\n2000\nsan_bas\n3\n\n\nUGA\n2000\nsan_lim\n3\n\n\nUGA\n2000\nsan_od\n3\n\n\nUGA\n2000\nsan_unimp\n3\n\n\nUGA\n2020\nsan_bas\n3\n\n\nUGA\n2020\nsan_lim\n3\n\n\nUGA\n2020\nsan_od\n3\n\n\nUGA\n2020\nsan_unimp\n3"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
     "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-4",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Task 3: Data for a country of your choice",
-    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000, year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n\n\niso3\nyear\nvarname_short\nn\n\n\n\n\n\n\n\n\n\n\n\n\n# A tibble: 0 × 4\n# ℹ 4 variables: iso3 &lt;chr&gt;, year &lt;dbl&gt;, varname_short &lt;chr&gt;, n &lt;int&gt;\n\n\n\nOne row cannot have two values (2000 and 2020) for the same variable\nOne year cannot 2000 & 2020 at the same time\nOne year is either 2000 or 2020"
+    "text": "Task 3: Data for a country of your choice\n\n\n\n for the country you live or work in\n for the year 2000 and 2020\n for all variables that are not “safely managed sanitation services”\n\n\n\nsanitation_uga &lt;- sanitation |&gt; \n  filter(iso3 == \"UGA\",\n         year == 2000, year == 2020, \n         varname_short != \"san_sm\")\n\n \n\nsanitation_uga |&gt; \n  count(iso3, year, varname_short)\n\n\n\n\n\n\n\n\n\n\n\niso3\nyear\nvarname_short\nn\n\n\n\n\n\n\n\n\n\n\n\n\n\n# A tibble: 0 × 4\n# ℹ 4 variables: iso3 &lt;chr&gt;, year &lt;dbl&gt;, varname_short &lt;chr&gt;, n &lt;int&gt;\n\n\n\nOne row cannot have two values (2000 and 2020) for the same variable\nOne year cannot 2000 & 2020 at the same time\nOne year is either 2000 or 2020"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it",
@@ -920,7 +920,7 @@
     "href": "slides/lec-04-spreadsheets.html#sanitation-ladder",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Sanitation ladder?",
-    "text": "Sanitation ladder?\n\n\n\n\n\n\n\n\nvarname_short\nvarname_long\nsimplified\n\n\n\n\nsan_sm\nsafely managed sanitation services\na decent toilet that's not shared, and where pee & poo safely moved & treated\n\n\nsan_bas\nbasic sanitation services (improved sanitation facilities which are not shared)\na decent toilet that's not shared\n\n\nsan_lim\nlimited sanitation services (improved sanitation facilities which are shared)\na decent toilet that's shared\n\n\nsan_unimp\nunimproved sanitation facilities\nan inadequate toilet\n\n\nsan_od\nno sanitation facilities (open defecation)\nno toilet"
+    "text": "Sanitation ladder?\n\n\n\n\n\n\n\n\n\nvarname_short\nvarname_long\nsimplified\n\n\n\n\nsan_sm\nsafely managed sanitation services\na decent toilet that's not shared, and where pee & poo safely moved & treated\n\n\nsan_bas\nbasic sanitation services (improved sanitation facilities which are not shared)\na decent toilet that's not shared\n\n\nsan_lim\nlimited sanitation services (improved sanitation facilities which are shared)\na decent toilet that's shared\n\n\nsan_unimp\nunimproved sanitation facilities\nan inadequate toilet\n\n\nsan_od\nno sanitation facilities (open defecation)\nno toilet"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-3",
@@ -948,7 +948,7 @@
     "href": "slides/lec-04-spreadsheets.html#types-of-variables---remember",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Types of variables - Remember?",
-    "text": "Types of variables - Remember?\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
+    "text": "Types of variables - Remember?\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#my-turn-factors-in-r",
@@ -983,7 +983,7 @@
     "href": "slides/lec-04-spreadsheets.html#csv-xlsx",
     "title": "Data import & Data organization in spreadsheets",
     "section": "CSV & XLSX",
-    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - comma delimited files\nread_csv2() - semicolon separated files (common in countries where , is used as the decimal place)\nread_tsv() - tab delimited files\nread_delim() - reads in files with any delimiter\n…\n\n\nreadxl\n\nread_excel() - read xls or xlsx files\n…"
+    "text": "CSV & XLSX\n\n\n\nreadr\n\nread_csv() - comma delimited files\nread_csv2() - semicolon separated files (common in countries where , is used as the decimal place)\nread_tsv() - tab delimited files\nread_delim() - reads in files with any delimiter\n…\n\n\n\n\nreadxl\n\nread_excel() - read xls or xlsx files\n…"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#reading-data-from-csv-files",
@@ -1011,7 +1011,7 @@
     "href": "slides/lec-04-spreadsheets.html#writing-data-as-csv-files-1",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Writing data as CSV files",
-    "text": "Writing data as CSV files\n\ntransform data\nexport data underlying a publication\n\n\n# data transformation\ntbl_sludge_summary &lt;- sludge |&gt; \n  filter(!is.na(users)) |&gt; \n  group_by(system, location) |&gt; \n  summarise(\n    count = n(),\n    mean_ts = mean(ts),\n    sd_ts = sd(ts),\n    median_ts = median(ts)\n  ) \n\n# export data underlying a publication \nwrite_csv(tbl_sludge_summary, \"data/final/tbl-01-faecal-sludge-summary.csv\")\n\n\n\n\n\n\n\n\n\nsystem\nlocation\ncount\nmean_ts\nsd_ts\nmedian_ts\n\n\n\n\npit latrine\nhousehold\n4\n90.7\n45.9\n99.9\n\n\npit latrine\npublic toilet\n5\n37.8\n31.3\n22.6\n\n\nseptic tank\nhousehold\n5\n39.0\n30.8\n29.4\n\n\nseptic tank\npublic toilet\n5\n20.4\n14.3\n15.6"
+    "text": "Writing data as CSV files\n\ntransform data\nexport data underlying a publication\n\n\n# data transformation\ntbl_sludge_summary &lt;- sludge |&gt; \n  filter(!is.na(users)) |&gt; \n  group_by(system, location) |&gt; \n  summarise(\n    count = n(),\n    mean_ts = mean(ts),\n    sd_ts = sd(ts),\n    median_ts = median(ts)\n  ) \n\n# export data underlying a publication \nwrite_csv(tbl_sludge_summary, \"data/final/tbl-01-faecal-sludge-summary.csv\")\n\n\n\n\n\n\n\n\n\n\nsystem\nlocation\ncount\nmean_ts\nsd_ts\nmedian_ts\n\n\n\n\npit latrine\nhousehold\n4\n90.7\n45.9\n99.9\n\n\npit latrine\npublic toilet\n5\n37.8\n31.3\n22.6\n\n\nseptic tank\nhousehold\n5\n39.0\n30.8\n29.4\n\n\nseptic tank\npublic toilet\n5\n20.4\n14.3\n15.6"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#research-data-management",
@@ -1039,7 +1039,7 @@
     "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-1",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\n\n\nScreenshot taken on 2023-11-21"
+    "text": "Data Organization in Spreadsheets\n\n\n\n\n\n\n\n\n\n\nScreenshot taken on 2023-11-21"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-2",
@@ -1067,7 +1067,7 @@
     "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\nLicense? CC0 (!)\n\n\nScreenshot taken on 2022-03-23"
+    "text": "Data Organization in Spreadsheets\nLicense? CC0 (!)\n\n\n\n\n\n\n\n\n\n\nScreenshot taken on 2022-03-23"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#module-4-documentation",
@@ -1088,7 +1088,7 @@
     "href": "slides/lec-04-spreadsheets.html#thanks",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "slides/lec-01-welcome.html#section",
@@ -1298,7 +1298,7 @@
     "href": "slides/lec-01-welcome.html#your-turn-log-into-posit-cloud-with-github-account",
     "title": "Welcome & get ready for the course",
     "section": "Your turn: Log into Posit Cloud with GitHub account",
-    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nOpen a web browser on your laptop.\nNavigate to the course website: rbtl-fs24.github.io/website/\nIf you haven’t yet, bookmark the course website\nIn the left-hand menu, clock on Module 1, then select am-02: Posit Cloud\nFollow the instructions\nPlace a yellow sticky note on your laptop when you have completed the assignment\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\n\n\n−+\n05:00"
+    "text": "Your turn: Log into Posit Cloud with GitHub account\n\nOpen a web browser on your laptop.\nNavigate to the course website: rbtl-fs24.github.io/website/\nIf you haven’t yet, bookmark the course website\nIn the left-hand menu, clock on Module 1, then select am-02: Posit Cloud\nFollow the instructions\nPlace a yellow sticky note on your laptop when you have completed the assignment\n\n\n\n\n\n\n\nGitHub Authorisation\n\n\n\n\nIf this is your first time logging in to Posit Cloud with your GitHub account, you will be prompted to authorize Posit Cloud to access your GitHub account information.\nOnce you have authorized access, you will be redirected back to the Posit Cloud website and logged in to your account.\n\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/lec-01-welcome.html#meeting-you-where-you-are",
@@ -1312,7 +1312,7 @@
     "href": "slides/lec-01-welcome.html#quarto",
     "title": "Welcome & get ready for the course",
     "section": "Quarto …",
-    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "slides/lec-01-welcome.html#my-turn-a-tour-of-quarto",
@@ -1347,7 +1347,7 @@
     "href": "slides/lec-01-welcome.html#one-install-batteries-included",
     "title": "Welcome & get ready for the course",
     "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n\n\n\nAny language, exact same approach and syntax"
+    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n. . .\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n\n\n. . .\n\nAny language, exact same approach and syntax"
   },
   {
     "objectID": "slides/lec-01-welcome.html#many-quarto-formats",
@@ -1389,7 +1389,7 @@
     "href": "slides/lec-01-welcome.html#grading-scheme",
     "title": "Welcome & get ready for the course",
     "section": "Grading scheme",
-    "text": "Grading scheme\nTable Table 1 shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n93 points = 5.75\n92 points = 5.50\n45 points = 4.00\n44 points = 3.50\n\n\n\n\n\nTable 1: Conversion from points to grades.\n\n\n\n\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0"
+    "text": "Grading scheme\nTable Table 1 shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n93 points = 5.75\n92 points = 5.50\n45 points = 4.00\n44 points = 3.50\n\n\n\n\n\nTable 1: Conversion from points to grades.\n\n\n\n\n\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0"
   },
   {
     "objectID": "slides/lec-01-welcome.html#end-of-semester-exam",
@@ -1459,14 +1459,14 @@
     "href": "slides/lec-01-welcome.html#thanks",
     "title": "Welcome & get ready for the course",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "slides/lec-07-pivoting-joining.html#learning-objectives-for-this-week",
     "href": "slides/lec-07-pivoting-joining.html#learning-objectives-for-this-week",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
-    "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+    "section": "",
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website."
   },
   {
     "objectID": "slides/lec-07-pivoting-joining.html#your-turn-discuss-the-reading",
@@ -1697,7 +1697,7 @@
     "href": "slides/lec-07-pivoting-joining.html#faecal-sludge-samples-2",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Faecal sludge samples",
-    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
+    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n. . .\nQuestions that only the original author may have the answers to."
   },
   {
     "objectID": "slides/lec-07-pivoting-joining.html#you-as-an-author",
@@ -2736,8 +2736,8 @@
     "objectID": "slides/lec-02-visualisation.html#email-from-github",
     "href": "slides/lec-02-visualisation.html#email-from-github",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
-    "section": "Email from GitHub?",
-    "text": "Email from GitHub?\nWhile we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
+    "section": "",
+    "text": "While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section",
@@ -3129,7 +3129,7 @@
     "href": "slides/lec-02-visualisation.html#boxplot-explained",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Boxplot, explained",
-    "text": "Boxplot, explained\n\n\nFigure 1: Diagram depicting how a boxplot is created.\n\nImage taken from: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nA box that indicates the range of the middle half of the data, a distance known as the interquartile range (IQR), stretching from the 25th percentile of the distribution to the 75th percentile.\nIn the middle of the box is a line that displays the median, i.e. 50th percentile, of the distribution.\nThese three lines give you a sense of the spread of the distribution and whether or not the distribution is symmetric about the median or skewed to one side.\nVisual points that display observations that fall more than 1.5 times the IQR from either edge of the box. These outlying points are unusual so are plotted individually.\nA line (or whisker) that extends from each end of the box and goes to the farthest non-outlier point in the distribution."
+    "text": "Boxplot, explained\n\n\n\n\n\n\n\n\nFigure 1: Diagram depicting how a boxplot is created.\n\n\n\n\n\n\nImage taken from: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nA box that indicates the range of the middle half of the data, a distance known as the interquartile range (IQR), stretching from the 25th percentile of the distribution to the 75th percentile.\nIn the middle of the box is a line that displays the median, i.e. 50th percentile, of the distribution.\nThese three lines give you a sense of the spread of the distribution and whether or not the distribution is symmetric about the median or skewed to one side.\nVisual points that display observations that fall more than 1.5 times the IQR from either edge of the box. These outlying points are unusual so are plotted individually.\nA line (or whisker) that extends from each end of the box and goes to the farthest non-outlier point in the distribution."
   },
   {
     "objectID": "slides/lec-02-visualisation.html#our-turn-md-02-exercises",
@@ -3150,7 +3150,7 @@
     "href": "slides/lec-02-visualisation.html#types-of-variables",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Types of variables",
-    "text": "Types of variables\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
+    "text": "Types of variables\n\n\n\n\nnumerical\ndiscrete variables\n\nnon-negative\nwhole numbers\ne.g. number of students, roll of a dice\n\ncontinuous variables\n\ninfinite number of values\nalso dates and times\ne.g. length, weight, size\n\n\n\n\nnon-numerical\ncategorical variables\n\nfinite number of values\ndistinct groups (e.g. EU countries, continents)\nordinal if levels have natural ordering (e.g. week days, school grades)"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#histogram",
@@ -3199,14 +3199,14 @@
     "href": "slides/lec-02-visualisation.html#thanks",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#exam-update",
     "href": "slides/lec-04-tidy-data.html#exam-update",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
-    "section": "Exam Update",
-    "text": "Exam Update\n\nNo exam anymore in Week 8\nDue date for Capstone Project will be extended (due on 28th July)\nCapstone Project contributes 40% to grade instead of 20%\n\n\n\n\ntype\npercent\n\n\n\n\nHomework assignments\n40\n\n\nLearning reflections\n20\n\n\nCapstone project\n40"
+    "section": "",
+    "text": "No exam anymore in Week 8\nDue date for Capstone Project will be extended (due on 28th July)\nCapstone Project contributes 40% to grade instead of 20%\n\n\n\n\ntype\npercent\n\n\n\n\nHomework assignments\n40\n\n\nLearning reflections\n20\n\n\nCapstone project\n40"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#learning-objectives-for-this-week",
@@ -3443,8 +3443,8 @@
     "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
     "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
     "title": "Data transformation with dplyr",
-    "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
+    "section": "",
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
   },
   {
     "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
@@ -3493,7 +3493,7 @@
     "href": "slides/lec-03-transformation.html#data",
     "title": "Data transformation with dplyr",
     "section": "Data",
-    "text": "Data\n\nhead(sanitation)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\niso3\nyear\nregion_sdg\nvarname_short\nvarname_long\nresidence\npercent\n\n\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nnational\n21.9\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nrural\n19.3\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nurban\n30.9\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nnational\n5.6\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nrural\n3.1\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nurban\n14.5\n\n\n\n\n\n\n\n\nncol(sanitation)\n\n[1] 8\n\n\n\n\n\n\nnrow(sanitation)\n\n[1] 73710"
+    "text": "Data\n\nhead(sanitation)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\niso3\nyear\nregion_sdg\nvarname_short\nvarname_long\nresidence\npercent\n\n\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nnational\n21.9\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nrural\n19.3\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nurban\n30.9\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nnational\n5.6\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nrural\n3.1\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nurban\n14.5\n\n\n\n\n\n\n. . .\n\nncol(sanitation)\n\n[1] 8\n\n\n\n. . .\n\nnrow(sanitation)\n\n[1] 73710"
   },
   {
     "objectID": "slides/lec-03-transformation.html#data-1",
@@ -3591,7 +3591,7 @@
     "href": "slides/lec-03-transformation.html#thanks",
     "title": "Data transformation with dplyr",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "slides/lec-05-communicate.html#we",
@@ -3717,7 +3717,7 @@
     "href": "slides/lec-05-communicate.html#what-is-a-.qmd",
     "title": "Joining data & communicating results with Quarto",
     "section": "What is a .qmd?",
-    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n. . .\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n. . .\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n. . .\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
   },
   {
     "objectID": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
@@ -3773,7 +3773,7 @@
     "href": "slides/lec-05-communicate.html#section-8",
     "title": "Joining data & communicating results with Quarto",
     "section": "",
-    "text": "A large proportion of these slides are taken from Mine Çetinkaya Rundel’s “Hello Quarto” presentation & Thomas Mock’s “Quarto for the Curious” presentation\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n\nhttps://cven5873-ss23.github.io/website/"
+    "text": "A large proportion of these slides are taken from Mine Çetinkaya Rundel’s “Hello Quarto” presentation & Thomas Mock’s “Quarto for the Curious” presentation\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "slides/lec-08-quarto.html#section",
@@ -5273,5 +5273,68 @@
     "title": "Waste Research",
     "section": "Take home messages",
     "text": "Take home messages\n\nManagement of MSW is one of the major challenges worldwide\nThe amount of waste generated is often linked directly to income level and lifestyle\nThere is no one-size-fits-all solution to the SWM challenge\nThe socio-economic, cultural and institutional context requires special consideration of appropriately adapted technologies, capacity building, including improvement of skills and know-how at local government level\nThe ISWM framework is a structured assessment method to understand and find solutions to existing SWM systems.\nRecovery of resources (materials and energy) is a promising way to go in solid waste management\n\n\n\n\n\n rbtl-fs24.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-05-communicate.html",
+    "href": "slides/lec-05-communicate.html",
+    "title": "Joining data & communicating results with Quarto",
+    "section": "",
+    "text": "Learners can use Quarto and GitHub Pages to publish an HTML file.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor.\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can apply functions from the dplyr R Package to join multiple data sets."
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html",
+    "href": "slides/lec-03-transformation.html",
+    "title": "Data transformation with dplyr",
+    "section": "",
+    "text": "Learners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
+  },
+  {
+    "objectID": "slides/lec-04-tidy-data.html",
+    "href": "slides/lec-04-tidy-data.html",
+    "title": "Concept of Tidy Data, Vectors & Pivoting",
+    "section": "",
+    "text": "No exam anymore in Week 8\nDue date for Capstone Project will be extended (due on 28th July)\nCapstone Project contributes 40% to grade instead of 20%\n\n\n\n\ntype\npercent\n\n\n\n\nHomework assignments\n40\n\n\nLearning reflections\n20\n\n\nCapstone project\n40"
+  },
+  {
+    "objectID": "slides/lec-02-visualisation.html",
+    "href": "slides/lec-02-visualisation.html",
+    "title": "Data science lifecycle & Exploratory data analysis using visualization",
+    "section": "",
+    "text": "While we are getting ready, please check for this email from GitHub and accept the invitation to join the GitHub organisation for the course. Used Gmail to sign up? Check the folders that aren’t your primary inbox (e.g Updates)."
+  },
+  {
+    "objectID": "slides/lec-07-pivoting-joining.html",
+    "href": "slides/lec-07-pivoting-joining.html",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "",
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can cross-reference figures and tables within an Quarto file.\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+  },
+  {
+    "objectID": "slides/lec-01-welcome.html",
+    "href": "slides/lec-01-welcome.html",
+    "title": "Welcome & get ready for the course",
+    "section": "",
+    "text": "This class is being recorded. Access to the recording is restricted to ETH members."
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html",
+    "href": "slides/lec-04-spreadsheets.html",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "",
+    "text": "Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset."
+  },
+  {
+    "objectID": "slides/lec-05-conditions.html",
+    "href": "slides/lec-05-conditions.html",
+    "title": "Conditions & Dates & Tables",
+    "section": "",
+    "text": "Learners can apply functions from dplyr to change specific values of a variable in a dataframe.\nLearners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.\nLearners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.\nLearners can understand the relevance a data dictionary to describe variable names in a data set."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html",
+    "href": "slides/lec-06-vectors.html",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "",
+    "text": "04th April 2024: no class, Easter Break\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\nNA\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\nNA\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\nNA\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\nNA\n06 June 2024\nProject Submission Deadline\n\n\nNA\n13 June 2024\nExam"
   }
 ]

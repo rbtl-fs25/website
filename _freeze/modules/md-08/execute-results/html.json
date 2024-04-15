@@ -2,7 +2,7 @@
   "hash": "3f00d6b287eea2674a9dd0a7ba8279e5",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 8\"\nsubtitle: \"{{< var md-08.title >}}\"\neditor: source\nparams:\n    module: 8\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can explain the 3 main types of research designs used in RBTL\n2. Learners can explain the pros and cons of each research design type as they relate to answering a research question\n3. Learners understand the methods used to read a scientific manuscript and are prepared to put their knowledge into practice\n:::\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "markdown": "---\ntitle: \"Module 8\"\nsubtitle: \"{{< var md-08.title >}}\"\neditor: source\nparams:\n    module: 8\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can articulate the scale and drivers of the challenges in solid waste management\n2. Learners understand the flow of waste from Generation to Recovery\n3. Learners can identify waste management challenges at ETH and/or Zurich\n4. Learners can develop their own research questions using either the PICOT or FINER method\n:::\n\n\n## {{< fa display >}} Slides\n\n- In preparation\n\n## {{< fa book >}} Readings\n\n- In preparation\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
