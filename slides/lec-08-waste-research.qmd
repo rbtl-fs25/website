@@ -89,7 +89,7 @@ Special concern when ecological carrying capacity is overburdened
 
 -   Great Pacific Garbage Patch: 0.41 – 8.1% of Pacific Ocean
 -   Plastic facts: take \> 400 years to degrade, bioaccumulation
--   more than 80 % from land-based human activities
+-   More than 80 % from land-based human activities
 
 ------------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ Special concern when ecological carrying capacity is overburdened
 
 ## Generation
 
-Switzerland has one of the highest municipal solid waste volumes in the world, at 716 kg of waste per person and year. Nearly 53% of it is recycled.
+Switzerland has one of the highest municipal solid waste volumes in the world, at 716 kg of waste per person and year. *Nearly 53% of it is recycled.*
 
 ![Waste generation versus income level by country, UNEP/ISWA (2015)](img/lec-08/image4.png)
 
@@ -127,7 +127,7 @@ Switzerland has one of the highest municipal solid waste volumes in the world, a
 
 ## Collection and Transport
 
-![[Source](https://www.undp.org/ethiopia/blog/co-creation-reinventing-how-we-collect-and-transport-waste): TMA](img/lec-08/image7.png)
+![[Source](https://www.undp.org/ethiopia/blog/co-creation-reinventing-how-we-collect-and-transport-waste): UNDP](img/lec-08/image7.png)
 
 ## Treatment
 
@@ -147,13 +147,13 @@ Switzerland has one of the highest municipal solid waste volumes in the world, a
 
 ## Stakeholders
 
-1.  Waste generators – Need to interface with the system (waste segregation?)
-2.  Central/provincial government – Determine strategy, policy, regulation, commitments
-3.  Municipality – service provider and regulator
-4.  NGOs & CBOs – awareness and self-help initiatives
-5.  Private formal sector -- Provide service
-6.  Private informal sector – Play an integral and important part in most low and middle income countries
-7.  Internal & external support agencies – support and steer through funding and international conventions
+1.  Waste generators – *Need to interface with the system (waste segregation?)*
+2.  Central/provincial government – *Determine strategy, policy, regulation, commitments*
+3.  Municipality – *Service provider and regulator*
+4.  NGOs & CBOs – *Awareness and self-help initiatives*
+5.  Private formal sector -- *Provide service*
+6.  Private informal sector – *Play an integral and important part in most low and middle income countries*
+7.  Internal & external support agencies – *Support and steer through funding and international conventions*
 
 ## Policies
 
@@ -162,12 +162,12 @@ Switzerland has one of the highest municipal solid waste volumes in the world, a
     -   Inform, education, communicate
 -   Economic Instruments
     -   Incentives, fines
-    
+
 ## Take home messages
 
-* Management of MSW is one of the major challenges worldwide
-* The amount of waste generated is often linked directly to income level and lifestyle
-* There is no one-size-fits-all solution to the SWM challenge
-* The socio-economic, cultural and institutional context requires special consideration of appropriately adapted technologies, capacity building, including improvement of skills and know-how at local government level
-* The ISWM framework is a structured assessment method to understand and find solutions to existing SWM systems.
-* Recovery of resources (materials and energy) is a promising way to go in solid waste management
+-   Management of MSW is one of the **major challenges** worldwide
+-   The amount of waste generated is often linked directly to income level and lifestyle
+-   There is no **one-size-fits-all solution** to the SWM challenge
+-   The **socio-economic, cultural and institutional context** requires special consideration of appropriately adapted technologies, capacity building, including improvement of skills and know-how at local government level
+-   The ISWM framework is a structured assessment method to understand and find solutions to existing SWM systems.
+-   **Recovery of resources** (materials and energy) is a promising way to go in solid waste management
