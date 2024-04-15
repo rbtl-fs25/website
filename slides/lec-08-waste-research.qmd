@@ -1,0 +1,39 @@
+---
+title: "{{< var md-08.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "{{< var author >}}"
+date: "2024-04-18"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: ../img/OWD-logo-20.png
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+editor: source
+execute:
+  freeze: auto
+params:
+    module: 8
+bibliography: references.bib
+csl: apa.csl
+editor_options: 
+  chunk_output_type: console
+---
+
+
+## Learning Objectives (for this week)
+
+```{r}
+#| label: learning-objectives
+#| echo: false
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
+  dplyr::pull(learning_objectives)
+
+```
+
+```{epoxy}
+{1:length(lobj)}. {lobj[1:length(lobj)]}
+```
