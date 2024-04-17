@@ -1,0 +1,130 @@
+---
+title: "Research Design"
+subtitle: "{{< var course.long-title >}}"
+author: "Prof. Elizabeth Tilley"
+date: "2024-04-25"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: ../img/OWD-logo-20.png
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+editor: source
+execute:
+  freeze: auto
+params:
+    module: 8
+bibliography: references.bib
+csl: apa.csl
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+library(epoxy)
+library(readr)
+library(dplyr)
+library(here)
+```
+
+Next week we will host 2 visiting professors (Prof. Katharina Gapp, HEST, Prof. Christoph Studer, ITET) and Dr. Sarah Shepherd, who is the Course leader of 'Teaching at ETH', which is a course that I am enrolled in. You can read more [here](https://ethz.ch/en/the-eth-zurich/education/educational-development/continuing-education/teaching-at-ETH2.html). The class will be filmed, but will only be available among the four of us.
+
+# Week 9 -- Waste Research -- Overview {background-color="#4C326A"}
+
+------------------------------------------------------------------------
+
+*Sometimes we read papers to learn about results: what are the new findings in a discipline. Sometimes, we read papers to learn about methods. In this case, we are interested in learning about different styles of data collection and data collection tools. For example: did the researcher collect information on the same variable multiple times to see how it changes across seasons? Did the researcher collect information from people to see how the outcome of an intervention differs between populations? Before we develop our own data collection tools and spreadsheets, we will see what kinds of data other waste researchers collect, and try to imagine how they structured their data collection and management tools.*
+
+## Learning Objectives (for next week, Week 9)
+
+1.  Learners can extract the
+a)  Research Question
+b)  Research Design
+c)  Sampling strategy
+d)  Methodology
+e)  Key findings from a scientific paper about waste management
+2.  Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management
+
+## Learning Objectives (for next week, Week 9)
+
+3.  Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic
+
+## Homework
+
+The papers we will study are:
+
+Kasinja, C., & Tilley, E. (2018). Formalization of informal waste pickers’ cooperatives in Blantyre, Malawi: A feasibility assessment. Sustainability, 10(4), 1149.
+
+Ndau, H., & Tilley, E. (2018). Willingness to pay for improved household solid waste collection in Blantyre, Malawi. Economies, 6(4), 54.
+
+Roxburgh, H., Magombo, C., Kaliwo, T., Tilley, E. A., Hampshire, K., Oliver, D. M., & Quilliam, R. S. (2022). Blood flows: mapping journeys of menstrual waste in Blantyre, Malawi. Cities & Health, 6(4), 738-751.
+
+## Homework
+
+Tilley, E., Chilunga, H., Kwangulero, J., Schöbitz, L., Vijay, S., Heilgendorff, H., & Kalina, M. (2023). “It is unbearable to breathe here”: air quality, open incineration, and misinformation in Blantyre, Malawi. Frontiers in Public Health, 11, 1242726.
+
+Yesaya, M., Mpanang'ombe, W., & Tilley, E. (2021). The cost of plastics in compost. Frontiers in Sustainability, 2, 753413.
+
+And are available to download [here](https://drive.google.com/drive/folders/1Ch7FNRys1SzPNxq-QHUqAIiVEl7dF1sC?usp=drive_link)
+
+## Homework
+
+Each person has been assigned a paper to read.  The paper allocation list can be found [here](https://docs.google.com/spreadsheets/d/1k4qA_FOtZBGn1RL4pzfvTq-hb9-pXnH58oyY0n1nAog/edit#gid=0)
+
+Three people have been assigned to each paper and each person will be responsible for a different task during class: 
+
+* If you were assigned “summary”:  you will have 5 minutes to give a 5-slide overview of the
+  + Research Question
+  + Research Design
+  + Sampling strategy
+  + Methodology
+  + Key findings
+  
+## Homework
+
+* If you were assigned “data table”: you will have 5 minutes to provide a 2 slide presentation to illustrate
+  + The codebook that would have been generated for this research (i.e. present the variables and their units, clearly explained)
+  + A sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design
+
+## Example
+
+If we have this figure on the age gap between men and women
+
+![]()
+
+## Example
+
+Our data table would look like this:
+
+year
+gender
+income
+1980
+male
+400
+1980
+female
+240
+…
+…
+
+
+2020
+male
+450
+2020
+female
+360
+
+
+*It is not necessary to fill in the values:  just construct the dataframe
+
+
+## Homework
+
+
+
+## Health Threats

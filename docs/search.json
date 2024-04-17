@@ -12,7 +12,7 @@
   {
     "objectID": "modules/md-08.html",
     "href": "modules/md-08.html",
-    "title": "Module 8",
+    "title": "Module 08",
     "section": "",
     "text": "Learners can articulate the scale and drivers of the challenges in solid waste management\nLearners understand the flow of waste from Generation to Recovery\nLearners can identify waste management challenges at ETH and/or Zurich\nLearners can develop their own research questions using either the PICOT or FINER method",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "modules/md-08.html#learning-objectives",
     "href": "modules/md-08.html#learning-objectives",
-    "title": "Module 8",
+    "title": "Module 08",
     "section": "",
     "text": "Learners can articulate the scale and drivers of the challenges in solid waste management\nLearners understand the flow of waste from Generation to Recovery\nLearners can identify waste management challenges at ETH and/or Zurich\nLearners can develop their own research questions using either the PICOT or FINER method",
     "crumbs": [
@@ -32,7 +32,7 @@
   {
     "objectID": "modules/md-08.html#slides",
     "href": "modules/md-08.html#slides",
-    "title": "Module 8",
+    "title": "Module 08",
     "section": " Slides",
     "text": "Slides\nView slides in full screen | Download slides as PDF",
     "crumbs": [
@@ -42,9 +42,9 @@
   {
     "objectID": "modules/md-08.html#readings",
     "href": "modules/md-08.html#readings",
-    "title": "Module 8",
+    "title": "Module 08",
     "section": " Readings",
-    "text": "Readings\n\nAdd readings.\nGoogle Drive link.",
+    "text": "Readings\n\nKasinja, C., & Tilley, E. (2018). Formalization of informal waste pickers’ cooperatives in Blantyre, Malawi: A feasibility assessment. Sustainability, 10(4), 1149.\nNdau, H., & Tilley, E. (2018). Willingness to pay for improved household solid waste collection in Blantyre, Malawi. Economies, 6(4), 54.\nRoxburgh, H., Magombo, C., Kaliwo, T., Tilley, E. A., Hampshire, K., Oliver, D. M., & Quilliam, R. S. (2022). Blood flows: mapping journeys of menstrual waste in Blantyre, Malawi. Cities & Health, 6(4), 738-751.\nTilley, E., Chilunga, H., Kwangulero, J., Schöbitz, L., Vijay, S., Heilgendorff, H., & Kalina, M. (2023). “It is unbearable to breathe here”: air quality, open incineration, and misinformation in Blantyre, Malawi. Frontiers in Public Health, 11, 1242726.\nYesaya, M., Mpanang’ombe, W., & Tilley, E. (2021). The cost of plastics in compost. Frontiers in Sustainability, 2, 753413.",
     "crumbs": [
       "Module 08"
     ]
@@ -52,9 +52,9 @@
   {
     "objectID": "modules/md-08.html#assignments",
     "href": "modules/md-08.html#assignments",
-    "title": "Module 8",
+    "title": "Module 08",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Wednesday, 24th April 2024.\n\nAssignment 1: Prepare a presentation for module 9",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 24th April 2024.\n\nAssignment 1: Prepare a presentation for module 09",
     "crumbs": [
       "Module 08"
     ]
@@ -586,8 +586,8 @@
     "objectID": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
     "href": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
-    "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+    "section": "",
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
   },
   {
     "objectID": "slides/lec-07-quarto.html#metadata-data-about-data",
@@ -615,7 +615,7 @@
     "href": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Faecal sludge samples",
-    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
+    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n. . .\nQuestions that only the original author may have the answers to."
   },
   {
     "objectID": "slides/lec-07-quarto.html#you-as-an-author",
@@ -818,7 +818,7 @@
     "href": "slides/lec-07-quarto.html#whats-a-bibliography",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "What’s a Bibliography?",
-    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
+    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
   },
   {
     "objectID": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl",
@@ -853,7 +853,7 @@
     "href": "slides/lec-07-quarto.html#scholarly-articles-in-quarto",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Scholarly Articles in Quarto",
-    "text": "Scholarly Articles in Quarto\nQuarto supports\n\n\na standardized schema for authors and affiliations that can be expressed once int the source document,\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and\noutputting to pdf, html, and docx with custom formatting,\n\n\n\naccording to the styles required for various journals,\n\n\nand creating the LaTeX required for submission to multiple journals."
+    "text": "Scholarly Articles in Quarto\nQuarto supports\n\n\na standardized schema for authors and affiliations that can be expressed once int the source document,\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and\noutputting to pdf, html, and docx with custom formatting,\n\n\n. . .\naccording to the styles required for various journals,\n. . .\nand creating the LaTeX required for submission to multiple journals."
   },
   {
     "objectID": "slides/lec-07-quarto.html#front-matter",
@@ -965,7 +965,7 @@
     "href": "slides/lec-07-quarto.html#thanks",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\n\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub"
   },
   {
     "objectID": "slides/lec-08-waste-research.html#week-8-solid-waste-management",
@@ -4803,5 +4803,89 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html",
+    "href": "slides/lec-07-quarto.html",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "",
+    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html",
+    "href": "slides/lec-09-research-design.html",
+    "title": "Research Design",
+    "section": "",
+    "text": "Next week we will host 2 visiting professors (Prof. Katharina Gapp, HEST, Prof. Christoph Studer, ITET) and Dr. Sarah Shepherd, who is the Course leader of ‘Teaching at ETH’, which is a course that I am enrolled in. You can read more here. The class will be filmed, but will only be available among the four of us."
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
+    "href": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
+    "title": "Research Design",
+    "section": "Learning Objectives (for next week, Week 9)",
+    "text": "Learning Objectives (for next week, Week 9)\n\nLearners can extract the\n\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings from a scientific paper about waste management\n\n\nLearners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9-1",
+    "href": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9-1",
+    "title": "Research Design",
+    "section": "Learning Objectives (for next week, Week 9)",
+    "text": "Learning Objectives (for next week, Week 9)\n\nLearners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework",
+    "href": "slides/lec-09-research-design.html#homework",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\nThe papers we will study are:\nKasinja, C., & Tilley, E. (2018). Formalization of informal waste pickers’ cooperatives in Blantyre, Malawi: A feasibility assessment. Sustainability, 10(4), 1149.\nNdau, H., & Tilley, E. (2018). Willingness to pay for improved household solid waste collection in Blantyre, Malawi. Economies, 6(4), 54.\nRoxburgh, H., Magombo, C., Kaliwo, T., Tilley, E. A., Hampshire, K., Oliver, D. M., & Quilliam, R. S. (2022). Blood flows: mapping journeys of menstrual waste in Blantyre, Malawi. Cities & Health, 6(4), 738-751."
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-1",
+    "href": "slides/lec-09-research-design.html#homework-1",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\nTilley, E., Chilunga, H., Kwangulero, J., Schöbitz, L., Vijay, S., Heilgendorff, H., & Kalina, M. (2023). “It is unbearable to breathe here”: air quality, open incineration, and misinformation in Blantyre, Malawi. Frontiers in Public Health, 11, 1242726.\nYesaya, M., Mpanang’ombe, W., & Tilley, E. (2021). The cost of plastics in compost. Frontiers in Sustainability, 2, 753413.\nAnd are available to download here"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-2",
+    "href": "slides/lec-09-research-design.html#homework-2",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\nEach person has been assigned a paper to read. The paper allocation list can be found here\nThree people have been assigned to each paper and each person will be responsible for a different task during class:\n\nIf you were assigned “summary”: you will have 5 minutes to give a 5-slide overview of the\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-3",
+    "href": "slides/lec-09-research-design.html#homework-3",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\n\nIf you were assigned “data table”: you will have 5 minutes to provide a 2 slide presentation to illustrate\n\nThe codebook that would have been generated for this research (i.e. present the variables and their units, clearly explained)\nA sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#example",
+    "href": "slides/lec-09-research-design.html#example",
+    "title": "Research Design",
+    "section": "Example",
+    "text": "Example\nIf we have this figure on the age gap between men and women"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#example-1",
+    "href": "slides/lec-09-research-design.html#example-1",
+    "title": "Research Design",
+    "section": "Example",
+    "text": "Example\nOur data table would look like this:\nyear gender income 1980 male 400 1980 female 240 … …\n2020 male 450 2020 female 360\n*It is not necessary to fill in the values: just construct the dataframe"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-4",
+    "href": "slides/lec-09-research-design.html#homework-4",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#health-threats",
+    "href": "slides/lec-09-research-design.html#health-threats",
+    "title": "Research Design",
+    "section": "Health Threats",
+    "text": "Health Threats"
   }
 ]
