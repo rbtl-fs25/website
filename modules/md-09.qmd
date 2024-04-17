@@ -1,6 +1,6 @@
 ---
 title: "Module 09"
-subtitle: "{{< var md-09.title >}}"
+subtitle: "Research Design"
 editor: source
 params:
     module: 9
