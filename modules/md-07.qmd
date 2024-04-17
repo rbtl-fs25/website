@@ -50,9 +50,4 @@ Please complete the following assignment by Wednesday, 17th April 2024.
 
 -   [Assignment 1](../assignments/md-07/am-07-1-zotero.qmd): Setup Zotero reference management software
 -   [Assignment 2](../../project/): Read the capstone project report page 
-<<<<<<< HEAD
 
-- Assignment 1: Read the page for the Capstone Project report and ensure you understand the list of required elements.
-- Assignment 2: Zotero
-=======
->>>>>>> main
