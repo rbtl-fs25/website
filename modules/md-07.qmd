@@ -40,10 +40,9 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 <iframe class="slide-deck" src="../slides/lec-07-quarto.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 ```
 
-
 ## {{< fa book >}} Readings
 
-- In preparation
+1. Read [R for Data Science - Section 28 - Quarto](https://r4ds.hadley.nz/quarto)
 
 ## {{< fa code >}} Assignments
 
@@ -51,6 +50,9 @@ Please complete the following assignment by Wednesday, 17th April 2024.
 
 -   [Assignment 1](../assignments/md-07/am-07-1-zotero.qmd): Setup Zotero reference management software
 -   [Assignment 2](../../project/): Read the capstone project report page 
+<<<<<<< HEAD
 
 - Assignment 1: Read the page for the Capstone Project report and ensure you understand the list of required elements.
 - Assignment 2: Zotero
+=======
+>>>>>>> main

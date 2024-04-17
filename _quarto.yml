@@ -88,6 +88,11 @@ website:
             text: "am-03: Project repository"
       - section: "Module 07"
         href: modules/md-07.qmd
+        contents:
+          - href: assignments/md-07/am-07-1-zotero.qmd
+            text: "am-01: Zotero"
+          - href: project/
+            text: "am-02: Capstone project"
       - section: "Module 08"
         href: modules/md-08.qmd
       - section: "Module 09"
