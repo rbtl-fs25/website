@@ -25,12 +25,13 @@ date,module,title,teaser,lecturer,learning_objectives
 ,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can apply functions from the dplyr R Package to join multiple data sets.
 ,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software
 ,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can use the GitHub pages service to publish a repository as a standalone website.
-,8,Research Design,NA,E. Tilley,Learners can explain the 3 main types of research designs used in RBTL
-,8,Research Design,NA,E. Tilley,Learners can explain the pros and cons of each research design type as they relate to answering a research question
-,8,Research Design,NA,E. Tilley,Learners understand the methods used to read a scientific manuscript and are prepared to put their knowledge into practice
-,9,Waste Research,NA,E. Tilley,"Learners can succinctly summarize the research gap, research questions, methods and results of a scientific manuscript"
-,9,Waste Research,NA,E. Tilley,Learners can identify and debate limitations and shortcomings in published manuscripts
-,9,Waste Research,NA,E. Tilley,Learners can compare and contrast challenges with waste management between the minority and majority worlds
+,8,Waste Research,NA,E. Tilley,Learners can articulate the scale and drivers of the challenges in solid waste management
+,8,Waste Research,NA,E. Tilley,Learners understand the flow of waste from Generation to Recovery
+,8,Waste Research,NA,E. Tilley,Learners can identify waste management challenges at ETH and/or Zurich
+,8,Waste Research,NA,E. Tilley,Learners can develop their own research questions using either the PICOT or FINER method
+,9,Research Design,NA,E. Tilley,"Learners can succinctly summarize the research gap, research questions, methods and results of a scientific manuscript"
+,9,Research Design,NA,E. Tilley,Learners can identify and debate limitations and shortcomings in published manuscripts
+,9,Research Design,NA,E. Tilley,Learners can compare and contrast challenges with waste management between the minority and majority worlds
 ,10,Survey Design,NA,E. Tilley,Learners can explain the differences between and limitations of each data type
 ,10,Survey Design,NA,E. Tilley,Learners can devise a feasible research question that can be answered using the skills they have developed
 ,10,Survey Design,NA,E. Tilley,Learners can create a survey tool with a variety of variable types to answer their reserach question

@@ -1,6 +1,6 @@
 ---
 title: "Module 09"
-subtitle: "{{< var md-09.title >}}"
+subtitle: "Research Design"
 editor: source
 params:
     module: 9
@@ -33,7 +33,7 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa display >}} Slides
 
-- In preparation
+- You will present your homework in this module. There are no additional slides.
 
 ## {{< fa code >}} Assignments
 
