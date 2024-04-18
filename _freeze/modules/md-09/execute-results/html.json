@@ -1,9 +1,11 @@
 {
-  "hash": "4b6b7eeee9151c3805995a2cf514bfc9",
+  "hash": "e3cf27e49193f7edbd82330644b1b43f",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"{{< var md-09.title >}}\"\neditor: source\nparams:\n    module: 9\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can succinctly summarize the research gap, research questions, methods and results of a scientific manuscript\n2. Learners can identify and debate limitations and shortcomings in published manuscripts\n3. Learners can compare and contrast challenges with waste management between the minority and majority worlds\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- You will present your homework in this module. There are no additional slides.\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"Research Design\"\neditor: source\nparams:\n    module: 9\nexecute: \n  echo: false\n  warning: false\n---\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can succinctly summarize the research gap, research questions, methods and results of a scientific manuscript\n2. Learners can identify and debate limitations and shortcomings in published manuscripts\n3. Learners can compare and contrast challenges with waste management between the minority and majority worlds\n:::\n\n\n\n## {{< fa display >}} Slides\n\n- You will present your homework in this module. There are no additional slides.\n\n## {{< fa code >}} Assignments\n\n- In preparation\n",
+    "supporting": [
+      "md-09_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

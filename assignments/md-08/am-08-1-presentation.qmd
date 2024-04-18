@@ -104,4 +104,4 @@ One person will be the facilitator and timekeeper (currently \@yellowbrickwall) 
 | 14:15     | 14:20   | sprinz11        | compost           | summary    |
 | 14:20     | 14:25   | thaeussner      | compost           | data table |
 | 14:25     | 14:40   | yasemin26       | compost           | discussant |
-| 14:40     | 13:00   | yellowbrickwall | wrap-up           | host       |
+| 14:40     | 15:00   | yellowbrickwall | wrap-up           | host       |
