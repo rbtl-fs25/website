@@ -18,7 +18,7 @@ library(epoxy)
 ```
 
 ```{r}
-#| label: learning-objectives
+| label: learning-objectives
 
 lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>

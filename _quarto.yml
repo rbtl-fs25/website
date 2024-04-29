@@ -95,16 +95,17 @@ website:
             text: "am-02: Capstone project"
       - section: "Module 08"
         href: modules/md-08.qmd
+        text: "Module 08"
         contents:
           - href: assignments/md-08/am-08-1-presentation.qmd
-            text: "am-01: Prepare presentation"
-      - section: "Module 09"
+            text: "am-01: Assignment"
+      - text: "Module 09"
         href: modules/md-09.qmd
-      - section: "Module 10"
+      - text: "Module 10"
         href: modules/md-10.qmd
-      - section: "Module 11"
+      - text: "Module 11"
         href: modules/md-11.qmd
-      - section: "Module 12"
+      - text: "Module 12"
         href: modules/md-12.qmd
       - text: "---"
       - href: project/index.qmd

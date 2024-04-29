@@ -33,10 +33,16 @@ date,module,title,teaser,lecturer,learning_objectives
 ,9,Research Design,NA,E. Tilley,Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.
 ,9,Research Design,NA,E. Tilley,"Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic."
 ,9,NA,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool.
+<<<<<<< HEAD
 ,10,Questionnaires,NA,E. Tilley,Learners can produce a research question that adheres to the FINER and PICOT frameworks
 ,10,Questionnaires,NA,E. Tilley,Learners can identify pitfalls associated with four types of questionnaire formats
 ,10,Questionnaires,NA,E. Tilley,Learners can clean and summarise different types of questionnaire-generated data
 ,10,Questionnaires,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool
+=======
+,10,Survey Design,NA,E. Tilley,Learners can explain the differences between and limitations of each data type
+,10,Survey Design,NA,E. Tilley,Learners can devise a feasible research question that can be answered using the skills they have developed
+,10,Survey Design,NA,E. Tilley,Learners can create a survey tool with a variety of variable types to answer their reserach question
+>>>>>>> c89ec47e0793e8d5fd24e85e48345bf6c20fa730
 ,NA,Auffahrt Break,NA,NA,NA
 ,11,Pre-test and logistics,NA,E. Tilley,Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback
 ,11,Pre-test and logistics,NA,E. Tilley,Learners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations
