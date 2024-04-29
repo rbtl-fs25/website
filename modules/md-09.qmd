@@ -18,7 +18,7 @@ library(epoxy)
 ```
 
 ```{r}
-#| label: learning-objectives
+| label: learning-objectives
 
 lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
@@ -36,5 +36,8 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 - You will present your homework in this module. There are no additional slides.
 
 ## {{< fa code >}} Assignments
+Please complete the following assignments by Wednesday, 1 May 2024.
 
-- In preparation
+1. Read [Fandino, W. (2019). Formulating a good research question: Pearls and pitfalls. Indian Journal of Anaesthesia, 63(8), 611-616](https://drive.google.com/file/d/1PKZDMm23e5n_22T9zHyRbtcQI2_7_-7G/view).
+2. Formulate your own research question according to the FINER and PICOT methods. Be prepared to discuss.
+
