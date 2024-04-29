@@ -134,7 +134,7 @@
     "href": "modules/md-10.html",
     "title": "Module 10",
     "section": "",
-    "text": "Learners can explain the differences between and limitations of each data type\nLearners can devise a feasible research question that can be answered using the skills they have developed\nLearners can create a survey tool with a variety of variable types to answer their reserach question",
+    "text": "Learners can produce a research question that adheres to the FINER and PICOT frameworks\nLearners can identify pitfalls associated with four types of questionnaire formats\nLearners can clean and summarise different types of questionnaire-generated data\nLearners can identify quality criteria for their own data collection tool",
     "crumbs": [
       "Module 10"
     ]
@@ -144,7 +144,7 @@
     "href": "modules/md-10.html#learning-objectives",
     "title": "Module 10",
     "section": "",
-    "text": "Learners can explain the differences between and limitations of each data type\nLearners can devise a feasible research question that can be answered using the skills they have developed\nLearners can create a survey tool with a variety of variable types to answer their reserach question",
+    "text": "Learners can produce a research question that adheres to the FINER and PICOT frameworks\nLearners can identify pitfalls associated with four types of questionnaire formats\nLearners can clean and summarise different types of questionnaire-generated data\nLearners can identify quality criteria for their own data collection tool",
     "crumbs": [
       "Module 10"
     ]
@@ -4762,7 +4762,7 @@
     "href": "modules/md-09.html",
     "title": "Module 09",
     "section": "",
-    "text": "Learners can succinctly summarize the research gap, research questions, methods and results of a scientific manuscript\nLearners can identify and debate limitations and shortcomings in published manuscripts\nLearners can compare and contrast challenges with waste management between the minority and majority worlds",
+    "text": "Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management.\nLearners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.\nLearners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic.\nLearners can identify quality criteria for their own data collection tool.",
     "crumbs": [
       "Module 09"
     ]
@@ -4772,7 +4772,7 @@
     "href": "modules/md-09.html#learning-objectives",
     "title": "Module 09",
     "section": "",
-    "text": "Learners can succinctly summarize the research gap, research questions, methods and results of a scientific manuscript\nLearners can identify and debate limitations and shortcomings in published manuscripts\nLearners can compare and contrast challenges with waste management between the minority and majority worlds",
+    "text": "Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management.\nLearners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.\nLearners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic.\nLearners can identify quality criteria for their own data collection tool.",
     "crumbs": [
       "Module 09"
     ]
@@ -4792,7 +4792,7 @@
     "href": "modules/md-09.html#assignments",
     "title": "Module 09",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
+    "text": "Assignments\nPlease complete the following assignments by Wednesday, 1 May 2024.\n\nRead Fandino, W. (2019). Formulating a good research question: Pearls and pitfalls. Indian Journal of Anaesthesia, 63(8), 611-616.\nFormulate your own research question according to the FINER and PICOT methods. Be prepared to discuss.",
     "crumbs": [
       "Module 09"
     ]
@@ -4941,6 +4941,26 @@
     "crumbs": [
       "Module 08",
       "am-01: Prepare presentation"
+    ]
+  },
+  {
+    "objectID": "modules/md-10.html#class-overview",
+    "href": "modules/md-10.html#class-overview",
+    "title": "Module 10",
+    "section": " Class Overview",
+    "text": "Class Overview\n\nDuring class we will be using the files in this folder:  there are four different .csv files for you to work with:\n\n01_binary.csv\n02_likert.csv\n03_multi-choice.csv\n04_text.csv\n\nThere is also a corresponding summary file (e.g. 01_binary_summary) with a tab for each group (groups from last week:  wtp, compost, air, coops)\nYour group will\n\nDownload a data set\nSee what kind of data it is, and develop a corresponding research question (add to summary table)\nClean the data (use R, Excel, python, etc:  whatever you like) and note your process and any challenges you faced, and how you addressed them (add to summary table)\nAnalyse the data in a way that answers your research question (add result to summary table)\n\nWe will discuss the pros and cons of each question type\nYou will develop your own questionnaire to answer your research question",
+    "crumbs": [
+      "Module 10"
+    ]
+  },
+  {
+    "objectID": "modules/md-10.html#class-schedule",
+    "href": "modules/md-10.html#class-schedule",
+    "title": "Module 10",
+    "section": " Class schedule",
+    "text": "Class schedule\nHere is the schedule for May 2:\n\n\n\nstart\nend\nTopic\nActivity\n\n\n12:15\n12:25\nIntro and Welcome\n\n\n\n12:25\n12:45\nResearch questions\nGroup discussions\n\n\n12:45\n13:00\nDebugging\n\n\n\n13:00\n13:15\nBreak\n\n\n\n13:15\n14:00\n4 question types\nGroup work\n\n\n14:00\n14:15\nBreak\n\n\n\n14:15\n15:00\nConsolidation",
+    "crumbs": [
+      "Module 10"
     ]
   }
 ]
