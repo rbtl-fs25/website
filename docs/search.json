@@ -4,7 +4,7 @@
     "href": "calendar.html",
     "title": "Course Calendar",
     "section": "",
-    "text": "module\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\n\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nSurvey Design\n\n\n\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\n\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\n\n06 June 2024\nProject Submission Deadline\n\n\n\n13 June 2024\nExam",
+    "text": "module\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\n\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nQuestionnaires\n\n\n\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\n\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\n\n06 June 2024\nProject Submission Deadline\n\n\n\n13 June 2024\nExam",
     "crumbs": [
       "Course Calendar"
     ]
@@ -164,7 +164,7 @@
     "href": "modules/md-10.html#assignments",
     "title": "Module 10",
     "section": " Assignments",
-    "text": "Assignments\n\nIn preparation",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 15th April 2024.\n\nAssignment 1: Develop a questionnaire using Google Forms",
     "crumbs": [
       "Module 10"
     ]
@@ -174,7 +174,7 @@
     "href": "modules/md-11.html",
     "title": "Module 11",
     "section": "",
-    "text": "Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback\nLearners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations\nLearners can produce an attractive report using Quarto\nLearners can manipulate and analyse their data to answer their stated research questions\nLearners can critically assess their success in answering their stated research questions",
+    "text": "Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback\nLearners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations",
     "crumbs": [
       "Module 11"
     ]
@@ -184,7 +184,7 @@
     "href": "modules/md-11.html#learning-objectives",
     "title": "Module 11",
     "section": "",
-    "text": "Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback\nLearners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations\nLearners can produce an attractive report using Quarto\nLearners can manipulate and analyse their data to answer their stated research questions\nLearners can critically assess their success in answering their stated research questions",
+    "text": "Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback\nLearners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations",
     "crumbs": [
       "Module 11"
     ]
@@ -194,7 +194,7 @@
     "href": "modules/md-11.html#slides",
     "title": "Module 11",
     "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "text": "Slides\n\nThere are no slides for this week",
     "crumbs": [
       "Module 11"
     ]
@@ -2090,7 +2090,7 @@
     "href": "index.html#course-calendar",
     "title": "Course Overview",
     "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\ndate\nmodule\ntopic\n\n\n\n\n22 February 2024\n1\nWelcome & get ready for the course\n\n\n29 February 2024\n2\nData science lifecycle & Exploratory data analysis using visualization\n\n\n07 March 2024\n3\nData transformation with dplyr\n\n\n14 March 2024\n4\nData import & Data organization in spreadsheets\n\n\n21 March 2024\n5\nConditions & Dates & Tables\n\n\n28 March 2024\n6\nData types & Vectors & Pivoting\n\n\n04 April 2024\n\nEaster Break\n\n\n11 April 2024\n7\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n18 April 2024\n8\nWaste Research\n\n\n25 April 2024\n9\nResearch Design\n\n\n02 May 2024\n10\nSurvey Design\n\n\n09 May 2024\n\nAuffahrt Break\n\n\n16 May 2024\n11\nPre-test and logistics\n\n\n23 May 2024\n\nData collection\n\n\n30 May 2024\n12\nData analysis & report writing\n\n\n06 June 2024\n\nProject Submission Deadline\n\n\n13 June 2024\n\nExam",
+    "text": "Course Calendar\n\n\n\n\n\ndate\nmodule\ntopic\n\n\n\n\n22 February 2024\n1\nWelcome & get ready for the course\n\n\n29 February 2024\n2\nData science lifecycle & Exploratory data analysis using visualization\n\n\n07 March 2024\n3\nData transformation with dplyr\n\n\n14 March 2024\n4\nData import & Data organization in spreadsheets\n\n\n21 March 2024\n5\nConditions & Dates & Tables\n\n\n28 March 2024\n6\nData types & Vectors & Pivoting\n\n\n04 April 2024\n\nEaster Break\n\n\n11 April 2024\n7\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n18 April 2024\n8\nWaste Research\n\n\n25 April 2024\n9\nResearch Design\n\n\n02 May 2024\n10\nQuestionnaires\n\n\n09 May 2024\n\nAuffahrt Break\n\n\n16 May 2024\n11\nPre-test and logistics\n\n\n23 May 2024\n\nData collection\n\n\n30 May 2024\n12\nData analysis & report writing\n\n\n06 June 2024\n\nProject Submission Deadline\n\n\n13 June 2024\n\nExam",
     "crumbs": [
       "Course Overview"
     ]
@@ -2110,7 +2110,7 @@
     "href": "index.html#performance-assessment",
     "title": "Course Overview",
     "section": "Performance assessment",
-    "text": "Performance assessment\nThe performance assessment and resulting grading scheme are shown below.\n\nEnd-of-semester exam: 50 points\nCompulsory continuous performance assessment: 50 points, of which\n\nHomework assignments: 20 points (n = 10)\nCapstone project: 30 points, of which\n\nTechnical parts of submitted report: 20 points (we will communicate what we expect)\nIntellectual framing of results: 10 points (we will communicate what we expect)\n\n\n\nTable Table 1 shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n93 points = 5.75\n92 points = 5.50\n45 points = 4.00\n44 points = 3.50\n\n\n\n\n\nTable 1: Conversion from points to grades.\n\n\n\n\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0\n\n\n\n\n\n\n\n\n\n\n\nEnd-of-semester exam\nThere is a 2-hour final written exam, which assesses the technical skills taught during the course. It contains programming exercises using the R programming language. The success of the exam depends on the effort put into the compulsory continuous performance assessment. The exam receives 50 points.\n\n\nCompulsory continuous performance assessment\nHomework assignments: Each week will have at least one homework assignment. Homework assignments are delivered as Quarto documents with instructions and sample code. Students are required to submit their work through GitHub. A total of ten assignments receive a pass/fail with 2 points for each assignment and 20 points in total.\nCapstone Project: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets).\nDetailed instructions for the completion of the capstone project will be provided. The project report will be delivered as a Quarto documens and students are asked to submit their work through GitHub. The capstone project receives 30 points.\nReadings: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class. Readings are not graded.",
+    "text": "Performance assessment\nThe performance assessment and resulting grading scheme are shown below.\n\nEnd-of-semester exam: 50 points\nCompulsory continuous performance assessment: 50 points, of which\n\nHomework assignments: 20 points (n = 10)\nCapstone project: 30 points, of which\n\nTechnical parts of submitted report: 20 points (we will communicate what we expect)\nIntellectual framing of results: 10 points (we will communicate what we expect)\n\n\n\nTable Table 1 shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n93 points = 5.75\n92 points = 5.50\n45 points = 4.00\n44 points = 3.50\n\n\n\n\n\nTable 1: Conversion from points to grades.\n\n\n\n\n\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-of-semester exam\nThere is a 2-hour final written exam, which assesses the technical skills taught during the course. It contains programming exercises using the R programming language. The success of the exam depends on the effort put into the compulsory continuous performance assessment. The exam receives 50 points.\n\n\nCompulsory continuous performance assessment\nHomework assignments: Each week will have at least one homework assignment. Homework assignments are delivered as Quarto documents with instructions and sample code. Students are required to submit their work through GitHub. A total of ten assignments receive a pass/fail with 2 points for each assignment and 20 points in total.\nCapstone Project: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets).\nDetailed instructions for the completion of the capstone project will be provided. The project report will be delivered as a Quarto documens and students are asked to submit their work through GitHub. The capstone project receives 30 points.\nReadings: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class. Readings are not graded.",
     "crumbs": [
       "Course Overview"
     ]
@@ -5082,6 +5082,33 @@
     "text": "Class schedule\nHere is the schedule for May 2:\n\n\n\nstart\nend\nTopic\nActivity\n\n\n12:15\n12:25\nIntro and Welcome\n\n\n\n12:25\n12:45\nResearch questions\nGroup discussions\n\n\n12:45\n13:00\nDebugging\n\n\n\n13:00\n13:15\nBreak\n\n\n\n13:15\n14:00\n4 question types\nGroup work\n\n\n14:00\n14:15\nBreak\n\n\n\n14:15\n15:00\nConsolidation",
     "crumbs": [
       "Module 10"
+    ]
+  },
+  {
+    "objectID": "assignments/md-10/am-10-1-questionnaire.html",
+    "href": "assignments/md-10/am-10-1-questionnaire.html",
+    "title": "Module 10 - Homework",
+    "section": "",
+    "text": "For this assignment, we ask you to:\n\nDevelop a questionnaire using Google Forms to address the research question you formulated last week.\nPlace the link to your questionnaire here so that everyone can access it on Thursday.\n\nIn class next week, everyone will:\n\nComplete everyone else’s questionnaire and provide feedback in the table.\nDownload the +/- 15 responses, and we will discuss any challenges related to the raw data.\n\nI will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me beforehand (e.g. scales, buckets, etc.)."
+  },
+  {
+    "objectID": "modules/md-10.html#assignment",
+    "href": "modules/md-10.html#assignment",
+    "title": "Module 10",
+    "section": " Assignment",
+    "text": "Assignment\nPlease complete the following assignment by Wednesday, 15th April 2024.\n\nAssignment 1: Develop a questionnaire using Google Forms",
+    "crumbs": [
+      "Module 10"
+    ]
+  },
+  {
+    "objectID": "modules/md-11.html#class-overview",
+    "href": "modules/md-11.html#class-overview",
+    "title": "Module 11",
+    "section": " Class Overview",
+    "text": "Class Overview\nIn class, everyone will:\n\nComplete everyone else’s questionnaire and provide feedback in this table\nDownload the +/- 15 responses, and we will discuss any challenges related to the raw data\n\nI will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me beforehand (e.g. scales, buckets, etc.)",
+    "crumbs": [
+      "Module 11"
     ]
   }
 ]

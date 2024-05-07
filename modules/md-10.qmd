@@ -18,7 +18,7 @@ library(epoxy)
 ```
 
 ```{r}
-| label: learning-objectives
+#| label: learning-objectives
 
 lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
@@ -61,6 +61,8 @@ Here is the schedule for May 2:
 | 14:00     | 14:15   | Break              |                   |
 | 14:15     | 15:00   | Consolidation      |                   |
 
-## {{< fa code >}} Assignments
+## {{< fa code >}} Assignment
 
--   In preparation
+Please complete the following assignment by Wednesday, 15th April 2024. 
+
+-   [Assignment 1](../assignments/md-10/am-10-1-questionnaire.qmd): Develop a questionnaire using Google Forms
