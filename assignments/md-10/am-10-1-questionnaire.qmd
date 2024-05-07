@@ -1,0 +1,16 @@
+---
+title: "Module 10 - Homework"
+subtitle: "Prepare questionnaire for capstone project"
+---
+
+For this assignment, we ask you to:
+
+1.  Develop a questionnaire using [Google Forms]{.highlight-yellow} to address the research question you formulated last week.
+2.  Place the link to your questionnaire [here](https://docs.google.com/spreadsheets/d/1LvaClheuJszxkIbLT0L-rRHEmgL_2h2o/edit#gid=133769975) so that everyone can access it on Thursday.
+
+In class next week, everyone will:
+
+-   Complete everyone else's questionnaire and provide feedback in the table.
+-   Download the +/- 15 responses, and we will discuss any challenges related to the raw data.
+
+I will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me [beforehand]{.highlight-yellow} (e.g. scales, buckets, etc.).
