@@ -101,8 +101,11 @@ website:
             text: "am-01: Assignment"
       - text: "Module 09"
         href: modules/md-09.qmd
-      - text: "Module 10"
+      - section: "Module 10"
         href: modules/md-10.qmd
+        contents:
+          - href: assignments/md-10/am-10-1-questionnaire.qmd
+            text: "am-10: Questionnaire"
       - text: "Module 11"
         href: modules/md-11.qmd
       - text: "Module 12"
