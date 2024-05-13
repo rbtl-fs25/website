@@ -61,8 +61,8 @@ Here is the schedule for May 2:
 | 14:00     | 14:15   | Break              |                   |
 | 14:15     | 15:00   | Consolidation      |                   |
 
-## {{< fa code >}} Assignment
+## {{< fa code >}} Assignments
 
-Please complete the following assignment by Wednesday, 15th April 2024. 
+Please complete the following assignment by Wednesday, 15th May 2024. 
 
 -   [Assignment 1](../assignments/md-10/am-10-1-questionnaire.qmd): Develop a questionnaire using Google Forms
