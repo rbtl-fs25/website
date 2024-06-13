@@ -1,0 +1,21 @@
+---
+format: revealjs
+---
+
+## Welcome! {.smaller}
+
+::: {.callout-important}
+## Please keep quiet, one person is already working on the exam.
+:::
+
+**Exam structure**
+
+The exam consists of five sections, each of which is a .qmd file (e.g. section-01.qmd). The total amount of points is 54, which means you could achieve 104 points in the overall course. The number of points for each section are displayed at the top of each section and for each task.
+
+**Hand-in**
+
+Each section has a "hand-in" task at the bottom. The 0.5 points for that task are for a file that renders without error. If the file does not render because you have errors, you would still get all points for the tasks you have completed, also for partial solutions. 
+
+**Time**
+
+The duration for the exam is two hours. At the end of the two hours, you are expected to stop working on the tasks. The course instructor can monitor when the file was last edited.

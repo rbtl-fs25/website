@@ -1,0 +1,38 @@
+---
+title: "Exam"
+format:
+  html:
+    number-sections: true
+execute:
+  echo: false
+---
+
+# General information
+
+1. bring your laptop and charger
+
+2. you will use the Posit Cloud infrastructure, as we used it in class
+
+3. you will not use GitHub or Git in the exam; you will start directly from Posit Cloud
+
+4. the exam is purely technical and tests your competency in R and Quarto
+
+5. the coding tasks are similar to the weekly assignments, and there will be one debugging task (a Quarto file with errors that you need to fix so that the file renders and displays all elements correctly)
+
+6. you can use any material for the exam (search engine, AI tools, etc.). If you use AI for a solution, please include a link to your prompt, as covered in the AI policy for class (https://rbtl-fs24.github.io/website/#ai-policy)
+
+7. you are not allowed to speak to your peers, either directly or through a messenger app
+
+The core challenge of the exam will be time pressure. You can prepare best for the exam by organising yourself in your browser (e.g., have organised bookmarks for the homework assignments on Posit Cloud, learn how documentation on www.quarto.org is organised, have prompt templates for AI tools, etc.). It's everything that I would expect someone to have for working efficiently in a day-to-day data science job).
+
+# Structure
+
+The exam consists of five sections, each of which is a .qmd file (e.g. section-01.qmd). The total amount of points is 54, which means you could achieve 104 points in the overall course. The number of points for each section are displayed at the top of each section and for each task.
+
+# Hand-in
+
+Each section has a "hand-in" task at the bottom. The 0.5 points for that task are for a file that renders without error. If the file does not render because you have errors, you would still get all points for the tasks you have completed, also for partial solutions. 
+
+# Time
+
+The duration for the exam is two hours. At the end of the two hours, you are expected to stop working on the tasks. The course instructor can monitor when the file was last edited.

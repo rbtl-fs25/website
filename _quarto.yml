@@ -110,6 +110,9 @@ website:
       - text: "---"
       - href: project/index.qmd
         text: "Capstone project"
+      - text: "---"
+      - href: exam/index.qmd
+        text: "Exam"
         
 format:
   html:
