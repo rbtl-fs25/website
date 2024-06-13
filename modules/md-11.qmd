@@ -30,11 +30,19 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 {1:length(lobj)}. {lobj[1:length(lobj)]}
 ```
 
-
 ## {{< fa display >}} Slides
 
-- In preparation
+-   There are no slides for this week
+
+## {{< fa list >}} Class Overview
+
+In class, everyone will:
+
+1.  Complete everyone else's questionnaire and provide feedback in [this table](https://docs.google.com/spreadsheets/d/1LvaClheuJszxkIbLT0L-rRHEmgL_2h2o/edit#gid=133769975)
+2.  Download the +/- 15 responses, and we will discuss any challenges related to the raw data
+
+I will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me beforehand (e.g. scales, buckets, etc.)
 
 ## {{< fa code >}} Assignments
 
-- In preparation
+-   In preparation
