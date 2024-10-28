@@ -21,31 +21,31 @@ date,module,title,teaser,lecturer,learning_objectives
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can identify different ways of accessing a vector from a dataframe
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can list the four main atomic vector types in R.
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.
-,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,NA
-,8,Waste Research,NA,E. Tilley,Learners can apply functions from the dplyr R Package to join multiple data sets.
-,8,Waste Research,NA,E. Tilley,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software
-,8,Waste Research,NA,E. Tilley,Learners can use the GitHub pages service to publish a repository as a standalone website.
-,NA,Easter Break,NA,NA,Learners can articulate the scale and drivers of the challenges in solid waste management
-,NA,Easter Break,NA,NA,Learners understand the flow of waste from Generation to Recovery
-,NA,Easter Break,NA,NA,Learners can identify waste management challenges at ETH and/or Zurich
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can apply functions from the dplyr R Package to join multiple data sets.
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software
+,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can use the GitHub pages service to publish a repository as a standalone website.
+,8,Waste Research,NA,E. Tilley,Learners can articulate the scale and drivers of the challenges in solid waste management
+,8,Waste Research,NA,E. Tilley,Learners understand the flow of waste from Generation to Recovery
+,8,Waste Research,NA,E. Tilley,Learners can identify waste management challenges at ETH and/or Zurich
 ,8,Waste Research,NA,E. Tilley,Learners can develop their own research questions using either the PICOT or FINER method
+,NA,Easter Break,NA,NA,NA
 ,9,Research Design,NA,E. Tilley,"Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management."
 ,9,Research Design,NA,E. Tilley,Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.
 ,9,Research Design,NA,E. Tilley,"Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic."
-,9,NA,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool.
+,9,Research Design,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool.
 ,10,Questionnaires,NA,E. Tilley,Learners can produce a research question that adheres to the FINER and PICOT frameworks
 ,10,Questionnaires,NA,E. Tilley,Learners can identify pitfalls associated with four types of questionnaire formats
 ,10,Questionnaires,NA,E. Tilley,Learners can clean and summarise different types of questionnaire-generated data
 ,10,Questionnaires,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool
-,11,Pre-test and logistics,NA,E. Tilley,NA
-,12,Data collection,NA,E. Tilley,Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback
-,12,Data collection,NA,E. Tilley,Learners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations
-,NA,Data analysis & report writing,NA,NA,NA
-,12,Auffahrt Break,NA,E. Tilley and L. Schöbitz,Learners can apply the skills obtained during the course to write a short data analysis project report.
-,12,Auffahrt Break,NA,E. Tilley and L. Schöbitz,Learners can manipulate and analyse their data to answer their stated research questions
-,12,Auffahrt Break,NA,E. Tilley and L. Schöbitz,Learners can critically assess their success in answering their stated research questions
-,NA,Project Submission Deadline,NA,NA,NA
-,NA,Exam,NA,All,NA
+,11,Pre-test and logistics,NA,E. Tilley,Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback
+,11,Pre-test and logistics,NA,E. Tilley,Learners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations
+,12,Data collection,NA,E. Tilley,NA
+,13,Data analysis & report writing,NA,E. Tilley and L. Schöbitz,Learners can apply the skills obtained during the course to write a short data analysis project report.
+,13,Data analysis & report writing,NA,E. Tilley and L. Schöbitz,Learners can manipulate and analyse their data to answer their stated research questions
+,13,Data analysis & report writing,NA,E. Tilley and L. Schöbitz,Learners can critically assess their success in answering their stated research questions
+,14,Auffahrt Break,NA,NA,NA
+,15,Project Submission Deadline,NA,NA,NA
+,16,Exam,NA,All,NA
 ,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA
