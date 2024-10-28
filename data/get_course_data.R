@@ -14,37 +14,49 @@ library(dplyr)
 
 ## course schedule  --------------------------------------------------
 
-read_sheet("1ryvEUBH8ZRfHTfJoQOEGgOVNXdzeyVbAsvHXIZB9eZU") |> 
+link01 <- "https://docs.google.com/spreadsheets/d/1mEZC4Eg786BO3xbgBQyi5bsDp9df541Ibq9TDCwplxk/edit?gid=0#gid=0"
+
+read_sheet(link01) |> 
   mutate(title = case_when(
     is.na(page_link) == FALSE ~  paste0("[", title, "](", page_link, ")"),
     TRUE ~ title
   )) |>
-  write_csv(here::here("data/tbl-00-rbtl-fs24-course-schedule-main.csv"))
+  write_csv(here::here("data/tbl-00-rbtl-fs25-course-schedule-main.csv"))
 
 ## learning objectives  ------------------------------
 
-read_sheet("1JwAXgXbzm8kgJ3YtV3tN7DHVtA4aAgQ1YofyU0wCbXA") |> 
-  write_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv"))
+link02 <- "https://docs.google.com/spreadsheets/d/1F0Voaxe19sSyyRn-WZP3QSj96gBuUAbqn-L2wbWxC7M/edit?gid=0#gid=0"
+
+read_sheet(link02) |> 
+  write_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv"))
 
 ## homework assignments -----------------------------------------------
 
-read_sheet("1gYGtfgyMnzb6RzoN1qEWAXu6eMi688Na4492cQumxP0") |> 
-  write_csv(here::here("data/tbl-03-rbtl-fs24-homework-assignments.csv"))
+link03 <- "https://docs.google.com/spreadsheets/d/1NtDNmSTlhOk6ij2afttjt6b2-MtXVCZcfu8jVlt2rwA/edit?gid=0#gid=0"
+
+read_sheet(link03) |> 
+  write_csv(here::here("data/tbl-03-rbtl-fs25-homework-assignments.csv"))
 
 ## grading conversion
 
-read_sheet("1YED8fEJxlFkU0Zth5mUFnVQ8mfwcG5AVq9MLCS2Zqr4") |> 
+link04 <- "https://docs.google.com/spreadsheets/d/1IPhKALWRNfolRg5x1z4hbg5ZwXNOLmUKQcskmepY4_k/edit?usp=drive_web&ouid=106935258332658829405"
+
+read_sheet(link04) |> 
   write_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv"))
 
 ## grading structure
 
-read_sheet("1cOYwKwomBUmzN5JZDtuk7rtuZ_NlWDpk30aG5iCngxg") |> 
+link05 <- "https://docs.google.com/spreadsheets/d/1nAKfKYPM9AVb1c_vfOPSIXOnnN10v0iv3URV8ifkX4g/edit?usp=drive_web&ouid=106935258332658829405"
+
+read_sheet(link05) |> 
   write_csv(here::here("data/tbl-06-rbtl-grading-structure.csv"))
 
-
 ## project report
-read_sheet("1M272noH72YKP_NNqakKrpBeAEypgd4qYyqjRuQRKfwY") |> 
-  write_csv(here::here("data/tbl-10-rbtl-fs24-capstone-project-elements.csv"))
+
+link06 <- "https://docs.google.com/spreadsheets/d/1gvHAJYYqATCi3R4bdHxeRhoXW7f5RnrSzr1yJYtx1Z4/edit?gid=0#gid=0"
+
+read_sheet(link06) |> 
+  write_csv(here::here("data/tbl-10-rbtl-fs25-capstone-project-elements.csv"))
 
 
 
