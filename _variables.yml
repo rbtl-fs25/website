@@ -3,58 +3,58 @@ institute: "ETH Zurich"
 department: "Global Health Engineering"
 
 course:
-  code: "rbtl-fs24"
-  short-title: "rbtl-fs24"
+  code: "rbtl-fs25"
+  short-title: "rbtl-fs25"
   long-title: "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer"
-  site: "https://rbtl-fs24.github.io/website/"
-  site-short: "rbtl-fs24.github.io/website/"
-  github-org: "https://github.com/rbtl-fs24"
+  site: "https://rbtl-fs25.github.io/website/"
+  site-short: "rbtl-fs25.github.io/website/"
+  github-org: "https://github.com/rbtl-fs25"
 
 md-01:
   title: "Welcome & get ready for the course"
-  date: "2024-02-22"
+  date: "2025-02-20"
 
 md-02:
   title: "Data science lifecycle & Exploratory data analysis using visualization"
-  date: "2024-02-29"
+  date: "2025-02-27"
   
 md-03:
   title: "Data transformation with dplyr"
-  date: "2024-03-07"
+  date: "2025-03-06"
   
 md-04:
   title: "Data import & Data organization in spreadsheets"
-  date: "2024-03-14"
+  date: "2025-03-13"
   
 md-05:
   title: "Conditions & Dates & Tables"
-  date: "2024-03-21"
+  date: "2025-03-20"
   
 md-06:
   title: "Data types & Vectors & Pivoting"
-  date: "2024-03-28"
+  date: "2025-03-27"
   
 md-07:
   title: "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages"
-  date: "2024-04-11"
-  
-md-08:
-  title: "Research Design"
-  date: "2024-04-18"
+  date: "2025-04-03"
 
-md-09:
+md-08:
   title: "Waste Research"
-  date: "2024-04-25"
+  date: "2025-04-10"
+  
+md-09:
+  title: "Research Design"
+  date: "2025-04-24"
   
 md-10:
-  title: "Survey Design"
-  date: "2024-05-02"
+  title: "Questionnaires"
+  date: "2025-05-01"
   
 md-11:
   title: "Pre-test and logistics"
-  date: "2024-05-16"
+  date: "2025-05-08"
   
 md-12:
   title: "Data analysis & report writing"
-  date: "2024-05-30"
+  date: "2025-05-12"
   
