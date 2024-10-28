@@ -1,5 +1,6 @@
 ---
 title: "Course Calendar"
+subtitle: "dates and times not yet finalized"
 editor: source
 execute: 
   echo: false

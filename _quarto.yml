@@ -5,9 +5,9 @@ project:
 website:
   page-navigation: true
   title: "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer"
-  description: "Website for rbtl spring term 2024"
-  site-url: "https://rbtl-fs24.github.io/website/"
-  repo-url: "https://github.com/rbtl-fs24/website"
+  description: "Website for rbtl spring term 2025"
+  site-url: "https://rbtl-fs25.github.io/website/"
+  repo-url: "https://github.com/rbtl-fs25/website"
   search: false
   page-footer: 
     left: | 
@@ -17,7 +17,7 @@ website:
         href: "mailto:ghe@mavt.ethz.ch"
         aria-label: Email
       - icon: github
-        href: https://github.com/rbtl-fs24/website
+        href: https://github.com/rbtl-fs25/website
         aria-label: GitHub
       - icon: chat-left-dots
         href: https://matrix.to/#/#openwashdata-lobby:staffchat.ethz.ch
@@ -32,7 +32,7 @@ website:
     collapse-level: 1
     tools:
       - icon: github
-        href: https://github.com/rbtl-fs24/
+        href: https://github.com/rbtl-fs25/
         text: "GitHub organization"
     contents: 
       - href: index.qmd
@@ -132,7 +132,7 @@ format:
       margin-width: 300px
     include-in-header: 
         - text: |
-            <script defer data-domain="rbtl-fs24.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="rbtl-fs25.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 execute: 
   freeze: auto

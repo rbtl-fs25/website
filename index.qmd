@@ -11,9 +11,9 @@ options(knitr.kable.NA = '')
 ```
 
 
-Thank you for your interest in this course. Your course instructors: [Prof Elizabeth Tilley](https://ghe.ethz.ch/about/people/person-detail.MTc2MjI5.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) and [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) are looking forward to meet you.
+Thank you for your interest in this course. Your course instructors: [Prof Elizabeth Tilley](https://ghe.ethz.ch/about/people/person-detail.MTc2MjI5.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html), [Colin Walder](https://ghe.ethz.ch/about/people/person-detail.MjYzMjMy.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html), and [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) are looking forward to meet you.
 
-[We will meet Thursdays at CAB G 59 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-peach}
+[We will meet [TIME AND DATE TO BE ANNOUNCED]. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-peach}
 
 ## Course Information
 
@@ -45,17 +45,17 @@ Topics include:
 
 We will rely entirely on open source and open access material for this course. We will use "R for Data Science" by Hadley Wickham as complementary reading and learning material for this course. Additional readings will consist of blog posts, journal articles, and reports. All required readings and class material will be provided through this website.
 
-## Course Calendar
+## Course Calendar (subject to change)
 
 ```{r}
-readr::read_csv("data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+readr::read_csv("data/tbl-00-rbtl-fs25-course-schedule-main.csv") |> 
   dplyr::select(date, module, topic = title) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
   
 ```
 
-## Weekly Structure
+## Weekly Structure (subject to change)
 
 Assignment submission: Wednesdays, latest by 23:59.
 

@@ -4,7 +4,7 @@
     "href": "calendar.html",
     "title": "Course Calendar",
     "section": "",
-    "text": "module\ndate\ntopic\n\n\n\n\n1\n22 February 2024\nWelcome & get ready for the course\n\n\n2\n29 February 2024\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n07 March 2024\nData transformation with dplyr\n\n\n4\n14 March 2024\nData import & Data organization in spreadsheets\n\n\n5\n21 March 2024\nConditions & Dates & Tables\n\n\n6\n28 March 2024\nData types & Vectors & Pivoting\n\n\n\n04 April 2024\nEaster Break\n\n\n7\n11 April 2024\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n18 April 2024\nWaste Research\n\n\n9\n25 April 2024\nResearch Design\n\n\n10\n02 May 2024\nQuestionnaires\n\n\n\n09 May 2024\nAuffahrt Break\n\n\n11\n16 May 2024\nPre-test and logistics\n\n\n\n23 May 2024\nData collection\n\n\n12\n30 May 2024\nData analysis & report writing\n\n\n\n06 June 2024\nProject Submission Deadline\n\n\n\n13 June 2024\nExam",
+    "text": "module\ndate\ntopic\n\n\n\n\n1\n20 February 2025\nWelcome & get ready for the course\n\n\n2\n27 February 2025\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n06 March 2025\nData transformation with dplyr\n\n\n4\n13 March 2025\nData import & Data organization in spreadsheets\n\n\n5\n20 March 2025\nConditions & Dates & Tables\n\n\n6\n27 March 2025\nData types & Vectors & Pivoting\n\n\n7\n03 April 2025\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n10 April 2025\nWaste Research\n\n\n\n17 April 2025\nEaster Break\n\n\n9\n24 April 2025\nResearch Design\n\n\n10\n01 May 2025\nSurvey Design\n\n\n11\n08 May 2025\nPre-test and logistics\n\n\n12\n15 May 2025\nData collection\n\n\n\n22 May 2025\nData analysis & report writing\n\n\n\n29 May 2025\nAuffahrt Break\n\n\n\n05 June 2025\nProject Submission Deadline\n\n\n\n12 June 2025\nExam",
     "crumbs": [
       "Course Calendar"
     ]
@@ -150,11 +150,21 @@
     ]
   },
   {
-    "objectID": "modules/md-10.html#slides",
-    "href": "modules/md-10.html#slides",
+    "objectID": "modules/md-10.html#class-overview",
+    "href": "modules/md-10.html#class-overview",
     "title": "Module 10",
-    "section": " Slides",
-    "text": "Slides\n\nIn preparation",
+    "section": " Class Overview",
+    "text": "Class Overview\n\nDuring class we will be using the files in this folder:  there are four different .csv files for you to work with:\n\n01_binary.csv\n02_likert.csv\n03_multi-choice.csv\n04_text.csv\n\nThere is also a corresponding summary file (e.g. 01_binary_summary) with a tab for each group (groups from last week:  wtp, compost, air, coops)\nYour group will\n\nDownload a data set\nSee what kind of data it is, and develop a corresponding research question (add to summary table)\nClean the data (use R, Excel, python, etc:  whatever you like) and note your process and any challenges you faced, and how you addressed them (add to summary table)\nAnalyse the data in a way that answers your research question (add result to summary table)\n\nWe will discuss the pros and cons of each question type\nYou will develop your own questionnaire to answer your research question",
+    "crumbs": [
+      "Module 10"
+    ]
+  },
+  {
+    "objectID": "modules/md-10.html#class-schedule",
+    "href": "modules/md-10.html#class-schedule",
+    "title": "Module 10",
+    "section": " Class schedule",
+    "text": "Class schedule\nHere is the schedule for May 2:\n\n\n\nstart\nend\nTopic\nActivity\n\n\n12:15\n12:25\nIntro and Welcome\n\n\n\n12:25\n12:45\nResearch questions\nGroup discussions\n\n\n12:45\n13:00\nDebugging\n\n\n\n13:00\n13:15\nBreak\n\n\n\n13:15\n14:00\n4 question types\nGroup work\n\n\n14:00\n14:15\nBreak\n\n\n\n14:15\n15:00\nConsolidation",
     "crumbs": [
       "Module 10"
     ]
@@ -195,6 +205,16 @@
     "title": "Module 11",
     "section": " Slides",
     "text": "Slides\n\nThere are no slides for this week",
+    "crumbs": [
+      "Module 11"
+    ]
+  },
+  {
+    "objectID": "modules/md-11.html#class-overview",
+    "href": "modules/md-11.html#class-overview",
+    "title": "Module 11",
+    "section": " Class Overview",
+    "text": "Class Overview\nIn class, everyone will:\n\nComplete everyone else’s questionnaire and provide feedback in this table\nDownload the +/- 15 responses, and we will discuss any challenges related to the raw data\n\nI will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me beforehand (e.g. scales, buckets, etc.)",
     "crumbs": [
       "Module 11"
     ]
@@ -308,6 +328,13 @@
     "crumbs": [
       "Module 03"
     ]
+  },
+  {
+    "objectID": "exam/exam.html#welcome",
+    "href": "exam/exam.html#welcome",
+    "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
+    "section": "Welcome!",
+    "text": "Welcome!\n\n\n\n\n\n\nPlease keep quiet, one person is already working on the exam.\n\n\n\n\n\n\nExam structure\nThe exam consists of five sections, each of which is a .qmd file (e.g. section-01.qmd). The total amount of points is 54, which means you could achieve 104 points in the overall course. The number of points for each section are displayed at the top of each section and for each task.\nHand-in\nEach section has a “hand-in” task at the bottom. The 0.5 points for that task are for a file that renders without error. If the file does not render because you have errors, you would still get all points for the tasks you have completed, also for partial solutions.\nTime\nThe duration for the exam is two hours. At the end of the two hours, you are expected to stop working on the tasks. The course instructor can monitor when the file was last edited."
   },
   {
     "objectID": "project/index.html",
@@ -524,14 +551,14 @@
     "href": "slides/lec-05-communicate.html#what-is-a-.qmd",
     "title": "Joining data & communicating results with Quarto",
     "section": "What is a .qmd?",
-    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
+    "text": "What is a .qmd?\n\nA Quarto document i.e. a .qmd is a plain text file\n\n\nMetadata (YAML)\n\n\nformat: html\nengine: knitr\n\nformat: html\nengine: jupyter\n\n\n\nCode\n\n\n```{r}\nlibrary(dplyr)\n\nmtcars |&gt; \n  dplyr::group_by(cyl) |&gt; \n  dplyr::summarize(mean = mean(mpg))\n```\n\n```{python}\nfrom siuba import _, group_by, summarize\nfrom siuba.data import mtcars\n(mtcars\n  &gt;&gt; group_by(_.cyl)\n  &gt;&gt; summarize(avg_mpg = _.mpg.mean())\n  )\n```\n\n\n\nText\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an \n![image](image.png){fig-alt=\"Alt text for this image\"}."
   },
   {
     "objectID": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
     "href": "slides/lec-05-communicate.html#quarto-makes-moving-between-formats-straightforward",
     "title": "Joining data & communicating results with Quarto",
     "section": "Quarto makes moving between formats straightforward",
-    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
+    "text": "Quarto makes moving between formats straightforward\n\n\n\nDocument\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: html\n\n\n\nPresentation\n\n lesson-1.qmd\n\ntitle: \"Lesson 1\"\nformat: revealjs\n\n\n\nWebsite\n\n _quarto.yml\n\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd\n\n\n\n\nIt is traightforward in Quarto to move between output formats\nAs an educator, there are two things that are important to me\n\nreproducibility, and\nease of transitiion between output formats\n\nI am using Quarto for everything, and it’s finally the tool let’s me go from one output type to anoher without the to change anything by the YAML metadata\n\nFor example, here are common things I produce\n–&gt; a lesson in document form  –&gt; the same content in presentation form  –&gt; the same content on a page in a website,\nand you can see that all that needed to change going between these formats is a few lines in the yaml.\nNo slide breaks to remove, no citation style to change, no headings to re-level. This ease of transition has freed up time to focus my time on content, and that, folks, is the dream!"
   },
   {
     "objectID": "slides/lec-05-communicate.html#comfort-of-your-own-workspace",
@@ -615,7 +642,7 @@
     "href": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Faecal sludge samples",
-    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
+    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
   },
   {
     "objectID": "slides/lec-07-quarto.html#you-as-an-author",
@@ -839,14 +866,14 @@
     "href": "slides/lec-07-quarto.html#why-use-a-reference-management-tool",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Why use a reference management tool?",
-    "text": "Why use a reference management tool?\n\n\nManaging references manually:\n\nis a lot of work\nis prone to mistakes\nmakes you lose track\n\n\n\n\n\n\nPhoto by Christian Erfurt on unsplash.com"
+    "text": "Why use a reference management tool?\n\n\nManaging references manually:\n\nis a lot of work\nis prone to mistakes\nmakes you lose track\n\n\n\n\n\nPhoto by Christian Erfurt on unsplash.com"
   },
   {
     "objectID": "slides/lec-07-quarto.html#why-use-zotero",
     "href": "slides/lec-07-quarto.html#why-use-zotero",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Why use Zotero?",
-    "text": "Why use Zotero?\n\n\n\nfree\nopen source: developed in public\ntransparent about access to your own data\ncross-platform (Windows, Mac, Linux)\ncollaboration in groups\nintegration with word processors\n\n\n\n\n\n\nPhoto by Sincerely Media on unsplash.com\n\n\nMendeley\n\nMendeley is owned by Elsevier.\nIt encrypts your database and makes money with your data\nYou can only collaborate with 3 people on one project.\n\nEndNote\n\nEndNote doesn’t come free, you need to buy a license.\nThey also used a prioprietary citation style files that could only be opened by EndNote."
+    "text": "Why use Zotero?\n\n\n\nfree\nopen source: developed in public\ntransparent about access to your own data\ncross-platform (Windows, Mac, Linux)\ncollaboration in groups\nintegration with word processors\n\n\n\n\n\nPhoto by Sincerely Media on unsplash.com\n\n\nMendeley\n\nMendeley is owned by Elsevier.\nIt encrypts your database and makes money with your data\nYou can only collaborate with 3 people on one project.\n\nEndNote\n\nEndNote doesn’t come free, you need to buy a license.\nThey also used a prioprietary citation style files that could only be opened by EndNote."
   },
   {
     "objectID": "slides/lec-07-quarto.html#scholarly-articles-in-quarto",
@@ -965,7 +992,7 @@
     "href": "slides/lec-07-quarto.html#thanks",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\n\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\n\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "slides/lec-08-waste-research.html#week-8-solid-waste-management",
@@ -1336,7 +1363,7 @@
     "href": "slides/lec-09-research-questions.html#take-home-messages",
     "title": "Research Questions",
     "section": "Take home messages",
-    "text": "Take home messages\n\nManagement of MSW is one of the major challenges worldwide\nThe amount of waste generated is often linked directly to income level and lifestyle\nThere is no one-size-fits-all solution to the SWM challenge\nThe socio-economic, cultural and institutional context requires special consideration of appropriately adapted technologies, capacity building, including improvement of skills and know-how at local government level\nThe ISWM framework is a structured assessment method to understand and find solutions to existing SWM systems.\nRecovery of resources (materials and energy) is a promising way to go in solid waste management\n\n\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Take home messages\n\nManagement of MSW is one of the major challenges worldwide\nThe amount of waste generated is often linked directly to income level and lifestyle\nThere is no one-size-fits-all solution to the SWM challenge\nThe socio-economic, cultural and institutional context requires special consideration of appropriately adapted technologies, capacity building, including improvement of skills and know-how at local government level\nThe ISWM framework is a structured assessment method to understand and find solutions to existing SWM systems.\nRecovery of resources (materials and energy) is a promising way to go in solid waste management\n\n\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#exam-update",
@@ -1455,7 +1482,7 @@
     "href": "slides/lec-04-tidy-data.html#a-grammar-of-data-tidying",
     "title": "Concept of Tidy Data, Vectors & Pivoting",
     "section": "A grammar of data tidying",
-    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\n\nSlide taken from Data Science in a Box"
+    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\nSlide taken from Data Science in a Box"
   },
   {
     "objectID": "slides/lec-04-tidy-data.html#pivoting-data",
@@ -1616,7 +1643,7 @@
     "href": "slides/lec-02-visualisation.html#other-sources-for-help",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Other sources for help",
-    "text": "Other sources for help\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDocumentation websites: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Discussion: https://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Other sources for help\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDocumentation websites: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Discussion: https://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#section-1",
@@ -1875,7 +1902,7 @@
     "href": "slides/lec-02-visualisation.html#r-package-ggplot2",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "R Package ggplot2",
-    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
+    "text": "R Package ggplot2\n\n\n\nggplot2 is tidyverse’s data visualization package\ngg in ggplot2 stands for Grammar of Graphics\nInspired by the book Grammar of Graphics by Leland Wilkinson\nDocumentation: https://ggplot2.tidyverse.org/\nBook: https://ggplot2-book.org\n\n\n\n\n\n\nSlide adapted from datasciencebox.org"
   },
   {
     "objectID": "slides/lec-02-visualisation.html#my-turn-working-with-r",
@@ -2043,14 +2070,14 @@
     "href": "slides/lec-02-visualisation.html#thanks",
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Course Overview",
     "section": "",
-    "text": "Thank you for your interest in this course. Your course instructors: Prof Elizabeth Tilley and Lars Schöbitz are looking forward to meet you.\nWe will meet Thursdays at CAB G 59 from 12:15 to 15:00. There is no Moodle page for this course. Everything you need will be published through this website.",
+    "text": "Thank you for your interest in this course. Your course instructors: Prof Elizabeth Tilley, Colin Walder, and Lars Schöbitz are looking forward to meet you.\nWe will meet [TIME AND DATE TO BE ANNOUNCED]. There is no Moodle page for this course. Everything you need will be published through this website.",
     "crumbs": [
       "Course Overview"
     ]
@@ -2086,21 +2113,21 @@
     ]
   },
   {
-    "objectID": "index.html#course-calendar",
-    "href": "index.html#course-calendar",
+    "objectID": "index.html#course-calendar-subject-to-change",
+    "href": "index.html#course-calendar-subject-to-change",
     "title": "Course Overview",
-    "section": "Course Calendar",
-    "text": "Course Calendar\n\n\n\n\n\ndate\nmodule\ntopic\n\n\n\n\n22 February 2024\n1\nWelcome & get ready for the course\n\n\n29 February 2024\n2\nData science lifecycle & Exploratory data analysis using visualization\n\n\n07 March 2024\n3\nData transformation with dplyr\n\n\n14 March 2024\n4\nData import & Data organization in spreadsheets\n\n\n21 March 2024\n5\nConditions & Dates & Tables\n\n\n28 March 2024\n6\nData types & Vectors & Pivoting\n\n\n04 April 2024\n\nEaster Break\n\n\n11 April 2024\n7\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n18 April 2024\n8\nWaste Research\n\n\n25 April 2024\n9\nResearch Design\n\n\n02 May 2024\n10\nQuestionnaires\n\n\n09 May 2024\n\nAuffahrt Break\n\n\n16 May 2024\n11\nPre-test and logistics\n\n\n23 May 2024\n\nData collection\n\n\n30 May 2024\n12\nData analysis & report writing\n\n\n06 June 2024\n\nProject Submission Deadline\n\n\n13 June 2024\n\nExam",
+    "section": "Course Calendar (subject to change)",
+    "text": "Course Calendar (subject to change)\n\n\n\n\n\ndate\nmodule\ntopic\n\n\n\n\n20 February 2025\n1\nWelcome & get ready for the course\n\n\n27 February 2025\n2\nData science lifecycle & Exploratory data analysis using visualization\n\n\n06 March 2025\n3\nData transformation with dplyr\n\n\n13 March 2025\n4\nData import & Data organization in spreadsheets\n\n\n20 March 2025\n5\nConditions & Dates & Tables\n\n\n27 March 2025\n6\nData types & Vectors & Pivoting\n\n\n03 April 2025\n7\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n10 April 2025\n8\nWaste Research\n\n\n17 April 2025\n\nEaster Break\n\n\n24 April 2025\n9\nResearch Design\n\n\n01 May 2025\n10\nSurvey Design\n\n\n08 May 2025\n11\nPre-test and logistics\n\n\n15 May 2025\n12\nData collection\n\n\n22 May 2025\n\nData analysis & report writing\n\n\n29 May 2025\n\nAuffahrt Break\n\n\n05 June 2025\n\nProject Submission Deadline\n\n\n12 June 2025\n\nExam",
     "crumbs": [
       "Course Overview"
     ]
   },
   {
-    "objectID": "index.html#weekly-structure",
-    "href": "index.html#weekly-structure",
+    "objectID": "index.html#weekly-structure-subject-to-change",
+    "href": "index.html#weekly-structure-subject-to-change",
     "title": "Course Overview",
-    "section": "Weekly Structure",
-    "text": "Weekly Structure\nAssignment submission: Wednesdays, latest by 23:59.\n\n\n\nMonday\n\n\n\nTuesday\nStudent hours from 14:00 to 16:00 (CET)\n\n\nWednesday\nAssignment submission, latest by 23:59 (CET)\n\n\nThursday\nLecture from 12:15 to 15:00 (CET)\n\n\nFriday",
+    "section": "Weekly Structure (subject to change)",
+    "text": "Weekly Structure (subject to change)\nAssignment submission: Wednesdays, latest by 23:59.\n\n\n\nMonday\n\n\n\nTuesday\nStudent hours from 14:00 to 16:00 (CET)\n\n\nWednesday\nAssignment submission, latest by 23:59 (CET)\n\n\nThursday\nLecture from 12:15 to 15:00 (CET)\n\n\nFriday",
     "crumbs": [
       "Course Overview"
     ]
@@ -2110,7 +2137,7 @@
     "href": "index.html#performance-assessment",
     "title": "Course Overview",
     "section": "Performance assessment",
-    "text": "Performance assessment\nThe performance assessment and resulting grading scheme are shown below.\n\nEnd-of-semester exam: 50 points\nCompulsory continuous performance assessment: 50 points, of which\n\nHomework assignments: 20 points (n = 10)\nCapstone project: 30 points, of which\n\nTechnical parts of submitted report: 20 points (we will communicate what we expect)\nIntellectual framing of results: 10 points (we will communicate what we expect)\n\n\n\nTable Table 1 shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n93 points = 5.75\n92 points = 5.50\n45 points = 4.00\n44 points = 3.50\n\n\n\n\n\nTable 1: Conversion from points to grades.\n\n\n\n\n\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-of-semester exam\nThere is a 2-hour final written exam, which assesses the technical skills taught during the course. It contains programming exercises using the R programming language. The success of the exam depends on the effort put into the compulsory continuous performance assessment. The exam receives 50 points.\n\n\nCompulsory continuous performance assessment\nHomework assignments: Each week will have at least one homework assignment. Homework assignments are delivered as Quarto documents with instructions and sample code. Students are required to submit their work through GitHub. A total of ten assignments receive a pass/fail with 2 points for each assignment and 20 points in total.\nCapstone Project: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets).\nDetailed instructions for the completion of the capstone project will be provided. The project report will be delivered as a Quarto documens and students are asked to submit their work through GitHub. The capstone project receives 30 points.\nReadings: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class. Readings are not graded.",
+    "text": "Performance assessment\nThe performance assessment and resulting grading scheme are shown below.\n\nEnd-of-semester exam: 50 points\nCompulsory continuous performance assessment: 50 points, of which\n\nHomework assignments: 20 points (n = 10)\nCapstone project: 30 points, of which\n\nTechnical parts of submitted report: 20 points (we will communicate what we expect)\nIntellectual framing of results: 10 points (we will communicate what we expect)\n\n\n\nTable Table 1 shows the conversion from points to grades. Grades follow the ETHZ’s Grading System. Points are rounded to the nearest grade, for example:\n\n97 points = 5.75\n93 points = 5.75\n92 points = 5.50\n45 points = 4.00\n44 points = 3.50\n\n\n\n\n\nTable 1: Conversion from points to grades.\n\n\n\n\n\n\ngrade\npoints\n\n\n\n\n6.00\n100\n\n\n5.75\n95\n\n\n5.50\n90\n\n\n5.25\n85\n\n\n5.00\n80\n\n\n4.75\n75\n\n\n4.50\n70\n\n\n4.25\n60\n\n\n4.00\n50\n\n\n3.50\n40\n\n\n3.00\n30\n\n\n2.50\n20\n\n\n2.00\n10\n\n\n1.00\n0\n\n\n\n\n\n\n\n\n\n\n\nEnd-of-semester exam\nThere is a 2-hour final written exam, which assesses the technical skills taught during the course. It contains programming exercises using the R programming language. The success of the exam depends on the effort put into the compulsory continuous performance assessment. The exam receives 50 points.\n\n\nCompulsory continuous performance assessment\nHomework assignments: Each week will have at least one homework assignment. Homework assignments are delivered as Quarto documents with instructions and sample code. Students are required to submit their work through GitHub. A total of ten assignments receive a pass/fail with 2 points for each assignment and 20 points in total.\nCapstone Project: A final capstone project provides students with an opportunity to apply their skills and techniques to real-world data sets. Each student will collect their own data for this project, either using a survey based tool (Google Forms) or an observational study (Google Sheets).\nDetailed instructions for the completion of the capstone project will be provided. The project report will be delivered as a Quarto documens and students are asked to submit their work through GitHub. The capstone project receives 30 points.\nReadings: Every week, additional readings will be provided that support students in learning the underlying concept that are taught during the class. Readings are not graded.",
     "crumbs": [
       "Course Overview"
     ]
@@ -2587,6 +2614,13 @@
     ]
   },
   {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
+    "section": "",
+    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+  },
+  {
     "objectID": "guide/index.html",
     "href": "guide/index.html",
     "title": "Guide",
@@ -2608,11 +2642,15 @@
     "text": "2 Switch pipe operator\nBy default, R uses %&gt;% as the pipe operator from the magrittr package. Since R 4.1.0, the pipe operator is also available as |&gt; without loading any packages. The |&gt; operator is recommended to be used instead of %&gt;%.\nTo switch to the native pipe operator, follow these steps:\n\nOpen your project on Posit Cloud\nOn the menu bar of RStudio, click on Tools &gt; Global Options... (see Figure 1)\nOn the left panel, click on Code\nOn the right panel, select the 4th check-box from the top next to ’Use native pipe operator, |&gt; (requires R 4.1+) (see Figure 2)\nClick on Apply and OK\n\n\n\n\n\n\n\n\n\nFigure 1: RStudio Global Options\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: RStudio Code Options"
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
+    "objectID": "assignments/md-10/am-10-1-questionnaire.html",
+    "href": "assignments/md-10/am-10-1-questionnaire.html",
+    "title": "Module 10 - Homework",
     "section": "",
-    "text": "All of the material here is available under the Creative Commons Attribution license.\nYou are free:\n\nto Share - to copy and redistribute the material in any medium or format\nto Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nUnder the following terms:\n\nAttribution — You must give appropriate credit using “(c) Copyright 2022, Lars Schöbitz”, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotice - For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to http://creativecommons.org/licenses/by/4.0/.\n\nFor the full legal text of this license, please see: http://creativecommons.org/licenses/by/4.0/legalcode."
+    "text": "For this assignment, we ask you to:\n\nDevelop a questionnaire using Google Forms to address the research question you formulated last week.\nPlace the link to your questionnaire here so that everyone can access it on Thursday.\n\nIn class next week, everyone will:\n\nComplete everyone else’s questionnaire and provide feedback in the table.\nDownload the +/- 15 responses, and we will discuss any challenges related to the raw data.\n\nI will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me beforehand (e.g. scales, buckets, etc.).",
+    "crumbs": [
+      "Module 10",
+      "am-10: Questionnaire"
+    ]
   },
   {
     "objectID": "assignments/md-04/am-04-2-survey.html",
@@ -3220,7 +3258,7 @@
     "href": "slides/lec-07-pivoting-joining.html#faecal-sludge-samples-2",
     "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
     "section": "Faecal sludge samples",
-    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
+    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
   },
   {
     "objectID": "slides/lec-07-pivoting-joining.html#you-as-an-author",
@@ -3717,7 +3755,7 @@
     "href": "slides/lec-01-welcome.html#thanks",
     "title": "Welcome & get ready for the course",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
@@ -3787,7 +3825,7 @@
     "href": "slides/lec-09-research-design.html#health-threats",
     "title": "Research Design",
     "section": "Health Threats",
-    "text": "Health Threats\n\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Health Threats\n\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#learning-objectives-for-this-module",
@@ -3997,7 +4035,7 @@
     "href": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-4",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Data Organization in Spreadsheets",
-    "text": "Data Organization in Spreadsheets\nWhy? Because following a set of rules for organizing data everyone’s live a little better.\n\n\n\n\n\n\n\n\n\n\n\n\n\n3rd most viewed paper on The American Statistician\n310’000+ views\nwidely accepted as minimal standards\n\n\n\n\nJournal: The American Statistician, Screenshot taken on 2023-11-21"
+    "text": "Data Organization in Spreadsheets\nWhy? Because following a set of rules for organizing data everyone’s live a little better.\n\n\n\n\n\n\n\n\n\n\n\n\n\n3rd most viewed paper on The American Statistician\n310’000+ views\nwidely accepted as minimal standards\n\n\n\nJournal: The American Statistician, Screenshot taken on 2023-11-21"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#data-organization-in-spreadsheets-5",
@@ -4025,7 +4063,7 @@
     "href": "slides/lec-04-spreadsheets.html#thanks",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
@@ -4039,7 +4077,7 @@
     "href": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
     "title": "Data transformation with dplyr",
     "section": "A grammar of data wrangling…",
-    "text": "A grammar of data wrangling…\n… based on the concepts of functions as verbs that manipulate data frames\n\n\n\n\n\n\n\n\n\n\n\n\n\nselect: pick columns by name\narrange: reorder rows\nfilter: pick rows matching criteria\nrelocate: changes the order of the columns\nmutate: add new variables\nsummarise: reduce variables to values\ngroup_by: for grouped operations\n… (many more)\n\n\n\n\n\nSlide taken from Data Science in a Box"
+    "text": "A grammar of data wrangling…\n… based on the concepts of functions as verbs that manipulate data frames\n\n\n\n\n\n\n\n\n\n\n\n\n\nselect: pick columns by name\narrange: reorder rows\nfilter: pick rows matching criteria\nrelocate: changes the order of the columns\nmutate: add new variables\nsummarise: reduce variables to values\ngroup_by: for grouped operations\n… (many more)\n\n\n\n\nSlide taken from Data Science in a Box"
   },
   {
     "objectID": "slides/lec-03-transformation.html#dplyr-rules",
@@ -4179,7 +4217,7 @@
     "href": "slides/lec-03-transformation.html#thanks",
     "title": "Data transformation with dplyr",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs24.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "slides/lec-05-conditions.html#learning-objectives-for-this-week",
@@ -4354,7 +4392,7 @@
     "href": "slides/lec-05-conditions.html#references",
     "title": "Conditions & Dates & Tables",
     "section": "References",
-    "text": "References\n\n\n\n rbtl-fs24.github.io/website/\n\n\n\n\nBroman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician 72 (1): 2–10. https://doi.org/10.1080/00031305.2017.1375989."
+    "text": "References\n\n\n\n rbtl-fs25.github.io/website/\n\n\n\n\nBroman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician 72 (1): 2–10. https://doi.org/10.1080/00031305.2017.1375989."
   },
   {
     "objectID": "slides/lec-06-vectors.html#course-calendar",
@@ -4529,7 +4567,7 @@
     "href": "slides/lec-06-vectors.html#a-grammar-of-data-tidying",
     "title": "Data types & Vectors & Pivoting",
     "section": "A grammar of data tidying",
-    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\n\nSlide taken from Data Science in a Box"
+    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\nSlide taken from Data Science in a Box"
   },
   {
     "objectID": "slides/lec-06-vectors.html#pivoting-data",
@@ -4641,7 +4679,17 @@
     "href": "slides/lec-06-vectors.html#references",
     "title": "Data types & Vectors & Pivoting",
     "section": "References",
-    "text": "References\n\n\n\n rbtl-fs24.github.io/website/\n\n\n\n\nBen Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. “Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.” Zenodo. https://doi.org/10.5281/ZENODO.7331120."
+    "text": "References\n\n\n\n rbtl-fs25.github.io/website/\n\n\n\n\nBen Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. “Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.” Zenodo. https://doi.org/10.5281/ZENODO.7331120."
+  },
+  {
+    "objectID": "exam/index.html",
+    "href": "exam/index.html",
+    "title": "Exam",
+    "section": "",
+    "text": "1 General information\n\nbring your laptop and charger\nyou will use the Posit Cloud infrastructure, as we used it in class\nyou will not use GitHub or Git in the exam; you will start directly from Posit Cloud\nthe exam is purely technical and tests your competency in R and Quarto\nthe coding tasks are similar to the weekly assignments, and there will be one debugging task (a Quarto file with errors that you need to fix so that the file renders and displays all elements correctly)\nyou can use any material for the exam (search engine, AI tools, etc.). If you use AI for a solution, please include a link to your prompt, as covered in the AI policy for class (https://rbtl-fs24.github.io/website/#ai-policy)\nyou are not allowed to speak to your peers, either directly or through a messenger app\n\nThe core challenge of the exam will be time pressure. You can prepare best for the exam by organising yourself in your browser (e.g., have organised bookmarks for the homework assignments on Posit Cloud, learn how documentation on www.quarto.org is organised, have prompt templates for AI tools, etc.). It’s everything that I would expect someone to have for working efficiently in a day-to-day data science job).\n\n\n2 Structure\nThe exam consists of five sections, each of which is a .qmd file (e.g. section-01.qmd). The total amount of points is 54, which means you could achieve 104 points in the overall course. The number of points for each section are displayed at the top of each section and for each task.\n\n\n3 Hand-in\nEach section has a “hand-in” task at the bottom. The 0.5 points for that task are for a file that renders without error. If the file does not render because you have errors, you would still get all points for the tasks you have completed, also for partial solutions.\n\n\n4 Time\nThe duration for the exam is two hours. At the end of the two hours, you are expected to stop working on the tasks. The course instructor can monitor when the file was last edited.",
+    "crumbs": [
+      "Exam"
+    ]
   },
   {
     "objectID": "modules/ds4owd-001-lesson-plan-module-02.html",
@@ -4924,210 +4972,5 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
-  },
-  {
-<<<<<<< HEAD
-    "objectID": "exam/exam.html#general-information",
-    "href": "exam/exam.html#general-information",
-    "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
-    "section": "General information",
-    "text": "General information\n\nPlease keep quite, one person is already working on the exam\n\nStructure\nThe exam consists of five sections, each of which is a .qmd file (e.g. section-01.qmd). The total amount of points is 54, which means you could achieve 104 points in the overall course. The number of points for each section are displayed at the top of each section and for each task.\nHand-in\nEach section has a “hand-in” task at the bottom. The 0.5 points for that task are for a file that renders without error. If the file does not render because you have errors, you would still get all points for the tasks you have completed, also for partial solutions.\nTime\nThe duration for the exam is two hours. At the end of the two hours, you are expected to stop working on the tasks. The course instructor can monitor when the file was last edited."
-  },
-  {
-    "objectID": "exam/exam.html#welcome",
-    "href": "exam/exam.html#welcome",
-    "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
-    "section": "Welcome!",
-    "text": "Welcome!\n\n\n\n\n\n\nPlease keep quiet, one person is already working on the exam.\n\n\n\n\n\n\nExam structure\nThe exam consists of five sections, each of which is a .qmd file (e.g. section-01.qmd). The total amount of points is 54, which means you could achieve 104 points in the overall course. The number of points for each section are displayed at the top of each section and for each task.\nHand-in\nEach section has a “hand-in” task at the bottom. The 0.5 points for that task are for a file that renders without error. If the file does not render because you have errors, you would still get all points for the tasks you have completed, also for partial solutions.\nTime\nThe duration for the exam is two hours. At the end of the two hours, you are expected to stop working on the tasks. The course instructor can monitor when the file was last edited."
-=======
-    "objectID": "slides/lec-07-quarto.html",
-    "href": "slides/lec-07-quarto.html",
-    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
-    "section": "",
-    "text": "Learners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html",
-    "href": "slides/lec-09-research-design.html",
-    "title": "Research Design",
-    "section": "",
-    "text": "Next week we will host 2 visiting professors (Prof. Katharina Gapp, HEST, Prof. Christoph Studer, ITET) and Dr. Sarah Shepherd, who is the Course leader of ‘Teaching at ETH’, which is a course that I am enrolled in. You can read more here. The class will be filmed, but will only be available among the four of us."
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
-    "href": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
-    "title": "Research Design",
-    "section": "Learning Objectives (for next week, Week 9)",
-    "text": "Learning Objectives (for next week, Week 9)\n\nLearners can extract the\n\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings from a scientific paper about waste management\n\n\nLearners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9-1",
-    "href": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9-1",
-    "title": "Research Design",
-    "section": "Learning Objectives (for next week, Week 9)",
-    "text": "Learning Objectives (for next week, Week 9)\n\nLearners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#homework",
-    "href": "slides/lec-09-research-design.html#homework",
-    "title": "Research Design",
-    "section": "Homework",
-    "text": "Homework\nThe papers we will study are:\nKasinja, C., & Tilley, E. (2018). Formalization of informal waste pickers’ cooperatives in Blantyre, Malawi: A feasibility assessment. Sustainability, 10(4), 1149.\nNdau, H., & Tilley, E. (2018). Willingness to pay for improved household solid waste collection in Blantyre, Malawi. Economies, 6(4), 54.\nRoxburgh, H., Magombo, C., Kaliwo, T., Tilley, E. A., Hampshire, K., Oliver, D. M., & Quilliam, R. S. (2022). Blood flows: mapping journeys of menstrual waste in Blantyre, Malawi. Cities & Health, 6(4), 738-751."
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#homework-1",
-    "href": "slides/lec-09-research-design.html#homework-1",
-    "title": "Research Design",
-    "section": "Homework",
-    "text": "Homework\nTilley, E., Chilunga, H., Kwangulero, J., Schöbitz, L., Vijay, S., Heilgendorff, H., & Kalina, M. (2023). “It is unbearable to breathe here”: air quality, open incineration, and misinformation in Blantyre, Malawi. Frontiers in Public Health, 11, 1242726.\nYesaya, M., Mpanang’ombe, W., & Tilley, E. (2021). The cost of plastics in compost. Frontiers in Sustainability, 2, 753413.\nAnd are available to download here"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#homework-2",
-    "href": "slides/lec-09-research-design.html#homework-2",
-    "title": "Research Design",
-    "section": "Homework",
-    "text": "Homework\nEach person has been assigned a paper to read. The paper allocation list can be found here\nThree people have been assigned to each paper and each person will be responsible for a different task during class:\n\nIf you were assigned “summary”: you will have 5 minutes to give a 5-slide overview of the\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#homework-3",
-    "href": "slides/lec-09-research-design.html#homework-3",
-    "title": "Research Design",
-    "section": "Homework",
-    "text": "Homework\n\nIf you were assigned “data table”: you will have 5 minutes to provide a 2 slide presentation to illustrate\n\nThe codebook that would have been generated for this research (i.e. present the variables and their units, clearly explained)\nA sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#example",
-    "href": "slides/lec-09-research-design.html#example",
-    "title": "Research Design",
-    "section": "Example",
-    "text": "Example\nIf we have this figure on the age gap between men and women"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#example-1",
-    "href": "slides/lec-09-research-design.html#example-1",
-    "title": "Research Design",
-    "section": "Example",
-    "text": "Example\nOur data table would look like this:\nyear gender income 1980 male 400 1980 female 240 … …\n2020 male 450 2020 female 360\n*It is not necessary to fill in the values: just construct the dataframe"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#homework-4",
-    "href": "slides/lec-09-research-design.html#homework-4",
-    "title": "Research Design",
-    "section": "Homework",
-    "text": "Homework"
-  },
-  {
-    "objectID": "slides/lec-09-research-design.html#health-threats",
-    "href": "slides/lec-09-research-design.html#health-threats",
-    "title": "Research Design",
-    "section": "Health Threats",
-    "text": "Health Threats"
-  },
-  {
-    "objectID": "assignments/md-08/am-08-1-presentation.html#waste-research---overview",
-    "href": "assignments/md-08/am-08-1-presentation.html#waste-research---overview",
-    "title": "Prepare presentation",
-    "section": "",
-    "text": "Next week we will host 3 visiting professors (Prof. Katharina Gapp, HEST, Prof. Christoph Studer, ITET, Prof. Verena Zimmerman)  and Dr. Sarah Shephard, who is the Course leader of ‘Teaching at ETH’, which is a course that I am enrolled in. You can read more here. The class will be filmed, but will only be available among the four of us.\nSometimes we read papers to learn about results:  what are the new findings in a discipline.  Sometimes, we read papers to learn about methods.  In this case, we are interested in learning about different styles of data collection and data collection tools.  For example:  did the researcher collect information on the same variable multiple times to see how it changes across seasons?  Did the researcher collect information from people to see how the outcome of an intervention differs between populations? Before we develop our own data collection tools and spreadsheets, we will see what kinds of data other waste researchers collect, and try to imagine how they structured their data collection and management tools.",
-    "crumbs": [
-      "Module 08",
-      "am-01: Prepare presentation"
-    ]
-  },
-  {
-    "objectID": "assignments/md-08/am-08-1-presentation.html#learning-objectives-for-next-week",
-    "href": "assignments/md-08/am-08-1-presentation.html#learning-objectives-for-next-week",
-    "title": "Assignment 1",
-    "section": "Learning Objectives (for next week)",
-    "text": "Learning Objectives (for next week)\n\nLearners can extract the\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings \n\nfrom a scientific paper about waste management\nLearners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management\nLearners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic\n\n\n\nHomework\n\n\nThe papers we will study are:\n\n\nKasinja, C., & Tilley, E. (2018). Formalization of informal waste pickers’ cooperatives in Blantyre, Malawi: A feasibility assessment. Sustainability, 10(4), 1149.\n\n\nNdau, H., & Tilley, E. (2018). Willingness to pay for improved household solid waste collection in Blantyre, Malawi. Economies, 6(4), 54.\n\n\nRoxburgh, H., Magombo, C., Kaliwo, T., Tilley, E. A., Hampshire, K., Oliver, D. M., & Quilliam, R. S. (2022). Blood flows: mapping journeys of menstrual waste in Blantyre, Malawi. Cities & Health, 6(4), 738-751.\n\n\nTilley, E., Chilunga, H., Kwangulero, J., Schöbitz, L., Vijay, S., Heilgendorff, H., & Kalina, M. (2023). “It is unbearable to breathe here”: air quality, open incineration, and misinformation in Blantyre, Malawi. Frontiers in Public Health, 11, 1242726.\n\n\nYesaya, M., Mpanang’ombe, W., & Tilley, E. (2021). The cost of plastics in compost. Frontiers in Sustainability, 2, 753413.\n\n\nAnd are available to download here: https://drive.google.com/drive/folders/1Ch7FNRys1SzPNxq-QHUqAIiVEl7dF1sC?usp=drive_link\n\n\n\nEach person has been assigned a paper to read.  The paper allocation list can be found here: https://docs.google.com/spreadsheets/d/1k4qA_FOtZBGn1RL4pzfvTq-hb9-pXnH58oyY0n1nAog/edit#gid=0\n\n\nThree people have been assigned to each paper and each person will be responsible for a different task during class:  \n\nIf you were assigned “summary”:  you will have 5 minutes to give a 5-slide overview of the\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings\n\nIf you were assigned “data table”: you will have 5 minutes to provide a 2 slide presentation to illustrate\n\nThe codebook that would have been generated for this research (i.e. present the variables and their units, clearly explained)\nA sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design\n\n\n\n\n\n\n\n\nFor example:\n\n\nIf we have this figure on the age gap between men and women:\n\n\n\n\n\nOur data table would look like this:\n\n\n\n\n\nyear\ngender\nincome\n\n\n\n\n1980\nmale\n400\n\n\n1980\nfemale\n240\n\n\n…\n…\n\n\n\n2020\nmale\n450\n\n\n2020\nfemale\n360\n\n\n\n\n\n*It is not necessary to fill in the values:  just construct the dataframe\n\n\n\n\nIf you were assigned “discussant”:  you will have 15 minutes to\n\nAsk questions to both the research summary and data table presenters\nPropose changes/additions to the table structure, variables, etc.\nCall on classmates who have additional feedback/questions\n\n\n\n\n\nOne person will be the facilitator and timekeeper (currently @yellowbrickwall) who will be responsible for compiling all of the slides before class and revisiting the learning objectives in a group discussion at the end of class. \n\n\nThe schedule is presented below:",
-    "crumbs": [
-      "Module 08",
-      "am-01: Prepare presentation"
-    ]
-  },
-  {
-    "objectID": "assignments/md-08/am-08-1-presentation.html#learning-objectives",
-    "href": "assignments/md-08/am-08-1-presentation.html#learning-objectives",
-    "title": "Prepare presentation",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nLearners can extract the\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings \n\nfrom a scientific paper about waste management\nLearners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management\nLearners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic",
-    "crumbs": [
-      "Module 08",
-      "am-01: Prepare presentation"
-    ]
-  },
-  {
-    "objectID": "assignments/md-08/am-08-1-presentation.html#homework",
-    "href": "assignments/md-08/am-08-1-presentation.html#homework",
-    "title": "Prepare presentation",
-    "section": "Homework",
-    "text": "Homework\nThe papers we will study are available to download here and can also be found in the Readings section of Module 08. Each person has been assigned a paper to read. The paper allocation list can be found here.\nThree people have been assigned to each paper and each person will be responsible for a different task during class:  \n\nIf you were assigned “summary”:  you will have 5 minutes to give a 5-slide overview of the\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings\n\nIf you were assigned “data table”: you will have 5 minutes to provide a 2 slide presentation to illustrate\n\nThe codebook that would have been generated for this research (i.e. present the variables and their units, clearly explained)\nA sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labeled), taking into account the research design\n\n\n\nExample\nIf we have this figure on the age gap between men and women:\n\nOur data table would look like this:\n\n\n\nyear\ngender\nincome\n\n\n\n\n1980\nmale\n400\n\n\n1980\nfemale\n240\n\n\n…\n…\n\n\n\n2020\nmale\n450\n\n\n2020\nfemale\n360\n\n\n\n*It is not necessary to fill in the values:  just construct the dataframe\n\nIf you were assigned “discussant”:  you will have 15 minutes to\n\nAsk questions to both the research summary and data table presenters\nPropose changes/additions to the table structure, variables, etc.\nCall on classmates who have additional feedback/questions\n\n\nOne person will be the facilitator and timekeeper (currently @yellowbrickwall) who will be responsible for compiling all of the slides before class and revisiting the learning objectives in a group discussion at the end of class. The schedule is presented below.",
-    "crumbs": [
-      "Module 08",
-      "am-01: Prepare presentation"
-    ]
-  },
-  {
-    "objectID": "assignments/md-08/am-08-1-presentation.html#presentation-schedule---module-09---waste-research",
-    "href": "assignments/md-08/am-08-1-presentation.html#presentation-schedule---module-09---waste-research",
-    "title": "Prepare presentation",
-    "section": "Presentation schedule - Module 09 - Waste Research",
-    "text": "Presentation schedule - Module 09 - Waste Research\n\n\n\n\n\n\n\n\n\n\nstart\nend\nPerson\nTopic\nRole\n\n\n12:15\n12:20\nE.Tilley\nIntro and Welcome\nHost\n\n\n12:20\n12:25\nalecumitu\nwaste pickers\nsummary\n\n\n12:25\n12:30\nAlexanderH15\nwaste pickers\ndata table\n\n\n12:30\n12:45\nbendieklaranjo\nwaste pickers\ndiscussant\n\n\n12:45\n12:50\nbirrermi\nWTP waste\nsummary\n\n\n12:50\n12:55\ncharlottemeyer\nWTP waste\ndata table\n\n\n12:55\n13:10\nDazani5\nWTP waste\ndiscussant\n\n\nbreak\n\n\n\n\n\n\n13:15\n13:20\nfabienne-moana\nmenstrual waste\nsummary\n\n\n13:20\n13:25\nJulchen0\nmenstrual waste\ndata table\n\n\n13:25\n13:40\nmargauxgo\nmenstrual waste\ndiscussant\n\n\n13:40\n13:45\nnbartzsch\nwaste burning\nsummary\n\n\n13:45\n13:50\nSilBeek\nwaste burning\ndata table\n\n\n13:50\n14:05\nsischweizer\nwaste burning\ndiscussant\n\n\nbreak\n\n\n\n\n\n\n14:15\n14:20\nsprinz11\ncompost\nsummary\n\n\n14:20\n14:25\nthaeussner\ncompost\ndata table\n\n\n14:25\n14:40\nyasemin26\ncompost\ndiscussant\n\n\n14:40\n13:00\nyellowbrickwall\nwrap-up\nhost",
-    "crumbs": [
-      "Module 08",
-      "am-01: Prepare presentation"
-    ]
-  },
-  {
-    "objectID": "modules/md-10.html#class-overview",
-    "href": "modules/md-10.html#class-overview",
-    "title": "Module 10",
-    "section": " Class Overview",
-    "text": "Class Overview\n\nDuring class we will be using the files in this folder:  there are four different .csv files for you to work with:\n\n01_binary.csv\n02_likert.csv\n03_multi-choice.csv\n04_text.csv\n\nThere is also a corresponding summary file (e.g. 01_binary_summary) with a tab for each group (groups from last week:  wtp, compost, air, coops)\nYour group will\n\nDownload a data set\nSee what kind of data it is, and develop a corresponding research question (add to summary table)\nClean the data (use R, Excel, python, etc:  whatever you like) and note your process and any challenges you faced, and how you addressed them (add to summary table)\nAnalyse the data in a way that answers your research question (add result to summary table)\n\nWe will discuss the pros and cons of each question type\nYou will develop your own questionnaire to answer your research question",
-    "crumbs": [
-      "Module 10"
-    ]
-  },
-  {
-    "objectID": "modules/md-10.html#class-schedule",
-    "href": "modules/md-10.html#class-schedule",
-    "title": "Module 10",
-    "section": " Class schedule",
-    "text": "Class schedule\nHere is the schedule for May 2:\n\n\n\nstart\nend\nTopic\nActivity\n\n\n12:15\n12:25\nIntro and Welcome\n\n\n\n12:25\n12:45\nResearch questions\nGroup discussions\n\n\n12:45\n13:00\nDebugging\n\n\n\n13:00\n13:15\nBreak\n\n\n\n13:15\n14:00\n4 question types\nGroup work\n\n\n14:00\n14:15\nBreak\n\n\n\n14:15\n15:00\nConsolidation",
-    "crumbs": [
-      "Module 10"
-    ]
-  },
-  {
-    "objectID": "assignments/md-10/am-10-1-questionnaire.html",
-    "href": "assignments/md-10/am-10-1-questionnaire.html",
-    "title": "Module 10 - Homework",
-    "section": "",
-    "text": "For this assignment, we ask you to:\n\nDevelop a questionnaire using Google Forms to address the research question you formulated last week.\nPlace the link to your questionnaire here so that everyone can access it on Thursday.\n\nIn class next week, everyone will:\n\nComplete everyone else’s questionnaire and provide feedback in the table.\nDownload the +/- 15 responses, and we will discuss any challenges related to the raw data.\n\nI will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me beforehand (e.g. scales, buckets, etc.).",
-    "crumbs": [
-      "Module 10",
-      "am-10: Questionnaire"
-    ]
-  },
-  {
-    "objectID": "modules/md-10.html#assignment",
-    "href": "modules/md-10.html#assignment",
-    "title": "Module 10",
-    "section": " Assignment",
-    "text": "Assignment\nPlease complete the following assignment by Wednesday, 15th April 2024.\n\nAssignment 1: Develop a questionnaire using Google Forms",
-    "crumbs": [
-      "Module 10"
-    ]
-  },
-  {
-    "objectID": "modules/md-11.html#class-overview",
-    "href": "modules/md-11.html#class-overview",
-    "title": "Module 11",
-    "section": " Class Overview",
-    "text": "Class Overview\nIn class, everyone will:\n\nComplete everyone else’s questionnaire and provide feedback in this table\nDownload the +/- 15 responses, and we will discuss any challenges related to the raw data\n\nI will be available to discuss logistics, problems with questionnaires, etc. BUT if there is anything specific that anyone needs, do not hesitate to contact me beforehand (e.g. scales, buckets, etc.)",
-    "crumbs": [
-      "Module 11"
-    ]
->>>>>>> 3f1961d873598052458af8d865ac0858f50a2644
   }
 ]
