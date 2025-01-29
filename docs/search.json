@@ -4,7 +4,7 @@
     "href": "calendar.html",
     "title": "Course Calendar",
     "section": "",
-    "text": "module\ndate\ntopic\n\n\n\n\n1\n20 February 2025\nWelcome & get ready for the course\n\n\n2\n27 February 2025\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n06 March 2025\nData transformation with dplyr\n\n\n4\n13 March 2025\nData import & Data organization in spreadsheets\n\n\n5\n20 March 2025\nConditions & Dates & Tables\n\n\n6\n27 March 2025\nData types & Vectors & Pivoting\n\n\n7\n03 April 2025\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n10 April 2025\nWaste Research\n\n\n\n17 April 2025\nEaster Break\n\n\n9\n24 April 2025\nResearch Design\n\n\n10\n01 May 2025\nSurvey Design\n\n\n11\n08 May 2025\nPre-test and logistics\n\n\n12\n15 May 2025\nData collection\n\n\n\n22 May 2025\nData analysis & report writing\n\n\n\n29 May 2025\nAuffahrt Break\n\n\n\n05 June 2025\nProject Submission Deadline\n\n\n\n12 June 2025\nExam",
+    "text": "module\ndate\ntopic\n\n\n\n\n1\n20 February 2025\nWelcome & get ready for the course\n\n\n2\n27 February 2025\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n06 March 2025\nData transformation with dplyr\n\n\n4\n13 March 2025\nData import & Data organization in spreadsheets\n\n\n5\n20 March 2025\nConditions & Dates & Tables\n\n\n6\n27 March 2025\nData types & Vectors & Pivoting\n\n\n7\n03 April 2025\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n10 April 2025\nWaste Research\n\n\n9\n17 April 2025\nResearch Design\n\n\n\n24 April 2025\nEaster Break\n\n\n\n01 May 2025\nLabour Day Break\n\n\n10\n08 May 2025\nQuestionnaires\n\n\n11\n15 May 2025\nPre-test and logistics\n\n\n12\n22 May 2025\nData collection\n\n\n\n29 May 2025\nData analysis & report writing\n\n\n\n05 June 2025\nProject submission due date\n\n\n\n19 June 2025\nExam",
     "crumbs": [
       "Course Calendar"
     ]
@@ -2077,7 +2077,7 @@
     "href": "index.html",
     "title": "Course Overview",
     "section": "",
-    "text": "Thank you for your interest in this course. Your course instructors: Prof Elizabeth Tilley, Colin Walder, and Lars Schöbitz are looking forward to meet you.\nWe will meet [TIME AND DATE TO BE ANNOUNCED]. There is no Moodle page for this course. Everything you need will be published through this website.",
+    "text": "Thank you for your interest in this course. Your course instructors: Prof Elizabeth Tilley and Lars Schöbitz are looking forward to meet you.\nWe will meet on Thursdays from 12:15 to 15:00 in CAB G59, starting 20th February 2025. See course calendar for a complete overview of modules. There is no Moodle page for this course. Everything you need will be published through this website.]{.highlight-peach}",
     "crumbs": [
       "Course Overview"
     ]
@@ -2117,7 +2117,7 @@
     "href": "index.html#course-calendar-subject-to-change",
     "title": "Course Overview",
     "section": "Course Calendar (subject to change)",
-    "text": "Course Calendar (subject to change)\n\n\n\n\n\ndate\nmodule\ntopic\n\n\n\n\n20 February 2025\n1\nWelcome & get ready for the course\n\n\n27 February 2025\n2\nData science lifecycle & Exploratory data analysis using visualization\n\n\n06 March 2025\n3\nData transformation with dplyr\n\n\n13 March 2025\n4\nData import & Data organization in spreadsheets\n\n\n20 March 2025\n5\nConditions & Dates & Tables\n\n\n27 March 2025\n6\nData types & Vectors & Pivoting\n\n\n03 April 2025\n7\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n10 April 2025\n8\nWaste Research\n\n\n17 April 2025\n\nEaster Break\n\n\n24 April 2025\n9\nResearch Design\n\n\n01 May 2025\n10\nSurvey Design\n\n\n08 May 2025\n11\nPre-test and logistics\n\n\n15 May 2025\n12\nData collection\n\n\n22 May 2025\n\nData analysis & report writing\n\n\n29 May 2025\n\nAuffahrt Break\n\n\n05 June 2025\n\nProject Submission Deadline\n\n\n12 June 2025\n\nExam",
+    "text": "Course Calendar (subject to change)\n\n\n\n\n\ndate\nmodule\ntopic\n\n\n\n\n20 February 2025\n1\nWelcome & get ready for the course\n\n\n27 February 2025\n2\nData science lifecycle & Exploratory data analysis using visualization\n\n\n06 March 2025\n3\nData transformation with dplyr\n\n\n13 March 2025\n4\nData import & Data organization in spreadsheets\n\n\n20 March 2025\n5\nConditions & Dates & Tables\n\n\n27 March 2025\n6\nData types & Vectors & Pivoting\n\n\n03 April 2025\n7\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n10 April 2025\n8\nWaste Research\n\n\n17 April 2025\n9\nResearch Design\n\n\n24 April 2025\n\nEaster Break\n\n\n01 May 2025\n\nLabour Day Break\n\n\n08 May 2025\n10\nQuestionnaires\n\n\n15 May 2025\n11\nPre-test and logistics\n\n\n22 May 2025\n12\nData collection\n\n\n29 May 2025\n\nData analysis & report writing\n\n\n05 June 2025\n\nProject submission due date\n\n\n19 June 2025\n\nExam",
     "crumbs": [
       "Course Overview"
     ]

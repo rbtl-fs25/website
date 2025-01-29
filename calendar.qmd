@@ -1,6 +1,5 @@
 ---
 title: "Course Calendar"
-subtitle: "dates and times not yet finalized"
 editor: source
 execute: 
   echo: false
@@ -13,7 +12,7 @@ options(knitr.kable.NA = '')
 ```
 
 ```{r}
-readr::read_csv("data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+readr::read_csv("data/tbl-00-rbtl-fs25-course-schedule-main.csv") |> 
   dplyr::select(module, date, topic = title) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
