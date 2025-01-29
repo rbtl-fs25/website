@@ -17,7 +17,7 @@ date,module,title,teaser,lecturer,learning_objectives
 ,5,Conditions & Dates & Tables,NA,L. Schöbitz,Learners can apply functions from dplyr to change specific values of a variable in a dataframe.
 ,5,Conditions & Dates & Tables,NA,L. Schöbitz,Learners can apply functions from the lubridate package to convert dates not in ISO 8601 to the date class in R.
 ,5,Conditions & Dates & Tables,NA,L. Schöbitz,Learners can apply functions from knitr and gt package to display and cross-reference tables in HTML output reports.
-,5,Conditions & Dates & Tables,NA,NA,Learners can understand the relevance a data dictionary to describe variable names in a data set.
+,5,Conditions & Dates & Tables,NA,L. Schöbitz,Learners can understand the relevance a data dictionary to describe variable names in a data set.
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can identify different ways of accessing a vector from a dataframe
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can list the four main atomic vector types in R.
 ,6,Data types & Vectors & Pivoting,NA,L. Schöbitz,Learners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa.
@@ -28,24 +28,24 @@ date,module,title,teaser,lecturer,learning_objectives
 ,8,Waste Research,NA,E. Tilley,Learners understand the flow of waste from Generation to Recovery
 ,8,Waste Research,NA,E. Tilley,Learners can identify waste management challenges at ETH and/or Zurich
 ,8,Waste Research,NA,E. Tilley,Learners can develop their own research questions using either the PICOT or FINER method
-,NA,Easter Break,NA,NA,NA
 ,9,Research Design,NA,E. Tilley,"Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management."
-,9,Research Design,NA,E. Tilley,Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.
-,9,Research Design,NA,E. Tilley,"Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic."
-,9,Research Design,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool.
+,9,Research Design,NA,NA,Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.
+,9,Research Design,NA,NA,"Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic."
+,9,Research Design,NA,NA,Learners can identify quality criteria for their own data collection tool.
+,NA,Easter Break,NA,NA,NA
+,NA,Labour Day Break,NA,NA,NA
 ,10,Questionnaires,NA,E. Tilley,Learners can produce a research question that adheres to the FINER and PICOT frameworks
 ,10,Questionnaires,NA,E. Tilley,Learners can identify pitfalls associated with four types of questionnaire formats
 ,10,Questionnaires,NA,E. Tilley,Learners can clean and summarise different types of questionnaire-generated data
 ,10,Questionnaires,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool
 ,11,Pre-test and logistics,NA,E. Tilley,Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback
 ,11,Pre-test and logistics,NA,E. Tilley,Learners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations
-,12,Data collection,NA,E. Tilley,NA
-,13,Data analysis & report writing,NA,E. Tilley and L. Schöbitz,Learners can apply the skills obtained during the course to write a short data analysis project report.
-,13,Data analysis & report writing,NA,E. Tilley and L. Schöbitz,Learners can manipulate and analyse their data to answer their stated research questions
-,13,Data analysis & report writing,NA,E. Tilley and L. Schöbitz,Learners can critically assess their success in answering their stated research questions
-,14,Auffahrt Break,NA,NA,NA
-,15,Project Submission Deadline,NA,NA,NA
-,16,Exam,NA,All,NA
+,12,Data collection,NA,E. Tilley and L. Schöbitz,NA
+,NA,Data analysis & report writing,NA,NA,Learners can apply the skills obtained during the course to write a short data analysis project report.
+,NA,Data analysis & report writing,NA,NA,Learners can manipulate and analyse their data to answer their stated research questions
+,NA,Data analysis & report writing,NA,NA,Learners can critically assess their success in answering their stated research questions
+,NA,Project submission due date,NA,NA,NA
+,NA,Exam,NA,NA,NA
 ,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA
 ,NA,NA,NA,NA,NA
