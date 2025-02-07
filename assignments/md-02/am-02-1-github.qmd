@@ -9,7 +9,7 @@ title: "Interaction with GitHub"
 3. Find the repository git-configuration-USERNAME that ends with your GitHub username, and open it.
 4. Click on the green "Code" button.
 5. Copy the HTTPS URL to your clipboard.
-6. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=name_asc)
+6. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/611943/content/all?sort=name_asc)
 7. Click New Project > New Project from Git Repository
 8. Paste the HTTPS URL from GitHub into the "URL of your Git Repository" field.
 9. Wait until the project is deployed

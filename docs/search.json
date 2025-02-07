@@ -244,7 +244,7 @@
     "href": "modules/md-01.html#learning-objectives",
     "title": "Module 1",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can use the Element chat to introduce themselves.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.\nLearners can navigate the course website and understand the learning objectives of the course.",
+    "text": "Learning Objectives\n\n\nLearners can access the Posit Cloud workspace for the course.\nLearners can open an issue on GitHub and tag the course instructor.\nLearners can clone a repository from GitHub and use the GitHub PAT to push a commit from their local repository to GitHub.\nLearners can navigate the course website and understand the learning objectives of the course.",
     "crumbs": [
       "Module 01"
     ]
@@ -274,7 +274,7 @@
     "href": "modules/md-01.html#assignments",
     "title": "Module 1",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignments by Wednesday, 28th February 2024. They are a pre-requisite for active participation in the second module.\n\nAssignment 1: In class: Get an account for GitHub\nAssignment 2: In class: Working with R, RStudio on Posit Cloud\nAssignment 3: Homework: Interaction with GitHub\nAssignment 4: Create your ORCID iD at: https://orcid.org/register (Learn more about ORCID and why you should get one)\nAssignment 5: Complete the pre-course survey (this is also your assignment submission completed): https://forms.gle/jcKFqiB2DHmSSbck6\n\nThank you for working through these assignments.",
+    "text": "Assignments\nPlease complete the following assignments by Wednesday, 26th February 2025. They are a pre-requisite for active participation in the second module.\n\nAssignment 1: In class: Get an account for GitHub\nAssignment 2: In class: Working with R, RStudio on Posit Cloud\nAssignment 3: Homework: Interaction with GitHub\nAssignment 4: Create your ORCID iD at: https://orcid.org/register (Learn more about ORCID and why you should get one)\nAssignment 5: Complete the pre-course survey (this is also your assignment submission completed): https://docs.google.com/forms/d/e/1FAIpQLSfcDbZrk9SGFWiPVkH8tazuCZNBHgfI0i8Ah_yZSpyp8-QWLQ/viewform?usp=sharing\n\nThank you for working through these assignments.",
     "crumbs": [
       "Module 01"
     ]
@@ -324,7 +324,7 @@
     "href": "modules/md-03.html#assignments",
     "title": "Module 3",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Wednesday, March 13th.\n\nAssignment 1: Data transformation\nAssignment 2: Setup ETH Google Workspace\nAssignment 3: Create a spreadsheet\n\nThank you for working through this assignment.",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, March 12th.\n\nAssignment 1: Data transformation\nAssignment 2: Setup ETH Google Workspace\nAssignment 3: Create a spreadsheet\n\nThank you for working through this assignment.",
     "crumbs": [
       "Module 03"
     ]
@@ -1910,7 +1910,7 @@
     "href": "assignments/md-07/am-07-1-zotero.html",
     "title": "Zotero for reference management",
     "section": "",
-    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen rbtl-fs24 group Library: https://www.zotero.org/groups/5487140/rbtl-fs24\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen rbtl-fs25 group Library: https://www.zotero.org/groups/5487140/rbtl-fs25\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows",
     "crumbs": [
       "Module 07",
       "am-01: Zotero"
@@ -1921,7 +1921,7 @@
     "href": "assignments/md-07/am-07-1-zotero.html#sign-up-for-zotero-and-setup-zotero-reference-management-software",
     "title": "Zotero for reference management",
     "section": "",
-    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen rbtl-fs24 group Library: https://www.zotero.org/groups/5487140/rbtl-fs24\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows",
+    "text": "Open https://www.zotero.org/user/login/\nClick on Register for a free account\nChose username, email, and password\nClick Register\nOpen your email and verify your account\n\n\n\n\n\nLogin into Zotero: https://www.zotero.org/user/login/\nOpen rbtl-fs25 group Library: https://www.zotero.org/groups/5487140/rbtl-fs25\nClick on Join button\nWait for group admin to confirm your membership (note: you won’t receive an automated confirmation after access is enabled)\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload Zotero for your operating system\nInstall Zotero\nLog in to your Zotero account by opening Settings -&gt; Sync and typing the Username and Password you have previously set up\nClick on the green refresh button in the top-right corner of the Zotero window\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen https://www.zotero.org/download/\nDownload the Zotero Connector for your browser\nInstall the Zotero Connector\nLog in to your Zotero account\n\n\n\n\n\nGo to https://retorque.re/zotero-better-bibtex/installation/\nClick on the latest release so you are redirected to github\nFind the .xpi file and right-click it. Click on Save Link As… and choose your location for saving the file.\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero -&gt; Tools -&gt; Add-ons -&gt; (Gear icon) -&gt; Install Add-on From File… -&gt; choose the .xpi file you have just saved\n\n\n\n\n\n\n\n\n\n\n\nRestart Zotero\n\n\n\n\n\n\n\n\n\n\n\nWait until the database fully loads. Only the first time is long; the next interactions with Zotero will be much faster.\nYou may need to restart Zotero the second time. Please do so if you see a prompt after Better BibTeX is installed.\nGo to Zotero -&gt; Settings -&gt; Export -&gt; Default Format and change the default format to Better BibTeX Quick Copy: \n\n\n\n\n\n\n\n\n\n\n\nIn the same setting window, go to Better BibTeX -&gt; Open Better BibTeX preferences…\n\n\n\n\n\n\n\n\n\n\n\nIn the Citation keys tab, use the following Citation key formula for Better BibTeX: [auth:lower][year][veryshorttitle1_0:lower]\n\nThe line above means that the citation key will be build from:\n\nFirst author’s last name in lowercase\npublication year\nThe first word from the title in lowercase, not including the connectors such as “the” or “a”\n\n\n\n\n\n\n\n\n\n\n\nGo to Export -&gt; Quick-Copy in the Better BibTeX preferences. Select Pandoc citation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Zotero advanced preferences (Zotero -&gt; Settings -&gt; Advanced)\nOpen the Config Editor under the Advanced Configuration section\n\n\n\n\n\n\n\n\n\n\n\nClick I accept the risk!\nIn the search bar, search for autopin\n\n\n\n\n\n\n\n\n\n\n\nDouble-click into the field under Value\nIn the new window called Enter integer value, change the existing 0 to 2\n\n\n\n\n\n\n\n\n\n\n\nClick OK\nClose all setting windows",
     "crumbs": [
       "Module 07",
       "am-01: Zotero"
@@ -1932,7 +1932,7 @@
     "href": "assignments/md-07/am-07-1-zotero.html#create-a-collection",
     "title": "Zotero for reference management",
     "section": "Create a collection",
-    "text": "Create a collection\n\nIn the rbtl-fs24 group library, create a new collection with your GitHub username",
+    "text": "Create a collection\n\nIn the rbtl-fs25 group library, create a new collection with your GitHub username",
     "crumbs": [
       "Module 07",
       "am-01: Zotero"
@@ -4554,7 +4554,7 @@
     "href": "modules/md-02.html#assignments",
     "title": "Module 2",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Wednesday, 6th March 2024.\n\nAssignment 1: Git configuration\nAssignment 2: Data visualisation\n\nThank you for working through this assignment",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 5th March 2024.\n\nAssignment 1: Git configuration\nAssignment 2: Data visualisation\n\nThank you for working through this assignment",
     "crumbs": [
       "Module 02"
     ]
@@ -4604,7 +4604,7 @@
     "href": "modules/md-05.html#assignments",
     "title": "Module 5",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Wednesday, 27th March 2024.\n\nAssignment 1: Complete survey of five peers and analyse data\n\nThank you for working through this assignment.",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 26th March 2024.\n\nAssignment 1: Complete survey of five peers and analyse data\n\nThank you for working through this assignment.",
     "crumbs": [
       "Module 05"
     ]
@@ -4642,7 +4642,7 @@
     "href": "modules/md-04.html",
     "title": "Module 4",
     "section": "",
-    "text": "Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.",
+    "text": "Learners can import data from files in CSV format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can design a survey with five questions of three different types using Google Forms.",
     "crumbs": [
       "Module 04"
     ]
@@ -4652,7 +4652,7 @@
     "href": "modules/md-04.html#learning-objectives",
     "title": "Module 4",
     "section": "",
-    "text": "Learners can import data from files in CSV and XLSX format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.",
+    "text": "Learners can import data from files in CSV format located in sub-directories of the root directory.\nLearners can explain the difference between the vector class character and the vector class factor.\nLearners can discuss the difference between unprocessed raw data, processed analysis-ready data, and data underlying a publication.\nLearners can apply 12 principles for data organisation in spreadsheets to the layout of a provided dataset.\nLearners can design a survey with five questions of three different types using Google Forms.",
     "crumbs": [
       "Module 04"
     ]
@@ -4682,7 +4682,7 @@
     "href": "modules/md-04.html#assignments",
     "title": "Module 4",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Wednesday, 20th March 2024.\n\nAssignment 1: Data organisation in spreadsheets\nAssignment 2: Create a survey with Google Forms\n\nThank you for working through these assignments.",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 19th March 2024.\n\nAssignment 1: Data organisation in spreadsheets\nAssignment 2: Create a survey with Google Forms\n\nThank you for working through these assignments.",
     "crumbs": [
       "Module 04"
     ]
@@ -4732,7 +4732,7 @@
     "href": "modules/md-06.html#assignments",
     "title": "Module 6",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Wednesday, 10th April 2024.\n\nAssignment 1: Good enough practices in scientific computing\nAssignment 2: Pivot your data\nAssignment 3: Setup your capstone project repository",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 02nd April 2024.\n\nAssignment 1: Good enough practices in scientific computing\nAssignment 2: Pivot your data\nAssignment 3: Setup your capstone project repository",
     "crumbs": [
       "Module 06"
     ]

@@ -20,7 +20,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
@@ -32,7 +32,7 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa display >}} Slides
 
-[View slides in full screen](../slides/lec-06-vectors.html) | [Download slides as PDF](https://github.com/rbtl-fs24/website/raw/main/slides/lec-06-vectors.pdf)
+[View slides in full screen](../slides/lec-06-vectors.html) | [Download slides as PDF](https://github.com/rbtl-fs25/website/raw/main/slides/lec-06-vectors.pdf)
 
 ```{=html}
 <iframe class="slide-deck" src="../slides/lec-06-vectors.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
@@ -46,7 +46,7 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignment by Wednesday, 10th April 2024. 
+Please complete the following assignment by Wednesday, 02nd April 2024. 
 
 -   [Assignment 1](../assignments/md-06/am-06-1-reading.qmd): Good enough practices in scientific computing
 -   [Assignment 2](../assignments/md-06/am-06-2-pivoting.qmd): Pivot your data 

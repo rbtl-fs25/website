@@ -13,9 +13,9 @@ execute:
 
 ## Step 2: Create a folder in shared drive
 
-1. Open the following link to a Google Drive folder: <https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68>
+1. Open the following link to a Google Drive folder: <https://drive.google.com/drive/u/0/folders/1qVlE6MRB1reDXYDBwUhgXwpjblAlqOYm>
 2. Create a bookmark for this folder in your bookmarks folder of your browser.
 3. Open the md-03 folder.
 4. Create a new folder and use your GitHub username as the name of the folder.
 5. Enter your folder.
-6. Create a new spreadsheet and name it `rbtl-fs24-waste-characterisation`.
+6. Create a new spreadsheet and name it `rbtl-fs25-waste-characterisation`.

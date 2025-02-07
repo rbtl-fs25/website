@@ -6,11 +6,11 @@ bibliography: "../../rbtl-fs24.bib"
 
 ## Step 1: Create a folder in shared drive
 
-1. Open the following link to a Google Drive folder: <https://drive.google.com/drive/u/0/folders/1LW5j1n4Xv3Tyb4JMsUHUDmIYbJ-int68>
+1. Open the following link to a Google Drive folder: <https://drive.google.com/drive/u/0/folders/1MIF7z_nzHPurn719cVulZDWBGMjbFYCo>
 2. Open the md-04 folder.
 3. Create a new folder and use your GitHub username as the name of the folder.
 4. Enter your folder.
-5. Create a Google Form and name it `rbtl-fs24-waste-survey`.
+5. Create a Google Form and name it `rbtl-fs25-waste-survey`.
 
 ## Step 2: Create a waste management survey
 
@@ -70,13 +70,11 @@ Answer from perplexity.ai: <https://www.perplexity.ai/search/How-to-use-787pv.4n
 
 ## Step 3: Create a new repository on GitHub
 
-1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs24>
+1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs25>
 2. Create a new repository and name it: survey-USERNAME`. [Replace USERNAME with your GitHub username]{.highlight-yellow}. Avoid using spaces.
 
 ## Step 4: Open an issue on GitHub
 
 1. Open an issue on GitHub on your survey-USERNAME repo 
 2. Paste the link to your survey in the body of the issue and tag the course instructor `@larnsce`.
-
-
 

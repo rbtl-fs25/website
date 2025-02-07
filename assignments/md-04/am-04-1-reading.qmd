@@ -20,10 +20,10 @@ For this assignment, we ask you to:
 
 ::: {.callout-important}
 ## Have you completed the assignments for module 3?
-A pre-requisite for this homework is that you worked through the "Spreadsheet" assignment of module 3. If you have not done so, please do this firss: <https://rbtl-fs24.github.io/website/assignments/md-03/am-03-2-spreadsheet.html>
+A pre-requisite for this homework is that you worked through the "Spreadsheet" assignment of module 3. If you have not done so, please do this firss: <https://rbtl-fs25.github.io/website/assignments/md-03/am-03-2-spreadsheet.html>
 :::
 
-1. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=name_asc)
+1. Open the rbtl-fs25 workspace on [posit.cloud](https://posit.cloud/spaces/611943/content/all?sort=name_asc)
 2. Re-open your `samples-USERNAME` repository.
 3. Create a new .R file and save it as `data_cleaning.R` in the folder.
 4. Add `library(tidyverse)` to the top of the file.
