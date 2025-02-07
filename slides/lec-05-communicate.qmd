@@ -16,7 +16,6 @@ params:
     week: 6
 ---
 
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 ```{r}
 library(tidyverse)

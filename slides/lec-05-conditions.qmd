@@ -368,23 +368,23 @@ head(penguins) |>
 ## Module 5 documentation
 
 ::: learn-more
-[rbtl-fs24.github.io/website/modules/md-05.html](https://rbtl-fs24.github.io/website/modules/md-05.html)
+[rbtl-fs25.github.io/website/modules/md-05.html](https://rbtl-fs25.github.io/website/modules/md-05.html)
 
 ```{=html}
-<iframe src="https://rbtl-fs24.github.io/website/modules/md-05.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 5 documentation"></iframe>
+<iframe src="https://rbtl-fs25.github.io/website/modules/md-05.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 5 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
--   Homework assignment due: [Wednesday, March 27th]{.highlight-yellow}
--   Correction & feedback phase up to: Tuesday, April 2nd
+-   Homework assignment due: [Wednesday, March 26th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, April 1st
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")`
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-03-transformation.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-03-transformation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 

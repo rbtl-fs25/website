@@ -36,7 +36,7 @@ library(readxl)
 
 ```{r}
 sanitation <- read_csv(
-  "https://raw.githubusercontent.com/rbtl-fs24/md-03-assignments/main/data/jmp_wld_sanitation_long.csv"
+  "https://raw.githubusercontent.com/rbtl-dev/md-03-assignments/main/data/jmp_wld_sanitation_long.csv"
 )
 
 codebook_long <- read_csv(
@@ -487,7 +487,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2.  Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2.  Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3.  In the File Manager in the bottom right window, locate the [`md-04a-factors-your-turn.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4.  Follow instructions in the file
 :::
@@ -649,7 +649,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2.  Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2.  Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3.  In the File Manager in the bottom right window, locate the [`md-04b-import-your-turn.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4.  Follow instructions in the file
 :::
@@ -728,22 +728,22 @@ knitr::include_graphics("img/lec-04/data-org-license.png")
 ## Module 4 documentation
 
 ::: learn-more
-[rbtl-fs24.github.io/website/modules/md-04.html](https://rbtl-fs24.github.io/website/modules/md-04.html)
+[rbtl-fs25.github.io/website/modules/md-04.html](https://rbtl-fs25.github.io/website/modules/md-04.html)
 
 ```{=html}
-<iframe src="https://rbtl-fs24.github.io/website/modules/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 documentation"></iframe>
+<iframe src="https://rbtl-fs25.github.io/website/modules/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
--   Homework assignment due: [Wednesday, March 20th]{.highlight-yellow}
--   Correction & feedback phase up to: Tuesday, March 26th
+-   Homework assignment due: [Wednesday, March 19th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, March 25th
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")`
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-03-transformation.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-03-transformation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
