@@ -838,5 +838,159 @@
     "title": "Data science lifecycle & Exploratory data analysis using visualization",
     "section": "Thanks! 🌻",
     "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
+    "href": "slides/lec-03-transformation.html#learning-objectives-for-this-week",
+    "title": "Data transformation with dplyr",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply ten functions from the dplyr R Package to generate a subset of data for use in a table or plot."
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
+    "href": "slides/lec-03-transformation.html#a-grammar-of-data-wrangling",
+    "title": "Data transformation with dplyr",
+    "section": "A grammar of data wrangling…",
+    "text": "A grammar of data wrangling…\n… based on the concepts of functions as verbs that manipulate data frames\n\n\n\n\n\n\n\n\n\n\n\n\n\nselect: pick columns by name\narrange: reorder rows\nfilter: pick rows matching criteria\nrelocate: changes the order of the columns\nmutate: add new variables\nsummarise: reduce variables to values\ngroup_by: for grouped operations\n… (many more)\n\n\n\n\nSlide taken from Data Science in a Box"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#dplyr-rules",
+    "href": "slides/lec-03-transformation.html#dplyr-rules",
+    "title": "Data transformation with dplyr",
+    "section": "dplyr rules",
+    "text": "dplyr rules\nRules of dplyr functions:\n\n\nFirst argument is always a data frame\nSubsequent arguments say what to do with that data frame\nAlways return a data frame\n\nDon’t modify in place"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#functions-arguments",
+    "href": "slides/lec-03-transformation.html#functions-arguments",
+    "title": "Data transformation with dplyr",
+    "section": "Functions & Arguments",
+    "text": "Functions & Arguments\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What to do with the data"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#objects",
+    "href": "slides/lec-03-transformation.html#objects",
+    "title": "Data transformation with dplyr",
+    "section": "Objects",
+    "text": "Objects\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What to do with the data\nData (Object): gapminder_2007"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#operators",
+    "href": "slides/lec-03-transformation.html#operators",
+    "title": "Data transformation with dplyr",
+    "section": "Operators",
+    "text": "Operators\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunction: filter()\nArgument: .data =\nArguments following: year == 2007 What to do with the data\nData (Object): gapminder_2007\nAssignment operator: &lt;-\nPipe operator: |&gt;"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#plot",
+    "href": "slides/lec-03-transformation.html#plot",
+    "title": "Data transformation with dplyr",
+    "section": "Plot",
+    "text": "Plot\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\nggplot(data = gapminder_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp,\n                     fill = continent)) +\n  geom_boxplot(outlier.shape = NA)"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#data",
+    "href": "slides/lec-03-transformation.html#data",
+    "title": "Data transformation with dplyr",
+    "section": "Data",
+    "text": "Data\n\nhead(sanitation)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\niso3\nyear\nregion_sdg\nvarname_short\nvarname_long\nresidence\npercent\n\n\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nnational\n21.9\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nrural\n19.3\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_bas\nbasic sanitation services\nurban\n30.9\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nnational\n5.6\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nrural\n3.1\n\n\nAfghanistan\nAFG\n2000\nCentral and Southern Asia\nsan_lim\nlimited sanitation services\nurban\n14.5\n\n\n\n\n\n\n\n\nncol(sanitation)\n\n[1] 8\n\n\n\n\n\n\nnrow(sanitation)\n\n[1] 73710"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#data-1",
+    "href": "slides/lec-03-transformation.html#data-1",
+    "title": "Data transformation with dplyr",
+    "section": "Data",
+    "text": "Data\n\nsanitation |&gt; \n  count(varname_short, varname_long)\n\n\n\n\n\n\nvarname_short\nvarname_long\nn\n\n\n\n\nsan_bas\nbasic sanitation services\n14742\n\n\nsan_lim\nlimited sanitation services\n14742\n\n\nsan_od\nno sanitation facilities\n14742\n\n\nsan_sm\nsafely managed sanitation services\n14742\n\n\nsan_unimp\nunimproved sanitation facilities\n14742"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#our-turn-md-03-exercises",
+    "href": "slides/lec-03-transformation.html#our-turn-md-03-exercises",
+    "title": "Data transformation with dplyr",
+    "section": "Our turn: md-03-exercises",
+    "text": "Our turn: md-03-exercises\n\n\nOpen posit.cloud in your browser.\nOpen the rbtl-fs25 workspace for the course.\nClick Start next to md-03-exercises.\nIn the File Manager in the bottom right window, locate the md-03a-data-transformation.qmd file and click on it to open it in the top left window.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#take-a-break",
+    "href": "slides/lec-03-transformation.html#take-a-break",
+    "title": "Data transformation with dplyr",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#your-turn-md-03b-your-turn-filter.qmd",
+    "href": "slides/lec-03-transformation.html#your-turn-md-03b-your-turn-filter.qmd",
+    "title": "Data transformation with dplyr",
+    "section": "Your turn: md-03b-your-turn-filter.qmd",
+    "text": "Your turn: md-03b-your-turn-filter.qmd\n\n\nOpen posit.cloud in your browser.\nOpen the rbtl-fs25 workspace for the course.\nIn the File Manager in the bottom right window, locate the md-03b-your-turn-filter.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#r-terminology",
+    "href": "slides/lec-03-transformation.html#r-terminology",
+    "title": "Data transformation with dplyr",
+    "section": "R Terminology",
+    "text": "R Terminology\n\nlibrary(dplyr)\n\nsanitation_national_2020_sm &lt;- sanitation |&gt; \n  filter(residence == \"national\",\n         year == 2020,\n         varname_short == \"san_sm\")\n\n\nFunction: filter()\nArguments following: residence == \"national\", etc. What to do with the data\nData (Object): sanitation_national_2020_sm\nAssignment operator: &lt;-\nPipe operator: |&gt;"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#task-1.2",
+    "href": "slides/lec-03-transformation.html#task-1.2",
+    "title": "Data transformation with dplyr",
+    "section": "Task 1.2",
+    "text": "Task 1.2\n\nUse the filter() function to create a subset from the sanitation data containing urban and rural estimates for Nigeria.\nStore the result as a new object in your environment with the name sanitation_nigeria_urban_rural\n\n\nsanitation_nigeria_urban_rural &lt;- sanitation |&gt; \n  filter(name == \"Nigeria\", residence != \"national\")"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#task-1.3---connected-scatterplot",
+    "href": "slides/lec-03-transformation.html#task-1.3---connected-scatterplot",
+    "title": "Data transformation with dplyr",
+    "section": "Task 1.3 - Connected scatterplot",
+    "text": "Task 1.3 - Connected scatterplot\n Great for timeseries data \n\n\nUse the ggplot() function to create a connected scatterplot with geom_point() and geom_line() for the data you created in Task 1.2.\nUse the aes() function to map the year variable to the x-axis, the percent variable to the y-axis, and the varname_short variable to color and group aesthetic.\nUse facet_wrap() to create a separate plot urban and rural populations.\nChange the colors using scale_color_colorblind().\n\n\n\nggplot(data = sanitation_nigeria_urban_rural,\n       mapping = aes(x = year, \n                     y = percent, \n                     group = varname_short, \n                     color = varname_short)) +\n  geom_point() +\n  geom_line() +\n  facet_wrap(~residence) +\n  scale_color_colorblind()"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#task-1.3---connected-scatterplot-output",
+    "href": "slides/lec-03-transformation.html#task-1.3---connected-scatterplot-output",
+    "title": "Data transformation with dplyr",
+    "section": "Task 1.3 - Connected scatterplot",
+    "text": "Task 1.3 - Connected scatterplot"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#our-turn-back-to-md-03a-data-transformation.qmd",
+    "href": "slides/lec-03-transformation.html#our-turn-back-to-md-03a-data-transformation.qmd",
+    "title": "Data transformation with dplyr",
+    "section": "Our turn: back to md-03a-data-transformation.qmd",
+    "text": "Our turn: back to md-03a-data-transformation.qmd\n\n\nOpen posit.cloud in your browser.\nOpen the rbtl-fs25 workspace for the course.\nClick Start next to md-03-exercises.\nIn the File Manager in the bottom right window, locate the md-03a-data-transformation.qmd file and click on it to open it in the top left window.\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#take-a-break-1",
+    "href": "slides/lec-03-transformation.html#take-a-break-1",
+    "title": "Data transformation with dplyr",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n15:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#your-turn-md-03c-your-turn-summarise.qmd",
+    "href": "slides/lec-03-transformation.html#your-turn-md-03c-your-turn-summarise.qmd",
+    "title": "Data transformation with dplyr",
+    "section": "Your turn: md-03c-your-turn-summarise.qmd",
+    "text": "Your turn: md-03c-your-turn-summarise.qmd\n\n\nOpen posit.cloud in your browser.\nOpen the rbtl-fs25 workspace for the course.\nIn the File Manager in the bottom right window, locate the md-03c-your-turn-summarise.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n30:00"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#module-3-documentation",
+    "href": "slides/lec-03-transformation.html#module-3-documentation",
+    "title": "Data transformation with dplyr",
+    "section": "Module 3 documentation",
+    "text": "Module 3 documentation\n\nrbtl-fs25.github.io/website/modules/md-03.html"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#homework-due-date",
+    "href": "slides/lec-03-transformation.html#homework-due-date",
+    "title": "Data transformation with dplyr",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Wednesday, March 12th\nCorrection & feedback phase up to: Tuesday, March 18th"
+  },
+  {
+    "objectID": "slides/lec-03-transformation.html#thanks",
+    "href": "slides/lec-03-transformation.html#thanks",
+    "title": "Data transformation with dplyr",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
   }
 ]

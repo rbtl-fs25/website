@@ -171,7 +171,7 @@ ggplot(data = gapminder_2007,
 
 ```{r}
 
-sanitation <- read_csv("https://raw.githubusercontent.com/rbtl-fs24/md-03-exercises/master/data/jmp_wld_sanitation_long.csv")
+sanitation <- read_csv("https://raw.githubusercontent.com/rbtl-dev/md-03-exercises/refs/heads/master/data/jmp_wld_sanitation_long.csv")
 
 ```
 
@@ -231,7 +231,7 @@ sanitation |>
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser.
-2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3. Click [Start]{.highlight-yellow} next to [md-03-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`md-03a-data-transformation.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
@@ -257,7 +257,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser.
-2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3. In the File Manager in the bottom right window, locate the [`md-03b-your-turn-filter.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4. Follow instructions in the file
 :::
@@ -333,7 +333,7 @@ ggplot(data = sanitation_nigeria_urban_rural,
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser.
-2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3. Click [Start]{.highlight-yellow} next to [md-03-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`md-03a-data-transformation.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
@@ -359,7 +359,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser.
-2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3. In the File Manager in the bottom right window, locate the [`md-03c-your-turn-summarise.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4. Follow instructions in the file
 :::
@@ -372,22 +372,22 @@ countdown(30)
 ## Module 3 documentation
 
 ::: learn-more
-[rbtl-fs24.github.io/website/modules/md-03.html](https://rbtl-fs24.github.io/website/modules/md-03.html)
+[rbtl-fs25.github.io/website/modules/md-03.html](https://rbtl-fs25.github.io/website/modules/md-03.html)
 
 ```{=html}
-<iframe src="https://rbtl-fs24.github.io/website/modules/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 documentation"></iframe>
+<iframe src="https://rbtl-fs25.github.io/website/modules/md-03.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 3 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
--   Homework assignment due: [Wednesday, March 13th]{.highlight-yellow}
--   Correction & feedback phase up to: Tuesday, March 19th 
+-   Homework assignment due: [Wednesday, March 12th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, March 18th 
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-03-transformation.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-03-transformation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
