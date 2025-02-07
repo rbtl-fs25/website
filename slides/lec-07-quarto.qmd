@@ -145,7 +145,7 @@ knitr::include_graphics("img/lec-07/dictionary-csv.png")
 ## Directory tree of a project {.smaller}
 
 Capstone project of Rainbow Train:
-<https://github.com/rbtl-fs24/project-rainbow-train>
+<https://github.com/rbtl-fs25/project-rainbow-train>
 
 ```
 .
@@ -704,11 +704,11 @@ countdown(15)
 
 [Clone the repository from GitHub]{.highlight-yellow} & publish using GitHub Pages.
 
-1. Open github.com in your browser and navigate to the [GitHub organisation for the course](https://github.com/rbtl-fs25/): <https://github.com/rbtl-fs24/>.
+1. Open github.com in your browser and navigate to the [GitHub organisation for the course](https://github.com/rbtl-fs25/): <https://github.com/rbtl-fs25/>.
 2. Find the repository md-07-publish-USERNAME that [ends with your GitHub username]{.highlight-yellow}, and open it.
 3. Click on the green "Code" button.
 4. Copy the HTTPS URL to your clipboard.
-5. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=created_time_desc)
+5. Open the rbtl-fs25 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=created_time_desc)
 6. Click New Project > New Project from Git Repository
 7. Paste the HTTPS URL from GitHub into the "URL of your Git Repository" field.
 8. Wait until the project is deployed.
@@ -738,7 +738,7 @@ knitr::include_graphics("img/lec-08/screenshot-gh-pages.png")
 ## Course Guide
 
 - Steps for publishing the capstone project report are described on the capstone project page
-- <https://rbtl-fs24.github.io/website/project>
+- <https://rbtl-fs25.github.io/website/project>
 
 ## Take a break
 
@@ -761,12 +761,12 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 - The submission due date is: [Tuesday, 06th June]{.highlight-yellow}.
 - A complete report receives 30 points.
 - We will use the GitHub issue tracker to communicate and ask questions about the capstone project.
-- A list of required items for submission is covered on the course website: <https://rbtl-fs24.github.io/website/project/>
+- A list of required items for submission is covered on the course website: <https://rbtl-fs25.github.io/website/project/>
 
 ## Your turn: Capstone project - Read and take notes
 
 ::: task
-1. Open: <https://rbtl-fs24.github.io/website/project/>.
+1. Open: <https://rbtl-fs25.github.io/website/project/>.
 2. Read through the page.
 3. For the list in "Required items" note down the numbers of those that are unclear to you and why.
 4. After the time is up, we will discuss unclear items in class.
@@ -792,7 +792,7 @@ countdown(10)
 
 ::: task
 
-1. Open your Capstone project repository (`project-USERNAME`) <https://github.com/rbtl-fs24>.
+1. Open your Capstone project repository (`project-USERNAME`) <https://github.com/rbtl-fs25>.
 2. Add your questions for unclear items to the issue tracker.
 
 :::
@@ -804,28 +804,16 @@ countdown(5)
 ## Module 6 documentation
 
 ::: learn-more
-[rbtl-fs24.github.io/website/modules/md-07.html](https://rbtl-fs24.github.io/website/modules/md-07.html)
+[rbtl-fs25.github.io/website/modules/md-07.html](https://rbtl-fs25.github.io/website/modules/md-07.html)
 
 ```{=html}
-<iframe src="https://rbtl-fs24.github.io/website/modules/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 7 documentation"></iframe>
+<iframe src="https://rbtl-fs25.github.io/website/modules/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 7 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
-- Homework assignment due: [Wednesday, April 17th]{.highlight-yellow}
-
-## Next few weeks {.smallest .scrollable}
-
-- Lars will be off work until 30th May
-- Elizabeth and Colin will support you during this time
-
-```{r}
-readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
-  dplyr::select(module, date, topic = title) |> 
-  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
-  knitr::kable()
-```
+- Homework assignment due: [Wednesday, April 9th]{.highlight-yellow}
 
 ## Attribution
 
@@ -833,4 +821,4 @@ Content was re-used from a workshop hosted by [Mine Çetinkaya-Rundel](https://m
 
 ## Thanks! `r emo::ji("sunflower")`
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-08-quarto.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-08-quarto.pdf)

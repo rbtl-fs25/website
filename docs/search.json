@@ -1405,5 +1405,1118 @@
     "title": "Conditions & Dates & Tables",
     "section": "References",
     "text": "References\n\n\n\n rbtl-fs25.github.io/website/\n\n\n\n\nBroman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician 72 (1): 2–10. https://doi.org/10.1080/00031305.2017.1375989."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#course-calendar",
+    "href": "slides/lec-06-vectors.html#course-calendar",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Course calendar",
+    "text": "Course calendar\n\n04th April 2024: no class, Easter Break\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n20 February 2025\nWelcome & get ready for the course\n\n\n2\n27 February 2025\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n06 March 2025\nData transformation with dplyr\n\n\n4\n13 March 2025\nData import & Data organization in spreadsheets\n\n\n5\n20 March 2025\nConditions & Dates & Tables\n\n\n6\n27 March 2025\nData types & Vectors & Pivoting\n\n\n7\n03 April 2025\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n10 April 2025\nWaste Research\n\n\n9\n17 April 2025\nResearch Design\n\n\nNA\n24 April 2025\nEaster Break\n\n\nNA\n01 May 2025\nLabour Day Break\n\n\n10\n08 May 2025\nQuestionnaires\n\n\n11\n15 May 2025\nPre-test and logistics\n\n\n12\n22 May 2025\nData collection\n\n\nNA\n29 May 2025\nData analysis & report writing\n\n\nNA\n05 June 2025\nProject submission due date\n\n\nNA\n11 June 2025\nExam (13:00 to 15:00)"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#learning-objectives-for-this-week",
+    "href": "slides/lec-06-vectors.html#learning-objectives-for-this-week",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can identify different ways of accessing a vector from a dataframe\nLearners can list the four main atomic vector types in R.\nLearners can apply functions from the tidyr R Package to transform their data from a wide to a long format and vice versa."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#cross-references",
+    "href": "slides/lec-06-vectors.html#cross-references",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Cross references",
+    "text": "Cross references\n\nHelp readers to navigate your document with numbered references and hyperlinks to entities like figures and tables.\nCross referencing steps:\n\nAdd a caption to your figure or table.\nGive an ID to your figure or table, starting with fig- or tbl-.\nRefer to it with @fig-... or @tbl-...."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#table-cross-references",
+    "href": "slides/lec-06-vectors.html#table-cross-references",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Table cross references",
+    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table reference-able:\nSee @tbl-penguins for data on a few penguins.\nbecomes:\nSee Table 1 for data on a few penguins.\n\n```{r}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\nhead(penguins) |&gt; \n  gt()\n```\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#figure-cross-references",
+    "href": "slides/lec-06-vectors.html#figure-cross-references",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Figure cross references",
+    "text": "Figure cross references\nThe presence of the caption (A few penguins) and label (#fig-penguins) make this figure reference-able:\nSee @fig-penguins for data on a few penguins.\nbecomes:\nSee Figure 1 for data on a few penguins.\n\n```{r}\n#| label: fig-penguins\n#| fig-cap: A few penguins\n#| fig-width: 6\n#| fig-asp: 0.618\n\nggplot(penguins, aes(x = species, fill = species)) +\n  geom_bar(show.legend = FALSE)\n```\n\n\n\nFigure 1: A few penguins"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#your-turn-md-06-exercises---cross-references",
+    "href": "slides/lec-06-vectors.html#your-turn-md-06-exercises---cross-references",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Your turn: md-06-exercises - cross-references",
+    "text": "Your turn: md-06-exercises - cross-references\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06a-cross-references.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#why-care-about-data-types",
+    "href": "slides/lec-06-vectors.html#why-care-about-data-types",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Why care about data types?",
+    "text": "Why care about data types?\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#example-survey-data",
+    "href": "slides/lec-06-vectors.html#example-survey-data",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Example: survey data",
+    "text": "Example: survey data\nA survey about recycling behaviour in the city of Zurich:\n\njob: What is your occupation?\nprice_glass: What monthly subscription would you be willing to pay for a metal/glass bin outside your home?\n\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5\n\n\n\n\n\n\nData from: (Ben Aleya et al. 2022)"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#oh-why-wont-you-work",
+    "href": "slides/lec-06-vectors.html#oh-why-wont-you-work",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Oh why won’t you work?!",
+    "text": "Oh why won’t you work?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#oh-why-wont-you-still-work",
+    "href": "slides/lec-06-vectors.html#oh-why-wont-you-still-work",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Oh why won’t you still work??!!",
+    "text": "Oh why won’t you still work??!!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data",
+    "href": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Take a breath and look at your data",
+    "text": "Take a breath and look at your data\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data-1",
+    "href": "slides/lec-06-vectors.html#take-a-breath-and-look-at-your-data-1",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Take a breath and look at your data",
+    "text": "Take a breath and look at your data\n\n\n# A tibble: 22 × 3\n      id job      price_glass\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;      \n 1     1 Student  0          \n 2     2 Retired  0          \n 3     3 Other    0          \n 4     4 Employed 10         \n 5     5 Employed See comment\n 6     6 Student  5-10       \n 7     7 Student  0          \n 8     8 Retired  0          \n 9     9 Student  10         \n10    10 Employed 0          \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#very-common-data-tidying-step",
+    "href": "slides/lec-06-vectors.html#very-common-data-tidying-step",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Very common data tidying step!",
+    "text": "Very common data tidying step!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#very-common-data-tidying-step-1",
+    "href": "slides/lec-06-vectors.html#very-common-data-tidying-step-1",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Very common data tidying step!",
+    "text": "Very common data tidying step!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n5-10\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n20\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5-10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#sumamrise-argh",
+    "href": "slides/lec-06-vectors.html#sumamrise-argh",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Sumamrise? Argh!!!!",
+    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#always-respect-your-data-types",
+    "href": "slides/lec-06-vectors.html#always-respect-your-data-types",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Always respect your data types!",
+    "text": "Always respect your data types!\n\n\n\n\n\n\nTaking the mean of vector with type “character” is not possible.\n\n\n\n\n\n# A tibble: 22 × 4\n      id job      price_glass price_glass_new\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;          \n 1     1 Student  0           0              \n 2     2 Retired  0           0              \n 3     3 Other    0           0              \n 4     4 Employed 10          10             \n 5     5 Employed See comment &lt;NA&gt;           \n 6     6 Student  5-10        7.5            \n 7     7 Student  0           0              \n 8     8 Retired  0           0              \n 9     9 Student  10          10             \n10    10 Employed 0           0              \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#always-respect-your-data-types-1",
+    "href": "slides/lec-06-vectors.html#always-respect-your-data-types-1",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Always respect your data types!",
+    "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#my-turn-types-of-vectors-for-loops",
+    "href": "slides/lec-06-vectors.html#my-turn-types-of-vectors-for-loops",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "My turn: Types of vectors & For loops",
+    "text": "My turn: Types of vectors & For loops\n\n\nSit back and enjoy!\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-break",
+    "href": "slides/lec-06-vectors.html#take-a-break",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#your-turn-md-06-exercises---types",
+    "href": "slides/lec-06-vectors.html#your-turn-md-06-exercises---types",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Your turn: md-06-exercises - types",
+    "text": "Your turn: md-06-exercises - types\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06b-types-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n35:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#take-a-break-1",
+    "href": "slides/lec-06-vectors.html#take-a-break-1",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#section",
+    "href": "slides/lec-06-vectors.html#section",
+    "title": "Data types & Vectors & Pivoting",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#section-1",
+    "href": "slides/lec-06-vectors.html#section-1",
+    "title": "Data types & Vectors & Pivoting",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#section-2",
+    "href": "slides/lec-06-vectors.html#section-2",
+    "title": "Data types & Vectors & Pivoting",
+    "section": ".",
+    "text": ".\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#a-grammar-of-data-tidying",
+    "href": "slides/lec-06-vectors.html#a-grammar-of-data-tidying",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "A grammar of data tidying",
+    "text": "A grammar of data tidying\n\n\n\n\n\n\n\n\n\n\n\n\nThe goal of tidyr is to help you tidy your data via\n\npivoting for going between wide and long data\nsplitting and combining character columns\nnesting and unnesting columns\nclarifying how NAs should be treated\n\n\n\n\nSlide taken from Data Science in a Box"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#pivoting-data",
+    "href": "slides/lec-06-vectors.html#pivoting-data",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Pivoting data",
+    "text": "Pivoting data"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#waste-characterisation-data",
+    "href": "slides/lec-06-vectors.html#waste-characterisation-data",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Waste characterisation data",
+    "text": "Waste characterisation data\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\ntotal\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n2.05\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n3.64\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n1.99\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n2.19\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n1.12\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n0.50\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n2.33\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99\n4.07"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#how-would-you-plot-this",
+    "href": "slides/lec-06-vectors.html#how-would-you-plot-this",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "How would you plot this?",
+    "text": "How would you plot this?"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables",
+    "href": "slides/lec-06-vectors.html#three-variables",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Three variables",
+    "text": "Three variables\n\n\n\n\n\nobjid\nlocation\ntotal\n\n\n\n\n900\neth\n2.05\n\n\n899\neth\n3.64\n\n\n921\nold_town\n1.99\n\n\n916\nold_town\n2.19\n\n\n900\neth\n1.12\n\n\n899\neth\n0.50\n\n\n921\nold_town\n2.33\n\n\n916\nold_town\n4.07"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables---three-aesthetics",
+    "href": "slides/lec-06-vectors.html#three-variables---three-aesthetics",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_untidy,\n       mapping = aes(x = objid, \n                     y = total, \n                     fill = location)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#and-how-to-plot-this",
+    "href": "slides/lec-06-vectors.html#and-how-to-plot-this",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "And how to plot this?",
+    "text": "And how to plot this?"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#reminder-data-in-wide-format",
+    "href": "slides/lec-06-vectors.html#reminder-data-in-wide-format",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Reminder: Data (in wide format)",
+    "text": "Reminder: Data (in wide format)\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#you-need-a-long-format",
+    "href": "slides/lec-06-vectors.html#you-need-a-long-format",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "You need: A long format",
+    "text": "You need: A long format\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables---three-aesthetics-1",
+    "href": "slides/lec-06-vectors.html#three-variables---three-aesthetics-1",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#how-to",
+    "href": "slides/lec-06-vectors.html#how-to",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "How to",
+    "text": "How to\n\nwaste_data_untidy \n\n\n\n\n\n\nobjid\nlocation\npet\nmetal_alu\nglass\npaper\nother\n\n\n\n\n900\neth\n0.06\n0.06\n0.58\n0.21\n1.14\n\n\n899\neth\n0.14\n0.01\n0.18\n0.28\n3.04\n\n\n921\nold_town\n0.00\n0.00\n0.00\n0.41\n1.57\n\n\n916\nold_town\n0.17\n0.04\n0.80\n0.55\n0.62\n\n\n900\neth\n0.10\n0.04\n0.00\n0.40\n0.58\n\n\n899\neth\n0.08\n0.03\n0.00\n0.05\n0.34\n\n\n921\nold_town\n0.08\n0.03\n0.30\n0.40\n1.52\n\n\n916\nold_town\n0.11\n0.04\n0.92\n1.01\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#how-to-1",
+    "href": "slides/lec-06-vectors.html#how-to-1",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "How to",
+    "text": "How to\n\nwaste_data_untidy |&gt; \n  pivot_longer(cols = pet:other,\n               names_to = \"waste_category\",\n               values_to = \"weight\") \n\n\n\n\n\n\nobjid\nlocation\nwaste_category\nweight\n\n\n\n\n900\neth\npet\n0.06\n\n\n900\neth\nmetal_alu\n0.06\n\n\n900\neth\nglass\n0.58\n\n\n900\neth\npaper\n0.21\n\n\n900\neth\nother\n1.14\n\n\n899\neth\npet\n0.14\n\n\n899\neth\nmetal_alu\n0.01\n\n\n899\neth\nglass\n0.18\n\n\n899\neth\npaper\n0.28\n\n\n899\neth\nother\n3.04\n\n\n921\nold_town\npet\n0.00\n\n\n921\nold_town\nmetal_alu\n0.00\n\n\n921\nold_town\nglass\n0.00\n\n\n921\nold_town\npaper\n0.41\n\n\n921\nold_town\nother\n1.57\n\n\n916\nold_town\npet\n0.17\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.80\n\n\n916\nold_town\npaper\n0.55\n\n\n916\nold_town\nother\n0.62\n\n\n900\neth\npet\n0.10\n\n\n900\neth\nmetal_alu\n0.04\n\n\n900\neth\nglass\n0.00\n\n\n900\neth\npaper\n0.40\n\n\n900\neth\nother\n0.58\n\n\n899\neth\npet\n0.08\n\n\n899\neth\nmetal_alu\n0.03\n\n\n899\neth\nglass\n0.00\n\n\n899\neth\npaper\n0.05\n\n\n899\neth\nother\n0.34\n\n\n921\nold_town\npet\n0.08\n\n\n921\nold_town\nmetal_alu\n0.03\n\n\n921\nold_town\nglass\n0.30\n\n\n921\nold_town\npaper\n0.40\n\n\n921\nold_town\nother\n1.52\n\n\n916\nold_town\npet\n0.11\n\n\n916\nold_town\nmetal_alu\n0.04\n\n\n916\nold_town\nglass\n0.92\n\n\n916\nold_town\npaper\n1.01\n\n\n916\nold_town\nother\n1.99"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#three-variables---three-aesthetics-2",
+    "href": "slides/lec-06-vectors.html#three-variables---three-aesthetics-2",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Three variables -> three aesthetics",
+    "text": "Three variables -&gt; three aesthetics\n\nggplot(data = waste_data_tidy,\n       mapping = aes(x = objid, \n                     y = weight, \n                     fill = waste_category)) +\n  geom_col() + \n  scale_fill_brewer(type = \"qual\")"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#module-6-documentation",
+    "href": "slides/lec-06-vectors.html#module-6-documentation",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Module 6 documentation",
+    "text": "Module 6 documentation\n\nrbtl-fs25.github.io/website/modules/md-06.html"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#homework-due-date",
+    "href": "slides/lec-06-vectors.html#homework-due-date",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Wednesday, April 9th"
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#thanks",
+    "href": "slides/lec-06-vectors.html#thanks",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+  },
+  {
+    "objectID": "slides/lec-06-vectors.html#references",
+    "href": "slides/lec-06-vectors.html#references",
+    "title": "Data types & Vectors & Pivoting",
+    "section": "References",
+    "text": "References\n\n\n\n rbtl-fs25.github.io/website/\n\n\n\n\nBen Aleya, Ali, Daniel Biek, Lin Boynton, Julia Jaeggi, Sebastian Camilo Loos, Chiara Meyer-Piening, Jonathan Olal Ogwang, et al. 2022. “Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw Data and Analysis-Ready Derived Data on Waste Management in Public Spaces in Zurich, Switzerland.” Zenodo. https://doi.org/10.5281/ZENODO.7331120."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
+    "href": "slides/lec-07-quarto.html#learning-objectives-for-this-week",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Learning Objectives (for this week)",
+    "text": "Learning Objectives (for this week)\n\n\nLearners can apply functions from the dplyr R Package to join multiple data sets.\nLearners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software\nLearners can use the GitHub pages service to publish a repository as a standalone website."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#metadata-data-about-data",
+    "href": "slides/lec-07-quarto.html#metadata-data-about-data",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Metadata: data about data",
+    "text": "Metadata: data about data\nWHAT!?"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\nImagine:\n\nyou are new to WASH research and you have never heard of feacal sludge management.\nyou are interested in learning more about the topic and you want to find some data to play with.\nyou find a publication with a dataset on faecal sludge characteristics."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples-1",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\nYou download the XLSX file that contains the data and you open it in Excel. You see the following:"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
+    "href": "slides/lec-07-quarto.html#faecal-sludge-samples-2",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Faecal sludge samples",
+    "text": "Faecal sludge samples\n\n\nOpen questions:\n\nWhat unit does users refer to?\nWhat does ts stand for?\nThe date of what?\nWhere was this data collected?\nWhich method was used to collect the samples?\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestions that only the original author may have the answers to."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#you-as-an-author",
+    "href": "slides/lec-07-quarto.html#you-as-an-author",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "You as an author",
+    "text": "You as an author\nhave the chance to document your data properly once to make it easier for everyone else to know what it contains."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#documentation",
+    "href": "slides/lec-07-quarto.html#documentation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Documentation",
+    "text": "Documentation\nGoes into a separate README file\n\nGeneral information (authors, title, date, geographic location, etc.)\nSharing / access information (license, links to publications, citation)\nMethodological information (sampling, analysis, etc.)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary",
+    "href": "slides/lec-07-quarto.html#data-dictionary",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary",
+    "text": "Data dictionary\nGoes into a separate file (dictionary.csv).\nMinimum required information\n\nVariable name\nVariable description"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples",
+    "href": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary for faecal sludge samples",
+    "text": "Data dictionary for faecal sludge samples\n\nEdit in spreadsheet software (e.g. MS Excel)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples-1",
+    "href": "slides/lec-07-quarto.html#data-dictionary-for-faecal-sludge-samples-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data dictionary for faecal sludge samples",
+    "text": "Data dictionary for faecal sludge samples\n\nSave as CSV file"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#directory-tree-of-a-project",
+    "href": "slides/lec-07-quarto.html#directory-tree-of-a-project",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Directory tree of a project",
+    "text": "Directory tree of a project\nCapstone project of Rainbow Train: https://github.com/rbtl-fs25/project-rainbow-train\n.\n├── R\n│   └── 01-data-preparation.R\n├── data\n│   ├── processed\n│   │   ├── README.md\n│   │   ├── dictionary.csv\n│   │   └── faecal-sludge-analysis.csv\n│   └── raw\n│       └── Faecal sludge Analysis_05112023.xlsx\n├── docs\n│   ├── index.html\n│   ├── index.qmd\n│   └── index_files\n│       └── libs\n└── project.Rproj"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#directory-tree-of-a-project-1",
+    "href": "slides/lec-07-quarto.html#directory-tree-of-a-project-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Directory tree of a project",
+    "text": "Directory tree of a project\n\nR folder: R scripts for data cleaning\ndata folder: raw and processed data\ndocs folder: the actual report that imports the processed data\nproject.Rproj: RStudio project file"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inside-the-data-folder",
+    "href": "slides/lec-07-quarto.html#inside-the-data-folder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inside the data folder",
+    "text": "Inside the data folder\n\nraw: data as it was downloaded / as you received it (e.g. Excel file)\nprocessed: data that is ready to be used in the report"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inside-the-processed-folder",
+    "href": "slides/lec-07-quarto.html#inside-the-processed-folder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inside the processed folder",
+    "text": "Inside the processed folder\n\nREADME.md: general information about the data\ndictionary.csv: data dictionary\nfaecal-sludge-analysis.csv: cleaned data for which dictionary.csv applies"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#we",
+    "href": "slides/lec-07-quarto.html#we",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "We…",
+    "text": "We…\n…have multiple data frames\n…want to bring them together\n\nprofessions &lt;- read_csv(here::here(\"data/scientists/professions.csv\")) \ndates &lt;- read_csv(here::here(\"data/scientists/dates.csv\")) \nworks &lt;- read_csv(here::here(\"scientists/works.csv\"))"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#data-women-in-science",
+    "href": "slides/lec-07-quarto.html#data-women-in-science",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Data: Women in science",
+    "text": "Data: Women in science\nInformation on 10 women in science who changed the world\n\n\n\n\n\nname\n\n\n\n\nAda Lovelace\n\n\nMarie Curie\n\n\nJanaki Ammal\n\n\nChien-Shiung Wu\n\n\nKatherine Johnson\n\n\nRosalind Franklin\n\n\nVera Rubin\n\n\nGladys West\n\n\nFlossie Wong-Staal\n\n\nJennifer Doudna\n\n\n\n\n\n\n\nSource: Discover Magazine"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inputs",
+    "href": "slides/lec-07-quarto.html#inputs",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inputs",
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n\n\n\nname\nprofession\n\n\n\n\nAda Lovelace\nMathematician\n\n\nMarie Curie\nPhysicist and Chemist\n\n\nJanaki Ammal\nBotanist\n\n\nChien-Shiung Wu\nPhysicist\n\n\nKatherine Johnson\nMathematician\n\n\nRosalind Franklin\nChemist\n\n\nVera Rubin\nAstronomer\n\n\nGladys West\nMathematician\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n\n\nJennifer Doudna\nBiochemist\n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\n1897\n1984\n\n\nChien-Shiung Wu\n1912\n1997\n\n\nKatherine Johnson\n1918\n2020\n\n\nRosalind Franklin\n1920\n1958\n\n\nVera Rubin\n1928\n2016\n\n\nGladys West\n1930\nNA\n\n\nFlossie Wong-Staal\n1947\nNA\n\n\nJennifer Doudna\n1964\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nknown_for\n\n\n\n\nAda Lovelace\nfirst computer algorithm\n\n\nMarie Curie\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nVera Rubin\nexistence of dark matter\n\n\nGladys West\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#desired-output",
+    "href": "slides/lec-07-quarto.html#desired-output",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Desired output",
+    "text": "Desired output\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#inputs-reminder",
+    "href": "slides/lec-07-quarto.html#inputs-reminder",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Inputs, reminder",
+    "text": "Inputs, reminder\n\n\n\nnames(professions)\n\n[1] \"name\"       \"profession\"\n\nnames(dates)\n\n[1] \"name\"       \"birth_year\" \"death_year\"\n\nnames(works)\n\n[1] \"name\"      \"known_for\"\n\n\n\n\n\n\nnrow(professions)\n\n[1] 10\n\nnrow(dates)\n\n[1] 8\n\nnrow(works)\n\n[1] 9"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#joining-data-frames",
+    "href": "slides/lec-07-quarto.html#joining-data-frames",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Joining data frames",
+    "text": "Joining data frames\n\nsomething_join(x, y)\n\n\nleft_join(): all rows from x\nright_join(): all rows from y\nfull_join(): all rows from both x and y\n…"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#setup",
+    "href": "slides/lec-07-quarto.html#setup",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Setup",
+    "text": "Setup\nFor the next few slides…\n\n\n\nx &lt;- tibble(\n  id = c(1, 2, 3),\n  value_x = c(\"x1\", \"x2\", \"x3\")\n  )\n\n\nx\n\n# A tibble: 3 × 2\n     id value_x\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 x1     \n2     2 x2     \n3     3 x3     \n\n\n\n\n\n\ny &lt;- tibble(\n  id = c(1, 2, 4),\n  value_y = c(\"y1\", \"y2\", \"y4\")\n  )\n\n\ny\n\n# A tibble: 3 × 2\n     id value_y\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 y1     \n2     2 y2     \n3     4 y4"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#left_join",
+    "href": "slides/lec-07-quarto.html#left_join",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "left_join()",
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#left_join-1",
+    "href": "slides/lec-07-quarto.html#left_join-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "left_join()",
+    "text": "left_join()\n\nprofessions %&gt;%\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#right_join",
+    "href": "slides/lec-07-quarto.html#right_join",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "right_join()",
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#right_join-1",
+    "href": "slides/lec-07-quarto.html#right_join-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "right_join()",
+    "text": "right_join()\n\nprofessions %&gt;%\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#full_join",
+    "href": "slides/lec-07-quarto.html#full_join",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "full_join()",
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#full_join-1",
+    "href": "slides/lec-07-quarto.html#full_join-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "full_join()",
+    "text": "full_join()\n\ndates %&gt;%\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#putting-it-altogether",
+    "href": "slides/lec-07-quarto.html#putting-it-altogether",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Putting it altogether",
+    "text": "Putting it altogether\n\nprofessions %&gt;%\n  left_join(dates) %&gt;%\n  left_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#take-a-break",
+    "href": "slides/lec-07-quarto.html#take-a-break",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#four-terms",
+    "href": "slides/lec-07-quarto.html#four-terms",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Four terms",
+    "text": "Four terms\n\nCitation\nReference\nBibliography\nCitation Style Language (CSL)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-citation",
+    "href": "slides/lec-07-quarto.html#whats-a-citation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Citation?",
+    "text": "What’s a Citation?\n\n\nInequality underpins waste management systems, structuring who can or cannot access services (Kalina et al., 2023).\nMany visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nIn Tilley & Kalina (2021), the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\n\n\nExplanation A citation is a reference to the source of information used in your research. Any time you directly quote, paraphrase, or summarize the essential elements of someone else’s idea in your work, an in-text citation should follow. For example, in APA style, a citation might look like this: (Tilley and Kalina, 2021).\nAnalogy Think of a citation as a signpost on a road trip. It tells you where the information came from and points you in the direction of the full details (the destination), which can be found in the reference list."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-citation-1",
+    "href": "slides/lec-07-quarto.html#whats-a-citation-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Citation?",
+    "text": "What’s a Citation?\n\nInequality underpins waste management systems, structuring who can or cannot access services (Kalina et al., 2023).\nMany visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nIn Tilley & Kalina (2021), the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.\n\n\n\n\n\n\n\nImportant: The period is after the citation."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-reference",
+    "href": "slides/lec-07-quarto.html#whats-a-reference",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Reference?",
+    "text": "What’s a Reference?\n\ndetailed description of the source of information\nauthor’s name, title, year of publication, publisher, DOI, etc.\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677\n\nExplanation\nA reference is a detailed description of the source of information that you want to give credit to via a citation. In APA style, a reference provides comprehensive details about a source, including the author’s name, the title of the source, the year of publication, and the publisher or URL.\nAnalogy\nA reference is like a detailed map at the end of your road trip (paper). It provides all the details about the source (destination) that the citation (signpost) pointed to."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-a-bibliography",
+    "href": "slides/lec-07-quarto.html#whats-a-bibliography",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s a Bibliography?",
+    "text": "What’s a Bibliography?\n\n\nlist of references in a research paper or project\nincludes all sources used, whether they were directly quoted or not\nlisted alphabetically by the author’s last name in the reference list\n\n\nReferences\n\n\nKalina, M., Makwetu, N., & Tilley, E. (2023). “The rich will always be able to dispose of their waste”: A view from the frontlines of municipal failure in Makhanda, South Africa. Environment, Development and Sustainability. https://doi.org/10.1007/s10668-023-03363-1\n\n\nTilley, E., & Kalina, M. (2021). “My flight arrives at 5 am, can you pick me up?”: The gatekeeping burden of the african academic. Journal of African Cultural Studies, 33(4), 538–548. https://doi.org/10.3929/ethz-b-000493677"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl",
+    "href": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s the Citation Style Language (CSL)?",
+    "text": "What’s the Citation Style Language (CSL)?\n\nIt’s what your citation and generated bibliography look like\nAPA (American Psychological Association) Style, Chicago Style, IEEE Style, Vancouver Style, etc. (over 10,000 styles in Zotero Style Repository)\n\n\nThe Citation Style Language (CSL) describes the formatting of citations, notes, and bibliographies. It was created to provide an open format that can be used by any application"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl-1",
+    "href": "slides/lec-07-quarto.html#whats-the-citation-style-language-csl-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "What’s the Citation Style Language (CSL)?",
+    "text": "What’s the Citation Style Language (CSL)?\nauthor-date: Many visitors still expect a personal pick-up, despite the availability of taxi services (Tilley & Kalina, 2021).\nnumeric Many visitors still expect a personal pick-up, despite the availability of taxi services [1]."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#why-use-a-reference-management-tool",
+    "href": "slides/lec-07-quarto.html#why-use-a-reference-management-tool",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Why use a reference management tool?",
+    "text": "Why use a reference management tool?\n\n\nManaging references manually:\n\nis a lot of work\nis prone to mistakes\nmakes you lose track\n\n\n\n\n\nPhoto by Christian Erfurt on unsplash.com"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#why-use-zotero",
+    "href": "slides/lec-07-quarto.html#why-use-zotero",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Why use Zotero?",
+    "text": "Why use Zotero?\n\n\n\nfree\nopen source: developed in public\ntransparent about access to your own data\ncross-platform (Windows, Mac, Linux)\ncollaboration in groups\nintegration with word processors\n\n\n\n\n\nPhoto by Sincerely Media on unsplash.com\n\n\nMendeley\n\nMendeley is owned by Elsevier.\nIt encrypts your database and makes money with your data\nYou can only collaborate with 3 people on one project.\n\nEndNote\n\nEndNote doesn’t come free, you need to buy a license.\nThey also used a prioprietary citation style files that could only be opened by EndNote."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#scholarly-articles-in-quarto",
+    "href": "slides/lec-07-quarto.html#scholarly-articles-in-quarto",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Scholarly Articles in Quarto",
+    "text": "Scholarly Articles in Quarto\nQuarto supports\n\n\na standardized schema for authors and affiliations that can be expressed once int the source document,\nthe use of Citation Style Language (CSL) to automate the formatting of citations and bibliographies, and\noutputting to pdf, html, and docx with custom formatting,\n\n\n\naccording to the styles required for various journals,\n\n\nand creating the LaTeX required for submission to multiple journals."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#front-matter",
+    "href": "slides/lec-07-quarto.html#front-matter",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Front matter",
+    "text": "Front matter\nQuarto provides a rich set of YAML metadata keys to describe the details required in the front matter of scholarly articles.\n\n\n\ntitle\nauthor\naffiliation\nabstract\nkeywords\ncitation\nlicensing\netc."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-07-exercises",
+    "href": "slides/lec-07-quarto.html#our-turn-md-07-exercises",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-07-exercises",
+    "text": "Our turn: md-07-exercises\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs25 workspace for the course.\nOpen md-07-exercises.\nIn the File Manager in the bottom right window, locate the scholarly-writing.qmd file and click on it to open it in the top left window.\nFollow along on the screen using the instructions in the document.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-md-07-publish-username",
+    "href": "slides/lec-07-quarto.html#our-turn-md-07-publish-username",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: md-07-publish-USERNAME",
+    "text": "Our turn: md-07-publish-USERNAME\nClone the repository from GitHub & publish using GitHub Pages.\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course: https://github.com/rbtl-fs25/.\nFind the repository md-07-publish-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs25 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nFrom the Files Manager in the bottom right window, open docs folder, then click on index.qmd.\nIndicate when you are ready.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#github-pages",
+    "href": "slides/lec-07-quarto.html#github-pages",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nGitHub Pages is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#minimal-example---requirements",
+    "href": "slides/lec-07-quarto.html#minimal-example---requirements",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Minimal Example - Requirements",
+    "text": "Minimal Example - Requirements\n\nLanding site needs to be stored as index.qmd\nThe index.qmd needs to be stored in docs folder\nExample works well for a report/article as a stand-alone page\nQuarto provides a framework and examples for more complex websites: https://quarto.org/docs/websites/"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#course-guide",
+    "href": "slides/lec-07-quarto.html#course-guide",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Course Guide",
+    "text": "Course Guide\n\nSteps for publishing the capstone project report are described on the capstone project page\nhttps://rbtl-fs25.github.io/website/project"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#take-a-break-1",
+    "href": "slides/lec-07-quarto.html#take-a-break-1",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#submission",
+    "href": "slides/lec-07-quarto.html#submission",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Submission",
+    "text": "Submission\n\nThe submission due date is: Tuesday, 06th June.\nA complete report receives 30 points.\nWe will use the GitHub issue tracker to communicate and ask questions about the capstone project.\nA list of required items for submission is covered on the course website: https://rbtl-fs25.github.io/website/project/"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#your-turn-capstone-project---read-and-take-notes",
+    "href": "slides/lec-07-quarto.html#your-turn-capstone-project---read-and-take-notes",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn: Capstone project - Read and take notes",
+    "text": "Your turn: Capstone project - Read and take notes\n\n\nOpen: https://rbtl-fs25.github.io/website/project/.\nRead through the page.\nFor the list in “Required items” note down the numbers of those that are unclear to you and why.\nAfter the time is up, we will discuss unclear items in class.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#our-turn-capstone-project---discuss-unclear-items",
+    "href": "slides/lec-07-quarto.html#our-turn-capstone-project---discuss-unclear-items",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Our turn: Capstone project - Discuss unclear items",
+    "text": "Our turn: Capstone project - Discuss unclear items\n\n\nShare which unclear items you noted down.\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#your-turn-capstone-project---share-remaining-unclear-items-on-github",
+    "href": "slides/lec-07-quarto.html#your-turn-capstone-project---share-remaining-unclear-items-on-github",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Your turn: Capstone project - Share remaining unclear items on GitHub",
+    "text": "Your turn: Capstone project - Share remaining unclear items on GitHub\n\n\nOpen your Capstone project repository (project-USERNAME) https://github.com/rbtl-fs25.\nAdd your questions for unclear items to the issue tracker.\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#module-6-documentation",
+    "href": "slides/lec-07-quarto.html#module-6-documentation",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Module 6 documentation",
+    "text": "Module 6 documentation\n\nrbtl-fs25.github.io/website/modules/md-07.html"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#homework-due-date",
+    "href": "slides/lec-07-quarto.html#homework-due-date",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Homework due date",
+    "text": "Homework due date\n\nHomework assignment due: Wednesday, April 9th"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#next-few-weeks",
+    "href": "slides/lec-07-quarto.html#next-few-weeks",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Next few weeks",
+    "text": "Next few weeks\n\nLars will be off work until 30th May\nElizabeth and Colin will support you during this time\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n20 February 2025\nWelcome & get ready for the course\n\n\n2\n27 February 2025\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n06 March 2025\nData transformation with dplyr\n\n\n4\n13 March 2025\nData import & Data organization in spreadsheets\n\n\n5\n20 March 2025\nConditions & Dates & Tables\n\n\n6\n27 March 2025\nData types & Vectors & Pivoting\n\n\n7\n03 April 2025\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n10 April 2025\nWaste Research\n\n\n9\n17 April 2025\nResearch Design\n\n\nNA\n24 April 2025\nEaster Break\n\n\nNA\n01 May 2025\nLabour Day Break\n\n\n10\n08 May 2025\nQuestionnaires\n\n\n11\n15 May 2025\nPre-test and logistics\n\n\n12\n22 May 2025\nData collection\n\n\nNA\n29 May 2025\nData analysis & report writing\n\n\nNA\n05 June 2025\nProject submission due date\n\n\nNA\n11 June 2025\nExam (13:00 to 15:00)"
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#attribution",
+    "href": "slides/lec-07-quarto.html#attribution",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Attribution",
+    "text": "Attribution\nContent was re-used from a workshop hosted by Mine Çetinkaya-Rundel at the 2023 Symposium on Data Science and Statistics and stored at https://github.com/mine-cetinkaya-rundel/quarto-sdss. The original content is licensed under a Creative Commons Attribution 4.0 International License."
+  },
+  {
+    "objectID": "slides/lec-07-quarto.html#thanks",
+    "href": "slides/lec-07-quarto.html#thanks",
+    "title": "Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages",
+    "section": "Thanks! 🌻",
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\n\n\n\n\n rbtl-fs25.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#week-8-solid-waste-management",
+    "href": "slides/lec-08-waste-research.html#week-8-solid-waste-management",
+    "title": "Waste Research",
+    "section": "Week 8: Solid Waste Management",
+    "text": "Week 8: Solid Waste Management\n\nPhoto: E. Tilley"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#course-overview",
+    "href": "slides/lec-08-waste-research.html#course-overview",
+    "title": "Waste Research",
+    "section": "Course overview",
+    "text": "Course overview\n12:15-13:00: Introduction to Waste Management\n13:15-14:00: Presentation and Brainstorming with S. Kahlert, ETH Sustainability\n14:15-15:00: Research Questions"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#learning-objectives",
+    "href": "slides/lec-08-waste-research.html#learning-objectives",
+    "title": "Waste Research",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nLearners can articulate the scale and drivers of the challenges in solid waste management\nLearners understand the flow of waste from Generation to Recovery\nLearners can identify waste management challenges at ETH and/or Zurich\nLearners can develop their own research questions using either the PICOT or FINER method"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#world-challenges-in-solid-waste-are-urban",
+    "href": "slides/lec-08-waste-research.html#world-challenges-in-solid-waste-are-urban",
+    "title": "Waste Research",
+    "section": "World challenges in solid waste are urban",
+    "text": "World challenges in solid waste are urban\n\nSource: European Environment Agency (EEA)"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#challenges-of-swm",
+    "href": "slides/lec-08-waste-research.html#challenges-of-swm",
+    "title": "Waste Research",
+    "section": "Challenges of SWM",
+    "text": "Challenges of SWM\n\nPublic health\nEnvironmental health – Local and Global\nResource value\n\nSpecial concern when ecological carrying capacity is overburdened\n\nPopulation density = risk of exposure\nWaste materials properties = severity of exposure"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#health-threats",
+    "href": "slides/lec-08-waste-research.html#health-threats",
+    "title": "Waste Research",
+    "section": "Health Threats",
+    "text": "Health Threats\n\nExposure to pollutants: formal and informal workers (collectors, sorters) exposed to waste (also by flooding)\nProliferation of pests: waste attract insects and rodents that carry diseases\nRespiratory problems due to open burning of garbage\nPhysical risks: occupational related risk of injuries"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#environmental-threats",
+    "href": "slides/lec-08-waste-research.html#environmental-threats",
+    "title": "Waste Research",
+    "section": "Environmental Threats",
+    "text": "Environmental Threats\n\nContamination of water, soil, air…(plastics, metals, toxins, nutrients)\nBlockage of drains -&gt; flooding -&gt; erosion\nDeterioration of aesthetic value of landscapes (tourism)"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#unknown-impacts",
+    "href": "slides/lec-08-waste-research.html#unknown-impacts",
+    "title": "Waste Research",
+    "section": "Unknown impacts",
+    "text": "Unknown impacts\n\nGreat Pacific Garbage Patch: 0.41 – 8.1% of Pacific Ocean\nPlastic facts: take &gt; 400 years to degrade, bioaccumulation\nMore than 80 % from land-based human activities"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#iswm-framework",
+    "href": "slides/lec-08-waste-research.html#iswm-framework",
+    "title": "Waste Research",
+    "section": "ISWM Framework",
+    "text": "ISWM Framework\n\nSource: samim"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#rs",
+    "href": "slides/lec-08-waste-research.html#rs",
+    "title": "Waste Research",
+    "section": "3Rs…",
+    "text": "3Rs…\n\nSource: LAHS ECO Engineering"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#rs-1",
+    "href": "slides/lec-08-waste-research.html#rs-1",
+    "title": "Waste Research",
+    "section": "…9Rs",
+    "text": "…9Rs\n\nSource: Gypsy Soul"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#generation",
+    "href": "slides/lec-08-waste-research.html#generation",
+    "title": "Waste Research",
+    "section": "Generation",
+    "text": "Generation\nSwitzerland has one of the highest municipal solid waste volumes in the world, at 716 kg of waste per person and year. Nearly 53% of it is recycled.\n\nWaste generation versus income level by country, UNEP/ISWA (2015)"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#generation-1",
+    "href": "slides/lec-08-waste-research.html#generation-1",
+    "title": "Waste Research",
+    "section": "Generation",
+    "text": "Generation\n\nWaste generation versus income level by country, UNEP/ISWA (2015)"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#collection-and-transport",
+    "href": "slides/lec-08-waste-research.html#collection-and-transport",
+    "title": "Waste Research",
+    "section": "Collection and Transport",
+    "text": "Collection and Transport\n\nSource: TMA"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#collection-and-transport-1",
+    "href": "slides/lec-08-waste-research.html#collection-and-transport-1",
+    "title": "Waste Research",
+    "section": "Collection and Transport",
+    "text": "Collection and Transport\n\nSource: UNDP"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#collection-and-transport-2",
+    "href": "slides/lec-08-waste-research.html#collection-and-transport-2",
+    "title": "Waste Research",
+    "section": "Collection and Transport",
+    "text": "Collection and Transport\n\nSource: UNDP"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#treatment",
+    "href": "slides/lec-08-waste-research.html#treatment",
+    "title": "Waste Research",
+    "section": "Treatment",
+    "text": "Treatment\n\nPhoto: E. Tilley"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#treatment-1",
+    "href": "slides/lec-08-waste-research.html#treatment-1",
+    "title": "Waste Research",
+    "section": "Treatment",
+    "text": "Treatment\n\nPhoto: E. Tilley"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#recovery",
+    "href": "slides/lec-08-waste-research.html#recovery",
+    "title": "Waste Research",
+    "section": "Recovery",
+    "text": "Recovery\n\nSource: ETH Zürich"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#recycling",
+    "href": "slides/lec-08-waste-research.html#recycling",
+    "title": "Waste Research",
+    "section": "Recycling",
+    "text": "Recycling\n\nSource: LivingIn"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#stakeholders",
+    "href": "slides/lec-08-waste-research.html#stakeholders",
+    "title": "Waste Research",
+    "section": "Stakeholders",
+    "text": "Stakeholders\n\nWaste generators – Need to interface with the system (waste segregation?)\nCentral/provincial government – Determine strategy, policy, regulation, commitments\nMunicipality – Service provider and regulator\nNGOs & CBOs – Awareness and self-help initiatives\nPrivate formal sector – Provide service\nPrivate informal sector – Play an integral and important part in most low and middle income countries\nInternal & external support agencies – Support and steer through funding and international conventions"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#policies",
+    "href": "slides/lec-08-waste-research.html#policies",
+    "title": "Waste Research",
+    "section": "Policies",
+    "text": "Policies\n\nRegulation and Enforcement\nSocial Mobilization\n\nInform, education, communicate\n\nEconomic Instruments\n\nIncentives, fines"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#take-home-messages",
+    "href": "slides/lec-08-waste-research.html#take-home-messages",
+    "title": "Waste Research",
+    "section": "Take home messages",
+    "text": "Take home messages\n\nManagement of MSW is one of the major challenges worldwide\nThe amount of waste generated is often linked directly to income level and lifestyle\nThere is no one-size-fits-all solution to the SWM challenge\nThe socio-economic, cultural and institutional context requires special consideration of appropriately adapted technologies, capacity building, including improvement of skills and know-how at local government level\nThe ISWM framework is a structured assessment method to understand and find solutions to existing SWM systems.\nRecovery of resources (materials and energy) is a promising way to go in solid waste management"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#finding-the-right-research-question-early-will-save-you-a-lot-of-headaches-later",
+    "href": "slides/lec-08-waste-research.html#finding-the-right-research-question-early-will-save-you-a-lot-of-headaches-later",
+    "title": "Waste Research",
+    "section": "Finding the right research question early will save you a lot of headaches later",
+    "text": "Finding the right research question early will save you a lot of headaches later\nThe research question will influence\n\nWho or what you sample\nThe research design you use (we will discuss Week 9)\nThe type of analysis you use"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#as-dr.-fandino-states",
+    "href": "slides/lec-08-waste-research.html#as-dr.-fandino-states",
+    "title": "Waste Research",
+    "section": "As Dr. Fandino states:",
+    "text": "As Dr. Fandino states:\n“…up to one third of the time spent in the whole process… [should] be invested in finding the right primary study question”"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#compare-the-examples",
+    "href": "slides/lec-08-waste-research.html#compare-the-examples",
+    "title": "Waste Research",
+    "section": "Compare the examples",
+    "text": "Compare the examples\n\nDo supraglottic devices provide similar conditions for the visualization of the glottis aperture in a German hospital?\n\nversus\n\nAmong children younger than 1 year of age undergoing elective minor procedures, to what extent the insertion times are different, comparing the Supreme laryngeal mask airway (LMA) to Proseal LMA, when placed after reaching a BIS index &lt;60?"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#lets-examine-the-first-question",
+    "href": "slides/lec-08-waste-research.html#lets-examine-the-first-question",
+    "title": "Waste Research",
+    "section": "Let’s examine the first question",
+    "text": "Let’s examine the first question\nDo supraglottic devices provide similar conditions for the visualization of the glottis aperture in a German hospital?\n\n“Do these devices…provide similar conditions…” implies a YES or NO answer ❌\n\nNEVER ask a yes or no question!"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#to-help-us-define-the-key-components-of-a-research-question-we-use-the-picot-framework",
+    "href": "slides/lec-08-waste-research.html#to-help-us-define-the-key-components-of-a-research-question-we-use-the-picot-framework",
+    "title": "Waste Research",
+    "section": "To help us define the key components of a Research Question we use the PICOT Framework",
+    "text": "To help us define the key components of a Research Question we use the PICOT Framework\n\nPopulation\nIntervention\nComparator\nOutcome\nTimeframe\n\nWith many clarifying questions spelled out in the paper. Even when we don’t really understand the research topic, we should be able to identify the components of PICOT"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#interventions-are-common-in-medicine-economics-engineering",
+    "href": "slides/lec-08-waste-research.html#interventions-are-common-in-medicine-economics-engineering",
+    "title": "Waste Research",
+    "section": "“Interventions” are common in medicine, economics, engineering",
+    "text": "“Interventions” are common in medicine, economics, engineering\n\nWhat is the impact of extra sleep on student grades?\nWhat is the impact of a cash payment on the rate of mothers who vaccinate their children against polio?\nWhat is the impact of a natural dye on the durability of recycled PET?\n\nNot necessary, and ideally avoided in your own project"
+  },
+  {
+    "objectID": "slides/lec-08-waste-research.html#for-your-projects-you-dont-need-to-worry-too-much-about-whether-it-is-novel-but-it-should-be-interesting-and-relevant-either-for-eth-erz-etc.",
+    "href": "slides/lec-08-waste-research.html#for-your-projects-you-dont-need-to-worry-too-much-about-whether-it-is-novel-but-it-should-be-interesting-and-relevant-either-for-eth-erz-etc.",
+    "title": "Waste Research",
+    "section": "For your projects, you don’t need to worry too much about whether it is “Novel” but it should be interesting and relevant (either for ETH, ERZ, etc.)",
+    "text": "For your projects, you don’t need to worry too much about whether it is “Novel” but it should be interesting and relevant (either for ETH, ERZ, etc.)"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
+    "href": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
+    "title": "Research Design",
+    "section": "Learning Objectives (for next week, Week 9)",
+    "text": "Learning Objectives (for next week, Week 9)\n\nLearners can extract the\n\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings from a scientific paper about waste management\n\n\nLearners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9-1",
+    "href": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9-1",
+    "title": "Research Design",
+    "section": "Learning Objectives (for next week, Week 9)",
+    "text": "Learning Objectives (for next week, Week 9)\n\nLearners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework",
+    "href": "slides/lec-09-research-design.html#homework",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\nThe papers we will study are:\nKasinja, C., & Tilley, E. (2018). Formalization of informal waste pickers’ cooperatives in Blantyre, Malawi: A feasibility assessment. Sustainability, 10(4), 1149.\nNdau, H., & Tilley, E. (2018). Willingness to pay for improved household solid waste collection in Blantyre, Malawi. Economies, 6(4), 54.\nRoxburgh, H., Magombo, C., Kaliwo, T., Tilley, E. A., Hampshire, K., Oliver, D. M., & Quilliam, R. S. (2022). Blood flows: mapping journeys of menstrual waste in Blantyre, Malawi. Cities & Health, 6(4), 738-751."
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-1",
+    "href": "slides/lec-09-research-design.html#homework-1",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\nTilley, E., Chilunga, H., Kwangulero, J., Schöbitz, L., Vijay, S., Heilgendorff, H., & Kalina, M. (2023). “It is unbearable to breathe here”: air quality, open incineration, and misinformation in Blantyre, Malawi. Frontiers in Public Health, 11, 1242726.\nYesaya, M., Mpanang’ombe, W., & Tilley, E. (2021). The cost of plastics in compost. Frontiers in Sustainability, 2, 753413.\nAnd are available to download here"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-2",
+    "href": "slides/lec-09-research-design.html#homework-2",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\nEach person has been assigned a paper to read. The paper allocation list can be found here\nThree people have been assigned to each paper and each person will be responsible for a different task during class:\n\nIf you were assigned “summary”: you will have 5 minutes to give a 5-slide overview of the\n\nResearch Question\nResearch Design\nSampling strategy\nMethodology\nKey findings"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-3",
+    "href": "slides/lec-09-research-design.html#homework-3",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework\n\nIf you were assigned “data table”: you will have 5 minutes to provide a 2 slide presentation to illustrate\n\nThe codebook that would have been generated for this research (i.e. present the variables and their units, clearly explained)\nA sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#example",
+    "href": "slides/lec-09-research-design.html#example",
+    "title": "Research Design",
+    "section": "Example",
+    "text": "Example\nIf we have this figure on the age gap between men and women"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#example-1",
+    "href": "slides/lec-09-research-design.html#example-1",
+    "title": "Research Design",
+    "section": "Example",
+    "text": "Example\nOur data table would look like this:\nyear gender income 1980 male 400 1980 female 240 … …\n2020 male 450 2020 female 360\n*It is not necessary to fill in the values: just construct the dataframe"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#homework-4",
+    "href": "slides/lec-09-research-design.html#homework-4",
+    "title": "Research Design",
+    "section": "Homework",
+    "text": "Homework"
+  },
+  {
+    "objectID": "slides/lec-09-research-design.html#health-threats",
+    "href": "slides/lec-09-research-design.html#health-threats",
+    "title": "Research Design",
+    "section": "Health Threats",
+    "text": "Health Threats\n\n\n\n\n rbtl-fs25.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#week-8-solid-waste-management",
+    "href": "slides/lec-09-research-questions.html#week-8-solid-waste-management",
+    "title": "Research Questions",
+    "section": "Week 8: Solid Waste Management",
+    "text": "Week 8: Solid Waste Management\n\nPhoto: E. Tilley"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#course-overview",
+    "href": "slides/lec-09-research-questions.html#course-overview",
+    "title": "Research Questions",
+    "section": "Course overview",
+    "text": "Course overview\n12:15-13:00: Introduction to Waste Management\n13:15-14:00: Presentation and Brainstorming with S. Kahlert, ETH Sustainability\n14:15-15:00: Research Questions"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#learning-objectives",
+    "href": "slides/lec-09-research-questions.html#learning-objectives",
+    "title": "Research Questions",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nLearners can articulate the scale and drivers of the challenges in solid waste management\nLearners understand the flow of waste from Generation to Recovery\nLearners can identify waste management challenges at ETH and/or Zurich\nLearners can develop their own research questions using either the PICOT or FINER method"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#world-challenges-in-solid-waste-are-urban",
+    "href": "slides/lec-09-research-questions.html#world-challenges-in-solid-waste-are-urban",
+    "title": "Research Questions",
+    "section": "World challenges in solid waste are urban",
+    "text": "World challenges in solid waste are urban\n\nSource: European Environment Agency (EEA)"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#challenges-of-swm",
+    "href": "slides/lec-09-research-questions.html#challenges-of-swm",
+    "title": "Research Questions",
+    "section": "Challenges of SWM",
+    "text": "Challenges of SWM\n\nPublic health\nEnvironmental health – Local and Global\nResource value\n\nSpecial concern when ecological carrying capacity is overburdened\n\nPopulation density = risk of exposure\nWaste materials properties = severity of exposure"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#health-threats",
+    "href": "slides/lec-09-research-questions.html#health-threats",
+    "title": "Research Questions",
+    "section": "Health Threats",
+    "text": "Health Threats\n\nExposure to pollutants: formal and informal workers (collectors, sorters) exposed to waste (also by flooding)\nProliferation of pests: waste attract insects and rodents that carry diseases\nRespiratory problems due to open burning of garbage\nPhysical risks: occupational related risk of injuries"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#environmental-threats",
+    "href": "slides/lec-09-research-questions.html#environmental-threats",
+    "title": "Research Questions",
+    "section": "Environmental Threats",
+    "text": "Environmental Threats\n\nContamination of water, soil, air…(plastics, metals, toxins, nutrients)\nBlockage of drains -&gt; flooding -&gt; erosion\nDeterioration of aesthetic value of landscapes (tourism)"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#unknown-impacts",
+    "href": "slides/lec-09-research-questions.html#unknown-impacts",
+    "title": "Research Questions",
+    "section": "Unknown impacts",
+    "text": "Unknown impacts\n\nGreat Pacific Garbage Patch: 0.41 – 8.1% of Pacific Ocean\nPlastic facts: take &gt; 400 years to degrade, bioaccumulation\nMore than 80 % from land-based human activities"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#iswm-framework",
+    "href": "slides/lec-09-research-questions.html#iswm-framework",
+    "title": "Research Questions",
+    "section": "ISWM Framework",
+    "text": "ISWM Framework\n\nSource: samim"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#rs",
+    "href": "slides/lec-09-research-questions.html#rs",
+    "title": "Research Questions",
+    "section": "3Rs…",
+    "text": "3Rs…\n\nSource: LAHS ECO Engineering"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#rs-1",
+    "href": "slides/lec-09-research-questions.html#rs-1",
+    "title": "Research Questions",
+    "section": "…9Rs",
+    "text": "…9Rs\n\nSource: Gypsy Soul"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#generation",
+    "href": "slides/lec-09-research-questions.html#generation",
+    "title": "Research Questions",
+    "section": "Generation",
+    "text": "Generation\nSwitzerland has one of the highest municipal solid waste volumes in the world, at 716 kg of waste per person and year. Nearly 53% of it is recycled.\n\nWaste generation versus income level by country, UNEP/ISWA (2015)"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#generation-1",
+    "href": "slides/lec-09-research-questions.html#generation-1",
+    "title": "Research Questions",
+    "section": "Generation",
+    "text": "Generation\n\nWaste generation versus income level by country, UNEP/ISWA (2015)"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#collection-and-transport",
+    "href": "slides/lec-09-research-questions.html#collection-and-transport",
+    "title": "Research Questions",
+    "section": "Collection and Transport",
+    "text": "Collection and Transport\n\nSource: TMA"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#collection-and-transport-1",
+    "href": "slides/lec-09-research-questions.html#collection-and-transport-1",
+    "title": "Research Questions",
+    "section": "Collection and Transport",
+    "text": "Collection and Transport\n\nSource: UNDP"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#collection-and-transport-2",
+    "href": "slides/lec-09-research-questions.html#collection-and-transport-2",
+    "title": "Research Questions",
+    "section": "Collection and Transport",
+    "text": "Collection and Transport\n\nSource: UNDP"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#treatment",
+    "href": "slides/lec-09-research-questions.html#treatment",
+    "title": "Research Questions",
+    "section": "Treatment",
+    "text": "Treatment\n\nPhoto: E. Tilley"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#treatment-1",
+    "href": "slides/lec-09-research-questions.html#treatment-1",
+    "title": "Research Questions",
+    "section": "Treatment",
+    "text": "Treatment\n\nPhoto: E. Tilley"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#recovery",
+    "href": "slides/lec-09-research-questions.html#recovery",
+    "title": "Research Questions",
+    "section": "Recovery",
+    "text": "Recovery\n\nSource: ETH Zürich"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#recycling",
+    "href": "slides/lec-09-research-questions.html#recycling",
+    "title": "Research Questions",
+    "section": "Recycling",
+    "text": "Recycling\n\nSource: LivingIn"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#stakeholders",
+    "href": "slides/lec-09-research-questions.html#stakeholders",
+    "title": "Research Questions",
+    "section": "Stakeholders",
+    "text": "Stakeholders\n\nWaste generators – Need to interface with the system (waste segregation?)\nCentral/provincial government – Determine strategy, policy, regulation, commitments\nMunicipality – Service provider and regulator\nNGOs & CBOs – Awareness and self-help initiatives\nPrivate formal sector – Provide service\nPrivate informal sector – Play an integral and important part in most low and middle income countries\nInternal & external support agencies – Support and steer through funding and international conventions"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#policies",
+    "href": "slides/lec-09-research-questions.html#policies",
+    "title": "Research Questions",
+    "section": "Policies",
+    "text": "Policies\n\nRegulation and Enforcement\nSocial Mobilization\n\nInform, education, communicate\n\nEconomic Instruments\n\nIncentives, fines"
+  },
+  {
+    "objectID": "slides/lec-09-research-questions.html#take-home-messages",
+    "href": "slides/lec-09-research-questions.html#take-home-messages",
+    "title": "Research Questions",
+    "section": "Take home messages",
+    "text": "Take home messages\n\nManagement of MSW is one of the major challenges worldwide\nThe amount of waste generated is often linked directly to income level and lifestyle\nThere is no one-size-fits-all solution to the SWM challenge\nThe socio-economic, cultural and institutional context requires special consideration of appropriately adapted technologies, capacity building, including improvement of skills and know-how at local government level\nThe ISWM framework is a structured assessment method to understand and find solutions to existing SWM systems.\nRecovery of resources (materials and energy) is a promising way to go in solid waste management\n\n\n\n\n\n rbtl-fs25.github.io/website/"
   }
 ]
