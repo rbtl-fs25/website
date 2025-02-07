@@ -145,7 +145,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 [Bookmark this link in your browser!]{.highlight-yellow}
 
 ::: learn-more
-[github.com/rbtl-fs24](https://github.com/rbtl-fs24)
+[github.com/rbtl-fs25](https://github.com/rbtl-fs25)
 
 ![](img/lec-02/github-org.png)
 ## on GitHub Organisation
@@ -181,7 +181,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 ## Your turn: Introduce yourself to git
 
 1. Open a web browser on your laptop.
-2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+2. Navigate to the course website: [rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
 3. If you haven't yet, bookmark the course website
 4. In the left-hand menu, click on Module 2, then select [am-01: Git configuration]{.highlight-yellow}
 5. Follow the instructions
@@ -614,7 +614,7 @@ Image taken from: <https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot>
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3. Click [Start]{.highlight-yellow} next to [md-02-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`md-02b-data-visualization.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 :::
@@ -733,7 +733,7 @@ ggplot(data = gapminder_2007,
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3. In the File Manager in the bottom right window, locate the [`md-02c-make-a-plot.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4. Follow instructions in the file
 :::
@@ -746,22 +746,22 @@ countdown(15)
 ## Module 2 documentation
 
 ::: learn-more
-[rbtl-fs24.github.io/website/modules/md-02.html](https://rbtl-fs24.github.io/website/modules/md-02.html)
+[rbtl-fs25.github.io/website/modules/md-02.html](https://rbtl-fs25.github.io/website/modules/md-02.html)
 
 ```{=html}
-<iframe src="https://rbtl-fs24.github.io/website/modules/md-02.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 2 documentation"></iframe>
+<iframe src="https://rbtl-fs25.github.io/website/modules/md-02.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 2 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
--   Homework assignment due: [Wednesday, March 6th]{.highlight-yellow}
--   Correction & feedback phase up to: Tuesday, March 12th 
+-   Homework assignment due: [Wednesday, March 5th]{.highlight-yellow}
+-   Correction & feedback phase up to: Tuesday, March 11th 
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs24/website/raw/main/slides/lec-02-visualisation.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-02-visualisation.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
