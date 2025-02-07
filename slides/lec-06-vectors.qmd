@@ -2,7 +2,7 @@
 title: "{{< var md-06.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
-date: "2024-03-28"
+date: "2025-03-27"
 format: 
   revealjs: 
     theme: slides.scss
@@ -157,7 +157,7 @@ waste_data_tidy |>
 - 04th April 2024: no class, Easter Break
 
 ```{r}
-readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+readr::read_csv("../data/tbl-00-rbtl-fs25-course-schedule-main.csv") |> 
   dplyr::select(module, date, topic = title) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
@@ -168,7 +168,7 @@ readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |>
 ```{r}
 #| label: learning-objectives
 #| echo: false
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 

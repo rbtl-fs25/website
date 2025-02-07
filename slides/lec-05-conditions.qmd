@@ -2,7 +2,7 @@
 title: "{{< var md-05.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
-date: "2024-03-21"
+date: "2025-03-20"
 format: 
   revealjs: 
     theme: slides.scss
@@ -49,7 +49,7 @@ sludge <- read_excel(here::here("slides/data/raw/faecal-sludge-analysis.xlsx")) 
 ```{r}
 #| label: learning-objectives
 #| echo: false
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 

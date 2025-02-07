@@ -76,8 +76,8 @@ The performance assessment and resulting grading scheme are shown below.
 -   Compulsory continuous performance assessment: 50 points, of which
     -   Homework assignments: 20 points (n = 10)
     -   Capstone project: 30 points, of which 
-        - Technical parts of submitted report: 20 points (we will communicate what we expect) 
-        - Intellectual framing of results: 10 points (we will communicate what we expect)
+        - Technical parts of submitted report: 15 points (we will communicate what we expect) 
+        - Intellectual framing of results: 15 points (we will communicate what we expect)
   
 Table @tbl-grading-conversion shows the conversion from points to grades. Grades follow the [ETHZ's Grading System](https://ethz.ch/content/dam/ethz/main/education/rechtliches-abschluesse/grading.pdf). Points are rounded to the nearest grade, for example:
 
@@ -126,7 +126,6 @@ We expect you to use AI tools in this class (e.g. perplexity.ai, ChatGPT, etc.).
 Be aware of the limits of these tools:
 
 - Minimum effort prompts will yield low quality results. Refine your prompts to get good outcomes. This will take work. 
-
 - Don't trust anything it says. Unless you know the answer or know how to check it, assume it is wrong. You will be responsible for any errors or omissions provided by the tool. It works best for topics you understand.
 
 - AI is a tool that you need to acknowledge using. Include links to your prompts and explain how you used AI to complete an assignment. Failure to do so is in violation of academic integrity policies.

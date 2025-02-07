@@ -2,7 +2,7 @@
 title: "{{< var md-01.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "Prof. Elizabeth Tilley and Lars Schöbitz"
-date: "2024-02-22"
+date: "2025-02-20"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -145,7 +145,7 @@ options(knitr.kable.NA = '')
 ```
 
 ```{r}
-readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |> 
+readr::read_csv("../data/tbl-00-rbtl-fs25-course-schedule-main.csv") |> 
   dplyr::select(module, date, topic = title) |> 
   dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
   knitr::kable()
@@ -196,14 +196,14 @@ readr::read_csv("../data/tbl-00-rbtl-fs24-course-schedule-main.csv") |>
 
 ## Course website {.center-align .large}
 
-[rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+[rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
 
 ## Our turn: Open and bookmark the course webiste
 
 1. Open a web browser on your laptop.
-2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
-3. Create a bookmarks folder named rbtl-fs24 in your bookmarks toolbar
-4. Add a bookmark of the course website to the folder rbtl-fs24
+2. Navigate to the course website: [rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
+3. Create a bookmarks folder named rbtl-fs25 in your bookmarks toolbar
+4. Add a bookmark of the course website to the folder rbtl-fs25
 
 
 ```{r}
@@ -217,7 +217,7 @@ countdown(minutes = 5)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
@@ -293,7 +293,7 @@ Sit back and enjoy!
 ## Your turn: Get a GitHub account
 
 1. Open a web browser on your laptop.
-2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+2. Navigate to the course website: [rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
 3. If you haven't yet, bookmark the course website
 4. In the left-hand menu, clock on [Module 1, then select am-01: GitHub]{.highlight-yellow}
 5. Follow the instructions
@@ -324,7 +324,7 @@ countdown(minutes = 5)
 ## Your turn: Log into Posit Cloud with GitHub account
 
 1. Open a web browser on your laptop.
-2. Navigate to the course website: [rbtl-fs24.github.io/website/](https://rbtl-fs24.github.io/website/)
+2. Navigate to the course website: [rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
 3. If you haven't yet, bookmark the course website
 4. In the left-hand menu, clock on Module 1, then select [am-02: Posit Cloud]{.highlight-yellow}
 5. Follow the instructions
@@ -417,7 +417,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the rbt-fs24 workspace for the course.
+2. Open the rbt-fs25 workspace for the course.
 3. Click [Start]{.highlight-yellow} next to [md-01-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the `hello-quarto.qmd` file and click on it to open it in the top left window.
 4. Render the document.
@@ -641,22 +641,22 @@ readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |>
 ## Module 1 documentation
 
 ::: learn-more
-[rbtl-fs24.github.io/website/modules/md-01.html](https://rbtl-fs24.github.io/website/modules/md-01.html)
+[rbtl-fs25.github.io/website/modules/md-01.html](https://rbtl-fs25.github.io/website/modules/md-01.html)
 
 ```{=html}
-<iframe src="https://rbtl-fs24.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+<iframe src="https://rbtl-fs25.github.io/website/modules/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
 ```
 :::
 
 ## Homework due date
 
 - Homework is a pre-requsite for active participation in Module 2
-- Homework assignment due: [Wednesday, 28th February]{.highlight-yellow}
+- Homework assignment due: [Wednesday, 26th February]{.highlight-yellow}
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbt-fs24/website/raw/main/slides/lec-01-welcome.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbt-fs25/website/raw/main/slides/lec-01-welcome.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

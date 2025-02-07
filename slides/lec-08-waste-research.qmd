@@ -2,7 +2,7 @@
 title: "Waste Research"
 subtitle: "{{< var course.long-title >}}"
 author: "Prof. Elizabeth Tilley"
-date: "2024-04-18"
+date: "2025-04-10"
 format: 
   revealjs: 
     theme: slides.scss

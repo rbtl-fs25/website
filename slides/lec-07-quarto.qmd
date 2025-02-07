@@ -2,7 +2,7 @@
 title: "{{< var md-07.title >}}"
 subtitle: "{{< var course.long-title >}}"
 author: "{{< var author >}}"
-date: "2024-04-11"
+date: "2025-04-03"
 format: 
   revealjs: 
     theme: slides.scss
@@ -45,7 +45,7 @@ library(knitr)
 ```{r}
 #| label: learning-objectives
 #| echo: false
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
@@ -689,7 +689,7 @@ Quarto provides a rich set of YAML metadata keys to describe the details require
 
 ::: task
 1. Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2. Open the [rbtl-fs24 workspace]{.highlight-yellow} for the course.
+2. Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3. Open [md-07-exercises]{.highlight-yellow}.
 4. In the File Manager in the bottom right window, locate the [`scholarly-writing.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 5. Follow along on the screen using the instructions in the document.
@@ -704,7 +704,7 @@ countdown(15)
 
 [Clone the repository from GitHub]{.highlight-yellow} & publish using GitHub Pages.
 
-1. Open github.com in your browser and navigate to the [GitHub organisation for the course](https://github.com/rbtl-fs24/): <https://github.com/rbtl-fs24/>.
+1. Open github.com in your browser and navigate to the [GitHub organisation for the course](https://github.com/rbtl-fs25/): <https://github.com/rbtl-fs24/>.
 2. Find the repository md-07-publish-USERNAME that [ends with your GitHub username]{.highlight-yellow}, and open it.
 3. Click on the green "Code" button.
 4. Copy the HTTPS URL to your clipboard.
