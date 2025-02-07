@@ -530,10 +530,12 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ## Weekly Structure
 
+Assignment submission: Wednesdays, latest by 23:59.
+
 |               |                                            |
 |---------------|--------------------------------------------|
-| **Monday**    |                                            |
-| **Tuesday**   | Student hours from 14:00 to 16:00 (CET) |
+| **Monday**    |   Student hours from 13:00 to 14:30 (CET)    |
+| **Tuesday**   |                                       |
 | **Wednesday** | Assignment submission, latest by 23:59 (CET)   |
 | **Thursday**  | Lecture from 12:15 to 15:00 (CET) |
 | **Friday**    |                                            |

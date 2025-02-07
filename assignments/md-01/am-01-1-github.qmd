@@ -40,7 +40,7 @@ You can change your username later, but better to get this right the first time.
 
 1. Open [github.com](https://github.com/) in your browser and login with your credentials
 2. Exchange your GitHub username with your neighbor
-3. Find and open the `website` repository in the rbtl-fs24 GitHub organisation
+3. Find and open the `website` repository in the rbtl-fs25 GitHub organisation
 4. Find the issue tracker
 5. Open an issue with the title "Open first issue on GitHub" 
 7. Add a comment to the issue and tag Lars with [@larnsce]{.highlight-yellow}. Add some text.
