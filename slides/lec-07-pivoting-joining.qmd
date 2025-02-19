@@ -5,7 +5,7 @@ author: "{{< var author >}}"
 date: "2023-12-12"
 format: 
   revealjs: 
-    theme: slides.scss
+    theme: "../style/slides.scss"
     transition: fade
     slide-number: true
     logo: ../img/OWD-logo-20.png

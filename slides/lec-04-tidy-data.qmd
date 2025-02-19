@@ -4,7 +4,7 @@ subtitle: "CVEN 5837 - Summer 2023"
 author: "Lars Schöbitz"
 format: 
   revealjs: 
-    theme: slides.scss
+    theme: "../style/slides.scss"
     transition: fade
     slide-number: true
     logo: img/logo.png
@@ -13,7 +13,7 @@ editor: source
 execute:
   freeze: auto
 params:
-    week: 5
+    module: 5
 bibliography: references.bib
 editor_options: 
   chunk_output_type: console
@@ -167,8 +167,8 @@ waste_data_tidy |>
 
 ```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
-  dplyr::filter(week == params$week) |>
+lobj1 <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```

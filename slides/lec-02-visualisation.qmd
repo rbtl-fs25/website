@@ -6,7 +6,7 @@ date: "2025-02-27"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
-    theme: slides.scss
+    theme: "../style/slides.scss"
     transition: fade
     slide-number: true
     chalkboard: true

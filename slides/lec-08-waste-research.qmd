@@ -5,7 +5,7 @@ author: "Prof. Elizabeth Tilley"
 date: "2025-04-10"
 format: 
   revealjs: 
-    theme: slides.scss
+    theme: "../style/slides.scss"
     transition: fade
     slide-number: true
     logo: ../img/OWD-logo-20.png
