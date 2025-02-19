@@ -547,8 +547,8 @@ Assignment submission: Wednesdays, latest by 23:59.
 -   Compulsory continuous performance assessment: [50 points]{.highlight-yellow}, of which
     -   Homework assignments: [20 points]{.highlight-yellow} (n = 10)
     -   Capstone project: [30 points]{.highlight-yellow}, of which 
-        - Technical parts of submitted report: [20 points]{.highlight-yellow} (we will communicate what we expect) 
-        - Intellectual framing of results: [10 points]{.highlight-yellow} (we will communicate what we expect)
+        - Technical parts of submitted report: [15 points]{.highlight-yellow} (we will communicate what we expect) 
+        - Intellectual framing of results: [15 points]{.highlight-yellow} (we will communicate what we expect)
         
 ## Grading scheme {.scrollable}
 
@@ -597,8 +597,8 @@ readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |>
 - Method: Survey or Observational Study using Google Forms and Sheets
 - 1 project per student, submitted as rendered Quarto document on GitHub
 - 30 points in total
-  - 20 points for the technical parts of the submitted report
-  - 10 points for the intellectual framing of results
+  - 15 points for the technical parts of the submitted report
+  - 15 points for the intellectual framing of results
 
 ## Readings
 
