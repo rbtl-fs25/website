@@ -120,7 +120,7 @@ website:
 format:
   html:
     theme:
-      light: [litera, style/theme.scss]
+      light: [litera, theme.scss]
     css: styles.css
     code-copy: true
     code-overflow: wrap
