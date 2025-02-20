@@ -198,7 +198,7 @@ readr::read_csv("../data/tbl-00-rbtl-fs25-course-schedule-main.csv") |>
 
 [rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
 
-## Our turn: Open and bookmark the course webiste
+## Our turn: Open and bookmark the course website
 
 1. Open a web browser on your laptop.
 2. Navigate to the course website: [rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
@@ -321,7 +321,7 @@ countdown(minutes = 5)
 
 ## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
 
-## Your turn: Log into Posit Cloud with GitHub account
+## Your turn: Log into Posit Cloud with GitHub account {.smaller}
 
 1. Open a web browser on your laptop.
 2. Navigate to the course website: [rbtl-fs25.github.io/website/](https://rbtl-fs25.github.io/website/)
@@ -659,6 +659,8 @@ readr::read_csv(here::here("data/tbl-05-rbtl-grading-conversion.csv")) |>
 
 ## Thanks! `r emo::ji("sunflower")` 
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbt-fs25/website/raw/main/slides/lec-01-welcome.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-01-welcome.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
