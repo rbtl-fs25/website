@@ -165,7 +165,7 @@ Artwork by [@allison_horst](https://www.allisonhorst.com/)
 [Bookmark this link in your browser!]{.highlight-yellow}
 
 ::: learn-more
-[posit.cloud/spaces/484002/content/](https://posit.cloud/spaces/484002/content/)
+[posit.cloud/spaces/611943/content/](https://posit.cloud/spaces/611943/content/)
 
 ![](img/lec-02/posit-cloud-new-project.png)
 

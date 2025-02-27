@@ -2,6 +2,21 @@
 title: "Interaction with GitHub"
 ---
 
+## Step 0: Enable private repository access
+
+1. Open the rbtl-fs25 workspace on [posit.cloud/spaces/611943/content/](https://posit.cloud/spaces/611943/content/all?sort=name_asc)
+2. Click on your username in the top-right corner of the window. A small window opens.
+
+![](images/01-private-repo.png)
+
+3. Click on "Authentication" in the small window. A new window opens.
+
+![](images/02-private-repo.png)
+
+4. Check the box under Login Options GitHub that says "Private repo access also enabled".
+
+![](images/03-private-repo.png)
+
 ## Step 1: Clone a repository
 
 1. Open github.com in your browser.
@@ -9,7 +24,7 @@ title: "Interaction with GitHub"
 3. Find the repository git-configuration-USERNAME that ends with your GitHub username, and open it.
 4. Click on the green "Code" button.
 5. Copy the HTTPS URL to your clipboard.
-6. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/611943/content/all?sort=name_asc)
+6. Open the rbtl-fs25 workspace on [posit.cloud](https://posit.cloud/spaces/611943/content/all?sort=name_asc)
 7. Click New Project > New Project from Git Repository
 8. Paste the HTTPS URL from GitHub into the "URL of your Git Repository" field.
 9. Wait until the project is deployed
