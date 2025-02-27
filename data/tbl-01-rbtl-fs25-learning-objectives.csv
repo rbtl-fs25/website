@@ -24,20 +24,20 @@ date,module,title,teaser,lecturer,learning_objectives
 ,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can apply functions from the dplyr R Package to join multiple data sets.
 ,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can add literature references to Quarto files using the navigation menu of RStudio visual editor and using an exported collection in .bib format from Zotero Reference Management software
 ,7,Joining tables & Creating and publishing scholarly articles with Quarto and GitHub pages,NA,L. Schöbitz,Learners can use the GitHub pages service to publish a repository as a standalone website.
-,8,Waste Research,NA,E. Tilley,Learners can articulate the scale and drivers of the challenges in solid waste management
-,8,Waste Research,NA,E. Tilley,Learners understand the flow of waste from Generation to Recovery
-,8,Waste Research,NA,E. Tilley,Learners can identify waste management challenges at ETH and/or Zurich
-,8,Waste Research,NA,E. Tilley,Learners can develop their own research questions using either the PICOT or FINER method
-,9,Research Design,NA,E. Tilley,"Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management."
-,9,Research Design,NA,NA,Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.
-,9,Research Design,NA,NA,"Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic."
-,9,Research Design,NA,NA,Learners can identify quality criteria for their own data collection tool.
+,8,Waste Research (participation mandatory),NA,E. Tilley,Learners can articulate the scale and drivers of the challenges in solid waste management
+,8,Waste Research (participation mandatory),NA,E. Tilley,Learners understand the flow of waste from Generation to Recovery
+,8,Waste Research (participation mandatory),NA,E. Tilley,Learners can identify waste management challenges at ETH and/or Zurich
+,8,Waste Research (participation mandatory),NA,E. Tilley,Learners can develop their own research questions using either the PICOT or FINER method
+,9,Research Design (participation mandatory),NA,E. Tilley,"Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management."
+,9,Research Design (participation mandatory),NA,NA,Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.
+,9,Research Design (participation mandatory),NA,NA,"Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic."
+,9,Research Design (participation mandatory),NA,NA,Learners can identify quality criteria for their own data collection tool.
 ,NA,Easter Break,NA,NA,NA
 ,NA,Labour Day Break,NA,NA,NA
-,10,Questionnaires,NA,E. Tilley,Learners can produce a research question that adheres to the FINER and PICOT frameworks
-,10,Questionnaires,NA,E. Tilley,Learners can identify pitfalls associated with four types of questionnaire formats
-,10,Questionnaires,NA,E. Tilley,Learners can clean and summarise different types of questionnaire-generated data
-,10,Questionnaires,NA,E. Tilley,Learners can identify quality criteria for their own data collection tool
+,10,Questionnaires (participation mandatory),NA,E. Tilley,Learners can produce a research question that adheres to the FINER and PICOT frameworks
+,10,Questionnaires (participation mandatory),NA,E. Tilley,Learners can identify pitfalls associated with four types of questionnaire formats
+,10,Questionnaires (participation mandatory),NA,E. Tilley,Learners can clean and summarise different types of questionnaire-generated data
+,10,Questionnaires (participation mandatory),NA,E. Tilley,Learners can identify quality criteria for their own data collection tool
 ,11,Pre-test and logistics,NA,E. Tilley,Learners are able to critically assess the data collection tools of colleagues and provide constructive feedback
 ,11,Pre-test and logistics,NA,E. Tilley,Learners are able to plan a self-directed sampling schedule according to their required sample size and personal limitations
 ,12,Data collection,NA,E. Tilley and L. Schöbitz,NA
