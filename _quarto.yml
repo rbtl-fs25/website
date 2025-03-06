@@ -133,6 +133,7 @@ format:
     include-in-header: 
         - text: |
             <script defer data-domain="rbtl-fs25.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <link href="img/OWD-logo-21.png" rel="icon"/>
 
 execute: 
   freeze: auto
