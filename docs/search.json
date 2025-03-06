@@ -2038,6 +2038,17 @@
     ]
   },
   {
+    "objectID": "assignments/md-02/am-02-1-github.html#step-0-enable-private-repository-access",
+    "href": "assignments/md-02/am-02-1-github.html#step-0-enable-private-repository-access",
+    "title": "Interaction with GitHub",
+    "section": "",
+    "text": "Open the rbtl-fs25 workspace on posit.cloud/spaces/611943/content/\nClick on your username in the top-right corner of the window. A small window opens.\n\n\n\nClick on “Authentication” in the small window. A new window opens.\n\n\n\nCheck the box under Login Options GitHub that says “Private repo access also enabled”.",
+    "crumbs": [
+      "Module 02",
+      "am-01: Git configuration"
+    ]
+  },
+  {
     "objectID": "assignments/md-02/am-02-1-github.html#step-1-clone-a-repository",
     "href": "assignments/md-02/am-02-1-github.html#step-1-clone-a-repository",
     "title": "Interaction with GitHub",
@@ -2290,7 +2301,7 @@
     "href": "assignments/md-03/am-03-1-data-transformation.html#step-1-clone-your-module-3-assignments-repository",
     "title": "Data transformation with dplyr",
     "section": "Step 1: Clone your module 3 assignments repository",
-    "text": "Step 1: Clone your module 3 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs25 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd and follow the instructions to work through the tasks.",
+    "text": "Step 1: Clone your module 3 assignments repository\n\nOpen github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-03-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs25 workspace on https://posit.cloud/spaces/611943/content/all?sort=name_asc\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-03a-penguins-practice.qmd & md-03b-sanitation-visualise.qmd and follow the instructions to work through the tasks.",
     "crumbs": [
       "Module 03",
       "am-01: Data transformation"
@@ -2345,7 +2356,7 @@
     "href": "assignments/md-03/am-03-3-spreadsheet.html#step-2-create-a-new-repository-on-github-clone-to-posit-cloud",
     "title": "Create a spreadsheet",
     "section": "Step 2: Create a new repository on GitHub & clone to Posit Cloud",
-    "text": "Step 2: Create a new repository on GitHub & clone to Posit Cloud\n\nOpen the GitHub Organisation for the course https://github.com/rbtl-fs24\nTo right of the field “Find a repository”, click on the green “New” button.\n\n\n\n\n\n\n\n\n\n\n\nIn the “Repository name” field write samples-USERNAME. Replace USERNAME with your GitHub username. Avoid using spaces.\n\n\n\n\n\n\n\n\n\n\n\nScroll down on the same page, and click “Create repository”.\n\n\n\n\n\n\n\n\n\n\n\nIn the “Quick setup” field, click on the clipboard next to the HTTPs URL\n\n\n\n\n\n\n\n\n\n\n\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.",
+    "text": "Step 2: Create a new repository on GitHub & clone to Posit Cloud\n\nOpen the GitHub Organisation for the course https://github.com/rbtl-fs25\nTo right of the field “Find a repository”, click on the green “New” button.\n\n\n\n\n\n\n\n\n\n\n\nIn the “Repository name” field write samples-USERNAME. Replace USERNAME with your GitHub username. Avoid using spaces.\n\n\n\n\n\n\n\n\n\n\n\nScroll down on the same page, and click “Create repository”.\n\n\n\n\n\n\n\n\n\n\n\nIn the “Quick setup” field, click on the clipboard next to the HTTPs URL\n\n\n\n\n\n\n\n\n\n\n\nOpen the rbtl-fs25 workspace on https://posit.cloud/spaces/611943/content/all?sort=name_asc\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.",
     "crumbs": [
       "Module 03",
       "am-03: Spreadsheet"
@@ -2367,7 +2378,7 @@
     "href": "assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import",
     "title": "Create a spreadsheet",
     "section": "Step 4: Google authentication and data import",
-    "text": "Step 4: Google authentication and data import\n\nAdd a code-chunk to your Quarto document.\nAdd the following code to your code-chunk.\n\n\nlibrary(googlesheets4)\nread_sheet(\"https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqcwRFmidttsGI3PYI/edit#gid=0\")\n\n\nRun the code inside the code-chunk and look at the prompt in your Console (see note below for instructions).\n\n\n\n\n\n\n\nAccess for googlesheets4 package\n\n\n\nIn your Console, you will see the following prompt:\nIs it OK to cache OAuth access credentials in the folder\n~/.cache/gargle between R sessions?\n1: Yes\n2: No\nWrite: 1 and press Enter. This will cache your access credentials for the googlesheets4 package and a new tab in your browser will open, where you will be asked to log in to your Google account and grant access to the googlesheets4 package. At the end of the process copy the authorization code to clipboard. Open your Posit Cloud tab again and look at the Console in RStudio.\nYou will see the following prompt:\nEnter authorization code: \nPaste the authorization code from your clipboard and press Enter. This will complete the authentication process.",
+    "text": "Step 4: Google authentication and data import\n\nAdd a code-chunk to your Quarto document.\nAdd the following code to your code-chunk.\n\n\nlibrary(googlesheets4)\nread_sheet(\"https://docs.google.com/spreadsheets/d/1hcK101Xv89X5WhsN4P713vPmVV8OUAppr5gZEPx-Y98/edit?gid=0#gid=0\")\n\n\nRun the code inside the code-chunk and look at the prompt in your Console (see note below for instructions).\n\n\n\n\n\n\n\nAccess for googlesheets4 package\n\n\n\nIn your Console, you will see the following prompt:\nIs it OK to cache OAuth access credentials in the folder\n~/.cache/gargle between R sessions?\n1: Yes\n2: No\nWrite: 1 and press Enter. This will cache your access credentials for the googlesheets4 package and a new tab in your browser will open, where you will be asked to log in to your Google account and grant access to the googlesheets4 package. At the end of the process copy the authorization code to clipboard. Open your Posit Cloud tab again and look at the Console in RStudio.\nYou will see the following prompt:\nEnter authorization code: \nPaste the authorization code from your clipboard and press Enter. This will complete the authentication process.",
     "crumbs": [
       "Module 03",
       "am-03: Spreadsheet"
@@ -4783,16 +4794,5 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
-  },
-  {
-    "objectID": "assignments/md-02/am-02-1-github.html#step-0-enable-private-repository-access",
-    "href": "assignments/md-02/am-02-1-github.html#step-0-enable-private-repository-access",
-    "title": "Interaction with GitHub",
-    "section": "",
-    "text": "Open the rbtl-fs25 workspace on posit.cloud/spaces/611943/content/\nClick on your username in the top-right corner of the window. A small window opens.\n\n\n\nClick on “Authentication” in the small window. A new window opens.\n\n\n\nCheck the box under Login Options GitHub that says “Private repo access also enabled”.",
-    "crumbs": [
-      "Module 02",
-      "am-01: Git configuration"
-    ]
   }
 ]

@@ -19,7 +19,7 @@ You are collecting the content of 20 bins from two public spaces in Zurich (Bäc
 
 ## Step 2: Create a new repository on GitHub & clone to Posit Cloud
 
-1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs24>
+1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs25>
 2. To right of the field ["Find a repository"]{.highlight-yellow}, click on the green ["New"]{.highlight-yellow} button.
 
 ```{r}
@@ -44,7 +44,7 @@ knitr::include_graphics("images/03-create-repository.png")
 knitr::include_graphics("images/04-copy-to-clipboard.png")
 ```
 
-6. Open the rbtl-fs24 workspace on [posit.cloud](https://posit.cloud/spaces/484002/content/all?sort=name_asc)
+6. Open the rbtl-fs25 workspace on [https://posit.cloud/spaces/611943/content/all?sort=name_asc](https://posit.cloud/spaces/611943/content/all?sort=name_asc)
 7. Click New Project > New Project from Git Repository
 8. Paste the HTTPS URL from GitHub into the ["URL of your Git Repository"]{.highlight-yellow} field.
 9. Wait until the project is deployed.
@@ -67,7 +67,7 @@ In your samples-USERNAME project in RStudio on Posit Cloud, go to the menu bar a
 #| echo: true
 #| eval: false
 library(googlesheets4)
-read_sheet("https://docs.google.com/spreadsheets/d/1jB3aNf_UCQe13YqxHWfFnEYQFTqcwRFmidttsGI3PYI/edit#gid=0")
+read_sheet("https://docs.google.com/spreadsheets/d/1hcK101Xv89X5WhsN4P713vPmVV8OUAppr5gZEPx-Y98/edit?gid=0#gid=0")
 ```
 
 3. Run the code inside the code-chunk and look at the prompt in your Console (see note below for instructions).
