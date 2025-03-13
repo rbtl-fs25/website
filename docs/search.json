@@ -813,18 +813,18 @@
     "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
   },
   {
-    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
-    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Task 5 & 6: Make a plot & inspect it",
-    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
-  },
-  {
     "objectID": "slides/lec-04-spreadsheets.html#sanitation-ladder",
     "href": "slides/lec-04-spreadsheets.html#sanitation-ladder",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Sanitation ladder?",
     "text": "Sanitation ladder?\n\n\n\n\n\n\n\n\nvarname_short\nvarname_long\nsimplified\n\n\n\n\nsan_sm\nsafely managed sanitation services\na decent toilet that's not shared, and where pee & poo safely moved & treated\n\n\nsan_bas\nbasic sanitation services (improved sanitation facilities which are not shared)\na decent toilet that's not shared\n\n\nsan_lim\nlimited sanitation services (improved sanitation facilities which are shared)\na decent toilet that's shared\n\n\nsan_unimp\nunimproved sanitation facilities\nan inadequate toilet\n\n\nsan_od\nno sanitation facilities (open defecation)\nno toilet"
+  },
+  {
+    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
+    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-2",
+    "title": "Data import & Data organization in spreadsheets",
+    "section": "Task 5 & 6: Make a plot & inspect it",
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-3",
@@ -836,13 +836,6 @@
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-4",
     "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-4",
-    "title": "Data import & Data organization in spreadsheets",
-    "section": "Task 5 & 6: Make a plot & inspect it",
-    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3? because the total adds up to greater 100%, a fraction of people with basic services have safely managed services"
-  },
-  {
-    "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-5",
-    "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-5",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Task 5 & 6: Make a plot & inspect it",
     "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3? because the total adds up to greater 100%, a fraction of people with basic services have safely managed services"
@@ -2235,7 +2228,7 @@
     "href": "assignments/md-04/am-04-1-reading.html#task-1-read-and-prepare-examples",
     "title": "Module 4 - Assignment 1",
     "section": "Task 1: Read and prepare examples",
-    "text": "Task 1: Read and prepare examples\nFor this assignment, we ask you to:\n\nRead Broman and Woo (2018): “Data organization in spreadsheets”.\nChose two of the recommendations and come up with real-world examples or scenarios where the recommendations could be applied in your work.\nBe prepared to share these examples and explain how the recommendations would improve your workflows. This will be in a class setting as part of small discussion group (max 3 people).",
+    "text": "Task 1: Read and prepare examples\nFor this assignment, we ask you to:\n\nRead Broman and Woo (2018): “Data organization in spreadsheets”.",
     "crumbs": [
       "Module 04",
       "am-01: Reading"
@@ -2246,7 +2239,7 @@
     "href": "assignments/md-04/am-04-1-reading.html#task-2-apply-the-recommendations-to-your-samples-data-from-module-3",
     "title": "Module 4 - Assignment 1",
     "section": "Task 2: Apply the recommendations to your samples data from Module 3",
-    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this firss: https://rbtl-fs25.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the rbtl-fs25 workspace on posit.cloud\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nAdd library(tidyverse) to the top of the file.\nAdd library(googlesheets4) to the top of the file.\nUse the read_sheet() function to read in your Google Sheets spreadsheet and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data. Note down recommendations that you struggled to achieve.\n\n\n\n\n\n\n\nWriting code in .R scripts\n\n\n\nAn .R script is a file containing R code that can be executed in the R environment, primarily used for defining functions, data manipulation, and running analyses. A .qmd file, associated with Quarto, is a more advanced document format that integrates R code with narrative text, allowing for the creation of dynamic, formatted reports or presentations that can include both the code and its output.\nImagine it as one single code-chunk without narrative text. Comments can be added using the # symbol.\n\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64",
+    "text": "Task 2: Apply the recommendations to your samples data from Module 3\n\n\n\n\n\n\nHave you completed the assignments for module 3?\n\n\n\nA pre-requisite for this homework is that you worked through the “Spreadsheet” assignment of module 3. If you have not done so, please do this firss: https://rbtl-fs25.github.io/website/assignments/md-03/am-03-2-spreadsheet.html\n\n\n\nOpen the rbtl-fs25 workspace on https://posit.cloud/spaces/611943/content/all?sort=name_asc\nRe-open your samples-USERNAME repository.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nAdd library(tidyverse) to the top of the file.\nAdd library(googlesheets4) to the top of the file.\nUse the read_sheet() function to read in your Google Sheets spreadsheet and store it in an object called samples.\nUse the glimpse() function to inspect the data.\nTry to use R functions to apply the recommendations from the reading to your data. Note down recommendations that you struggled to achieve.\n\n\n\n\n\n\n\nWriting code in .R scripts\n\n\n\nAn .R script is a file containing R code that can be executed in the R environment, primarily used for defining functions, data manipulation, and running analyses. A .qmd file, associated with Quarto, is a more advanced document format that integrates R code with narrative text, allowing for the creation of dynamic, formatted reports or presentations that can include both the code and its output.\nImagine it as one single code-chunk without narrative text. Comments can be added using the # symbol.\n\n\n\nExample\nThe following is an example of a dataset that follows the recommendations from the reading.\n\n\n\n\n\nid\ndate_sample\nsystem\nlocation\nusers\nts\n\n\n\n\n1\n2023-11-01\npit latrine\nhousehold\n5\n136.24\n\n\n2\n2023-11-01\npit latrine\nhousehold\n7\n102.45\n\n\n3\n2023-11-01\npit latrine\nhousehold\nNA\n57.02\n\n\n4\n2023-11-01\npit latrine\nhousehold\n6\n27.03\n\n\n5\n2023-11-01\npit latrine\nhousehold\n12\n97.27\n\n\n6\n2023-11-02\nseptic tank\nhousehold\n7\n78.21\n\n\n7\n2023-11-02\nseptic tank\nhousehold\n14\n15.24\n\n\n8\n2023-11-02\nseptic tank\nhousehold\n4\n29.39\n\n\n9\n2023-11-02\nseptic tank\nhousehold\n10\n64.22\n\n\n10\n2023-11-02\nseptic tank\nhousehold\n12\n8.01\n\n\n11\n2023-11-03\npit latrine\npublic toilet\n50\n11.24\n\n\n12\n2023-11-03\npit latrine\npublic toilet\n32\n84.05\n\n\n13\n2023-11-03\npit latrine\npublic toilet\n41\n55.92\n\n\n14\n2023-11-03\npit latrine\npublic toilet\n160\n15.32\n\n\n15\n2023-11-03\npit latrine\npublic toilet\n20\n22.65\n\n\n16\n2023-11-04\nseptic tank\npublic toilet\n26\n8.72\n\n\n17\n2023-11-04\nseptic tank\npublic toilet\n91\n43.92\n\n\n18\n2023-11-04\nseptic tank\npublic toilet\n68\n10.37\n\n\n19\n2023-11-04\nseptic tank\npublic toilet\n112\n23.21\n\n\n20\n2023-11-04\nseptic tank\npublic toilet\n59\n15.64",
     "crumbs": [
       "Module 04",
       "am-01: Reading"
