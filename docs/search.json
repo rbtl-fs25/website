@@ -768,7 +768,7 @@
     "href": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Task 3: Data for a country of your choice",
-    "text": "Task 3: Data for a country of your choice\n\nfor the country you live or work in\nfor the year 2000 and 2020\nfor all variables that are not “safely managed sanitation services”"
+    "text": "Task 3: Data for a country of your choice\n\nfor a country of your choice\nfor the year 2000 and 2020\nfor all variables that are not “safely managed sanitation services”"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-3-data-for-a-country-of-your-choice-1",
@@ -831,7 +831,7 @@
     "href": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-3",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Task 5 & 6: Make a plot & inspect it",
-    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3?"
+    "text": "Task 5 & 6: Make a plot & inspect it\n\n\nLook at the plot that you created. What do you notice about the order of the bars / order of the legend? alphabetical order\nWhat would you want to change? put in order of the “sanitation ladder”\nWhy did we remove “safely managed sanitation services” from the data set in Task 3? because the total adds up to greater 100%, a fraction of people with basic services have safely managed services"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#task-5-6-make-a-plot-inspect-it-4",
@@ -866,7 +866,7 @@
     "href": "slides/lec-04-spreadsheets.html#take-a-break",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Take a break\nPlease get up and move!\n\n\n\n\n−+\n15:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---factors",
@@ -929,7 +929,7 @@
     "href": "slides/lec-04-spreadsheets.html#take-a-break-1",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Take a break\nPlease get up and move!\n\n\n\n\n−+\n15:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "slides/lec-04-spreadsheets.html#your-turn-md-04a-exercises---import",
@@ -992,7 +992,7 @@
     "href": "slides/lec-04-spreadsheets.html#thanks",
     "title": "Data import & Data organization in spreadsheets",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rbtl-fs25.github.io/website/"
   },
   {
     "objectID": "slides/lec-09-research-design.html#learning-objectives-for-next-week-week-9",
