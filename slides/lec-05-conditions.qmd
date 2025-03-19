@@ -64,13 +64,11 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.cs
 ## Part 1: Reading
 
 1.  Read @broman2018data: ["Data organization in spreadsheets"](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989).
-2.  Chose two of the recommendations and come up with [real-world examples]{.highlight-yellow} or scenarios where the recommendations could be applied in your work.
-3.  Be prepared to share these examples and [explain how the recommendations would improve your workflows]{.highlight-yellow}. This will be in a class setting as part of small discussion group (max 3 people).
 
 ## Your turn: Discuss the reading
 
 ::: task
-In discussion groups of 3, share your examples and discuss how the recommendations would improve your workflows.
+In discussion groups of 2, share with your fellow learners the main takeaways from the reading. Discuss how you can apply the recommendations to your own work.
 :::
 
 ```{r}
@@ -83,7 +81,7 @@ countdown(10)
 -   avoid special characters
 -   use consistent naming conventions (e.g. snake_case)
 
-. . .
+. . . 
 
 ::: columns
 ::: {.column width="20%"}
