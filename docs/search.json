@@ -1947,7 +1947,7 @@
     "href": "assignments/md-05/am-05-1-survey-data.html#step-1-collect-data-for-your-survey",
     "title": "Data for your capstone project",
     "section": "Step 1: Collect data for your survey",
-    "text": "Step 1: Collect data for your survey\n\nThe following spreadsheet contains a list of assigned GitHub usernames to five people that were randomly assigned to answer your survey: \nOpen an issue on your GitHub repository and ask these five people to answer your survey by tagging their username with the @ symbol in the issue description.\nYou yourself will be tagged in five GitHub issues of other people. After completing the survey, provide a comment on the issue with two bullet points with suggestions for improvements of the survey you have completed. Tag the course instructor @larnsce in your comment.",
+    "text": "Step 1: Collect data for your survey\n\nThe following spreadsheet contains a list of assigned GitHub usernames to five people that were randomly assigned to answer your survey: https://docs.google.com/spreadsheets/d/1IpZ04ZLVe95IvJnw67Asiv5V4v6PQW5ziLkct6tAGl0/edit?gid=633909033#gid=633909033\nOpen an issue on your survey-USERNAME GitHub repository and ask these five people to answer your survey by tagging their username with the @ symbol in the issue description.\nYou yourself will be tagged in five GitHub issues of other people. After completing the survey, provide a comment on the issue with two bullet points with suggestions for improvements of the survey you have completed. Tag the course instructor @larnsce in your comment.",
     "crumbs": [
       "Module 05",
       "am-01: Survey data"

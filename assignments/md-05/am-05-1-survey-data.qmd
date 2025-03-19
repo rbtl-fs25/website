@@ -1,5 +1,5 @@
 ---
-title: "Data for your capstone project"
+title: "Data for your survey"
 execute:
   echo: true
   warning: false
@@ -9,8 +9,10 @@ In module 4, you designed a waste management survey. Part of this homework is to
 
 ## Step 1: Collect data for your survey
 
-1. The following spreadsheet contains a list of assigned GitHub usernames to five people that were randomly assigned to answer your survey: <LINK TODO>
-2. Open an issue on your GitHub repository and ask these five people to answer your survey by tagging their username with the `@` symbol in the issue description.
+1. The following spreadsheet contains a list of assigned GitHub usernames to five people that were randomly assigned to answer your survey: <https://docs.google.com/spreadsheets/d/1IpZ04ZLVe95IvJnw67Asiv5V4v6PQW5ziLkct6tAGl0/edit?gid=633909033#gid=633909033>
+
+2. Open an issue on your survey-USERNAME GitHub repository and ask these five people to answer your survey by tagging their username with the `@` symbol in the issue description.
+
 3. You yourself will be tagged in five GitHub issues of other people. After completing the survey, provide a comment on the issue with two bullet points with suggestions for improvements of the survey you have completed. Tag the course instructor `@larnsce` in your comment.
 
 ## Step 2: Create Google Sheet
@@ -33,15 +35,21 @@ knitr::include_graphics("images/01-create-sheet.png")
 ## Step 3: Import your unprocessed raw data and tidy it up 
 
 1. Clone the survey-USERNAME repository you created in module 4 to Posit Cloud.
+
 2. Open your survey-USERNAME repository on Posit Cloud.
+
 3. Create a new `.R` file and save it as `data_cleaning.R` in the folder.
+
 4. Use the skills you have learned in assignment 3 of module 3 to import your data using the `googlsheets4` R package: <https://rbtl-fs25.github.io/website/assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import>
+
 5. Write R code to prepare a processed analysis-ready data set (e.g. rename columns, fix dates, coerce data types, etc.) and save it as a `.csv` and `.rds` file in a newly created `data/processed` folder in your repository.
 
 ## Step 4: Create a new Quarto document
 
 1. Open your survey-USERNAME repository on Posit Cloud.
-3. Navigate to the Files tab in the bottom right window of RStudio, and create a new folder called `docs`.
+
+2. Navigate to the Files tab in the bottom right window of RStudio, and create a new folder called `docs`.
+
 4. Create a new Quarto document and save it as `index.qmd` in the `docs` folder.
 
 ## Step 5: Import .rds file
