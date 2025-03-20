@@ -1934,7 +1934,7 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html",
     "href": "assignments/md-05/am-05-1-survey-data.html",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "",
     "text": "In module 4, you designed a waste management survey. Part of this homework is to collect data for your survey from at least 5 people. You will then import the data and prepare one data visualization and one table to explore it and document your work.",
     "crumbs": [
@@ -1945,9 +1945,9 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html#step-1-collect-data-for-your-survey",
     "href": "assignments/md-05/am-05-1-survey-data.html#step-1-collect-data-for-your-survey",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "Step 1: Collect data for your survey",
-    "text": "Step 1: Collect data for your survey\n\nThe following spreadsheet contains a list of assigned GitHub usernames to five people that were randomly assigned to answer your survey: \nOpen an issue on your survey-USERNAME GitHub repository and ask these five people to answer your survey by tagging their username with the @ symbol in the issue description.\nYou yourself will be tagged in five GitHub issues of other people. After completing the survey, provide a comment on the issue with two bullet points with suggestions for improvements of the survey you have completed. Tag the course instructor @larnsce in your comment.",
+    "text": "Step 1: Collect data for your survey\n\nThe following spreadsheet contains a list of assigned GitHub usernames to five people that were randomly assigned to answer your survey: https://docs.google.com/spreadsheets/d/1IpZ04ZLVe95IvJnw67Asiv5V4v6PQW5ziLkct6tAGl0/edit?gid=633909033#gid=633909033\nOpen an issue on your survey-USERNAME GitHub repository and ask these five people to answer your survey by tagging their username with the @ symbol in the issue description.\nYou yourself will be tagged in five GitHub issues of other people. After completing the survey, provide a comment on the issue with two bullet points with suggestions for improvements of the survey you have completed. Tag the course instructor @larnsce in your comment.",
     "crumbs": [
       "Module 05",
       "am-01: Survey data"
@@ -1956,7 +1956,7 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html#step-2-create-google-sheet",
     "href": "assignments/md-05/am-05-1-survey-data.html#step-2-create-google-sheet",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "Step 2: Create Google Sheet",
     "text": "Step 2: Create Google Sheet\nOnce you received one response to your survey, you need to create a Google Sheet from the responses. See the following screenshot for how to do that.\nThe spreadsheet will open as a new tab in your browser and you can then copy the URL from the address bar for Step 3.\n\n\n\n\n\n\nWarning: Do not edit the unprocessed raw data manually!\n\n\n\nThe goal is to keep the raw data untouched and use R to prepare the processed, analysis-ready data.",
     "crumbs": [
@@ -1967,7 +1967,7 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html#step-3-import-your-unprocessed-raw-data-and-tidy-it-up",
     "href": "assignments/md-05/am-05-1-survey-data.html#step-3-import-your-unprocessed-raw-data-and-tidy-it-up",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "Step 3: Import your unprocessed raw data and tidy it up",
     "text": "Step 3: Import your unprocessed raw data and tidy it up\n\nClone the survey-USERNAME repository you created in module 4 to Posit Cloud.\nOpen your survey-USERNAME repository on Posit Cloud.\nCreate a new .R file and save it as data_cleaning.R in the folder.\nUse the skills you have learned in assignment 3 of module 3 to import your data using the googlsheets4 R package: https://rbtl-fs25.github.io/website/assignments/md-03/am-03-3-spreadsheet.html#step-4-google-authentication-and-data-import\nWrite R code to prepare a processed analysis-ready data set (e.g. rename columns, fix dates, coerce data types, etc.) and save it as a .csv and .rds file in a newly created data/processed folder in your repository.",
     "crumbs": [
@@ -1978,7 +1978,7 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html#step-4-create-a-new-quarto-document",
     "href": "assignments/md-05/am-05-1-survey-data.html#step-4-create-a-new-quarto-document",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "Step 4: Create a new Quarto document",
     "text": "Step 4: Create a new Quarto document\n\nOpen your survey-USERNAME repository on Posit Cloud.\nNavigate to the Files tab in the bottom right window of RStudio, and create a new folder called docs.\nCreate a new Quarto document and save it as index.qmd in the docs folder.",
     "crumbs": [
@@ -1989,7 +1989,7 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html#step-5-import-.rds-file",
     "href": "assignments/md-05/am-05-1-survey-data.html#step-5-import-.rds-file",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "Step 5: Import .rds file",
     "text": "Step 5: Import .rds file\n\nOpen the index.qmd file from Step 3 and import your data in .rds format by using the suggested here::here() function below:\n\n\nlibrary(readr)\n\nsurvey &lt;- read_rds(here::here(\"data/processed/your-file-name.rds\"))\n\n\n\n\n\n\n\nFile paths & project-oriented workflows. The very short version: use here::here()!\n\n\n\n\n\nThe short version\nWhen you use RStudio projects (we do & I highly recomment it), the working directory will be set to the root of the project folder.\nWhen you are working in a Quarto document (.qmd), the beginning of your file path will be the location of your Quarto document.\nIf your Quarto document sits in the root directory, you can access any file using relative file paths.\nHowever, when your Quarto document is in a subdirectory (e.g., docs), you cannot easily access files in the root directory using relative file paths.\nThat is why it is best practice to use the here::here() function to create file paths in Quarto documents. The here::here() function is a best practice for creating file paths in R scripts and Quarto documents. It is beneficial when working with RStudio Projects because it allows you to write file paths relative to your RStudio Project’s root directory.\nThe details\nThat’s the short version, the extended version needs a more detailed explanation of how file paths work in .R scripts, Quarto documents and RStudio Projects (.Rproj). If you are interested in learning more, then refer to the following resources:\n\nBook: What They Forgot to Teach You About R - Chapter 3 - Project-oriented workflows\nBook: What They Forgot to Teach You About R - Chapter 4 - Practice safe paths\nBlog post - Jenny Richmond",
     "crumbs": [
@@ -2000,7 +2000,7 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html#step-6-create-a-data-visualization-and-a-table-to-explore-your-data",
     "href": "assignments/md-05/am-05-1-survey-data.html#step-6-create-a-data-visualization-and-a-table-to-explore-your-data",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "Step 6: Create a data visualization and a table to explore your data",
     "text": "Step 6: Create a data visualization and a table to explore your data\n\nUse the ggplot2 R package to create a data visualization from your survey data.\nUse the kable function from the knitr R package to create a table from your survey data.\nUse the @ symbol in your text to cross-reference your table in your Quarto document (tipp: review the class exercises from module 5).\n(stretch goal): Use the @ symbol in your text to cross-reference your data visualization in your Quarto document.",
     "crumbs": [
@@ -2011,7 +2011,7 @@
   {
     "objectID": "assignments/md-05/am-05-1-survey-data.html#step-7-submit-homework-assignment",
     "href": "assignments/md-05/am-05-1-survey-data.html#step-7-submit-homework-assignment",
-    "title": "Data for your capstone project",
+    "title": "Data for your survey",
     "section": "Step 7: Submit homework assignment",
     "text": "Step 7: Submit homework assignment\n\nAdd all files to the commit, commit the changes with a meaningful commit message, and push the changes to GitHub.\nOpen an issue on GitHub on your survey-USERNAME repo and tag the course instructor @larnsce.",
     "crumbs": [
