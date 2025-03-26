@@ -2515,7 +2515,7 @@
     "href": "assignments/md-06/am-06-2-pivoting.html",
     "title": "Data pivoting",
     "section": "",
-    "text": "Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-06-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-06a-pivoting.qmd and follow the instructions to work through the tasks.",
+    "text": "Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-06-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs25 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-06a-pivoting.qmd and follow the instructions to work through the tasks.",
     "crumbs": [
       "Module 06",
       "am-02: Pivot data"
@@ -2526,7 +2526,7 @@
     "href": "assignments/md-06/am-06-2-pivoting.html#step-1-clone-your-module-6-assignments-repository",
     "title": "Data pivoting",
     "section": "",
-    "text": "Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-06-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs24 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-06a-pivoting.qmd and follow the instructions to work through the tasks.",
+    "text": "Open github.com in your browser and navigate to the GitHub organisation for the course (or use your bookmark).\nFind the repository md-06-assignments-USERNAME that ends with your GitHub username, and open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard.\nOpen the rbtl-fs25 workspace on posit.cloud\nClick New Project &gt; New Project from Git Repository\nPaste the HTTPS URL from GitHub into the “URL of your Git Repository” field.\nWait until the project is deployed.\nOpen md-06a-pivoting.qmd and follow the instructions to work through the tasks.",
     "crumbs": [
       "Module 06",
       "am-02: Pivot data"
@@ -2559,7 +2559,7 @@
     "href": "assignments/md-06/am-06-1-reading.html",
     "title": "Module 6 - Assignment 1",
     "section": "",
-    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management in general. As part of your final capstone project, you will practice active research data management by documenting your data with a data dictionary and completing a README template used to describe your data.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\nChose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:\nCome up with a real-world example or scenario where the recommended practice could be applied in your research or academic work.\nBe prepared to explain how the recommended practices would improve your workflows. This will be in the class setting as part of small discussion group (max 3 people).\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510.",
+    "text": "This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management in general. As part of your final capstone project, you will practice active research data management by documenting your data with a data dictionary and completing a README template used to describe your data.\nThe following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.\nFor this assignment, we ask you to:\n\nRead Wilson et al. (2017): “Good enough practices in scientific computing”.\n\n\n\n\n\nReferences\n\nWilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510.",
     "crumbs": [
       "Module 06",
       "am-01: Good enough practices"
@@ -4736,7 +4736,7 @@
     "href": "modules/md-06.html#assignments",
     "title": "Module 6",
     "section": " Assignments",
-    "text": "Assignments\nPlease complete the following assignment by Wednesday, 02nd April 2024.\n\nAssignment 1: Good enough practices in scientific computing\nAssignment 2: Pivot your data\nAssignment 3: Setup your capstone project repository",
+    "text": "Assignments\nPlease complete the following assignment by Wednesday, 2nd April 2024.\n\nAssignment 1: Good enough practices in scientific computing\nAssignment 2: Pivot your data\nAssignment 3: Setup your capstone project repository",
     "crumbs": [
       "Module 06"
     ]

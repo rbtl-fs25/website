@@ -4,7 +4,7 @@ subtitle: "Good enough practices in scientific computing"
 bibliography: "../../rbtl-fs24.bib"
 ---
 
-This course introduces participants to tools and workflows for collaborative  writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management in general. As part of your final capstone project, you will practice active research data management by documenting your data with a data dictionary and completing a README template used to describe your data.
+This course introduces participants to tools and workflows for collaborative writing within the context of reproducible documents. You find yourself within an environment for (scientific) computing. R is a programming language for scientific computing and the additionally taught tools (e.g. Quarto) and workflows (version control) to combine R in a writing and publishing workflow. We also touch on some data management topics (Data Organisation in Spreadsheet) without getting into much detail about file management in general. As part of your final capstone project, you will practice active research data management by documenting your data with a data dictionary and completing a README template used to describe your data.
 
 The following paper provides recommendations for some of the practices we use in class and puts them into the context of organising your data analysis work. That can be research and academic work, but is just as relevant if you are a consultant, working for an NGO, government, and others.
 
@@ -12,9 +12,8 @@ For this assignment, we ask you to:
 
 1. Read @wilson2017good: "Good enough practices in scientific computing".
 
-2. Chose one of the recommended practices (Data Management, Software, Collaboration, Project organization, Keeping track of changes, Manuscripts), then:
 
-3.  Come up with a [real-world example]{.highlight-yellow} or scenario where the recommended practice could be applied in your research or academic work.
 
-4.  Be prepared to [explain how the recommended practices would improve your workflows]{.highlight-yellow}. This will be [in the class setting]{.highlight-yellow} as part of small discussion group (max 3 people).
+
+
 
