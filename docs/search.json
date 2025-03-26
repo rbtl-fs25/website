@@ -4214,7 +4214,7 @@
     "href": "slides/lec-06-vectors.html#course-calendar",
     "title": "Data types & Vectors & Pivoting",
     "section": "Course calendar",
-    "text": "Course calendar\n\n04th April 2024: no class, Easter Break\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n20 February 2025\nWelcome & get ready for the course\n\n\n2\n27 February 2025\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n06 March 2025\nData transformation with dplyr\n\n\n4\n13 March 2025\nData import & Data organization in spreadsheets\n\n\n5\n20 March 2025\nConditions & Dates & Tables\n\n\n6\n27 March 2025\nData types & Vectors & Pivoting\n\n\n7\n03 April 2025\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n10 April 2025\nWaste Research\n\n\n9\n17 April 2025\nResearch Design\n\n\nNA\n24 April 2025\nEaster Break\n\n\nNA\n01 May 2025\nLabour Day Break\n\n\n10\n08 May 2025\nQuestionnaires\n\n\n11\n15 May 2025\nPre-test and logistics\n\n\n12\n22 May 2025\nData collection\n\n\nNA\n29 May 2025\nData analysis & report writing\n\n\nNA\n05 June 2025\nProject submission due date\n\n\nNA\n11 June 2025\nExam (13:00 to 15:00)"
+    "text": "Course calendar\n\n04th April 2024: no class, Easter Break\n\n\n\n\n\n\nmodule\ndate\ntopic\n\n\n\n\n1\n20 February 2025\nWelcome & get ready for the course\n\n\n2\n27 February 2025\nData science lifecycle & Exploratory data analysis using visualization\n\n\n3\n06 March 2025\nData transformation with dplyr\n\n\n4\n13 March 2025\nData import & Data organization in spreadsheets\n\n\n5\n20 March 2025\nConditions & Dates & Tables\n\n\n6\n27 March 2025\nData types & Vectors & Pivoting\n\n\n7\n03 April 2025\nJoining tables & Creating and publishing scholarly articles with Quarto and GitHub pages\n\n\n8\n10 April 2025\nWaste Research (participation mandatory)\n\n\n9\n17 April 2025\nResearch Design (participation mandatory)\n\n\nNA\n24 April 2025\nEaster Break\n\n\nNA\n01 May 2025\nLabour Day Break\n\n\n10\n08 May 2025\nQuestionnaires (participation mandatory)\n\n\n11\n15 May 2025\nPre-test and logistics\n\n\n12\n22 May 2025\nData collection\n\n\nNA\n29 May 2025\nData analysis & report writing\n\n\nNA\n05 June 2025\nProject submission due date\n\n\nNA\n11 June 2025\nExam (13:00 to 15:00)"
   },
   {
     "objectID": "slides/lec-06-vectors.html#learning-objectives-for-this-week",
@@ -4249,7 +4249,7 @@
     "href": "slides/lec-06-vectors.html#your-turn-md-06-exercises---cross-references",
     "title": "Data types & Vectors & Pivoting",
     "section": "Your turn: md-06-exercises - cross-references",
-    "text": "Your turn: md-06-exercises - cross-references\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06a-cross-references.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n10:00"
+    "text": "Your turn: md-06-exercises - cross-references\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs25 workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06a-cross-references.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/lec-06-vectors.html#why-care-about-data-types",
@@ -4298,21 +4298,21 @@
     "href": "slides/lec-06-vectors.html#very-common-data-tidying-step",
     "title": "Data types & Vectors & Pivoting",
     "section": "Very common data tidying step!",
-    "text": "Very common data tidying step!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+    "text": "Very common data tidying step!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"2\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
   },
   {
     "objectID": "slides/lec-06-vectors.html#very-common-data-tidying-step-1",
     "href": "slides/lec-06-vectors.html#very-common-data-tidying-step-1",
     "title": "Data types & Vectors & Pivoting",
     "section": "Very common data tidying step!",
-    "text": "Very common data tidying step!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n5-10\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n20\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5-10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
+    "text": "Very common data tidying step!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n5-10\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n2\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5-10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
   },
   {
     "objectID": "slides/lec-06-vectors.html#sumamrise-argh",
     "href": "slides/lec-06-vectors.html#sumamrise-argh",
     "title": "Data types & Vectors & Pivoting",
     "section": "Sumamrise? Argh!!!!",
-    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "text": "Sumamrise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"2\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "slides/lec-06-vectors.html#always-respect-your-data-types",
@@ -4326,7 +4326,7 @@
     "href": "slides/lec-06-vectors.html#always-respect-your-data-types-1",
     "title": "Data types & Vectors & Pivoting",
     "section": "Always respect your data types!",
-    "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
+    "text": "Always respect your data types!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"2\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             3.90"
   },
   {
     "objectID": "slides/lec-06-vectors.html#my-turn-types-of-vectors-for-loops",
@@ -4347,7 +4347,7 @@
     "href": "slides/lec-06-vectors.html#your-turn-md-06-exercises---types",
     "title": "Data types & Vectors & Pivoting",
     "section": "Your turn: md-06-exercises - types",
-    "text": "Your turn: md-06-exercises - types\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06b-types-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n35:00"
+    "text": "Your turn: md-06-exercises - types\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the rbtl-fs25 workspace for the course.\nIn the File Manager in the bottom right window, locate the md-06b-types-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\n\n\n−+\n35:00"
   },
   {
     "objectID": "slides/lec-06-vectors.html#take-a-break-1",
@@ -4480,14 +4480,14 @@
     "href": "slides/lec-06-vectors.html#homework-due-date",
     "title": "Data types & Vectors & Pivoting",
     "section": "Homework due date",
-    "text": "Homework due date\n\nHomework assignment due: Wednesday, April 9th"
+    "text": "Homework due date\n\nHomework assignment due: Wednesday, April 2nd"
   },
   {
     "objectID": "slides/lec-06-vectors.html#thanks",
     "href": "slides/lec-06-vectors.html#thanks",
     "title": "Data types & Vectors & Pivoting",
     "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Thanks! 🌻\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "slides/lec-06-vectors.html#references",

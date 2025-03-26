@@ -152,17 +152,6 @@ waste_data_tidy |>
   facet_wrap(~waste_category, ncol = 5)
 ```
 
-## Course calendar {.smallest .scrollable}
-
-- 04th April 2024: no class, Easter Break
-
-```{r}
-readr::read_csv("../data/tbl-00-rbtl-fs25-course-schedule-main.csv") |> 
-  dplyr::select(module, date, topic = title) |> 
-  dplyr::mutate(date = format(date, format = "%d %B %Y")) |> 
-  knitr::kable()
-```
-
 ## Learning Objectives (for this week)
 
 ```{r}
@@ -235,7 +224,7 @@ ggplot(penguins, aes(x = species, fill = species)) +
 
 ::: task
 1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+2.  Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3.  In the File Manager in the bottom right window, locate the [`md-06a-cross-references.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4.  Follow instructions in the file
 :::
@@ -315,7 +304,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "2chf") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) 
@@ -330,7 +319,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) |> 
@@ -349,7 +338,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) |> 
@@ -368,7 +357,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) 
@@ -385,7 +374,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) |> 
@@ -424,7 +413,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
-2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+2.  Open the [rbtl-fs25 workspace]{.highlight-yellow} for the course.
 3.  In the File Manager in the bottom right window, locate the [`md-06b-types-your-turn.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
 4.  Follow instructions in the file
 :::
@@ -653,13 +642,15 @@ ggplot(data = waste_data_tidy,
 
 ## Homework due date
 
-- Homework assignment due: [Wednesday, April 9th]{.highlight-yellow}
+- Homework assignment due: [Wednesday, April 2nd]{.highlight-yellow}
 
 # Wrap-up {background-color="#4C326A"}
 
 ## Thanks! `r emo::ji("sunflower")`
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-06-vectors.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-06-vectors.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
