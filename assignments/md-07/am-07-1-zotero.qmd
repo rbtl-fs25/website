@@ -17,7 +17,7 @@ execute:
 ### Join the rbtl-fs25 group library
 
 1. Login into Zotero: <https://www.zotero.org/user/login/>
-2. Open rbtl-fs25 group Library: <https://www.zotero.org/groups/5487140/rbtl-fs25>
+2. Open rbtl-fs25 group Library: <https://www.zotero.org/groups/5933430/rbtl-fs25>
 3. Click on Join button
 4. Wait for group admin to confirm your membership (note: you won't receive an automated confirmation after access is enabled)
 
@@ -95,7 +95,6 @@ knitr::include_graphics("images/screenshot-citation-keys.png")
 ```{r}
 knitr::include_graphics("images/screenshot-pandoc-citation.png")
 ```
-
 
 ### Change the setting for the citekey autopin delay
 
