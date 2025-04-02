@@ -43,7 +43,7 @@ knitr::include_graphics("images/screenshot-zotero-desktop-client-refresh.png")
 ### Setup Add-ons and the citation key format
 
 1. Go to <https://retorque.re/zotero-better-bibtex/installation/>
-2. Click on the latest release so you are redirected to github
+2. If you click on the hyperlink on "latest release", then you will be redirected to this page: <https://github.com/retorquere/zotero-better-bibtex/releases/tag/v7.0.14>
 3. Find the .xpi file and right-click it. Click on **Save Link As...** and choose your location for saving the file.
 
 ```{r}
