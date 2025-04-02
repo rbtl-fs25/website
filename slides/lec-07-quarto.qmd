@@ -488,7 +488,7 @@ countdown(minutes = 10)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# Part 2: Reference Management
+# Part 3: Reference Management {background-color="#4C326A"}
 
 ## Four terms
 
@@ -758,7 +758,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ## Submission
 
-- The submission due date is: [Tuesday, 06th June]{.highlight-yellow}.
+- The submission due date is: [Tuesday, 05th June]{.highlight-yellow}.
 - A complete report receives 30 points.
 - We will use the GitHub issue tracker to communicate and ask questions about the capstone project.
 - A list of required items for submission is covered on the course website: <https://rbtl-fs25.github.io/website/project/>
@@ -801,7 +801,7 @@ countdown(10)
 countdown(5)
 ```
 
-## Module 6 documentation
+## Module 7 documentation
 
 ::: learn-more
 [rbtl-fs25.github.io/website/modules/md-07.html](https://rbtl-fs25.github.io/website/modules/md-07.html)
@@ -821,4 +821,6 @@ Content was re-used from a workshop hosted by [Mine Çetinkaya-Rundel](https://m
 
 ## Thanks! `r emo::ji("sunflower")`
 
-Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-08-quarto.pdf)
+Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides as [PDF on GitHub](https://github.com/rbtl-fs25/website/raw/main/slides/lec-07-quarto.pdf)
