@@ -9,7 +9,7 @@ execute:
 
 *Sometimes we read papers to learn about results: what are the new findings in a discipline. Sometimes, we read papers to learn about methods. In this case, we are interested in learning about different styles of data collection and data collection tools. For example: did the researcher collect information on the same variable multiple times to see how it changes across seasons? Did the researcher collect information from people to see how the outcome of an intervention differs between populations? Before we develop our own data collection tools and spreadsheets, we will see what kinds of data other waste researchers collect, and try to imagine how they structured their data collection and management tools.*
 
-## Learning Objectives
+## Learning Objectives (for Module 9)
 
 ```{r}
 #| label: setup

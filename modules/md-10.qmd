@@ -20,7 +20,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
@@ -32,37 +32,22 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa list >}} Class Overview
 
-1.  During class we will be using the [files in this folder](https://drive.google.com/drive/folders/1BVi27abl-rDbxcK2aJyfz4keflBhW7Fv):  there are [four different]{.highlight-yellow} .csv files for you to work with:
+1.  During class we will be using the [files in this folder](https://drive.google.com/drive/folders/1BVi27abl-rDbxcK2aJyfz4keflBhW7Fv): there are [four different]{.highlight-yellow} .csv files for you to work with:
     a.  `01_binary.csv`
     b.  `02_likert.csv`
     c.  `03_multi-choice.csv`
     d.  `04_text.csv`
-2.  There is also a corresponding [summary]{.highlight-yellow} file (e.g. `01_binary_summary`) with a tab for each group (groups from last week:  wtp, compost, air, coops)
+2.  There is also a corresponding [summary]{.highlight-yellow} file (e.g. `01_binary_summary`) with a tab for each group (groups from last week: wtp, compost, air, coops, mhm)
 3.  Your group will
     a.  Download a data set
     b.  See what kind of data it is, and develop a corresponding research question (add to summary table)
-    c.  Clean the data (use R, Excel, python, etc:  whatever you like) and note your process and any challenges you faced, and how you addressed them (add to summary table)
+    c.  Clean the data (use R) and note your process and any challenges you faced, and how you addressed them (add to summary table)
     d.  Analyse the data in a way that answers your research question (add result to summary table)
 4.  We will discuss the pros and cons of each question type
 5.  You will develop your own [questionnaire]{.highlight-yellow} to answer your research question
 
-## {{< fa calendar-days >}} Class schedule
-
-Here is the schedule for May 2:
-
-|           |         |                    |                   |
-|-----------|---------|--------------------|-------------------|
-| **start** | **end** | **Topic**          | **Activity**      |
-| 12:15     | 12:25   | Intro and Welcome  |                   |
-| 12:25     | 12:45   | Research questions | Group discussions |
-| 12:45     | 13:00   | Debugging          |                   |
-| 13:00     | 13:15   | Break              |                   |
-| 13:15     | 14:00   | 4 question types   | Group work        |
-| 14:00     | 14:15   | Break              |                   |
-| 14:15     | 15:00   | Consolidation      |                   |
-
 ## {{< fa code >}} Assignments
 
-Please complete the following assignment by Wednesday, 15th May 2024. 
+Please complete the following assignment by Wednesday, 14th May 2024. 
 
 -   [Assignment 1](../assignments/md-10/am-10-1-questionnaire.qmd): Develop a questionnaire using Google Forms
