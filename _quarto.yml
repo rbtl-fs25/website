@@ -99,6 +99,8 @@ website:
         contents:
           - href: assignments/md-08/am-08-1-presentation.qmd
             text: "am-01: Assignment"
+          - href: assignments/md-08/am-08-2-submit-rqs.qmd
+            text: "am-02: Submit RQs"
       - text: "Module 09"
         href: modules/md-09.qmd
       - section: "Module 10"
