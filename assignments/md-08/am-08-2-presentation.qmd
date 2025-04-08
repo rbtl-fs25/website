@@ -1,7 +1,0 @@
----
-title: "Assignment"
-execute: 
-  echo: false
----
-
-The assignment for this module will be presented in class by Prof. Elizabeth Tilley.

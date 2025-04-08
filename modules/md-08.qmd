@@ -20,7 +20,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
@@ -48,7 +48,8 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignment by Wednesday, 24th April 2024. 
+Please complete the following assignment by Wednesday, 16th April 2025. 
 
--   [Assignment 1](../assignments/md-08/am-08-2-presentation.qmd): This assignment will be communicated in class
+-   [Assignment 1](../assignments/md-08/am-08-1-presentation.qmd): Waste Research Presentation
+-   [Assignment 2](../assignments/md-08/am-08-2-submit-rqs.qmd): Submit your research questions on GitHub
 

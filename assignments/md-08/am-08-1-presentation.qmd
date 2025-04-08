@@ -7,8 +7,6 @@ execute:
 
 ## Waste Research - Overview
 
-Next week we will host 3 visiting professors ([Prof. Katharina Gapp, HEST](https://hest.ethz.ch/en/studies/health-sciences-and-technology/master-hst/majors/tutors/tutors-a-z/prof--dr--katharina-gapp.html), [Prof. Christoph Studer, ITET](https://iis.ee.ethz.ch/people/person-detail.cstuder.html), [Prof. Verena Zimmerman](https://gess.ethz.ch/en/the-department/people/person-detail.MzA4MDQw.TGlzdC81MTMsNjE4MTIwODY=.html)) and [Dr. Sarah Shephard,](https://ethz.ch/en/the-eth-zurich/organisation/departments/educational-development-and-technology/people/person-detail.shephard.html) who is the Course leader of 'Teaching at ETH', which is a course that I am enrolled in. You can read more [here](https://ethz.ch/en/the-eth-zurich/education/educational-development/continuing-education/teaching-at-ETH2.html). The class will be filmed, but will only be available among the four of us.
-
 *Sometimes we read papers to learn about results: what are the new findings in a discipline. Sometimes, we read papers to learn about methods. In this case, we are interested in learning about different styles of data collection and data collection tools. For example: did the researcher collect information on the same variable multiple times to see how it changes across seasons? Did the researcher collect information from people to see how the outcome of an intervention differs between populations? Before we develop our own data collection tools and spreadsheets, we will see what kinds of data other waste researchers collect, and try to imagine how they structured their data collection and management tools.*
 
 ## Learning Objectives
@@ -23,7 +21,7 @@ library(epoxy)
 #| label: learning-objectives
 #| message: false
 
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.csv")) |> 
   dplyr::filter(module == 9) |>
   dplyr::pull(learning_objectives)
 
@@ -48,14 +46,28 @@ Each group has been assigned a paper to read. The paper allocation list can be f
 
 Followed by 2 minutes for any clarifying questions from the audience. Complete comprehension is not required, but the whole class should be have a general understanding of what the paper was about
 
-2.  Your group will then share the “data table” that you have created. Your data table/spreadsheet will be your attempt to “reverse engineer” the data structure that was used to generate the results of the paper. Ask yourself: “in order to use the data that was collected, what is the best way to structure it before analysis”. Before class you will create a shared google sheet with:
-    -   Tab 1: The codebook that would have been generated for this research (i.e. present the variables and their units, clearly explained)
-    -   Tab 2: A sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design (i.e. was the data collected multiple times over a period of time; was data collected from multiple sources and compared, etc.)
+2.  Your group will then share the questionnaire that you have created. Your data questionnaire will be your attempt to “reverse engineer” the data that was used to generate the results of the paper. Ask yourself: “in order to use the data that was collected, what is the best way to collect it before analysis”. Before class you will create a shared google sheet with:
+    -   Tab 1: The questionnaire that would have been generated for this research (i.e. the questions, the options, unites etc.) 
+    -   Tab 2: The codebook with the variables and their units
+    -   Tab 3: A sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design (i.e. was the data collected multiple times over a period of time; was data collected from multiple sources and compared, etc.)
     -   Tab 3, 4, 5: a copy of the sample spreadsheet/data frame for each of the other groups to work on during the collaborative session (more on that below)
 
 [For example:]{.highlight-yellow} If we have this figure on the age gap between men and women:
 
 ![](agegap.png)
+
+Our questionnaire would look like this:
+
+1. What's your gender? (pick one)
+
+- female
+- male
+- non-binary
+- prefer not to say
+
+2. What's your income? (numeric value, in USD per week)
+
+3. What year is it? (numeric value, YYYY)
 
 Our data table would look like this:
 
@@ -69,36 +81,14 @@ Our data table would look like this:
 
 \*It is not necessary to fill in the values: just construct the dataframe
 
-3.  The class will then have 5 minutes to work on their own copy of the dataframe (on their own tab).Specifically, each group (that did not read the paper) will
+3.  The class will then have 5 minutes to work on their own copy of the dataframe (on their own tab). Specifically, each group (that did not read the paper) will
     -   Add variables that have been omitted
     -   Make changes to the table structure
     -   Revise the coding, codebook, units, etc.
+    
 4.  While the other groups are working on the edits, the presenting group will click through the different tabs and “harvest” the ideas that make sense and revise their own, original table.
+
 5.  The presenting group will then have 5 minutes to summarise to the class what changes they made and why. We will collect all of the feedback on each round of revisions (i.e. all 4 papers) so that at the end of class we can consolidate the ideas and try to explain: what makes a good data structure?
-
-The schedule is presented below.
-
-## Presentation schedule - Module 09 - Waste Research
-
-|           |         |                   |                      |
-|-----------|---------|-------------------|----------------------|
-| **start** | **end** | **Topic**         | **Activity**         |
-| 12:15     | 12:20   | Intro and Welcome |                      |
-| 12:20     | 12:27   | waste pickers     | summary              |
-| 12:27     | 12:33   | waste pickers     | data table revisions |
-| 12:33     | 12:42   | waste pickers     | discussion           |
-| 12:45     | 12:52   | WTP waste         | summary              |
-| 12:52     | 12:57   | WTP waste         | data table revisions |
-| 12:57     | 13:02   | WTP waste         | discussion           |
-| break     |         |                   |                      |
-| 13:15     | 13:27   | Air quality       | summary              |
-| 13:27     | 13:32   | Air quality       | data table revisions |
-| 13:32     | 13:37   | Air quality       | discussion           |
-| 13:40     | 13:47   | compost           | summary              |
-| 13:47     | 13:52   | compost           | data table revisions |
-| 13:52     | 13:57   | compost           | discussion           |
-| break     |         |                   |                      |
-| 14:15     | 15:00   | Consolidation     |                      |
 
 By the end of the first 2 hours, you will have worked on the data tables from four different papers and will have gained a lot of insights into what works and what doesn’t. At the end of the class we aggregate what we learned from these exercises so that we can [transfer]{.highlight-yellow} these insights into our own projects and be able to identify the factors that make a data set good.
 

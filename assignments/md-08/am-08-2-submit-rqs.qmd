@@ -1,0 +1,22 @@
+---
+title: "am-08-3-submit-rqs"
+format: html
+---
+
+## Step 1: Submit your research questions 
+
+1. Open the GitHub Organisation for the course <https://github.com/rbtl-fs25>
+
+2. Open your repository project-USERNAME.
+
+3. Open the issue tracker.
+
+4. Create a new issue with the title: "Defined research questions for capstone project".
+
+5. In the body of the issue, list your research questions.
+
+6. Tag the course instructor `@elizabeth-tilley` and ask for a review of your research questions.
+
+
+
+

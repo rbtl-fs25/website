@@ -43,6 +43,7 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.cs
 ## {{< fa book >}} Readings
 
 1. Read [R for Data Science - Section 28 - Quarto](https://r4ds.hadley.nz/quarto)
+2. Read [Fandino, W. (2019). Formulating a good research question: Pearls and pitfalls. Indian Journal of Anaesthesia, 63(8), 611-616](https://drive.google.com/file/d/1PKZDMm23e5n_22T9zHyRbtcQI2_7_-7G/view)
 
 ## {{< fa code >}} Assignments
 
