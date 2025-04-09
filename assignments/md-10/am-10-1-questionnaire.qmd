@@ -7,7 +7,7 @@ For this assignment, we ask you to:
 
 1.  Develop a questionnaire using [Google Forms]{.highlight-yellow} to address the research question you formulated last week.
 
-2.  Place the link to your questionnaire [here](https://docs.google.com/spreadsheets/d/1LvaClheuJszxkIbLT0L-rRHEmgL_2h2o/edit#gid=133769975) so that everyone can access it on Thursday, May 15.
+2.  Place the link to your questionnaire [here](https://docs.google.com/spreadsheets/d/1kplnNzJcEOTi1NFP_VZHnX6Bl6ABbCXe/edit?gid=133769975#gid=133769975) so that everyone can access it on Thursday, May 15.
 
 In class next week, everyone will:
 

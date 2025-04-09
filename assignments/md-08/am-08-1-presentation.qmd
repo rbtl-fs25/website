@@ -33,9 +33,9 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.cs
 
 ## Homework
 
-The papers we will study are available to download [here](https://drive.google.com/drive/folders/1Ch7FNRys1SzPNxq-QHUqAIiVEl7dF1sC?usp=drive_link) and can also be found in the Readings section of Module 08.
+The papers we will study are available to download [here](https://drive.google.com/drive/folders/1Ngk-g-lgRiLcBGtJoksCFCh31H0k9UdO) and can also be found in the Readings section of Module 08.
 
-Each group has been assigned a paper to read. The paper allocation list can be found here: <https://docs.google.com/spreadsheets/d/1k4qA_FOtZBGn1RL4pzfvTq-hb9-pXnH58oyY0n1nAog/edit#gid=0>
+Each group has been assigned a paper to read. The paper allocation list can be found here: <https://docs.google.com/spreadsheets/d/1k4qA_FOtZBGn1RL4pzfvTq-hb9-pXnH58oyY0n1nAog/edit?gid=0#gid=0>
 
 [Four people]{.highlight-yellow} have been assigned to each paper and each group will be responsible for the following tasks:
 

@@ -32,7 +32,7 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.cs
 
 ## {{< fa list >}} Class Overview
 
-1.  During class we will be using the [files in this folder](https://drive.google.com/drive/folders/1BVi27abl-rDbxcK2aJyfz4keflBhW7Fv): there are [four different]{.highlight-yellow} .csv files for you to work with:
+1.  During class we will be using the [files in this folder (TODO)](): there are [four different]{.highlight-yellow} .csv files for you to work with:
     a.  `01_binary.csv`
     b.  `02_likert.csv`
     c.  `03_multi-choice.csv`
