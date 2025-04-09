@@ -1,0 +1,116 @@
+---
+title: "Fielding a survey - A very short guide"
+subtitle: "{{< var course.long-title >}}"
+author: "Prof. Elizabeth Tilley"
+date: "2025-05-08"
+format: 
+  revealjs: 
+    theme: "../style/slides.scss"
+    transition: fade
+    slide-number: true
+    logo: ../img/OWD-logo-20.png
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+editor: source
+execute:
+  freeze: auto
+params:
+    module: 8
+bibliography: references.bib
+csl: apa.csl
+editor_options: 
+  chunk_output_type: console
+---
+
+## #1: Know What a Survey Can (Not) Do 
+
+### Can: 
+
+* Gather (a lot of) data (e.g., ratings, frequencies, opinions) 
+* Provide standardized data (all respondents answer the same questions, allowing for consistent and comparable data) 
+
+### Can Not: 
+
+* Capture the full complexity of human behavior (we’re irrational every now and then) 
+* Eliminate bias (e.g., social desirability bias, acquiescence bias, recall bias) 
+
+## #2: Single-Subject Rule for Every Question 
+
+A concept borrowed from constitutional law: A survey question may deal with only one issue. 
+
+### Good: 
+
+*"On a scale of 1 to 5, where 1 is 'very dissatisfied' and 5 is 'very satisfied,' how satisfied are you with the speed of our online checkout process?"* 
+
+### Bad: 
+
+*"How satisfied are you with our product's price and customer service, and would you recommend it to a friend?"*
+
+**Pro Tip:** Assign the corresponding research question to each and every question. This helps you to see if the survey question (partially) allows you to answer your research questions. 
+
+## #3: Diminishing Marginal Utility of Questions 
+
+* We all want to answer as many questions as possible (after all, you never know if you might need the information later), but please don’t 
+* Survey fatigue is a big issue 
+* Be honest with yourself: Are you really going to analyze the answers afterwards? 
+* **Rule of thumb:** If you’re not sure if you should include the question, don’t include it. 
+* Also, respondents incur opportunity costs for taking the time to answer your questions. Make sure it’s worth their time.
+
+## #4: Structure Your Survey (Visually) 
+
+* Work with groups, colors, sections, tabs, etc.
+
+![](img/lec-10/kobo-picture.png)
+
+## #5: As Many Checks as Possible 
+
+* The more logical incoherences you can anticipate the better! 
+
+#### Example: 
+
+Survey Question 1: "What is your age?" \[answer\_q1] 
+
+Survey Question 2: "How many years have you been driving?” \[answer\_q2] 
+
+**Logical Check:** The response to \[answer\_q2] should not exceed the response to \[answer\_q1] minus the legal driving age in the respondents area. 
+
+Implementation: If \[answer\_q2] > (\[answer\_q1] - 18) (assuming 18 is the legal driving age), display an error message: *"Please correct your response. The number of years you have been driving cannot exceed your age minus the legal driving age."*
+
+## #6: Open-ended Questions 
+
+* You can’t think of every possible option in close-ended question, so open-ended questions can be a good option 
+* However, more often than not, they tend to clutter your survey and since the data is unstructured, it is a lot harder to analyze 
+* Pro tip: You can include open-ended questions during a pilot (see Tip #8), see if there are answer options haven’t thought about and then include them in an updated close-ended question 
+
+## #7: Think About Data Analysis Already 
+
+* Name variables consistently (e.g., firstword\_secondword or FirstwordSecondword) 
+* Prefixes for groups (e.g., nutrition\_item1, nutrition\_item2, nutrition\_outlook, nutrition\_cycle) 
+* Use meaningful labels (e.g., “morning”, “noon”, “evening” instead of 1,2,3) 
+
+## #8 Soft Launch Your Survey 
+
+* As much as you anticipate, you will only really know if your survey works once it’s out in the real world. 
+* Send it to friends and colleagues to test it. 
+* Ideally, you go through several iterations of soft launches before you field the actual survey. 
+
+## #9: Provide the Full Package
+
+* Don't just publish the final analysis.
+
+**Publish Also…**
+
+* The raw data 
+* The questionnaire 
+* The sampling frame 
+* Additional files like photos or recordings if not 
+* The data processing files 
+* The analysis scripts 
+
+## #Bonus: Cultural Sensitivity 
+
+* Ensure accurate translation by native speakers, not just literal translations. 
+* Avoid questions that may be considered taboo or offensive in certain cultures. 
+* Allow for diverse responses and avoid imposing Western-centric categories.
+* Consider color symbolism, as colors can have different meanings in different cultures. 
+* Choose distribution methods that are accessible and culturally appropriate for the target population.

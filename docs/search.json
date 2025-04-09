@@ -4718,5 +4718,145 @@
     "title": "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
     "section": "",
     "text": "Part 1 (46)\n\nGitHub email (5)\n\nLate start: 5 minutes\n\nWelcome (20)\n\nMeet the team (5)\nLearning Goals (1)\nAbout you (7)\n\nNotes\nBreak-out\n\nCourse Calendar (1)\nCourse structure (2)\n\nMy turn\nOur turn\nYour turn\n\nGetting help (1)\nPlatforms and Tools (1)\nBookmark website (0.5)\nLearning Objectives (1)\nMagic (0.5)\n\nPosit Cloud (3)\n\nScreenshots (2)\nScreen setup (1)\n\nPoll\n\n\nHello Quarto (1)\n\nMeeting you where you are (1)\n\nWhat is Quarto Part 1 (17)\n\nQuarto … (1)\nMy turn: A tour of Quarto (10)\n\nVisual editor\n\nYAML Metadata\nHeadings\n\nAdd Heading 2: Analysis\n\nText\n\nBold text\nAdd hyperlink\n\nhttps://jennybc.github.io/gapminder/\n\n\nBullets\nCode chunk\n\nCode-chunk options\nRun code\n\nRender\n\nHTML\n\nYAML metadta\n\nAdd author\nAdd date: today\n\nRender\n\nHTML\n\nAdd table of contents and code-fold\n\nformat: html: toc: true code-fold: true\n\nRender\n\nHTML\n\nAdd pdf: default\n\nformat: html: toc: true code-fold: true pdf: default\n\nRender\n\n\nYour turn: Log into Posit Cloud with GitHub account (5)\n\n\nBreak (10)\nPart 2 (46)\n\nWhat is Quarto Part 2 (11)\n\nYour turn: md-01-exercises (10)\nFrom the comfort of your own workspace (1)\n\nQuarto formats (12)\n\nOne install, “Batteries included” (1)\nMany Quarto formats (1)\nYour Turn: Create a new Quarto document (10)\n\n\nVersion Control (23)\n\nVersion Control with Git and GitHub (1)\nWhy is it useful? (1)\nGit and GitHub (1)\nMy turn: A tour of GitHub (5)\n\nDashboard\nMy account\nGitHub organisation\nIssue tracker\n\nOur turn: Configure Notifications settings (5)\nYour turn: Create an issue on GitHub (10)\n\n\nBreak (10)\nPart 3 (20)\n\nAnatomy of a Quarto document (2)\n\nComponents (0.5)\nLiterate programming (1.5)\n\nMetadata (7)\n\nYAML (0.5)\nOutput options (1.5)\nOutput option arguments (1)\nYAML validation (2)\nQuarto linting (1)\nQuarto YAML Intelligence (1)\n\nR fundamentals (5)\n\nPackages (1)\nFunctions & Arguments (1)\nObjects (1)\nOperators (1)\nRules (1)\n\nCourse information (3)\n\nWeekly structure (1)\nHomework assignments (1)\nCapstone Project (1)\n\nHomework assignments module 1 (2)\n\nModule 1 documentation (1.5)\nHomework due date (0.5)\n\nWrap-up (1)\n\nThanks (1)"
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#know-what-a-survey-can-not-do",
+    "href": "slides/fielding-surveys.html#know-what-a-survey-can-not-do",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#1: Know What a Survey Can (Not) Do",
+    "text": "#1: Know What a Survey Can (Not) Do\nCan:\n\nGather (a lot of) data (e.g., ratings, frequencies, opinions)\nProvide standardized data (all respondents answer the same questions, allowing for consistent and comparable data)\n\nCan Not:\n\nCapture the full complexity of human behavior (we’re irrational every now and then)\nEliminate bias (e.g., social desirability bias, acquiescence bias, recall bias)"
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#single-subject-rule-for-every-question",
+    "href": "slides/fielding-surveys.html#single-subject-rule-for-every-question",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#2: Single-Subject Rule for Every Question",
+    "text": "#2: Single-Subject Rule for Every Question\nA concept borrowed from constitutional law: A survey question may deal with only one issue.\nGood:\n“On a scale of 1 to 5, where 1 is ‘very dissatisfied’ and 5 is ‘very satisfied,’ how satisfied are you with the speed of our online checkout process?”\nBad:\n“How satisfied are you with our product’s price and customer service, and would you recommend it to a friend?”\nPro Tip: Assign the corresponding research question to each and every question. This helps you to see if the survey question (partially) allows you to answer your research questions."
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#diminishing-marginal-utility-of-questions",
+    "href": "slides/fielding-surveys.html#diminishing-marginal-utility-of-questions",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#3: Diminishing Marginal Utility of Questions",
+    "text": "#3: Diminishing Marginal Utility of Questions\n\nWe all want to answer as many questions as possible (after all, you never know if you might need the information later), but please don’t\nSurvey fatigue is a big issue\nBe honest with yourself: Are you really going to analyze the answers afterwards?\nRule of thumb: If you’re not sure if you should include the question, don’t include it.\nAlso, respondents incur opportunity costs for taking the time to answer your questions. Make sure it’s worth their time."
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#structure-your-survey-visually",
+    "href": "slides/fielding-surveys.html#structure-your-survey-visually",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#4: Structure Your Survey (Visually)",
+    "text": "#4: Structure Your Survey (Visually)\n\nWork with groups, colors, sections, tabs, etc."
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#as-many-checks-as-possible",
+    "href": "slides/fielding-surveys.html#as-many-checks-as-possible",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#5: As Many Checks as Possible",
+    "text": "#5: As Many Checks as Possible\n\nThe more logical incoherences you can anticipate the better!\n\nExample:\nSurvey Question 1: “What is your age?” [answer_q1]\nSurvey Question 2: “How many years have you been driving?” [answer_q2]\nLogical Check: The response to [answer_q2] should not exceed the response to [answer_q1] minus the legal driving age in the respondents area.\nImplementation: If [answer_q2] &gt; ([answer_q1] - 18) (assuming 18 is the legal driving age), display an error message: “Please correct your response. The number of years you have been driving cannot exceed your age minus the legal driving age.”"
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#open-ended-questions",
+    "href": "slides/fielding-surveys.html#open-ended-questions",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#6: Open-ended Questions",
+    "text": "#6: Open-ended Questions\n\nYou can’t think of every possible option in close-ended question, so open-ended questions can be a good option\nHowever, more often than not, they tend to clutter your survey and since the data is unstructured, it is a lot harder to analyze\nPro tip: You can include open-ended questions during a pilot (see Tip #8), see if there are answer options haven’t thought about and then include them in an updated close-ended question"
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#think-about-data-analysis-already",
+    "href": "slides/fielding-surveys.html#think-about-data-analysis-already",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#7: Think About Data Analysis Already",
+    "text": "#7: Think About Data Analysis Already\n\nName variables consistently (e.g., firstword_secondword or FirstwordSecondword)\nPrefixes for groups (e.g., nutrition_item1, nutrition_item2, nutrition_outlook, nutrition_cycle)\nUse meaningful labels (e.g., “morning”, “noon”, “evening” instead of 1,2,3)"
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#soft-launch-your-survey",
+    "href": "slides/fielding-surveys.html#soft-launch-your-survey",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#8 Soft Launch Your Survey",
+    "text": "#8 Soft Launch Your Survey\n\nAs much as you anticipate, you will only really know if your survey works once it’s out in the real world.\nSend it to friends and colleagues to test it.\nIdeally, you go through several iterations of soft launches before you field the actual survey."
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#provide-the-full-package",
+    "href": "slides/fielding-surveys.html#provide-the-full-package",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#9: Provide the Full Package",
+    "text": "#9: Provide the Full Package\n\nDon’t just publish the final analysis.\n\nPublish Also…\n\nThe raw data\nThe questionnaire\nThe sampling frame\nAdditional files like photos or recordings if not\nThe data processing files\nThe analysis scripts"
+  },
+  {
+    "objectID": "slides/fielding-surveys.html#bonus-cultural-sensitivity",
+    "href": "slides/fielding-surveys.html#bonus-cultural-sensitivity",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#Bonus: Cultural Sensitivity",
+    "text": "#Bonus: Cultural Sensitivity\n\nEnsure accurate translation by native speakers, not just literal translations.\nAvoid questions that may be considered taboo or offensive in certain cultures.\nAllow for diverse responses and avoid imposing Western-centric categories.\nConsider color symbolism, as colors can have different meanings in different cultures.\nChoose distribution methods that are accessible and culturally appropriate for the target population.\n\n\n\n\n\n rbtl-fs25.github.io/website/"
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#know-what-a-survey-can-not-do",
+    "href": "slides/lec-10-fielding-surveys.html#know-what-a-survey-can-not-do",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#1: Know What a Survey Can (Not) Do",
+    "text": "#1: Know What a Survey Can (Not) Do\nCan:\n\nGather (a lot of) data (e.g., ratings, frequencies, opinions)\nProvide standardized data (all respondents answer the same questions, allowing for consistent and comparable data)\n\nCan Not:\n\nCapture the full complexity of human behavior (we’re irrational every now and then)\nEliminate bias (e.g., social desirability bias, acquiescence bias, recall bias)"
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#single-subject-rule-for-every-question",
+    "href": "slides/lec-10-fielding-surveys.html#single-subject-rule-for-every-question",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#2: Single-Subject Rule for Every Question",
+    "text": "#2: Single-Subject Rule for Every Question\nA concept borrowed from constitutional law: A survey question may deal with only one issue.\nGood:\n“On a scale of 1 to 5, where 1 is ‘very dissatisfied’ and 5 is ‘very satisfied,’ how satisfied are you with the speed of our online checkout process?”\nBad:\n“How satisfied are you with our product’s price and customer service, and would you recommend it to a friend?”\nPro Tip: Assign the corresponding research question to each and every question. This helps you to see if the survey question (partially) allows you to answer your research questions."
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#diminishing-marginal-utility-of-questions",
+    "href": "slides/lec-10-fielding-surveys.html#diminishing-marginal-utility-of-questions",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#3: Diminishing Marginal Utility of Questions",
+    "text": "#3: Diminishing Marginal Utility of Questions\n\nWe all want to answer as many questions as possible (after all, you never know if you might need the information later), but please don’t\nSurvey fatigue is a big issue\nBe honest with yourself: Are you really going to analyze the answers afterwards?\nRule of thumb: If you’re not sure if you should include the question, don’t include it.\nAlso, respondents incur opportunity costs for taking the time to answer your questions. Make sure it’s worth their time."
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#structure-your-survey-visually",
+    "href": "slides/lec-10-fielding-surveys.html#structure-your-survey-visually",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#4: Structure Your Survey (Visually)",
+    "text": "#4: Structure Your Survey (Visually)\n\nWork with groups, colors, sections, tabs, etc."
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#as-many-checks-as-possible",
+    "href": "slides/lec-10-fielding-surveys.html#as-many-checks-as-possible",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#5: As Many Checks as Possible",
+    "text": "#5: As Many Checks as Possible\n\nThe more logical incoherences you can anticipate the better!\n\nExample:\nSurvey Question 1: “What is your age?” [answer_q1]\nSurvey Question 2: “How many years have you been driving?” [answer_q2]\nLogical Check: The response to [answer_q2] should not exceed the response to [answer_q1] minus the legal driving age in the respondents area.\nImplementation: If [answer_q2] &gt; ([answer_q1] - 18) (assuming 18 is the legal driving age), display an error message: “Please correct your response. The number of years you have been driving cannot exceed your age minus the legal driving age.”"
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#open-ended-questions",
+    "href": "slides/lec-10-fielding-surveys.html#open-ended-questions",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#6: Open-ended Questions",
+    "text": "#6: Open-ended Questions\n\nYou can’t think of every possible option in close-ended question, so open-ended questions can be a good option\nHowever, more often than not, they tend to clutter your survey and since the data is unstructured, it is a lot harder to analyze\nPro tip: You can include open-ended questions during a pilot (see Tip #8), see if there are answer options haven’t thought about and then include them in an updated close-ended question"
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#think-about-data-analysis-already",
+    "href": "slides/lec-10-fielding-surveys.html#think-about-data-analysis-already",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#7: Think About Data Analysis Already",
+    "text": "#7: Think About Data Analysis Already\n\nName variables consistently (e.g., firstword_secondword or FirstwordSecondword)\nPrefixes for groups (e.g., nutrition_item1, nutrition_item2, nutrition_outlook, nutrition_cycle)\nUse meaningful labels (e.g., “morning”, “noon”, “evening” instead of 1,2,3)"
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#soft-launch-your-survey",
+    "href": "slides/lec-10-fielding-surveys.html#soft-launch-your-survey",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#8 Soft Launch Your Survey",
+    "text": "#8 Soft Launch Your Survey\n\nAs much as you anticipate, you will only really know if your survey works once it’s out in the real world.\nSend it to friends and colleagues to test it.\nIdeally, you go through several iterations of soft launches before you field the actual survey."
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#provide-the-full-package",
+    "href": "slides/lec-10-fielding-surveys.html#provide-the-full-package",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#9: Provide the Full Package",
+    "text": "#9: Provide the Full Package\n\nDon’t just publish the final analysis.\n\nPublish Also…\n\nThe raw data\nThe questionnaire\nThe sampling frame\nAdditional files like photos or recordings if not\nThe data processing files\nThe analysis scripts"
+  },
+  {
+    "objectID": "slides/lec-10-fielding-surveys.html#bonus-cultural-sensitivity",
+    "href": "slides/lec-10-fielding-surveys.html#bonus-cultural-sensitivity",
+    "title": "Fielding a survey - A very short guide",
+    "section": "#Bonus: Cultural Sensitivity",
+    "text": "#Bonus: Cultural Sensitivity\n\nEnsure accurate translation by native speakers, not just literal translations.\nAvoid questions that may be considered taboo or offensive in certain cultures.\nAllow for diverse responses and avoid imposing Western-centric categories.\nConsider color symbolism, as colors can have different meanings in different cultures.\nChoose distribution methods that are accessible and culturally appropriate for the target population.\n\n\n\n\n\n rbtl-fs25.github.io/website/"
   }
 ]

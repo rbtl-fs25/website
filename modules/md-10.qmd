@@ -46,6 +46,14 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs25-learning-objectives.cs
 4.  We will discuss the pros and cons of each question type
 5.  You will develop your own [questionnaire]{.highlight-yellow} to answer your research question
 
+## {{< fa display >}} Slides
+
+[View slides in full screen](../slides/lec-10-fielding-surveys.html) | [Download slides as PDF](https://github.com/rbtl-fs24/website/raw/main/slides/lec-10-fielding-surveys.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec-10-fielding-surveys.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
 ## {{< fa code >}} Assignments
 
 Please complete the following assignment by Wednesday, 14th May 2024. 
