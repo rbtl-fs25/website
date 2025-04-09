@@ -154,7 +154,7 @@
     "href": "modules/md-10.html#class-overview",
     "title": "Module 10",
     "section": " Class Overview",
-    "text": "Class Overview\n\nDuring class we will be using the files in this folder (TODO): there are four different .csv files for you to work with:\n\n01_binary.csv\n02_likert.csv\n03_multi-choice.csv\n04_text.csv\n\nThere is also a corresponding summary file (e.g. 01_binary_summary) with a tab for each group (groups from last week: wtp, compost, air, coops, mhm)\nYour group will\n\nDownload a data set\nSee what kind of data it is, and develop a corresponding research question (add to summary table)\nClean the data (use R) and note your process and any challenges you faced, and how you addressed them (add to summary table)\nAnalyse the data in a way that answers your research question (add result to summary table)\n\nWe will discuss the pros and cons of each question type\nYou will develop your own questionnaire to answer your research question",
+    "text": "Class Overview\n\nDuring class we will be using the files in this folder: there are four different .csv files for you to work with:\n\n01_binary.csv\n02_likert.csv\n03_multi-choice.csv\n04_text.csv\n\nThere is also a corresponding summary file (e.g. 01_binary_summary) with a tab for each group (groups from last week: wtp, compost, air, coops, mhm)\nYour group will\n\nDownload a data set\nSee what kind of data it is, and develop a corresponding research question (add to summary table)\nClean the data (use R) and note your process and any challenges you faced, and how you addressed them (add to summary table)\nAnalyse the data in a way that answers your research question (add result to summary table)\n\nWe will discuss the pros and cons of each question type\nYou will develop your own questionnaire to answer your research question",
     "crumbs": [
       "Module 10"
     ]
@@ -4858,5 +4858,15 @@
     "title": "Fielding a survey - A very short guide",
     "section": "#Bonus: Cultural Sensitivity",
     "text": "#Bonus: Cultural Sensitivity\n\nEnsure accurate translation by native speakers, not just literal translations.\nAvoid questions that may be considered taboo or offensive in certain cultures.\nAllow for diverse responses and avoid imposing Western-centric categories.\nConsider color symbolism, as colors can have different meanings in different cultures.\nChoose distribution methods that are accessible and culturally appropriate for the target population.\n\n\n\n\n\n rbtl-fs25.github.io/website/"
+  },
+  {
+    "objectID": "modules/md-10.html#slides",
+    "href": "modules/md-10.html#slides",
+    "title": "Module 10",
+    "section": " Slides",
+    "text": "Slides\nView slides in full screen | Download slides as PDF",
+    "crumbs": [
+      "Module 10"
+    ]
   }
 ]

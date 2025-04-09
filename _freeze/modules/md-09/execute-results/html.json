@@ -1,9 +1,11 @@
 {
-  "hash": "4cac044791786ca0cfaeaf34611a8574",
+  "hash": "1f846928d1970735a88c75272d7b2f35",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"Research Design\"\neditor: source\nparams:\n    module: 9\nexecute: \n  echo: false\n  warning: false\n---\n\n\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management.\n2. Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.\n3. Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic.\n4. Learners can identify quality criteria for their own data collection tool.\n:::\n\n\n\n\n\n## {{< fa display >}} Slides\n\n- You will present your homework in this module. There are no additional slides.\n\n## {{< fa code >}} Assignments\n\nThere are no assignments for this module. \n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Module 09\"\nsubtitle: \"Research Design\"\neditor: source\nparams:\n    module: 9\nexecute: \n  echo: false\n  warning: false\n---\n\n\n\n\n\n\n\n## {{< fa bullseye >}} Learning Objectives\n\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Learners can extract the, (a) Research Question, (b) Sampling strategy, and (c) Key findings from a scientific paper about waste management.\n2. Learners can produce a data-collection tool that could be used to collect the data presented in a scientific paper about waste management.\n3. Learners can critique and revise their peers data-collection tools, despite not having an in-depth understanding of the topic.\n4. Learners can identify quality criteria for their own data collection tool.\n:::\n\n\n\n\n\n\n\n## {{< fa display >}} Slides\n\n- You will present your homework in this module. There are no additional slides.\n\n## {{< fa code >}} Assignments\n\nThere are no assignments for this module. \n",
+    "supporting": [
+      "md-09_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
