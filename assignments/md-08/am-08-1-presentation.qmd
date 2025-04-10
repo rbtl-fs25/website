@@ -46,11 +46,19 @@ Each group has been assigned a paper to read. The paper allocation list can be f
 
 Followed by 2 minutes for any clarifying questions from the audience. Complete comprehension is not required, but the whole class should be have a general understanding of what the paper was about
 
-2.  Your group will then share the questionnaire that you have created. Your data questionnaire will be your attempt to “reverse engineer” the data that was used to generate the results of the paper. Ask yourself: “in order to use the data that was collected, what is the best way to collect it before analysis”. Before class you will create a shared google sheet with:
-    -   Tab 1: The questionnaire that would have been generated for this research (i.e. the questions, the options, unites etc.) 
-    -   Tab 2: The codebook with the variables and their units
-    -   Tab 3: A sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design (i.e. was the data collected multiple times over a period of time; was data collected from multiple sources and compared, etc.)
-    -   Tab 3, 4, 5: a copy of the sample spreadsheet/data frame for each of the other groups to work on during the collaborative session (more on that below)
+2.  Your group will then share the questionnaire that you have created. Your data questionnaire will be your attempt to “reverse engineer” the data that was used to generate the results of the paper. Ask yourself: “in order to use the data that was collected, what is the best way to collect it before analysis”. 
+
+Before class you will create a shared Google Sheet here: <https://drive.google.com/drive/folders/1c92dz9A68PLFOoXnouD5fBBmAMDAg7vF> 
+
+The Google Sheet must have the following tabs:
+
+-   Tab 1: The questionnaire that would have been generated for this research (i.e. the questions, the options, units etc.) 
+
+-   Tab 2: The codebook with the variables and their units
+
+-   Tab 3: A sample spreadsheet of how the data would look in its raw, unprocessed form (i.e. an empty spreadsheet with rows and columns clearly labelled), taking into account the research design (i.e. was the data collected multiple times over a period of time; was data collected from multiple sources and compared, etc.)
+
+-   Tab 4, 5, 6, 7: a copy of the sample spreadsheet/data frame for each of the other groups to work on during the collaborative session (more on that below)
 
 [For example:]{.highlight-yellow} If we have this figure on the age gap between men and women:
 
