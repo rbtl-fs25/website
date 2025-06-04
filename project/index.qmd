@@ -52,7 +52,7 @@ The GitHub issue tracker of each student's capstone project repository is used t
 
 ## {{< fa calendar-check >}} Submission due date
 
-The due date for submission of the report is **Wednesday, 5th June 2025**.
+The due date for submission of the report is **Thursday, 5th June 2025**.
 
 ## {{< fa list-check >}} Required items
 
